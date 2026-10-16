@@ -10529,7 +10529,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_naval_bomber
 		cost = 5
 		prerequisite = {
-			focus = GER_zeppelin_company
+			focus = GER_focus_on_airships
 			focus = GER_fokker_aeroplanbau
 		}
 		x = 1
@@ -10548,9 +10548,7 @@ focus_tree = {
 		id = GER_defender_of_the_faith
 		icon = GFX_focus_generic_pope
 		cost = 5
-		prerequisite = {
-			focus = GER_reichspakt
-		}
+		
 		prerequisite = {
 			focus = GER_disband_bundestag
 		}

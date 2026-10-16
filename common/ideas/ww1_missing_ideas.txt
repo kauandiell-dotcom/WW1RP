@@ -1,0 +1,396 @@
+ideas = {
+	country = {
+		unequal_treaties = {
+			picture = generic_disrupted_ties
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.15
+				research_speed_factor = -0.10
+				min_export = 0.50
+			}
+		}
+
+		anti_german_military = {
+			picture = generic_intel_bonus
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				enemy_army_bonus_air_superiority_factor = -0.05
+			}
+		}
+
+		CHI_chinese_general_staff = {
+			picture = generic_intel_bonus
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				max_planning = 0.10
+				planning_speed = 0.10
+			}
+		}
+
+		CHI_construction_battalions = {
+			picture = generic_production_bonus
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				dig_in_speed = 0.10
+			}
+		}
+
+		CHI_french_drill = {
+			picture = generic_infantry_bonus
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+
+		CHI_modern_logistics = {
+			picture = generic_trucks_good
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.10
+				out_of_supply_factor = -0.10
+			}
+		}
+
+		CHI_elite_mountaineers = {
+			picture = generic_special_forces_bonus
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				special_forces_attack_factor = 0.10
+				special_forces_defence_factor = 0.10
+			}
+		}
+
+		MAN_japanese_advisers = {
+			picture = generic_foreign_capital
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				planning_speed = 0.10
+			}
+		}
+
+		MAN_russian_advisers = {
+			picture = generic_foreign_capital
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+
+		VIN_french_military_supplies = {
+			picture = generic_foreign_capital
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				equipment_conversion_speed = 0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		ENG_homeland_fallen = {
+			picture = generic_disrupted_ties
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.20
+			}
+		}
+
+		ENG_staff = {
+			picture = generic_intel_bonus
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.10
+				army_org_factor = 0.05
+			}
+		}
+
+		FIN_civil_war_aftermath = {
+			picture = generic_disrupted_ties
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.15
+			}
+		}
+
+		RUS_demobilizing_army = {
+			picture = generic_disrupted_ties
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				army_org_factor = -0.10
+			}
+		}
+
+		TUR_constitutional_reform = {
+			picture = generic_constitutional_guarantees
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.10
+			}
+		}
+
+		HUN_habsburg_restored = {
+			picture = generic_monarchism
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.10
+			}
+		}
+
+		GER_famine = {
+			picture = generic_disrupted_ties
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.20
+				monthly_population = -0.30
+				stability_factor = -0.20
+			}
+		}
+
+		UKR_idea_bread_peace = {
+			picture = generic_agrarian_reform
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = 0.10
+			}
+		}
+
+		QIN_idea_tongmenghui_2 = {
+			picture = chi_warlord_integration
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				democratic_drift = 0.02
+				stability_weekly = -0.001
+			}
+		}
+
+		QIN_idea_tongmenghui_3 = {
+			picture = chi_warlord_integration
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				democratic_drift = 0.03
+				stability_weekly = -0.002
+			}
+		}
+
+		QIN_idea_tongmenghui_4 = {
+			picture = chi_warlord_integration
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				democratic_drift = 0.04
+				stability_weekly = -0.003
+			}
+		}
+
+		QIN_idea_tongmenghui_5 = {
+			picture = chi_warlord_integration
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				democratic_drift = 0.05
+				stability_weekly = -0.004
+			}
+		}
+
+		MON_bogd_khan_sternberg = {
+			picture = generic_monarchism
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.15
+				stability_factor = 0.10
+			}
+		}
+
+		MON_divided_rule = {
+			picture = generic_disrupted_ties
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.10
+				stability_factor = -0.10
+			}
+		}
+
+		CHI_focus_align_with_guangzhou_government = {
+			picture = chi_warlord_integration
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.10
+			}
+		}
+
+		CHI_focus_align_with_guangzhou_government_socialism = {
+			picture = chi_warlord_integration
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				communism_drift = 0.03
+				war_support_factor = 0.10
+			}
+		}
+
+		MLI_disorganized_tribes = {
+			picture = generic_disrupted_ties
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.15
+				conscription_factor = -0.20
+			}
+		}
+
+		tur_meclis_assembly = {
+			picture = generic_constitutional_guarantees
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.05
+			}
+		}
+
+		tur_meclis_sultancilar = {
+			picture = generic_monarchism
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				neutrality_drift = 0.02
+				stability_factor = 0.05
+			}
+		}
+
+		TUR_freedom_of_speech = {
+			picture = generic_constitutional_guarantees
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				research_speed_factor = 0.05
+			}
+		}
+
+		authoritarian_revolutionaries = {
+			picture = generic_disrupted_ties
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.03
+				stability_weekly = -0.002
+			}
+		}
+
+		SER_idea_alexander_i_1 = {
+			picture = generic_monarchism
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.05
+			}
+		}
+	
+		RUS_idea_armistice_cp = {
+			picture = generic_constitutional_guarantees
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				hidden_modifier = {
+					ai_focus_defense_factor = 2
+					ai_focus_peaceful_factor = 2
+				}
+			}
+		}
+
+		RUS_idea_armistice_rus = {
+			picture = generic_constitutional_guarantees
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				hidden_modifier = {
+					ai_focus_defense_factor = 2
+					ai_focus_peaceful_factor = 2
+				}
+			}
+		}
+
+		MAN_banditry = {
+			picture = chi_warlord_integration
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+}
+}

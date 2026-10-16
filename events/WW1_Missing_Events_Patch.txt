@@ -1,0 +1,248 @@
+# Patch for generic and narrative events referenced in decisions and chains
+
+add_namespace = decisions
+add_namespace = mtg_exile_government
+add_namespace = bftb_news
+
+# Generic decision event 1: recruit general for civil war
+country_event = {
+	id = decisions.1
+	title = decisions.1.t
+	desc = decisions.1.desc
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_army_leader = {
+				limit = {
+					is_field_marshal = no
+					NOT = { has_unit_leader_flag = hidden_sympathies }
+				}
+				set_unit_leader_flag = hidden_sympathies
+			}
+		}
+	}
+
+	option = {
+		name = decisions.1.a
+	}
+}
+
+# Generic decision event 2: recruit field marshal for civil war
+country_event = {
+	id = decisions.2
+	title = decisions.2.t
+	desc = decisions.2.desc
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_army_leader = {
+				limit = {
+					is_field_marshal = yes
+					NOT = { has_unit_leader_flag = hidden_sympathies_marshal }
+				}
+				set_unit_leader_flag = hidden_sympathies_marshal
+			}
+		}
+	}
+
+	option = {
+		name = decisions.2.a
+	}
+}
+
+# Exiled Government Events
+country_event = {
+	id = mtg_exile_government.2
+	title = mtg_exile_government.2.t
+	desc = mtg_exile_government.2.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+
+	option = {
+		name = mtg_exile_government.2.a
+		add_legitimacy = 10
+	}
+}
+
+country_event = {
+	id = mtg_exile_government.3
+	title = mtg_exile_government.3.t
+	desc = mtg_exile_government.3.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+
+	option = {
+		name = mtg_exile_government.3.a
+		add_political_power = 25
+	}
+}
+
+# Turan News Event
+news_event = {
+	id = bftb_news.209
+	title = bftb_news.209.t
+	desc = bftb_news.209.d
+	picture = GFX_news_event_turan
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = bftb_news.209.a
+	}
+}
+
+# Romanian Bessarabia Integration Events
+country_event = {
+	id = ww1_romania.7
+	title = "Bessarabian Delegation in Bucharest"
+	desc = "Representatives from Sfatul Tarii arrive in Bucharest requesting union with Romania."
+	picture = GFX_report_event_romanian_parliament
+	is_triggered_only = yes
+
+	option = {
+		name = "Accept the Union"
+		78 = { add_core_of = ROOT }
+		79 = { add_core_of = ROOT }
+		add_stability = 0.05
+	}
+	option = {
+		name = "Decline for now"
+		add_political_power = 20
+	}
+}
+
+country_event = {
+	id = ww1_romania.19
+	title = "Status of Bessarabia"
+	desc = "Diplomatic arrangements over the eastern frontier are finalized."
+	picture = GFX_report_event_romanian_parliament
+	is_triggered_only = yes
+
+	option = {
+		name = "Acknowledge the situation"
+		add_political_power = 15
+	}
+}
+
+country_event = {
+	id = ww1_romania.9
+	title = "Hungarian Soviet Republic Proclaimed"
+	desc = "Revolutionary socialists in Budapest proclaim the Hungarian Soviet Republic. Border tensions ignite across Transylvania."
+	picture = GFX_report_event_generic_communist_crowd
+	is_triggered_only = yes
+
+	option = {
+		name = "Mobilize our border defenses"
+		add_war_support = 0.10
+	}
+}
+
+# Korea News Event
+news_event = {
+	id = ww1_korea.28
+	title = "Korean Independence Proclaimed"
+	desc = "Korean nationalists proclaim sovereign independence, declaring liberation from foreign subjugation."
+	picture = GFX_news_event_korean_independence
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "An historic turning point in East Asia"
+	}
+}
+
+# Russian Political Event
+country_event = {
+	id = ww1_political.4
+	title = "The Political Storm Gathers"
+	desc = "Political instability deepens across revolutionary Russia as factions prepare for civil conflict."
+	picture = GFX_report_event_soviet_demonstration
+	is_triggered_only = yes
+
+	option = {
+		name = "Prepare for the coming storm"
+		add_political_power = -20
+		add_stability = -0.05
+	}
+}
+
+# Qing Restoration Event
+country_event = {
+	id = ww1_qing.215
+	title = "The Dragon Throne Restored"
+	desc = "Imperial monarchists proclaim the restoration of the Great Qing Empire across the central plains."
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+
+	option = {
+		name = "Ten thousand years to the Emperor!"
+		add_stability = 0.10
+		add_war_support = 0.10
+	}
+}
+
+# Austrian Reaction to Italian Demands
+country_event = {
+	id = ww1_auh.28
+	title = "Italian Demands on Austro-Hungarian Borders"
+	desc = "The Kingdom of Italy formally asserts claims over historical territories along the frontier."
+	picture = GFX_report_event_vienna_ball
+	is_triggered_only = yes
+
+	option = {
+		name = "We shall not yield our sovereign soil"
+		add_war_support = 0.05
+	}
+	option = {
+		name = "Open diplomatic talks"
+		add_political_power = 10
+	}
+}
+
+# Turkestan Event
+country_event = {
+	id = ww1_turkestan.2
+	title = "Soviet Authority in Turkestan"
+	desc = "Soviet forces establish administrative control across regional governorates in Central Asia."
+	picture = GFX_report_event_cavalry_charge
+	is_triggered_only = yes
+
+	option = {
+		name = "Consolidate regional administration"
+		add_political_power = 25
+	}
+}
+
+# Kronstadt Rebellion News
+news_event = {
+	id = ww1_soviet.25
+	title = "The Kronstadt Rebellion Suppressed"
+	desc = "Red Army detachments storm the naval stronghold at Kronstadt, bringing an end to the mutiny."
+	picture = GFX_news_event_kronstadt
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Order has been restored"
+	}
+}
+
+# Generic Ottoman Event
+country_event = {
+	id = ww1_generic.6
+	title = "Parliamentary Alignment"
+	desc = "New coalition accords stabilize the political balance within the assembly."
+	picture = GFX_report_event_ottoman_parliament
+	is_triggered_only = yes
+
+	option = {
+		name = "Proceed with legislative work"
+		add_political_power = 25
+	}
+}

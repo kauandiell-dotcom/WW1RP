@@ -1387,7 +1387,7 @@ focus_tree = {
 			focus = ROM_strengthening_the_democratic_council
 		}
 		prerequisite = {
-			focus = ROM_we_must_keep_up_with_new_technologies
+			focus = ROM_we_must_keep_up_With_New_Technologies
 		}
 
 		x = 1
@@ -1840,9 +1840,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ROM_kom
 		}
-		mutually_exclusive = {
-			focus = ROM_Come_on_Comrades_Lets_Rise_Up
-		}
+		
 
 
 		x = 0
@@ -2049,9 +2047,7 @@ focus_tree = {
 		id = ROM_Spread_Socialism_to_the_world
 		icon = GFX_focus_prc_social_democracy
 		cost = 5
-		prerequisite = {
-			focus = ROM_ks15
-		}
+		
 		prerequisite = {
 			focus = ROM_Demand_Our_Lands
 		}

@@ -2150,8 +2150,8 @@ country_event = {
 		NOT = {
 			has_global_flag = great_war_ends
 			has_completed_focus = AUH_F48P_victory
-			has_completed_focus = AUH_federalist_reform
-			has_completed_focus = AUH_the_status_of_croatia
+			has_completed_focus = AUH_federal_government_reforms
+			has_completed_focus = AUH_croatia_slovenia_policy
 			has_subject = HUN
 			has_subject = CRO
 			has_subject = CZE
@@ -6719,7 +6719,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_completed_focus = AUH_integrate_slovakia
+				has_completed_focus = AUH_found_the_slovakia_region
 			}
 			add_to_variable = {
 				var = HUN_friendly_level
@@ -6813,7 +6813,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_completed_focus = AUH_limit_czech_partliament_authority
+				has_completed_focus = AUH_Purge_dissidents_from_the_Czech_Parliament
 			}
 			subtract_from_variable = {
 				var = CZE_friendly_level
@@ -6822,7 +6822,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_completed_focus = AUH_dissolve_czech_autonomy
+				has_completed_focus = AUH_dissolve_cezch_parliament
 			}
 			subtract_from_variable = {
 				var = CZE_friendly_level

@@ -1680,8 +1680,7 @@ focus_tree = {
         y = 1
         relative_position_id = SPR_Fortalecer_la_industria_nacional
         prerequisite = {
-			focus = SPR_33
-            focus = SPR_Fortalecer_la_industria_nacional
+			focus = SPR_Fortalecer_la_industria_nacional
             focus = SPR_Hacer_de_Spanair_un_dominio_publico
 		}
         completion_reward = {
