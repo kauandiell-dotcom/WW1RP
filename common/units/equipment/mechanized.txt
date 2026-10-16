@@ -1,0 +1,17 @@
+equipments = {
+	mechanized_equipment = {
+		year = 1918
+		is_archetype = yes
+		picture = archetype_motorized_equipment
+		is_buildable = no
+		type = {
+			infantry
+			mechanized
+		}
+		group_by = archetype
+		interface_category = interface_category_land
+		
+		maximum_speed = 8
+		reliability = 0.8
+	}
+}

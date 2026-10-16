@@ -158,4 +158,15 @@ equipments = {
 			steel = 4
 		}
 	}
+
+	rocket_artillery_equipment = {
+		year = 1918
+		is_archetype = yes
+		is_buildable = no
+		type = {
+			artillery
+		}
+		group_by = archetype
+		interface_category = interface_category_land
+	}
 }

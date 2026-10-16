@@ -1,0 +1,89 @@
+# Equipment category groupings for Military Industrial Organizations (AAT/1.19.3)
+equipment_categories = {
+	mio_cat_eq_all_small_plane = {
+		equipment_type = {
+			small_plane_airframe
+			cv_small_plane_airframe
+			small_plane_cas_airframe
+			small_plane_naval_bomber_airframe
+			cv_small_plane_cas_airframe
+			cv_small_plane_naval_bomber_airframe
+		}
+	}
+	mio_cat_eq_all_medium_plane = {
+		equipment_type = {
+			medium_plane_airframe
+			medium_plane_fighter_airframe
+			medium_plane_scout_plane_airframe
+		}
+	}
+	mio_cat_eq_all_large_plane = {
+		equipment_type = {
+			large_plane_airframe
+			large_plane_maritime_patrol_plane_airframe
+		}
+	}
+	mio_cat_eq_only_light_fighter = {
+		equipment_type = {
+			small_plane_airframe
+			cv_small_plane_airframe
+		}
+	}
+	mio_cat_eq_only_light_fighter_no_cv = {
+		equipment_type = {
+			small_plane_airframe
+		}
+	}
+	mio_cat_eq_only_tactical_bomber = {
+		equipment_type = {
+			medium_plane_airframe
+		}
+	}
+	mio_cat_eq_only_strategic_bomber = {
+		equipment_type = {
+			large_plane_airframe
+		}
+	}
+	mio_cat_eq_all_cv_aircraft = {
+		equipment_type = {
+			cv_small_plane_airframe
+			cv_small_plane_cas_airframe
+			cv_small_plane_naval_bomber_airframe
+		}
+	}
+	mio_cat_eq_all_light_tank = {
+		equipment_type = {
+			light_tank_chassis
+		}
+	}
+	mio_cat_eq_all_medium_tank = {
+		equipment_type = {
+			medium_tank_chassis
+		}
+	}
+	mio_cat_eq_all_heavy_tank = {
+		equipment_type = {
+			heavy_tank_chassis
+		}
+	}
+	mio_cat_eq_all_battleship = {
+		equipment_type = {
+			ship_hull_heavy
+		}
+	}
+	mio_cat_eq_all_carrier = {
+		equipment_type = {
+			ship_hull_carrier
+		}
+	}
+	mio_cat_eq_all_cruiser = {
+		equipment_type = {
+			ship_hull_cruiser
+		}
+	}
+	mio_cat_eq_all_destroyer = {
+		equipment_type = {
+			ship_hull_light
+		}
+	}
+}

@@ -1,0 +1,37 @@
+# WW1 Special Projects Stub for HOI4 1.15 - 1.19+ Engine Stability
+# Prevents CTD and missing reference errors in Götterdämmerung DLC subsystem
+
+special_project_types = {
+	ww1_land_dreadnought_project = {
+		specialization = land
+		complexity = 10
+		cost = 100
+		allowed = {
+			always = no
+		}
+	}
+	ww1_super_heavy_railway_gun_project = {
+		specialization = land
+		complexity = 10
+		cost = 100
+		allowed = {
+			always = no
+		}
+	}
+	ww1_naval_super_dreadnought_project = {
+		specialization = naval
+		complexity = 10
+		cost = 100
+		allowed = {
+			always = no
+		}
+	}
+	ww1_giant_airship_project = {
+		specialization = air
+		complexity = 10
+		cost = 100
+		allowed = {
+			always = no
+		}
+	}
+}
