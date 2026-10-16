@@ -1,0 +1,375 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_idea_slot_companies_nationalization
+		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	spriteType = {
+		name = GFX_idea_slot_bonds_selling
+		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	spriteType = {
+		name = GFX_idea_slot_finances
+		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	spriteType = {
+		name = GFX_idea_slot_population_growth
+		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	spriteType = {
+		name = GFX_idea_slot_conscription_minimum_age
+		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	spriteType = {
+		name = GFX_idea_slot_conscription_maximum_age
+		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	spriteType = {
+		name = GFX_idea_slot_health_check
+		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	spriteType = {
+		name = GFX_idea_slot_war_doctrine
+		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	spriteType = {
+		name = GFX_idea_slot_women_role
+		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	spriteType = {
+		name = GFX_idea_slot_law_enforcement
+		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	spriteType = {
+		name = GFX_idea_slot_states_mandate
+		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	spriteType = {
+		name = GFX_idea_slot_legal_status_of_women
+		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	spriteType = {
+		name = GFX_idea_slot_social_order
+		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	spriteType = {
+		name = GFX_idea_slot_justification_for_war
+		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	spriteType = {
+		name = GFX_idea_slot_press_laws
+		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	spriteType = {
+		name = GFX_idea_slot_mass_media
+		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = GFX_idea_classic_capitalism
+		textureFile = "gfx/interface/agw_government_ideas/classic_capitalism.dds"
+	}
+	spriteType = {
+		name = GFX_idea_state_capitalism
+		textureFile = "gfx/interface/agw_government_ideas/state_capitalism.dds"
+	}
+	spriteType = {
+		name = GFX_idea_state_property
+		textureFile = "gfx/interface/agw_government_ideas/state_property.dds"
+	}
+	spriteType = {
+		name = GFX_idea_ussr_wealths
+		textureFile = "gfx/interface/agw_government_ideas/ussr_wealths.dds"
+	}
+
+	spriteType = {
+		name = GFX_idea_force_bonds_selling
+		textureFile = "gfx/interface/agw_government_ideas/force_bonds_selling.dds"
+	}
+	spriteType = {
+		name = GFX_idea_standard_bonds_selling
+		textureFile = "gfx/interface/agw_government_ideas/standard_bonds_selling.dds"
+	}
+	spriteType = {
+		name = GFX_idea_fascist_bonds_selling
+		textureFile = "gfx/interface/agw_government_ideas/standard_bonds_selling.dds"
+	}
+	spriteType = {
+		name = GFX_idea_no_bonds_selling
+		textureFile = "gfx/interface/agw_government_ideas/no_bonds_selling.dds"
+	}
+
+	spriteType = {
+		name = GFX_idea_finance_civilian
+		textureFile = "gfx/interface/agw_government_ideas/finance_civilian.dds"
+	}
+	spriteType = {
+		name = GFX_idea_finance_army
+		textureFile = "gfx/interface/agw_government_ideas/finance_army.dds"
+	}
+	spriteType = {
+		name = GFX_idea_finance_navy
+		textureFile = "gfx/interface/agw_government_ideas/finance_navy.dds"
+	}
+	spriteType = {
+		name = GFX_idea_finance_excavation
+		textureFile = "gfx/interface/agw_government_ideas/finance_resource.dds"
+	}
+	spriteType = {
+		name = GFX_idea_finance_logistic
+		textureFile = "gfx/interface/agw_government_ideas/finance_logistic.dds"
+	}
+	spriteType = {
+		name = GFX_idea_finance_defense
+		textureFile = "gfx/interface/agw_government_ideas/finance_defense.dds"
+	}
+	spriteType = {
+		name = GFX_idea_finance_foreign_subsidies
+		textureFile = "gfx/interface/agw_government_ideas/finance_foreign_subsidies.dds"
+	}
+	spriteType = {
+		name = GFX_idea_finance_scientists_support
+		textureFile = "gfx/interface/agw_government_ideas/finance_science.dds"
+	}
+	spriteType = {
+		name = GFX_idea_finance_fanatic_scientist_support
+		textureFile = "gfx/interface/agw_government_ideas/finance_science.dds"
+	}
+
+
+	spriteType = {
+		name = GFX_idea_population_controlled
+		textureFile = "gfx/interface/agw_government_ideas/population_controlled.dds"
+	}
+	spriteType = {
+		name = GFX_idea_population_encourage
+		textureFile = "gfx/interface/agw_government_ideas/population_encourage.dds"
+	}
+	spriteType = {
+		name = GFX_idea_population_open
+		textureFile = "gfx/interface/agw_government_ideas/population_open.dds"
+	}
+	spriteType = {
+		name = GFX_idea_population_pure
+		textureFile = "gfx/interface/agw_government_ideas/population_pure.dds"
+	}
+
+	spriteType = {
+		name = GFX_idea_age_14
+		textureFile = "gfx/interface/agw_government_ideas/age_14.dds"
+	}
+	spriteType = {
+		name = GFX_idea_age_16
+		textureFile = "gfx/interface/agw_government_ideas/age_16.dds"
+	}
+	spriteType = {
+		name = GFX_idea_age_18
+		textureFile = "gfx/interface/agw_government_ideas/age_18.dds"
+	}
+	spriteType = {
+		name = GFX_idea_age_23
+		textureFile = "gfx/interface/agw_government_ideas/age_23.dds"
+	}
+	spriteType = {
+		name = GFX_idea_age_40
+		textureFile = "gfx/interface/agw_government_ideas/age_40.dds"
+	}
+	spriteType = {
+		name = GFX_idea_age_50
+		textureFile = "gfx/interface/agw_government_ideas/age_50.dds"
+	}
+	spriteType = {
+		name = GFX_idea_age_60
+		textureFile = "gfx/interface/agw_government_ideas/age_60.dds"
+	}
+
+	spriteType = {
+		name = GFX_idea_full_check
+		textureFile = "gfx/interface/agw_government_ideas/full_check.dds"
+	}
+	spriteType = {
+		name = GFX_idea_semi_check
+		textureFile = "gfx/interface/agw_government_ideas/semi_check.dds"
+	}
+	spriteType = {
+		name = GFX_idea_no_check
+		textureFile = "gfx/interface/agw_government_ideas/no_check.dds"
+	}
+	spriteType = {
+		name = GFX_idea_scraping_the_barrel_standard
+		textureFile = "gfx/interface/agw_government_ideas/scraping_the_barrel_standard.dds"
+	}
+
+	spriteType = {
+		name = GFX_idea_stay_at_home
+		textureFile = "gfx/interface/agw_government_ideas/stay_at_home.dds"
+	}
+	spriteType = {
+		name = GFX_idea_female_workers
+		textureFile = "gfx/interface/agw_government_ideas/female_workers.dds"
+	}
+	spriteType = {
+		name = GFX_idea_socialist_female_workers
+		textureFile = "gfx/interface/agw_government_ideas/socialist_female_workers.dds"
+	}
+	spriteType = {
+		name = GFX_idea_limited_female_service
+		textureFile = "gfx/interface/agw_government_ideas/limited_female_service.dds"
+	}
+	spriteType = {
+		name = GFX_idea_womens_auxillary
+		textureFile = "gfx/interface/agw_government_ideas/womens_auxillary.dds"
+	}
+	spriteType = {
+		name = GFX_idea_egalitarianism
+		textureFile = "gfx/interface/agw_government_ideas/egalitarianism.dds"
+	}
+
+
+	spriteType = {
+		name = GFX_idea_firepower
+		textureFile = "gfx/interface/agw_government_ideas/superior_fire_power.dds"
+	}
+	spriteType = {
+		name = GFX_idea_grand_battleplan
+		textureFile = "gfx/interface/agw_government_ideas/grand_battle_plan.dds"
+	}
+	spriteType = {
+		name = GFX_idea_blitzkrieg
+		textureFile = "gfx/interface/agw_government_ideas/blitzkrieg.dds"
+	}
+	spriteType = {
+		name = GFX_idea_mass_assault
+		textureFile = "gfx/interface/agw_government_ideas/mass_assault.dds"
+	}
+
+	spriteType = {
+		name = GFX_idea_balanced_approach
+		textureFile = "gfx/interface/agw_government_ideas/balanced_approach.dds"
+	}
+	spriteType = {
+		name = GFX_idea_order_above_all
+		textureFile = "gfx/interface/agw_government_ideas/order_above_all.dds"
+	}
+	spriteType = {
+		name = GFX_idea_individual_rights
+		textureFile = "gfx/interface/agw_government_ideas/individual_rights.dds"
+	}
+
+	spriteType = {
+		name = GFX_idea_personality_cult
+		textureFile = "gfx/interface/agw_government_ideas/personality_cult.dds"
+	}
+	spriteType = {
+		name = GFX_idea_secular_institutions
+		textureFile = "gfx/interface/agw_government_ideas/secular_institutions.dds"
+	}
+	spriteType = {
+		name = GFX_idea_divine_inspiration
+		textureFile = "gfx/interface/agw_government_ideas/divine_inspiration.dds"
+	}
+	spriteType = {
+		name = GFX_idea_will_of_people
+		textureFile = "gfx/interface/agw_government_ideas/will_of_people.dds"
+	}
+
+	spriteType = {
+		name = GFX_idea_traditional_roles
+		textureFile = "gfx/interface/agw_government_ideas/traditional_roles.dds"
+	}
+	spriteType = {
+		name = GFX_idea_limited_rights
+		textureFile = "gfx/interface/agw_government_ideas/limited_rights.dds"
+	}
+	spriteType = {
+		name = GFX_idea_enforced_patriarchy
+		textureFile = "gfx/interface/agw_government_ideas/enforced_patriarchy.dds"
+	}
+	spriteType = {
+		name = GFX_idea_total_equality
+		textureFile = "gfx/interface/agw_government_ideas/total_equality.dds"
+	}
+
+	spriteType = {
+		name = GFX_idea_cultural_norms
+		textureFile = "gfx/interface/agw_government_ideas/cultural_norms.dds"
+	}
+	spriteType = {
+		name = GFX_idea_hierarchy
+		textureFile = "gfx/interface/agw_government_ideas/hierarchy.dds"
+	}
+	spriteType = {
+		name = GFX_idea_revolutionary_minds
+		textureFile = "gfx/interface/agw_government_ideas/revolutionary_minds.dds"
+	}
+	spriteType = {
+		name = GFX_idea_melting_pot
+		textureFile = "gfx/interface/agw_government_ideas/melting_pot.dds"
+	}
+	spriteType = {
+		name = GFX_idea_greater_good
+		textureFile = "gfx/interface/agw_government_ideas/greater_good.dds"
+	}
+
+	spriteType = {
+		name = GFX_idea_lessons_of_history
+		textureFile = "gfx/interface/agw_government_ideas/lessons_of_history.dds"
+	}
+	spriteType = {
+		name = GFX_idea_ideological_struggle
+		textureFile = "gfx/interface/agw_government_ideas/ideological_struggle.dds"
+	}
+	spriteType = {
+		name = GFX_idea_brinkmanship
+		textureFile = "gfx/interface/agw_government_ideas/brinkmanship.dds"
+	}
+	spriteType = {
+		name = GFX_idea_global_order
+		textureFile = "gfx/interface/agw_government_ideas/global_order.dds"
+	}
+
+	spriteType = {
+		name = GFX_idea_free_press
+		textureFile = "gfx/interface/agw_government_ideas/free_press.dds"
+	}
+	spriteType = {
+		name = GFX_idea_censored_press
+		textureFile = "gfx/interface/agw_government_ideas/censored_press.dds"
+	}
+	spriteType = {
+		name = GFX_idea_resistance_press
+		textureFile = "gfx/interface/agw_government_ideas/resistance_press.dds"
+	}
+	spriteType = {
+		name = GFX_idea_productivity_press
+		textureFile = "gfx/interface/agw_government_ideas/productivity_press.dds"
+	}
+	spriteType = {
+		name = GFX_idea_mobilization_press
+		textureFile = "gfx/interface/agw_government_ideas/mobilization_press.dds"
+	}
+	spriteType = {
+		name = GFX_idea_aggressive_press
+		textureFile = "gfx/interface/agw_government_ideas/aggressive_press.dds"
+	}
+	spriteType = {
+		name = GFX_idea_nationalism_press
+		textureFile = "gfx/interface/agw_government_ideas/nationalism_press.dds"
+	}
+	spriteType = {
+		name = GFX_idea_security_press
+		textureFile = "gfx/interface/agw_government_ideas/security_press.dds"
+	}
+
+	spriteType = {
+		name = GFX_idea_government_propaganda
+		textureFile = "gfx/interface/agw_government_ideas/government_propaganda.dds"
+	}
+	spriteType = {
+		name = GFX_idea_censorship
+		textureFile = "gfx/interface/agw_government_ideas/censorship.dds"
+	}
+	spriteType = {
+		name = GFX_idea_free_media
+		textureFile = "gfx/interface/agw_government_ideas/free_media.dds"
+	}
+}

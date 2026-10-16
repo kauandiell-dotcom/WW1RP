@@ -1,0 +1,606 @@
+defined_text = { #SUPER EVENT TITLE
+	name = get_superevent_title
+	#set in chronological order
+	text = { 
+		trigger = {
+			has_country_flag = se_mex_revolution
+		}
+		localization_key = SE_mex_revolution_T
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_chi_xinhai_revolution
+		}
+		localization_key = SE_chi_xinhai_revolution_T
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_eng_republic
+		}
+		localization_key = SE_ENG_REPUBLIC_T
+	}
+	text = {
+		trigger = {
+			has_country_flag = se_bul_bw2_winner
+		}
+		localization_key = SE_bul_bw2_winner_T
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_rus_savinkov_revolution
+		}
+		localization_key = SE_rus_savinkov_revolution_T
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_fra_socialist
+		}
+		localization_key = SE_fra_socialist_T
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_fra_orleanist
+		}
+		localization_key = SE_fra_orleanist_T
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_fra_bonapartist
+		}
+		localization_key = SE_fra_bonapartist_T
+	}	
+	text = {
+		trigger = {
+			has_country_flag = SE_fra_national_syndicalist
+		}
+		localization_key = SE_fra_national_syndicalist_T
+	}	
+	text = {
+		trigger = {
+			has_country_flag = se_great_war
+		}
+		localization_key = SE_great_war_T
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_gre_schism
+		}
+		localization_key = SE_gre_schism_T
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_burning_of_smyrna
+		}
+		localization_key = SE_burning_of_smyrna_T
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_balkan_war_1
+		}
+		localization_key = SE_balkan_war_1_T
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_balkan_war_2
+		}
+		localization_key = SE_balkan_war_2_T
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_gre_byzantium
+		}
+		localization_key = SE_gre_byzantium_T
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_greeko_turkish_war
+		}
+		localization_key = SE_greeko_turkish_war_T
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_balkan_fed
+		}
+		localization_key = SE_balkan_fed_T
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_battle_of_verdun
+		}
+		localization_key = SE_BATTLE_OF_VERDUN_T
+	}		
+	text = { 
+		trigger = {
+			has_country_flag = se_war_of_the_worlds
+		}
+		localization_key = SE_WAR_OF_THE_WORLDS_T
+	}
+	text = {
+		trigger = {
+			has_country_flag = se_eng_kitchener
+		}
+		localization_key = SE_eng_kitchener_T
+	}
+	text = {
+		trigger = {
+			has_country_flag = se_eng_george_v
+		}
+		localization_key = SE_eng_george_v_T
+	}
+	text = {
+		trigger = {
+			has_country_flag = se_eng_imperial_federation
+		}
+		localization_key = SE_eng_imperial_federation_T
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_chi_warlord_era
+		}
+		localization_key = SE_chi_warlord_era_T
+	}	
+	text = { 
+		trigger = {
+			has_country_flag = se_rus_february_revolution
+		}
+		localization_key = SE_FEBRUARY_REVOLUTION_T
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_rus_october_revolution
+		}
+		localization_key = SE_OCTOBER_REVOLUTION_T
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_eng_fall_of_america
+		}
+		localization_key = SE_eng_fall_of_america_T
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_ger_civil_war
+		}
+		localization_key = SE_ger_civil_war_T
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_rus_civil_war_winner_white
+		}
+		localization_key = SE_rus_civil_war_winner_white_T
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_rus_civil_war_winner_red
+		}
+		localization_key = SE_rus_civil_war_winner_red_T
+	}
+	text = {
+		trigger = {
+			has_country_flag = se_great_depression
+		}
+		localization_key = SE_great_depression_T
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_ger_nazi
+		}
+		localization_key = SE_ger_nazi_T
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_arab_revolt
+		}
+		localization_key = SE_arab_revolt_T
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_test
+		}
+		localization_key = SE_TEST_T
+	}
+}
+defined_text = { #SUPER EVENT QUOTE
+	name = get_superevent_quote
+	#set in chronological order
+	text = { 
+		trigger = {
+			has_country_flag = se_mex_revolution
+		}
+		localization_key = SE_mex_revolution_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_chi_xinhai_revolution
+		}
+		localization_key = SE_chi_xinhai_revolution_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_eng_republic
+		}
+		localization_key = SE_ENG_REPUBLIC_D
+	}
+	text = {
+		trigger = {
+			has_country_flag = se_bul_bw2_winner
+		}
+		localization_key = SE_bul_bw2_winner_D
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_rus_savinkov_revolution
+		}
+		localization_key = SE_rus_savinkov_revolution_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_fra_socialist
+		}
+		localization_key = SE_fra_socialist_D
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_fra_orleanist
+		}
+		localization_key = SE_fra_orleanist_D
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_fra_bonapartist
+		}
+		localization_key = SE_fra_bonapartist_D
+	}	
+	text = {
+		trigger = {
+			has_country_flag = SE_fra_national_syndicalist
+		}
+		localization_key = SE_fra_national_syndicalist_D
+	}	
+	text = {
+		trigger = {
+			has_country_flag = se_great_war
+		}
+		localization_key = SE_great_war_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_gre_schism
+		}
+		localization_key = SE_gre_schism_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_burning_of_smyrna
+		}
+		localization_key = SE_burning_of_smyrna_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_balkan_war_1
+		}
+		localization_key = SE_balkan_war_1_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_balkan_war_2
+		}
+		localization_key = SE_balkan_war_2_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_gre_byzantium
+		}
+		localization_key = SE_gre_byzantium_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_greeko_turkish_war
+		}
+		localization_key = SE_greeko_turkish_war_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_balkan_fed
+		}
+		localization_key = SE_balkan_fed_D
+	}						
+	text = { 
+		trigger = {
+			has_country_flag = SE_battle_of_verdun
+		}
+		localization_key = SE_BATTLE_OF_VERDUN_D
+	}	
+	text = { 
+		trigger = {
+			has_country_flag = se_war_of_the_worlds
+		}
+		localization_key = SE_WAR_OF_THE_WORLDS_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_eng_kitchener
+		}
+		localization_key = SE_eng_kitchener_D
+	} 
+	text = {
+		trigger = {
+			has_country_flag = se_eng_george_v
+		}
+		localization_key = SE_eng_george_v_D
+	}
+	text = {
+		trigger = {
+			has_country_flag = se_eng_imperial_federation
+		}
+		localization_key = SE_eng_imperial_federation_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_chi_warlord_era
+		}
+		localization_key = SE_chi_warlord_era_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_rus_february_revolution
+		}
+		localization_key = SE_FEBRUARY_REVOLUTION_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_rus_october_revolution
+		}
+		localization_key = SE_OCTOBER_REVOLUTION_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_eng_fall_of_america
+		}
+		localization_key = SE_eng_fall_of_america_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_ger_civil_war
+		}
+		localization_key = SE_ger_civil_war_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_rus_civil_war_winner_white
+		}
+		localization_key = SE_rus_civil_war_winner_white_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_rus_civil_war_winner_red
+		}
+		localization_key = SE_rus_civil_war_winner_red_D
+	}
+	text = {
+		trigger = {
+			has_country_flag = se_great_depression
+		}
+		localization_key = SE_great_depression_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_ger_nazi
+		}
+		localization_key = SE_ger_nazi_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_arab_revolt
+		}
+		localization_key = SE_arab_revolt_D
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_test
+		}
+		localization_key = SE_DEST_D
+	}
+}
+defined_text = { #SUPER EVENT OPTION
+	name = get_superevent_option
+	#set in chronological order
+	text = { 
+		trigger = {
+			has_country_flag = se_mex_revolution
+		}
+		localization_key = SE_mex_revolution_A
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_chi_xinhai_revolution
+		}
+		localization_key = SE_chi_xinhai_revolution_A
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_eng_republic
+		}
+		localization_key = SE_ENG_REPUBLIC_A
+	}
+	text = {
+		trigger = {
+			has_country_flag = se_bul_bw2_winner
+		}
+		localization_key = SE_bul_bw2_winner_A
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_rus_savinkov_revolution
+		}
+		localization_key = SE_rus_savinkov_revolution_A
+	}		
+	text = { 
+		trigger = {
+			has_country_flag = SE_fra_socialist
+		}
+		localization_key = SE_fra_socialist_A
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_fra_orleanist
+		}
+		localization_key = SE_fra_orleanist_A
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_fra_bonapartist
+		}
+		localization_key = SE_fra_bonapartist_A
+	}	
+	text = {
+		trigger = {
+			has_country_flag = SE_fra_national_syndicalist
+		}
+		localization_key = SE_fra_national_syndicalist_A
+	}	
+	text = {
+		trigger = {
+			has_country_flag = se_great_war
+		}
+		localization_key = SE_great_war_A
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_gre_schism
+		}
+		localization_key = SE_gre_schism_A
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_burning_of_smyrna
+		}
+		localization_key = SE_burning_of_smyrna_A
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_balkan_war_1
+		}
+		localization_key = SE_balkan_war_1_A
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_balkan_war_2
+		}
+		localization_key = SE_balkan_war_2_A
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_gre_byzantium
+		}
+		localization_key = SE_gre_byzantium_A
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_greeko_turkish_war
+		}
+		localization_key = SE_greeko_turkish_war_A
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_balkan_fed
+		}
+		localization_key = SE_balkan_fed_A
+	}		
+	text = { 
+		trigger = {
+			has_country_flag = SE_battle_of_verdun
+		}
+		localization_key = SE_BATTLE_OF_VERDUN_A
+	}	
+	text = { 
+		trigger = {
+			has_country_flag = se_war_of_the_worlds
+		}
+		localization_key = SE_WAR_OF_THE_WORLDS_A
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_eng_kitchener
+		}
+		localization_key = SE_eng_kitchener_A
+	}
+	text = {
+		trigger = {
+			has_country_flag = se_eng_george_v
+		}
+		localization_key = SE_eng_george_v_A
+	}
+	text = {
+		trigger = {
+			has_country_flag = se_eng_imperial_federation
+		}
+		localization_key = SE_eng_imperial_federation_A
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_chi_warlord_era
+		}
+		localization_key = SE_chi_warlord_era_A
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_rus_february_revolution
+		}
+		localization_key = SE_FEBRUARY_REVOLUTION_A
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_rus_october_revolution
+		}
+		localization_key = SE_OCTOBER_REVOLUTION_A
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_eng_fall_of_america
+		}
+		localization_key = SE_eng_fall_of_america_A
+	}
+	text = { 
+		trigger = {
+			has_country_flag = SE_ger_civil_war
+		}
+		localization_key = SE_ger_civil_war_A
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_rus_civil_war_winner_white
+		}
+		localization_key = SE_rus_civil_war_winner_white_A
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_rus_civil_war_winner_red
+		}
+		localization_key = SE_rus_civil_war_winner_red_A
+	}
+	text = {
+		trigger = {
+			has_country_flag = se_great_depression
+		}
+		localization_key = SE_great_depression_A
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_ger_nazi
+		}
+		localization_key = SE_ger_nazi_A
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_arab_revolt
+		}
+		localization_key = SE_arab_revolt_A
+	}
+	text = { 
+		trigger = {
+			has_country_flag = se_test
+		}
+		localization_key = SE_AEST_A
+	}
+}	

@@ -1,0 +1,425 @@
+﻿l_russian:
+ #unit leader traits 
+ artillery_officer: "Артиллерийский офицер" #NT!
+ artillery_officer_desc: "§LОбучен на артиллерийского офицера.§!" #NT!
+ artillery_specialist: "Специалист по артиллерии" #NT!
+ artillery_specialist_desc: "§LУмеет управлять артиллерией в бою.§!" #NT!
+ artillery_expert: "Артиллерийский эксперт" #NT!
+ artillery_expert_desc: "Настоящий специалист по управлению артиллерией." #NT!
+ artillery_ratio_over_30: "Артиллерийское соотношение > §H30%§!" #NT!
+ trait_TUR_reactionaries_sympathies: "Симпатии реакционеров" #NT!
+ trait_TUR_reactionaries_sympathies_desc: "Этот лидер поддерживает реакционную фракцию в Османской армии. Он будет сопротивляться правлению младотурок." #NT!
+ trait_TUR_ittihadist_sympathies: "Симпатии иттихатистов" #NT!
+ trait_TUR_ittihadist_sympathies_desc: "Этот лидер поддерживает фракцию İttihat ve Terakki. Он будет противостоять власти реакционеров." #NT!
+ trait_TUR_ittihadist_radical_sympathies: "Радикальный член Иттихатистов" #NT!
+ trait_TUR_ittihadist_radical_sympathies_desc: "Этот лидер активно участвует в делах İttihat ve Terakki. Он будет сопротивляться любым действиям, которые идут вразрез с этим." #NT!
+ trait_TUR_halaskar_zabitan_member: "Халаскар Забитан Симпатии" #NT!
+ trait_TUR_halaskar_zabitan_member_desc: "Этот лидер поддерживает дело Halâskâr Zâbitân. Он будет сопротивляться любым действиям, предпринятым против группы и Hürriyet ve İtilaf." #NT!
+ trait_royalist: "Роялист" #NT!
+ trait_royalist_desc: "Офицер и джентльмен, этот лидер ОЧЕНЬ серьезно относится к своей присяге монарху." #NT!
+ ENG_new_guard: "Новая гвардия" #NT!
+ ENG_new_guard_desc: "§LМолодой и зоркий офицер, он вряд ли доставит неприятности.§!" #NT!
+ ENG_hmmlr_member: "Симпатии Антанты" #NT!
+ ENG_hmmlr_member_desc: "Этот солдат с теплотой вспоминает старый золотой век Британии и стремится к его возвращению." #NT!
+ trait_royal: "Королевский" #NT!
+ trait_royal_desc: "Член королевской семьи. Если случится революция, он долго не задержится." #NT!
+ chinese_royalist: "Маньчжурский роялист" #NT!
+ chinese_royalist_desc: "Этот лидер лоялен к маньчжурской династии." #NT!
+ yuan_shikai_loyalist: "Лоялист армии Бэйян" #NT!
+ yuan_shikai_loyalist_desc: "Этот лидер лоялен к Бэйянской армии." #NT!
+ chinese_nationalist: "Националист" #NT!
+ chinese_nationalist_desc: "Этот лидер следует Трем Принципам." #NT!
+ chinese_federalist: "Федералист" #NT!
+ chinese_federalist_desc: "Этот лидер считает, что способ воссоединить Китай – это ввести провинциальный федерализм." #NT!
+ trait_por_republican: "Республиканские симпатии" #NT!
+ trait_por_republican_desc: "Этот лидер питает симпатии к республиканцам." #NT!
+ trait_por_monarchist: "Монархическая лояльность" #NT!
+ trait_por_monarchist_desc: "Этот лидер лоялен к дому Браганса." #NT!
+  
+ CHL_last_bastion_of_parlamentarism: "Последний бастион парламентаризма" #NT!
+ truth_seeker: "Искатель Истины" #NT!
+ TUR_italian_investment_libya: "Инвестиции в военно-морскую верфь" #NT!
+ TUR_british_investment_libya: "Инвестиции в нефтеперерабатывающий завод" #NT!
+ TUR_french_investment_libya: "Инвестиции в гражданские фабрики" #NT!
+ TUR_german_investment_libya: "Инвестиции в инфраструктуру" #NT!
+ eltsin_trait: "Э.Б.Н." #NT!
+ eltsin_trait_desc: "Если бы море было водкой, он стал бы подводной лодкой." #NT!
+ foxy_ferdinand: "Фокси Фердинанд" #NT!
+ dislikes_russia: "Не любит Россию" #NT!
+ russophile: "русофил" #NT!
+ german_agent: "Немецкие пристрастия" #NT!
+ german_agent_desc: "Этот человек завербован немецкой контрразведкой." #NT!
+ british_agent: "Британские пристрастия" #NT!
+ president_poincare_la_guerre: "Пуанкаре ля Герр" #NT!
+ president_poincare_la_guerre_desc: "Ярый реваншист, готовый возглавить нацию, чтобы восстановить ее величие." #NT!
+ poincare_la_guerre: "Пуанкаре ля Герр" #NT!
+ poincare_la_guerre_desc: "Ярый реваншист, готовый возглавить нацию, чтобы восстановить ее величие." #NT!
+ tgwr_inventive_genius: "Изобретательный гений" #NT!
+ tgwr_inventive_genius_desc: "У этого человека технический склад ума и блестящая изобретательность." #NT!
+ colonial_governor: "Колониальный губернатор" #NT!
+ colonial_governor_desc: "Этот высокопоставленный администратор укрепит связи с нашими колониальными подданными." #NT!
+ lunatic: "Сумасшедший" #NT!
+ mysterious_manipulator: "Таинственный Манипулятор" #NT!
+ mysterious_manipulator_desc: "Его личность до сих пор окутана тайной, а его влияние на номинального правителя настолько велико, что даже внушает страх." #NT!
+ true_personality_amidst_the_inanity: "Истинная личность среди пустоты" #NT!
+ independantist_democratic_reformer: "Независимый демократический реформатор" #NT!
+ emperor_taisho: "Emperor Taisho" #NT!
+ emperor_meiji: "Император Мэйдзи" #NT!
+ progressive_reformer: "Прогрессивный реформатор" #NT!
+ lord_protector: "§CLord-Protector§!" #NT!
+ revolution_trauma: "Революционная травма" #NT!
+ auwi: "Ауви" #NT!
+ eng_hero_of_revolution: "Герой Революции" #NT!
+ eng_syndicalist_heroine: "Героиня Революции" #NT!
+ eng_revolutionary_icon: "Революционная икона" #NT!
+ eng_revolutionary_icon_2: "Революционная икона" #NT!
+ eng_revolutionary_icon_3: "Революционная икона" #NT!
+ eng_militant_syndicalist: "Воинствующий синдикалист" #NT!
+ eng_major_attlee: "«Майор Эттли»" #NT!
+ eng_hand_of_king: "§OГ-н. Спикер§!" #NT!
+ eng_archaic_rule: "§RНесуществующее правительство§!" #NT!
+ eng_asquith_trait: "Пьяный гений" #NT!
+ SRW_white_rajah: "Белый Раджа" #NT!
+ prohibitionist: "Прогибиционист" #NT!
+ prohibitionist_desc: "Этот человек поддерживает традиционную политику. И он готов в одиночку противостоять радикальному прогрессизму." #NT!
+ bull_moose: "Лось-бык" #NT!
+ bull_moose_desc: "Тедди Рузвельт известен своей прямолинейностью и радикальными решениями. Также он опытный охотник." #NT!
+ big_bill: "Большой Билл" #NT!
+ eng_o_trait: "'О'" #NT!
+ popular_intellectual: "Популярный интеллектуал" #NT!
+ eagle_of_the_hague: "Орёл Гааги" #NT!
+ iron_marshal: "Железный маршал" #NT!
+ constable_of_the_republic: "Констебль Республики" #NT!
+ standing_alone: "Стоя в одиночестве" #NT!
+ standing_alone_tt: "§RНевозможно присоединиться ни к одному союзнику с идеей §YStanding Alone§!§!" #NT!
+ BOL_last_oligarch: "Последний олигарх" #NT!
+ BOL_lawyer: "Адвокат" #NT!
+ BOL_hero_of_pacific: "Герой Тихого океана" #NT!
+ BOL_taboo_politician: "Табу Политик" #NT!
+ BOL_secret_caudillo: "Секретный Каудильо" #NT!
+ foreign_leader: "Лидер иностранных государств" #NT!
+ patriota: "О Патриота" #NT!
+ patriota_desc: "Молодой король очень заботится о престиже своей страны и уделяет особое внимание армии и флоту." #NT!
+ regency_council: "Регентский совет" #NT!
+ canadian_imperialist: "Канадский империалист" #NT!
+ canadian_father_figure: "Канадский отец-фигурист" #NT!
+ british_loyalist: "Британский лоялист" #NT!
+ old_fighter: "Старый боец" #NT!
+ first_among_equals: "Первый среди равных" #NT!
+ prince_of_paradox: "Принц парадокса" #NT!
+ eng_imperialist_author: "Империалистический автор" #NT!
+ eng_eccentric_inventor: "Эксцентричный изобретатель" #NT!
+ eng_navalist_journalist: "Военно-морской журналист" #NT!
+ goering_manx_trait: "Der Manxführer" #NT!
+ bookworm: "Книжный червь" #NT!
+ meclis_mebusan: "Дальше всего мы продвинулись в демократии" #NT!
+ TUR_a_voice_from_everyone: "Голос от каждого" #NT!
+ meclis_avam: "Меджлис-и Авам Сосиалист" #NT!
+ TUR_inner_party_factionalism: "Внутрипартийная фракционность" #NT!
+ TUR_inner_party_factionalism2: "Внутрипартийная фракционность" #NT!
+ TUR_inner_party_factionalism3: "Внутрипартийная фракционность" #NT!
+ TUR_yildiz_teskilati_trait: "Глубинное государство" #NT!
+ TUR_yildiz_teskilati_trait2: "Кооперативное Глубинное Государство" #NT!
+ deep_state_advisors: "Советники Глубинного Государства" #NT!
+ TUR_al_qahtaniya_liberal_wing: "Либеральное крыло" #NT!
+ TUR_al_qahtaniya_militarist_wing: "Милитаристское крыло" #NT!
+ TUR_racial_supremacist: "Сторонник расового превосходства" #NT!
+ TUR_anti_german: "Антигерманское влияние" #NT!
+ TUR_voice_of_the_arabs: "Голос арабов" #NT!
+ TUR_first_arab_vezir: "Первый арабский визирь" #NT!
+ TUR_arab_parliament_opposition: "Оппозиция в парламенте" #NT!
+ TUR_uncontested_arab_voice: "Неоспоримый арабский голос" #NT!
+ TUR_officer_of_the_arabs: "Офицер арабов" #NT!
+ refiknevzat: "Социалист во Франции" #NT!
+ TUR_conservative_liberal_arab: "Консервативный либерал" #NT!
+ TUR_liberal_reformer: "Либеральный реформатор" #NT!
+ professor_lawyer_arab: "Юрист Профессор" #NT!
+ journalist_arab: "журналист" #NT!
+ TUR_leftist_parliament: "Левый парламент" #NT!
+ TUR_milliyetci_sosyalist_advisor: "Националистический социалист" #NT!
+ TUR_milliyetci_sosyalist: "Националистический социалист" #NT!
+ TUR_chairman: "Председатель" #NT!
+ TUR_conservative_politician: "Консервативный политик" #NT!
+ TUR_conservative_politician2: "Консервативный исламистский лидер" #NT!
+ TUR_conservative_politician_advisor: "Консервативный исламистский лидер" #NT!
+ TUR_positivist: "Позитивист" #NT!
+ HJZ_hussein_bin_ali_ottoman_trait: "Шариф и Эмир Мекки" #NT!
+ TUR_marshal_vezier: "Антивоенный кандидат" #NT!
+ nationalist_poet_arab: "Поэт-националист" #NT!
+ revolutionary_lawyer: "Революционный юрист" #NT!
+ refiknevzat2: ""Аврупалы"" #NT!
+ mustafasuphi: "Милли Ленин" #NT!
+ nihad: "Объединитель Народа" #NT!
+ sevket: "Герой 31 марта" #NT!
+ kamil: "Ингилиз Камил" #NT!
+ tevfik: "Османские джентльмены" #NT!
+ huseyin_hilmi_vizier: "Прогрессивный государственный деятель" #NT!
+ TUR_ismail_kemal_trait: "Представитель меньшинств" #NT!
+ riza_nur_trait: "Левый националист" #NT!
+ riza_tevfik_trait: "Фейлесоф Рыза" #NT!
+ abdulaziz_mecdi_trait: "Мутасаввиф" #NT!
+ mehmet_sadik_trait: "Опытный торговец" #NT!
+ experimented_merchant: "Опытный торговец" #NT!
+ decentralist_liberal: "Децентралистский либерал" #NT!
+ islamist_leader: "Радикальный исламист" #NT!
+ collaborator: "Концессионист" #NT!
+ ataturk: "Великий реформатор" #NT!
+ TUR_anti_imperialist: "Антиимпериалистический" #NT!
+ TUR_harbiye_naziri: "Харбийе Назири" #NT!
+ head_of_the_national_movement: "Глава Национального Движения" #NT!
+ islamist: "исламистский" #NT!
+ minority_revolutionary: "Революционное меньшинство" #NT!
+ minority_reformer: "Реформатор меньшинства" #NT!
+ islamist_modern: "Современный исламист" #NT!
+ islamist_modern_leader: "Современный исламист" #NT!
+ reformist_nationalist: "Реформистский националист" #NT!
+ ebedi_sef: "Эбеди Шеф" #NT!
+ istirakci_hilmi: "Иштиракчи" #NT!
+ TUR_monopoly: "Монополия" #NT!
+ TUR_turk_marx: "Турецкий Маркс" #NT!
+ TUR_turk_marx_advisor: "Турецкий Маркс" #NT!
+ TUR_ittihadist_socialist: "Иттихатист" #NT!
+ TUR_just_socialist: "Социалистический" #NT!
+ sabahattin: "Децентрализованный принц" #NT!
+ ferit: "Концессионист" #NT!
+ three_pashas_2: "Антиимпериалистический кабинет" #NT!
+ three_pashas: "Правительство трех пашей" #NT!
+ TUR_limited_authority: "Ограниченные полномочия" #NT!
+ powerless_sultan: "Бессильный султан" #NT!
+ osman_fuad_1: "Амбициозный султан" #NT!
+ osman_fuad_2: "Кайзер-и-Рум" #NT!
+ grand_vizier: "Великий визирь" #NT!
+ grand_vizier_mehmed_said: "Великий визирь" #NT!
+ grand_vizier_said_halim: "Великий визирь" #NT!
+ grand_vizier_empowered: "Великий визирь" #NT!
+ TUR_hero_of_freedom: "Герой Свободы" #NT!
+ sultan_unifier: "Султан-Объединитель" #NT!
+ tur_military_junta: "Военная хунта" #NT!
+ tur_conciliator_of_nations: "Примиритель Наций" #NT!
+ ottoman_prince: "Османский султан" #NT!
+ inept_autocrat: "Неумелый самодержец" #NT!
+ rus_knight_of_revolution: "Рыцарь Революции" #NT!
+ rus_great_reformer: "Великий Реформатор" #NT!
+ rider_named_death: "Всадник по имени Смерть" #NT!
+ vozhd_of_proletariat: "Вождь мирового пролетариата" #NT!
+ lion_of_judah: "Лев Иуды" #NT!
+ assassination_survivor: "Выживший после убийства" #NT!
+ pope: "Папа Римский" #NT!
+ ethem: "Председатель" #NT!
+ little_saber: "Маленькая Сэйбер" #NT!
+ little_saber_desc: "Прозван «Маленьким Сэйбером» за свой невысокий рост — 1,53 м." #NT!
+ little_saber_2: "Скиаболетта" #NT!
+ little_saber_2_desc: "Прозван «Маленьким Сэйбером» за свой невысокий рост — 1,53 м." #NT!
+ soldier_king: "Il Re soldato" #NT!
+ soldier_king_desc: "«Король-солдат» напоминает итальянцам об их недавних победах в Великой войне. Его присутствие и их преданность ему являются великим источником единства для народа." #NT!
+ weak_ruler: "Слабый правитель" #NT!
+ POLITICS_LUIGI_LUZZATTI_DESC: "Он занимает свой пост только с согласия Джолитти." #NT!
+ undistinguished_suit: "Незаурядный костюм" #NT!
+ mafioso: "Мафиози" #NT!
+ two_faced: "Двуликий" #NT!
+ ENG_father_of_republic_pease: "Отец Республики" #NT!
+ ENG_socialist_author_h_g_wells: "Убежденный социалистический автор" #NT!
+ ENG_anti_imperialist_in_imperialist_cabinet: "Антиимпериалист в империалистическом правительстве" #NT!
+ ENG_war_of_the_worlds: "Пророческий Автор" #NT!
+ ENG_feminist_cockney_lansbury: "Феминистский кокни" #NT!
+ ENG_pacifist_disarmer_lansbury: "Пацифистский разоружитель" #NT!
+ ENG_First_Citizen_pease: "Первый гражданин Республики" #NT!
+ ENG_the_first_british_communist: "Первый британский коммунист" #NT!
+ ENG_third_president_republic: "Третий президент Республики" #NT!
+ one_nation_tory: "Тори из партии «Единая нация»" #NT!
+ labour_man: "Трудовой человек" #NT!
+ pragmatic_labour: "Левый прагматик" #NT!
+ puppet_of_the_tories: "Марионетка тори" #NT!
+ statesman_of_europe: "Государственный деятель Европы" #NT!
+ dud_murra: "Дуд Мурра" #NT!
+ dud_murra_desc: "Лев Мурры" #NT!
+ tgwr_caliph: "халиф" #NT!
+ tgwr_caliph_better: "халиф" #NT!
+ abdulhamid_absolute_monarchy: "Абсолютный монарх" #NT!
+ abdulhamid_paranoid_sultan_lar: "Параноидальный Султан" #NT!
+ abdulhamid_paranoid_sultan_no_lar: "Параноидальный Султан" #NT!
+ abdulhamid_head_of_hamidiye: "Глава Хамидие" #NT!
+ abdulhamid_absolute_monarchy2: "Абсолютный монарх" #NT!
+ TUR_seyhulislam: "Шейхюлислам" #NT!
+ TUR_seyhulislam_leader: "Шейхюлислам" #NT!
+ abdulmejid_sultan_of_arts: "Султан искусств" #NT!
+ abdulmejid_funder_of_opera: "Финансист Оперы" #NT!
+ abdulmejid_sponsor_of_art: "Спонсор искусства" #NT!
+ abdulmejid_sultan_of_arts2: "Султан искусств" #NT!
+ ahmed_nihad_reconstructer_of_the_empire: "Реконструктор Империи" #NT!
+ ahmed_nihad_bringer_of_european_architecture: "носитель европейской архитектуры" #NT!
+ ahmed_nihad_industrializer: "Индустриализатор" #NT!
+ ahmed_nihad_reconstructer_of_the_empire2: "Реконструктор Империи" #NT!
+ yusuf_izzeddin_great_conqueror: "Великий Завоеватель" #NT!
+ yusuf_izzeddin_modernizor_of_the_army: "Модернизатор Армии" #NT!
+ yusuf_izzeddin_commander_of_the_army: "Командующий армией" #NT!
+ yusuf_izzeddin_great_conqueror2: "Великий Завоеватель" #NT!
+ debt_council: "Совет по долгам" #NT!
+ illegitimate_monarch: "Незаконный монарх" #NT!
+ oldschool_kaiser: "Последний монарх старой школы" #NT!
+ newschool_kaiser: "Первый монарх Новой школы" #NT!
+ tur_national_hero: "Национальный герой" #NT!
+ tur_savior_of_the_nation: "Спаситель нации" #NT!
+ TUR_ruthless_revanchist: "Безжалостный реваншист" #NT!
+ TUR_ruthless_revanchist_leader: "Мощный реваншист" #NT!
+ TUR_butcher: "мясник" #NT!
+ TUR_butcher_2: "Касап Джемаль" #NT!
+ TUR_civilian_front: "Яше Незарети" #NT!
+ TUR_three_pasha_locked_tt: "§YЧлена Триумвирата нельзя вручную заменить или удалить.§!" #NT!
+ erudite_ideologue: "Эрудированный Идеолог" #NT!
+ diplomatic_minister: "Министр по дипломатическим делам" #NT!
+ puppet_grand_vizier: "Марионеточный великий визирь" #NT!
+ catalanist_lerrouxist: "каталонский леруксист" #NT!
+ pan_nationalist_doctor: "Доктор-паннационалист" #NT!
+ mehmed_v: "Мехмед V Решат" #NT!
+ mehmed_vi: "Мехмед VI Вахидеддин" #NT!
+ freedom_poet: "Поэт Свободы" #NT!
+ hero_of_CUP_trials: "Герой испытаний CUP" #NT!
+ muhtar: "Победоносный" #NT!
+ ENG_interim_ruler: "Временный правитель" #NT!
+ ENG_warhawk: "Боевой ястреб" #NT!
+ ENG_true_prince_of_wales: "Настоящий принц Уэльский" #NT!
+ ENG_the_admiral: "Адмирал" #NT!
+ ENG_rightful_king_of_britain: "Законный король Англии" #NT!
+ ENG_reluctant_despot: "Неохотный деспот" #NT!
+ ENG_haig_the_butcher: "Мясник" #NT!
+ ENG_the_second_protector: "Протеже Китченера" #NT!
+ ENG_boney: "Бони" #NT!
+ ENG_boney_desc: "Говорят, что его прозвище «Бони» произошло либо от восхищения Наполеоном Бонапартом, либо от властных манер в сочетании с военным блеском, напоминавшим манеры Наполеона." #NT!
+ knight_king: "Руа-Шевалье" #NT!
+ SWE_liberal_hegemon: "Гегемон" #NT!
+ SWE_ottar: "Оттар" #NT!
+ SWE_principalled: "Принципиальный" #NT!
+ SWE_pragmatist: "Прагматик" #NT!
+ tgwr_elected_royal_puppet: "Марионетка Регента" #NT!
+ little_digger: "Маленький копатель" #NT!
+ national_founder: "Национальный Основатель" #NT!
+ divisive_emperor: "Император-раздорник" #NT!
+ socialist_giant: "Социалистический гигант" #NT!
+ le_pere_fallieres: "§Y"Отец Фальер"§!" #NT!
+ anarchy: "Анархия" #NT!
+ LIB_emergency_powers: "Чрезвычайные полномочия" #NT!
+ proto_fascist: "Протофашистский" #NT!
+ armoured_warfare_theorist: "Теоретик бронетанковой войны" #NT!
+ afrika_herzog: ""Der Afrika-Herzog"" #NT!
+ liberal_economist: "Либеральный экономист" #NT!
+ LIB_puppet_of_barclay: "§OМарионетка Артура Баркли§!" #NT!
+ strong_woman_of_the_italian_socialism: "Сильная женщина итальянского социализма" #NT!
+ revolutionary_syndicalist: "Революционный синдикалист" #NT!
+ glorified_prisoner: "Прославленный узник" #NT!
+ ceremonial_child_monarch: "Церемониальный ребенок-монарх" #NT!
+ imperial_authoritarian: "Имперский Авторитарный" #NT!
+ humble_peacemaker: "Скромный миротворец" #NT!
+ aggressive_peacemaker: "Агрессивный миротворец" #NT!
+ moderate_syndicalist: "Умеренный синдикалист" #NT!
+ relentless_opportunist: "Неумолимый оппортунист" #NT!
+ lunatic_advisor: "Сумасшедший" #NT!
+ militarist_socialist: "Социал-милитаристский" #NT!
+ democratic_fighter: "Борец за демократию" #NT!
+ the_southern_tiger: "Южный тигр" #NT!
+ jefe_de_mexico: "Хефе де Мехико" #NT!
+ jefe_de_mexico_2: "Шеф де Мексика" #NT!
+ jefe_de_la_revolucion: "Хефе де ла Революция" #NT!
+ inefficient_leader: "Неэффективный лидер" #NT!
+ counter_revolutionary: "Контрреволюционный" #NT!
+ shadow_of_diaz: "Тень Диаса" #NT!
+ BEL_wartime_pm: "Глава правительства военного времени" #NT!
+ quiet_cooperator: "Тихий Кооператор" #NT!
+ alb_national_hero: "Национальный герой" #NT!
+ ambitious_wicked_man: "Амбициозный злой человек" #NT!
+ ita_the_poet: "Il Vate" #NT!
+ italian_dandy: "Итальянский денди" #NT!
+ ita_comandante: "Команданте" #NT!
+ primo_rettore: "Il Primo Rettore" #NT!
+ futurist_revolutionary: "Футурист-революционер" #NT!
+ nationalist_syndicalist: "Национальный синдикалист" #NT!
+ the_loyal: "чел Лойал" #NT!
+ devoted_monarch: "Преданный монарх" #NT!
+ no_interest_in_politics: "Никакого интереса к политике" #NT!
+ germanophile: "германофил" #NT!
+ serbophobia: "сербофобный" #NT!
+ father_of_the_republic: "Отец Республики" #NT!
+ gre_ethnarch: "Этнарх" #NT!
+ gre_puppet_of_the_military_league: "Марионетка Военной лиги" #NT!
+ gre_fanatic_monarchist: "Фанатичный монархист" #NT!
+ gre_divisive_autocrat: "Автократ, сеющий раздоры" #NT!
+ gre_socialist_lawyer: "Юрист-социалист" #NT!
+ gre_unorganized_leadership: "Неорганизованное лидерство" #NT!
+ gre_bastion_of_socialism: "Бастион социализма" #NT!
+ gre_metropolitan_bishop: "Митрополит Епископ" #NT!
+ gre_high_commissioner: "Верховный комиссар" #NT!
+ gre_great_general: "Архигос" #NT!
+ gre_king_of_the_people: "Король Народа" #NT!
+ model_workers_leader: "Образцовый рабочий лидер" #NT!
+ revisionist_socialist: "Ревизионистский социалист" #NT!
+ architect_of_japanese_militarism: "Архитектор японского милитаризма" #NT!
+ president_king: "Президент-король" #NT!
+ monarchist_president: "Президент-монархист" #NT!
+ representative_of_farmers: "Представитель фермеров" #NT!
+ emperor_of_unity_proclamation: "Провозглашение Императора Единства" #NT!
+ political_publicist: "Политический публицист" #NT!
+ defender_of_violence: "Защитник насилия" #NT!
+ bandit: "Бандит" #NT!
+ controversy_over_legitimacy: "Споры о легитимности" #NT!
+ tyrant: "Тиран" #NT!
+ civil_administration: "Гражданская администрация" #NT!
+ knyaz_vasyl: "Князь Василий" #NT!
+ ww_one_trauma: "Травма Великой войны" #NT!
+ corrupted_bureaucrat: "Коррумпированный бюрократ" #NT!
+ king_shanxi: "Король Шаньси" #NT!
+ japanophobia: "японофобский" #NT!
+ no_resistance: "Никакого сопротивления" #NT!
+ hate_opium: "Ненавидит опиум" #NT!
+ christian_general: "Христианский генерал" #NT!
+  
+ CHI_trait_dictator: "Диктатор" #NT!
+ CHI_trait_imperial_prime_minister: "Премьер-министр Империи" #NT!
+ CHI_trait_ambitious_commander: "Амбициозный командир" #NT!
+ CHI_trait_foreign_minister: "Министр иностранных дел" #NT!
+ CHI_trait_accepted_monarch: "Принятый монарх" #NT!
+ CHI_trait_army_strongman: "Армейский силач" #NT!
+ CHI_trait_socialist_advocate: "Социалистический адвокат" #NT!
+ CHI_trait_conservative_reformer: "Консервативный реформатор" #NT!
+ schemer_yuan: "Комбинатор" #NT!
+ beiyang_dragon: "Beiyang Dragon" #NT!
+ beiyang_tiger: "Beiyang Tiger" #NT!
+ beiyang_dog: "Beiyang Dog" #NT!
+  
+ dogged_investigator: "Упорный следователь" #NT!
+ reformist_monarch: "Монарх-реформатор" #NT!
+ radical_veteran: "Ветеран-радикал" #NT!
+ revolutionary_figure: "Революционная фигура" #NT!
+ head_of_underground: "Глава Подполья" #NT!
+ great_compromiser: "Великий компромисс" #NT!
+ SER_divisive_absolute_monarch: "Вызывающий разногласия Абсолютный монарх" #NT!
+ SER_anti_fascist_figure: "Антимилитаристский" #NT!
+ teacher_politician: "Учитель Политик" #NT!
+ political_swimmer: "Политический пловец" #NT!
+ SER_rearmer: "Перевооружение" #NT!
+ SER_strongman: "Силач" #NT!
+ SER_popular_queen: "Популярная королева" #NT!
+ sayyid: "Сайид" #NT!
+ sickend: "Больной" #NT!
+ scouting_pioneer: "Пионер-скаутинг" #NT!
+ grandfather_of_the_russian_revolution: "Дедушка русской революции" #NT!
+ airship_manufacturer: "Производитель дирижаблей" #NT!
+ ittihadist_ideologue: "Идеолог иттихадизма" #NT!
+ siberian_machiavelli: "Сибирский Макиавелли" #NT!
+ dealbreaker: "Сделка-прерыватель" #NT!
+ fra_homme_de_la_defaite: "Homme de la Défaite" #NT!
+ anglophile: "Англофил" #NT!
+ al_kabir: "Аль Кабир" #NT!
+ police_officer: "Полицейский" #NT!
+  
+ father_of_revolution: "Отец Революции" #NT!
+ hindenburg_the_leader_of_the_people: "Гинденбург — вождь народа" #NT!
+ great_general: "Великий генерал" #NT!
+ romanias_father: "Отец Румынии" #NT!
+ hohenzollern_member: "Гогенцоллерн Член" #NT!
+ fuhrer: "Фюрер" #NT!
+ shadow_shogun: "Тень Сёгуна" #NT!
+ communist_revolutionary_2: "Социалист-революционер" #NT!
+ primo_ministro_esperto: "Премьер-министр Эсперо" #NT!
+ rey_de_toda_iberia_y_america: "Рей Де Тода Иберия и Америка" #NT!
+ workers_leaders: "Лидер рабочих" #NT!
+ minister_of_economy: "Министр экономики" #NT!

@@ -1,0 +1,14 @@
+td_diplomacy = {
+	add_to_array = { array = ROOT.trade_deal value = FROM.id }
+	ROOT = { add_opinion_modifier = { target = PREV modifier = diplo_trade_deal } }
+	add_opinion_modifier = { target = ROOT modifier = diplo_trade_deal_target }	
+	ROOT = { add_opinion_modifier = { target = PREV modifier = trade_deal_opinion } }
+	add_opinion_modifier = { target = ROOT modifier = trade_deal_opinion_target }	
+}
+td_diplomacy_remove = {
+	ROOT = { remove_opinion_modifier = { target = PREV modifier = trade_deal_opinion } }
+	remove_opinion_modifier = { target = ROOT modifier = trade_deal_opinion_target }	
+	ROOT = { remove_opinion_modifier = { target = PREV modifier = diplo_trade_deal } }
+	remove_opinion_modifier = { target = ROOT modifier = diplo_trade_deal_target }			
+	remove_from_array = { array = ROOT.trade_deal value = FROM.id }
+}

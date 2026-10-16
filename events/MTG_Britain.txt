@@ -1,0 +1,154 @@
+﻿add_namespace = mtg_britain
+
+# Event for RAJ ending civil war if Pakistan hasn't been dealt with.
+country_event = {
+	id = mtg_britain.74
+	title = mtg_britain.74.t
+	desc = mtg_britain.74.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	trigger = {
+		tag = RAJ
+		has_war_with = PAK
+		has_country_flag = RAJ_pakistani_civil_war_flag
+	}
+	
+	#bit of code I added to make things not dumb dumb
+	immediate = {
+		hidden_effect = {
+			remove_ideas = standing_alone
+			PAK = { remove_ideas = standing_alone }
+		}
+	}
+
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 270
+		modifier = {
+			factor = 0.8
+			surrender_progress > 0.2
+		}
+		modifier = {
+			factor = 0.5
+			surrender_progress > 0.5
+		}
+		modifier = {
+			factor = 0.2
+			surrender_progress > 0.8
+		}
+		modifier = {
+			factor = 0.1
+			surrender_progress > 0.9
+		}
+	}
+	
+	# Let's make peace
+	option = {
+		name = mtg_britain.74.a
+		every_state = {
+			limit = {
+				is_owned_by = ROOT
+				is_core_of = PAK
+				is_controlled_by = PAK
+			}
+			transfer_state_to = PAK
+		}
+		if = {
+			limit = {
+				PAK = {
+					owns_state = 443
+					NOT = { owns_state = 444 }
+				}
+			}
+			PAK = { transfer_state = 444 }
+		}
+		if = {
+			limit = {
+				PAK = {
+					controls_state = 430
+				}
+			}
+			BAN = { transfer_state = 430 }
+			if = {
+				limit = {
+					PAK = {	
+						controls_state = 432
+						controls_state = 431
+					}
+				}
+				BAN = {
+					transfer_state = 431
+					transfer_state = 432
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = RAJ
+				has_war_with = PAK
+			}
+			white_peace = PAK
+		}
+		white_peace = PAK
+		PAK = { country_event = { id = mtg_britain.75 } }
+		# effect_tooltip = {
+		# 	delete_unit_template_and_units = {
+   		# 		division_template = "Hindu Militia"
+		# 	}
+		# }
+	}
+
+	# All or nothing - no peace!
+	option = {
+		name = mtg_britain.74.b
+		ai_chance = {
+			factor = 0
+		}
+		add_war_support = -0.1
+	}
+}
+
+# Event for PAK notifying of white peace
+country_event = {
+	id = mtg_britain.75
+	title = mtg_britain.75.t
+	desc = mtg_britain.75.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = mtg_britain.75.a
+		effect_tooltip = {
+			every_country = {
+				limit = {
+					is_in_faction_with = RAJ
+					has_war_with = PAK
+				}
+				white_peace = PAK
+			}
+			RAJ = { white_peace = PAK }
+		}
+		if = {
+			limit = { country_exists = BAN }
+			set_autonomy = {
+				target = BAN
+				autonomy_state = autonomy_dominion
+			}
+			hidden_effect = {
+				BAN = {
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+					set_popularities = {
+						neutrality = 100
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+spriteTypes = {
+
+	frameAnimatedSpriteType = {
+		name = "GFX_CHI_uve_zedong"
+		texturefile = "gfx/leaders/CHI/CHI_uve_zedong.png"
+		noOfFrames = 50
+		animation_rate_fps = 20
+		looping = yes
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+		play_on_show = yes
+	}
+
+	CHI_uve_zedong
+
+	SpriteType = {
+		name = "GFX_ENG_thomas_edward_lawrence"
+		texturefile = "gfx/leaders/ENG/ENG_thomas_edward_lawrence.png"
+	}
+	SpriteType = {
+		name = "GFX_ENG_Sidney_Reilly"
+		texturefile = "gfx/leaders/ENG/ENG_Sidney_Reilly.png"
+	}
+	SpriteType = {
+		name = "GFX_ENG_harry_houdini"
+		texturefile = "gfx/leaders/ENG/ENG_harry_houdini.png"
+	}
+	SpriteType = {
+		name = "GFX_ENG_oswald_rayner"
+		texturefile = "gfx/leaders/ENG/ENG_oswald_rayner.png"
+	}
+	SpriteType = {
+		name = "GFX_GER_mata_hari"
+		texturefile = "gfx/leaders/GER/GER_mata_hari.png"
+	}
+	SpriteType = {
+		name = "GFX_VIN_gilbert_chieu"
+		texturefile = "gfx/leaders/VIN/VIN_gilbert_chieu.png"
+	}
+	SpriteType = {
+		name = "GFX_USA_Sylvanus_Morley"
+		texturefile = "gfx/leaders/USA/USA_Sylvanus_Morley.png"
+	}
+	SpriteType = {
+		name = "GFX_SOV_yakov_blyumkin"
+		texturefile = "gfx/leaders/SOV/SOV_yakov_blyumkin.png"
+	}
+	SpriteType = {
+		name = "GFX_TUR_mumin_aksoy"
+		texturefile = "gfx/leaders/TUR/TUR_mumin_aksoy.png"
+	}
+	SpriteType = {
+		name = "GFX_TUR_yakup_cemil"
+		texturefile = "gfx/leaders/TUR/TUR_yakup_cemil.png"
+	}
+	SpriteType = {
+		name = "GFX_ITA_Luisa_Zeni"
+		texturefile = "gfx/leaders/ITA/ITA_Luisa_Zeni.png"
+	}
+}
+

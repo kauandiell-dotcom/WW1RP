@@ -1,0 +1,46 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ranking_bg"
+		textureFile = "gfx/interface/ranking/ranking_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ruleset_button"
+		textureFile = "gfx/interface/ranking/rules.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ranking_button_bg"
+		textureFile = "gfx/interface/ranking/ranklist_open_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_AGW_rank_hegemony_power"
+		textureFile = "gfx/interface/ranking/rank_idea.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_AGW_rank_global_power"
+		textureFile = "gfx/interface/ranking/rank_idea.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_AGW_rank_super_power"
+		textureFile = "gfx/interface/ranking/rank_idea.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_AGW_rank_regional_power"
+		textureFile = "gfx/interface/ranking/rank_idea.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_AGW_rank_middle_power"
+		textureFile = "gfx/interface/ranking/rank_idea.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_AGW_rank_minor_power"
+		textureFile = "gfx/interface/ranking/rank_idea.png"
+	}
+}

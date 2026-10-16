@@ -1,0 +1,85 @@
+﻿l_russian:
+ HOI4TGW_Opinion_alliance_bonus_boost: "Альянс" #NT!
+ HOI4TGW_Opinion_give_weapons: "Торговля оружием" #NT!
+ HOI4TGW_Opinion_improved_diplomatic_relations: "Улучшение дипломатических отношений" #NT!
+ HOI4TGW_Opinion_hostile_diplomatic_relations: "Враждебные дипломатические отношения" #NT!
+ HOI4TGW_Opinion_anti_fr_policy_malus: "Франкофобия" #NT!
+ HOI4TGW_Opinion_anti_ger_policy_malus: "германофобия" #NT!
+ HOI4TGW_Opinion_anti_ah_policy_malus: "Австрофобия" #NT!
+ HOI4TGW_Opinion_anti_uk_policy_malus: "англофобия" #NT!
+ HOI4TGW_Opinion_anti_ru_policy_malus: "русофобия" #NT!
+ HOI4TGW_Opinion_anti_serb_policy_malus: "сербофобия" #NT!
+ HOI4TGW_Opinion_anti_ottoman_policy_malus: "туркофобия" #NT!
+ HOI4TGW_Opinion_anti_jap_policy_malus: "Ниппонофобия" #NT!
+ HOI4TGW_Opinion_hostile_relations_post_balkan_war: "Последствия Балканской войны" #NT!
+ HOI4TGW_Opinion_JAP_contest_russian_domination: "Конкурс Русское Доминирование" #NT!
+ HOI4TGW_Opinion_JAP_celebrate_tsushima: "Празднуйте Цусиму" #NT!
+ HOI4TGW_Opinion_JAP_ambassador_siam: "Посол Японии в Сиаме" #NT!
+ HOI4TGW_Opinion_JAP_china_13: "Тринадцать Требований" #NT!
+ HOI4TGW_Opinion_JAP_china_21: "Двадцать одно требование" #NT!
+ HOI4TGW_Opinion_alliance_bonus: "Сближение" #NT!
+ HOI4TGW_Opinion_alliance_malus: "Разногласие" #NT!
+ HOI4TGW_Opinion_diplomats_bonus: "Дипломатические отношения изменились" #NT!
+ HOI4TGW_Opinion_ger_ita_alliance_focus_malus: "Дипломатические отношения изменились" #NT!
+ HOI4TGW_Opinion_ger_auh_alliance_focus_malus: "Дипломатические отношения изменились" #NT!
+ HOI4TGW_Opinion_ger_ita_advisor_bonus: "Отправить советников" #NT!
+ HOI4TGW_Opinion_ger_auh_advisor_bonus: "Отправить советников" #NT!
+ HOI4TGW_Opinion_fra_diplomats_bonus: "Отправить дипломатов" #NT!
+ HOI4TGW_Opinion_influence_faction: "Влияние фракции" #NT!
+ HOI4TGW_Opinion_diplomats_malus: "Дипломатический штраф" #NT!
+ HOI4TGW_Opinion_Russia_Leave_Entente: "Российская Империя выходит из Антанты" #NT!
+ benilux_friendship: "Дружба Бенилюкса" #NT!
+ entente_friendship: "Антанта Дружба" #NT!
+ germany_friendship: "Дружба с Германией" #NT!
+ pogroms_opinion: "Поддерживал погромы" #NT!
+ MNT_montenegrin_japanese_war: "Черногорско-японская война" #NT!
+ wild_west_province: "Дикий Запад" #NT!
+ diplomatic_protest: "Дипломатический протест" #NT!
+ immigrant_strike: "Забастовка иммигрантов" #NT!
+ FRA_french_intervention: "Колониальное вмешательство" #NT!
+ white_aus_policy: "Политика Белой Австралии" #NT!
+ stand_with_major_faction: "Поддерживает Альянс" #NT!
+ stand_with_major_faction_opposite: "Поддерживает вражеский альянс" #NT!
+ great_war_ally: "Союзники в Великой войне" #NT!
+ great_war_enemy: "Враги в Великой войне" #NT!
+ poland_friend: "Польско-украинский союз" #NT!
+ ukraine_friend: "Польско-украинский союз" #NT!
+ soviet_enemy: "Враг революции." #NT!
+ soviet_friends: "Друг революции" #NT!
+ soviet_isolation: "Изоляция" #NT!
+ lenin_dies: "Смерть Ленина" #NT!
+ martov_dies: "Смерть Мартова" #NT!
+ martov_leader: "Мартов — лидер" #NT!
+ stalin_leader: "Сталин — лидер" #NT!
+ trotsky_leader: "Троцкий — лидер" #NT!
+ russian_polish_treat: "Подписание Рижского договора" #NT!
+ kis_ask_ger_surrend: "Компьенское перемирие" #NT!
+ ukraninian_russian_treat: "Подписан договор с Украиной" #NT!
+ rusrevolt_new_sov_generals: "Многие командиры Красной Армии уйдут в отставку и будут заменены новыми лидерами." #NT!
+ entente_helps: "Помощь Антанте" #NT!
+ entente_intervention: "Интервенция Антанта" #NT!
+ TUR_sovereignty_of_balkans: "Признали наш суверенитет" #NT!
+ CHI_coop: "Сотрудничество с иностранцами" #NT!
+ bel_integrating_congo: "Интеграция Конго" #NT!
+ tgwr_opinion_german_polish_customs_war: "Немецко-польская таможенная война" #NT!
+ tgwr_opinion_embargo: "Эмбарго" #NT!
+ airship_bomber_equipment_design_cost_factor: "Стоимость проектирования жесткого дирижабля-бомбардировщика" #NT!
+ anti_colonialism_modifier: "Антиколониализм" #NT!
+ CHI_federalism: "Китайский провинциальный федерализм" #NT!
+ CHI_hate_fubi: "Китайские реакционеры" #NT!
+ imperial_sanction_tt: "§RВы не имеете права идти на войну без одобрения Императора.§!" #NT!
+ ENG_containment_doctrine_opinion_modifier: "Политика сдерживания" #NT!
+ ENG_veto_imperial_federation: "Имперская Федерация наложила вето" #NT!
+ ENG_didnt_supported_paris_conference: "Британия не поддержала Парижскую конференцию" #NT!
+ anglo_japanese_alliance: "Англо-японский союз" #NT!
+ historical_friend: "Исторический друг" #NT!
+ historical_rival: "Исторический Соперник" #NT!
+ czechoslovak_legion_opinion: "Поддержал Чехословацкий легион" #NT!
+ CHI_breakaway_integration: "Интеграция отколовшихся" #NT!
+ balkan_strategy: "Балканская стратегия" #NT!
+ great_game: "Отличная игра" #NT!
+ naval_arms_race: "Гонка военно-морских вооружений" #NT!
+ danube_convention_ROM_SER: "Дунайская конвенция" #NT!
+ bomb_affair_MNT_SER: "Дело бомбардировщика" #NT!
+ personal_friendship: "Личная дружба" #NT!
+ kiautschou_malus: "Японская оккупация в Шаньдуне" #NT!

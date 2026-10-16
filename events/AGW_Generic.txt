@@ -1,0 +1,102 @@
+add_namespace = agw_generic
+
+# Annexation Demand
+country_event = {
+	id = agw_generic.1
+	title = "[FROM.GetName] demands our annexation"
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		ai_chance = {
+			base = 40
+		}
+
+		name = "Accept"
+
+		FROM = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+
+	option = {
+		ai_chance = {
+			base = 60
+		}
+
+		name = "Reject"
+
+		FROM = {
+			create_wargoal = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+	}
+}
+
+# Puppet Demand
+country_event = {
+	id = agw_generic.2
+	title = "[FROM.GetName] demands our submission"
+	picture = GFX_report_event_generic_read_write
+
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		ai_chance = {
+			base = 40
+
+			modifier = {
+				FROM = { original_tag = ROM }
+				ROOT = { original_tag = BUL }
+
+				FROM = { has_completed_focus = ROM_spread_communism_in_bulgaria }
+
+				add = -30
+			}
+		}
+
+		name = "Accept"
+
+		FROM = {
+			puppet = {
+				target = ROOT
+			}
+		}
+	}
+
+	option = {
+		ai_chance = {
+			base = 60
+
+			modifier = {
+				FROM = { original_tag = ROM }
+				ROOT = { original_tag = BUL }
+
+				FROM = { has_completed_focus = ROM_spread_communism_in_bulgaria }
+
+				add = 30
+			}
+		}
+
+		name = "Reject"
+
+		FROM = {
+			create_wargoal = {
+				target = ROOT
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}

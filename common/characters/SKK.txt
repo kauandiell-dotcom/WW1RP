@@ -1,0 +1,58 @@
+characters={
+	SKK_thutob_namgyal={
+		name=SKK_thutob_namgyal
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_navy_3.dds"
+			}
+		}
+		country_leader={
+			ideology=theocracy_ideology
+		}
+	}
+	SKK_sidkeong_tulku_namgyal={
+		name=SKK_sidkeong_tulku_namgyal
+		portraits={
+			civilian={
+				large="gfx/leaders/SKK/SKK_Sidkeong_Tulku_Namgyal.png"
+			}
+		}
+		country_leader={
+			ideology=theocracy_ideology
+		}
+	}
+	SKK_tashi_namgyal={
+		name=SKK_tashi_namgyal
+		portraits={
+			civilian={
+				large="gfx/leaders/SKK/SKK_Tashi_Namgyal.png"
+			}
+		}
+		country_leader={
+			ideology=theocracy_ideology
+		}
+	}
+	SKK_prime_minister_of_chess = {
+		name = SKK_prime_minister_of_chess
+		portraits={
+			civilian={
+				large="gfx/leaders/SKK/prime_minister_of_chess.dds"
+			}
+		}
+		country_leader={
+			ideology=theocracy_ideology
+		}
+	}
+	SKK_emperor_mete_invincible_chess_player = {
+		name = SKK_emperor_mete_invincible_chess_player
+		portraits={
+			civilian={
+				large="gfx/leaders/SKK/emperor_mete_invincible_chess_player.dds"
+			}
+		}
+		country_leader={
+			ideology=theocracy_ideology
+		}
+	}
+}
+

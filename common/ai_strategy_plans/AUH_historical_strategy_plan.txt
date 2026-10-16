@@ -1,0 +1,72 @@
+AUH_historical_plan = {
+	name = "Austro-Hungarian historical plan"
+	desc = ""
+
+	enable = {
+		original_tag = AUH
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = AUH_ai_behavior 
+					option = DEFAULT
+				}
+			}
+			has_country_flag = AUH_AI_RANDOM_HISTORICAL
+			has_game_rule = {
+				rule = AUH_ai_behavior 
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {}
+
+	ai_national_focuses = {
+		AUH_recovering_the_economy
+		AUH_output_in_austrian_machine_building
+		AUH_additions_to_austrian_railway_network
+		AUH_expansion_in_the_machine_building_story
+		AUH_the_composition_of_austria_hungarys_machinery_trade
+		AUH_open_new_grain_factories
+		AUH_open_vienna_universitie
+		AUH_improve_the_cisleithania_infrastructure
+		AUH_build_new_road_for_transleithania
+		AUH_empires_war_factories
+		AUH_wahle_deinen_kaiser
+		AUH_stick_to_traditions
+		AUH_focus_on_minorities
+		AUH_cisleithania_policy
+		AUH_hungarian_policy
+		AUH_appoint_the_hungarian_prime
+		AUH_build_new_factories_for_transleithania
+		AUH_strong_and_stable_dual_monarchy
+		AUH_new_austrian_railways
+		AUH_dissolve_cezch_parliament
+		AUH_execute_the_tomas_masaryk
+		AUH_royal_visit_to_vienna
+		AUH_end_romanian_nationalism
+		AUH_end_galician_national_movement
+		AUH_royal_visit_to_budapest
+		AUH_strong_ties_with_slovenians
+		
+		AUH_empires_war_economy
+
+		AUH_iron_fist_of_the_central_europe
+		AUH_expand_the_empire
+		AUH_start_mobilization
+		AUH_follow_franz_conrads_plan
+		AUH_german_military_advisors
+
+		AUH_labour_force_in_mechanical_engineering
+		AUH_boost_the_war_production
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

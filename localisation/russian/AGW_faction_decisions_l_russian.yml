@@ -1,0 +1,5 @@
+﻿l_russian:
+ generic_factions: "Альянсы" #NT!
+  
+ create_faction: "Изменить правила альянса" #NT!
+ join_faction_FROM: "Войти в [From.GetAdjective] Альянс" #NT!

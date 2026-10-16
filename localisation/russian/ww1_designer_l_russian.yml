@@ -1,0 +1,8 @@
+﻿l_russian:
+ NAME_THEME_HISTORICAL_UNPROTECTED_CRUISERS: "Исторические незащищенные крейсеры"
+ NAME_THEME_HISTORICAL_PROTECTED_CRUISERS: "Исторические защищенные крейсеры"
+ NAME_THEME_HISTORICAL_COASTAL_SUBMARINES: "Исторические прибрежные подводные лодки"
+ NAME_THEME_HISTORICAL_MINELAYING_SUBMARINES: "Исторические подводные лодки-заградители"
+  
+ tank_designer_signal: "Сигнал (рота поддержки)"
+ tank_designer_signal_role_disallowed: "Добавьте модуль, позволяющий роли §HSignal§! переключаться на нее."

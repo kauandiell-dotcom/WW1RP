@@ -1,0 +1,30 @@
+﻿l_english:
+ global_power_allowed_war_date:0 "Allowed War Dates:\nFocus 1914\nJustify 1915"
+ super_power_allowed_war_date:0 "Allowed War Dates:\nFocus 1913 June\nJustify 1914 June"
+ regional_power_allowed_war_date:0 "Allowed War Dates:\nFocus 1912\nJustify 1913"
+ middle_power_allowed_war_date:0 "Allowed War Dates:\nFocus 1911\nJustify 1912"
+ minor_power_allowed_war_date:0 "Allowed War Dates:\nFocus 1911\nJustify 1911"
+ 
+ ranks_hegemony_power_title_tt:0 "HEGEMONY POWERS\n§Y(16)§!"
+ ranks_global_power_title_tt:0 "GLOBAL POWERS\n§Y(10)§!"
+ ranks_super_power_title_tt:0 "SUPER POWERS\n§Y(8)§!"
+ ranks_regional_power_title_tt:0 "REGIONAL POWERS\n§Y(6)§!"
+ ranks_middle_power_title_tt:0 "MIDDLE POWERS\n§Y(4)§!"
+ ranks_minor_power_title_tt:0 "MINOR POWERS\n§Y(2)§!"
+ 
+ ranks_faction_list:0 "§YFACTIONS§!"
+ faction_score:0 "[?fac_score]/[?dr_faction_limit_var]"
+ 
+ AGW_rank_hegemony_power:0 "Hegemony Power"
+ AGW_rank_global_power:0 "Global Power"
+ AGW_rank_super_power:0 "Super Power"
+ AGW_rank_regional_power:0 "Regional Power"
+ AGW_rank_middle_power:0 "Middle Power"
+ AGW_rank_minor_power:0 "Minor Power"
+ 
+ AGW_rank_hegemony_power_desc:0 "This country is hegemony power. Allowed War Dates:\nFocus 1914\nJustify 1915"
+ AGW_rank_global_power_desc:0 "This country is global power. Allowed War Dates:\nFocus 1914\nJustify 1915"
+ AGW_rank_super_power_desc:0 "This country is super power. Allowed War Dates:\nFocus 1913 June\nJustify 1914 June"
+ AGW_rank_regional_power_desc:0 "This country is regional power. Allowed War Dates:\nFocus 1912\nJustify 1913"
+ AGW_rank_middle_power_desc:0 "This country is middle power. Allowed War Dates:\nFocus 1911\nJustify 1912"
+ AGW_rank_minor_power_desc:0 "This country is minor power. Allowed War Dates:\nFocus 1911\nJustify 1911"

@@ -1,0 +1,1708 @@
+add_namespace = britas
+
+#East-Asia becomes free
+country_event = {
+	id = britas.1
+	title = britas.1.t
+	desc = britas.1.d
+	picture = GFX_report_event_royal_parade
+	trigger = {
+		tag = ENG
+		has_country_flag = great_war_loser
+		OR = {
+			# has_global_flag = frankfurt_treaty
+			# has_global_flag = versallies_treaty
+		}
+		OR = {
+			has_subject = RAJ
+			has_subject = MAL
+			has_subject = SRW
+			has_subject = BRN
+			has_subject = BHU
+			has_subject = NEP
+			has_subject = SKK
+			owns_state = 746
+		}
+	}
+	mean_time_to_happen = {
+		days = 15
+	}
+	fire_only_once = yes
+	option = {
+		name = britas.1.a
+		if = {
+			limit = {
+				has_subject = RAJ
+			}
+			end_puppet = RAJ
+			hidden_effect = {
+				RAJ = {
+					if = {
+						limit = {
+							is_in_faction = yes
+						}
+						leave_faction = yes
+					}
+					release = BRM
+					set_party_name = {
+						ideology = neutrality
+						long_name = RAJ_lost_great_war_long
+						name = RAJ_lost_great_war
+					}
+					add_ideas = standing_alone	
+					RAJ_sir_charles_townshend = {
+						if = {
+							limit = {
+								has_ideology = oligarchism
+							}
+							promote_character = oligarchism
+						}
+						else = {
+							add_country_leader_role = {
+								promote_leader = yes
+								country_leader = {
+									ideology = oligarchism
+									traits = { hedonist british_agent }
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_character = RAJ_arthur_a_barrett
+						}
+						retire_character = RAJ_arthur_a_barrett
+					}
+					if = {
+						limit = {
+							has_character = RAJ_john_nixon
+						}
+						retire_character = RAJ_john_nixon
+					}
+					set_cosmetic_tag = RAJ_UK
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_subject = MAL
+			}
+			end_puppet = MAL
+			hidden_effect = {
+				MAL = {
+					set_cosmetic_tag = MAL_UK
+				}
+				if = {
+					limit = {
+						owns_state = 733
+					}
+					MAL = { transfer_state = 733 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_subject = AFG
+			}
+			end_puppet = AFG
+		}
+		if = {
+			limit = {
+				has_subject = BHU
+			}
+			end_puppet = BHU
+		}
+		if = {
+			limit = {
+				has_subject = SKK
+			}
+			end_puppet = SKK
+		}
+		if = {
+			limit = {
+				has_subject = NEP
+			}
+			end_puppet = NEP
+		}
+		if = {
+			limit = {
+				has_subject = SRW
+			}
+			end_puppet = SRW
+		}
+		if = {
+			limit = {
+				has_subject = BRN
+			}
+			end_puppet = BRN
+		}
+		if = {
+			limit = {
+				OR = {
+					has_subject = SRL
+					owns_state = 422
+				}
+			}
+			end_puppet = SRL
+			422 = { transfer_state_to = SRL }
+		}
+		if = {
+			limit = {
+				owns_state = 896
+			}
+			random_other_country = {
+				limit = {
+					owns_state = 897
+				}
+				transfer_state = 896
+			}
+		}
+		if = {
+			limit = {
+				owns_state = 746
+			}
+			random_other_country = {
+				limit = {
+					OR = {
+						owns_state = 744
+						owns_state = 745
+					}
+					OR = {
+						has_country_flag = great_war_winner
+						is_china_or_warlord_no_tt = yes
+					}
+				}
+				transfer_state = 746
+			}
+		}
+	}
+}
+
+#India Fractures
+country_event = {
+	id = britas.2
+	title = britas.2.t
+	desc = britas.2.d
+	picture = GFX_report_event_india_protests
+	fire_only_once = yes
+	trigger = {
+		tag = RAJ
+		has_war = no
+		is_subject = no
+		has_global_flag = raj_collapse
+		any_owned_state = {
+			is_core_of = PAK
+		}
+		NOT = { has_country_flag = RAJ_british_remnants_flag }
+	}
+	mean_time_to_happen = { days = 70 }
+	option = {
+		name = britas.2.a
+		add_stability = -0.10
+		set_division_template_lock = {
+			division_template = "Hindu Militia"
+			is_locked = no
+		}
+		delete_units = {
+			division_template = "Islamist Militia"
+			disband = no
+		}
+		release = PAK
+		declare_war_on = {
+			target = PAK
+			type = annex_everything
+		}
+		hidden_effect = {
+			remove_state_core = 430
+			add_ideas = standing_alone	
+			PAK = {
+				add_ideas = standing_alone	
+			}
+			PAK = {
+				load_oob = PAK_revolt
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 15000
+					producer = RAJ
+				}
+				# Sind
+				443 = {
+					create_unit = {
+						division = "name = \"1. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+					create_unit = {
+						division = "name = \"2. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+					create_unit = {
+						division = "name = \"3. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+				}
+				# Punjab
+				440 = {
+					create_unit = {
+						division = "name = \"4. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+					create_unit = {
+						division = "name = \"5. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+					create_unit = {
+						division = "name = \"6. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+				}
+				# Kashmir
+				441 = {
+					create_unit = {
+						division = "name = \"7. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+					create_unit = {
+						division = "name = \"8. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+					create_unit = {
+						division = "name = \"9. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+				}
+				# Peshawar
+				442 = {
+					create_unit = {
+						division = "name = \"10. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+					create_unit = {
+						division = "name = \"11. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+				}
+				# Baluchistan
+				444 = {
+					create_unit = {
+						division = "name = \"12. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+					create_unit = {
+						division = "name = \"13. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+				}
+				# Quetta
+				445 = {
+					create_unit = {
+						division = "name = \"14. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+					create_unit = {
+						division = "name = \"15. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+					create_unit = {
+						division = "name = \"16. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+					create_unit = {
+						division = "name = \"17. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+					create_unit = {
+						division = "name = \"18. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+					create_unit = {
+						division = "name = \"19. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+						owner = PAK
+					}
+				}
+			}
+			PAK = {
+				if = {
+					limit = {
+						strength_ratio = {
+							tag = RAJ
+							ratio < 0.9
+						}
+					}
+					# Punjab
+					440 = {
+						create_unit = {
+							division = "name = \"37. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+							owner = PAK
+						}
+						create_unit = {
+							division = "name = \"38. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+							owner = PAK
+						}
+					}
+				}
+				if = {
+					limit = {
+						strength_ratio = {
+							tag = RAJ
+							ratio < 0.9
+						}
+					}
+					# Punjab
+					440 = {
+						create_unit = {
+							division = "name = \"41. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+							owner = PAK
+						}
+						create_unit = {
+							division = "name = \"42. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+							owner = PAK
+						}
+					}
+				}
+				if = {
+					limit = {
+						strength_ratio = {
+							tag = RAJ
+							ratio < 0.9
+						}
+					}
+					# Punjab
+					440 = {
+						create_unit = {
+							division = "name = \"45. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+							owner = PAK
+						}
+						create_unit = {
+							division = "name = \"46. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+							owner = PAK
+						}
+					}
+				}
+				if = {
+					limit = {
+						strength_ratio = {
+							tag = RAJ
+							ratio < 0.9
+						}
+					}
+					# Punjab
+					440 = {
+						create_unit = {
+							division = "name = \"49. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+							owner = PAK
+						}
+						create_unit = {
+							division = "name = \"50. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+							owner = PAK
+						}
+					}
+				}
+				if = {
+					limit = {
+						strength_ratio = {
+							tag = RAJ
+							ratio < 0.9
+						}
+					}
+					# Punjab
+					440 = {
+						create_unit = {
+							division = "name = \"52. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+							owner = PAK
+						}
+						create_unit = {
+							division = "name = \"53. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+							owner = PAK
+						}
+					}
+				}
+				if = {
+					limit = {
+						strength_ratio = {
+							tag = RAJ
+							ratio < 0.9
+						}
+					}
+					# Punjab
+					440 = {
+						create_unit = {
+							division = "name = \"55. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+							owner = PAK
+						}
+						create_unit = {
+							division = "name = \"56. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+							owner = PAK
+						}
+					}
+				}
+				if = {
+					limit = {
+						strength_ratio = {
+							tag = RAJ
+							ratio < 0.9
+						}
+					}
+					# Punjab
+					440 = {
+						create_unit = {
+							division = "name = \"58. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+							owner = PAK
+						}
+						create_unit = {
+							division = "name = \"59. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5"
+							owner = PAK
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = RAJ_marginalized_muslim_community_angry
+				}
+				swap_ideas = {
+					add_idea = RAJ_marginalized_muslim_community_happy
+					remove_idea = RAJ_marginalized_muslim_community_angry
+				}
+			}
+			if = {
+				limit = {
+					has_idea = RAJ_marginalized_muslim_community
+				}
+				swap_ideas = {
+					add_idea = RAJ_marginalized_muslim_community_happy
+					remove_idea = RAJ_marginalized_muslim_community
+				}
+			}
+			set_country_flag = RAJ_pakistani_civil_war_flag
+		}
+	}
+}
+
+#Pakistan is puppeted by the Blobbomans
+country_event = {
+	id = britas.3
+	title = britas.3.t
+	desc = britas.3.d
+	picture = GFX_report_event_royal_parade
+	trigger = {
+		tag = TUR
+		has_country_flag = great_war_winner
+		NOT = {
+			has_government = communism
+		}	
+		ENG = {
+			has_country_flag = great_war_loser
+		}
+		OR = {
+			# has_global_flag = frankfurt_treaty
+			# has_global_flag = versallies_treaty
+		}
+		PAK = {
+			is_subject = no
+			has_war = no
+		}
+		RAJ = {
+			has_country_flag = RAJ_pakistani_civil_war_flag
+		}
+	}
+	fire_only_once = yes
+	# my ottoman has 9% stability sending troops to india????
+	option = {
+		name = britas.3.a
+		trigger = {
+			has_stability > 0.4
+			has_war_support > 0.4
+			strength_ratio = {
+				tag = PAK
+				ratio > 1.0
+			}
+		}
+		if = {
+			limit = {
+				has_subject_autonomy_feature = yes
+			}
+			set_autonomy = {
+				target = PAK
+				autonomy_state = autonomy_tgwr_informal_protectorate
+			}
+			PAK = { set_country_flag = protectorate }
+			else = {
+				puppet = PAK
+				PAK = { add_ideas = protectorate }
+			}
+		}
+		hidden_effect = {
+			PAK = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 2
+					neutrality = 98
+				}
+			}
+		}
+	}
+	option = {
+		name = britas.3.b
+	}
+}
+
+#Nineteenth Burmese-Siamese War
+news_event = {
+	id = britas.4
+	title = britas.4.t
+	desc = britas.4.d
+	picture = GFX_news_event_ast_transfer_singapore
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = britas.4.a
+		trigger = {
+			NOT = {
+				original_tag = BRM
+				original_tag = RAJ
+				original_tag = ENG
+			}
+		}
+	}
+	option = {
+		name = britas.4.b
+		trigger = {
+			OR = {
+				original_tag = BRM
+				original_tag = RAJ
+				original_tag = ENG
+			}
+		}
+	}
+}
+
+#ANZAC and Germany take stewardship of Pacific/Indian Islands
+country_event = {
+	id = britas.5
+	title = britas.5.t
+	desc = britas.5.d
+	picture = GFX_report_event_ANZAC_day
+	trigger = {
+		tag = ENG
+		OR = {
+			has_civil_war = yes
+			has_country_flag = ENG_socialist_britain_flag
+		}
+		any_owned_state = {
+			OR = {
+				region = 32
+				region = 60
+				region = 71
+				region = 74
+				region = 83
+				region = 85
+				region = 97
+				region = 99
+				region = 101
+				region = 165
+				region = 178
+			}
+		}
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = britas.5.a
+		if = {
+			limit = {
+				owns_state = 326
+			}
+			# British Hong Kong
+			effect_tooltip = {
+				release = HKG
+			}
+			hidden_effect = {
+				HKG = {
+					inherit_technology = ROOT
+					add_state_core = 326
+					transfer_state = 326
+					326 = {
+						create_unit = {
+							division = "name = \"British Forces Overseas Hong Kong\" division_template = \"Infantry Division\" start_experience_factor = 1"
+							owner = HKG
+						}
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 3000
+						producer = ROOT
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 1000
+						producer = ROOT
+					}
+					if = {
+						limit = {
+							ROOT = { has_country_flag = great_war_loser }
+						}
+						set_country_flag = great_war_loser
+					}
+				}
+			}
+		}
+		every_owned_state = {
+			limit = {
+				OR = {
+					region = 32
+					region = 60
+					region = 71
+					region = 74
+					region = 83
+					region = 85
+					region = 97
+					region = 99
+					region = 101
+					region = 165
+					region = 178
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						region = 60
+						region = 85
+					}
+				}
+				random_country = {
+					limit = {
+						OR = {
+							tag = GER
+							tag = FRA
+						}
+						has_country_flag = great_war_winner
+					}
+					transfer_state = PREV
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						region = 71
+						region = 99
+					}
+				}
+				transfer_state_to = AST
+			}
+			if = {
+				limit = {
+					OR = {
+						region = 32
+						region = 83
+						region = 97
+						region = 178
+					}
+				}
+				if = {
+					limit = {
+						GER = {
+							has_global_flag = GER_turn_to_asia
+							has_country_flag = great_war_winner
+						}
+					}
+					transfer_state_to = GER
+				}
+				else = {
+					if = {
+						limit = {
+							region = 83
+						}
+						transfer_state_to = AST
+					}
+					if = {
+						limit = {
+							region = 178
+						}
+						transfer_state_to = NZL
+					}
+					if = {
+						limit = {
+							region = 32
+						}
+						if = {
+							limit = {
+								CHL = {
+									exists = yes
+									is_subject = no
+									NOT = { has_country_flag = great_war_loser } 
+								}
+							}
+							transfer_state_to = CHL
+						}
+						else_if = {
+							limit = {
+								any_country = {
+									owns_state = 629
+									is_subject = no
+									NOT = { has_country_flag = great_war_loser } 
+								}
+							}
+							random_country = {
+								limit = {
+									owns_state = 629
+								}
+								transfer_state = PREV
+							}
+						}
+						else = {
+							random_country = {
+								limit = {
+									OR = {
+										tag = GER
+										tag = FRA
+									}
+									has_country_flag = great_war_winner
+								}
+								transfer_state = PREV
+							}
+						}
+					}
+					if = {
+						limit = {
+							region = 97
+						}
+						random_country = {
+							limit = {
+								OR = {
+									tag = GER
+									tag = FRA
+								}
+								has_country_flag = great_war_winner
+							}
+							transfer_state = PREV
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_owned_by = ROOT
+				}
+				if = {
+					limit = {
+						owner = { has_country_flag = great_war_loser }
+					}
+					random_country = {
+						limit = {
+							OR = {
+								tag = GER
+								tag = FRA
+							}
+							has_country_flag = great_war_winner
+						}
+						transfer_state = PREV
+					}
+				}
+				else = {
+					transfer_state_to = GER
+				}
+			}
+		}
+	}
+}
+
+#Indian revolt against British admin
+country_event = {
+	id = britas.6
+	title = britas.6.t
+	desc = britas.6.d
+	picture = GFX_report_event_india_protests
+	trigger = {
+		tag = RAJ
+		is_subject = no
+		has_government = neutrality
+		ENG = {
+			has_country_flag = great_war_loser
+		}
+		OR = {
+			# has_global_flag = frankfurt_treaty
+			# has_global_flag = versallies_treaty
+		}
+		NOT = {
+			has_global_flag = raj_collapse
+		}
+	}
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					owns_state = 659
+				}
+				random_other_country = {
+					limit = {
+						owns_state = 293
+					}
+					transfer_state = 659
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						NOT = { original_tag = RAJ }
+						has_country_flag = great_war_loser
+						owns_state = 320
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							tag = GER
+							tag = FRA
+						}
+						has_country_flag = great_war_winner
+					}
+					transfer_state = 320
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						NOT = { original_tag = RAJ }
+						has_country_flag = great_war_loser
+						owns_state = 321
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							tag = GER
+							tag = FRA
+						}
+						has_country_flag = great_war_winner
+					}
+					transfer_state = 321
+				}
+			}
+			leave_faction = yes
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 43
+				neutrality = 8
+				fascism = 23
+				communism = 26
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = RAJ_princes_long
+				name = RAJ_princes
+			}
+			set_country_flag = raj_revolt
+			create_dynamic_country = {
+				original_tag = RAJ
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					neutrality = 100
+				}
+				set_country_flag = RAJ_british_remnants_flag
+				set_cosmetic_tag = RAJ_UK
+				reserve_dynamic_country = yes
+			}
+			every_owned_state = {
+				limit = {
+					NOT = {
+						state = 430
+						state = 431
+						state = 440
+						state = 441
+						state = 442
+						state = 445
+					}
+				}
+				transfer_state_to = BRJ
+			}
+			transfer_units_fraction = {
+				target = BRJ
+				size = 0.70
+				keep_unit_leaders_trigger = {
+					NOT = { has_trait = trait_royalist }
+				}
+			}
+			load_oob = RAJ_revolt
+			BRJ = {
+				add_ideas = {
+					RAJ_agrarian_society
+					RAJ_marginalized_muslim_community
+					RAJ_princely_states_donations_troops
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = RAJ_lost_great_war_long
+					name = RAJ_lost_great_war
+				}
+				promote_character = RAJ_sir_charles_townshend
+				add_ideas = standing_alone	
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Hindu Militia\"	division_template = \"Hindu Militia\"	start_experience_factor = 0.1	start_equipment_factor = 0.3"
+						owner = ROOT
+						allow_spawning_on_enemy_provs = yes
+						count = 1
+					}
+				}
+			}
+			every_owned_state = {
+				create_unit = {
+					division = "name = \"Hindu Militia\"	division_template = \"Hindu Militia\"	start_experience_factor = 0.1	start_equipment_factor = 0.3"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+					count = 3
+				}
+				create_unit = {
+					division = "name = \"Islamist Militia\"	division_template = \"Islamist Militia\"	start_experience_factor = 0.1	start_equipment_factor = 0.3"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+					count = 3
+				}
+				create_unit = {
+					division = "name = \"Socialist Militia\"	division_template = \"Socialist Militia\"	start_experience_factor = 0.1	start_equipment_factor = 0.3"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+					count = 1
+				}
+			}
+			add_ideas = RAJ_idea_independence_war
+			add_ideas = standing_alone	
+			set_global_flag = raj_collapse
+		}
+	}
+	option = {
+		name = britas.6.a
+		news_event = {
+			id = eng_news.15
+			hours = 3
+		}
+		BRJ = {
+			declare_war_on = {
+				target = ROOT
+				type = annex_everything
+			}
+			change_tag_from = ROOT
+		}
+	}
+	option = {
+		name = britas.6.b
+		trigger = { is_ai = no }
+		news_event = {
+			id = eng_news.15
+			hours = 3
+		}
+		BRJ = {
+			declare_war_on = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+	}
+}
+
+#Hedgewar challenges Pillai
+country_event = {
+	id = britas.8
+	title = britas.8.t
+	desc = britas.8.d
+	picture = GFX_report_event_royal_parade
+	trigger = {
+		original_tag = RAJ
+		has_government = democratic
+		is_subject = no
+		has_civil_war = no
+		NOT = {
+			any_other_country = {
+				original_tag = RAJ
+				has_war_with = ROOT
+			}
+		}
+		NOT = { has_country_flag = RAJ_british_remnants_flag }
+	}
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			set_popularities = {
+				democratic = 35
+				neutrality = 0
+				fascism = 32.5
+				communism = 32.5
+			}
+		}
+	}
+	option = {
+		name = britas.8.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.15
+		}
+		add_stability = -0.1
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = britas.8.b
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		set_politics = {
+			ruling_party = fascism
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Hindu Pogroms
+news_event = {
+	id = britas.9
+	title = britas.9.t
+	desc = britas.9.d
+	picture = GFX_news_event_indian_famine
+	major = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	trigger = {
+		RAJ = {
+			has_government = fascism
+			is_subject = no
+			has_civil_war = no
+			NOT = {
+				any_other_country = {
+					original_tag = RAJ
+					has_war_with = ROOT
+				}
+			}
+		}
+		NOT = {
+			has_global_flag = hindu_pogroms_in_raj
+		}
+		NOT = { has_country_flag = RAJ_british_remnants_flag }
+	}
+	immediate = {
+		set_global_flag = hindu_pogroms_in_raj
+	}
+	option = {
+		name = britas.9.a
+		trigger = {
+			original_tag = RAJ
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_stability = -0.1
+		add_manpower = -3000
+		hidden_effect = {
+			set_country_flag = hindu_genocide
+		}
+	}
+	option = {
+		name = britas.9.b
+		trigger = {
+			NOT = {
+				original_tag = RAJ
+			}
+		}
+	}
+}
+
+#Gandhi is MAD!!! >:(
+country_event = {
+	id = britas.10
+	title = britas.10.t
+	desc = britas.10.d
+	picture = GFX_report_event_royal_parade
+	trigger = {
+		tag = RAJ
+		has_country_flag = hindu_genocide
+		has_government = fascism
+		is_subject = no
+		has_civil_war = no
+		NOT = { has_country_flag = RAJ_british_remnants_flag }
+		NOT = {
+			any_other_country = {
+				original_tag = RAJ
+				has_war_with = ROOT
+			}
+		}
+	}
+	fire_only_once = yes
+	option = {
+		#Assassinate Gandhi
+		name = britas.10.a
+		add_popularity = {
+			ideology = communism
+			popularity = -0.25
+		}
+		add_stability = -0.15
+	}
+	option = {
+		#Imprison Gandhi- More Gandhi Support
+		name = britas.10.b
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+	}
+	option = {
+		#Placate Gandhi- more communism, upset nationalists
+		name = britas.10.c
+		add_popularity = {
+			ideology = communism
+			popularity = 0.15
+		}
+		RAJ_mohandas_karamchand_gandhi = {
+			add_country_leader_role = {
+				country_leader = {
+					ideology = religious_communism
+					traits = { eng_revolutionary_icon_2 }
+				}
+			}
+			promote_character = religious_communism
+		}
+		add_stability = -0.1
+		hidden_effect = {
+			country_event = {
+				id = britas.11
+				days = 7
+			}
+		}
+	}
+}
+
+#Gandhists demands social reform
+country_event = {
+	id = britas.11
+	title = britas.11.t
+	desc = britas.11.d
+	picture = GFX_report_event_royal_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+	#Stop Gandhi now before it's too late
+	option = {
+		name = britas.11.a
+		add_stability = -0.05
+		add_popularity = {
+			ideology = communism
+			popularity = -0.15
+		}
+	}
+	#Give in
+	option = {
+		name = britas.11.b
+		add_stability = 0.1
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		country_event = {
+			id = britas.12
+			days = 7
+		}
+	}
+}
+
+#Gandhi's March on Delhi
+country_event = {
+	id = britas.12
+	title = britas.12.t
+	desc = britas.12.d
+	picture = GFX_report_event_royal_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = britas.12.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.25
+		}
+		set_politics = {
+			ruling_party = communism
+		}
+	}
+}
+
+#British Loyalist India is puppeted by the Australians
+country_event = {
+	id = britas.13
+	title = britas.13.t
+	desc = britas.13.d
+	picture = GFX_report_event_indian_soldiers
+	trigger = {
+		OR = {
+			has_country_flag = has_british_monarchy
+			AND = {
+				original_tag = ENG
+				has_country_flag = ENG_nationalist_britain_flag
+				has_war = no
+			}
+		}
+		is_subject = no
+		has_capitulated = no
+		NOT = {
+			has_government = communism
+		}
+		RAJ = {
+			has_country_flag = RAJ_british_remnants_flag
+			has_war = no
+			is_subject = no
+			has_government = neutrality
+		}
+	}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 70 }
+	option = {
+		name = britas.13.a
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			set_autonomy = {
+				target = BRJ
+				autonomy_state = atuonomy_dominion
+			}
+			else = {
+				puppet = BRJ
+			}
+		}
+		hidden_effect = {
+			BRJ = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					neutrality = 100
+				}
+				RAJ_sir_charles_townshend = {
+					remove_country_leader_role = {
+						ideology = oligarchism
+					}
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {					
+							ideology = autocracy
+							traits = { hedonist lunatic british_agent }
+						}
+					}
+					#set_character_name = "RAJ_alphonse_i" #wtf is this about
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = RAJ_neutrality_party_long
+					name = RAJ_neutrality_party
+				}
+				set_cosmetic_tag = RAJ_UK
+			}
+		}
+	}
+}
+
+#Afghanistan War of Independence--- Historical
+country_event = {
+	id = britas.14
+	title = britas.14.t
+	desc = britas.14.d
+	picture = GFX_report_event_chinese_soldiers_mountain
+	trigger = {
+		tag = ENG
+		#has_global_flag = interbellum
+		has_country_flag = great_war_winner
+		has_subject = AFG
+		date > 1919.01.01
+	}
+	mean_time_to_happen = { days = 90 }
+	fire_only_once = yes
+	option = {
+		name = britas.14.a
+		end_puppet = AFG
+		declare_war_on = {
+			target = AFG
+			type = puppet_wargoal_focus
+		}
+		hidden_effect = {
+			activate_mission = ENG_afghanistan_war_timer
+			AFG = {
+				activate_mission = ENG_afghanistan_war_timer
+			}
+		}
+	}
+	option = {
+		name = britas.14.b
+		ai_chance = { factor = 0 }
+		end_puppet = AFG
+		every_state = {
+			limit = {
+				is_owned_by = AFG
+			}
+			remove_claim_by = ROOT
+		}
+		set_truce = {
+			target = AFG
+			days = 128
+		}
+	}
+}
+
+#Afghan Independence War---- Peace
+country_event = {
+	id = britas.15
+	title = britas.15.t
+	desc = britas.15.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = britas.15.a
+		white_peace = AFG
+		every_state = {
+			limit = {
+				is_owned_by = AFG
+			}
+			remove_claim_by = ROOT
+		}
+	}
+}
+
+#Annex HKG
+country_event = {
+	id = britas.16
+	title = britas.16.t
+	desc = britas.16.d
+	picture = GFX_report_event_generic_peaceful_annexation
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			has_country_flag = has_british_monarchy
+			AND = {
+				original_tag = ENG
+				has_country_flag = ENG_nationalist_britain_flag
+				has_war = no
+			}
+		}
+		is_subject = no
+		has_capitulated = no
+		NOT = {
+			has_government = communism
+		}
+		HKG = {
+			has_war = no
+			OR = {
+				is_subject = no
+				is_subject_of = ROOT
+			}
+			NOT = { has_government = communism }
+		}
+	}
+	mean_time_to_happen = { days = 70 }
+	option = {
+		name = britas.16.a
+		annex_country = {
+			target = HKG
+			transfer_troops = yes
+		}
+	}
+}
+
+# German Invasion on the Collapsing British India
+country_event = {
+	id = britas.17
+	title = britas.17.t
+	desc = britas.17.d
+	picture = GFX_report_event_german_troops
+	trigger = {
+		tag = GER
+		has_war_with = FRA
+		is_subject = no
+		has_capitulated = no
+		has_global_flag = kis_war
+		has_subject = ENG
+		RAJ = {
+			is_subject = no
+			NOT = { has_war_with = ROOT }
+		}
+		has_completed_focus = GER_pearl_of_the_british_crown
+		NOT = {
+			has_global_flag = great_war_ends
+			has_global_flag = GER_capitulation
+			has_wargoal_against = RAJ
+		}
+	}
+	fire_only_once = yes
+	option = {
+		name = britas.17.a
+		create_wargoal = {
+			target = RAJ
+			type = take_claimed_state
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		# my guy is too weak
+		name = britas.17.b
+		add_war_support = -0.10
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					has_war_support > 0.10
+					has_stability > 0.10
+				}
+			}
+		}
+	}
+}
+
+# Raj War goes cold
+country_event = {
+	id = britas.18
+	title = britas.18.t
+	desc = britas.18.d
+	picture = GFX_report_event_spr_civil_war_faction_defeated
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = RAJ_british_remnants_flag }
+				}
+				every_other_country = {
+					limit = {
+						original_tag = RAJ
+						has_war_with = ROOT
+					}
+					white_peace = ROOT
+					every_owned_state = {
+						limit = {
+							OR = {
+								state = 426
+								region = 141
+								region = 153
+								region = 189
+								region = 190
+							}
+						}
+						transfer_state_to = ROOT
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = britas.18.a
+		trigger = { NOT = { has_country_flag = RAJ_british_remnants_flag } }
+		remove_ideas = standing_alone
+	}
+	option = {
+		name = britas.18.b
+		trigger = { has_country_flag = RAJ_british_remnants_flag }
+		remove_ideas = standing_alone
+		set_capital = { state = 429 }
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+				NOT = { is_owned_by = ROOT }
+			}
+			remove_core_of = ROOT
+		}
+		hidden_effect = {
+			JAP = {
+				if = {
+					limit = {
+						exists = yes
+						NOT = {
+							has_war_with = ROOT
+							has_government = communism
+						}
+					}
+					country_event = {
+						id = ww1_england.158
+						hours = 5
+					}
+				}
+			}
+		}
+	}
+}
+
+# British protection over Arabia ends
+country_event = {
+	id = britas.19
+	title = britas.19.t
+	desc = britas.19.d
+	picture = GFX_report_event_france_victory_syria
+	trigger = {
+		original_tag = ENG
+		has_country_flag = great_war_loser
+		OR = {
+			# has_global_flag = frankfurt_treaty
+			# has_global_flag = versallies_treaty
+		}
+		OR = {
+			has_subject = KUW
+			has_subject = QAT
+			has_subject = BHR
+			has_subject = UAE
+			has_subject = OMA
+			has_subject = YEM
+			has_subject = SAU
+			has_subject = SOM
+			any_owned_state = {
+				OR = {
+					is_core_of = KUW
+					is_core_of = QAT
+					is_core_of = BHR
+					is_core_of = UAE
+					is_core_of = OMA
+					is_core_of = YEM
+					is_core_of = SAU
+					is_core_of = SOM
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 15
+	}
+	fire_only_once = yes
+	option = {
+		name = britas.19.a
+		if = {
+			limit = {
+				has_subject = KUW
+			}
+			end_puppet = KUW
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					is_core_of = KUW
+				}
+			}
+			release = KUW
+		}
+		if = {
+			limit = {
+				has_subject = QAT
+			}
+			end_puppet = QAT
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					is_core_of = QAT
+				}
+			}
+			release = QAT
+		}
+		if = {
+			limit = {
+				has_subject = BHR
+			}
+			end_puppet = BHR
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					is_core_of = BHR
+				}
+			}
+			release = BHR
+		}
+		if = {
+			limit = {
+				has_subject = UAE
+			}
+			end_puppet = UAE
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					is_core_of = UAE
+				}
+			}
+			release = UAE
+		}
+		if = {
+			limit = {
+				has_subject = OMA
+			}
+			end_puppet = OMA
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					is_core_of = OMA
+				}
+			}
+			release = OMA
+		}
+		if = {
+			limit = {
+				has_subject = YEM
+			}
+			end_puppet = YEM
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					is_core_of = YEM
+				}
+			}
+			release = YEM
+		}
+		if = {
+			limit = {
+				has_subject = SAU
+			}
+			end_puppet = SAU
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					is_core_of = SAU
+				}
+			}
+			release = SAU
+		}
+		if = {
+			limit = {
+				has_subject = SOM
+			}
+			end_puppet = SOM
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					is_core_of = SOM
+				}
+			}
+			release = SOM
+		}
+	}
+}

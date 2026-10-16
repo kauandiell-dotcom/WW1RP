@@ -1,0 +1,144 @@
+scripted_gui = {
+	ruleset = {
+		window_name = "ruleset_window"
+		context_type = player_context
+		visible = {
+			is_ai = no
+		}
+	}
+	AGW_dynamic_ranking_turn_button = {
+		context_type = player_context
+        window_name = "AGW_dynamic_ranking_turn"
+
+		visible = {
+			is_ai = no
+		}
+		
+		effects = {
+			AGW_dynamic_ranking_turn_button_click = {
+				if = {
+					limit = { NOT = { has_country_flag = DYNAMIC_RAKING_OPENED } }
+					set_country_flag = DYNAMIC_RAKING_OPENED
+
+					clear_array = global.hegemony_power_ranks
+					clear_array = global.global_power_ranks
+					clear_array = global.super_power_ranks
+					clear_array = global.regional_power_ranks
+					clear_array = global.middle_power_ranks
+					clear_array = global.minor_power_ranks
+					clear_array = global.factions_list
+
+					every_country = {
+						if = {
+							limit = { check_variable = { rank = 16 } }
+							add_to_array = { array = global.hegemony_power_ranks     value = THIS.id }
+						}
+						else_if = {
+							limit = { check_variable = { rank = 10 } }
+							add_to_array = { array = global.global_power_ranks     value = THIS.id }
+						}
+						else_if = {
+							limit = { check_variable = { rank = 8 } }
+							add_to_array = { array = global.super_power_ranks     value = THIS.id }
+						}
+						else_if = {
+							limit = { check_variable = { rank = 6 } }
+							add_to_array = { array = global.regional_power_ranks     value = THIS.id }
+						}
+						else_if = {
+							limit = { check_variable = { rank = 4 } }
+							add_to_array = { array = global.middle_power_ranks     value = THIS.id }
+						}
+						else_if = {
+							limit = { check_variable = { rank = 2 } }
+							add_to_array = { array = global.minor_power_ranks     value = THIS.id }
+						}
+
+						if = {
+							limit = { check_variable = { THIS.faction_leader = THIS.id } }
+							add_to_array = { array = global.factions_list     value = THIS.id }
+							set_variable = { fac_score = 0 }
+							set_variable = { dr_faction_space_avail_var = dr_faction_limit_var }
+							for_each_loop = {
+								array = THIS.faction_members
+								value = v
+								set_temp_variable = { country_faction_var = v:dr_country_score_var }
+								add_to_variable = { fac_score = country_faction_var }
+							}
+							subtract_from_variable = { dr_faction_space_avail_var = fac_score }
+						}
+					}
+
+					every_country = {
+						limit = {
+							is_in_faction = yes
+							is_faction_leader = no
+						}
+						faction_leader = { set_variable = { PREV.dr_faction_space_avail_var = THIS.dr_faction_space_avail_var } }
+					}
+				}
+				else_if = {
+					limit = { has_country_flag = DYNAMIC_RAKING_OPENED }
+					clr_country_flag = DYNAMIC_RAKING_OPENED
+				}
+			}
+		}
+	}
+
+	AGW_dynamic_ranking_background = {
+		context_type = player_context
+        window_name = "AGW_dynamic_ranking"
+
+		visible = {
+			has_country_flag = DYNAMIC_RAKING_OPENED
+		}
+		
+		effects = {
+			close_button_click = {
+				clr_country_flag = DYNAMIC_RAKING_OPENED
+			}
+		}
+		
+		dynamic_lists = {
+			ranks_hegemony_power = {
+				array = global.hegemony_power_ranks
+				entry_container = charters_list_entry
+				change_scope = yes
+			}
+			ranks_global_power = {
+				array = global.global_power_ranks
+				entry_container = charters_list_entry
+				change_scope = yes
+			}
+			ranks_super_power = {
+				array = global.super_power_ranks
+				entry_container = charters_list_entry
+				change_scope = yes
+			}
+			ranks_regional_power = {
+				array = global.regional_power_ranks
+				entry_container = charters_list_entry
+				change_scope = yes
+			}
+			ranks_middle_power = {
+				array = global.middle_power_ranks
+				entry_container = charters_list_entry
+				change_scope = yes
+			}
+			ranks_minor_power = {
+				array = global.minor_power_ranks
+				entry_container = charters_list_entry
+				change_scope = yes
+			}
+			ranks_factions = {
+				array = global.factions_list
+				entry_container = charters_list_entry_factions
+				change_scope = yes
+			}
+		}
+
+		properties = {
+			member_country_flag = { image = [THIS.GetFlag] }
+		}
+	}
+}

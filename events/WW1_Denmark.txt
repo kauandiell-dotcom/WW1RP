@@ -1,0 +1,119 @@
+﻿add_namespace = ww1_denmark
+# KING CHRISTIAN X
+###################
+country_event = {
+	title = ww1_denmark.1.t	#Frederick VIII Dies!
+	desc = ww1_denmark.1.d
+	id = ww1_denmark.1
+	picture = GFX_report_event_royal_parade
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 14
+	}
+	trigger = {
+		tag = DEN
+		has_country_leader = {
+			character = DEN_frederick_viii
+			ruling_only = no
+		}
+		date > 1912.5.1
+	}
+	option = {
+		name = ww1_denmark.1.a		
+		retire_character = DEN_frederick_viii
+		promote_character = DEN_christian_x
+		hidden_effect = {
+			remove_ideas = DEN_frederick_viii
+			add_ideas = DEN_christian_x
+		}	
+	}
+}
+
+country_event = {
+	title = ww1_denmark.2.t	#Treaty of the Danish West Indies
+	desc = ww1_denmark.2.d	#The US wishes to buy our West Indian colonies, in part out of fears that the Germans could use them as a base for convoy raiding. Should we sell the territory to them?
+	id = ww1_denmark.2
+	picture = report_event_generic_sign_treaty2
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww1_denmark.2.a
+		ai_chance = {
+			factor = 100
+		}
+		USA = {
+			transfer_state = 750
+		}
+		add_political_power = 100
+		USA = {
+			add_political_power = -100
+		}
+		add_opinion_modifier = {
+			target = USA
+			modifier = large_increase
+		}
+		add_opinion_modifier = {
+			target = ENG
+			modifier = medium_increase
+		}
+		add_opinion_modifier = {
+			target = GER
+			modifier = large_decrease
+		}
+	}
+	option = {
+		name = ww1_denmark.2.b
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -100
+		add_opinion_modifier = {
+			target = USA
+			modifier = large_decrease
+		}
+		add_opinion_modifier = {
+			target = ENG
+			modifier = medium_decrease
+		}
+		add_opinion_modifier = {
+			target = GER
+			modifier = medium_increase
+		}
+	}
+}
+
+# JUTLAND REFERENDUM
+#######################
+country_event = {
+	id = ww1_denmark.3
+	title = ww1_denmark.3.t
+	desc = ww1_denmark.3.d
+	picture = GFX_report_event_iww_demonstration
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 90
+	}
+	trigger = {
+		original_tag = DEN
+		any_other_country = {
+			owns_state = 751
+			has_country_flag = great_war_loser
+			is_neighbor_of = PREV
+			NOT = {
+				has_war_with = PREV
+				has_subject = PREV
+			}
+		}
+	}
+	option = {
+		name = ww1_denmark.3.a
+		751 = {
+			remove_core_of = GER
+			remove_core_of = SHL
+			transfer_state_to = PREV
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

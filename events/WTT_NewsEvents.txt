@@ -1,0 +1,891 @@
+﻿add_namespace = wtt_news
+ 
+# Netherlands refuses to let Kaiser go, danger of war
+news_event = {
+	id = wtt_news.2
+	title = wtt_news.2.t
+	desc = wtt_news.2.desc
+	picture = GFX_news_event_german_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_news.2.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = wtt_news.2.b
+		trigger = { 
+			NOT = { original_tag = GER }
+			NOT = { original_tag = HOL }
+		}
+	}
+	option = {
+		name = wtt_news.2.c
+		trigger = { 
+			original_tag = HOL
+		}
+	}
+}
+
+# Kaiser returned
+news_event = {
+	id = wtt_news.3
+	title = wtt_news.3.t
+	desc = wtt_news.3.desc
+	picture = GFX_news_event_generic_parliament
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_news.3.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = wtt_news.3.b
+		trigger = { 
+			NOT = { original_tag = GER }
+			NOT = { original_tag = HOL }
+			NOT = { original_tag = ENG }
+			NOT = { original_tag = FRA }
+		}
+	}
+	option = {
+		name = wtt_news.3.c
+		trigger = { 
+			original_tag = HOL
+		}
+	}
+	option = {
+		name = wtt_news.3.d
+		trigger = {
+			OR = {
+				original_tag = ENG
+				original_tag = FRA
+			}
+		}
+	}
+}
+
+# Kaiser returned through war
+news_event = {
+	id = wtt_news.4
+	title = wtt_news.4.t
+	desc = wtt_news.4.desc
+	picture = GFX_news_event_generic_parliament
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_news.4.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = wtt_news.4.b
+		trigger = { 
+			NOT = { original_tag = GER }
+			NOT = { original_tag = HOL }
+			NOT = { original_tag = ENG }
+			NOT = { original_tag = FRA }
+		}
+	}
+	option = {
+		name = wtt_news.4.c
+		trigger = { 
+			original_tag = HOL
+		}
+	}
+	option = {
+		name = wtt_news.3.d
+		trigger = { 
+			OR = {
+				original_tag = ENG
+				original_tag = FRA
+			}
+		}
+	}
+}
+
+# France and Britain go to war upon return of the Kaiser
+news_event = {
+	id = wtt_news.12
+	title = wtt_news.12.t
+	desc = wtt_news.12.desc
+	picture = GFX_news_event_020
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_news.12.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = wtt_news.12.b
+		trigger = {
+			OR = {
+				original_tag = FRA
+				original_tag = ENG
+			}
+		}
+	}
+	option = {
+		name = wtt_news.12.c
+		trigger = { 
+			NOT = { 
+				original_tag = GER
+				original_tag = FRA
+				original_tag = ENG
+			}
+		}
+	}
+}
+
+# Germany backs down vs both France and Britain - Wilhelm III instead of II
+news_event = {
+	id = wtt_news.13
+	title = wtt_news.13.t
+	desc = wtt_news.13.desc
+	picture = GFX_news_event_generic_parliament
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_news.13.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = wtt_news.13.b
+		trigger = {
+			OR = {
+				original_tag = FRA
+				original_tag = ENG
+			}
+		}
+	}
+	option = {
+		name = wtt_news.13.c
+		trigger = { 
+			NOT = { 
+				original_tag = GER
+				original_tag = FRA
+				original_tag = ENG
+			}
+		}
+	}
+}
+
+# France goes to war upon return of the Kaiser
+news_event = {
+	id = wtt_news.14
+	title = wtt_news.12.t
+	desc = wtt_news.14.desc
+	picture = GFX_news_event_german_inspect_troops
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_news.12.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = wtt_news.12.b
+		trigger = {
+			original_tag = FRA
+		}
+	}
+	option = {
+		name = wtt_news.14.c
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	option = {
+		name = wtt_news.14.d
+		trigger = { 
+			NOT = { 
+				original_tag = GER
+				original_tag = FRA
+				original_tag = ENG
+			}
+		}
+	}
+}
+
+# Germany backs down vs only France - Wilhelm III instead of II
+news_event = {
+	id = wtt_news.15
+	title = wtt_news.13.t
+	desc = wtt_news.15.desc
+	picture = GFX_news_event_generic_parliament
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_news.13.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = wtt_news.13.b
+		trigger = {
+			original_tag = FRA
+		}
+	}
+	option = {
+		name = wtt_news.15.c
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	option = {
+		name = wtt_news.13.c
+		trigger = { 
+			NOT = { 
+				original_tag = GER
+				original_tag = FRA
+				original_tag = ENG
+			}
+		}
+	}
+}
+
+# Canals - Suez Canal Blown
+news_event = {
+	id = wtt_news.40
+	title = wtt_news.40.t
+	desc = {
+		text = wtt_news.40.desc_eng
+		trigger = {
+			FROM = {
+				has_country_flag = blew_up_suez
+				owns_state = 446
+				owns_state = 453
+			}
+		}
+	}
+	desc = {
+		text = wtt_news.40.desc_not_eng
+		trigger = {
+			FROM = {
+				OR = {
+					NOT = {	has_country_flag = blew_up_suez }
+					NOT = {
+						owns_state = 446
+						owns_state = 453
+					}
+				}
+			}
+		}
+	}
+	picture = GFX_news_event_020
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_news.40.a
+		trigger = {
+			NOT = { has_country_flag = blew_up_suez }
+			owns_state = 446
+			owns_state = 453
+		}
+		if = {
+			limit = {
+				original_tag = ENG
+			}
+			add_war_support = -0.05
+			add_stability = -0.05
+		}
+	}
+	option = {
+		name = wtt_news.40.b
+		trigger = {
+			has_country_flag = blew_up_suez
+			owns_state = 446
+			owns_state = 453
+		}
+		if = {
+			limit = {
+				original_tag = ENG
+			}
+			add_war_support = -0.05
+			add_stability = -0.05
+		}
+		clr_country_flag = blew_up_suez
+	}
+	option = {
+		name = wtt_news.40.c
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 446
+				owns_state = 453
+				has_country_flag = blew_up_suez
+			}
+		}
+	}
+	option = {
+		name = wtt_news.40.d
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 446
+				owns_state = 453
+			}
+			has_country_flag = blew_up_suez
+		}
+		clr_country_flag = blew_up_suez
+	}
+	option = {
+		name = wtt_news.40.e
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 446
+				owns_state = 453
+				NOT = { has_country_flag = blew_up_suez }
+			}
+			any_other_country = {
+				has_war_together_with = ROOT
+				has_country_flag = blew_up_suez
+			}
+			NOT = { has_country_flag = blew_up_suez }
+		}
+	}
+	option = {
+		name = wtt_news.40.f
+		trigger = {
+			any_other_country = {
+				has_war_together_with = ROOT
+				owns_state = 446
+				owns_state = 453
+				has_country_flag = blew_up_suez
+			}
+			NOT = { has_country_flag = blew_up_suez }
+		}
+	}
+	option = {
+		name = wtt_news.40.g
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				has_country_flag = blew_up_suez
+			}
+			any_other_country = {
+				has_war_together_with = ROOT
+				owns_state = 446
+				owns_state = 453
+				NOT = { has_country_flag = blew_up_suez }
+			}
+			NOT = { has_country_flag = blew_up_suez }
+		}
+	}
+	option = {
+		name = wtt_news.40.h
+		trigger = {
+			NOT = {
+				any_country = {
+					has_war_with = ROOT
+					has_country_flag = blew_up_suez
+				}
+			}
+			NOT = {
+				any_other_country = {
+					has_war_together_with = ROOT
+					owns_state = 446
+					owns_state = 453
+					has_country_flag = blew_up_suez
+				}
+			}
+			NOT = { has_country_flag = blew_up_suez }
+		}
+	}
+}
+
+# Canals - Panama Canal Blown
+news_event = {
+	id = wtt_news.41
+	title = wtt_news.41.t
+	desc = {
+		text = wtt_news.41.desc_usa
+		trigger = {
+			FROM = {
+				has_country_flag = blew_up_panama
+				owns_state = 685
+			}
+		}
+	}
+	desc = {
+		text = wtt_news.41.desc_not_usa
+		trigger = {
+			FROM = {
+				OR = {
+					NOT = {	has_country_flag = blew_up_panama }
+					NOT = { owns_state = 685 }
+				}
+			}
+		}
+	}
+	picture = GFX_news_event_020
+
+	is_triggered_only = yes
+
+	option = {
+		name = wtt_news.41.a
+		trigger = {
+			NOT = { has_country_flag = blew_up_panama }
+			owns_state = 685
+		}
+		if = {
+			limit = {
+				original_tag = USA
+			}
+			add_war_support = -0.05
+			add_stability = -0.05
+		}
+	}
+	option = {
+		name = wtt_news.41.b
+		trigger = {
+			has_country_flag = blew_up_panama
+			owns_state = 685
+		}
+		if = {
+			limit = {
+				original_tag = USA
+			}
+			add_war_support = -0.05
+			add_stability = -0.05
+		}
+		clr_country_flag = blew_up_panama
+	}
+	option = {
+		name = wtt_news.41.c
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 685
+				has_country_flag = blew_up_panama
+			}
+		}
+	}
+	option = {
+		name = wtt_news.41.d
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 685
+			}
+			has_country_flag = blew_up_panama
+		}
+		clr_country_flag = blew_up_panama
+	}
+	option = {
+		name = wtt_news.41.e
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 685
+				NOT = { has_country_flag = blew_up_panama }
+			}
+			any_other_country = {
+				has_war_together_with = ROOT
+				has_country_flag = blew_up_panama
+			}
+			NOT = { has_country_flag = blew_up_panama }
+		}
+	}
+	option = {
+		name = wtt_news.41.f
+		trigger = {
+			any_other_country = {
+				has_war_together_with = ROOT
+				owns_state = 685
+				has_country_flag = blew_up_panama
+			}
+			NOT = { has_country_flag = blew_up_panama }
+		}
+	}
+	option = {
+		name = wtt_news.41.g
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				has_country_flag = blew_up_panama
+			}
+			any_other_country = {
+				has_war_together_with = ROOT
+				owns_state = 685
+				NOT = { has_country_flag = blew_up_panama }
+			}
+			NOT = { has_country_flag = blew_up_panama }
+		}
+	}
+	option = {
+		name = wtt_news.41.h
+		trigger = {
+			NOT = {
+				any_country = {
+					has_war_with = ROOT
+					has_country_flag = blew_up_panama
+				}
+			}
+			NOT = {
+				any_other_country = {
+					has_war_together_with = ROOT
+					owns_state = 685
+					has_country_flag = blew_up_panama
+				}
+			}
+			NOT = { has_country_flag = blew_up_panama }
+		}
+	}
+}
+
+# Canals - Suez Canal Rebuilt
+news_event = {
+	id = wtt_news.42
+	title = wtt_news.42.t
+	desc = wtt_news.42.desc
+	picture = GFX_news_event_020
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_news.42.a
+		trigger = {
+			original_tag = ENG
+			has_country_flag = rebuilt_suez
+		}
+		clr_country_flag = rebuilt_suez
+	}
+	option = {
+		name = wtt_news.42.b
+		trigger = {
+			NOT = { original_tag = ENG }
+			has_country_flag = rebuilt_suez
+		}
+		clr_country_flag = rebuilt_suez
+	}
+	option = {
+		name = wtt_news.42.c
+		trigger = {
+			any_other_country = {
+				has_war_together_with = ROOT
+				has_country_flag = rebuilt_suez
+			}
+			NOT = { has_country_flag = rebuilt_suez }
+		}
+	}
+	option = {
+		name = wtt_news.42.d
+		trigger = {
+			any_other_country = {
+				has_war_with = ROOT
+				has_country_flag = rebuilt_suez
+			}
+			NOT = { has_country_flag = rebuilt_suez }
+		}
+	}
+	option = {
+		name = wtt_news.42.e
+		trigger = {
+			NOT = { has_country_flag = rebuilt_suez }
+			NOT = {
+				any_other_country = {
+					has_war_together_with = ROOT
+					has_country_flag = rebuilt_suez
+				}
+			}
+			NOT = {
+				any_other_country = {
+					has_war_with = ROOT
+					has_country_flag = rebuilt_suez
+				}
+			}
+		}
+	}
+}
+
+# Canals - Panama Canal Rebuilt
+news_event = {
+	id = wtt_news.43
+	title = wtt_news.43.t
+	desc = wtt_news.43.desc
+	picture = GFX_news_event_020
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_news.43.a
+		trigger = {
+			original_tag = USA
+			has_country_flag = rebuilt_panama
+		}
+		clr_country_flag = rebuilt_panama
+	}
+	option = {
+		name = wtt_news.43.b
+		trigger = {
+			NOT = { original_tag = USA }
+			has_country_flag = rebuilt_panama
+		}
+		clr_country_flag = rebuilt_panama
+	}
+	option = {
+		name = wtt_news.43.c
+		trigger = {
+			any_other_country = {
+				has_war_together_with = ROOT
+				has_country_flag = rebuilt_panama
+			}
+			NOT = { has_country_flag = rebuilt_panama }
+		}
+	}
+	option = {
+		name = wtt_news.43.d
+		trigger = {
+			any_other_country = {
+				has_war_with = ROOT
+				has_country_flag = rebuilt_panama
+			}
+			NOT = { has_country_flag = rebuilt_panama }
+		}
+	}
+	option = {
+		name = wtt_news.43.e
+		trigger = {
+			NOT = { has_country_flag = rebuilt_panama }
+			NOT = {
+				any_other_country = {
+					has_war_together_with = ROOT
+					has_country_flag = rebuilt_panama
+				}
+			}
+			NOT = {
+				any_other_country = {
+					has_war_with = ROOT
+					has_country_flag = rebuilt_panama
+				}
+			}
+		}
+	}
+}
+
+# Formation of Commonwealth
+news_event = {
+	id = wtt_news.57
+	title = wtt_news.57.t
+	desc = wtt_news.57.desc
+	picture = GFX_news_event_generic_parliament
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = wtt_news.57.a
+		trigger = {
+			OR = {
+				original_tag = POL
+				original_tag = LIT
+			}
+			NOT = { has_war_with = FROM }
+		}
+	}
+	option = {
+		name = wtt_news.57.b
+		trigger = {
+			NOT = { original_tag = POL }
+			NOT = { original_tag = LIT }
+			NOT = { has_war_with = FROM }
+		}
+	}
+	option = {
+		name = wtt_news.53.c
+		trigger = {
+			has_war_with = FROM
+		}
+	}
+}
+
+# Formation of United Netherlands
+news_event = {
+	id = wtt_news.58
+	title = wtt_news.58.t
+	desc = wtt_news.58.desc
+	picture = GFX_news_event_generic_parliament
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = wtt_news.58.a
+		trigger = {
+			OR = {
+				original_tag = HOL
+				original_tag = BEL
+				original_tag = LUX
+			}
+			NOT = { has_war_with = FROM }
+		}
+	}
+	option = {
+		name = wtt_news.58.b
+		trigger = {
+			NOT = { original_tag = HOL }
+			NOT = { original_tag = BEL }
+			NOT = { original_tag = LUX }
+			NOT = { has_war_with = FROM }
+		}
+	}
+	option = {
+		name = wtt_news.53.c
+		trigger = {
+			has_war_with = FROM
+		}
+	}
+}
+
+# Formation of Roman Empire
+news_event = {
+	id = wtt_news.64
+	title = wtt_news.64.t
+	desc = wtt_news.64.desc
+	picture = GFX_news_event_generic_parliament
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = wtt_news.64.a
+		trigger = {
+			original_tag = ITA
+		}
+	}
+	option = {
+		name = wtt_news.64.b
+		trigger = {
+			NOT = { original_tag = ITA }
+			NOT = { has_war_with = FROM }
+		}
+	}
+	option = {
+		name = wtt_news.53.c
+		trigger = {
+			has_war_with = FROM
+		}
+	}
+	option = {
+		name = wtt_news.64.c
+		trigger = {
+			has_cosmetic_tag = TUR_ROM
+		}
+	}
+}
+
+# Formation of Byzantine Empire
+news_event = {
+	id = wtt_news.66
+	title = wtt_news.66.t
+	desc = wtt_news.66.desc
+	picture = GFX_news_event_byzantium
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = wtt_news.66.a
+		trigger = {
+			tag = FROM
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = rule_superevent
+					option = DEFAULT
+				}
+				is_ai = no
+				FROM = {
+					original_tag = GRE
+				}	
+			}
+			hidden_effect = {
+				play_song = "SE_gre_byzantium"
+				set_country_flag = SE_gre_byzantium
+			}
+		}
+	}
+	option = {
+		name = wtt_news.66.b
+		trigger = {
+			NOT = {
+				tag = FROM
+				has_war_with = FROM
+			}
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = rule_superevent
+					option = DEFAULT
+				}
+				is_ai = no
+				FROM = {
+					original_tag = GRE
+				}
+			}
+			hidden_effect = {
+				play_song = "SE_gre_byzantium"
+				set_country_flag = SE_gre_byzantium
+			}
+		}
+	}
+	option = {
+		name = wtt_news.53.c
+		trigger = {
+			has_war_with = FROM
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = rule_superevent
+					option = DEFAULT
+				}
+				is_ai = no
+				FROM = {
+					original_tag = GRE
+				}
+			}
+			hidden_effect = {
+				play_song = "SE_gre_byzantium"
+				set_country_flag = SE_gre_byzantium
+			}
+		}
+	}
+}

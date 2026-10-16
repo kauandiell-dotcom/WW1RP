@@ -1,0 +1,407 @@
+﻿add_namespace = ww1_montenegro
+# BALKAN LEAGUE - SERBIA AGREEMENT
+####################################
+country_event = {
+	id = ww1_montenegro.1
+	title = ww1_montenegro.1.t
+	desc = ww1_montenegro.1.d
+	picture = ww1_serbia_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww1_montenegro.1.a
+		add_war_support = 0.1
+		set_country_flag = join_balkan_league
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# BALKAN LEAGUE - SERBIA DISAGREEMENT
+####################################
+country_event = {
+	id = ww1_montenegro.2
+	title = ww1_montenegro.2.t
+	desc = ww1_montenegro.2.d
+	picture = ww1_serbia_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww1_montenegro.2.a
+		clr_country_flag = wants_to_join_balkan_league
+		set_country_flag = join_balkan_league_sad
+		set_country_flag = not_join_balkan_league
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#hidden event to set flag when Montenegro capitulates
+country_event = {
+	id = ww1_montenegro.5
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 60
+	}
+	trigger = {
+		tag = MNT
+		has_war_with = AUH
+		is_in_faction_with = SER
+		has_capitulated = yes
+	}
+	immediate = {
+		set_country_flag = Montenegro_capitulated
+	}
+}
+
+#Nikola I Petrović abdicates
+country_event = {
+	id = ww1_montenegro.4
+	title = ww1_montenegro.4.t
+	desc = {
+		text = ww1_montenegro.4.d
+		trigger = {
+			has_country_flag = great_war_loser
+		}
+	}
+	desc = {
+		text = ww1_montenegro.4.d
+		trigger = {
+			NOT = { has_country_flag = great_war_loser }
+		}
+	}
+	picture = GFX_report_event_generic_parliament
+	trigger = {
+		tag = MNT
+		has_war = no
+		has_country_leader = {
+			character = MNT_nikola_i
+		}
+		has_global_flag = great_war_ends
+		OR = {
+			has_country_flag = great_war_loser
+			AND = {
+				has_country_flag = Montenegro_capitulated
+				has_country_flag = great_war_winner
+			}
+		}
+		is_subject = no
+	}
+	mean_time_to_happen = {
+		days = 15
+	}
+	option = {
+		name = ww1_montenegro.4.a
+		retire_character = MNT_nikola_i
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = MNT_national_assembly_long
+			name = MNT_national_assembly
+		}
+		MNT_podgorica_assembly = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = liberal_conservatism
+				}
+			}
+		}
+		hidden_effect = {
+			MNT_danilo_petrovic_njegos = {
+				remove_unit_leader_role = yes
+				promote_character = semi_constitutional_monarchy
+				set_character_name = {
+					name = "MNT_danilo_ii"
+				}
+			}
+		}
+	}
+}
+
+#Great national assembly of all Serbs in Montenegro
+country_event = {
+	id = ww1_montenegro.6
+	title = ww1_montenegro.6.t
+	desc = ww1_montenegro.6.d
+	is_triggered_only = yes
+	option = {
+		#ask Serbia to join
+		name = ww1_montenegro.6.a
+		SER = {
+			country_event = ww1_montenegro.7
+		}
+		custom_effect_tooltip = game_over_tt
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		#nah
+		name = ww1_montenegro.6.b
+		add_stability = -0.2
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Serbia asked to annex Montenegro
+country_event = {
+	id = ww1_montenegro.7
+	title = ww1_montenegro.7.t
+	desc = ww1_montenegro.7.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#Yay
+		name = ww1_montenegro.7.a
+		MNT = {
+			every_unit_leader = {
+				limit = {
+					NOT = {
+						has_trait = trait_royal
+						has_trait = trait_royalist
+					}
+				}
+				hidden_effect = {
+					remove_any_country_role_from_character = yes					
+					if = {
+						limit = {
+							is_field_marshal = no
+						}
+						demote_leader = yes
+						remove_unit_leader_trait = recently_promoted
+					}
+				}	
+				set_nationality = SER
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = MNT
+				}
+				add_core_of = SER
+			}
+		}
+		annex_country = {
+			target = MNT
+			transfer_troops = yes
+		}
+		hidden_effect = {
+			MNT = {
+				set_politics = {
+					ruling_party = neutrality
+					long_name = MNT_zeleni_party_long
+					name = MNT_zeleni_party
+					elections_allowed = no
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = MNT_zeleni_party_long
+					name = MNT_zeleni_party
+				}
+				promote_character = MNT_krsto_popovic	
+				promote_character = MNT_jovan_plamenac			
+				promote_character = MNT_novica_radovic
+			}	
+		}	
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		#Nah
+		name = ww1_montenegro.7.b
+		add_political_power = 50
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Nikola Petrović da li da pita Austrijance da promeni stranu
+country_event = {
+	id = ww1_montenegro.8
+	title = ww1_montenegro.8.t
+	desc = ww1_montenegro.8.d
+	fire_only_once = yes
+	trigger = {
+		tag = MNT
+		has_war_with = AUH
+		has_war_together_with = SER
+		has_capitulated = yes
+		SER = {
+			has_war_with = AUH
+			has_capitulated = yes
+		}
+	}
+	option = {
+		#yes, this is perfect opportunity
+		name = ww1_montenegro.8.a
+		AUH = {
+			country_event = ww1_montenegro.9
+		}
+		add_stability = -0.2
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	option = {
+		#no, that is betrayal of our people who died in war
+		name = ww1_montenegro.8.b
+		add_stability = 0.05
+		add_war_support = 0.05
+		ai_chance = {
+			factor = 60
+		}
+	}
+}
+
+#Austrian answer to this all
+country_event = {
+	id = ww1_montenegro.9
+	title = ww1_montenegro.9.t
+	desc = ww1_montenegro.9.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#Jej
+		name = ww1_montenegro.9.a
+		MNT = {
+			set_cosmetic_tag = MNT_SER
+			every_country = {
+				limit = {
+					has_war_with = MNT
+					NOT = {
+						has_war_with = AUH
+					}
+				}
+				white_peace = PREV
+			}
+			set_country_flag = MNT_serbia
+			add_opinion_modifier = {
+				target = SER
+				modifier = faction_traitor
+			}
+			add_country_leader_trait = unpopular_monarch
+		}
+		every_state = {
+			limit = {
+				is_core_of = SER
+			}
+			add_core_of = MNT
+		}
+		every_state = {
+			limit = {
+				is_owned_by = SER
+				is_controlled_by = AUH
+			}
+			MNT = {
+				set_state_controller = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_owned_by = MNT
+			}
+			add_core_of = SER
+		}
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			set_autonomy = {
+				target = MNT
+				autonomy_state = autonomy_dominion
+				freedom_level = 0.4
+			}
+			else = {
+				GER = {
+					add_to_faction = MNT
+				}
+			}
+		}
+		SER = {
+			country_event = ww1_montenegro.10
+			add_opinion_modifier = {
+				target = MNT
+				modifier = faction_traitor
+			}
+		}
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	option = {
+		#he is still enemy tho
+		name = ww1_montenegro.9.b
+		ai_chance = {
+			factor = 80
+		}
+	}
+}
+
+#Serbian reaction
+country_event = {
+	id = ww1_montenegro.10
+	title = ww1_montenegro.10.t
+	desc = ww1_montenegro.10.d
+	is_triggered_only = yes
+	option = {
+		#tag switch
+		name = ww1_montenegro.10.a
+		MNT = {
+			change_tag_from = SER
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = ww1_montenegro.10.b
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+###Kingdom of Montenegro proclaimed
+country_event = {
+	id = ww1_montenegro.15
+	title = ww1_montenegro.15.t
+	desc = ww1_montenegro.15.d
+	picture = GFX_report_event_generic_parliament
+	trigger = {
+		tag = MNT
+		has_cosmetic_tag = MNT_principality
+		date > 1910.8.28
+		NOT = { has_global_flag = kingdom_of_montenegro }
+	}
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			set_global_flag = kingdom_of_montenegro
+			MNT = { drop_cosmetic_tag = yes }
+		}
+	}
+	option = {
+		name = ww1_montenegro.15.a
+		effect_tooltip = {
+			set_cosmetic_tag = MNT
+		}
+	}
+}

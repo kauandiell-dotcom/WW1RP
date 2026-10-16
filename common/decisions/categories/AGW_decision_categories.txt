@@ -1,0 +1,14 @@
+formable_nations = {
+	icon = generic_political_actions
+	priority = 10
+}
+
+generic_factions = {
+	icon = generic_formable_nations
+	priority = 10000
+}
+
+press_law_decisions = {
+	icon = generic_political_actions
+	priority = 15000
+}

@@ -1,0 +1,353 @@
+entente_not_join_russian_alliance = {
+	allowed = {
+		OR = {
+			original_tag = LUX
+			original_tag = BEL
+			original_tag = HOL
+			original_tag = SWI
+			original_tag = DEN
+			original_tag = NOR
+			original_tag = ITA
+		}
+	}
+	enable = {		
+		RUS = { is_in_faction = yes }
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = alliance
+		id = "RUS"
+		value = -500
+	}
+}
+RUS_early_offensive_1914 = {
+	allowed = {
+		original_tag = RUS
+	}
+
+	enable = {
+		original_tag = RUS
+		OR = {
+			has_war_with = GER
+			has_war_with = AUH
+		}
+	}
+	abort = {
+		OR = {
+			date > 1915.1.1
+			country_exists = SOV
+		}
+	}
+	ai_strategy = {
+		type = conquer
+		id = "GER"
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = "AUH"
+		value = 200
+	}
+}
+UKR_civil_war = {
+	allowed = {
+		original_tag = UKR
+	}
+
+	enable = {
+		has_civil_war = yes
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = alliance
+		id = "RUS"
+		value = -5000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GER"
+		value = -1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "FRA"
+		value = -1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ENG"
+		value = -1000
+	}
+}
+FIN_civil_war = {
+	allowed = {
+		original_tag = FIN
+	}
+	enable = {
+		OR = {
+			country_exists = SOV
+			has_civil_war = yes
+		}
+	}
+	
+	abort = {
+		OR = {
+			date > 1920.1.1
+			FIN = { is_in_faction = yes }
+			FIN = { has_war_with = SOV }
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = alliance
+		id = "RUS"
+		value = -1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GER"
+		value = -1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "FRA"
+		value = -1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ENG"
+		value = -1000
+	}
+}
+majors_dont_want_protect_russian_minorities = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = GER
+			original_tag = USA
+			original_tag = JAP
+			original_tag = FRA
+			original_tag = SER
+			original_tag = ITA
+			original_tag = TUR
+		}
+	}	
+	enable = {
+		is_major = yes
+		is_faction_leader = yes
+		has_global_flag = october_revolution
+		country_exists = SOV
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = alliance
+		id = "UKR"
+		value = -1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "FIN"
+		value = -1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "BUK"
+		value = -1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "KHI"
+		value = -1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "TRK"
+		value = -1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "KAZ"
+		value = -1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "MOU"
+		value = -1000
+	}
+}
+VLN_dont_join = {
+	allowed = {
+		tag = VLN
+	}
+	enable = {
+		has_government = communism
+		is_subject = no
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = alliance
+		id = "RUS"
+		value = -5000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SOV"
+		value = -5000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "TRK"
+		value = -5000
+	}
+}
+VLN_dont_invite = {
+	allowed = {
+		NOT = {
+			tag = VLN
+		}
+	}
+	enable = {
+		VLN = {
+			exists = yes
+			has_government = communism
+		}
+		NOT = {
+			is_in_faction_with = VLN
+			has_country_leader_ideology = anarchist_communism
+			has_country_leader_ideology = anarcho_syndicalism
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = alliance
+		id = "VLN"
+		value = -5000
+	}
+}
+SOV_tsaritsyn_offensive = {
+	allowed = {
+		original_tag = RUS
+	}
+	enable = {
+		tag = SOV
+		has_war_with = SRA
+	}
+	abort = {
+		OR = {
+			NOT = { has_war_with = SRA }
+			AND = {
+				236 = { is_fully_controlled_by = SOV }
+				217 = { is_fully_controlled_by = SOV }
+			}
+			date > 1920.1.1
+		}
+	}
+	ai_strategy = {
+		type = front_unit_request
+
+		state = 217
+		state = 236
+		state = 265
+
+		value = 100
+	}
+}
+SOV_hungaria_romanian_war = {
+	allowed = {
+		original_tag = RUS
+	}
+	enable = {
+		tag = SOV
+		HUN = { has_war_with = ROM }
+		has_global_flag = ROM_HUN_war_1919
+	}
+	
+	abort = {
+		OR = {
+			date > 1922.1.1
+			has_global_flag = ROM_HUN_war_1919_end
+			has_war_with = ROM
+			ROM = { exists = no is_subject_of = HUN }
+			HUN = { has_war = no }
+		}
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "HUN"
+		value = -2000
+	}	
+}
+HUN_hungaria_romanian_war = {
+	allowed = {
+		original_tag = HUN
+	}
+	enable = {
+		has_war_with = ROM
+		has_global_flag = ROM_HUN_war_1919
+	}
+	
+	abort = {
+		OR = {
+			date > 1922.1.1
+			has_global_flag = ROM_HUN_war_1919_end
+			has_war_with = SOV
+			ROM = { exists = no is_subject_of = HUN }
+			HUN = { has_war = no }
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = alliance
+		id = "SOV"
+		value = -2000	
+	}	
+}
+dont_join_red_guard_baku_commune = {
+	allowed = {
+		original_tag = AZR
+	}
+	enable = {
+		OR = {
+			has_cosmetic_tag = AZR_BAK
+			has_cosmetic_tag = AZR_BAK_communism
+		}
+		OR = {
+			has_war = yes
+			has_civil_war = yes
+		}
+	}
+	abort = {
+		is_in_faction = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = alliance
+		id = "SOV"
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "FRA"
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GER"
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "RUS"
+		value = -2000
+	}
+}

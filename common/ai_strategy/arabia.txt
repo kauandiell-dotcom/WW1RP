@@ -1,0 +1,301 @@
+SAU_prepare_for_unite = {
+	allowed = {
+		original_tag = SAU
+	}
+	enable = {
+		OR = {
+			date > 1916.1.1
+			threat > 0.5
+		}
+	}
+	abort = { always = no }
+	ai_strategy = {
+		type = force_build_armies
+		value = 200
+	}
+}
+SAU_unite_arabia = {
+	allowed = {
+		original_tag = SAU
+	}
+	enable = {
+		JBS = { exists = yes }
+		OR = {
+			date > 1919.1.1
+			is_in_faction = yes
+			has_army_manpower = {
+				size > 100000
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = declare_war
+		id = "JBS"
+		value = 2000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "JBS"
+		value = 2000
+	}
+	ai_strategy = {
+		type = contain
+		id = "JBS"
+		value = 2000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "JBS"
+		value = 2000
+	}
+}
+SAU_unite_hejaz = {
+	allowed = {
+		original_tag = SAU
+	}
+	enable = {
+		HJZ = { exists = yes is_subject = no }
+		JBS = { exists = no }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = declare_war
+		id = "HJZ"
+		value = 2000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "HJZ"
+		value = 2000
+	}
+	ai_strategy = {
+		type = contain
+		id = "HJZ"
+		value = 2000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "HJZ"
+		value = 2000
+	}
+}
+SAU_unite_asir = {
+	allowed = {
+		original_tag = SAU
+	}
+	enable = {
+		original_tag = SAU
+		ASR = { exists = yes is_subject = no }
+		JBS = { exists = no }
+		HJZ = { exists = no }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = declare_war
+		id = "ASR"
+		value = 2000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ASR"
+		value = 2000
+	}
+	ai_strategy = {
+		type = contain
+		id = "ASR"
+		value = 2000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "ASR"
+		value = 2000
+	}
+}
+SAU_JBS_border = {
+	allowed = {
+		original_tag = SAU
+	}
+	enable = {
+		JBS = {
+			exists = yes
+		}
+	}
+	abort = {
+		JBS = {
+			exists = no
+		}	
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = JBS
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = JBS
+		value = 1000
+	}
+}
+JBS_SAU_border = {
+	allowed = {
+		original_tag = JBS
+	}
+	enable = {
+		SAU = {
+			exists = yes
+		}
+	}
+	abort = {
+		SAU = {
+			exists = no
+		}	
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = SAU
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = SAU
+		value = 1000
+	}
+}
+LBA_hate_italy = {
+	allowed = {
+		original_tag = LBA
+	}
+	enable = {
+		any_state = {
+			is_core_of = ROOT
+			is_owned_by = ITA
+		}	
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = antagonize
+		id = "ITA"
+		value = 2000
+	}
+	ai_strategy = {
+		type = contain
+		id = "ITA"
+		value = 2000
+	}
+	ai_strategy = {
+		type = force_build_armies
+		value = 300
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = ITA
+		value = 200
+	}
+}
+LBA_market_management = {
+	allowed = {
+		original_tag = LBA
+	}
+	enable = {
+		has_war = no
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_market_for_sale_factor
+		id = infantry
+		value = 1000
+	}
+	ai_strategy = {
+		type = equipment_market_for_sale_threshold
+		id = infantry
+		value = 100
+	}
+	ai_strategy = {
+		type = equipment_market_min_for_sale
+		id = infantry
+		value = 100
+	}
+}
+trade_with_LBA = {
+	allowed = {
+		OR = {
+			original_tag = CHA
+			original_tag = DAR
+			original_tag = SUD
+		}	
+	}
+	enable = {
+		country_exists = LBA
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_market_trade_desire
+		id = LBA
+		value = 40
+	}
+}
+
+KUW_be_guaranteed_by_ottomans = {
+	allowed = {
+		tag = KUW
+	}
+	enable = {
+		tag = KUW
+		has_cosmetic_tag = KUW_TUR
+		is_guaranteed_by = TUR
+		OR = {
+			is_subject_of = ENG
+			is_subject_of = TUR
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = diplo_action_desire
+		id = TUR
+		target = guarantee
+		value = 2000
+	}
+}
+
+arabs_stay_at_home = {
+	enable = {
+		is_major = no
+		capital_scope = {
+			is_on_continent = middle_east
+		}
+		NOT = {
+			original_tag = TUR
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 9999
+	}
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = -1000
+	}
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = -1000
+	}
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = -1000
+	}
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = -1000
+	}
+}

@@ -1,0 +1,1206 @@
+﻿l_russian:
+     ##### 
+ FORM_TEMPLATE_fascism: ""
+ FORM_TEMPLATE_fascism_DEF: ""
+ FORM_TEMPLATE_democratic: ""
+ FORM_TEMPLATE_democratic_DEF: ""
+ FORM_TEMPLATE_neutrality: ""
+ FORM_TEMPLATE_neutrality_DEF: ""
+ FORM_TEMPLATE_communism: ""
+ FORM_TEMPLATE_communism_DEF: ""
+ FORM_TEMPLATE_fascism_ADJ: ""
+ FORM_TEMPLATE_democratic_ADJ: ""
+ FORM_TEMPLATE_neutrality_ADJ: ""
+ FORM_TEMPLATE_communism_ADJ: ""
+     ##### 
+ FORM_GMO_fascism: "Великая Моравия" #NT!
+ FORM_GMO_fascism_DEF: "Великая Моравия" #NT!
+ FORM_GMO_democratic: "Великая Моравия" #NT!
+ FORM_GMO_democratic_DEF: "Великая Моравия" #NT!
+ FORM_GMO_neutrality: "Великая Моравия" #NT!
+ FORM_GMO_neutrality_DEF: "Великая Моравия" #NT!
+ FORM_GMO_communism: "Моравская Народная Республика" #NT!
+ FORM_GMO_communism_DEF: "Моравская Народная Республика" #NT!
+ FORM_GMO_fascism_ADJ: "Моравский" #NT!
+ FORM_GMO_democratic_ADJ: "Моравский" #NT!
+ FORM_GMO_neutrality_ADJ: "Моравский" #NT!
+ FORM_GMO_communism_ADJ: "Моравский" #NT!
+     ##### 
+ FORM_BEN_fascism: "Фаланга Бенилюкса" #NT!
+ FORM_BEN_fascism_DEF: "Фаланга Бенилюкса" #NT!
+ FORM_BEN_democratic: "Республика Бенилюкс" #NT!
+ FORM_BEN_democratic_DEF: "Республика Бенилюкс" #NT!
+ FORM_BEN_neutrality: "Королевство Бенилюкс" #NT!
+ FORM_BEN_neutrality_DEF: "Королевство Бенилюкс" #NT!
+ FORM_BEN_communism: "Бенилюксийская Народная Республика" #NT!
+ FORM_BEN_communism_DEF: "Бенилюксийская Народная Республика" #NT!
+ FORM_BEN_fascism_ADJ: "бенилюксийский" #NT!
+ FORM_BEN_democratic_ADJ: "бенилюксийский" #NT!
+ FORM_BEN_neutrality_ADJ: "бенилюксийский" #NT!
+ FORM_BEN_communism_ADJ: "бенилюксийский" #NT!
+     ##### 
+ FORM_ARA_fascism: "Исламское государство" #NT!
+ FORM_ARA_fascism_DEF: "Исламское Государство" #NT!
+ FORM_ARA_democratic: "Республика Аравия" #NT!
+ FORM_ARA_democratic_DEF: "Республика Аравия" #NT!
+ FORM_ARA_neutrality: "Аравия" #NT!
+ FORM_ARA_neutrality_DEF: "Аравия" #NT!
+ FORM_ARA_communism: "Арабская Народная Республика" #NT!
+ FORM_ARA_communism_DEF: "Арабская Народная Республика" #NT!
+ FORM_ARA_fascism_ADJ: "арабский" #NT!
+ FORM_ARA_democratic_ADJ: "арабский" #NT!
+ FORM_ARA_neutrality_ADJ: "арабский" #NT!
+ FORM_ARA_communism_ADJ: "арабский" #NT!
+     ##### 
+ FORM_HRE_fascism: "Священная Римская империя" #NT!
+ FORM_HRE_fascism_DEF: "Священная Римская империя" #NT!
+ FORM_HRE_democratic: "Немецкая федерация" #NT!
+ FORM_HRE_democratic_DEF: "Немецкая федерация" #NT!
+ FORM_HRE_neutrality: "Священная Римская империя" #NT!
+ FORM_HRE_neutrality_DEF: "Священная Римская империя" #NT!
+ FORM_HRE_communism: "Центрально-Европейская СФСР" #NT!
+ FORM_HRE_communism_DEF: "Центрально-Европейская Советская Федеративная Социальная Республика" #NT!
+ FORM_HRE_fascism_ADJ: "Священный римлянин" #NT!
+ FORM_HRE_democratic_ADJ: "Священный римлянин" #NT!
+ FORM_HRE_neutrality_ADJ: "Священный римлянин" #NT!
+ FORM_HRE_communism_ADJ: "Центральноевропейский" #NT!
+     ##### 
+ FORM_QIN_fascism: "Реорганизованный националистический Китай" #NT!
+ FORM_QIN_fascism_DEF: "Реорганизованный националистический Китай" #NT!
+ FORM_QIN_democratic: "Китайская Республика" #NT!
+ FORM_QIN_democratic_DEF: "Китайская Республика" #NT!
+ FORM_QIN_neutrality: "Китайская империя" #NT!
+ FORM_QIN_neutrality_DEF: "Китайская империя" #NT!
+ FORM_QIN_communism: "Китайская Народная Республика" #NT!
+ FORM_QIN_communism_DEF: "Китайская Народная Республика" #NT!
+ FORM_QIN_fascism_ADJ: "китайский" #NT!
+ FORM_QIN_democratic_ADJ: "китайский" #NT!
+ FORM_QIN_neutrality_ADJ: "китайский" #NT!
+ FORM_QIN_communism_ADJ: "китайский" #NT!
+     ##### 
+ FORM_AFR_fascism: "Унитарная Африка" #NT!
+ FORM_AFR_fascism_DEF: "Унитарная Африка" #NT!
+ FORM_AFR_democratic: "Африканский Союз" #NT!
+ FORM_AFR_democratic_DEF: "Африканский союз" #NT!
+ FORM_AFR_neutrality: "Королевство Африки" #NT!
+ FORM_AFR_neutrality_DEF: "Королевство Африки" #NT!
+ FORM_AFR_communism: "Африканская Демократическая Республика" #NT!
+ FORM_AFR_communism_DEF: "Африканская Демократическая Республика" #NT!
+ FORM_AFR_fascism_ADJ: "Африканский" #NT!
+ FORM_AFR_democratic_ADJ: "Африканский" #NT!
+ FORM_AFR_neutrality_ADJ: "Африканский" #NT!
+ FORM_AFR_communism_ADJ: "Африканский" #NT!
+     ##### 
+ FORM_AUH_fascism: "Австро-Венгерская империя" #NT!
+ FORM_AUH_fascism_DEF: "Австро-Венгерская империя" #NT!
+ FORM_AUH_democratic: "Дунайская Федерация" #NT!
+ FORM_AUH_democratic_DEF: "Дунайская Федерация" #NT!
+ FORM_AUH_neutrality: "Австро-Венгрия" #NT!
+ FORM_AUH_neutrality_DEF: "Австро-Венгрия" #NT!
+ FORM_AUH_communism: "Австро-Венгерский Союз" #NT!
+ FORM_AUH_communism_DEF: "Австро-Венгерский Союз" #NT!
+ FORM_AUH_fascism_ADJ: "Австро-Венгерский" #NT!
+ FORM_AUH_democratic_ADJ: "Дунайский" #NT!
+ FORM_AUH_neutrality_ADJ: "Австро-Венгерский" #NT!
+ FORM_AUH_communism_ADJ: "Австро-Венгерский" #NT!
+     ##### 
+ FORM_IBE_fascism: "Националистическая Иберия" #NT!
+ FORM_IBE_fascism_DEF: "Националистическая Иберия" #NT!
+ FORM_IBE_democratic: "Иберийская Федерация" #NT!
+ FORM_IBE_democratic_DEF: "Иберийская Федерация" #NT!
+ FORM_IBE_neutrality: "Иберийский союз" #NT!
+ FORM_IBE_neutrality_DEF: "Иберийский союз" #NT!
+ FORM_IBE_communism: "Пиренейская Народная Республика" #NT!
+ FORM_IBE_communism_DEF: "Иберийская Народная Республика" #NT!
+ FORM_IBE_fascism_ADJ: "иберийский" #NT!
+ FORM_IBE_democratic_ADJ: "иберийский" #NT!
+ FORM_IBE_neutrality_ADJ: "иберийский" #NT!
+ FORM_IBE_communism_ADJ: "иберийский" #NT!
+     ##### 
+ FORM_SCA_fascism: "Скандинавская империя" #NT!
+ FORM_SCA_fascism_DEF: "Скандинавская империя" #NT!
+ FORM_SCA_democratic: "Кальмарский союз" #NT!
+ FORM_SCA_democratic_DEF: "Кальмарский союз" #NT!
+ FORM_SCA_neutrality: "Кальмарский союз" #NT!
+ FORM_SCA_neutrality_DEF: "Кальмарский союз" #NT!
+ FORM_SCA_communism: "Скандинавская Народная Республика" #NT!
+ FORM_SCA_communism_DEF: "Скандинавская Народная Республика" #NT!
+ FORM_SCA_fascism_ADJ: "скандинавский" #NT!
+ FORM_SCA_democratic_ADJ: "скандинавский" #NT!
+ FORM_SCA_neutrality_ADJ: "скандинавский" #NT!
+ FORM_SCA_communism_ADJ: "скандинавский" #NT!
+     ##### 
+ FORM_CAU_fascism: "Унитарное Закавказье" #NT!
+ FORM_CAU_fascism_DEF: "Единое Закавказье" #NT!
+ FORM_CAU_democratic: "Закавказская Федерация" #NT!
+ FORM_CAU_democratic_DEF: "Закавказская Федерация" #NT!
+ FORM_CAU_neutrality: "Закавказское королевство" #NT!
+ FORM_CAU_neutrality_DEF: "Закавказское королевство" #NT!
+ FORM_CAU_communism: "Закавказская Народная Республика" #NT!
+ FORM_CAU_communism_DEF: "Закавказская Народная Республика" #NT!
+ FORM_CAU_fascism_ADJ: "Закавказский" #NT!
+ FORM_CAU_democratic_ADJ: "Закавказский" #NT!
+ FORM_CAU_neutrality_ADJ: "Закавказский" #NT!
+ FORM_CAU_communism_ADJ: "Закавказский" #NT!
+     ##### 
+ FORM_BAL_fascism: "Унитарные государства Балтии" #NT!
+ FORM_BAL_fascism_DEF: "унитарные государства Балтии" #NT!
+ FORM_BAL_democratic: "Прибалтика" #NT!
+ FORM_BAL_democratic_DEF: "страны Балтии" #NT!
+ FORM_BAL_neutrality: "Прибалтика" #NT!
+ FORM_BAL_neutrality_DEF: "страны Балтии" #NT!
+ FORM_BAL_communism: "Балтийская Народная Республика" #NT!
+ FORM_BAL_communism_DEF: "Балтийская Народная Республика" #NT!
+ FORM_BAL_fascism_ADJ: "Балтика" #NT!
+ FORM_BAL_democratic_ADJ: "Балтика" #NT!
+ FORM_BAL_neutrality_ADJ: "Балтика" #NT!
+ FORM_BAL_communism_ADJ: "Балтика" #NT!
+     ##### 
+ FORM_COM_fascism: "Фалангист Польша-Литва" #NT!
+ FORM_COM_fascism_DEF: "Фалангист Польша-Литва" #NT!
+ FORM_COM_democratic: "Речь Посполитая" #NT!
+ FORM_COM_democratic_DEF: "Речь Посполитая" #NT!
+ FORM_COM_neutrality: "Польско-Литовский союз" #NT!
+ FORM_COM_neutrality_DEF: "Польско-Литовский союз" #NT!
+ FORM_COM_communism: "Польско-Литовская Народная Республика" #NT!
+ FORM_COM_communism_DEF: "Польско-Литовская Народная Республика" #NT!
+ FORM_COM_fascism_ADJ: "Польско-литовский" #NT!
+ FORM_COM_democratic_ADJ: "Польско-литовский" #NT!
+ FORM_COM_neutrality_ADJ: "Польско-литовский" #NT!
+ FORM_COM_communism_ADJ: "Польско-литовский" #NT!
+     ##### 
+ FORM_CEN_fascism: "Независимое государство Центральной Америки" #NT!
+ FORM_CEN_fascism_DEF: "Независимое Государство Центральной Америки" #NT!
+ FORM_CEN_democratic: "Федеративная Республика Центральная Америка" #NT!
+ FORM_CEN_democratic_DEF: "Федеративная Республика Центральной Америки" #NT!
+ FORM_CEN_neutrality: "Центральная Америка" #NT!
+ FORM_CEN_neutrality_DEF: "Центральная Америка" #NT!
+ FORM_CEN_communism: "Центральноамериканская Народная Республика" #NT!
+ FORM_CEN_communism_DEF: "Центральноамериканская Народная Республика" #NT!
+ FORM_CEN_fascism_ADJ: "Центральная Америка" #NT!
+ FORM_CEN_democratic_ADJ: "Центральная Америка" #NT!
+ FORM_CEN_neutrality_ADJ: "Центральная Америка" #NT!
+ FORM_CEN_communism_ADJ: "Центральная Америка" #NT!
+     ##### 
+ FORM_HUK_fascism: "Великая Венгрия" #NT!
+ FORM_HUK_fascism_DEF: "Великая Венгрия" #NT!
+ FORM_HUK_democratic: "Венгерско-Хорватская Федерация" #NT!
+ FORM_HUK_democratic_DEF: "Венгерско-Хорватская Федерация" #NT!
+ FORM_HUK_neutrality: "Венгерское королевство" #NT!
+ FORM_HUK_neutrality_DEF: "Венгерское королевство" #NT!
+ FORM_HUK_communism: "Венгерская Народная Республика" #NT!
+ FORM_HUK_communism_DEF: "Венгерская Народная Республика" #NT!
+ FORM_HUK_fascism_ADJ: "венгерский" #NT!
+ FORM_HUK_democratic_ADJ: "венгерский" #NT!
+ FORM_HUK_neutrality_ADJ: "венгерский" #NT!
+ FORM_HUK_communism_ADJ: "венгерский" #NT!
+     ##### 
+ FORM_GRO_fascism: "Великий немецкий рейх" #NT!
+ FORM_GRO_fascism_DEF: "Великий немецкий рейх" #NT!
+ FORM_GRO_democratic: "Великая Германия" #NT!
+ FORM_GRO_democratic_DEF: "Великий немецкий" #NT!
+ FORM_GRO_neutrality: "Великая Германия" #NT!
+ FORM_GRO_neutrality_DEF: "Великая Германия" #NT!
+ FORM_GRO_communism: "Великая Германия Народная Республика" #NT!
+ FORM_GRO_communism_DEF: "Великая Германия Народная Республика" #NT!
+ FORM_GRO_fascism_ADJ: "Великая Германия" #NT!
+ FORM_GRO_democratic_ADJ: "Великая Германия" #NT!
+ FORM_GRO_neutrality_ADJ: "Великая Германия" #NT!
+ FORM_GRO_communism_ADJ: "Великая Германия" #NT!
+     ##### 
+ FORM_KIE_fascism: "Националистическая Киевская Русь" #NT!
+ FORM_KIE_fascism_DEF: "Националистическая Киевская Русь" #NT!
+ FORM_KIE_democratic: "Киевская Русь" #NT!
+ FORM_KIE_democratic_DEF: "Киевская Русь" #NT!
+ FORM_KIE_neutrality: "Киевская Русь" #NT!
+ FORM_KIE_neutrality_DEF: "Киевская Русь" #NT!
+ FORM_KIE_communism: "Киево-Российская ССР" #NT!
+ FORM_KIE_communism_DEF: "Киево-Российская ССР" #NT!
+ FORM_KIE_fascism_ADJ: "Киевско-Русский" #NT!
+ FORM_KIE_democratic_ADJ: "Киевско-Русский" #NT!
+ FORM_KIE_neutrality_ADJ: "Киевско-Русский" #NT!
+ FORM_KIE_communism_ADJ: "Киевско-Русский" #NT!
+     ##### 
+ FORM_LAU_fascism: "Латинская империя" #NT!
+ FORM_LAU_fascism_DEF: "Латинская империя" #NT!
+ FORM_LAU_democratic: "Латинские Федеративные Штаты" #NT!
+ FORM_LAU_democratic_DEF: "Латинские Федеративные Штаты" #NT!
+ FORM_LAU_neutrality: "Латинский Союз" #NT!
+ FORM_LAU_neutrality_DEF: "Латинский Союз" #NT!
+ FORM_LAU_communism: "Латинская Народная Республика" #NT!
+ FORM_LAU_communism_DEF: "Латинская Народная Республика" #NT!
+ FORM_LAU_fascism_ADJ: "латинский" #NT!
+ FORM_LAU_democratic_ADJ: "латинский" #NT!
+ FORM_LAU_neutrality_ADJ: "латинский" #NT!
+ FORM_LAU_communism_ADJ: "латинский" #NT!
+     ##### 
+ FORM_FRE_fascism: "Франкская империя" #NT!
+ FORM_FRE_fascism_DEF: "Франкская империя" #NT!
+ FORM_FRE_democratic: "Франция" #NT!
+ FORM_FRE_democratic_DEF: "Франция" #NT!
+ FORM_FRE_neutrality: "Франкское королевство" #NT!
+ FORM_FRE_neutrality_DEF: "Франкское королевство" #NT!
+ FORM_FRE_communism: "Франкская Народная Республика" #NT!
+ FORM_FRE_communism_DEF: "Франкская Народная Республика" #NT!
+ FORM_FRE_fascism_ADJ: "франкский" #NT!
+ FORM_FRE_democratic_ADJ: "франкский" #NT!
+ FORM_FRE_neutrality_ADJ: "франкский" #NT!
+ FORM_FRE_communism_ADJ: "франкский" #NT!
+     ##### 
+ FORM_EUR_fascism: "Европейская Империя" #NT!
+ FORM_EUR_fascism_DEF: "Европейская Империя" #NT!
+ FORM_EUR_democratic: "Евросоюз" #NT!
+ FORM_EUR_democratic_DEF: "Европейский Союз" #NT!
+ FORM_EUR_neutrality: "Европа" #NT!
+ FORM_EUR_neutrality_DEF: "Европа" #NT!
+ FORM_EUR_communism: "Европейская Народная Республика" #NT!
+ FORM_EUR_communism_DEF: "Европейская Народная Республика" #NT!
+ FORM_EUR_fascism_ADJ: "Европейский" #NT!
+ FORM_EUR_democratic_ADJ: "Европейский" #NT!
+ FORM_EUR_neutrality_ADJ: "Европейский" #NT!
+ FORM_EUR_communism_ADJ: "Европейский" #NT!
+     ##### 
+ FORM_BYZ_fascism: "Византийская империя" #NT!
+ FORM_BYZ_fascism_DEF: "Византийская империя" #NT!
+ FORM_BYZ_democratic: "Византийская Республика" #NT!
+ FORM_BYZ_democratic_DEF: "Византийская Республика" #NT!
+ FORM_BYZ_neutrality: "Византия" #NT!
+ FORM_BYZ_neutrality_DEF: "Византия" #NT!
+ FORM_BYZ_communism: "Византийская Народная Республика" #NT!
+ FORM_BYZ_communism_DEF: "Византийская Народная Республика" #NT!
+ FORM_BYZ_fascism_ADJ: "византийский" #NT!
+ FORM_BYZ_democratic_ADJ: "византийский" #NT!
+ FORM_BYZ_neutrality_ADJ: "византийский" #NT!
+ FORM_BYZ_communism_ADJ: "византийский" #NT!
+     ##### 
+ FORM_BUE_fascism: "Булгарская империя" #NT!
+ FORM_BUE_fascism_DEF: "Булгарская империя" #NT!
+ FORM_BUE_democratic: "Болгария" #NT!
+ FORM_BUE_democratic_DEF: "Болгария" #NT!
+ FORM_BUE_neutrality: "Булгарское царство" #NT!
+ FORM_BUE_neutrality_DEF: "Булгарское царство" #NT!
+ FORM_BUE_communism: "Булгарская Народная Республика" #NT!
+ FORM_BUE_communism_DEF: "Булгарская Народная Республика" #NT!
+ FORM_BUE_fascism_ADJ: "Булгар" #NT!
+ FORM_BUE_democratic_ADJ: "Булгар" #NT!
+ FORM_BUE_neutrality_ADJ: "Булгар" #NT!
+ FORM_BUE_communism_ADJ: "Булгар" #NT!
+     ##### 
+ FORM_GCO_fascism: "Мас Гран Колумбия" #NT!
+ FORM_GCO_fascism_DEF: "Мас Гран Колумбия" #NT!
+ FORM_GCO_democratic: "Гран Колумбия" #NT!
+ FORM_GCO_democratic_DEF: "Гран Колумбия" #NT!
+ FORM_GCO_neutrality: "Гран Колумбия" #NT!
+ FORM_GCO_neutrality_DEF: "Гран Колумбия" #NT!
+ FORM_GCO_communism: "Великая Колумбийская Народная Республика" #NT!
+ FORM_GCO_communism_DEF: "Великая Колумбийская Народная Республика" #NT!
+ FORM_GCO_fascism_ADJ: "Гран-Колумбийский" #NT!
+ FORM_GCO_democratic_ADJ: "Гран-Колумбийский" #NT!
+ FORM_GCO_neutrality_ADJ: "Гран-Колумбийский" #NT!
+ FORM_GCO_communism_ADJ: "Гран-Колумбийский" #NT!
+     ##### 
+ FORM_MEE_fascism: "Третья Мексиканская империя" #NT!
+ FORM_MEE_fascism_DEF: "Третья Мексиканская империя" #NT!
+ FORM_MEE_democratic: "Мексиканские Соединенные Штаты" #NT!
+ FORM_MEE_democratic_DEF: "Мексиканские Соединенные Штаты" #NT!
+ FORM_MEE_neutrality: "Третья Мексиканская империя" #NT!
+ FORM_MEE_neutrality_DEF: "Третья Мексиканская империя" #NT!
+ FORM_MEE_communism: "Мексиканская Народная Республика" #NT!
+ FORM_MEE_communism_DEF: "Мексиканская Народная Республика" #NT!
+ FORM_MEE_fascism_ADJ: "Мексиканский" #NT!
+ FORM_MEE_democratic_ADJ: "Мексиканский" #NT!
+ FORM_MEE_neutrality_ADJ: "Мексиканский" #NT!
+ FORM_MEE_communism_ADJ: "Мексиканский" #NT!
+     ##### 
+ FORM_GAL_fascism: "Албанская империя" #NT!
+ FORM_GAL_fascism_DEF: "Албанская империя" #NT!
+ FORM_GAL_democratic: "Албанская Федерация" #NT!
+ FORM_GAL_democratic_DEF: "Албанская федерация" #NT!
+ FORM_GAL_neutrality: "Великая Албания" #NT!
+ FORM_GAL_neutrality_DEF: "Великая Албания" #NT!
+ FORM_GAL_communism: "Социалистическая Республика Великая Албания" #NT!
+ FORM_GAL_communism_DEF: "Социалистическая Республика Великая Албания" #NT!
+ FORM_GAL_fascism_ADJ: "албанский" #NT!
+ FORM_GAL_democratic_ADJ: "албанский" #NT!
+ FORM_GAL_neutrality_ADJ: "албанский" #NT!
+ FORM_GAL_communism_ADJ: "албанский" #NT!
+     ##### 
+ FORM_BAK_fascism: "Балканская империя" #NT!
+ FORM_BAK_fascism_DEF: "Балканская империя" #NT!
+ FORM_BAK_democratic: "Балканская Федерация" #NT!
+ FORM_BAK_democratic_DEF: "Балканская Федерация" #NT!
+ FORM_BAK_neutrality: "Балканский Союз" #NT!
+ FORM_BAK_neutrality_DEF: "Балканский Союз" #NT!
+ FORM_BAK_communism: "Балканская Народная Республика" #NT!
+ FORM_BAK_communism_DEF: "Балканская Народная Республика" #NT!
+ FORM_BAK_fascism_ADJ: "Балканский" #NT!
+ FORM_BAK_democratic_ADJ: "Балканский" #NT!
+ FORM_BAK_neutrality_ADJ: "Балканский" #NT!
+ FORM_BAK_communism_ADJ: "Балканский" #NT!
+     ##### 
+ FORM_POH_fascism: "Польско-Венгерская империя" #NT!
+ FORM_POH_fascism_DEF: "Польско-Венгерская империя" #NT!
+ FORM_POH_democratic: "Польша-Венгрия" #NT!
+ FORM_POH_democratic_DEF: "Польша-Венгрия" #NT!
+ FORM_POH_neutrality: "Польша-Венгрия" #NT!
+ FORM_POH_neutrality_DEF: "Польша-Венгрия" #NT!
+ FORM_POH_communism: "Польско-Венгерская Народная Республика" #NT!
+ FORM_POH_communism_DEF: "Польско-Венгерская Народная Республика" #NT!
+ FORM_POH_fascism_ADJ: "Польско-Венгерский" #NT!
+ FORM_POH_democratic_ADJ: "Польско-Венгерский" #NT!
+ FORM_POH_neutrality_ADJ: "Польско-Венгерский" #NT!
+ FORM_POH_communism_ADJ: "Польско-Венгерский" #NT!
+     ##### 
+ FORM_ROE_fascism: "Римская империя" #NT!
+ FORM_ROE_fascism_DEF: "Римская империя" #NT!
+ FORM_ROE_democratic: "Римская республика" #NT!
+ FORM_ROE_democratic_DEF: "Римская республика" #NT!
+ FORM_ROE_neutrality: "Рим" #NT!
+ FORM_ROE_neutrality_DEF: "Рим" #NT!
+ FORM_ROE_communism: "Римская Народная Республика" #NT!
+ FORM_ROE_communism_DEF: "Римская Народная Республика" #NT!
+ FORM_ROE_fascism_ADJ: "Роман" #NT!
+ FORM_ROE_democratic_ADJ: "Роман" #NT!
+ FORM_ROE_neutrality_ADJ: "Роман" #NT!
+ FORM_ROE_communism_ADJ: "Роман" #NT!
+     ##### 
+ FORM_ANE_fascism: "Анжуйская империя" #NT!
+ FORM_ANE_fascism_DEF: "Анжуйская империя" #NT!
+ FORM_ANE_democratic: "Анжуйская Республика" #NT!
+ FORM_ANE_democratic_DEF: "Анжуйская Республика" #NT!
+ FORM_ANE_neutrality: "Анжуйское королевство" #NT!
+ FORM_ANE_neutrality_DEF: "Анжуйское королевство" #NT!
+ FORM_ANE_communism: "Анжуйская Народная Республика" #NT!
+ FORM_ANE_communism_DEF: "Анжуйская Народная Республика" #NT!
+ FORM_ANE_fascism_ADJ: "Анжуйский" #NT!
+ FORM_ANE_democratic_ADJ: "Анжуйский" #NT!
+ FORM_ANE_neutrality_ADJ: "Анжуйский" #NT!
+ FORM_ANE_communism_ADJ: "Анжуйский" #NT!
+     ##### 
+ FORM_MAC_fascism: "Македонская империя" #NT!
+ FORM_MAC_fascism_DEF: "Македонская империя" #NT!
+ FORM_MAC_democratic: "Македония" #NT!
+ FORM_MAC_democratic_DEF: "Македония" #NT!
+ FORM_MAC_neutrality: "Македония" #NT!
+ FORM_MAC_neutrality_DEF: "Македония" #NT!
+ FORM_MAC_communism: "Македонская Народная Республика" #NT!
+ FORM_MAC_communism_DEF: "Македонская Народная Республика" #NT!
+ FORM_MAC_fascism_ADJ: "македонский" #NT!
+ FORM_MAC_democratic_ADJ: "македонский" #NT!
+ FORM_MAC_neutrality_ADJ: "македонский" #NT!
+ FORM_MAC_communism_ADJ: "македонский" #NT!
+     ##### 
+ FORM_SOU_fascism: "Южноамериканская империя" #NT!
+ FORM_SOU_fascism_DEF: "Южноамериканская империя" #NT!
+ FORM_SOU_democratic: "Южноамериканский союз" #NT!
+ FORM_SOU_democratic_DEF: "Южноамериканский союз" #NT!
+ FORM_SOU_neutrality: "Южноамериканские Штаты" #NT!
+ FORM_SOU_neutrality_DEF: "южноамериканские штаты" #NT!
+ FORM_SOU_communism: "Южноамериканская Народная Республика" #NT!
+ FORM_SOU_communism_DEF: "Южноамериканская Народная Республика" #NT!
+ FORM_SOU_fascism_ADJ: "Южноамериканский" #NT!
+ FORM_SOU_democratic_ADJ: "Южноамериканский" #NT!
+ FORM_SOU_neutrality_ADJ: "Южноамериканский" #NT!
+ FORM_SOU_communism_ADJ: "Южноамериканский" #NT!
+     ##### 
+ FORM_WOR_fascism: "Новый Мировой Порядок" #NT!
+ FORM_WOR_fascism_DEF: "Новый Мировой Порядок" #NT!
+ FORM_WOR_democratic: "Объединенные Нации" #NT!
+ FORM_WOR_democratic_DEF: "Организация Объединенных Наций" #NT!
+ FORM_WOR_neutrality: "Мир" #NT!
+ FORM_WOR_neutrality_DEF: "мир" #NT!
+ FORM_WOR_communism: "Социалистическая Всемирная Республика" #NT!
+ FORM_WOR_communism_DEF: "Социалистическая Всемирная Республика" #NT!
+ FORM_WOR_fascism_ADJ: "Человек" #NT!
+ FORM_WOR_democratic_ADJ: "Человек" #NT!
+ FORM_WOR_neutrality_ADJ: "Человек" #NT!
+ FORM_WOR_communism_ADJ: "Человек" #NT!
+     ##### 
+ FORM_OTT_fascism: "Османская империя" #NT!
+ FORM_OTT_fascism_DEF: "Османская империя" #NT!
+ FORM_OTT_democratic: "Османская Республика" #NT!
+ FORM_OTT_democratic_DEF: "Османская Республика" #NT!
+ FORM_OTT_neutrality: "Османы" #NT!
+ FORM_OTT_neutrality_DEF: "Османы" #NT!
+ FORM_OTT_communism: "Османское социалистическое государство" #NT!
+ FORM_OTT_communism_DEF: "Османское социалистическое государство" #NT!
+ FORM_OTT_fascism_ADJ: "Османская" #NT!
+ FORM_OTT_democratic_ADJ: "Османская" #NT!
+ FORM_OTT_neutrality_ADJ: "Османская" #NT!
+ FORM_OTT_communism_ADJ: "Османская" #NT!
+     ##### 
+ FORM_MOE_fascism: "Монгольская империя" #NT!
+ FORM_MOE_fascism_DEF: "Монгольская империя" #NT!
+ FORM_MOE_democratic: "Монгольские Федеративные Штаты" #NT!
+ FORM_MOE_democratic_DEF: "Монгольские Федеративные Штаты" #NT!
+ FORM_MOE_neutrality: "Монгольское ханство" #NT!
+ FORM_MOE_neutrality_DEF: "Монгольское ханство" #NT!
+ FORM_MOE_communism: "Монгольская Народная Республика" #NT!
+ FORM_MOE_communism_DEF: "Монгольская Народная Республика" #NT!
+ FORM_MOE_fascism_ADJ: "Монгольский" #NT!
+ FORM_MOE_democratic_ADJ: "Монгольский" #NT!
+ FORM_MOE_neutrality_ADJ: "Монгольский" #NT!
+ FORM_MOE_communism_ADJ: "Монгольский" #NT!
+     ##### 
+ FORM_GIS_fascism: "Царство Давида" #NT!
+ FORM_GIS_fascism_DEF: "Царство Давида" #NT!
+ FORM_GIS_democratic: "Большой Израиль" #NT!
+ FORM_GIS_democratic_DEF: "Большой Израиль" #NT!
+ FORM_GIS_neutrality: "Царство Давида" #NT!
+ FORM_GIS_neutrality_DEF: "Царство Давида" #NT!
+ FORM_GIS_communism: "Великая Израильская Социалистическая Республика" #NT!
+ FORM_GIS_communism_DEF: "Великая Израильская Социалистическая Республика" #NT!
+ FORM_GIS_fascism_ADJ: "Израильский" #NT!
+ FORM_GIS_democratic_ADJ: "Израильский" #NT!
+ FORM_GIS_neutrality_ADJ: "Израильский" #NT!
+ FORM_GIS_communism_ADJ: "Израильский" #NT!
+     ##### 
+ FORM_MUG_fascism: "Империя Великих Моголов" #NT!
+ FORM_MUG_fascism_DEF: "Империя Великих Моголов" #NT!
+ FORM_MUG_democratic: "Федерация Великих Моголов" #NT!
+ FORM_MUG_democratic_DEF: "Федерация Великих Моголов" #NT!
+ FORM_MUG_neutrality: "Могольский халифат" #NT!
+ FORM_MUG_neutrality_DEF: "халифат Великих Моголов" #NT!
+ FORM_MUG_communism: "Коммуна Великих Моголов" #NT!
+ FORM_MUG_communism_DEF: "Коммуна Великих Моголов" #NT!
+ FORM_MUG_fascism_ADJ: "Могол" #NT!
+ FORM_MUG_democratic_ADJ: "Могол" #NT!
+ FORM_MUG_neutrality_ADJ: "Могол" #NT!
+ FORM_MUG_communism_ADJ: "Могол" #NT!
+     ##### 
+ FORM_HU1_fascism: "Венгерский протекторат" #NT!
+ FORM_HU1_fascism_DEF: "Венгерский протекторат" #NT!
+ FORM_HU1_democratic: "Венгерское государство" #NT!
+ FORM_HU1_democratic_DEF: "Венгерское государство" #NT!
+ FORM_HU1_neutrality: "Королевство Венгрия" #NT!
+ FORM_HU1_neutrality_DEF: "Королевство Венгрия" #NT!
+ FORM_HU1_communism: "Венгерская ССР" #NT!
+ FORM_HU1_communism_DEF: "Венгерская ССР" #NT!
+ FORM_HU1_fascism_ADJ: "венгерский" #NT!
+ FORM_HU1_democratic_ADJ: "венгерский" #NT!
+ FORM_HU1_neutrality_ADJ: "венгерский" #NT!
+ FORM_HU1_communism_ADJ: "венгерский" #NT!
+     ##### 
+ FORM_CR1_fascism: "Хорватский протекторат" #NT!
+ FORM_CR1_fascism_DEF: "Хорватский протекторат" #NT!
+ FORM_CR1_democratic: "Хорватское государство" #NT!
+ FORM_CR1_democratic_DEF: "хорватское государство" #NT!
+ FORM_CR1_neutrality: "Королевство Хорватия" #NT!
+ FORM_CR1_neutrality_DEF: "Королевство Хорватия" #NT!
+ FORM_CR1_communism: "Хорватская ССР" #NT!
+ FORM_CR1_communism_DEF: "Хорватская ССР" #NT!
+ FORM_CR1_fascism_ADJ: "хорватский" #NT!
+ FORM_CR1_democratic_ADJ: "хорватский" #NT!
+ FORM_CR1_neutrality_ADJ: "хорватский" #NT!
+ FORM_CR1_communism_ADJ: "хорватский" #NT!
+     ##### 
+ FORM_SL1_fascism: "Словацко-Галицкий протекторат" #NT!
+ FORM_SL1_fascism_DEF: "Словацко-Галицкий протекторат" #NT!
+ FORM_SL1_democratic: "Словацко-Галицкое государство" #NT!
+ FORM_SL1_democratic_DEF: "Словацко-Галицкое государство»" #NT!
+ FORM_SL1_neutrality: "Королевство Словакия-Галиция" #NT!
+ FORM_SL1_neutrality_DEF: "Королевство Словакия-Галиция" #NT!
+ FORM_SL1_communism: "Словацко-Галицкая ССР" #NT!
+ FORM_SL1_communism_DEF: "Словацко-Галицкая ССР" #NT!
+ FORM_SL1_fascism_ADJ: "Словацкий-Галицкий" #NT!
+ FORM_SL1_democratic_ADJ: "Словацкий-Галицкий" #NT!
+ FORM_SL1_neutrality_ADJ: "Словацкий-Галицкий" #NT!
+ FORM_SL1_communism_ADJ: "Словацкий-Галицкий" #NT!
+     ##### 
+ FORM_CZ1_fascism: "Чешский протекторат" #NT!
+ FORM_CZ1_fascism_DEF: "Чешский протекторат" #NT!
+ FORM_CZ1_democratic: "Чешское государство" #NT!
+ FORM_CZ1_democratic_DEF: "чешское государство" #NT!
+ FORM_CZ1_neutrality: "Королевство Богемия-Моравия" #NT!
+ FORM_CZ1_neutrality_DEF: "Королевство Богемия-Моравия" #NT!
+ FORM_CZ1_communism: "Чешская ССР" #NT!
+ FORM_CZ1_communism_DEF: "Чешская ССР" #NT!
+ FORM_CZ1_fascism_ADJ: "чешский" #NT!
+ FORM_CZ1_democratic_ADJ: "чешский" #NT!
+ FORM_CZ1_neutrality_ADJ: "чешский" #NT!
+ FORM_CZ1_communism_ADJ: "чешский" #NT!
+     ##### 
+ FORM_PEE_fascism: "Персидская империя" #NT!
+ FORM_PEE_fascism_DEF: "Персидская империя" #NT!
+ FORM_PEE_democratic: "Персидская Республика" #NT!
+ FORM_PEE_democratic_DEF: "Персидская Республика" #NT!
+ FORM_PEE_neutrality: "Персия" #NT!
+ FORM_PEE_neutrality_DEF: "Персия" #NT!
+ FORM_PEE_communism: "Персидское Социалистическое Государство" #NT!
+ FORM_PEE_communism_DEF: "Персидское социалистическое государство" #NT!
+ FORM_PEE_fascism_ADJ: "персидский" #NT!
+ FORM_PEE_democratic_ADJ: "персидский" #NT!
+ FORM_PEE_neutrality_ADJ: "персидский" #NT!
+ FORM_PEE_communism_ADJ: "персидский" #NT!
+     ##### 
+ FORM_NSE_fascism: "Империя Северного моря" #NT!
+ FORM_NSE_fascism_DEF: "Империя Северного моря" #NT!
+ FORM_NSE_democratic: "Федерация Северного моря" #NT!
+ FORM_NSE_democratic_DEF: "Федерация Северного моря" #NT!
+ FORM_NSE_neutrality: "Империя Северного моря" #NT!
+ FORM_NSE_neutrality_DEF: "Империя Северного моря" #NT!
+ FORM_NSE_communism: "Северная Народная Республика" #NT!
+ FORM_NSE_communism_DEF: "Северная Народная Республика" #NT!
+ FORM_NSE_fascism_ADJ: "северянин" #NT!
+ FORM_NSE_democratic_ADJ: "северянин" #NT!
+ FORM_NSE_neutrality_ADJ: "северянин" #NT!
+ FORM_NSE_communism_ADJ: "северянин" #NT!
+     ##### 
+ FORM_INC_fascism: "Империя инков" #NT!
+ FORM_INC_fascism_DEF: "Империя инков" #NT!
+ FORM_INC_democratic: "Республика Инков" #NT!
+ FORM_INC_democratic_DEF: "Республика Инков" #NT!
+ FORM_INC_neutrality: "Королевство инков" #NT!
+ FORM_INC_neutrality_DEF: "Королевство инков" #NT!
+ FORM_INC_communism: "Народная Республика Инков" #NT!
+ FORM_INC_communism_DEF: "Народная Республика Инков" #NT!
+ FORM_INC_fascism_ADJ: "Инки" #NT!
+ FORM_INC_democratic_ADJ: "Инки" #NT!
+ FORM_INC_neutrality_ADJ: "Инки" #NT!
+ FORM_INC_communism_ADJ: "Инки" #NT!
+     ##### 
+ FORM_GFI_fascism: "Суур-Суоми" #NT!
+ FORM_GFI_fascism_DEF: "Суур-Суоми" #NT!
+ FORM_GFI_democratic: "Великая Финляндия" #NT!
+ FORM_GFI_democratic_DEF: "Великая Финляндия" #NT!
+ FORM_GFI_neutrality: "Великая Финляндия" #NT!
+ FORM_GFI_neutrality_DEF: "Великая Финляндия" #NT!
+ FORM_GFI_communism: "Великое Социалистическое Государство Финляндия" #NT!
+ FORM_GFI_communism_DEF: "Великое Социалистическое Государство Финляндия" #NT!
+ FORM_GFI_fascism_ADJ: "финский" #NT!
+ FORM_GFI_democratic_ADJ: "финский" #NT!
+ FORM_GFI_neutrality_ADJ: "финский" #NT!
+ FORM_GFI_communism_ADJ: "финский" #NT!
+     ##### 
+ FORM_TKS_fascism: "Большой Туран" #NT!
+ FORM_TKS_fascism_DEF: "Большой Туран" #NT!
+ FORM_TKS_democratic: "Федерация Туран" #NT!
+ FORM_TKS_democratic_DEF: "Федерация Туран" #NT!
+ FORM_TKS_neutrality: "Туран" #NT!
+ FORM_TKS_neutrality_DEF: "Туран" #NT!
+ FORM_TKS_communism: "Тюркская Коммуна" #NT!
+ FORM_TKS_communism_DEF: "Тюркская Коммуна" #NT!
+ FORM_TKS_fascism_ADJ: "тюркский" #NT!
+ FORM_TKS_democratic_ADJ: "тюркский" #NT!
+ FORM_TKS_neutrality_ADJ: "тюркский" #NT!
+ FORM_TKS_communism_ADJ: "тюркский" #NT!
+     ##### 
+ FORM_ICH_fascism: "Юго-Восточная Империя" #NT!
+ FORM_ICH_fascism_DEF: "Юго-Восточная Империя" #NT!
+ FORM_ICH_democratic: "Индокитай" #NT!
+ FORM_ICH_democratic_DEF: "Индокитай" #NT!
+ FORM_ICH_neutrality: "Индокитай" #NT!
+ FORM_ICH_neutrality_DEF: "Индокитай" #NT!
+ FORM_ICH_communism: "Союз Индокитая" #NT!
+ FORM_ICH_communism_DEF: "Союз Индокитая" #NT!
+ FORM_ICH_fascism_ADJ: "индокитайский" #NT!
+ FORM_ICH_democratic_ADJ: "индокитайский" #NT!
+ FORM_ICH_neutrality_ADJ: "индокитайский" #NT!
+ FORM_ICH_communism_ADJ: "индокитайский" #NT!
+     ##### 
+ FORM_SEP_fascism: "Шведская империя" #NT!
+ FORM_SEP_fascism_DEF: "Шведская империя" #NT!
+ FORM_SEP_democratic: "Шведская Федерация" #NT!
+ FORM_SEP_democratic_DEF: "Шведская Федерация" #NT!
+ FORM_SEP_neutrality: "Великая Швеция" #NT!
+ FORM_SEP_neutrality_DEF: "Великая Швеция" #NT!
+ FORM_SEP_communism: "Союз Великой Швеции" #NT!
+ FORM_SEP_communism_DEF: "Союз Великой Швеции" #NT!
+ FORM_SEP_fascism_ADJ: "Шведский" #NT!
+ FORM_SEP_democratic_ADJ: "Шведский" #NT!
+ FORM_SEP_neutrality_ADJ: "Шведский" #NT!
+ FORM_SEP_communism_ADJ: "Шведский" #NT!
+     ##### 
+ FORM_GTI_fascism: "Великая Тибетская Империя" #NT!
+ FORM_GTI_fascism_DEF: "Великая Тибетская империя" #NT!
+ FORM_GTI_democratic: "Большой Тибет" #NT!
+ FORM_GTI_democratic_DEF: "Большой Тибет" #NT!
+ FORM_GTI_neutrality: "Большой Тибет" #NT!
+ FORM_GTI_neutrality_DEF: "Большой Тибет" #NT!
+ FORM_GTI_communism: "Великий Монашеский Союз Тибета" #NT!
+ FORM_GTI_communism_DEF: "Великий Монашеский Союз Тибета" #NT!
+ FORM_GTI_fascism_ADJ: "тибетский" #NT!
+ FORM_GTI_democratic_ADJ: "тибетский" #NT!
+ FORM_GTI_neutrality_ADJ: "тибетский" #NT!
+ FORM_GTI_communism_ADJ: "тибетский" #NT!
+     ##### 
+ FORM_ABY_fascism: "Империя Льва" #NT!
+ FORM_ABY_fascism_DEF: "Империя Льва" #NT!
+ FORM_ABY_democratic: "Абиссиния" #NT!
+ FORM_ABY_democratic_DEF: "Абиссиния" #NT!
+ FORM_ABY_neutrality: "Абиссиния" #NT!
+ FORM_ABY_neutrality_DEF: "Абиссиния" #NT!
+ FORM_ABY_communism: "Абиссинский союз" #NT!
+ FORM_ABY_communism_DEF: "Абиссинский союз" #NT!
+ FORM_ABY_fascism_ADJ: "Абиссинский" #NT!
+ FORM_ABY_democratic_ADJ: "Абиссинский" #NT!
+ FORM_ABY_neutrality_ADJ: "Абиссинский" #NT!
+ FORM_ABY_communism_ADJ: "Абиссинский" #NT!
+     ##### 
+ FORM_NOA_fascism: "Североамериканская империя" #NT!
+ FORM_NOA_fascism_DEF: "Северо-Американская империя" #NT!
+ FORM_NOA_democratic: "Североамериканская федерация" #NT!
+ FORM_NOA_democratic_DEF: "Североамериканская федерация" #NT!
+ FORM_NOA_neutrality: "Северная Америка" #NT!
+ FORM_NOA_neutrality_DEF: "Северная Америка" #NT!
+ FORM_NOA_communism: "Северо-Американский Союз" #NT!
+ FORM_NOA_communism_DEF: "Северо-Американский союз" #NT!
+ FORM_NOA_fascism_ADJ: "Североамериканский" #NT!
+ FORM_NOA_democratic_ADJ: "Североамериканский" #NT!
+ FORM_NOA_neutrality_ADJ: "Североамериканский" #NT!
+ FORM_NOA_communism_ADJ: "Североамериканский" #NT!
+     ##### 
+ FORM_GEG_fascism: "Большой Имперский Кемет" #NT!
+ FORM_GEG_fascism_DEF: "Большой Императорский Кемет" #NT!
+ FORM_GEG_democratic: "Большой Египет" #NT!
+ FORM_GEG_democratic_DEF: "Большой Египет" #NT!
+ FORM_GEG_neutrality: "Королевство Великого Египта" #NT!
+ FORM_GEG_neutrality_DEF: "Королевство Великого Египта" #NT!
+ FORM_GEG_communism: "Большой советский штат Нил" #NT!
+ FORM_GEG_communism_DEF: "Большой советский штат Нил" #NT!
+ FORM_GEG_fascism_ADJ: "Египетский" #NT!
+ FORM_GEG_democratic_ADJ: "Египетский" #NT!
+ FORM_GEG_neutrality_ADJ: "Египетский" #NT!
+ FORM_GEG_communism_ADJ: "Египетский" #NT!
+     ##### 
+ FORM_HIS_fascism: "Испанская империя" #NT!
+ FORM_HIS_fascism_DEF: "Испанская империя" #NT!
+ FORM_HIS_democratic: "Эспаньола" #NT!
+ FORM_HIS_democratic_DEF: "Эспаньола" #NT!
+ FORM_HIS_neutrality: "Эспаньола" #NT!
+ FORM_HIS_neutrality_DEF: "Эспаньола" #NT!
+ FORM_HIS_communism: "Испанский демократический союз" #NT!
+ FORM_HIS_communism_DEF: "Испанский демократический союз" #NT!
+ FORM_HIS_fascism_ADJ: "Испанец" #NT!
+ FORM_HIS_democratic_ADJ: "Испанец" #NT!
+ FORM_HIS_neutrality_ADJ: "Испанец" #NT!
+ FORM_HIS_communism_ADJ: "Испанец" #NT!
+     ##### 
+ FORM_PRB_fascism: "Перу-Боливийская империя" #NT!
+ FORM_PRB_fascism_DEF: "Перу-Боливийская империя" #NT!
+ FORM_PRB_democratic: "Перу-Боливийская Федерация" #NT!
+ FORM_PRB_democratic_DEF: "Перуано-боливийская федерация" #NT!
+ FORM_PRB_neutrality: "Перу-Боливийская Конфедерация" #NT!
+ FORM_PRB_neutrality_DEF: "Перу-Боливийская Конфедерация" #NT!
+ FORM_PRB_communism: "Перу-Боливийская Народная Республика" #NT!
+ FORM_PRB_communism_DEF: "Перу-Боливийская Народная Республика" #NT!
+ FORM_PRB_fascism_ADJ: "Перу-боливийский" #NT!
+ FORM_PRB_democratic_ADJ: "Перу-боливийский" #NT!
+ FORM_PRB_neutrality_ADJ: "Перу-боливийский" #NT!
+ FORM_PRB_communism_ADJ: "Перу-боливийский" #NT!
+     ##### 
+ FORM_CAB_fascism: "Карибская империя" #NT!
+ FORM_CAB_fascism_DEF: "Карибская империя" #NT!
+ FORM_CAB_democratic: "Карибская Федерация" #NT!
+ FORM_CAB_democratic_DEF: "Карибская федерация" #NT!
+ FORM_CAB_neutrality: "Карибская Конфедерация" #NT!
+ FORM_CAB_neutrality_DEF: "Карибская Конфедерация" #NT!
+ FORM_CAB_communism: "Объединенные острова" #NT!
+ FORM_CAB_communism_DEF: "Соединенные острова" #NT!
+ FORM_CAB_fascism_ADJ: "Карибский бассейн" #NT!
+ FORM_CAB_democratic_ADJ: "Карибский бассейн" #NT!
+ FORM_CAB_neutrality_ADJ: "Карибский бассейн" #NT!
+ FORM_CAB_communism_ADJ: "Карибский бассейн" #NT!
+     ##### 
+ FORM_AAS_fascism: "Империя Южного Креста" #NT!
+ FORM_AAS_fascism_DEF: "Империя Южного Креста" #NT!
+ FORM_AAS_democratic: "Австралазия" #NT!
+ FORM_AAS_democratic_DEF: "Австралазия" #NT!
+ FORM_AAS_neutrality: "Австралазия" #NT!
+ FORM_AAS_neutrality_DEF: "Австралазия" #NT!
+ FORM_AAS_communism: "Австралазийская коммунистическая власть" #NT!
+ FORM_AAS_communism_DEF: "Коммунистическая власть Австралии" #NT!
+ FORM_AAS_fascism_ADJ: "Австралазийский" #NT!
+ FORM_AAS_democratic_ADJ: "Австралазийский" #NT!
+ FORM_AAS_neutrality_ADJ: "Австралазийский" #NT!
+ FORM_AAS_communism_ADJ: "Австралазийский" #NT!
+     ##### 
+ FORM_GOL_fascism: "Золотой круг" #NT!
+ FORM_GOL_fascism_DEF: "Золотое кольцо" #NT!
+ FORM_GOL_democratic: "Федеральный союз Персидского залива" #NT!
+ FORM_GOL_democratic_DEF: "Федеральный союз Персидского залива" #NT!
+ FORM_GOL_neutrality: "Конфедерация Лафайета" #NT!
+ FORM_GOL_neutrality_DEF: "Конфедерация Лафайета" #NT!
+ FORM_GOL_communism: "Автономные коммуны Персидского залива" #NT!
+ FORM_GOL_communism_DEF: "Автономные коммуны Персидского залива" #NT!
+ FORM_GOL_fascism_ADJ: "Золотой" #NT!
+ FORM_GOL_democratic_ADJ: "Залив" #NT!
+ FORM_GOL_neutrality_ADJ: "Залив" #NT!
+ FORM_GOL_communism_ADJ: "Залив" #NT!
+     ##### 
+ FORM_MAG_fascism: "Империя Магриба" #NT!
+ FORM_MAG_fascism_DEF: "Империя Магриба" #NT!
+ FORM_MAG_democratic: "Федерация Магриба" #NT!
+ FORM_MAG_democratic_DEF: "Федерация Магриба" #NT!
+ FORM_MAG_neutrality: "Магриб" #NT!
+ FORM_MAG_neutrality_DEF: "Магриб" #NT!
+ FORM_MAG_communism: "Народная Республика Магриб" #NT!
+ FORM_MAG_communism_DEF: "Народная Республика Магриб" #NT!
+ FORM_MAG_fascism_ADJ: "Магриб" #NT!
+ FORM_MAG_democratic_ADJ: "Магриб" #NT!
+ FORM_MAG_neutrality_ADJ: "Магриб" #NT!
+ FORM_MAG_communism_ADJ: "Магриб" #NT!
+     ##### 
+ FORM_GCA_fascism: "Великая Канадская империя" #NT!
+ FORM_GCA_fascism_DEF: "Великая Канадская империя" #NT!
+ FORM_GCA_democratic: "Большая Канадская Республика" #NT!
+ FORM_GCA_democratic_DEF: "Великая Канадская Республика" #NT!
+ FORM_GCA_neutrality: "Большая Канада" #NT!
+ FORM_GCA_neutrality_DEF: "Большая Канада" #NT!
+ FORM_GCA_communism: "Канадская Народная Республика" #NT!
+ FORM_GCA_communism_DEF: "Канадская Народная Республика" #NT!
+ FORM_GCA_fascism_ADJ: "Канадский" #NT!
+ FORM_GCA_democratic_ADJ: "Канадский" #NT!
+ FORM_GCA_neutrality_ADJ: "Канадский" #NT!
+ FORM_GCA_communism_ADJ: "Канадский" #NT!
+     ##### 
+ FORM_PLA_fascism: "Серебряная Империя" #NT!
+ FORM_PLA_fascism_DEF: "Серебряная Империя" #NT!
+ FORM_PLA_democratic: "Ла-Плата" #NT!
+ FORM_PLA_democratic_DEF: "Ла-Плата" #NT!
+ FORM_PLA_neutrality: "Ла-Плата" #NT!
+ FORM_PLA_neutrality_DEF: "Ла-Плата" #NT!
+ FORM_PLA_communism: "Аргентинская Народная Республика" #NT!
+ FORM_PLA_communism_DEF: "Аргентинская Народная Республика" #NT!
+ FORM_PLA_fascism_ADJ: "аргентинец" #NT!
+ FORM_PLA_democratic_ADJ: "аргентинец" #NT!
+ FORM_PLA_neutrality_ADJ: "аргентинец" #NT!
+ FORM_PLA_communism_ADJ: "аргентинец" #NT!
+     ##### 
+ FORM_CEL_fascism: "Кельтская Империя" #NT!
+ FORM_CEL_fascism_DEF: "Кельтская Империя" #NT!
+ FORM_CEL_democratic: "Кельтский союз" #NT!
+ FORM_CEL_democratic_DEF: "Кельтский союз" #NT!
+ FORM_CEL_neutrality: "Кельтский союз" #NT!
+ FORM_CEL_neutrality_DEF: "Кельтский союз" #NT!
+ FORM_CEL_communism: "Союз Кельтских Социалистических Республик" #NT!
+ FORM_CEL_communism_DEF: "Союз Кельтских Социалистических Республик" #NT!
+ FORM_CEL_fascism_ADJ: "Селтик" #NT!
+ FORM_CEL_democratic_ADJ: "Селтик" #NT!
+ FORM_CEL_neutrality_ADJ: "Селтик" #NT!
+ FORM_CEL_communism_ADJ: "Селтик" #NT!
+     ##### 
+ FORM_ALP_fascism: "Белая Империя" #NT!
+ FORM_ALP_fascism_DEF: "Белая Империя" #NT!
+ FORM_ALP_democratic: "Альпийская Федерация" #NT!
+ FORM_ALP_democratic_DEF: "Альпийская федерация" #NT!
+ FORM_ALP_neutrality: "Альпы" #NT!
+ FORM_ALP_neutrality_DEF: "Альпы" #NT!
+ FORM_ALP_communism: "Объединенные Альпийские Кантоны" #NT!
+ FORM_ALP_communism_DEF: "Объединенные Альпийские Кантоны" #NT!
+ FORM_ALP_fascism_ADJ: "Альпийский" #NT!
+ FORM_ALP_democratic_ADJ: "Альпийский" #NT!
+ FORM_ALP_neutrality_ADJ: "Альпийский" #NT!
+ FORM_ALP_communism_ADJ: "Альпийский" #NT!
+     ##### 
+ FORM_GCR_fascism: "Великая Хорватская империя" #NT!
+ FORM_GCR_fascism_DEF: "Великая Хорватская империя" #NT!
+ FORM_GCR_democratic: "Хорватская Федерация" #NT!
+ FORM_GCR_democratic_DEF: "Хорватская Федерация" #NT!
+ FORM_GCR_neutrality: "Великое Королевство Хорватия" #NT!
+ FORM_GCR_neutrality_DEF: "Великое Королевство Хорватия" #NT!
+ FORM_GCR_communism: "Хорватская СФСР" #NT!
+ FORM_GCR_communism_DEF: "Хорватская СФСР" #NT!
+ FORM_GCR_fascism_ADJ: "хорватский" #NT!
+ FORM_GCR_democratic_ADJ: "хорватский" #NT!
+ FORM_GCR_neutrality_ADJ: "хорватский" #NT!
+ FORM_GCR_communism_ADJ: "хорватский" #NT!
+     ##### 
+ FORM_GSE_fascism: "Великая Сербская Империя" #NT!
+ FORM_GSE_fascism_DEF: "Великая Сербская империя" #NT!
+ FORM_GSE_democratic: "Сербская Федерация" #NT!
+ FORM_GSE_democratic_DEF: "Сербская Федерация" #NT!
+ FORM_GSE_neutrality: "Великое Королевство Сербия" #NT!
+ FORM_GSE_neutrality_DEF: "Великое Королевство Сербия" #NT!
+ FORM_GSE_communism: "Сербская СФСР" #NT!
+ FORM_GSE_communism_DEF: "Сербская СФСР" #NT!
+ FORM_GSE_fascism_ADJ: "сербский" #NT!
+ FORM_GSE_democratic_ADJ: "сербский" #NT!
+ FORM_GSE_neutrality_ADJ: "сербский" #NT!
+ FORM_GSE_communism_ADJ: "сербский" #NT!
+     ##### 
+ FORM_GLI_fascism: "Великая Литовская Империя" #NT!
+ FORM_GLI_fascism_DEF: "Великая Литовская империя" #NT!
+ FORM_GLI_democratic: "Великая Литовская Республика" #NT!
+ FORM_GLI_democratic_DEF: "Великая Литовская Республика" #NT!
+ FORM_GLI_neutrality: "Великое Княжество Литовское" #NT!
+ FORM_GLI_neutrality_DEF: "Великое Княжество Литовское" #NT!
+ FORM_GLI_communism: "Великий Литовский Союз" #NT!
+ FORM_GLI_communism_DEF: "Великий Литовский Союз" #NT!
+ FORM_GLI_fascism_ADJ: "литовский" #NT!
+ FORM_GLI_democratic_ADJ: "литовский" #NT!
+ FORM_GLI_neutrality_ADJ: "литовский" #NT!
+ FORM_GLI_communism_ADJ: "литовский" #NT!
+     ##### 
+ FORM_CHG_fascism: "Чилийско-Аргентинская империя" #NT!
+ FORM_CHG_fascism_DEF: "Чилийско-Аргентинская империя" #NT!
+ FORM_CHG_democratic: "Чили-Аргентина" #NT!
+ FORM_CHG_democratic_DEF: "Чили-Аргентина" #NT!
+ FORM_CHG_neutrality: "Чили-Аргентина" #NT!
+ FORM_CHG_neutrality_DEF: "Чили-Аргентина" #NT!
+ FORM_CHG_communism: "Чилийско-Аргентинская Народная Республика" #NT!
+ FORM_CHG_communism_DEF: "Чилийско-Аргентинская Народная Республика" #NT!
+ FORM_CHG_fascism_ADJ: "Чилийско-Аргентинский" #NT!
+ FORM_CHG_democratic_ADJ: "Чилийско-Аргентинский" #NT!
+ FORM_CHG_neutrality_ADJ: "Чилийско-Аргентинский" #NT!
+ FORM_CHG_communism_ADJ: "Чилийско-Аргентинский" #NT!
+     ##### 
+ FORM_ASS_fascism: "Ассирийская империя" #NT!
+ FORM_ASS_fascism_DEF: "Ассирийская империя" #NT!
+ FORM_ASS_democratic: "Ассирийская Республика" #NT!
+ FORM_ASS_democratic_DEF: "Ассирийская Республика" #NT!
+ FORM_ASS_neutrality: "Ассирия" #NT!
+ FORM_ASS_neutrality_DEF: "Ассирия" #NT!
+ FORM_ASS_communism: "Ассирийская Народная Республика" #NT!
+ FORM_ASS_communism_DEF: "Ассирийская Народная Республика" #NT!
+ FORM_ASS_fascism_ADJ: "ассирийский" #NT!
+ FORM_ASS_democratic_ADJ: "ассирийский" #NT!
+ FORM_ASS_neutrality_ADJ: "ассирийский" #NT!
+ FORM_ASS_communism_ADJ: "ассирийский" #NT!
+     ##### 
+ FORM_VIS_fascism: "Вышеградская империя" #NT!
+ FORM_VIS_fascism_DEF: "Вышеградская империя" #NT!
+ FORM_VIS_democratic: "Вышеградский Союз" #NT!
+ FORM_VIS_democratic_DEF: "Вышеградский Союз" #NT!
+ FORM_VIS_neutrality: "Вышеградский Союз" #NT!
+ FORM_VIS_neutrality_DEF: "Вышеградский Союз" #NT!
+ FORM_VIS_communism: "Вышеградская Народная Республика" #NT!
+ FORM_VIS_communism_DEF: "Вышеградская Народная Республика" #NT!
+ FORM_VIS_fascism_ADJ: "Вышеградский" #NT!
+ FORM_VIS_democratic_ADJ: "Вышеградский" #NT!
+ FORM_VIS_neutrality_ADJ: "Вышеградский" #NT!
+ FORM_VIS_communism_ADJ: "Вышеградский" #NT!
+     ##### 
+ FORM_CAP_fascism: "Легионер Карпатия" #NT!
+ FORM_CAP_fascism_DEF: "Легионер Карпатия" #NT!
+ FORM_CAP_democratic: "Карпаты" #NT!
+ FORM_CAP_democratic_DEF: "Карпаты" #NT!
+ FORM_CAP_neutrality: "Карпаты" #NT!
+ FORM_CAP_neutrality_DEF: "Карпаты" #NT!
+ FORM_CAP_communism: "Карпатская Демократическая Республика" #NT!
+ FORM_CAP_communism_DEF: "Карпатская Демократическая Республика" #NT!
+ FORM_CAP_fascism_ADJ: "Карпатский" #NT!
+ FORM_CAP_democratic_ADJ: "Карпатский" #NT!
+ FORM_CAP_neutrality_ADJ: "Карпатский" #NT!
+ FORM_CAP_communism_ADJ: "Карпатский" #NT!
+     ##### 
+ FORM_ASI_fascism: "Азиатская империя" #NT!
+ FORM_ASI_fascism_DEF: "Азиатская империя" #NT!
+ FORM_ASI_democratic: "Азиатская Республика" #NT!
+ FORM_ASI_democratic_DEF: "Азиатская Республика" #NT!
+ FORM_ASI_neutrality: "Азия" #NT!
+ FORM_ASI_neutrality_DEF: "Азия" #NT!
+ FORM_ASI_communism: "Азиатская коммуна" #NT!
+ FORM_ASI_communism_DEF: "Азиатская коммуна" #NT!
+ FORM_ASI_fascism_ADJ: "Азиатский" #NT!
+ FORM_ASI_democratic_ADJ: "Азиатский" #NT!
+ FORM_ASI_neutrality_ADJ: "Азиатский" #NT!
+ FORM_ASI_communism_ADJ: "Азиатский" #NT!
+     ##### 
+ FORM_EUA_fascism: "Евразийская империя" #NT!
+ FORM_EUA_fascism_DEF: "Евразийская империя" #NT!
+ FORM_EUA_democratic: "Евразийская Федерация" #NT!
+ FORM_EUA_democratic_DEF: "Евразийская Федерация" #NT!
+ FORM_EUA_neutrality: "Евразия" #NT!
+ FORM_EUA_neutrality_DEF: "Евразия" #NT!
+ FORM_EUA_communism: "ЕСР" #NT!
+ FORM_EUA_communism_DEF: "Объединенные Европейские Социалистические Республики" #NT!
+ FORM_EUA_fascism_ADJ: "Евразийский" #NT!
+ FORM_EUA_democratic_ADJ: "Евразийский" #NT!
+ FORM_EUA_neutrality_ADJ: "Евразийский" #NT!
+ FORM_EUA_communism_ADJ: "Евразийский" #NT!
+     ##### 
+ FORM_BRI_fascism: "Британия" #NT!
+ FORM_BRI_fascism_DEF: "Британия" #NT!
+ FORM_BRI_democratic: "Объединенные Британские острова" #NT!
+ FORM_BRI_democratic_DEF: "Объединенные Британские острова" #NT!
+ FORM_BRI_neutrality: "Объединенные Британские острова" #NT!
+ FORM_BRI_neutrality_DEF: "Объединенные Британские острова" #NT!
+ FORM_BRI_communism: "СРБИ" #NT!
+ FORM_BRI_communism_DEF: "Социалистическая Республика Британских островов" #NT!
+ FORM_BRI_fascism_ADJ: "Британский" #NT!
+ FORM_BRI_democratic_ADJ: "Британский" #NT!
+ FORM_BRI_neutrality_ADJ: "Британский" #NT!
+ FORM_BRI_communism_ADJ: "Британский" #NT!
+     ##### 
+ FORM_RUE_fascism: "Великая Российская Империя" #NT!
+ FORM_RUE_fascism_DEF: "Великая Российская Империя" #NT!
+ FORM_RUE_democratic: "Большая Российская Федерация" #NT!
+ FORM_RUE_democratic_DEF: "Большая Российская Федерация" #NT!
+ FORM_RUE_neutrality: "Великая Российская Империя" #NT!
+ FORM_RUE_neutrality_DEF: "Великая Российская Империя" #NT!
+ FORM_RUE_communism: "Большой Советский Союз" #NT!
+ FORM_RUE_communism_DEF: "Большой Советский Союз" #NT!
+ FORM_RUE_fascism_ADJ: "Русский" #NT!
+ FORM_RUE_democratic_ADJ: "Русский" #NT!
+ FORM_RUE_neutrality_ADJ: "Русский" #NT!
+ FORM_RUE_communism_ADJ: "Русский" #NT!
+     ##### 
+ FORM_CAR_fascism: "Карфагенская империя" #NT!
+ FORM_CAR_fascism_DEF: "Карфагенская империя" #NT!
+ FORM_CAR_democratic: "Пуническая Федерация" #NT!
+ FORM_CAR_democratic_DEF: "Пуническая федерация" #NT!
+ FORM_CAR_neutrality: "Карфаген" #NT!
+ FORM_CAR_neutrality_DEF: "Карфаген" #NT!
+ FORM_CAR_communism: "Карфагенская коммуна" #NT!
+ FORM_CAR_communism_DEF: "Карфагенская коммуна" #NT!
+ FORM_CAR_fascism_ADJ: "карфагенский" #NT!
+ FORM_CAR_democratic_ADJ: "карфагенский" #NT!
+ FORM_CAR_neutrality_ADJ: "карфагенский" #NT!
+ FORM_CAR_communism_ADJ: "карфагенский" #NT!
+     ##### 
+ FORM_EAF_fascism: "Восточноафриканское государство" #NT!
+ FORM_EAF_fascism_DEF: "Восточноафриканское государство" #NT!
+ FORM_EAF_democratic: "Восточноафриканская федерация" #NT!
+ FORM_EAF_democratic_DEF: "Восточноафриканская федерация" #NT!
+ FORM_EAF_neutrality: "Восточная Африка" #NT!
+ FORM_EAF_neutrality_DEF: "Восточная Африка" #NT!
+ FORM_EAF_communism: "Союз Восточноафриканских Социалистических Республик" #NT!
+ FORM_EAF_communism_DEF: "Союз Восточноафриканских Социалистических Республик" #NT!
+ FORM_EAF_fascism_ADJ: "Восточноафриканский" #NT!
+ FORM_EAF_democratic_ADJ: "Восточноафриканский" #NT!
+ FORM_EAF_neutrality_ADJ: "Восточноафриканский" #NT!
+ FORM_EAF_communism_ADJ: "Восточноафриканский" #NT!
+     ##### 
+ FORM_MAE_fascism: "Великая Малийская империя" #NT!
+ FORM_MAE_fascism_DEF: "Великая империя Мали" #NT!
+ FORM_MAE_democratic: "Малийская Федерация" #NT!
+ FORM_MAE_democratic_DEF: "Федерация Мали" #NT!
+ FORM_MAE_neutrality: "Малийская империя" #NT!
+ FORM_MAE_neutrality_DEF: "Малийская империя" #NT!
+ FORM_MAE_communism: "Великая Малийская Демократическая Республика" #NT!
+ FORM_MAE_communism_DEF: "Великая Малийская Демократическая Республика" #NT!
+ FORM_MAE_fascism_ADJ: "Малийский" #NT!
+ FORM_MAE_democratic_ADJ: "Малийский" #NT!
+ FORM_MAE_neutrality_ADJ: "Малийский" #NT!
+ FORM_MAE_communism_ADJ: "Малийский" #NT!
+     ##### 
+ FORM_SAH_fascism: "Большая Сахельская империя" #NT!
+ FORM_SAH_fascism_DEF: "Большая Сахельская империя" #NT!
+ FORM_SAH_democratic: "Сахельская Федерация" #NT!
+ FORM_SAH_democratic_DEF: "Сахельская федерация" #NT!
+ FORM_SAH_neutrality: "Сахель" #NT!
+ FORM_SAH_neutrality_DEF: "Сахель" #NT!
+ FORM_SAH_communism: "Сахельская Социалистическая Республика" #NT!
+ FORM_SAH_communism_DEF: "Сахельская Социалистическая Республика" #NT!
+ FORM_SAH_fascism_ADJ: "Сахельский" #NT!
+ FORM_SAH_democratic_ADJ: "Сахельский" #NT!
+ FORM_SAH_neutrality_ADJ: "Сахельский" #NT!
+ FORM_SAH_communism_ADJ: "Сахельский" #NT!
+     ##### 
+ FORM_AEA_fascism: "Старый Свет" #NT!
+ FORM_AEA_fascism_DEF: "Старый Свет" #NT!
+ FORM_AEA_democratic: "Афро-Евразийская Федерация" #NT!
+ FORM_AEA_democratic_DEF: "Афро-Евразийская Федерация" #NT!
+ FORM_AEA_neutrality: "Афро-Евразия" #NT!
+ FORM_AEA_neutrality_DEF: "Афро-Евразия" #NT!
+ FORM_AEA_communism: "Афро-Евразийский Союз" #NT!
+ FORM_AEA_communism_DEF: "Афро-Евразийский Союз" #NT!
+ FORM_AEA_fascism_ADJ: "Афро-евразийский" #NT!
+ FORM_AEA_democratic_ADJ: "Афро-евразийский" #NT!
+ FORM_AEA_neutrality_ADJ: "Афро-евразийский" #NT!
+ FORM_AEA_communism_ADJ: "Афро-евразийский" #NT!
+     ##### 
+ FORM_GAU_fascism: "Гросёстеррайх" #NT!
+ FORM_GAU_fascism_DEF: "Гросёстеррайх" #NT!
+ FORM_GAU_democratic: "Австрийская Федерация" #NT!
+ FORM_GAU_democratic_DEF: "Австрийская Федерация" #NT!
+ FORM_GAU_neutrality: "Австрийская империя" #NT!
+ FORM_GAU_neutrality_DEF: "Австрийская империя" #NT!
+ FORM_GAU_communism: "USRGA" #NT!
+ FORM_GAU_communism_DEF: "Объединенные Социалистические Республики Великой Австрии" #NT!
+     ##### 
+ FORM_AGL_fascism: "Англо-империя" #NT!
+ FORM_AGL_fascism_DEF: "Англоязычная империя" #NT!
+ FORM_AGL_democratic: "англосфера" #NT!
+ FORM_AGL_democratic_DEF: "Объединенная англосфера" #NT!
+ FORM_AGL_neutrality: "англосфера" #NT!
+ FORM_AGL_neutrality_DEF: "Содружество англосферы" #NT!
+ FORM_AGL_communism: "Океания" #NT!
+ FORM_AGL_communism_DEF: "Союз Океании" #NT!
+ FORM_AGL_fascism_ADJ: "Англо" #NT!
+ FORM_AGL_democratic_ADJ: "Англо" #NT!
+ FORM_AGL_neutrality_ADJ: "Англо" #NT!
+ FORM_AGL_communism_ADJ: "Океанский" #NT!
+     ##### 
+ FORM_LEV_fascism: "Левантийская империя" #NT!
+ FORM_LEV_fascism_DEF: "Левантийская империя" #NT!
+ FORM_LEV_democratic: "Левантийская Федеративная Республика" #NT!
+ FORM_LEV_democratic_DEF: "Левантийская Федеративная Республика" #NT!
+ FORM_LEV_neutrality: "Левант" #NT!
+ FORM_LEV_neutrality_DEF: "Левант" #NT!
+ FORM_LEV_communism: "Левантийская Социалистическая Республика" #NT!
+ FORM_LEV_communism_DEF: "Левантийская Социалистическая Республика" #NT!
+ FORM_LEV_fascism_ADJ: "Левантийский" #NT!
+ FORM_LEV_democratic_ADJ: "Левантийский" #NT!
+ FORM_LEV_neutrality_ADJ: "Левантийский" #NT!
+ FORM_LEV_communism_ADJ: "Левантийский" #NT!
+     ##### 
+ FORM_GKO_fascism: "Корейская империя" #NT!
+ FORM_GKO_fascism_DEF: "Корейская империя" #NT!
+ FORM_GKO_democratic: "Республика Большая Корея" #NT!
+ FORM_GKO_democratic_DEF: "Республика Большая Корея" #NT!
+ FORM_GKO_neutrality: "Великая Корея" #NT!
+ FORM_GKO_neutrality_DEF: "Великая Корея" #NT!
+ FORM_GKO_communism: "КНДР Корея" #NT!
+ FORM_GKO_communism_DEF: "Великая Корейская Народно-Демократическая Республика" #NT!
+ FORM_GKO_fascism_ADJ: "корейский" #NT!
+ FORM_GKO_democratic_ADJ: "корейский" #NT!
+ FORM_GKO_neutrality_ADJ: "корейский" #NT!
+ FORM_GKO_communism_ADJ: "корейский" #NT!
+     ##### 
+ FORM_GJA_fascism: "Великая Японская империя" #NT!
+ FORM_GJA_fascism_DEF: "Великая Японская империя" #NT!
+ FORM_GJA_democratic: "Государство Великой Японии" #NT!
+ FORM_GJA_democratic_DEF: "Государство Великой Японии" #NT!
+ FORM_GJA_neutrality: "Большая Япония" #NT!
+ FORM_GJA_neutrality_DEF: "Большая Япония" #NT!
+ FORM_GJA_communism: "Большой японский ПУ" #NT!
+ FORM_GJA_communism_DEF: "Великий японский народный союз" #NT!
+ FORM_GJA_fascism_ADJ: "японский" #NT!
+ FORM_GJA_democratic_ADJ: "японский" #NT!
+ FORM_GJA_neutrality_ADJ: "японский" #NT!
+ FORM_GJA_communism_ADJ: "японский" #NT!
+     ##### 
+ FORM_KHM_fascism: "Кхмерская империя" #NT!
+ FORM_KHM_fascism_DEF: "Кхмерская империя" #NT!
+ FORM_KHM_democratic: "Кхмерская Федерация" #NT!
+ FORM_KHM_democratic_DEF: "Кхмерская Федерация" #NT!
+ FORM_KHM_neutrality: "Кхмерское государство" #NT!
+ FORM_KHM_neutrality_DEF: "кхмерское государство" #NT!
+ FORM_KHM_communism: "Кхмерская НДР" #NT!
+ FORM_KHM_communism_DEF: "Кхмерская Народно-Демократическая Республика" #NT!
+ FORM_KHM_fascism_ADJ: "кхмерский" #NT!
+ FORM_KHM_democratic_ADJ: "кхмерский" #NT!
+ FORM_KHM_neutrality_ADJ: "кхмерский" #NT!
+ FORM_KHM_communism_ADJ: "кхмерский" #NT!
+     ##### 
+ FORM_BEE_fascism: "Бенгальская империя" #NT!
+ FORM_BEE_fascism_DEF: "Бенгальская империя" #NT!
+ FORM_BEE_democratic: "Бенгальская федерация" #NT!
+ FORM_BEE_democratic_DEF: "Бенгальская федерация" #NT!
+ FORM_BEE_neutrality: "Бенгальский султанат" #NT!
+ FORM_BEE_neutrality_DEF: "Бенгальский султанат" #NT!
+ FORM_BEE_communism: "Бенгальский союз" #NT!
+ FORM_BEE_communism_DEF: "Бенгальский союз" #NT!
+ FORM_BEE_fascism_ADJ: "Бенгалия" #NT!
+ FORM_BEE_democratic_ADJ: "Бенгалия" #NT!
+ FORM_BEE_neutrality_ADJ: "Бенгалия" #NT!
+ FORM_BEE_communism_ADJ: "Бенгалия" #NT!
+     ##### 
+ FORM_MID_fascism: "Ближневосточная империя" #NT!
+ FORM_MID_fascism_DEF: "Ближневосточная империя" #NT!
+ FORM_MID_democratic: "Ближневосточная Федерация" #NT!
+ FORM_MID_democratic_DEF: "Ближневосточная Федерация" #NT!
+ FORM_MID_neutrality: "Средний Восток" #NT!
+ FORM_MID_neutrality_DEF: "Ближний Восток" #NT!
+ FORM_MID_communism: "Ближневосточная СР" #NT!
+ FORM_MID_communism_DEF: "Ближневосточная Социалистическая Республика" #NT!
+ FORM_MID_fascism_ADJ: "Ближний Восток" #NT!
+ FORM_MID_democratic_ADJ: "Ближний Восток" #NT!
+ FORM_MID_neutrality_ADJ: "Ближний Восток" #NT!
+ FORM_MID_communism_ADJ: "Ближний Восток" #NT!
+     ##### 
+ FORM_YUG_fascism: "Великая Югославская империя" #NT!
+ FORM_YUG_fascism_DEF: "Великая Югославская империя" #NT!
+ FORM_YUG_democratic: "Великая Федерация Югославии" #NT!
+ FORM_YUG_democratic_DEF: "Великая Федерация Югославии" #NT!
+ FORM_YUG_neutrality: "Великая Югославия" #NT!
+ FORM_YUG_neutrality_DEF: "Великая Югославия" #NT!
+ FORM_YUG_communism: "СФР Великая Югославия" #NT!
+ FORM_YUG_communism_DEF: "Социалистическая Федеративная Республика Великая Югославия" #NT!
+ FORM_YUG_fascism_ADJ: "Югославский" #NT!
+ FORM_YUG_democratic_ADJ: "Югославский" #NT!
+ FORM_YUG_neutrality_ADJ: "Югославский" #NT!
+ FORM_YUG_communism_ADJ: "Югославский" #NT!
+     ##### 
+ FORM_GUY_fascism: "Большая Гайана" #NT!
+ FORM_GUY_fascism_DEF: "Большая Гайана" #NT!
+ FORM_GUY_democratic: "Федерация Гайаны" #NT!
+ FORM_GUY_democratic_DEF: "Федерация Гайаны" #NT!
+ FORM_GUY_neutrality: "Объединенная Гайана" #NT!
+ FORM_GUY_neutrality_DEF: "Объединенная Гайана" #NT!
+ FORM_GUY_communism: "Гайанский PR" #NT!
+ FORM_GUY_communism_DEF: "Гайанская Народная Республика" #NT!
+ FORM_GUY_fascism_ADJ: "Гайанский" #NT!
+ FORM_GUY_democratic_ADJ: "Гайанский" #NT!
+ FORM_GUY_neutrality_ADJ: "Гайанский" #NT!
+ FORM_GUY_communism_ADJ: "Гайанский" #NT!
+     ##### 
+ FORM_AME_fascism: "Новый Свет" #NT!
+ FORM_AME_fascism_DEF: "Новый Свет" #NT!
+ FORM_AME_democratic: "Федерация Америки" #NT!
+ FORM_AME_democratic_DEF: "Федерация Америки" #NT!
+ FORM_AME_neutrality: "Америка" #NT!
+ FORM_AME_neutrality_DEF: "Америка" #NT!
+ FORM_AME_communism: "ПСО" #NT!
+ FORM_AME_communism_DEF: "Союз Социалистических Американских Республик" #NT!
+ FORM_AME_fascism_ADJ: "Американский" #NT!
+ FORM_AME_democratic_ADJ: "Американский" #NT!
+ FORM_AME_neutrality_ADJ: "Американский" #NT!
+ FORM_AME_communism_ADJ: "Американский" #NT!
+     ##### 
+ FORM_AND_fascism: "Андская империя" #NT!
+ FORM_AND_fascism_DEF: "Андская империя" #NT!
+ FORM_AND_democratic: "Андская Республика" #NT!
+ FORM_AND_democratic_DEF: "Андская Республика" #NT!
+ FORM_AND_neutrality: "Анды" #NT!
+ FORM_AND_neutrality_DEF: "Анды" #NT!
+ FORM_AND_communism: "Андская Демократическая Республика" #NT!
+ FORM_AND_communism_DEF: "Андская Демократическая Республика" #NT!
+ FORM_AND_fascism_ADJ: "Андский" #NT!
+ FORM_AND_democratic_ADJ: "Андский" #NT!
+ FORM_AND_neutrality_ADJ: "Андский" #NT!
+ FORM_AND_communism_ADJ: "Андский" #NT!
+     ##### 
+ FORM_ZAP_fascism: "Западославская империя" #NT!
+ FORM_ZAP_fascism_DEF: "Западославская империя" #NT!
+ FORM_ZAP_democratic: "Западославская Федеративная Республика" #NT!
+ FORM_ZAP_democratic_DEF: "Западнославская Федеративная Республика" #NT!
+ FORM_ZAP_neutrality: "Западославия" #NT!
+ FORM_ZAP_neutrality_DEF: "Западославия" #NT!
+ FORM_ZAP_communism: "Западославская ССР" #NT!
+ FORM_ZAP_communism_DEF: "Западнославская Советская Социалистическая Республика" #NT!
+ FORM_ZAP_fascism_ADJ: "западославский" #NT!
+ FORM_ZAP_democratic_ADJ: "западославский" #NT!
+ FORM_ZAP_neutrality_ADJ: "западославский" #NT!
+ FORM_ZAP_communism_ADJ: "западославский" #NT!
+     ##### 
+ FORM_SGF_fascism: "Южно-Германская империя" #NT!
+ FORM_SGF_fascism_DEF: "Южно-Германская империя" #NT!
+ FORM_SGF_democratic: "Южногерманская федерация" #NT!
+ FORM_SGF_democratic_DEF: "Южногерманская федерация" #NT!
+ FORM_SGF_neutrality: "Южногерманская федерация" #NT!
+ FORM_SGF_neutrality_DEF: "Южногерманская федерация" #NT!
+ FORM_SGF_communism: "Объединенные южногерманские коммуны" #NT!
+ FORM_SGF_communism_DEF: "Объединенные южногерманские коммуны" #NT!
+ FORM_SGF_fascism_ADJ: "Южно-немецкий" #NT!
+ FORM_SGF_democratic_ADJ: "Южно-немецкий" #NT!
+ FORM_SGF_neutrality_ADJ: "Южно-немецкий" #NT!
+ FORM_SGF_communism_ADJ: "Южно-немецкий" #NT!
+     ##### 
+ FORM_NGF_fascism: "Северо-Германская империя" #NT!
+ FORM_NGF_fascism_DEF: "Северо-Германская империя" #NT!
+ FORM_NGF_democratic: "Северо-Германская федерация" #NT!
+ FORM_NGF_democratic_DEF: "Северогерманская федерация" #NT!
+ FORM_NGF_neutrality: "Северо-Германская федерация" #NT!
+ FORM_NGF_neutrality_DEF: "Северогерманская федерация" #NT!
+ FORM_NGF_communism: "Объединенные северогерманские коммуны" #NT!
+ FORM_NGF_communism_DEF: "Объединенные северогерманские коммуны" #NT!
+ FORM_NGF_fascism_ADJ: "Северо-Немецкий" #NT!
+ FORM_NGF_democratic_ADJ: "Северо-Немецкий" #NT!
+ FORM_NGF_neutrality_ADJ: "Северо-Немецкий" #NT!
+ FORM_NGF_communism_ADJ: "Северо-Немецкий" #NT!
+     ##### 
+ FORM_WRO_fascism: "Западная Римская империя" #NT!
+ FORM_WRO_fascism_DEF: "Западно-Римская империя" #NT!
+ FORM_WRO_democratic: "Западно-Римская республика" #NT!
+ FORM_WRO_democratic_DEF: "Западно-Римская республика" #NT!
+ FORM_WRO_neutrality: "Западный Рим" #NT!
+ FORM_WRO_neutrality_DEF: "Западный Рим" #NT!
+ FORM_WRO_communism: "Западно-Римская Народная Республика" #NT!
+ FORM_WRO_communism_DEF: "Западно-Римская Народная Республика" #NT!
+ FORM_WRO_fascism_ADJ: "Западно-Римский" #NT!
+ FORM_WRO_democratic_ADJ: "Западно-Римский" #NT!
+ FORM_WRO_neutrality_ADJ: "Западно-Римский" #NT!
+ FORM_WRO_communism_ADJ: "Западно-Римский" #NT!

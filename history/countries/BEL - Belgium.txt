@@ -1,0 +1,154 @@
+﻿capital = 6
+oob = "BEL_1910"
+
+set_research_slots = 3
+set_stability = 0.90
+set_war_support = 0.05
+set_convoys = 80
+
+set_country_flag = Scramble_for_Africa
+
+recruit_character = BEL_albert_i
+recruit_character = BEL_edward_anseele
+recruit_character = BEL_frans_schollaert
+recruit_character = BEL_august_borms
+
+recruit_character = BEL_laurent_vandersmissen
+recruit_character = BEL_charles_de_broqueville
+recruit_character = BEL_paul_hymans
+recruit_character = BEL_felix_fuchs
+recruit_character = BEL_antonin_de_selliers_de_moranville
+recruit_character = BEL_felix_wielemans
+recruit_character = BEL_louis_ruquoy
+recruit_character = BEL_emile_dossin
+recruit_character = BEL_cyriaque_gillain
+recruit_character = BEL_gerard_leman
+recruit_character = BEL_leon_de_witte
+recruit_character = BEL_jules_jacques_de_dixmude
+recruit_character = BEL_charles_tombeur
+recruit_character = BEL_albert_lantonnois_van_rode
+recruit_character = BEL_clement_de_saint_marcq
+recruit_character = BEL_jules_davignon
+recruit_character = BEL_jules_renkin
+recruit_character = BEL_michel_levie
+recruit_character = BEL_herman_baltia
+recruit_character = BEL_baron_wahis
+recruit_character = BEL_marcel_de_crombrugghe
+recruit_character = BEL_adolf_proost
+recruit_character = BEL_joseph_hellebaut
+recruit_character = BEL_baron_mathieu
+recruit_character = BEL_count_carton_de_wiart
+recruit_character = BEL_edouard_empain
+recruit_character = BEL_aloys_van_de_vyvere
+recruit_character = BEL_leon_delacroix
+recruit_character = BEL_fulgence_mason
+recruit_character = BEL_emile_vandervelden
+recruit_character = BEL_joseph_jacquemotte
+recruit_character = BEL_henry_h_maglinse
+recruit_character = BEL_gerard_cooreman
+recruit_character = BEL_adrian_carton_de_wiart
+
+recruit_character = BEL_adalbert
+recruit_character = BEL_wilhelmina
+
+1910.1.1 = {
+	set_technology = {
+		#infantry
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		bicycle_infantry = 1
+		
+		#support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		
+		#armor
+		early_armored_car = 1
+		
+		#artillery
+		gw_artillery = 1
+		
+		#doctrine
+		ww1_landdoctrine = 1
+		
+		#navy
+		transport = 1
+		
+		#engineering
+		electrical_engineering = 1
+		mechanical_engineering = 1
+		basic_train = 1
+        
+	}
+	
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1908.5.24"
+		election_frequency = 24 
+		elections_allowed = yes 
+	}
+	
+	set_popularities = {
+		fascism = 0
+		communism = 9
+		democratic = 55
+		neutrality = 36
+	}
+
+	add_ideas = {
+		volunteer_only
+		BEL_idea_albert_i
+		neutrality_idea
+		BEL_idea_pacifism
+		BEL_neglected_military
+		BEL_congo_attrocities
+		BEL_nationalist_divides_1
+	}
+}
+1914.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1917.11.16" #16 November 1919
+		election_frequency = 24 
+		elections_allowed = yes 
+	}
+
+	add_political_power = 1198
+	add_command_power = 100
+	
+	add_stability = -0.2		
+	set_country_flag = BEL_catholics_won_election_flag	
+	add_popularity = { ideology = communism popularity = 0.02 }
+	
+	promote_character = BEL_charles_de_broqueville
+
+	complete_national_focus = BEL_catholic_landslide
+	complete_national_focus = BEL_schollaert_ministry
+	unlock_national_focus = BEL_industrial_investment
+	unlock_national_focus = BEL_belgian_empire
+	unlock_national_focus = BEL_develop_congo
+	complete_national_focus = BEL_native_rights
+	complete_national_focus = BEL_education_law
+	complete_national_focus = BEL_broqueville_ministry
+	unlock_national_focus = BEL_bolster_military
+	complete_national_focus = BEL_doctrine_effort
+	complete_national_focus = BEL_hold_elections
+	complete_national_focus = BEL_accept_results
+	complete_national_focus = BEL_another_catholic_government
+	complete_national_focus = BEL_support_catholic_schools
+	complete_national_focus = BEL_nationalism_situation
+	complete_national_focus = BEL_favour_wallonia
+	unlock_national_focus = BEL_walloon_industry
+	unlock_national_focus = BEL_capital
+	complete_national_focus = BEL_neutrality_no_matter_what
+	unlock_national_focus = BEL_nothing_wrong_with_being_ready
+	unlock_national_focus = BEL_bolster_fleet
+	complete_national_focus = BEL_colonial_primacy
+	complete_national_focus = BEL_military_preparedness
+	unlock_national_focus = BEL_prepare_for_the_worst
+	complete_national_focus = BEL_united_and_ready
+	complete_national_focus = BEL_colonial_conscription
+	complete_national_focus = BEL_colonial_navy
+	unlock_national_focus = BEL_colonial_investment
+}

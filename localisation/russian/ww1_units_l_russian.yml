@@ -1,0 +1,41 @@
+﻿l_russian:
+ light_field_gun_equipment: "Полевая пушка" #NT!
+ light_howitzer_equipment: "Гаубица" #NT!
+ heavy_field_gun_equipment: "Тяжелая артиллерия" #NT!
+ heavy_howitzer_equipment: "Тяжелая артиллерия" #NT!
+ siege_gun_equipment: "Осадное орудие" #NT!
+ machinegun_equipment: "Пулемет" #NT!
+ scout: "Самолет-разведчик" #NT!
+ heavy_artillery: "Тяжелая артиллерия" #NT!
+ siege_artillery: "Осадная артиллерия" #NT!
+ heavy_artillery_brigade: "Тяжелая артиллерия" #NT!
+ category_airship: "Бомбардировщики-дирижабли" #NT!
+ category_scout_plane: "Самолеты-разведчики" #NT!
+ category_seaplane: "Гидросамолеты" #NT!
+ irregular_cavalry: "Нерегулярная кавалерия" #NT!
+ irregular_cavalry_desc: "Вооруженная местная кавалерия" #NT!
+ modifier_army_sub_unit_irregular_cavalry_attack_factor: "Атака нерегулярной кавалерии" #NT!
+ modifier_army_sub_unit_irregular_cavalry_defence_factor: "Нерегулярная кавалерийская оборона" #NT!
+ modifier_army_sub_unit_irregular_cavalry_max_org_factor: "Нерегулярная кавалерийская организация" #NT!
+ modifier_army_sub_unit_irregular_cavalry_speed_factor: "Скорость нерегулярной кавалерии" #NT!
+  
+ airship: "Дирижабль" #NT!
+ airship_desc: "Дирижабли — первые летательные аппараты, способные к управляемому движению. Перспективность использования дирижаблей в качестве разведывательных средств была осознана в Европе." #NT!
+ airship_bomber: "Жесткий дирижабль-бомбардировщик" #NT!
+ airship_bomber_desc: "Дирижабли — первые летательные аппараты, способные к управляемому движению. Перспектива использования дирижаблей в качестве бомбардировщиков была осознана в Европе." #NT!
+ GER_airship_bomber: "Цеппелин" #NT!
+  
+ motorized_signal_company: "Рота связи легких танков" #NT!
+ motorized_signal_company_desc: "Ответственный за местные коммуникации в подразделении." #NT!
+  
+ light_signal_company: "Рота связи легких танков" #NT!
+ light_signal_company_desc: "Ответственный за местные коммуникации в подразделении." #NT!
+  
+ medium_signal_company: "Рота связи средних танков" #NT!
+ medium_signal_company_desc: "Ответственный за местные коммуникации в подразделении." #NT!
+  
+ heavy_signal_company: "Тяжелая танковая рота связи" #NT!
+ heavy_signal_company_desc: "Ответственный за местные коммуникации в подразделении." #NT!
+  
+ stormtrooper: "Раздел штурмовиков" #NT!
+ stormtrooper_desc: "Элитная прорывная рота, способная штурмовать города и сильно укрепленные районы." #NT!

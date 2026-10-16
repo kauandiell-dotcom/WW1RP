@@ -1,0 +1,5 @@
+﻿l_russian:
+ RECALL_VOLUNTEERS_TITLE: "Отзыв добровольцев"
+ RECALL_VOLUNTEERS_ACTION_DESC: "Мы можем принять решение об отзыве волонтеров, которых мы отправили в другие страны."
+ RECALL_VOLUNTEERS_TOOLTIP: "§Y[This.GetNameWithFlag]§! §Rдолжны быть какие-нибудь добровольцы из нас, которых мы можем вспомнить.§!"
+ RECALL_VOLUNTEERS_TOOLTIP_G: "§Y[This.GetNameWithFlag]§! должны быть какие-нибудь добровольцы из нас, которых мы можем вспомнить."

@@ -1,0 +1,1369 @@
+﻿add_namespace = ww1_mexico
+# PAN AMERICAN ALLIANCE
+####################
+country_event = {
+	id = ww1_mexico.726
+	title = ww1_mexico.725.t
+	desc = ww1_mexico.724.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww1_mexico.47.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		if = {
+			limit = {
+				is_in_faction = no
+			}
+			if = {
+				limit = {
+					MEX = { is_faction_leader = no }
+				}
+				MEX = { create_faction = Pan_American_Alliance }
+			}
+			MEX = {
+				add_to_faction = ROOT
+			}		
+		}
+		if = {
+			limit = {
+				is_faction_leader = yes
+			}
+			if = {
+				limit = {
+					MEX = { is_faction_leader = no }
+				}
+				set_faction_name = Pan_American_Alliance
+				add_to_faction = ROOT
+				else = {
+					dismantle_faction = yes
+					MEX = {
+						add_to_faction = ROOT
+					}
+				}	
+			}		
+		}
+		if = {
+			limit = {
+				is_in_faction = yes
+				is_faction_leader = no
+			}
+			leave_faction = yes
+			if = {
+				limit = {
+					MEX = { is_faction_leader = no }
+				}
+				MEX = { create_faction = Pan_American_Alliance }
+			}
+			MEX = {
+				add_to_faction = ROOT
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = ww1_mexico.49.b
+		add_stability = -0.05
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+# demand accepted
+####################
+country_event = {
+	id = ww1_mexico.9234
+	title = ww1_mexico.0273.t
+	desc = ww1_mexico.8273.d
+	
+	is_triggered_only = yes
+	
+	option = { # Ok
+		name = "ww1_mexico.9784.a"
+		annex_country = { target = FROM transfer_troops = yes }
+	}
+}
+# ANNEX DEMANDS
+#####################
+country_event = {
+	id = ww1_mexico.9281
+	title = ww1_mexico.1628.t
+	desc = ww1_mexico.1283.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_mexico.9172.a
+		ai_chance = {
+			base = 55
+			modifier = {
+				factor = 0
+				has_war = no
+				strength_ratio = { tag = FROM ratio > 0.5 }
+				NOT = { is_puppet_of = FROM }
+			}
+			modifier = {
+				factor = 5
+				has_opinion = { target = FROM value > 99 }
+			}
+		}
+		effect_tooltip = {
+			FROM = {
+				annex_country = { target = ROOT transfer_troops = yes }
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = ww1_mexico.9234 hours = 18 random_hours = 6 }
+			}
+			news_event = { id = lar_news.16 days = 2 }
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+
+	option = {
+		name = ww1_mexico.7372.b
+		MEX = {
+			create_wargoal = {
+				type = annex_everything
+				target = ROOT
+			}
+		}		
+		ai_chance = {
+			base = 45
+			modifier = {
+				factor = 0.1
+				has_completed_focus = industrial_effort
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { has_war_with = FROM }
+				has_war = yes
+				surrender_progress > 0.1
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { has_war_with = FROM }
+				has_war = yes
+				surrender_progress > 0.3
+			}
+			modifier = {
+				factor = 0.5
+				strength_ratio = { tag = FROM ratio < 0.2 }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						NOT = { has_war_with = FROM }
+						has_war = yes
+						surrender_progress > 0.5
+					}
+					is_puppet_of = FROM
+				}
+			}
+		}
+	}
+}
+
+# ANNEX DEMANDS COMMUNIST
+#####################
+country_event = {
+	id = ww1_mexico.9280
+	title = ww1_mexico.1627.t
+	desc = ww1_mexico.1282.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_mexico.9172.a
+		ai_chance = {
+			base = 55
+			modifier = {
+				factor = 0
+				has_war = no
+				strength_ratio = { tag = FROM ratio > 0.5 }
+				NOT = { is_puppet_of = FROM }
+			}
+			modifier = {
+				factor = 5
+				has_opinion = { target = FROM value > 99 }
+			}
+		}
+		effect_tooltip = {
+			FROM = {
+				annex_country = { target = ROOT transfer_troops = yes }
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = ww1_mexico.9234 hours = 18 random_hours = 6 }
+			}
+			news_event = { id = lar_news.16 days = 2 }
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+
+	option = {
+		name = ww1_mexico.7372.b
+		MEX = {
+			create_wargoal = {
+				type = annex_everything
+				target = ROOT
+			}
+		}		
+		ai_chance = {
+			base = 45
+			modifier = {
+				factor = 0.1
+				has_completed_focus = industrial_effort
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { has_war_with = FROM }
+				has_war = yes
+				surrender_progress > 0.1
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { has_war_with = FROM }
+				has_war = yes
+				surrender_progress > 0.3
+			}
+			modifier = {
+				factor = 0.5
+				strength_ratio = { tag = FROM ratio < 0.2 }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						NOT = { has_war_with = FROM }
+						has_war = yes
+						surrender_progress > 0.5
+					}
+					is_puppet_of = FROM
+				}
+			}
+		}
+	}
+}	
+
+# MEXICAN REVOLUTION
+#####################
+country_event = {
+	id = ww1_mexico.1
+	title = ww1_mexico.1.t
+	desc = ww1_mexico.1.d
+	picture = GFX_report_event_generic_riot
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww1_mexico.1.a
+		add_ideas = MEX_idea_mexican_revolution_1
+		set_global_flag = SUPER_GLOBAL_Mexican_Revolution_1910
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# REBELLION AGAINST PORFORIO DIAZ
+##################################
+country_event = {
+	id = ww1_mexico.2
+	title = ww1_mexico.2.t
+	desc = ww1_mexico.2.d
+	picture = GFX_report_event_gathering_protest
+	fire_only_once = yes
+	trigger = {
+		tag = MEX
+		has_global_flag = mexican_revolution
+		has_government = neutrality
+		is_subject = no
+	}
+	mean_time_to_happen = {
+		days = 60
+	}
+	#SUPPORT OPPOSITION
+	option = {
+		name = ww1_mexico.2.a
+		add_stability = -0.1
+		add_named_threat = {
+			threat = 5
+			name = ww1_mexico.1.t
+		}
+		retire_character = MEX_porfirio_diaz
+		remove_ideas = MEX_idea_porfiriato
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}	
+		hidden_effect = {
+			MEX_felix_diaz = {
+				if = {
+					limit = {
+						has_ideology = oligarchism
+					}
+					promote_character = oligarchism
+					else = {
+						add_country_leader_role = {
+							promote_leader = yes
+							country_leader = {						
+								ideology = oligarchism
+								traits = {
+									inefficient_leader
+								}	
+							}
+						}
+					}
+				}
+			}
+			set_global_flag = support_madero
+			set_country_flag = mexican_revolution
+			set_popularities = {
+				democratic = 68
+				neutrality = 27
+				fascism = 0
+				communism = 5
+			}
+			news_event = {
+				id = ww1_mexico.101
+				hours = 3
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	#SUPPORT DIAZ
+	option = {
+		name = ww1_mexico.2.b
+		add_stability = -0.1
+		news_event = {
+			id = ww1_mexico.101
+		}
+		start_civil_war = {
+			ideology = democratic
+			size = 0.5
+			army_ratio = 5
+			navy_ratio = 0
+			air_ratio = 0
+			capital = 482
+			states = {
+				482
+			}
+			hidden_effect = {
+				set_cosmetic_tag = MXM
+				set_country_flag = MXM
+				set_country_flag = mexican_revolution
+			}
+			keep_political_leader = yes
+			keep_unit_leaders_trigger = { always = yes }
+		}
+		add_named_threat = {
+			threat = 5
+			name = ww1_mexico.1.t
+		}
+		hidden_effect = {
+			set_global_flag = support_diaz
+			MEX_francisco_madero = {
+				set_nationality = MXR
+			}
+			MEX_abraham_gonzalez = {
+				set_nationality = MXR
+			}
+			MEX_pascual_orozco = {
+				set_nationality = MXR
+			}
+			MEX_pancho_villa = {
+				set_nationality = MXR
+			}
+			MEX_pablo_gonzalez_garza = {
+				set_nationality = MXR
+			}
+			MEX_ramon_f_ituribe = {
+				set_nationality = MXR
+			}
+			MEX_lucio_blanco = {
+				set_nationality = MXR
+			}
+			MEX_candido_aguilar = {
+				set_nationality = MXR
+			}
+			MEX_juan_g_cabral = {
+				set_nationality = MXR
+			}
+			MEX_eulalio_gutierrez = {
+				set_nationality = MXR
+			}
+			MEX_cesareo_castro_villareal = {
+				set_nationality = MXR
+			}
+			MEX_francisco_jose_mugica = {
+				set_nationality = MXR
+			}
+			MEX_roque_gonzalez_garza = {
+				set_nationality = MXR
+			}
+			MEX_salvador_alvarado = {
+				set_nationality = MXR
+			}
+			MEX_francisco_luis_urquizo = {
+				set_nationality = MXR
+			}
+			MEX_plutarco_elias_calles = {
+				set_nationality = MXR
+			}	
+			MEX_felipe_angeles = {
+				set_nationality = MXR
+			}	
+			MEX_rafael_eguia_lis = {
+				set_nationality = MXR
+			}
+			
+			MEX_hilario_rodriguez_malpica_segovia = {
+				set_nationality = MXR
+			}
+			MEX_hilario_rodriguez_malpica_saliva = {
+				set_nationality = MXR
+			}		
+			MXR = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_character = MEX_francisco_madero
+						}
+						MEX_francisco_madero = {
+							promote_character = classical_liberalism
+						}
+					}
+				}		
+				set_war_support = 0.2
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.35
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.07
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}	
+		}
+	}
+}
+
+# REVOLUTION IN MEXICO NEWS
+############################
+news_event = {
+	id = ww1_mexico.101
+	title = ww1_mexico.101.t
+	desc = ww1_mexico.101.d
+	picture = EVENT_hoi4tgw_mexican_revolution
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = ww1_mexico.101.a
+		trigger = {
+			NOT = {
+				original_tag = MEX
+			}
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = rule_superevent
+					option = DEFAULT
+				}
+				is_ai = no
+			}
+			hidden_effect = {
+				play_song = "SE_mex_revolution"
+				set_country_flag = SE_mex_revolution
+			}
+		}
+	}
+	option = {
+		name = ww1_mexico.101.b
+		trigger = {
+			original_tag = MEX
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = rule_superevent
+					option = DEFAULT
+				}
+				is_ai = no
+			}
+			hidden_effect = {
+				play_song = "SE_mex_revolution"
+				set_country_flag = SE_mex_revolution
+			}
+		}
+	}
+}
+
+# MADERO IS DEAD
+#################
+country_event = {
+	id = ww1_mexico.103
+	title = ww1_mexico.103.t
+	desc = ww1_mexico.103.d
+	picture = GFX_report_event_generic_peaceful_annexation
+	fire_only_once = yes
+	trigger = {
+		original_tag = MEX
+		has_global_flag = mexican_revolution
+		has_country_leader = {
+			character = MEX_francisco_madero
+		}
+		has_civil_war = no
+		has_stability < 0.5
+		date > 1913.1.1
+	}
+	mean_time_to_happen = {
+		days = 90
+	}
+	immediate = {
+		hidden_effect = {
+			retire_character = MEX_bernardo_reyes
+			retire_character = MEX_angel_ortiz_monasterio
+		}
+	}
+	option = {
+		name = ww1_mexico.103.a
+		add_stability = -0.1
+		retire_character = MEX_francisco_madero
+		set_politics = {
+			ruling_party = neutrality
+			long_name = MEX_huerta_party
+			name = MEX_huerta_party
+			elections_allowed = yes
+		}
+		MEX_victoriano_huerta = {
+			promote_leader = yes
+			if = {
+				limit = {
+					has_ideology = despotism
+				}
+				promote_character = despotism
+				else = {
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {						
+							ideology = despotism
+						}
+					}
+				}		
+			}	
+		}
+		remove_ideas = MEX_idea_mexican_revolution_1
+		hidden_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.5
+			}
+			set_global_flag = madero_is_dead
+			MEX_venustiano_carranza = {
+				if = {
+					limit = {
+						has_ideology = classical_liberalism
+					}
+					promote_character = classical_liberalism
+					else = {
+						add_country_leader_role = {
+							promote_leader = yes
+							country_leader = {								
+								ideology = classical_liberalism
+								traits = {
+									jefe_de_mexico
+								}	
+							}
+						}
+					}		
+				}
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = MEX_progressive_constitutionalist_party_long
+				name = MEX_progressive_constitutionalist_party
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# CARRANZA REVOLT
+#################
+country_event = {
+	id = ww1_mexico.3
+	title = ww1_mexico.3.t
+	desc = ww1_mexico.3.d
+	picture = GFX_report_event_generic_peaceful_annexation
+	fire_only_once = yes
+	trigger = {
+		tag = MEX
+		has_country_leader = {
+			character = MEX_victoriano_huerta
+		}
+		has_stability < 0.5
+		has_civil_war = no
+		is_subject = no
+	}
+	mean_time_to_happen = {
+		days = 120
+	}
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = mexican_revolution
+			start_civil_war = {
+				ideology = democratic
+				size = 0.7
+				capital = 480
+				states = {
+					838
+					479
+					482
+					480
+					483
+				}
+				keep_political_leader = yes
+				keep_unit_leaders_trigger = { always = yes }
+				set_country_flag = mexican_revolution
+			}
+			MEX_venustiano_carranza = {
+				set_nationality = MXR
+			}	
+			MEX_alvaro_obregon = {
+				set_nationality = MXR
+			}
+			MEX_plutarco_elias_calles = {
+				set_nationality = MXR
+			}
+			MEX_candido_aguilar = {
+				set_nationality = MXR
+			}
+			MEX_pablo_gonzalez_garza = {
+				set_nationality = MXR
+			}
+			MEX_ramon_f_ituribe = {
+				set_nationality = MXR
+			}
+			MEX_lucio_blanco = {
+				set_nationality = MXR
+			}	
+			MEX_juan_g_cabral = {
+				set_nationality = MXR
+			}
+			MEX_eulalio_gutierrez = {
+				set_nationality = MXR
+			}
+			MEX_cesareo_castro_villareal = {
+				set_nationality = MXR
+			}
+			MEX_francisco_luis_urquizo = {
+				set_nationality = MXR
+			}
+			MEX_francisco_jose_mugica = {
+				set_nationality = MXR
+			}
+			MEX_salvador_alvarado = {
+				set_nationality = MXR
+			}
+			MEX_felix_uresti_gomez = {
+				set_nationality = MXR
+			}
+			MEX_felipe_angeles = {
+				set_nationality = MXR
+			}	
+			MEX_hilario_rodriguez_malpica_segovia = {
+				set_nationality = MXR
+			}
+			MEX_hilario_rodriguez_malpica_saliva = {
+				set_nationality = MXR
+			}				
+			MXR = {
+				if = {
+					limit = {
+						has_character = MEX_venustiano_carranza
+					}
+					MEX_venustiano_carranza = {
+						promote_character = classical_liberalism
+					}
+				}
+				MEX_alvaro_obregon = {
+					if = {
+						limit = {
+							has_ideology = authoritarian_democracy
+						}
+						promote_character = authoritarian_democracy
+						else = {
+							add_country_leader_role = {
+								promote_leader = yes
+								country_leader = {							
+									ideology = authoritarian_democracy
+								}
+							}
+						}		
+					}
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = MEX_obregon_party
+					name = MEX_obregon_party
+				}
+				set_cosmetic_tag = MXC
+				set_country_flag = MXC
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.2
+				}
+			}
+		}	
+	}	
+	#SUPPORT CARRANZA
+	option = {
+		name = ww1_mexico.3.a
+		trigger = { is_ai = no }
+		add_stability = -0.1
+		add_war_support = -0.1
+		effect_tooltip = {
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = ROOT
+			}
+		}
+		hidden_effect = {
+			MXR = {
+				change_tag_from = ROOT
+			}
+		}
+	}
+	#SUPPORT HUERTA
+	option = {
+		name = ww1_mexico.3.b
+		add_stability = -0.1
+		add_war_support = -0.1
+		effect_tooltip = {
+			start_civil_war = {
+				ideology = democratic
+			}
+		}
+	}
+}
+
+# CIVIL WAR
+#################
+country_event = {
+	id = ww1_mexico.4
+	title = ww1_mexico.4.t
+	desc = ww1_mexico.4.d
+	picture = GFX_report_event_generic_riot
+	fire_only_once = yes
+	trigger = {
+		original_tag = MEX
+		has_country_leader = {
+			character = MEX_venustiano_carranza
+		}
+		has_stability < 0.5
+		has_civil_war = no
+		is_subject = no
+	}
+	mean_time_to_happen = {
+		days = 90
+	}
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = mexican_revolution
+			start_civil_war = {
+				ideology = communism
+				size = 0.3
+				states = {
+					844
+					482
+					485
+				}
+				keep_political_leader = yes
+				keep_political_party_members = yes
+				set_country_flag = mexican_revolution
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			MEX_eulalio_gutierrez = {
+				promote_leader = yes
+				set_nationality = MXR
+			}
+			MEX_pancho_villa = {
+				promote_leader = yes
+				set_nationality = MXR
+			}
+			MEX_lucio_blanco = {
+				set_nationality = MXR
+			}	
+			MEX_juan_g_cabral = {
+				set_nationality = MXR
+			}
+			MEX_roque_gonzalez_garza = {
+				set_nationality = MXR
+			}
+			MEX_lucio_blanco = {
+				set_nationality = MXR
+			}
+			MEX_juan_g_cabral = {
+				set_nationality = MXR
+			}
+			MEX_roque_gonzalez_garza = {
+				set_nationality = MXR
+			}
+			MEX_jesus_h_salgado = {
+				set_nationality = MXR
+			}
+			MEX_otilio_montano = {
+				set_nationality = MXR
+			}
+			MEX_felipe_angeles = {
+				set_nationality = MXR
+			}
+			#Zapatists
+			MEX_emiliano_zapata = {
+				set_nationality = MXR
+			}	
+			MEX_eufemio_zapata = {
+				set_nationality = MXR
+			}
+			MEX_amador_salazar = {
+				set_nationality = MXR
+			}
+			MEX_felipe_neri = {
+				set_nationality = MXR
+			}
+			MEX_francisco_mendoza_palma = {
+				set_nationality = MXR
+			}
+			MEX_genovevo_de_la_o = {
+				set_nationality = MXR
+			}
+			MEX_gildardo_magana_cerda = {
+				set_nationality = MXR
+			}
+			MEX_jesus_h_salgado = {
+				set_nationality = MXR
+			}
+			MEX_otilio_montano = {
+				set_nationality = MXR
+			}
+
+			MEX_rafael_eguia_lis = {
+				set_nationality = MXR
+			}			
+			set_global_flag = mexican_civil_war
+			division_template = {
+				name = "Regimiento Constitucionalista"
+				regiments = {
+					irregular_infantry = {
+						x = 0
+						y = 0
+					}
+					irregular_infantry = {
+						x = 0
+						y = 1
+					}
+					irregular_infantry = {
+						x = 0
+						y = 2
+					}
+					irregular_infantry = {
+						x = 0
+						y = 3
+					}
+				}
+				support = {
+					engineer = {
+						x = 0
+						y = 0
+					}
+				}
+			}
+			277 = {
+				create_unit = {
+					division = "name = \"1./Regimiento\" division_template = \"Regimiento Constitucionalista\" start_experience_factor = 0.1"
+					owner = MEX
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"2./Regimiento\" division_template = \"Regimiento Constitucionalista\" start_experience_factor = 0.1"
+					owner = MEX
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"3./Regimiento\" division_template = \"Regimiento Constitucionalista\" start_experience_factor = 0.1"
+					owner = MEX
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"4./Regimiento\" division_template = \"Regimiento Constitucionalista\" start_experience_factor = 0.1"
+					owner = MEX
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"5./Regimiento\" division_template = \"Regimiento Constitucionalista\" start_experience_factor = 0.1"
+					owner = MEX
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"6./Regimiento\" division_template = \"Regimiento Constitucionalista\" start_experience_factor = 0.1"
+					owner = MEX
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"7./Regimiento\" division_template = \"Regimiento Constitucionalista\" start_experience_factor = 0.1"
+					owner = MEX
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"8./Regimiento\" division_template = \"Regimiento Constitucionalista\" start_experience_factor = 0.1"
+					owner = MEX
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"9./Regimiento\" division_template = \"Regimiento Constitucionalista\" start_experience_factor = 0.1"
+					owner = MEX
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"10./Regimiento\" division_template = \"Regimiento Constitucionalista\" start_experience_factor = 0.1"
+					owner = MEX
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			MXR = {
+				set_party_name = {
+					ideology = communism
+					long_name = MEX_convention_party
+					name = MEX_convention_party
+				}
+				MEX_eulalio_gutierrez = {
+					if = {
+						limit = {
+							has_ideology = agrarian_socialism
+						}
+						promote_character = agrarian_socialism
+						else = {
+							add_country_leader_role = {
+								promote_leader = yes
+								country_leader = {							
+									ideology = agrarian_socialism
+									traits = { divided_interests }
+								}
+							}
+						}		
+					}
+				}	
+				set_cosmetic_tag = MCO
+				set_country_flag = MCO
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.1
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.1
+				}
+				division_template = {
+					name = "Regimiento de Campesino"
+					regiments = {
+						militia = {
+							x = 0
+							y = 0
+						}
+						militia = {
+							x = 0
+							y = 1
+						}
+						militia = {
+							x = 0
+							y = 2
+						}
+						militia = {
+							x = 0
+							y = 3
+						}
+					}
+				}
+				844 = {
+					create_unit = {
+						division = "name = \"1./Regimiento de Campesino\" division_template = \"Regimiento de Campesino\" start_experience_factor = 0"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "name = \"2./Regimiento de Campesino\" division_template = \"Regimiento de Campesino\" start_experience_factor = 0"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				482 = {
+					create_unit = {
+						division = "name = \"3./Regimiento de Campesino\" division_template = \"Regimiento de Campesino\" start_experience_factor = 0"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "name = \"4./Regimiento de Campesino\" division_template = \"Regimiento de Campesino\" start_experience_factor = 0"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "name = \"5./Regimiento de Campesino\" division_template = \"Regimiento de Campesino\" start_experience_factor = 0"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				485 = {
+					create_unit = {
+						division = "name = \"6./Regimiento de Campesino\" division_template = \"Regimiento de Campesino\" start_experience_factor = 0"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "name = \"7./Regimiento de Campesino\" division_template = \"Regimiento de Campesino\" start_experience_factor = 0"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "name = \"8./Regimiento de Campesino\" division_template = \"Regimiento de Campesino\" start_experience_factor = 0"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+			}
+			set_province_controller = 4898
+			set_province_controller = 7935
+			set_province_controller = 10809
+			set_province_controller = 12827
+		}
+	}
+	#SUPPORT CARRANZA
+	option = {
+		name = ww1_mexico.4.a
+		add_stability = -0.1
+		effect_tooltip = {
+			start_civil_war = {
+				ideology = communism
+			}
+		}
+	}
+	#SUPPORT ZAPATA
+	option = {
+		name = ww1_mexico.4.b
+		trigger = { is_ai = no }
+		add_stability = -0.1
+		effect_tooltip = {
+			start_civil_war = {
+				ruling_party = communism
+				ideology = ROOT
+			}
+		}
+		hidden_effect = {
+			MXR = {
+				change_tag_from = ROOT
+			}
+		}
+	}
+}
+
+# DIAZ IS DEAD
+#################
+country_event = {
+	id = ww1_mexico.5
+	title = ww1_mexico.5.t
+	desc = ww1_mexico.5.desc
+	picture = GFX_report_event_generic_funeral
+	fire_only_once = yes
+	trigger = {
+		tag = MEX
+		has_country_leader = {
+			character = MEX_porfirio_diaz
+		}
+		date > 1915.7.1
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = ww1_mexico.5.a
+		retire_character = MEX_porfirio_diaz
+		promote_character = MEX_jose_yves_limantour
+		set_party_name = {
+			ideology = neutrality
+			long_name = MEX_cientificos_party_long
+			name = MEX_cientificos_party
+		}
+		trigger = {
+			has_character = MEX_jose_yves_limantour
+		}	
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = ww1_mexico.5.b
+		trigger = {
+			has_character = MEX_bernardo_reyes
+		}
+		retire_character = MEX_porfirio_diaz
+		promote_character = MEX_bernardo_reyes
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = yes
+		}
+		set_political_party = {
+			ideology = fascism
+			popularity = 50
+		}
+		ai_chance = {
+			factor = 60
+		}
+	}
+	option = {
+		name = ww1_mexico.5.c
+		trigger = {
+			has_character = MEX_felix_diaz
+		}
+		retire_character = MEX_porfirio_diaz
+		MEX_felix_diaz = {
+			if = {
+				limit = {
+					has_ideology = oligarchism
+				}
+				promote_character = oligarchism
+				else = {
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {						
+							ideology = oligarchism
+							traits = {
+								inefficient_leader
+							}	
+						}
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	option = {
+		name = ww1_mexico.5.d
+		trigger = {
+			NOT = {
+				has_character = MEX_jose_yves_limantour
+				has_character = MEX_bernardo_reyes
+				has_character = MEX_felix_diaz
+			}
+		}
+		retire_character = MEX_porfirio_diaz
+	}
+}
+
+# CARRANZA IS DEAD
+#################
+country_event = {
+	id = ww1_mexico.6
+	title = ww1_mexico.6.t
+	desc = ww1_mexico.6.d
+	picture = GFX_report_event_gathering_protest
+	fire_only_once = yes
+	trigger = {
+		original_tag = MEX
+		has_country_leader = {
+			character = MEX_venustiano_carranza
+			ruling_only = yes
+		}
+		has_character = MEX_alvaro_obregon
+		date > 1920.5.1
+		has_civil_war = no
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name = ww1_mexico.6.a
+		retire_character = MEX_venustiano_carranza
+		set_politics = {
+			ruling_party = neutrality
+			long_name = MEX_labor_party
+			name = MEX_labor_party
+			elections_allowed = yes
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = MEX_labor_party
+			name = MEX_labor_party
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.5
+		}
+		MEX_alvaro_obregon = {
+			if = {
+				limit = {
+					has_ideology = authoritarian_democracy
+				}
+				promote_character = authoritarian_democracy
+				else = {
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {
+							ideology = authoritarian_democracy
+						}
+					}
+				}		
+			}
+			if = {
+				limit = {
+					has_ideology = socialism
+				}
+				promote_character = socialism
+				else = {
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {
+							ideology = socialism
+						}
+					}
+				}		
+			}
+		}
+	}
+}
+
+# BORDER WAR WON
+#################
+country_event = {
+	id = ww1_mexico.7
+	title = ww1_mexico.7.t
+	desc = ww1_mexico.7.d
+	picture = GFX_report_event_generic_peaceful_annexation
+	is_triggered_only = yes
+	option = {
+		name = ww1_mexico.7.a
+		trigger = {
+			tag = MEX
+		}
+		MEX = {
+			clr_country_flag = mexican_border_conflict_activate
+			add_stability = 0.05
+			add_doctrine_cost_reduction = {
+				name = MEX_border_conflict_won
+				category = land_doctrine
+				cost_reduction = 0.25
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = ww1_mexico.7.b
+		trigger = {
+			tag = USA
+		}
+		USA = {
+			add_war_support = -0.04
+			add_stability = -0.02
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# BORDER WAR LOST
+#################
+country_event = {
+	id = ww1_mexico.8
+	title = ww1_mexico.8.t
+	desc = ww1_mexico.8.d
+	picture = GFX_report_event_generic_peaceful_annexation
+	is_triggered_only = yes
+	option = {
+		name = ww1_mexico.8.a
+		trigger = {
+			tag = MEX
+		}
+		MEX = {
+			add_war_support = -0.04
+			add_stability = -0.02
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = ww1_mexico.8.b
+		trigger = {
+			tag = USA
+		}
+		USA = {
+			add_war_support = 0.05
+			add_doctrine_cost_reduction = {
+				name = MEX_border_conflict_won
+				category = land_doctrine
+				cost_reduction = 0.25
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# BORDER WAR CANCELLED
+#################
+country_event = {
+	id = ww1_mexico.9
+	title = ww1_mexico.9.t
+	desc = ww1_mexico.9.d
+	picture = GFX_report_event_generic_peaceful_annexation
+	is_triggered_only = yes
+	option = {
+		name = ww1_mexico.9.a
+		trigger = {
+			tag = MEX
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = ww1_mexico.9.b
+		trigger = {
+			tag = USA
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

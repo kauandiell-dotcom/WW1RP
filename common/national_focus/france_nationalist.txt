@@ -1,0 +1,1430 @@
+focus_tree = {
+	id = france_nationalist_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			original_tag = FRA
+			has_country_flag = FRA_nationalist_france_flag
+			NOT = { has_country_flag = FRA_fight_the_communists_title }
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 0
+		y = 900
+	}
+	#Focus for Expansion of the Alliance
+	focus = {
+		id = NFA_expansion_of_the_alliance
+		icon = GFX_focus_hol_united_netherlands
+		x = 13
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_the_royalist_accord_of_unity
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			OR = {
+				ENG = {
+					is_in_faction_with = ROOT
+				}
+				any_other_country = {
+					is_in_faction_with = ROOT
+					has_country_flag = has_british_monarchy
+				}
+			}
+		}
+		available = {
+			is_in_faction = yes
+			is_subject = no
+			OR = {
+				ENG = {
+					exists = yes
+					is_in_faction = no
+					is_subject = no
+					has_capitulated = no
+					NOT = {
+						has_government = communism
+						if = {
+					limit = {
+						has_game_rule = {
+							rule = agw_greatwar_options
+							option = enabled
+						}
+					}
+					has_country_flag = great_war_winner
+				}
+						has_country_flag = ENG_socialist_britain_flag
+					}
+				}
+				any_other_country = {
+					exists = yes
+					has_country_flag = has_british_monarchy
+					is_in_faction = no
+					is_subject = no
+					has_capitulated = no
+					NOT = {
+						has_government = communism
+					}
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					ENG = {
+						exists = yes
+						is_subject = no
+						has_focus_tree = uk_iw_focus
+						NOT = {
+							has_government = communism
+							if = {
+					limit = {
+						has_game_rule = {
+							rule = agw_greatwar_options
+							option = enabled
+						}
+					}
+					has_country_flag = great_war_winner
+				}
+							has_country_flag = ENG_socialist_britain_flag
+						}
+						is_faction_leader = yes
+					}
+				}
+				ENG = { country_event = generic.2 }
+			}
+			else_if = {
+				limit = {
+					any_other_country = {
+						exists = yes
+						is_subject = no
+						is_faction_leader = yes
+						has_country_flag = has_british_monarchy
+					}
+				}
+				random_other_country = {
+					limit = {
+						has_country_flag = has_british_monarchy
+					}
+					country_event = generic.2
+				}
+			}
+			else_if = {
+				limit = {
+					is_faction_leader = yes
+				}
+				set_faction_name = entente
+			}
+			else = {
+				create_faction = entente
+			}
+		}
+	}
+	#Focus for Vive la France!
+	focus = {
+		id = NFA_vive_la_france
+		icon = GFX_focus_fra_french_union
+		x = 0
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_defend_the_constitution
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			OR = {
+				is_subject = no
+				has_government = democratic
+			}
+			NOT = {
+				has_government = communism
+			}
+		}
+		completion_reward = {
+			add_political_power = 100
+			set_cosmetic_tag = FRA_alt_blue
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1918.11.11"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			promote_character = FRA_gouvernement_provisoire
+			if = {
+				limit = {
+					owns_state = 16
+					FRA_philippe_petain = { is_unit_leader = yes }
+				}
+				FRA_philippe_petain = {
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {
+							ideology = conservatism
+							traits = { great_war_hero }
+						}
+					}
+				}	
+			}
+		}
+	}
+	#Focus for Son Altesse impériale
+	focus = {
+		id = NFA_son_altesse_impriale
+		icon = GFX_focus_focus_fra_third_empire
+		x = 5
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_repeal_the_law_of_exile
+		}
+		mutually_exclusive = {
+			focus = NFA_the_legitimate_heir
+		}
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			is_subject = no
+			OR = {
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					date < 1926.5.3
+				}
+				hidden_effect = {
+					FRA_napoleon_vi = {
+						add_country_leader_role = {
+							promote_leader = yes
+							country_leader = {
+								ideology = semi_constitutional_monarchy
+								traits = { empire_builder }
+							}
+						}					
+					}
+				}
+				FRA_napoleon_v = {
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {
+							ideology = semi_constitutional_monarchy
+							traits = { empire_builder }
+						}
+					}
+				}
+				else = {
+					FRA_napoleon_vi = {
+						add_country_leader_role = {
+							promote_leader = yes
+							country_leader = {
+								ideology = semi_constitutional_monarchy
+								traits = { empire_builder }
+							}
+						}					
+					}
+				}
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = FRA_bonepartist_party
+				name = FRA_bonepartist_party
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			hidden_effect = {
+				news_event = {
+					id = ww1_france.30
+					days = 3
+					random_days = 5
+				}
+			}
+			set_cosmetic_tag = FRA_THIRD_EMPIRE
+			if = {
+				limit = {
+					has_idea = FRA_idea_disunited_french_front
+				}
+				remove_ideas = FRA_idea_disunited_french_front
+			}
+			if = {
+				limit = {
+					owns_state = 16
+					has_idea = FRA_idea_colonial_conscription
+				}
+				remove_ideas = FRA_idea_colonial_conscription
+			}
+		}
+	}
+	#Focus for Petain's Government
+	focus = {
+		id = NFA_petains_government
+		icon = GFX_focus_FRA_protector_of_the_weakests
+		x = 8
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_seize_the_power
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_subject = no
+			has_country_leader = {
+				character = FRA_philippe_petain
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_government = fascism
+					}					
+				}
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = NFA_petain_party
+				name = NFA_petain_party
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = NFA_petain_party
+				name = NFA_petain_party
+			}
+			if = {
+				limit = {
+					has_idea = FRA_idea_disunited_french_front
+				}
+				remove_ideas = FRA_idea_disunited_french_front
+			}
+			if = {
+				limit = {
+					owns_state = 16
+					has_idea = FRA_idea_colonial_conscription
+				}
+				remove_ideas = FRA_idea_colonial_conscription
+			}
+		}
+	}
+	#Focus for The Legitimate Heir
+	focus = {
+		id = NFA_the_legitimate_heir
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 3
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_repeal_the_law_of_exile
+		}
+		mutually_exclusive = {
+			focus = NFA_son_altesse_impriale
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			is_subject = no
+			OR = {
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					date < 1931.10.2
+				}
+				hidden_effect = {
+					FRA_charles_xii = {
+						add_country_leader_role = {
+							promote_leader = yes
+							country_leader = {
+								ideology = autocracy
+								traits = { legitimate_heir }
+							}
+						}					
+					}
+				}
+				FRA_jacques_i = {
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {
+							ideology = autocracy
+							traits = { legitimate_heir }
+						}
+					}
+				}
+				else = {
+					FRA_charles_xii = {
+						add_country_leader_role = {
+							promote_leader = yes
+							country_leader = {
+								ideology = autocracy
+								traits = { legitimate_heir }
+							}
+						}					
+					}
+				}
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = FRA_legitimist_party
+				name = FRA_legitimist_party
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			set_cosmetic_tag = FRA_KINGDOM_legitimist
+			hidden_effect = {
+				news_event = {
+					id = ww1_france.30
+					days = 3
+					random_days = 5
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_idea_disunited_french_front
+				}
+				remove_ideas = FRA_idea_disunited_french_front
+			}
+			if = {
+				limit = {
+					owns_state = 16
+					has_idea = FRA_idea_colonial_conscription
+				}
+				remove_ideas = FRA_idea_colonial_conscription
+			}
+		}
+	}
+	#Focus for Revise the Constitution
+	focus = {
+		id = NFA_revise_the_constitution
+		icon = GFX_focus_generic_treaty
+		x = 6
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_above_all_the_losses
+		}
+		mutually_exclusive = {
+			focus = NFA_defend_the_constitution
+		}
+		available = {
+			is_subject = no
+			OR = {
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				NOT = {
+					owns_state = 16
+				}
+			}
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.2
+			}
+			add_political_power = 80
+		}
+	}
+	#Focus for Repeal the Law of Exile
+	focus = {
+		id = NFA_repeal_the_law_of_exile
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 4
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_revise_the_constitution
+		}
+		mutually_exclusive = {
+			focus = NFA_seize_the_power
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			has_government = neutrality
+		}
+		available = {
+			is_subject = no
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.3
+			}
+			add_stability = 0.05
+		}
+	}
+	#Focus for Defend the Constitution
+	focus = {
+		id = NFA_defend_the_constitution
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_above_all_the_losses
+		}
+		mutually_exclusive = {
+			focus = NFA_revise_the_constitution
+		}
+		bypass = {
+			has_government = democratic
+		}
+		available = {
+			is_subject = no
+			NOT = {
+				has_government = communism
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				owns_state = 16
+			}
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.4
+			}
+		}
+	}
+	#Focus for Seize the Power
+	focus = {
+		id = NFA_seize_the_power
+		icon = GFX_goal_FRA_french_interventionism_focus
+		x = 8
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_revise_the_constitution
+		}
+		mutually_exclusive = {
+			focus = NFA_repeal_the_law_of_exile
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			is_subject = no
+			has_country_leader = {
+				character = FRA_philippe_petain
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_stability = -0.07
+		}
+	}
+	#Focus for The War for France
+	focus = {
+		id = NFA_the_war_for_france
+		icon = GFX_goal_generic_war_with_comintern
+		x = 11
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war_with = FRC
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	#Focus for Move Industry to the Maghreb
+	focus = {
+		id = NFA_move_industry_to_the_maghreb
+		icon = GFX_goal_generic_construct_civilian
+		x = 8
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_the_war_for_france
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war_with = FRC
+		}
+		bypass = {
+			NOT = {
+				459 = {
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				460 = {
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					459 = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+				459 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					460 = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+				460 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	#Focus for War Veteran
+	focus = {
+		id = NFA_war_veteran
+		icon = GFX_goal_french_army
+		x = 10
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_the_war_for_france
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war_with = FRC
+		}
+		completion_reward = {
+			add_manpower = 50000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 6000
+				producer = FRA
+			}
+		}
+	}
+	#Focus for Colonial Conscription
+	focus = {
+		id = NFA_colonial_conscription
+		icon = GFX_goal_FRA_colonial_volunteers_focus
+		x = 14
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_the_war_for_france
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war_with = FRC
+		}
+		completion_reward = {
+			add_war_support = -0.03
+			add_ideas = {
+				FRA_idea_colonial_conscription
+			}
+		}
+	}
+	#Focus for Partisan Suppression
+	focus = {
+		id = NFA_partisan_suppression
+		icon = GFX_focus_FRA_ban_socialism
+		x = 12
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_the_war_for_france
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war_with = FRC
+		}
+		completion_reward = {
+			add_ideas = {
+				FRA_idea_partisan_suppression
+			}
+		}
+	}
+	#Focus for Above All The Losses
+	focus = {
+		id = NFA_above_all_the_losses
+		icon = GFX_focus_FRA_alliance
+		x = 3
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+			is_subject = no
+		}
+		completion_reward = {
+			remove_ideas = standing_alone
+			add_political_power = 100
+			add_stability = 0.1
+			if = {
+				limit = {
+					owns_state = 16
+				}
+				news_event = {
+					id = interwar_news.30
+					hours = 3
+				}
+			}
+		}
+	}
+	#Focus for Restoration of the Continental System
+	focus = {
+		id = NFA_restoration_of_the_continental_system
+		icon = GFX_focus_fra_le_deluge
+		x = 5
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_son_altesse_impriale
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state = 16
+			is_subject = no
+			has_government = neutrality
+		}
+		completion_reward = {			
+			set_rule = {
+				can_create_factions = yes
+			}
+			if = {
+				limit = {
+					is_in_faction = no
+				}
+				create_faction = continental_system
+				else_if = {
+					limit = {
+						is_faction_leader = yes
+					}
+					set_faction_name = continental_system
+				}
+			}		
+			if = {
+				limit = {
+					ENG = {
+						exists = yes
+						NOT = {
+							is_in_faction_with = NFA
+						}
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = HOI4TGW_Opinion_alliance_malus
+				}
+			}
+		}
+	}
+	#Focus for The Monarchy Restored
+	focus = {
+		id = NFA_the_monarchy_restored
+		icon = GFX_focus_focus_fra_orleans_restoration
+		x = 3
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_the_legitimate_heir
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government = neutrality
+		}
+		completion_reward = {
+			add_stability = 0.15
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+	}
+	#Focus for Our Natural Borders
+	focus = {
+		id = NFA_our_natural_borders
+		icon = GFX_focus_FRA_Napoleonic_Blob
+		x = 5
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_restoration_of_the_continental_system
+		}
+		available = {
+			is_subject = no
+			owns_state = 16
+			has_government = neutrality
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_claim = 6
+			add_state_claim = 7
+			add_state_claim = 8
+			add_state_core = 28
+			add_state_claim = 34
+			add_state_claim = 906
+			add_state_claim = 35
+			add_state_claim = 36
+			add_state_claim = 42
+			add_state_claim = 51
+			add_state_claim = 108
+			add_state_claim = 158
+			add_state_claim = 165
+			add_state_claim = 178
+			add_state_claim = 261
+			add_state_claim = 268
+			add_state_claim = 276
+			add_state_claim = 281
+			add_state_claim = 286
+			add_state_claim = 295
+			add_state_claim = 296
+			add_state_claim = 297
+			add_state_claim = 299
+			add_state_claim = 304
+			add_state_claim = 309
+			add_state_claim = 310
+			add_state_claim = 318
+			add_state_claim = 319
+			add_state_claim = 320
+			add_state_claim = 321
+			add_state_claim = 331
+			add_state_claim = 332
+			add_state_claim = 334
+			add_state_claim = 335
+			add_state_claim = 368
+			add_state_claim = 369
+			add_state_claim = 370
+			add_state_claim = 371
+			add_state_claim = 372
+			add_state_claim = 373
+			add_state_claim = 374
+			add_state_claim = 381
+			add_state_claim = 382
+			add_state_claim = 383
+			add_state_claim = 384
+			add_state_claim = 388
+			add_state_claim = 389
+			add_state_claim = 390
+			add_state_claim = 391
+			add_state_claim = 392
+			add_state_claim = 393
+			add_state_claim = 394
+			add_state_claim = 395
+			add_state_claim = 396
+			add_state_claim = 422
+			add_state_claim = 461
+			add_state_claim = 462
+			add_state_claim = 464
+			add_state_claim = 465
+			add_state_core = 466
+			add_state_claim = 467
+			add_state_core = 468
+			add_state_claim = 469
+			add_state_claim = 538
+			add_state_claim = 539
+			add_state_claim = 543
+			add_state_claim = 553
+			add_state_claim = 554
+			add_state_claim = 635
+			add_state_claim = 641
+			add_state_claim = 660
+			add_state_claim = 667
+			add_state_claim = 668
+			add_state_claim = 669
+			add_state_claim = 670
+			add_state_claim = 671
+			add_state_claim = 672
+			add_state_claim = 673
+			add_state_claim = 677
+			add_state_claim = 680
+			add_state_claim = 681
+			add_state_claim = 682
+			add_state_claim = 683
+			add_state_claim = 685
+			add_state_claim = 687
+			add_state_claim = 694
+			add_state_claim = 701
+			add_state_claim = 702
+			add_state_claim = 705
+			add_state_core = 706
+			add_state_claim = 707
+			add_state_claim = 708
+			add_state_claim = 709
+			add_state_claim = 710
+			add_state_claim = 718
+			add_state_claim = 449
+			add_state_core = 713
+			add_state_claim = 728
+			add_state_claim = 733
+			add_state_claim = 734
+			add_state_claim = 738
+			add_state_claim = 741
+			add_state_claim = 752
+			add_state_claim = 769
+			add_state_claim = 772
+			add_state_claim = 774
+			add_state_claim = 776
+			add_state_claim = 777
+			add_state_claim = 779
+			add_state_claim = 781
+			add_state_claim = 783
+			add_state_claim = 793
+			add_state_claim = 812
+			add_state_claim = 813
+			add_state_claim = 814
+			add_state_claim = 815
+			add_state_claim = 819
+			add_state_claim = 820
+			add_state_claim = 822
+			add_state_claim = 831
+			add_state_core = 851
+		}
+	}
+	#Focus for A True Democracy
+	focus = {
+		id = NFA_a_true_democracy
+		icon = GFX_focus_FRA_democraty
+		x = 0
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_vive_la_france
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government = democratic
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			if = {
+				limit = {
+					has_idea = FRA_idea_disunited_french_front
+				}
+				remove_ideas = FRA_idea_disunited_french_front
+			}
+			if = {
+				limit = {
+					owns_state = 16
+					has_idea = FRA_idea_colonial_conscription
+				}
+				remove_ideas = FRA_idea_colonial_conscription
+			}
+		}
+	}
+	#Focus for The Great Exile
+	focus = {
+		id = NFA_the_great_exile
+		icon = GFX_focus_CZE_german_puppet
+		x = 12
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			FRC = {
+				exists = yes
+				NOT = {
+					has_war_with = NFA
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = -150
+			add_stability = -0.2
+		}
+	}
+	#Focus for The Royalist Accord of Unity
+	focus = {
+		id = NFA_the_royalist_accord_of_unity
+		icon = GFX_focus_focus_fra_ratify_stresa
+		x = 14
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_the_great_exile
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			is_in_faction = yes
+		}
+		available = {
+			is_subject = no
+		}
+		completion_reward = {
+			set_global_flag = imperial_entente_formed
+			if = {
+				limit = {
+					any_country = {
+						if = {
+						limit = {
+							has_game_rule = {
+								rule = agw_greatwar_options
+								option = enabled
+							}
+						}
+						has_country_flag = great_war_loser
+					}
+						OR = {
+							original_tag = ENG
+							has_country_flag = has_british_monarchy
+						}
+						is_faction_leader = yes
+						NOT = {
+							has_government = communism
+							has_country_flag = ENG_socialist_britain_flag
+						}
+					}
+				}
+				every_other_country = {
+					limit = {
+						if = {
+						limit = {
+							has_game_rule = {
+								rule = agw_greatwar_options
+								option = enabled
+							}
+						}
+						has_country_flag = great_war_loser
+					}
+						OR = {
+							original_tag = ENG
+							has_country_flag = has_british_monarchy
+						}
+						is_faction_leader = yes
+						NOT = {
+							has_government = communism
+							has_country_flag = ENG_socialist_britain_flag
+						}
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = "NFA"
+						value = 200
+					}
+					country_event = {
+						id = generic.2
+						hours = 1
+					}
+				}
+				else_if = {
+					limit = {
+						is_faction_leader = yes
+					}
+					set_faction_name = entente
+					else = {
+						create_faction = entente
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_in_faction = yes
+				}
+				every_other_country = {
+					limit = {
+						if = {
+						limit = {
+							has_game_rule = {
+								rule = agw_greatwar_options
+								option = enabled
+							}
+						}
+						has_country_flag = great_war_loser
+					}
+						OR = {
+							original_tag = ENG
+							has_country_flag = has_british_monarchy
+						}
+						is_in_faction = no
+						has_war = no
+						is_subject = no
+						NOT = {
+							has_government = communism
+							has_country_flag = ENG_socialist_britain_flag
+						}
+					}
+					country_event = { id = generic.5 hours = 3 random_hours = 3 }
+				}
+			}	
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+	#Focus for Retake France
+	focus = {
+		id = NFA_retake_france
+		icon = GFX_goal_FRA_Memories_of_the_Commune_focus
+		x = 12
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_the_royalist_accord_of_unity
+			focus = NFA_expand_the_citizenship
+			focus = NFA_new_jobs
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			is_subject = no
+			strength_ratio = {
+				tag = FRC
+				ratio > 1
+			}
+			FRC = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = FRC
+				type = annex_everything
+			}
+		}
+	}
+	#Focus for Liberate Italy
+	focus = {
+		id = NFA_liberate_italy
+		icon = GFX_focus_befriend_italy
+		x = 15
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_the_royalist_accord_of_unity
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			is_subject = no
+			NOT = { 
+				has_idea = idea_armistice
+			}
+			FRC = {
+				exists = no
+			}
+			ITS = {
+				exists = no
+			}
+			ROI = {
+				exists = no
+			}
+			SRI = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = topple_government
+				target = SRI
+			}
+		}
+	}
+	#Focus for The White Terror
+	focus = {
+		id = NFA_the_white_terror
+		icon = GFX_goal_generic_attack_allies
+		x = 8
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_petains_government
+		}
+		available = {
+			has_government = fascism
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = {
+				FRA_idea_the_white_terror
+			}
+		}
+	}
+	#Focus for Form French Settlements
+	focus = {
+		id = NFA_form_french_settlements
+		icon = GFX_focus_generic_africa_factory
+		x = 10
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_the_great_exile
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_state_core = 459
+			add_state_core = 460
+		}
+	}
+	#Focus for New Jobs
+	focus = {
+		id = NFA_new_jobs
+		icon = GFX_goal_generic_production2
+		x = 12
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_the_great_exile
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			NOT = {
+				459 = {
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				460 = {
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					459 = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				459 = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					460 = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				460 = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	#Focus for Expand the Citizenship
+	focus = {
+		id = NFA_expand_the_citizenship
+		icon = GFX_goal_generic_national_unity
+		x = 10
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA_form_french_settlements
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = FRA_idea_colonial_conscription
+				}
+				remove_ideas = FRA_idea_colonial_conscription
+			}
+			add_ideas = {
+				FRA_idea_expanded_citizenship
+			}
+		}
+	}
+	#Focus for Rescue the French
+	focus = {
+		id = NFA_rescue_the_french
+		icon = GFX_focus_generic_military_academy
+		x = 16
+		y = 3
+		cost = 5
+		prerequisite = {
+			focus = NFA_the_great_exile
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			is_subject = no
+			any_other_country = {
+				original_tag = FRA
+				has_country_flag = FRA_socialist_france_flag
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = FRA_idea_rescue_the_french
+				days = 365
+			}
+			random_other_country = {
+				limit = {
+					original_tag = FRA
+					has_country_flag = FRA_socialist_france_flag
+				}
+				add_timed_idea = {
+					idea = FRA_idea_population_outflow
+					days = 365
+				}
+			}
+		}
+	}
+	#End of focuses 
+}

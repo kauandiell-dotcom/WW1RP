@@ -1,0 +1,165 @@
+music_station ="agw_radio"
+
+#music = {
+#	song = "maintheme"
+#	chance = {
+#		modifier = {
+#			factor = 0.5
+#		}		
+#	}
+#}
+
+# Communist music ##################
+music = {
+	song = "agwr1"
+}
+music = {
+	song = "agwr2"
+}
+music = {
+	song = "agwr3"
+}
+music = {
+	song = "agwr5"
+}
+music = {
+	song = "agwr6"
+}
+music = {
+	song = "agwr7"
+}
+music = {
+	song = "agwr8"
+}
+music = {
+	song = "agwr9"
+}
+music = {
+	song = "agwr10"
+}
+music = {
+	song = "agwr11"
+}
+music = {
+	song = "agwr12"
+}
+music = {
+	song = "agwr14"
+}
+music = {
+	song = "agwr15"
+}
+music = {
+	song = "agwr16"
+}
+music = {
+	song = "agwr17"
+}
+music = {
+	song = "agwr18"
+}
+music = {
+	song = "agwr19"
+}
+music = {
+	song = "agwr20"
+}
+music = {
+	song = "agwr21"
+}
+music = {
+	song = "agwr22"
+}
+music = {
+	song = "agwr23"
+}
+music = {
+	song = "agwr24"
+}
+music = {
+	song = "agwr25"
+}
+music = {
+	song = "agwr26"
+}
+music = {
+	song = "agwr27"
+}
+music = {
+	song = "agwr28"
+}
+music = {
+	song = "agwr29"
+}
+music = {
+	song = "agwr30"
+}
+music = {
+	song = "agwr31"
+}
+music = {
+	song = "agwr32"
+}
+music = {
+	song = "agwr33"
+}
+music = {
+	song = "agwr34"
+}
+music = {
+	song = "agwr35"
+}
+music = {
+	song = "agwr36"
+}
+music = {
+	song = "agwr37"
+}
+music = {
+	song = "agwr38"
+}
+music = {
+	song = "agwr39"
+}
+music = {
+	song = "agwr40"
+}
+music = {
+	song = "agwr41"
+}
+music = {
+	song = "agwr42"
+}
+music = {
+	song = "agwr43"
+}
+music = {
+	song = "agwr44"
+}
+music = {
+	song = "agwr45"
+}
+music = {
+	song = "agwr46"
+}
+music = {
+	song = "agwr47"
+}
+music = {
+	song = "agwr48"
+}
+music = {
+	song = "agwr49"
+}
+music = {
+	song = "agwr50"
+}
+music = {
+	song = "agwr51"
+}
+music = {
+	song = "agwr52"
+}
+music = {
+	song = "agwr53"
+}

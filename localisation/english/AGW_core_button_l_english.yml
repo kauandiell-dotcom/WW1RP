@@ -1,0 +1,3 @@
+﻿l_english: 
+ CREATE_CORE1_TOOLTIP:0 "§HCore state§!\n\nThis action costs:\n §H>§! §H50§!£pol_power if state population is lower than 50k\n§H75§!£pol_power if state population is between 50k and 100k\n§H100§!£pol_power if state population is between 100k and 250k\n§H125§!£pol_power if state population is between 250k and 500k\n§H150§!£pol_power if state population is between 500k and 1m\n§H200§!£pol_power if state population is between 1m and 5m\n§H300§!£pol_power if state population is between 5m and 10m\n§H400§!£pol_power if state population is between 10m and 15m\n§H500§!£pol_power if state population is higher than 15m"
+ UNCREATE_CORE_TOOLTIP:0 "§HRemove core§!\n\n"

@@ -1,0 +1,131 @@
+defined_text = {
+	name = HEGEMONY_POWER_TITLE
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = AGW_dynamicranks_options
+				option = agora
+			}
+		}
+		localization_key = "ranks_hegemony_power_default_title_tt"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = AGW_dynamicranks_options
+				option = agoralive
+			}
+		}
+		localization_key = "ranks_hegemony_power_live_title_tt"
+	}
+}
+
+defined_text = {
+	name = GLOBAL_POWER_TITLE
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = AGW_dynamicranks_options
+				option = agora
+			}
+		}
+		localization_key = "ranks_global_power_default_title_tt"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = AGW_dynamicranks_options
+				option = agoralive
+			}
+		}
+		localization_key = "ranks_global_power_live_title_tt"
+	}
+}
+
+defined_text = {
+	name = SUPER_POWER_TITLE
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = AGW_dynamicranks_options
+				option = agora
+			}
+		}
+		localization_key = "ranks_super_power_default_title_tt"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = AGW_dynamicranks_options
+				option = agoralive
+			}
+		}
+		localization_key = "ranks_super_power_live_title_tt"
+	}
+}
+
+defined_text = {
+	name = REGIONAL_POWER_TITLE
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = AGW_dynamicranks_options
+				option = agora
+			}
+		}
+		localization_key = "ranks_regional_power_default_title_tt"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = AGW_dynamicranks_options
+				option = agoralive
+			}
+		}
+		localization_key = "ranks_regional_power_live_title_tt"
+	}
+}
+
+defined_text = {
+	name = MIDDLE_POWER_TITLE
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = AGW_dynamicranks_options
+				option = agora
+			}
+		}
+		localization_key = "ranks_middle_power_default_title_tt"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = AGW_dynamicranks_options
+				option = agoralive
+			}
+		}
+		localization_key = "ranks_middle_power_live_title_tt"
+	}
+}
+
+defined_text = {
+	name = MINOR_POWER_TITLE
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = AGW_dynamicranks_options
+				option = agora
+			}
+		}
+		localization_key = "ranks_minor_power_default_title_tt"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = AGW_dynamicranks_options
+				option = agoralive
+			}
+		}
+		localization_key = "ranks_minor_power_live_title_tt"
+	}
+}

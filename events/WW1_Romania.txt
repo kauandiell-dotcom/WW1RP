@@ -1,0 +1,297 @@
+﻿add_namespace = ww1_romania
+
+# ROMANIAN KING IS DEAD
+###############################
+country_event = {
+	id = ww1_romania.1
+	title = "Romania wants to buy land"
+	desc = ""
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		ai_chance = {
+			base = 100
+		}
+
+		name = "They can have it"
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		ROM = {
+			random_owned_controlled_state = {
+				limit = {
+					industrial_complex > 0
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					industrial_complex > 0
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+
+			transfer_state = 84
+			transfer_state = 778
+			transfer_state = 80
+		}
+	}
+	option = {
+		name = "No we wont sell our motherlands!"
+		ROM = {
+			add_opinion_modifier = {
+				target = AUH
+				modifier = large_decrease
+			}
+		}
+	}
+}
+country_event = {
+	id = ww1_romania.4
+	title = "Romania demands Bessarabia"
+	desc = ""
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		ai_chance = {
+			base = 100
+		}
+		name = "They can have it"
+		ROM = {
+			transfer_state = 78
+			add_opinion_modifier = {
+				target = RUS
+				modifier = medium_increase
+			}
+		}
+	}
+	option = {
+		name = "No we wont give any our land!"
+		ROM = {
+			add_opinion_modifier = {
+				target = RUS
+				modifier = large_decrease
+			}
+			create_wargoal = {
+				target = RUS
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ww1_romania.2
+	title = "Romania demands Southern Dobruja"
+	desc = ""
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		ai_chance = {
+			base = 100
+		}
+		name = "They can have it"
+		ROM = {
+			transfer_state = 77
+			add_opinion_modifier = {
+				target = BUL
+				modifier = medium_increase
+			}
+		}
+	}
+	option = {
+		name = "No we wont give any our land!"
+		ROM = {
+			add_opinion_modifier = {
+				target = BUL
+				modifier = large_decrease
+			}
+			create_wargoal = {
+				target = BUL
+				type = annex_everything
+			}
+		}
+	}
+}
+country_event = {
+	id = ww1_romania.10
+	title = "Romania demands own land"
+	desc = ""
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		ai_chance = {
+			base = 100
+		}
+		name = "They can have it"
+		ROM = {
+			transfer_state = 778
+			transfer_state = 84
+			transfer_state = 82
+			transfer_state = 83
+			transfer_state = 76
+			transfer_state = 80
+			add_opinion_modifier = {
+				target = AUH
+				modifier = medium_increase
+			}
+		}
+	}
+	option = {
+		name = "No we wont give any our land!"
+		ROM = {
+			add_opinion_modifier = {
+				target = AUH
+				modifier = large_decrease
+			}
+			create_wargoal = {
+				target = AUH
+				type = annex_everything
+			}
+		}
+	}
+}
+country_event = {
+	id = ww1_romania.5
+	title = "Romania demands İnfluence"
+	desc = ""
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		ai_chance = {
+			base = 100
+		}
+		name = "They can have it"
+		ROM = {
+			puppet = BUL
+			add_opinion_modifier = {
+				target = BUL
+				modifier = medium_increase
+			}
+		}
+	}
+	option = {
+		name = "No we are independent!"
+		ROM = {
+			add_opinion_modifier = {
+				target = BUL
+				modifier = large_decrease
+			}
+			create_wargoal = {
+				target = BUL
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}
+country_event = {
+	id = ww1_romania.8
+	title = "Romania demands Submission"
+	desc = ""
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		ai_chance = {
+			base = 100
+		}
+		name = "They can have it"
+		ROM = {
+			puppet = SER
+			add_opinion_modifier = {
+				target = SER
+				modifier = medium_increase
+			}
+		}
+	}
+	option = {
+		name = "No we are independent!"
+		ROM = {
+			add_opinion_modifier = {
+				target = SER
+				modifier = large_decrease
+			}
+			create_wargoal = {
+				target = SER
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ww1_romania.3
+	title = "Romania offers defence pact"
+	desc = ""
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		ai_chance = {
+			base = 100
+		}
+		name = "Accept offer"
+		give_guarantee = ROM
+		add_political_power = 50
+		ROM = {
+			add_political_power = 50
+			give_guarantee = ROOT
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = medium_increase
+			}
+		}
+	}
+	option = {
+		name = "Refuse offer"
+		ROM = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_decrease
+			}
+		}
+	}
+}

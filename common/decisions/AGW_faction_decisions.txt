@@ -1,0 +1,81 @@
+generic_factions = {
+	create_faction = {
+		icon = generic_army_support
+		allowed = {
+			always = yes
+		}
+		available = {
+			num_of_factories > 49
+		}
+		visible = {
+			is_in_faction = no
+			is_ai = no
+			NOT = { has_rule = can_create_factions }
+		}
+
+		cost = 0
+		fire_only_once = no
+
+		complete_effect = {
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+	
+	# FROM hedef alınacak ülkeler
+	join_faction_FROM = {
+
+		icon = generic_army_support
+		
+		allowed = {
+			always = yes
+		}
+	
+		available = {
+			
+		}
+
+		# Decisiona bakan ülkenin şartları:
+		target_root_trigger = {
+			is_in_faction = no
+			is_ai = no
+			is_subject = no
+
+			NOT = { has_country_flag = joined_faction }
+		}
+
+		# Hedef olarak gözükecek ülkeler için şartlar
+		target_trigger = {
+			FROM = { 
+				is_faction_leader = yes
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 0
+		}
+	
+		visible = {
+			is_in_faction = no
+			is_ai = no
+
+			NOT = { has_country_flag = joined_faction }
+		}
+	
+		complete_effect = {
+			FROM = {
+				country_event = { id = generic.2 }
+			}
+			hidden_effect = {
+				set_country_flag = {
+					flag = joined_faction
+					days = 30
+					value = 1
+				}
+			}
+		}
+	}
+}

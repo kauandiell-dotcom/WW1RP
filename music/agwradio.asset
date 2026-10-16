@@ -1,0 +1,261 @@
+music = {
+	name = "agwr1"
+	file = "agwr1.ogg"
+	volume = 3.00
+}
+
+music = {
+	name = "agwr2"
+	file = "agwr2.ogg"
+	volume = 3.00
+}
+
+music = {
+	name = "agwr3"
+	file = "agwr3.ogg"
+	volume = 3.00
+}
+
+music = {
+	name = "agwr5"
+	file = "agwr5.ogg"
+	volume = 3.00
+}
+
+music = {
+	name = "agwr6"
+	file = "agwr6.ogg"
+	volume = 3.00
+}
+
+music = {
+	name = "agwr7"
+	file = "agwr7.ogg"
+	volume = 3.00
+}
+
+music = {
+	name = "agwr8"
+	file = "agwr8.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr9"
+	file = "agwr9.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr10"
+	file = "agwr10.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr11"
+	file = "agwr11.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr12"
+	file = "agwr12.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr14"
+	file = "agwr14.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr15"
+	file = "agwr15.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr16"
+	file = "agwr16.ogg"
+	volume = 2.00
+}
+music = {
+	name = "agwr17"
+	file = "agwr17.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr18"
+	file = "agwr18.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr19"
+	file = "agwr19.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr20"
+	file = "agwr20.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr21"
+	file = "agwr21.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr22"
+	file = "agwr22.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr23"
+	file = "agwr23.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr24"
+	file = "agwr24.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr25"
+	file = "agwr25.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr26"
+	file = "agwr26.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr27"
+	file = "agwr27.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr28"
+	file = "agwr28.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr29"
+	file = "agwr29.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr30"
+	file = "agwr30.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr31"
+	file = "agwr31.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr32"
+	file = "agwr32.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr33"
+	file = "agwr33.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr34"
+	file = "agwr34.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr35"
+	file = "agwr35.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr36"
+	file = "agwr36.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr37"
+	file = "agwr37.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr38"
+	file = "agwr38.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr39"
+	file = "agwr39.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr40"
+	file = "agwr40.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr41"
+	file = "agwr41.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr42"
+	file = "agwr42.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr43"
+	file = "agwr43.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr44"
+	file = "agwr44.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr45"
+	file = "agwr45.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr46"
+	file = "agwr46.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr47"
+	file = "agwr47.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr48"
+	file = "agwr48.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr49"
+	file = "agwr49.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr50"
+	file = "agwr50.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr51"
+	file = "agwr51.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr52"
+	file = "agwr52.ogg"
+	volume = 3.00
+}
+music = {
+	name = "agwr53"
+	file = "agwr53.ogg"
+	volume = 3.00
+}

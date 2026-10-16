@@ -1,0 +1,712 @@
+operations = {
+	SAU_conquer_al_hasa = {
+		icon = border_war
+		allowed = {
+			original_tag = SAU
+		}
+		visible = {
+			NOT = {
+				owns_state = 804
+			}
+			292 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		target_trigger = {
+			FROM = {
+				owns_state = 804
+			}
+		}
+		available = {
+			has_war = no
+			804 = {
+				is_owned_and_controlled_by = FROM
+			}
+			num_divisions_in_states = {
+				count < 1
+				states = { 804 }
+				exclude = { irregular_infantry irregular_cavalry }
+			}
+			FROM = {
+				has_war = yes
+				NOT = {
+					owns_state = 656
+					owns_state = 904
+					owns_state = 905
+					has_subject = ROOT
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 804
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				date < 1913.1.1
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					has_global_flag = kis_firstbalkanwar_victory
+					has_global_flag = kis_war
+				}
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			effect_tooltip = {
+				transfer_state = 804
+				FROM = {
+					if = {
+						limit = { has_subject = QAT }
+						end_puppet = QAT
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_cosmetic_tag = SAU_nejd_and_hejaz
+							has_cosmetic_tag = SAU_saudi_arabia
+							has_cosmetic_tag = SAU_sultanate
+						}
+					}
+					set_cosmetic_tag = SAU_nejd_and_hasa
+				}
+			}
+			hidden_effect = {
+				FROM = {
+					country_event = ottoman.96
+				}
+			}
+		}
+	}
+	SAU_invade_kuwait = {
+		icon = border_war
+		allowed = {
+			original_tag = SAU
+		}
+		visible = {
+			is_subject = no
+			NOT = {
+				owns_state = 905
+			}
+			292 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			FROM = {
+				OR = {
+					has_capitulated = no
+					NOT = { if = {
+					limit = {
+						has_game_rule = {
+							rule = agw_greatwar_options
+							option = enabled
+						}
+					}
+					has_country_flag = great_war_loser
+				} }
+				}
+			}
+		}
+		target_trigger = {
+			FROM = {
+				owns_state = 905
+			}
+		}
+		available = {
+			has_war = no
+			owns_state = 804
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 905
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				date < 1919.1.1
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			if = {
+				limit = {
+					has_subject = FROM
+				}
+				every_state = {
+					limit = {
+						is_owned_by = FROM
+						OR = {
+							state = 904
+							state = 905
+						}
+					}
+					transfer_state_to = ROOT
+				}
+				else = {
+					add_state_claim = 904
+					add_state_claim = 905
+					if = {
+						limit = {
+							NOT = { has_war_with = FROM }
+						}
+						FROM = { country_event = ww1_nejd.1 }
+					}
+				}
+			}
+		}
+	}
+	SAU_conquer_wafra = {
+		icon = border_war
+		allowed = {
+			original_tag = SAU
+		}
+		visible = {
+			owns_state = 804
+			NOT = {
+				owns_state = 904
+				owns_state = 905
+			}
+			292 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		target_trigger = {
+			FROM = {
+				owns_state = 904
+			}
+		}
+		available = {
+			is_subject = no
+			has_war = no
+			904 = {
+				OWNER = {
+					OR = {
+						if = {
+					limit = {
+						has_game_rule = {
+							rule = agw_greatwar_options
+							option = enabled
+						}
+					}
+					has_country_flag = great_war_loser
+				}
+						has_capitulated = yes
+						AND = {
+							904 = { NOT = { is_core_of = PREV } }
+							NOT = { controls_state = 791 }
+						}
+					}
+				}
+			}
+			num_divisions_in_states = {
+				count < 1
+				states = { 904 }
+				exclude = { irregular_infantry irregular_cavalry }
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 904
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		fire_only_once = yes
+		complete_effect = {
+			transfer_state = 904
+			transfer_state = 905
+		}
+	}
+	SAU_unite_JBS = {
+		icon = border_war
+		allowed = {
+			original_tag = SAU
+		}
+		visible = {
+			country_exists = JBS
+			NOT = {
+				has_subject = JBS
+			}
+		}
+		available = {
+			NOT = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = agw_greatwar_options
+							option = enabled
+						}
+					}
+					has_country_flag = great_war_loser
+				}
+			}
+			292 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			OR = {
+				strength_ratio = {
+					tag = FROM
+					ratio > 0.8
+				}
+				FROM = { if = {
+					limit = {
+						has_game_rule = {
+							rule = agw_greatwar_options
+							option = enabled
+						}
+					}
+					has_country_flag = great_war_loser
+				} }
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					date < 1921.8.1
+					AND = {
+						is_in_faction = yes
+						is_faction_leader = no
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				JBS = {
+					OR = {
+						if = {
+					limit = {
+						has_game_rule = {
+							rule = agw_greatwar_options
+							option = enabled
+						}
+					}
+					has_country_flag = great_war_winner
+				}
+						is_subject = yes
+						is_in_faction = yes
+					}				
+				}
+			}
+		}
+		war_with_on_remove = JBS
+		target_trigger = {
+			FROM = {
+				tag = JBS
+			}
+		}
+		fire_only_once = yes
+		days_remove = 45
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = FROM
+					is_core_of = FROM
+				}
+				add_claim_by = ROOT
+			}
+		}
+		remove_effect = {
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+	}
+	SAU_declare_sultanate = {
+		icon = infiltrate_state
+		allowed = {
+			original_tag = SAU
+		}
+		available = {
+			JBS = {
+				OR = {
+					exists = no
+					is_subject_of = PREV
+				}				
+			}
+		}
+		visible = {
+			OR = {
+				has_full_control_of_state = 791
+				has_subject = JBS
+			}	
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = {
+				every_other_country = {
+					limit = {
+						owns_state = 554
+						NOT = {
+							is_subject_of = PREV
+							has_war_with = PREV
+						}
+					}
+					transfer_state = 831
+					831 = { remove_core_of = JBS }
+				}
+				every_other_country = {
+					limit = {
+						owns_state = 455
+						NOT = {
+							is_subject_of = PREV
+							has_war_with = PREV
+						}
+					}
+					transfer_state = 832
+					832 = { remove_core_of = JBS }
+				}
+				every_other_country = {
+					limit = {
+						owns_state = 291
+						NOT = {
+							is_subject_of = PREV
+							has_war_with = PREV
+						}
+					}
+					transfer_state = 675
+					675 = { remove_core_of = JBS }
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = JBS
+				}
+				remove_core_of = JBS
+				add_core_of = PREV
+			}
+			if = {
+				limit = {
+					has_subject = JBS
+				}
+				annex_country = {
+					target = JBS
+					transfer_troops = yes
+				}
+			}
+			set_cosmetic_tag = SAU_sultanate
+		}
+	}
+	SAU_unite_HJZ = {
+		icon = border_war
+		allowed = {
+			original_tag = SAU
+		}
+		visible = {
+			country_exists = FROM
+			NOT = {
+				has_subject = FROM
+			}
+		}
+		available = {
+			JBS = { exists = no }
+			292 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			791 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			strength_ratio = {
+				tag = FROM
+				ratio > 0.8
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					date < 1925.12.1
+					AND = {
+						is_in_faction = yes
+						is_faction_leader = no
+					}					
+				}
+			}
+			modifier = {
+				factor = 0
+				FROM = {
+					OR = {
+						is_subject = yes
+						is_in_faction = yes
+					}				
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { if = {
+				limit = {
+					has_game_rule = {
+						rule = agw_greatwar_options
+						option = enabled
+					}
+				}
+				has_global_flag = interbellum
+			} }
+			}
+		}
+		war_with_on_remove = HJZ
+		target_trigger = {
+			FROM = {
+				tag = HJZ
+			}
+		}
+		fire_only_once = yes
+		days_remove = 45
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = FROM
+					is_core_of = FROM
+				}
+				add_claim_by = ROOT
+			}
+		}
+		remove_effect = {
+			create_wargoal = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+	}
+	SAU_declare_kingdom_of_hejaz_and_nejd = {
+		icon = infiltrate_state
+		allowed = {
+			original_tag = SAU
+		}
+		available = {
+			HJZ = {
+				OR = {
+					exists = no
+					is_subject_of = PREV
+				}		
+			}
+			has_cosmetic_tag = SAU_sultanate
+		}
+		visible = {
+			OR = {
+				AND = {
+					has_full_control_of_state = 679
+					has_full_control_of_state = 878
+				}
+				has_subject = HJZ
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_of = HJZ
+				}
+				add_core_of = SAU
+				remove_core_of = HJZ
+			}
+			set_cosmetic_tag = SAU_nejd_and_hejaz
+			if = {
+				limit = {
+					has_subject = HJZ
+				}
+				annex_country = {
+					target = HJZ
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	SAU_unite_ASR = {
+		icon = border_war
+		allowed = {
+			original_tag = SAU
+		}
+		visible = {
+			country_exists = FROM
+			NOT = {
+				has_subject = FROM
+			}
+		}
+		available = {
+			JBS = {
+				exists = no
+			}
+			HJZ = {
+				exists = no
+			}
+			292 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			strength_ratio = {
+				tag = FROM
+				ratio > 0.8
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					date < 1925.12.1
+					AND = {
+						is_in_faction = yes
+						is_faction_leader = no
+					}				
+				}
+			}
+			modifier = {
+				factor = 0
+				ASR = {
+					OR = {
+						is_subject = yes
+						is_in_faction = yes
+					}				
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { if = {
+				limit = {
+					has_game_rule = {
+						rule = agw_greatwar_options
+						option = enabled
+					}
+				}
+				has_global_flag = interbellum
+			} }
+			}
+		}
+		war_with_on_remove = ASR
+		target_trigger = {
+			FROM = {
+				tag = ASR
+			}
+		}
+		fire_only_once = yes
+		days_remove = 45
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = FROM
+					is_core_of = FROM
+				}
+				add_claim_by = ROOT
+			}
+		}
+		remove_effect = {
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+	}
+	SAU_declare_saudi_arabia = {
+		icon = infiltrate_state
+		allowed = {
+			original_tag = SAU
+		}
+		available = {
+			has_capitulated = no
+			ASR = {
+				OR = {
+					exists = no
+					is_subject_of = PREV
+				}
+			}
+			HJZ = {
+				OR = {
+					exists = no
+					is_subject_of = PREV
+				}
+			}
+			HJZ = {
+				OR = {
+					exists = no
+					is_subject_of = PREV
+				}
+			}
+			292 = {
+				is_fully_controlled_by = SAU
+			}
+			678 = {
+				is_fully_controlled_by = SAU
+			}
+			662 = {
+				is_fully_controlled_by = SAU
+			}
+			679 = {
+				is_fully_controlled_by = SAU
+			}
+			747 = {
+				is_fully_controlled_by = SAU
+			}
+			791 = {
+				is_fully_controlled_by = SAU
+			}
+			878 = {
+				is_fully_controlled_by = SAU
+			}
+		}
+		visible = {
+			NOT = { has_cosmetic_tag = SAU_saudi_arabia }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = ASR
+						is_core_of = OMA
+						is_core_of = YEM
+						is_core_of = QAT
+						is_core_of = KUW
+						is_core_of = UAE
+						is_core_of = IRQ
+						is_core_of = PAL
+						is_core_of = SYR
+						is_core_of = JOR
+						state = 904
+						state = 905
+					}				
+				}
+				add_core_of = SAU
+				if = {
+					limit = {
+						is_core_of = ASR
+					}
+					remove_core_of = ASR
+				}
+			}
+			if = {
+				limit = {
+					has_subject = ASR
+				}
+				annex_country = {
+					target = ASR
+					transfer_troops = yes
+				}
+			}
+			set_cosmetic_tag = SAU_saudi_arabia
+			news_event = {
+				id = interwar_news.19
+				hours = 3
+			}
+		}
+	}
+}

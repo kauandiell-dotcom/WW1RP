@@ -1,0 +1,94 @@
+﻿l_russian:
+ # GUIs:
+ OPEN_INSULT_EXPANDED_DIPLO_ACTIONS_TT: "§GClick§! чтобы посмотреть дипломатические действия."
+ 
+ SEND_INSULT_DIPLO_ACTION_TITLE: "Отправить послание"
+ SEND_INSULT_DIPLO_ACTION_TT: "Отправить дипломатическое послание правительству §Y[This.GetNameWithFlag]§!. [This.GetSendInsultConditionsTooltip]"
+ 
+ INSULT_EXPANDED_POPUP_SENDER_TITLE: "Послание"
+ INSULT_EXPANDED_POPUP_SENDER_SHORT_DESC: "Отправить дипломатическое послание правительству §Y[?selected_country_to_insult.GetNameWithFlag]§!."
+ INSULT_EXPANDED_POPUP_SENDER_DESC: "Вы точно хотите отправить послание §Y[?selected_country_to_insult.GetNameWithFlag]§!? \n\n§YЭто будет иметь такие еффекты:§! [This.GetSendInsultStabilityEffect]\nБазовая поддержка войны: §R-2.00%§!. [This.GetInsultTensionEffect]\n\n(§Y§Y[?selected_country_to_insult.GetNameWithFlag]§!§!): [This.GetReceiveInsultStabilityEffect]\nМнение [This.GetFlag] §Y[This.GetName]§! §R-50§!. \nДает следующие бонусы на §Y30 дней§!: \nЕженедельная поддержка войны: §G+1.00%§! \nВремя оправдания цели войны: §G-10.0%§! \nМировая напряженность для фабрикации цели войны: §Y-5.0%§! \nДает следующие бонусы на §Y180 дней§!: \nБонус на атаку против [This.GetName]: §G+10.0%§!"
+ INSULT_EXPANDED_POPUP_SENDER_ENTRY: "§H[This.GetRandomizedInsultEntry]§!"
+ INSULT_EXPANDED_POPUP_SENDER_CUSTOM_ENTRY: "§H[This.GetInsultTypedText]§!"
+ RANDOMIZE_INSULT_BUTTON_TT: "§GClick§! выбрать другое случайное послание. \n§GRight-click§! чтобы открыть или закрыть список со всеми оскорблениями которые вы можете выбрать."
+ 
+ SEND_INSULT_BUTTON_TT: "§Y[This.GetNameWithFlag]§! отправляет выбранное послание §Y[?selected_country_to_insult.GetNameWithFlag]§!. [This.GetSendInsultButtonConditionsTooltip]"
+ 
+ INSULT_EXPANDED_POPUP_RECEIVER_TITLE: "Дипломатическое послание"
+ INSULT_EXPANDED_POPUP_RECEIVER_SHORT_DESC: "Мы только что получили это непристойное послание. \n§Y[This.GetNameWithFlag]§! должен заплатить за это неприемлемое действие!"
+ INSULT_EXPANDED_POPUP_RECEIVER_ENTRY: "§H[This.GetReceivedInsultEntry]§!"
+ INSULT_EXPANDED_POPUP_RECEIVER_CUSTOM_ENTRY: "§H[This.GetInsultTypedReceivedText]§!"
+ INSULT_EXPANDED_POPUP_RECEIVER_DESC: "§YThis послание будет иметь следующие еффекты:§! [This.GetReceiveInsultStabilityEffect]\nМнение об §Y[This.GetNameWithFlag]§! §R-50§!. \nGains the following bonuses for §Y30 days§!: \nЕженедельная поддержка войны: §G+1.00%§! \nВремя оправдания цели войны: §G-10.0%§! \nМировая напряженность для фабрикации цели войны: §Y-5.0%§! \nДает следующие бонусы на §Y180 дней§!: \nБонус на аттку  против [This.GetName]: §G+10.0%§! \n\n(§Y[This.GetNameWithFlag]§!): [This.GetSendInsultStabilityEffect]\nБазовая поддержка войны: §R-2.00%§!. [This.GetInsultTensionEffect]"
+ 
+ RECEIVED_INSULT_OK_BUTTON_TT: "§Y[This.GetNameWithFlag]§! Послание нам."
+ 
+ INSULT_BACK: "Ответное послание"
+ INSULT_BACK_TT: "Отправить Послание обратно. [This.GetSendInsultConditionsTooltip]"
+ 
+ ROOT_COULD_INSULT_TARGET_NORMALLY_TOO: "Мы можем отправить послание в эту страну"
+ 
+ WRITE_INSULT_BUTTON_TT: "§GClick§! войти или выйти из режима написания собственного послания. \n§GRight-click§! чтобы убрать уже написанное послание."
+ WRITE_INSULT_BUTTON_TT_DELAYED: "§RМаксимальный размер послания - 1000 символов.§!\n§HТолько Послания от А до Я, цифры и некоторые специальные символы разрешенны.§! \nВы можете написать послания обычно и удалите последний символ, нажав £DEL£. \n\nМожно использовать следующие специальные символы, горячая клавиша для их ввода указана в скобках позади них: \n§YМИНУС§! (§G-§!) \n§YПРОБЕЛС§! (§Gклавиша пробела§!) \n§YЗАПЯТАЯ§! (§G,§!) \n§YВопросительный знак§! (§GCtrl + Q§!) \n§YАпостроф§! (§GShift + ^§!) \n§Yточка§! (§G.§!) \n§YQuotation Mark§! (§GShift + 2§!) \n§YФигурные скобочки§! (§GShift + 1§!) \n§YОткрытая круглая скобка§! (§GShift + 8§!) \n§YЗакрытая круглая скобка§! (§GShift + 9§!)"
+ 
+ SAVE_INSULT_BUTTON_TT: "§GClick§! чтобы открыть или закрыть окно для §Yсохранения§! и §Yзагрузки§! написанных оскорблений."
+ 
+ INSULT_SAVE_BUTTON: "[This.GetInsultSaveButtonText]"
+ INSULT_SAVE_BUTTON_TT: "[This.GetInsultSaveButtonTooltip]"
+ INSULT_SAVE_BUTTON_TT_DELAYED: "[This.GetInsultSaveButtonTooltipDelayed]"
+ 
+ HAS_TYPED_INSULT: "The typed Послание has at least §Y1§! character"
+ 
+ USE_INSULT_BUTTON: "[This.GetInsultListEntryName]"
+ USE_INSULT_BUTTON_TT: "Текст этого послания: \n"§Y[This.GetInsultListEntryName]§!""
+ USE_INSULT_BUTTON_TT_DELAYED: "§GClick§! чтобы выбрать это послание."
+ 
+ # Scripted Localisation:
+ string_cannot_send_insult_because_players_did_not_vote_yet: "\n\n§RОпрос между игроками еще не завершен. Как только станет известен результат, можно отправить оскорбление.§W"
+ string_cannot_send_insult_because_we_recently_insulted_someone: "\n\n§RМы не можем Послание другой страны в течение ближайших §Y[?Root.last_insult_sent_this_amount_of_days_ago]§! дней.§W"
+ string_cannot_send_insult_to_ally: "\n\n§RМы не можем отправить послание участнику нашего альянса.§W"
+ string_cannot_send_insult_to_enemy: "\n\n§RМы не можем Послание §Y[This.GetNameWithFlag]§!, потому что мы уже воюем друг с другом.§W"
+ string_cannot_send_insult_because_no_or_too_short_insult: "\n\n§RВы должны выбрать послание или ввести послание, длинной по крайней мере, §Y3§! символов.§W"
+ string_cannot_send_insult_because_we_recently_insulted_them: "\n\n§RМы не давно отправляли послание. Мы можем отправлять послание каждые 6 месяцев.§W"
+ 
+ string_send_insult_stability_effect: "\nПрирост базовой стабильности: §G+0.50%§!. "
+ string_receive_insult_stability_effect: "\nПрирост базовой стабильности: §R-0.50%§!. "
+ string_insult_wt_effect: "\nМировая напряженность увеличивается на §R0.5§!. "
+ 
+ string_quotation_mark: "\""
+ 
+ string_create_new_insult_save: "Создать новое сохранение"
+ string_replace_insult_save: "Слот сохранения [?i]"
+ string_create_new_insult_save_tt: "§GClick§! чтобы создать §Yновое сохранение§!, ваше текущее написанное послание будет сохранение."
+ string_replace_insult_save_tt: "§GClick§! чтобы §YПЕРЕЗАПИСАТЬ§! текущее сохранение с вашим написанным посланием. \n§GRight-click§! чтобы §YЗАГРУЗИТЬ§! это сохранение. \n§GCtrl + Right-click§! чтобы §RУДАЛИТЬ§! это сохранение."
+ string_replace_insult_save_tt_delayed: "Text of this saved Послание: "§Y[This.GetInsultTypedSavedText]§!""
+  
+ # Threats:
+ INSULT_THREAT: "отправить дипломатическое Послание"
+ 
+ # Ideas:
+ insulted_idea: "Недавнее послание"
+ insulted_idea_desc: "Недавно мы получили послание, которое увеличивает поддержку войны со стороны нашего народа, а также сокращает время и ограничения для достижения военных целей."
+ 
+ # Dynamic Modifiers:
+ insult_dynamic_modifier: "Послание"
+ 
+ # Opinions:
+ insult_expanded_opinion: "Послание"
+ 
+ # Game Rules:
+ INSULTS_EXPANDED_RULES: "Пренебрежительные правила послания"
+ INSULTS_EXPANDED_RULE_EFFECTS_OF_INSULTS: "Игровые еффекты от послания"
+ RULE_OPTION_INSULTS_AFFECT_STABILITY_AND_WORLD_TENSION: "Влияет на стабильность и мировую напряженность"
+ RULE_OPTION_INSULTS_AFFECT_STABILITY_AND_WORLD_TENSION_DESC: "Послание для страны дает следующию стабильность §YStability§! отправителя и получателя, а также §YWorld Tension§!."
+ RULE_OPTION_INSULTS_AFFECT_STABILITY: "Влияние на стабильность"
+ RULE_OPTION_INSULTS_AFFECT_STABILITY_DESC: "Послание для страны как раз повлияет на §YStability§! отправителя и получателя."
+ RULE_OPTION_INSULTS_AFFECT_WORLD_TENSION: "Влияние на мировую напряженность"
+ RULE_OPTION_INSULTS_AFFECT_WORLD_TENSION_DESC: "Послание для страны как раз повлияет наt §YWorld Tension§!."
+ RULE_OPTION_INSULTS_AFFECT_NONE: "Ничего"
+ RULE_OPTION_INSULTS_AFFECT_NONE_DESC: "Послание для страны не повлияет ни на §YStability§! ни на §YWorld Tension§!."
+ ğ:0 "ğ"
+ ü:0 "ü"
+ ç:0 "ç"
+ I:0 "ı"
+ ö:0 "ö"
+ ş:0 "ş"

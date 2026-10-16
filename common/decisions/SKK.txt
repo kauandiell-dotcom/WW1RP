@@ -1,0 +1,23 @@
+political_actions = {
+	the_only_emperor_of_the_world = {
+		cost = 1031
+		fire_only_once = yes
+		ai_will_do = {
+			base = 0
+		}
+		allowed = {
+			original_tag = SKK
+		}
+		available = {
+			
+		}
+
+		complete_effect = {
+			retire_country_leader = yes
+			SKK_emperor_mete_invincible_chess_player = {
+				promote_character = semi_constitutional_monarchy
+			}
+			add_ideas = SKK_invincible_chess_master
+		}
+	}
+}

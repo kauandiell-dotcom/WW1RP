@@ -1,0 +1,22 @@
+﻿l_russian:
+ is_balkan_state_tt: "Балканское государство" #NT!
+ is_greece_a_monarchy_tt: "Греция — это §YMonarchy§!." #NT!
+ is_greece_a_monarchy_tt_NOT: "Греция — это §YRepublic§!." #NT!
+ GRE_has_venizelist_government_tt: "Имеет ли правительство Венизелистов" #NT!
+ GRE_has_venizelist_government_tt_NOT: "Не имеет правительства Венизелистов" #NT!
+ GRE_has_royalist_government_tt: "Имеет роялистское правительство" #NT!
+ GRE_has_royalist_government_tt_NOT: "Не имеет роялистского правительства" #NT!
+ is_controlled_by_ROOT_or_subject: "Управляется §H[ROOT.GetNameDef]§! или одним из его подданных." #NT!
+ is_controlled_by_PREV_or_subject: "Управляется §H[PREV.GetNameDef]§! или одним из его подданных." #NT!
+ is_controlled_by_PREV_or_ally: "Управляется §H[PREV.GetNameDef]§! или один из их союзников." #NT!
+  
+  ### Actual Major Power tooltip ### 
+ is_actual_major_tooltip_base: "Является крупнейшей мировой державой:" #NT!
+ is_actual_major_tooltip_major: "\n [THIS.MajorWorldPower_MajorCheck] $TRIGGER_IS_MAJOR$" #NT!
+ is_actual_major_tooltip_OR: "\ п $TRIGGER_OR_STARTS$" #NT!
+ is_actual_major_tooltip_seven_largest: "\n [THIS.MajorWorldPower_AmongSevenLargestIndustries] Имеет одну из седьмых по величине экономик мира" #NT!
+ is_actual_major_tooltip_average: "\n [THIS.MajorWorldPower_MoreThanSeventyPercentAverage] Имеет более §H70%§! среднего промышленного потенциала восьми крупнейших экономик" #NT!
+ is_actual_major_tooltip_countries: "\n [THIS.MajorWorldPower_SpecialCase] — это страна §HGerman§!, §HFrench§!, §HBritish§!, §HAmerican§!, §HRussian§!, §HOttoman§!, §HAustro-Hungarian§! или §HJapanese§!" #NT!
+ is_actual_major: "$is_actual_major_tooltip_base$$is_actual_major_tooltip_major$$is_actual_major_tooltip_OR$$is_actual_major_tooltip_seven_largest$$is_actual_major_tooltip_average$$is_actual_major_tooltip_countries$" #NT!
+ is_actual_major_without_exceptions: "$is_actual_major_tooltip_base$$is_actual_major_tooltip_major$$is_actual_major_tooltip_OR$$is_actual_major_tooltip_seven_largest$$is_actual_major_tooltip_average$" #NT!
+  

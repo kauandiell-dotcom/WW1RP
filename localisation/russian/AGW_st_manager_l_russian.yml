@@ -1,0 +1,40 @@
+﻿l_russian:
+ 
+ ST_STATE_MARK_FOR_TRANSFER:0 "§HПометить штат дл передачи§!\nОтметьте выбранный штат, чтобы его можно было передать \n"
+ ST_STATE_UNMARK_FOR_TRANSFER:0 "§HUnmark State§!\nUnmarks the selected state\n"
+ mark_state_yes:0 ""
+ mark_state_no:0 "\n  §RПОМЕЧЕННО!§!"
+ 
+ MARK_ALL_STATES:0 "§HВыбрать все штаты§!\n\nВыбрать все штаты этой страны\n\n"
+ MARK_ALL_STATES_DELAYED:0 ""
+ 
+ MARK_COLONIES:0 "§HВыбрать колониальные штаты§!\n\nВыбрать все колониальные штаты этой страны\n\n"
+ MARK_COLONIES_DELAYED:0 ""
+ 
+ CLEAR_ALL_MARKINGS:0 "§HУбрать все пометки§!\n\nВсе пометки в мире будут удаленны\n\n"
+ CLEAR_ALL_MARKINGS_DELAYED:0 ""
+
+ AWARD_STATES:0 "§HПередать штаты§!\n\nпередать выбранные штаты этой стране\n\n"
+ AWARD_STATES_DELAYED:0 "§RНельзя передавать все ваши штаты!§!"
+ 
+ ST_TOOLTIP_on:0 "§HАктивировать 'Инструмент передачи штатов'§!"
+ ST_TOOLTIP_off:0 "§HДективировать 'Инструмент передачи штатов'§!"
+ transfer_states_on:0 "STT: £trigger_no"
+ transfer_states_off:0 "STT: £trigger_yes"
+ 
+ mark_status_marked:0   "     Убрать пометку "
+ mark_status_unmarked:0 "      Пометить штат  "
+ 
+ RULE_ALLOW_SUBJECT_TRANSFERS:0 "Передать штаты между ИИ субьектами"
+ RULE_ALLOW_SUBJECT_TRANSFERS_FREE_DESC:0 "Все типы субьектов"
+ RULE_ALLOW_SUBJECT_TRANSFERS_LOW_AUTONOMY_ONLY_DESC:0 "Только субьекты с низкой автономией (ниже уровня колонии)"
+ RULE_ALLOW_SUBJECT_TRANSFERS_BLOCKED_DESC:0 "Запретить передачу штатов субъектов"
+ 
+ RULE_USE_NEW_TOOL:0 "Исользовать новую версию мода"
+ 
+ GIVE_STATE_ACTION_TITLE:0 "Дать штаты"
+ GIVE_STATE_ACTION_ACTION_DESC:0 "Дать штаты выбранной стране?"
+ TAKE_STATE_ACTION_TITLE:0 "Взять штаты"
+ TAKE_STATE_ACTION_ACTION_DESC:0 "Взять штаты выбранной страны?"
+ 
+ TRANSFER_STATE_DESC:0 "Выберите штаты, которые будут отданы"

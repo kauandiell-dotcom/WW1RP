@@ -1,0 +1,45 @@
+focus_tree = {
+	id = skk_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SKK
+		}
+	}
+	continuous_focus_position = {
+		x = 500
+		y = 2200
+	}
+	
+	shared_focus = open_the_political_sphere
+	shared_focus = take_position
+	shared_focus = industrial_effort
+	shared_focus = naval_experience
+	shared_focus = state_of_the_country_army
+
+	focus = {
+		id = SKK_call_the_chess_experts
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5
+		x = 300
+		y = 1000
+		available = {
+			hidden_trigger = {
+				is_ai = no
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+		completion_reward = { 
+			retire_character = SKK_thutob_namgyal
+			retire_character = SKK_sidkeong_tulku_namgyal
+			retire_character = SKK_tashi_namgyal 
+			set_country_leader_ideology = semi_constitutional_monarchy
+			SKK_prime_minister_of_chess = {
+				promote_character = semi_constitutional_monarchy
+			}
+		}
+	}
+}

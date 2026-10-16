@@ -1,0 +1,87 @@
+﻿l_russian:
+ BROTHERS_WAR_NAME: "Война братьев" #NT!
+ brothers_war: "Война братьев (Фокус)" #NT!
+ brothers_war_desc: "Приложение (Фокус)" #NT!
+ WAR_NAME_SER_TUR: "Балканская война" #NT!
+ WAR_NAME_BUL_TUR: "Балканская война" #NT!
+ WAR_NAME_GRE_TUR: "Балканская война" #NT!
+ WAR_NAME_SER_BUL: "Балканская война" #NT!
+ WAR_NAME_BUL_SER: "Балканская война" #NT!
+ WAR_NAME_ENG_SOM: "Кампания в Сомалиленде" #NT!
+ WAR_NAME_ITA_SOM: "Кампания в Сомалиленде" #NT!
+ WAR_NAME_ENG_LBA: "Сенусская кампания" #NT!
+ WAR_NAME_ITA_LBA: "Сенусская кампания" #NT!
+ WAR_NAME_ASR_TUR: "Асирское восстание" #NT!
+ WAR_NAME_SOV_RUS: "Гражданская война в России" #NT!
+ WAR_NAME_RUS_SOV: "Гражданская война в России" #NT!
+ WAR_NAME_SOV_TRC: "Гражданская война в России" #NT!
+ WAR_NAME_TRC_SOV: "Гражданская война в России" #NT!
+ WAR_NAME_FRA_GER: "Великая война" #NT!
+ WAR_NAME_GER_FRA: "Великая война" #NT!
+ WAR_NAME_AUH_FRA: "Великая война" #NT!
+ WAR_NAME_FRA_AUH: "Великая война" #NT!
+ WAR_NAME_ENG_AUH: "Великая война" #NT!
+ WAR_NAME_AUH_ENG: "Великая война" #NT!
+ WAR_NAME_NIR_IRE: "Смута" #NT!
+ WAR_NAME_IRE_NIR: "Смута" #NT!
+ WAR_NAME_ENG_KEN: "Кризис в Кении" #NT!
+ WAR_NAME_ENG_JAM: "Карибское Дело" #NT!
+ WAR_NAME_RAJ_PAK: "Война в Пенджабе" #NT!
+ WAR_NAME_PAK_RAJ: "Война в Пенджабе" #NT!
+ WAR_NAME_ENG_SCO: "Восстание якобитов" #NT!
+ WAR_NAME_SCO_ENG: "Реставрация якобитов" #NT!
+ WAR_NAME_HAN_GER: "союзническая война" #NT!
+ WAR_NAME_GER_HAN: "союзническая война" #NT!
+ WAR_NAME_BAY_GER: "союзническая война" #NT!
+ WAR_NAME_GER_BAY: "Видерферайнигунгкриг" #NT!
+ WAR_NAME_HAN_BAY: "союзническая война" #NT!
+ WAR_NAME_BAY_HAN: "союзническая война" #NT!
+ WAR_NAME_USA_USB: "Гражданская война в США" #NT!
+ WAR_NAME_USA_CSA: "Гражданская война в США" #NT!
+ WAR_NAME_USB_USA: "Гражданская война в США" #NT!
+ WAR_NAME_USB_CSA: "Гражданская война в США" #NT!
+ WAR_NAME_CSA_USA: "Гражданская война в США" #NT!
+ WAR_NAME_CSA_USB: "Гражданская война в США" #NT!
+ WAR_NAME_JAP_KOR: "Война за независимость Кореи" #NT!
+ WAR_NAME_KOR_QIN: "Война за Небесный Мандат" #NT!
+ WAR_NAME_FRA_CHA: "Война в Уаддай" #NT!
+ WAR_TAKE_CLAIM_NAME_ITA_TUR: "Итало-турецкая война" #NT!
+ CIVIL_WAR_NAME_MEX: "Мексиканская революция" #NT!
+  
+ # CHINESE CIVIL WARS 
+ WAR_NAME_CHI_QIN: "Синьхайская революция" #NT!
+ WAR_NAME_QIN_CHI: "Маньчжурская реставрация" #NT!
+ WAR_NAME_JAP_CHI: "Японо-китайская война" #NT!
+ WAR_NAME_CHI_JAP: "Японо-китайская война" #NT!
+ WAR_NAME_JAP_QIN: "Японо-китайская война" #NT!
+ WAR_NAME_QIN_JAP: "Японо-китайская война" #NT!
+ WAR_NAME_CHI_GXC: "Война за конституционную защиту" #NT!
+ WAR_NAME_CHI_HNC: "Война за конституционную защиту" #NT!
+ WAR_NAME_CHI_YUN: "Война за конституционную защиту" #NT!
+ WAR_NAME_ZHC_ANC: "Zhili-Anhui War" #NT!
+ WAR_NAME_ANC_ZHC: "Zhili-Anhui War" #NT!
+ WAR_NAME_ZHC_FNG: "Zhili-Fengtian War" #NT!
+ WAR_NAME_FNG_ZHC: "Zhili-Fengtian War" #NT!
+ WAR_NAME_FNG_ANC: "Anhui-Fengtian War" #NT!
+ WAR_NAME_ANC_FNG: "Anhui-Fengtian War" #NT!
+ WAR_NAME_GMJ_SDC: "Пекинский переворот" #NT!
+ WAR_NAME_GDC_ANC: "Северная экспедиция" #NT!
+ WAR_NAME_GDC_SDC: "Северная экспедиция" #NT!
+ WAR_NAME_GDC_FNG: "Северная экспедиция" #NT!
+ WAR_NAME_GDC_ZHE: "Северная экспедиция" #NT!
+ WAR_NAME_GDC_ZHC: "Северная экспедиция" #NT!
+ WAR_NAME_GXC_GDC: "Liangguang War" #NT!
+ WAR_NAME_GDC_GXC: "Liangguang War" #NT!
+ WAR_NAME_GDC_GZC: "Западная экспедиция" #NT!
+ WAR_NAME_GDC_YUN: "Западная экспедиция" #NT!
+ WAR_NAME_ZGP_GDC: "Инцидент в Юнг Пэне" #NT!
+ WAR_NAME_GDC_ZGP: "Восточная экспедиция" #NT!
+ WAR_NAME_JNC_ZHE: "Jiangsu-Zhejiang War" #NT!
+ WAR_NAME_ZHE_JNC: "Jiangsu-Zhejiang War" #NT!
+ WAR_NAME_MAN_FNG: "Мукденский инцидент" #NT!
+ WAR_NAME_JAP_FNG: "Мукденский инцидент" #NT!
+ WAR_NAME_NPA_CHI: "Война за национальную защиту" #NT!
+ WAR_NAME_CHI_NPA: "Война за национальную защиту" #NT!
+ WAR_NAME_ZHC_GDC: "Южная Экспедиция" #NT!
+ WAR_NAME_FNG_GDC: "Южная Экспедиция" #NT!
+ WAR_NAME_ANC_GDC: "Южная Экспедиция" #NT!

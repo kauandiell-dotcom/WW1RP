@@ -1,0 +1,340 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = news
+
+# Germany At War Again
+news_event = {
+	id = news.155
+	title = news.155.t
+	desc = news.155.d
+	picture = GFX_news_event_german_soldiers
+	
+	major = yes
+
+	trigger = {
+		#has_global_flag = interbellum
+		GER = {
+			has_offensive_war = yes
+			has_country_flag = great_war_loser
+		}
+		any_country = {
+			has_war_with = GER
+			is_major = yes
+		}
+		NOT = {
+			country_exists = BAY
+			country_exists = HAN
+			country_exists = SAX
+			country_exists = SHL
+			country_exists = MEK
+		}
+	}
+
+	immediate = {
+		hidden_effect = { set_global_flag = world_war_2 }
+	}
+	
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		trigger = { NOT = { tag = GER } }
+		name = news.155.a
+	}
+	option = {
+		trigger = { tag = GER } 
+		name = news.155.b
+	}
+}
+
+# World International news
+news_event = {
+	id = news.173
+	title = news.173.t
+	picture = GFX_news_event_023
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	desc = news.173.d_1
+
+	option = {
+		name = news.173.a
+		trigger = {
+			NOT = {
+				has_government = communism
+				has_country_leader_ideology = national_syndicalism
+			}
+		}
+	}
+	option = {
+		name = news.173.b
+		trigger = {
+			OR = {
+				has_government = communism
+				has_country_leader_ideology = national_syndicalism
+			}
+		}
+	}
+}
+
+# GENERIC nation joins an Alliance
+news_event = {
+	id = news.289
+	title = news.289.t
+	picture = GFX_news_event_generic_sign_treaty3
+	desc = news.289.d
+
+	major = yes
+
+	is_triggered_only = yes
+
+	#Together we will prevail.
+	option = {
+		name = news.289.a
+		trigger = {
+			OR = {
+				has_country_flag = alliance_inviter@FROM
+				has_country_flag = alliance_applicant@FROM
+			}
+		}
+		hidden_effect = {
+			clr_country_flag = alliance_inviter@FROM
+			clr_country_flag = alliance_applicant@FROM
+		}
+	}
+
+	#They prepare for what is coming.
+	option = {
+		name = news.289.b
+		trigger = {
+			NOT = { FROM = { has_war = yes } }
+			event_target:alliance_inviter = {
+				NOT = { has_war = yes }
+			}
+			NOT = {
+				any_allied_country = {
+					has_country_flag = alliance_applicant@FROM
+				}
+			}
+			AND = {
+				NOT = { has_country_flag = alliance_inviter@FROM }
+				NOT = { has_country_flag = alliance_applicant@FROM }
+			}
+		}
+		hidden_effect = {
+			clr_country_flag = alliance_inviter@FROM
+			clr_country_flag = alliance_applicant@FROM
+		}
+	}
+
+	#It will not avail them!
+	option = {
+		name = news.289.c
+		trigger = {
+			any_enemy_country = {
+				OR = {
+					has_country_flag = alliance_inviter@FROM
+					has_country_flag = alliance_applicant@FROM
+				}
+			}
+		}
+		hidden_effect = {
+			clr_country_flag = alliance_inviter@FROM
+			clr_country_flag = alliance_applicant@FROM
+		}
+	}
+
+	#The war escalates...
+	option = {
+		name = news.289.e
+		trigger = {
+			NOT = {
+				any_allied_country = {
+					OR = {
+						has_country_flag = alliance_inviter@FROM
+						has_country_flag = alliance_applicant@FROM
+					}
+				}
+				any_enemy_country = {
+					OR = {
+						has_country_flag = alliance_inviter@FROM
+						has_country_flag = alliance_applicant@FROM
+					}
+				}
+			}
+			event_target:alliance_inviter = {
+				has_war = yes
+			}
+			AND = {
+				NOT = { has_country_flag = alliance_inviter@FROM }
+				NOT = { has_country_flag = alliance_applicant@FROM }
+			}
+		}
+		hidden_effect = {
+			clr_country_flag = alliance_inviter@FROM
+			clr_country_flag = alliance_applicant@FROM
+		}
+	}
+
+	#Our alliance grows stronger.
+	option = {
+		name = news.289.f
+		trigger = {
+			any_allied_country = {
+				OR = {
+					has_country_flag = alliance_inviter@FROM
+					has_country_flag = alliance_applicant@FROM
+				}
+			}
+			AND = {
+				NOT = { has_country_flag = alliance_inviter@FROM }
+				NOT = { has_country_flag = alliance_applicant@FROM }
+			}
+		}
+		hidden_effect = {
+			clr_country_flag = alliance_inviter@FROM
+			clr_country_flag = alliance_applicant@FROM
+		}
+	}
+}
+
+#Austria invites Habsburg Prince
+news_event = {
+	id = news.290
+	title = news.290.t
+	desc = news.290.desc
+	picture = GFX_news_event_royal_visit
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.290.a
+		trigger = {
+			TAG = HUN
+		}
+	}
+	option = {
+		name = news.290.b
+		trigger = { 
+			TAG = AUS
+		}
+	}
+	# option = {
+	# 	name = news.290.c
+	# 	trigger = { 
+	# 		TAG = GER
+	# 	}
+	# }
+	option = { 
+		name = news.290.e
+		trigger = { 
+			NOT = {
+				TAG = HUN
+				TAG = AUS
+				#TAG = GER
+			}
+		}
+	}
+}
+
+#Austria votes yes on referendum - no shenanigans
+news_event = {
+	id = news.291
+	title = news.291.t
+	desc = news.291.desc
+	picture = GFX_news_event_election_vote
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.291.a
+		trigger = {
+			TAG = AUS
+		}
+	}
+	option = {
+		name = news.291.b
+		trigger = { 
+			TAG = HUN
+			OR = {
+				has_country_leader_ideology = autocracy
+				has_country_leader_ideology = semi_constitutional_monarchy
+			}	
+		}
+	}
+	option = { 
+		name = news.291.c
+		trigger = {
+			OR = {
+				NOT = {
+					AND = {
+						TAG = HUN
+						OR = {
+							has_country_leader_ideology = autocracy
+							has_country_leader_ideology = semi_constitutional_monarchy
+						}
+					}
+					TAG = AUS
+				}
+			}
+		}
+	}
+}
+
+### Yellow river blown
+news_event = {
+	id = news.409
+	title = news.409.t
+	desc = news.409.desc
+	picture = GFX_news_event_074
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.409.a
+		trigger = {
+			OR = {
+				tag = FROM
+				is_in_faction_with = FROM
+			}
+		}
+	}
+	option = {
+		name = news.409.b
+		trigger = {
+			OR = {
+				has_war_with = FROM
+				any_allied_country = {
+					has_war_with = FROM
+				}
+			}
+		}
+	}
+	option = {
+		name = news.409.c
+		trigger = {
+			NOT = {
+				tag = FROM
+				is_in_faction_with = FROM
+				has_war_with = FROM
+				any_allied_country = {
+					has_war_with = FROM
+				}
+			}
+		}
+	}
+}

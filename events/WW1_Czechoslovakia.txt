@@ -1,0 +1,391 @@
+add_namespace = ww1_czechoslovakia
+
+# TAKE SUDETENLAND
+########################
+country_event = {
+	id = ww1_czechoslovakia.1
+	title = ww1_czechoslovakia.1.t
+	desc = ww1_czechoslovakia.1.d
+	picture = GFX_report_event_generic_read_write
+	mean_time_to_happen = {
+		days = 30
+	}
+	fire_only_once = yes
+	trigger = {
+		tag = CZE
+		is_subject = no
+		AUH = {
+			has_country_flag = great_war_loser
+		}
+		AUS = {
+			exists = yes
+			NOT = {
+				has_war_with = CZE
+			}
+			owns_state = 69
+			owns_state = 74
+		}
+	}
+	option = {
+		name = ww1_czechoslovakia.1.a
+		transfer_state = 69
+		transfer_state = 74
+		every_state = {
+			limit = {
+				is_owned_by = CZE
+				NOT = {
+					state = 69
+					state = 74
+				}
+			}
+			remove_core_of = AUH
+			remove_core_of = AUS
+		}
+		AUS = {
+			country_event = ww1_czechoslovakia.3
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# TAKE SLOVAKIA
+country_event = {
+	id = ww1_czechoslovakia.2
+	title = ww1_czechoslovakia.2.t
+	desc = ww1_czechoslovakia.2.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 53
+	}
+	trigger = {
+		AUH = {
+			has_country_flag = great_war_loser
+		}
+		tag = CZE
+		is_subject = no
+		exists = yes
+		has_war = no
+		HUN = {
+			exists = yes
+			is_subject = no
+			NOT = {
+				has_war_with = CZE
+			}
+			owns_state = 71
+			owns_state = 70
+		}
+	}
+	option = {
+		name = ww1_czechoslovakia.2.a
+		transfer_state = 71
+		transfer_state = 70
+		every_state = {
+			limit = {
+				is_owned_by = CZE
+			}
+			remove_core_of = HUN
+		}
+		add_ideas = CZE_divided_nation
+		hidden_effect = {
+			# Fix Carpanthian Ruthenia
+			if = {
+				limit = {
+					any_other_country = {
+						OR = {
+							original_tag = UKR
+							original_tag = WUK
+						}
+						OR = {
+							is_subject = yes
+							NOT = {
+								has_country_flag = great_war_winner
+							}
+						}
+						owns_state = 73
+						NOT = {
+							owns_state = 89
+						}
+					}
+				}
+				HUN = {
+					transfer_state = 73
+				}
+			}
+		}
+	}
+}
+
+# Treaty of Saint-Germain-en-Laye
+###################################
+country_event = {
+	id = ww1_czechoslovakia.3
+	title = ww1_czechoslovakia.3.t
+	desc = ww1_czechoslovakia.3.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww1_czechoslovakia.3.a
+		ai_chance = {
+			factor = 100
+		}
+		drop_cosmetic_tag = yes
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+				OR = {
+					state = 69
+					state = 74
+				}
+			}
+			remove_core_of = ROOT
+		}
+		AUH_eduard_von_bohmermolli = {
+			set_nationality = CZE
+		}
+	}
+	option = {
+		name = ww1_czechoslovakia.3.b
+		add_political_power = -100
+		add_stability = -0.1
+		declare_war_on = {
+			target = CZE
+			type = annex_everything
+		}
+		hidden_effect = {
+			news_event = {
+				id = interwar_news.28
+				hours = 3
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				tag = AUH
+			}
+		}
+	}
+}
+
+# CZECHIA ONLY
+country_event = {
+	id = ww1_czechoslovakia.4
+	trigger = {
+		tag = CZE
+		SLO = {
+			exists = yes
+		}
+		NOT = {
+			has_country_flag = CZE_ONLY
+			has_cosmetic_tag = CZE_ONLY_communism
+			owns_state = 70
+			owns_state = 71
+		}
+	}
+	mean_time_to_happen = {
+		days = 0
+	}
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				has_government = communism
+			}
+			set_cosmetic_tag = CZE_ONLY_communism
+		}
+		else = {
+			set_cosmetic_tag = CZE_ONLY
+		}
+		set_country_flag = CZE_ONLY
+	}
+}
+
+# CZECHOSLOVAKIA
+country_event = {
+	id = ww1_czechoslovakia.5
+	trigger = {
+		tag = CZE
+		SLO = {
+			exists = no
+		}
+		has_country_flag = CZE_ONLY
+		owns_state = 70
+		owns_state = 71
+	}
+	mean_time_to_happen = {
+		days = 0
+	}
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				has_government = communism
+			}
+			set_cosmetic_tag = CZE_communism
+		}
+		else = {
+			drop_cosmetic_tag = yes
+		}
+		clr_country_flag = CZE_ONLY
+	}
+}
+
+# Suvi, you are Slovakian.
+country_event = {
+	id = ww1_czechoslovakia.6
+	title = ww1_czechoslovakia.6.t
+	desc = ww1_czechoslovakia.6.d
+	picture = GFX_report_event_generic_parliament
+	trigger = {
+		tag = CZE
+		SLO = {
+			exists = no
+		}
+		owns_state = 70
+		owns_state = 71
+		has_war = no
+		NOT = {
+			owns_state = 9
+			owns_state = 69
+			owns_state = 74
+			owns_state = 75
+		}
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 0
+	}
+	option = {
+		name = ww1_czechoslovakia.6.a
+		effect_tooltip = {
+			SLO = { change_tag_from = ROOT }
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				if = {
+					limit = {
+						has_autonomy_state = autonomy_colony
+					}
+					SLO = {
+						annex_country = {
+							target = ROOT
+							transfer_troops = yes
+						}
+					}
+					OVERLORD = {
+						set_autonomy = {
+							target = SLO
+							autonomy_state = autonomy_colony
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_autonomy_state = autonomy_dominion
+					}
+					SLO = {
+						annex_country = {
+							target = ROOT
+							transfer_troops = yes
+						}
+					}
+					OVERLORD = {
+						set_autonomy = {
+							target = SLO
+							autonomy_state = autonomy_dominion
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_autonomy_state = autonomy_integrated_puppet
+					}
+					SLO = {
+						annex_country = {
+							target = ROOT
+							transfer_troops = yes
+						}
+					}
+					OVERLORD = {
+						set_autonomy = {
+							target = SLO
+							autonomy_state = autonomy_integrated_puppet
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_autonomy_state = autonomy_puppet
+					}
+					SLO = {
+						annex_country = {
+							target = ROOT
+							transfer_troops = yes
+						}
+					}
+					OVERLORD = {
+						set_autonomy = {
+							target = SLO
+							autonomy_state = autonomy_puppet
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_autonomy_state = autonomy_satellite
+					}
+					SLO = {
+						annex_country = {
+							target = ROOT
+							transfer_troops = yes
+						}
+					}
+					OVERLORD = {
+						set_autonomy = {
+							target = SLO
+							autonomy_state = autonomy_satellite
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_autonomy_state = autonomy_tgwr_crownland
+					}
+					SLO = {
+						annex_country = {
+							target = ROOT
+							transfer_troops = yes
+						}
+					}
+					OVERLORD = {
+						set_autonomy = {
+							target = SLO
+							autonomy_state = autonomy_tgwr_crownland
+						}
+					}
+				}
+				else = {
+					SLO = {
+						annex_country = {
+							target = ROOT
+							transfer_troops = yes
+						}
+					}
+					OVERLORD = {
+						puppet = SLO
+					}
+				}
+			}
+			SLO = {
+				change_tag_from = ROOT
+			}
+		}
+	}
+}

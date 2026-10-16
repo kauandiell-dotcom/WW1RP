@@ -1,0 +1,972 @@
+ideas = {
+	naval_manufacturer = {
+		designer = yes
+		constanta_shipyard = {
+			allowed = {
+				original_tag = ROM
+			}
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+			traits = {
+				naval_manufacturer
+			}
+			picture = generic_naval_manufacturer_2
+		}
+	}
+	aircraft_manufacturer = {
+		designer = yes
+		set = {
+			allowed = {
+				original_tag = ROM
+			}
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			traits = {
+				light_aircraft_manufacturer
+			}
+			picture = generic_air_manufacturer_2
+		}
+		cerchez_and_co = {
+			allowed = {
+				original_tag = ROM
+			}
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			traits = {
+				light_aircraft_manufacturer
+			}
+			picture = generic_air_manufacturer_3
+		}
+	}
+	materiel_manufacturer = {
+		designer = yes
+		udr_factories = {
+			allowed = {
+				original_tag = ROM
+			}
+			research_bonus = {
+				artillery = 0.1
+			}
+			traits = {
+				artillery_manufacturer
+			}
+			picture = generic_artillery_manufacturer_2
+		}
+		bucharest_army_arsenal = {
+			allowed = {
+				original_tag = ROM
+			}
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+			traits = {
+				infantry_equipment_manufacturer
+			}
+			picture = generic_infantry_equipment_manufacturer_3
+		}
+		caile_ferate_romane = {
+			allowed = {
+				original_tag = ROM
+			}
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+			traits = {
+				infantry_equipment_manufacturer
+			}
+			picture = generic_infantry_equipment_manufacturer_1
+		}
+		targoviste_army_arsenal = {
+			allowed = {
+				original_tag = ROM
+			}
+			research_bonus = {
+				artillery = 0.1
+			}
+			traits = {
+				artillery_manufacturer
+			}
+			picture = generic_artillery_manufacturer_2
+		}
+	}
+	industrial_concern = {
+		designer = yes
+		steaua_romana_refineries = {
+			allowed = {
+				original_tag = ROM
+			}
+			research_bonus = {
+				industry = 0.1
+				synth_resources = 0.1
+			}
+			traits = {
+				refinery_concern
+			}
+			picture = generic_tank_manufacturer_2
+		}
+		nicolae_malaxa_factories = {
+			allowed = {
+				original_tag = ROM
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+			traits = {
+				industrial_concern
+			}
+			picture = generic_tank_manufacturer_3
+		}
+	}
+	country = {
+		ROM_exploited_romanian_oil_fields = {
+			allowed = {
+				original_tag = ROM
+			}
+			picture = generic_fuel_reserves
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.10
+			}
+		}
+		ROM_carol_i = {
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = { 
+				has_country_leader = {
+					character = ROM_carol_i
+					ruling_only = no
+				}
+			}
+			available = {
+				NOT = {
+					has_government = communism
+					has_country_leader = {
+						character = ROM_carol_i
+					}	
+				}
+				has_country_leader = {
+					character = ROM_carol_i
+					ruling_only = no
+				}				
+			}
+			traits = {
+				devoted_monarch
+			}	
+		}
+		ROM_ferdinand_i = {
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = { 
+				has_country_leader = {
+					character = ROM_ferdinand_i
+					ruling_only = no
+				}
+			}
+			available = {
+				NOT = {
+					has_government = communism
+					has_country_leader = {
+						character = ROM_ferdinand_i
+					}	
+				}
+				has_country_leader = {
+					character = ROM_ferdinand_i
+					ruling_only = no
+				}				
+			}
+			traits = {
+				the_loyal
+			}
+		}
+		ROM_prince_nicolae = {
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				has_country_leader = {
+					character = ROM_prince_nicolae
+					ruling_only = no
+				}	
+			}
+			available = {
+				NOT = {
+					has_government = communism
+					has_country_leader = {
+						character = ROM_prince_nicolae
+					}	
+				}
+				has_country_leader = {
+					character = ROM_prince_nicolae
+					ruling_only = no
+				}				
+			}
+			traits = {
+				no_interest_in_politics
+			}
+		}
+		ROM_revenge_against_soviet = {
+			picture = anti_soviet_pact
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			modifier = {
+				fascism_drift = 0.1
+			}
+		}
+		ROM_revenge_against_germany = {
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+		ROM_king_carol_ii_hedonist = {
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			available = {
+				has_country_leader = {
+					character = ROM_carol_ii
+					ruling_only = no
+				}
+				NOT = {
+					has_government = communism
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.06
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+		ROM_figurehead_king_michael = {
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			available = {
+				OR = {
+					has_country_leader = {
+						character = ROM_mihai_i
+						ruling_only = no
+					}
+					has_country_leader = {
+						character = ROM_prince_nicolae
+						ruling_only = no
+					}
+				}
+			}
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		ROM_unionist_zeal = {
+			picture = SPR_torchbearers_of_tomorrow
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			picture = ROM_preserve_greater_romania
+			allowed_civil_war = { always = yes }
+			available = {
+				NOT = {
+					has_country_flag = great_war_loser
+					has_cosmetic_tag = WLC
+				}		
+			}
+			modifier = {
+				war_support_factor = 0.05
+				surrender_limit = 0.05
+			}
+		}
+		ROM_unionist_zeal_2 = {
+			name = ROM_unionist_zeal
+			picture = ROM_preserve_greater_romania
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = { always = yes }
+			available = {
+				NOT = {
+					has_country_flag = great_war_loser
+					has_cosmetic_tag = WLC
+				}		
+			}
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				surrender_limit = 0.10
+			}
+		}
+		ROM_industrialization_of_prahova_valley = {
+			picture = chi_hyper_inflation2
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				consumer_goods_factor = -0.06
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ROM_industrialization_of_prahova_valley_2 = {
+			name = ROM_industrialization_of_prahova_valley
+			picture = chi_hyper_inflation2
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		ROM_agricultural_economy = {
+			picture = ARG_social_welfare_fund_ns
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_arms_factory_factor = -0.15
+				monthly_population = 0.25
+			}
+		}
+		ROM_agricultural_economy_2 = {
+			name = ROM_agricultural_economy
+			picture = ARG_social_welfare_fund_ns
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.075
+				production_factory_max_efficiency_factor = 0.075
+				monthly_population = 0.25
+			}
+		}
+		ROM_agricultural_economy_4 = {
+			name = ROM_agricultural_economy
+			picture = ARG_social_welfare_fund_ns
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.00
+				production_factory_max_efficiency_factor = 0.00
+				monthly_population = 0.2
+			}
+		}
+		ROM_agricultural_economy_3 = {
+			name = ROM_agricultural_economy
+			picture = ARG_social_welfare_fund_ns
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.13
+				production_factory_max_efficiency_factor = 0.13
+				production_speed_arms_factory_factor = 0.10
+				monthly_population = 0.2
+			}
+		}
+		ROM_memories_of_1907 = {
+			picture = POL_the_peasants_strike
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = { always = yes }
+	
+			modifier = {
+				recruitable_population = -0.1
+				consumer_goods_factor = 0.2
+			}
+		}
+		ROM_memories_of_1907_2 = {
+			name = ROM_memories_of_1907
+			picture = POL_the_peasants_strike
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = { always = yes }
+	
+			modifier = {
+				recruitable_population = -0.05
+				consumer_goods_factor = 0.10
+			}
+		}
+		ROM_inexperienced_army_1 = {
+			name = ROM_inexperienced_army
+			picture = chi_incompetent_officers
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				army_org_factor = -0.08
+					army_attack_speed_factor = -0.08
+					army_attack_factor = -0.08
+					army_defence_factor = -0.08
+					land_reinforce_rate = -0.05
+					army_morale_factor = -0.1
+
+					custom_modifier_tooltip = ROM_inexperienced_army_tt		
+			}
+		}
+		ROM_inexperienced_army_2 = {
+			name = ROM_inexperienced_army
+			picture = chi_incompetent_officers
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				army_org_factor = -0.03
+				army_attack_speed_factor = -0.05
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				land_reinforce_rate = -0.03
+				army_morale_factor = -0.05		
+			}
+		}
+		ROM_inexperienced_army_4 = {
+			name = ROM_inexperienced_army
+			picture = chi_incompetent_officers
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				army_org_factor = 0.03
+				army_attack_speed_factor = -0.05
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				land_reinforce_rate = -0.03
+				army_morale_factor = -0.05		
+			}
+		}
+		ROM_inexperienced_army_3 = {
+			name = ROM_inexperienced_army
+			picture = chi_incompetent_officers
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				army_org_factor = -0.035
+				army_attack_speed_factor = -0.02
+				army_attack_factor = -0.025
+				army_defence_factor = -0.025
+				land_reinforce_rate = -0.02
+				army_morale_factor = -0.025
+			}	
+		}
+		ROM_strong_and_secular_army = {
+			name = ROM_strong_and_secular_army
+			picture = chi_incompetent_officers
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				army_org_factor = 0.05
+				army_attack_speed_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				land_reinforce_rate = 0.03
+				army_morale_factor = 0.05
+			}	
+
+		}
+		ROM_idea_german_control = {
+			picture = generic_morale_bonus
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = { always = yes }
+			available = {
+				original_tag = ROM
+				country_exists = GER
+				NOT = {
+					has_war_with = GER
+					has_subject = GER
+					GER = {
+						has_country_flag = great_war_loser
+					}
+				}
+				owns_state = 46
+			}
+			modifier = {
+				consumer_goods_factor = 0.2
+			}
+			on_remove = {
+				GER = {
+					remove_resource_rights = 46
+				}
+			}
+		}
+		ROM_preserve_greater_romania = {
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				tag = ROM
+			}
+			modifier = {
+				guarantee_tension = -1.0
+				guarantee_cost = -0.5
+			}
+		}
+		ROM_protector_of_the_monarchy = {
+			picture = generic_monarchist_uprising
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				neutrality_drift = 0.10
+			}
+		}
+		ROM_promoting_science_in_universities = {
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = FRA_market_dynamism
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				research_speed_factor = 0.07
+			}
+		}
+		ROM_ferdinands_economic_plan = {
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_economic_increase
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				consumer_goods_factor = -0.09
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		ROM_speed_up_manufacturing = {
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = ARG_construction_guilds
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+			}
+		}
+		ROM_banca_nationala_romaniei= {
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			name = "Banca Nationala Romaniei"
+			picture = ARG_construction_guilds
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+			}
+		}
+		ROM_start_gathering_all_the_balkan_people = {
+			picture = ROM_preserve_greater_romania 
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				non_core_manpower = 0.10
+				conscription_factor = 0.10
+			}
+		}
+		ROM_romanian_storm_troopers = {
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = ETH_the_heroes_of_adwa_upgraded
+			modifier = {
+				modifier_army_sub_unit_cavalry_attack_factor = 0.10
+				modifier_army_sub_unit_cavalry_defence_factor = 0.10
+				modifier_army_sub_unit_cavalry_speed_factor = 0.10
+			}
+		}
+		ROM_romanian_cavalry = {
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = ETH_the_heroes_of_adwa_upgraded
+			modifier = {
+				modifier_army_sub_unit_cavalry_attack_factor = 0.10
+				modifier_army_sub_unit_cavalry_defence_factor = 0.10
+				modifier_army_sub_unit_cavalry_speed_factor = 0.10
+			}
+		}
+		ROM_protect_the_black_sea = {
+			picture = hol_prepare_the_inundation_lines
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				naval_coordination = 0.10
+				naval_defense_factor = 0.10
+				naval_invasion_capacity = 10
+			}
+		}
+		ROM_new_roman_warriors = {
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_women_in_the_army
+			modifier = {
+				experience_gain_army_factor = 0.10
+				unit_infantry_design_cost_factor = -0.50
+				grant_medal_cost_factor = -0.50
+				command_power_gain_mult = 0.20
+				land_doctrine_cost_factor = -0.15
+			}
+		}
+		ROM_always_ready_army= {
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = SWE_neither_death_nor_dishonor
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				land_reinforce_rate = 0.03
+				army_attack_speed_factor = 0.05
+			}
+		}
+		ROM_strong_and_loyal_killing_machines = {
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = SWE_varnplikt
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				land_reinforce_rate = 0.03
+				army_attack_speed_factor = 0.05
+			}
+		}
+		ROM_university_experiments = {
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.07
+			}
+		}
+		ROM_leader_of_balkans = {
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = ROM_balkans_dominance
+			modifier = {
+				political_power_gain = 0.05
+				justify_war_goal_time = -0.25
+				war_support_factor = 0.10
+			}
+		}
+		ROM_enormous_army = {
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = SWE_varnplikt
+			modifier = {
+				experience_gain_army_factor = 0.10
+				command_power_gain_mult = 0.20
+			}
+		}
+		ROM_renewed_romanian_army = {
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = SWE_hedgehog_defense
+			modifier = {
+				army_speed_factor = 0.05
+				army_morale_factor = 0.05
+				army_org_factor = 0.05
+				army_leader_cost_factor = -0.50
+			}
+		}
+		ROM_democratics_economic_plan = {
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = generic_economic_increase
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+	    }
+		ROM_idea_romania_state_library = {
+			picture = generic_research_bonus
+			allowed = {original_tag = ROM}
+			
+			removal_cost = -1
+			modifier = {				
+				research_speed_factor = 0.06
+			}
+		}
+		ROM_improve_worker_rights = {
+			allowed = {original_tag = ROM}
+			picture = ARG_public_works_investment
+
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+		ROM_improve_worker_rights = {
+			allowed = {original_tag = ROM}
+			picture = ARG_public_works_investment
+
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+		ROM_invite_foreign_investors_to_romania = {
+			allowed = {original_tag = ROM}
+			picture = ARG_economic_reactivation
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.09
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ROM_idea_democratic_influence = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = GFX_goal_generic_forceful_treaty
+			
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
+		ROM_idea_communist_influence = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = gre_agricultural_communes
+			
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+		ROM_old_generals = {
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = SWE_varnplikt
+			modifier = {
+				experience_gain_army_factor = 0.10
+				command_power_gain_mult = 0.10
+				land_doctrine_cost_factor = -0.10
+			}
+		}
+		ROM_The_Power_of_the_guerrillas = {
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor 	= 0.05
+				land_reinforce_rate = 0.03
+			}
+		}
+		ROM_Spread_Socialism_to_the_world = {
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = FIN_socialist_welfare
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor 	= 0.05
+				land_reinforce_rate = 0.05
+			}
+		}
+		ROM_Expropriation_of_Private_Properties= {
+			allowed = {original_tag = ROM}
+			
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.06
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+		ROM_Hardened_Private_Property_Rights= {
+			allowed = {original_tag = ROM}
+			picture = SOV_stakhanovite_movement
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.09
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.08
+			}
+		}
+		ROM_Lets_Strengthen_the_Army= {
+			allowed = {original_tag = ROM}
+			
+			removal_cost = -1
+			modifier = {
+                recruitable_population_factor = 0.05
+				army_attack_factor = 0.05
+				army_org_factor = 0.05
+				land_reinforce_rate = 0.05
+			}
+		}
+		ROM_Drepturile_Muncitorilor = {
+			allowed = {original_tag = ROM}
+			picture = ARG_public_works_investment
+
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = 0.025
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+	}
+}

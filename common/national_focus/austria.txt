@@ -1,0 +1,3078 @@
+focus_tree = {
+	id = auh_focus
+	default = no
+	country = { 
+		factor = 0
+		modifier = {
+			add = 100
+			tag = AUH 
+		} 
+	}	
+	continuous_focus_position = {
+		 x = 50
+		 y = 1866 
+	}
+	initial_show_position = { x = 30 y = 0 }
+	
+	###########
+	#POLITICAL#
+	###########
+
+
+
+
+	############################################################################
+	##
+	## HISTORICAL
+	##
+	#####################################
+
+focus = {
+	id = AUH_recovering_the_economy
+	icon = GFX_focus_generic_modernize_industry
+	cost = 3
+	x = 3
+	y = 0
+	completion_reward = { 
+		add_ideas = AUH_recovering_the_economy
+	}
+}
+focus = {
+	id = AUH_establish_new_croatian_dockyard_facilities
+	icon = GFX_goal_generic_construction2
+	cost = 5
+	x = -4
+	y = 1
+	relative_position_id = AUH_recovering_the_economy
+	prerequisite = {
+		focus = AUH_recovering_the_economy
+	}
+	completion_reward = { 
+		random_owned_controlled_state = {
+			limit = {
+				is_coastal = yes
+				is_core_of = ROOT
+				free_building_slots = {
+					building = dockyard
+					size > 1
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_coastal = yes
+				is_core_of = ROOT
+				free_building_slots = {
+					building = dockyard
+					size > 1
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_coastal = yes
+				is_core_of = ROOT
+				free_building_slots = {
+					building = dockyard
+					size > 1
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_expansion_in_the_machine_building_story
+	icon = GFX_focus_generic_full_employment
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = AUH_recovering_the_economy
+	prerequisite = {
+		focus = AUH_recovering_the_economy
+	}
+	completion_reward = { 
+		add_tech_bonus = {
+			name = AUH_expansion_in_the_machine_building_story
+			category = industry
+			uses = 2
+			bonus = 1.0
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_output_in_austrian_machine_building
+	icon = GFX_focus_SOV_organize_wreckers
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_recovering_the_economy
+	prerequisite = {
+		focus = AUH_recovering_the_economy
+	}
+	completion_reward = { 
+		swap_ideas = {
+			remove_idea = AUH_recovering_the_economy
+			add_idea = AUH_recovering_the_economy_2
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				free_building_slots = {
+					building = industrial_complex
+					size > 2
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_open_new_grain_factories
+	icon = GFX_focus_generic_farmland
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = AUH_recovering_the_economy
+	prerequisite = {
+		focus = AUH_recovering_the_economy
+	}
+	completion_reward = { 
+		add_ideas = AUH_open_new_grain_factories
+	}
+}
+focus = {
+	id = AUH_improve_the_cisleithania_infrastructure
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 5
+	x = 4
+	y = 1
+	relative_position_id = AUH_recovering_the_economy
+	prerequisite = {
+		focus = AUH_recovering_the_economy
+	}
+	completion_reward = { 
+		9 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		75 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		74 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		88 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		91 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		89 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		102 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		736 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_build_new_dockyards_to_istria
+	icon = GFX_goal_generic_production2
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_establish_new_croatian_dockyard_facilities
+	prerequisite = {
+		focus = AUH_establish_new_croatian_dockyard_facilities
+	}
+	completion_reward = { 
+		add_tech_bonus = {
+			name = AUH_build_new_dockyards_to_istria
+			category = naval_equipment
+			uses = 2
+			bonus = 0.75
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_coastal = yes
+				is_core_of = ROOT
+				free_building_slots = {
+					building = dockyard
+					size > 1
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_coastal = yes
+				is_core_of = ROOT
+				free_building_slots = {
+					building = dockyard
+					size > 1
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_coastal = yes
+				is_core_of = ROOT
+				free_building_slots = {
+					building = dockyard
+					size > 1
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_the_composition_of_austria_hungarys_machinery_trade
+	icon = GFX_focus_DEN_heavy_regulations
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_expansion_in_the_machine_building_story
+	prerequisite = {
+		focus = AUH_expansion_in_the_machine_building_story
+	}
+	completion_reward = { 
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_additions_to_austrian_railway_network
+	icon = GFX_focus_spa_save_the_alcazar
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_output_in_austrian_machine_building
+	prerequisite = {
+		focus = AUH_output_in_austrian_machine_building
+	}
+	completion_reward = { 
+		swap_ideas = {
+			remove_idea = AUH_recovering_the_economy_2
+			add_idea = AUH_recovering_the_economy_3
+		}
+	}
+}
+focus = {
+	id = AUH_open_vienna_universitie
+	icon = GFX_focus_research
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_open_new_grain_factories
+	prerequisite = {
+		focus = AUH_open_new_grain_factories
+	}
+	completion_reward = { 
+		add_research_slot = 1
+	}
+}
+focus = {
+	id = AUH_build_new_road_for_transleithania
+	icon = GFX_focus_generic_railroad
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_improve_the_cisleithania_infrastructure
+	prerequisite = {
+		focus = AUH_improve_the_cisleithania_infrastructure
+	}
+	completion_reward = { 
+		155 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		45 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		109 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		764 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		154 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		84 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		664 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		70 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_empires_war_factories
+	icon = GFX_goal_generic_construct_mil_factory
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_additions_to_austrian_railway_network
+	prerequisite = {
+		focus = AUH_additions_to_austrian_railway_network
+	}
+	prerequisite = {
+		focus = AUH_build_new_road_for_transleithania
+		focus = AUH_open_vienna_universitie
+		focus = AUH_the_composition_of_austria_hungarys_machinery_trade
+		focus = AUH_build_new_dockyards_to_istria
+	}
+	completion_reward = {
+		add_ideas = AUH_imperial_war_effort
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_empires_war_economy
+	icon = GFX_focus_generic_workers
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = AUH_empires_war_factories
+	prerequisite = {
+		focus = AUH_empires_war_factories
+	}
+	completion_reward = { 
+		add_ideas = war_economy
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_labour_force_in_mechanical_engineering
+	icon = GFX_focus_ITA_workers_unions
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = AUH_empires_war_factories
+	prerequisite = {
+		focus = AUH_empires_war_factories
+	}
+	completion_reward = { 
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				free_building_slots = {
+					building = arms_factory
+					size > 2
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_boost_the_war_production
+	icon = GFX_goal_generic_military_sphere
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = AUH_empires_war_factories
+	prerequisite = {
+		focus = AUH_empires_war_factories
+	}
+	completion_reward = { 
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				free_building_slots = {
+					building = arms_factory
+					size > 2
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_stick_to_traditions
+	icon = GFX_focus_AUH_Franz_Joseph
+	cost = 5
+	x = 10
+	y = 1
+	completion_reward = { 
+		add_political_power = 100
+		add_stability = 0.05
+	}
+	mutually_exclusive = { 
+		focus = AUH_reformist_movement
+	}
+	prerequisite = {
+		focus = AUH_wahle_deinen_kaiser
+	}
+}
+focus = {
+	id = AUH_focus_on_minorities
+	icon = GFX_focus_AUH_focus_on_minorities
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_stick_to_traditions
+	prerequisite = {
+		focus = AUH_stick_to_traditions
+	}
+    
+	completion_reward = { 
+		add_political_power = 100
+	}
+}
+focus = {
+	id = AUH_croatia_slovenia_policy
+	icon = GFX_focus_CRO_AUH_coat_of_arms
+	cost = 2
+	x = -2
+	y = 1
+	relative_position_id = AUH_focus_on_minorities
+	prerequisite = {
+		focus = AUH_focus_on_minorities
+	}
+	completion_reward = { 
+		every_owned_state = {
+			limit = {
+				or = {
+					is_core_of = SLV
+					is_core_of = CRO
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_cisleithania_policy
+	icon = GFX_focus_AUH_austria_focus
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_focus_on_minorities
+	prerequisite = {
+		focus = AUH_focus_on_minorities
+	}
+	completion_reward = { 
+		add_political_power = 50
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				free_building_slots = {
+					building = industrial_complex
+					size > 2
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_hungarian_policy
+	icon = GFX_focus_AUH_support_hungary
+	cost = 2
+	x = 2
+	y = 1
+	relative_position_id = AUH_focus_on_minorities
+	prerequisite = {
+		focus = AUH_focus_on_minorities
+	}
+	completion_reward = { 
+		swap_ideas = {
+			remove_idea = AUH_hungarian_opposition
+			add_idea = AUH_hungarian_opposition_2
+		}
+	}
+}
+focus = {
+	id = AUH_fight_against_serbian_terrorism
+	icon = GFX_focus_SOV_penal_battalions
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = AUH_croatia_slovenia_policy
+	prerequisite = {
+		focus = AUH_croatia_slovenia_policy
+	}
+	completion_reward = { 
+		swap_ideas = {
+			remove_idea = AUH_serbian_terrorism
+			add_idea = AUH_serbian_terrorism_2
+		}
+	}
+}
+focus = {
+	id = AUH_stabilize_the_slavic_states_of_empire
+	icon = GFX_focus_YUG_banovina_of_croatia
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_fight_against_serbian_terrorism
+	prerequisite = {
+		focus = AUH_fight_against_serbian_terrorism
+	}
+	completion_reward = { 
+		remove_ideas = AUH_croatian_opposition
+	}
+}
+focus = {
+	id = AUH_end_the_terror
+	icon = GFX_focus_destroy_meclis
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_stabilize_the_slavic_states_of_empire
+	prerequisite = {
+		focus = AUH_stabilize_the_slavic_states_of_empire
+	}
+	completion_reward = { 
+		remove_ideas = AUH_serbian_terrorism_2
+	}
+}
+focus = {
+	id = AUH_appoint_the_hungarian_prime
+	icon = GFX_focus_AUH_appoint_the_hungarian_prime
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = AUH_hungarian_policy
+	prerequisite = {
+		focus = AUH_hungarian_policy
+	}
+	completion_reward = { 
+		swap_ideas = {
+			remove_idea = AUH_hungarian_opposition_2
+			add_idea = AUH_hungarian_opposition_3
+		}
+	}
+}
+focus = {
+	id = AUH_build_new_factories_for_transleithania
+	icon = GFX_focus_AUH_build_new_factories_for_transleithania
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_appoint_the_hungarian_prime
+	prerequisite = {
+		focus = AUH_appoint_the_hungarian_prime
+	}
+	completion_reward = { 
+		#70 = {
+		#	add_extra_state_shared_building_slots = 1
+		#	add_building_construction = {
+		#		type = industrial_complex
+		#		level = 1
+		#		instant_build = yes
+		#	}
+		#}
+		#43 = {
+		#	add_extra_state_shared_building_slots = 2
+		#	add_building_construction = {
+		#		type = industrial_complex
+		#		level = 2
+		#		instant_build = yes
+		#	}
+		#}
+		43 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		155 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		109 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		109 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_strong_and_stable_dual_monarchy
+	icon = GFX_focus_generic_monarchy_1
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_build_new_factories_for_transleithania
+	prerequisite = {
+		focus = AUH_build_new_factories_for_transleithania
+	}
+	completion_reward = { 
+		remove_ideas = AUH_hungarian_opposition_3
+		swap_ideas = {
+			remove_idea = AUH_ww1_House_Habsburg_Lorraine
+			add_idea = AUH_ww1_House_Habsburg_Lorraine2
+		}
+	}
+}
+focus = {
+	id = AUH_new_austrian_railways
+	icon = GFX_focus_generic_supply_line
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_cisleithania_policy
+	prerequisite = {
+		focus = AUH_cisleithania_policy
+	}
+	prerequisite = {
+		focus = AUH_hungarian_policy
+	}
+	prerequisite = {
+		focus = AUH_croatia_slovenia_policy
+	}
+	completion_reward = { 
+		4 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 10
+				instant_build = yes
+			}
+		}
+		#4 = {
+		#	add_extra_state_shared_building_slots = 2
+		#	add_building_construction = {
+		#		type = industrial_complex
+		#		level = 2
+		#		instant_build = yes
+		#	}
+		#}
+		152 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 10
+				instant_build = yes
+			}
+		}
+		69 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_dissolve_cezch_parliament
+	icon = GFX_focus_CZE_AUH_coat_of_arms
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = AUH_new_austrian_railways
+	prerequisite = {
+		focus = AUH_new_austrian_railways
+	}
+	completion_reward = { 
+		swap_ideas = {
+			remove_idea = AUH_czech_parliament
+			add_idea = AUH_czech_parliament_2
+		}
+	}
+}
+focus = {
+	id = AUH_end_romanian_nationalism
+	icon = GFX_focus_AUH_erase_romanian_nationalism
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = AUH_new_austrian_railways
+	prerequisite = {
+		focus = AUH_new_austrian_railways
+	}
+	completion_reward = { 
+		add_political_power = -50
+		remove_ideas = AUH_romanian_nationalism
+	}
+}
+focus = {
+	id = AUH_execute_the_tomas_masaryk
+	icon = GFX_focus_AUH_execute_the_tomas_masaryk
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_dissolve_cezch_parliament
+	prerequisite = {
+		focus = AUH_dissolve_cezch_parliament
+	}
+	completion_reward = { 
+		add_political_power = -50
+		add_stability = -0.05
+		remove_ideas = AUH_czech_parliament_2
+	}
+}
+focus = {
+	id = AUH_end_galician_national_movement
+	icon = GFX_focus_GAL_coat_of_arms
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_end_romanian_nationalism
+	prerequisite = {
+		focus = AUH_end_romanian_nationalism
+	}
+	completion_reward = { 
+		remove_ideas = AUH_galician_national_movement
+		RUS = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = medium_decrease
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_royal_visit_to_vienna
+	icon = GFX_focus_AUH_royal_visit_to_vienna
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = AUH_execute_the_tomas_masaryk
+	prerequisite = {
+		focus = AUH_execute_the_tomas_masaryk
+	}
+	completion_reward = { 
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.10
+		}
+		country_event = ww1_auh.200
+	}
+}
+focus = {
+	id = AUH_iron_fist_of_the_central_europe
+	icon = GFX_focus_AUH_iron_fist_of_the_central_europe
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = AUH_execute_the_tomas_masaryk
+	prerequisite = {
+		focus = AUH_execute_the_tomas_masaryk
+	}
+	prerequisite = {
+		focus = AUH_end_galician_national_movement
+	}
+	available = {
+		has_completed_focus = AUH_royal_visit_to_vienna
+		has_completed_focus = AUH_royal_visit_to_budapest
+	}
+	completion_reward = { 
+		add_ideas = AUH_gameinseme_armee
+		if = {
+			limit = {
+				has_idea = AUH_multi_ethnic_army
+			}
+			remove_ideas = AUH_multi_ethnic_army
+		}
+		else_if = {
+			limit = {
+				has_idea = AUH_multi_ethnic_army2
+			}
+			remove_ideas = AUH_multi_ethnic_army2
+		}
+		
+		else_if = {
+			limit = {
+				has_idea = AUH_multi_ethnic_army3
+			}
+			remove_ideas = AUH_multi_ethnic_army3
+		}
+		
+		else_if = {
+			limit = {
+				has_idea = AUH_multi_ethnic_army4
+			}
+			remove_ideas = AUH_multi_ethnic_army4
+		}
+		
+		else_if = {
+			limit = {
+				has_idea = AUH_multi_ethnic_army5
+			}
+			remove_ideas = AUH_multi_ethnic_army5
+		}
+	}
+}
+focus = {
+	id = AUH_royal_visit_to_budapest
+	icon = GFX_focus_hun_elect_a_king
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = AUH_end_galician_national_movement
+	prerequisite = {
+		focus = AUH_end_galician_national_movement
+	}
+	available = {
+		has_completed_focus = AUH_royal_visit_to_vienna
+	}
+	completion_reward = { 
+		country_event = ww1_auh.201
+	}
+}
+focus = {
+	id = AUH_expand_the_empire
+	icon = GFX_focus_NOR_our_royal_claims
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_iron_fist_of_the_central_europe
+	prerequisite = {
+		focus = AUH_iron_fist_of_the_central_europe
+	}
+	completion_reward = { 
+		every_state = {
+			limit = {
+				OR = {
+					is_owned_and_controlled_by = ROM
+					is_owned_and_controlled_by = SER
+					state = 105
+					state = 761
+					state = 760
+					state = 160
+					state = 159
+					state = 158
+					state = 833
+					state = 161
+					state = 90
+				}
+			}
+			add_claim_by = AUH
+		}
+	}
+}
+focus = {
+	id = AUH_strong_ties_with_slovenians
+	icon = GFX_focus_AUH_integrate_slovakia
+	cost = 5
+	x = 0
+	y = 1
+	available = {
+		has_completed_focus = AUH_strong_and_stable_dual_monarchy
+	}
+	relative_position_id = AUH_new_austrian_railways
+	prerequisite = {
+		focus = AUH_new_austrian_railways
+	}
+	completion_reward = { 
+		add_political_power = 100
+		swap_ideas = {
+			remove_idea = AUH_ww1_House_Habsburg_Lorraine2
+			add_idea = AUH_ww1_House_Habsburg_Lorraine3
+		}
+	}
+}
+focus = {
+	id = AUH_german_military_advisors
+	icon = GFX_focus_generic_full_social_mobilization
+	cost = 5
+	x = -3
+	y = 1
+	relative_position_id = AUH_expand_the_empire
+	prerequisite = {
+		focus = AUH_expand_the_empire
+	}
+	completion_reward = { 
+		add_ideas = AUH_german_military_advisors
+	}
+}
+focus = {
+	id = AUH_study_german_artillerys
+	icon = GFX_goal_generic_army_artillery2
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = AUH_german_military_advisors
+	prerequisite = {
+		focus = AUH_german_military_advisors
+	}
+	completion_reward = { 
+		add_tech_bonus = {
+			name = AUH_study_german_artillerys
+			uses = 2
+			bonus = 0.75
+			technology = artillery1
+			technology = artillery2
+			technology = artillery3
+			technology = artillery4
+			technology = artillery5
+		}
+	}
+}
+focus = {
+	id = AUH_study_german_howitzer
+	icon = GFX_goal_generic_army_artillery
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = AUH_german_military_advisors
+	prerequisite = {
+		focus = AUH_german_military_advisors
+	}
+	completion_reward = { 
+		add_tech_bonus = {
+			name = AUH_study_german_howitzer
+			uses = 2
+			bonus = 0.75
+			technology = howitzer1
+			technology = howitzer2
+			technology = howitzer3
+			technology = howitzer4
+			technology = howitzer5
+		}
+	}
+}
+focus = {
+	id = AUH_our_own_vehicles
+	icon = GFX_focus_SWE_lynx_armored_car
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = AUH_german_military_advisors
+	prerequisite = {
+		focus = AUH_study_german_artillerys
+	}
+	prerequisite = {
+		focus = AUH_study_german_howitzer
+	}
+	completion_reward = { 
+		set_technology = {
+			basic_armored_car = 1
+		}
+	}
+}
+focus = {
+	id = AUH_send_mission_to_italy
+	icon = GFX_focus_befriend_italy
+	cost = 5
+	x = 2
+	y = 2
+	relative_position_id = AUH_expand_the_empire
+	prerequisite = {
+		focus = AUH_expand_the_empire
+	}
+	completion_reward = { 
+		ITA = {
+			country_event = ww1_auh.202
+		}
+	}
+}
+focus = {
+	id = AUH_start_mobilization
+	icon = GFX_focus_ETH_freedom_at_gunpoint
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_expand_the_empire
+	prerequisite = {
+		focus = AUH_expand_the_empire
+	}
+	completion_reward = { 
+		add_manpower = 100000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 1000
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 500
+		}
+		add_equipment_to_stockpile = {
+			type = howitzer_equipment
+			amount = 750
+		}
+	}
+}
+focus = {
+	id = AUH_follow_franz_conrads_plan
+	icon = GFX_focus_AUH_follow_franz_conrads_plan
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_start_mobilization
+	prerequisite = {
+		focus = AUH_start_mobilization
+	}
+	completion_reward = { 
+		add_ideas = AUH_serbian_plan
+		swap_ideas = {
+			remove_idea = AUH_gameinseme_armee
+			add_idea = AUH_gameinseme_armee_2
+		}
+	}
+}
+focus = {
+	id = AUH_attack_italy
+	icon = GFX_focus_attack_italy
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = AUH_Deport_Polish_right-wing_extremists
+	prerequisite = {
+		focus = AUH_Deport_Polish_right-wing_extremists
+	}
+	completion_reward = { 
+		create_wargoal = {
+			target = ITA
+			type = annex_everything
+		}
+	}
+}
+focus = {
+	id = AUH_attack_montenegro
+	icon = GFX_focus_SER_montenegrin_army
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = AUH_attack_italy
+	prerequisite = {
+		focus = AUH_attack_italy
+	}
+	completion_reward = { 
+		create_wargoal = {
+			target = MNT
+			type = annex_everything
+		}
+	}
+}
+focus = {
+	id = AUH_attack_serbia
+	icon = GFX_focus_AUH_attack_serbia
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = AUH_follow_franz_conrads_plan
+	prerequisite = {
+		focus = AUH_follow_franz_conrads_plan
+	}
+	completion_reward = { 
+		create_wargoal = {
+			target = SER
+			type = puppet_wargoal_focus
+		}
+	}
+
+}
+focus = {
+	id = AUH_attack_the_eagle
+	icon = GFX_focus_AUH_attack_the_eagle
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = AUH_follow_franz_conrads_plan
+	prerequisite = {
+		focus = AUH_follow_franz_conrads_plan
+	}
+	completion_reward = { 
+		create_wargoal = {
+			target = RUS
+			type = annex_everything
+		}
+	}
+
+}
+focus = {
+	id = AUH_improve_the_supply_routes
+	icon = GFX_focus_SOV_south_manchuria_railway
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = AUH_attack_serbia
+	prerequisite = {
+		focus = AUH_attack_the_eagle
+		focus = AUH_attack_serbia
+	}
+	completion_reward = { 
+		build_railway = {
+			level = 5
+			fallback = yes
+			start_state = 4
+			target_state = 43
+			start_province = 11666
+			target_province = 9660
+			path = {
+				11663
+				11679
+				3716
+				6720
+				3700
+				6739
+			}
+		}
+
+		build_railway = {
+			level = 5
+			fallback = yes
+			start_state = 43
+			target_state = 575
+			start_province = 9660
+			target_province = 11580
+			path = {
+				3617
+				619
+				3623
+				6670
+				11625
+			}
+		}
+
+		build_railway = {
+			level = 5
+			fallback = yes
+			start_state = 43
+			target_state = 91
+			start_province = 9660
+			target_province = 11479
+			path = {
+				6483
+				6431
+				466
+				6604
+				3565
+				11520
+				6751
+				3731
+				9690
+			}
+		}
+
+		89 = {
+			add_building_construction = {
+				type = supply_node
+				level = 1
+				instant_build = yes
+				province = 6460
+			}
+		}
+		84 = {
+			add_building_construction = {
+				type = supply_node
+				level = 1
+				instant_build = yes
+				province = 11639
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_new_states_for_the_empire
+	icon = GFX_focus_auh_austrian_empire
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = AUH_improve_the_supply_routes
+	prerequisite = {
+		focus = AUH_improve_the_supply_routes
+	}
+	completion_reward = { 
+		every_state = {
+			limit = {
+				is_claimed_by = AUH
+			}
+			add_core_of = AUH
+		}
+	}
+}
+focus = {
+	id = AUH_reformist_movement
+	icon = GFX_focus_AUH_Franz_Ferdinand_corrupt
+	cost = 5
+	x = 21
+	y = 1
+	completion_reward = { }
+	prerequisite = {
+		focus = AUH_wahle_deinen_kaiser
+	}
+	mutually_exclusive = {
+		focus = AUH_stick_to_traditions
+	}
+	completion_reward = {
+		AUH_franz_ferdinand_i = {
+			set_character_name = "AUH_franz_ferdinand_i"
+			promote_character = semi_constitutional_monarchy
+			swap_country_leader_traits = {
+				remove = true_personality_amidst_the_inanity
+				add = true_personality_amidst_the_inanity_1
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_Revise_dual_monarchy
+	icon = GFX_focus_AUH_common_army
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_reformist_movement
+	prerequisite = {
+		focus = AUH_reformist_movement
+	}
+	completion_reward = {
+		add_political_power = 200
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.15
+		}
+		swap_ideas = {
+			remove_idea = AUH_ww1_House_Habsburg_Lorraine
+			add_idea = AUH_ww1_House_Habsburg_Lorraine4
+		}
+	}
+}
+focus = {
+	id = AUH_Fix_broken_army_discipline_and_hierarchy
+	icon = GFX_focus_army_purge
+	cost = 5
+	x = -3
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_reformist_movement
+	prerequisite = {
+		focus = AUH_reformist_movement
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = AUH_multi_ethnic_army
+			add_idea = AUH_multi_ethnic_army2
+		}
+	}
+}
+focus = {
+	id = AUH_Start_Kaisermanover
+	icon = GFX_focus_tur_asien_korps
+	cost = 5
+	x = -5
+	y = 2
+	completion_reward = { }
+	relative_position_id = AUH_reformist_movement
+	prerequisite = {
+		focus = AUH_reformist_movement
+	}
+	completion_reward = {
+		# 2x %75 doctrine, 1 level up army buff
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.75
+			name = AUH_Start_Kaisermanover
+			uses = 2
+			category = land_doctrine
+		}
+		add_ideas = AUH_kaisermanover
+		every_unit_leader = {
+			add_skill_level = 1
+		}
+	}
+}
+focus = {
+	id = AUH_Make_army_reforms
+	icon = GFX_focus_generic_infiltration
+	cost = 5
+	x = 0
+	y = 3
+	completion_reward = { }
+	relative_position_id = AUH_Start_Kaisermanover
+	prerequisite = {
+		focus = AUH_Start_Kaisermanover
+	}
+	prerequisite = {
+		focus = AUH_Increase_the_importance_of_armored_units
+	}
+	completion_reward = {
+		# core attack 5 core defans 5 army speed 5 max planning 5 modern imperial army
+		add_ideas = AUH_modern_imperial_army
+	}
+}
+focus = {
+	id = AUH_Take_a_tour_of_Zagreb
+	icon = GFX_focus_AUH_invalidate_croatian_constitution
+	cost = 2
+	x = 1
+	y = 2
+	completion_reward = { }
+	relative_position_id = AUH_Fix_broken_army_discipline_and_hierarchy
+	prerequisite = {
+		focus = AUH_Revise_dual_monarchy
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = AUH_croatian_opposition
+			add_idea = AUH_croatian_opposition2
+		}
+	}
+}
+focus = {
+	id = AUH_Expel_corrupt_officers
+	icon = GFX_focus_chain_army
+	cost = 5
+	x = -1
+	y = 2
+	completion_reward = { }
+	relative_position_id = AUH_Fix_broken_army_discipline_and_hierarchy
+	prerequisite = {
+		focus = AUH_Fix_broken_army_discipline_and_hierarchy
+	}
+	completion_reward = {
+		# experience ile ilgili 3 tane buff, stability + war support
+		add_ideas = AUH_expelled_officers
+		army_experience = 150
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}
+focus = {
+	id = AUH_Increase_the_importance_of_armored_units
+	icon = GFX_focus_generic_armored_car
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Expel_corrupt_officers
+	prerequisite = {
+		focus = AUH_Expel_corrupt_officers
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = AUH_Increase_the_importance_of_armored_units
+			category = cat_armored_cars
+			uses = 1
+			bonus = 1.0
+			ahead_reduction = 1.0
+		}
+	}
+}
+focus = {
+	id = AUH_Take_a_tour_of_Transylvania
+	icon = GFX_focus_YUG_autonomous_transylvania
+	cost = 5
+	x = 0
+	y = 2
+	completion_reward = { }
+	relative_position_id = AUH_Revise_dual_monarchy
+	prerequisite = {
+		focus = AUH_strengthen_monarchy
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = AUH_romanian_nationalism
+			add_idea = AUH_romanian_nationalism2
+		}
+	}
+}
+focus = {
+	id = AUH_take_a_tour_of_krakow
+	icon = GFX_focus_AUH_take_a_tour_of_krakow
+	cost = 2
+	x = 2
+	y = 2
+	completion_reward = { }
+	relative_position_id = AUH_Revise_dual_monarchy
+	prerequisite = {
+		focus = AUH_Revise_dual_monarchy
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = AUH_galician_national_movement
+			add_idea = AUH_galician_national_movement2
+		}
+	}
+}
+focus = {
+	id = AUH_Take_a_tour_of_Presporok
+	icon = GFX_focus_AUH_suppress_slovaks
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Take_a_tour_of_Transylvania
+	prerequisite = {
+		focus = AUH_Take_a_tour_of_Transylvania
+	}
+	prerequisite = {
+		focus = AUH_Take_a_tour_of_Zagreb
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = AUH_czech_parliament
+			add_idea = AUH_czech_parliament_3
+		}
+	}
+}
+focus = {
+	id = AUH_Take_a_tour_of_Budapest
+	icon = GFX_focus_AUH_great_hungary
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Take_a_tour_of_Transylvania
+	prerequisite = {
+		focus = AUH_Take_a_tour_of_Transylvania
+	}
+	prerequisite = {
+		focus = AUH_take_a_tour_of_krakow
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = AUH_hungarian_opposition
+			add_idea = AUH_hungarian_opposition_4
+		}
+	}
+}
+focus = {
+	id = AUH_Deal_with_public_issues
+	icon = GFX_generic_plotting
+	cost = 5
+	x = 0
+	y = 2
+	completion_reward = { }
+	relative_position_id = AUH_Take_a_tour_of_Transylvania
+	prerequisite = {
+		focus = AUH_Take_a_tour_of_Transylvania
+	}
+	prerequisite = {
+		focus = AUH_Take_a_tour_of_Presporok
+	}
+	prerequisite = {
+		focus = AUH_Take_a_tour_of_Budapest
+	}
+	completion_reward = {
+		add_political_power = 150
+		add_stability = 0.10
+		add_war_support = 0.05
+	}
+}
+focus = {
+	id = AUH_Organize_the_multi_ethnic_army
+	icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
+	cost = 5
+	x = 1
+	y = 2
+	completion_reward = { }
+	relative_position_id = AUH_Expel_corrupt_officers
+	prerequisite = {
+		focus = AUH_Expel_corrupt_officers
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = AUH_multi_ethnic_army
+			}
+			remove_ideas = AUH_multi_ethnic_army
+		}
+		if = {
+			limit = {
+				has_idea = AUH_multi_ethnic_army2
+			}
+			remove_ideas = AUH_multi_ethnic_army2
+		}
+	}
+}
+focus = {
+	id = AUH_Build_Zara_shipyards
+	icon = GFX_focus_generic_adriatic_sea_focus
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Speed_up_industrialization
+	prerequisite = {
+		focus = AUH_Speed_up_industrialization
+	}
+	completion_reward = {
+		add_3x_dockyard = yes
+	}
+}
+focus = {
+	id = AUH_Open_Salzburg_steel_mills
+	icon = GFX_focus_generic_steel
+	cost = 5
+	x = 1
+	y = 2
+	completion_reward = { }
+	relative_position_id = AUH_Speed_up_industrialization
+	prerequisite = {
+		focus = AUH_Speed_up_industrialization
+	}
+	completion_reward = {
+		152 = {
+			add_resource = {
+				type = steel
+				amount = 36
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_Find_employment_in_Transylvania
+	icon = GFX_focus_spa_the_spanish_miracle
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Open_Salzburg_steel_mills
+	prerequisite = {
+		focus = AUH_Open_Salzburg_steel_mills
+	}
+	completion_reward = {
+		add_3x_civilian = yes
+		add_2x_civilian = yes
+		add_2x_military = yes
+		add_2x_military = yes
+	}
+}
+focus = {
+	id = AUH_Open_Presporok_tungsten_mines
+	icon = GFX_focus_generic_mining_industry
+	cost = 5
+	x = -1
+	y = 2
+	completion_reward = { }
+	relative_position_id = AUH_Open_Salzburg_steel_mills
+	prerequisite = {
+		focus = AUH_Open_Salzburg_steel_mills
+	}
+	completion_reward = {
+		70 = {
+			add_resource = {
+				type = tungsten
+				amount = 29
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_Open_new_factories_in_Hungary
+	icon = GFX_focus_generic_low_cost_housing
+	cost = 5
+	x = 5
+	y = 2
+	completion_reward = { }
+	relative_position_id = AUH_reformist_movement
+	prerequisite = {
+		focus = AUH_reformist_movement
+	}
+	completion_reward = {
+		43 = {
+			add_local_3x_civilian = yes
+			add_local_2x_civilian = yes
+			add_local_2x_military = yes
+			add_local_2x_military = yes
+		}
+	}
+}
+focus = {
+	id = AUH_Accelerating_the_industrialization_movement
+	icon = GFX_focus_generic_industry_3
+	cost = 5
+	x = 0
+	y = 3
+	completion_reward = { }
+	relative_position_id = AUH_Open_new_factories_in_Hungary
+	prerequisite = {
+		focus = AUH_Open_new_factories_in_Hungary
+	}
+	prerequisite = {
+		focus = AUH_Find_employment_in_Transylvania
+	}
+	completion_reward = {
+		add_3x_civilian = yes
+		add_3x_military = yes
+	}
+}
+focus = {
+	id = AUH_Speed_up_industrialization
+	icon = GFX_goal_continuous_non_factory_construct
+	cost = 5
+	x = 3
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_reformist_movement
+	prerequisite = {
+		focus = AUH_reformist_movement
+	}
+	completion_reward = {
+		# construction 15, factory output 0.075, -07 cons 180 gün
+		add_timed_idea = {
+			idea = AUH_industrialization_boost
+			days = 365
+		}
+	}
+}
+focus = {
+	id = AUH_imperial_air_force
+	icon = GFX_goal_generic_air_fighter2
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Make_army_reforms
+	prerequisite = {
+		focus = AUH_Make_army_reforms
+	}
+	completion_reward = {
+		# daily air xp 0.20
+		army_experience = 150
+		add_ideas = AUH_imperial_airforces
+	}
+}
+focus = {
+	id = AUH_German_Air_pilot_advisors
+	icon = GFX_focus_align_germany
+	x = 0
+	y = 2
+	completion_reward = { }
+	relative_position_id = AUH_imperial_air_force
+	prerequisite = {
+		focus = AUH_imperial_air_force
+	}
+	completion_reward = {
+		# 1 yıllık fighter: attack 5, defans 5, agility 5
+		add_ideas = AUH_german_air_pilot_advisors
+		add_tech_bonus = {
+			name = AUH_German_Air_pilot_advisors
+			uses = 1
+			bonus = 1.0
+			ahead_reduction = 1.0
+			category = light_fighter
+		}
+	}
+}
+focus = {
+	id = AUH_Organize_operation_Serbian_terrorists
+	icon = GFX_focus_the_final_countdown
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Deal_with_public_issues
+	prerequisite = {
+		focus = AUH_Deal_with_public_issues
+	}
+	completion_reward = {
+		remove_ideas = AUH_serbian_terrorism
+	}
+}
+focus = {
+	id = AUH_Deport_Polish_right-wing_extremists
+	icon = GFX_focus_AUH_Operation_Erlosung
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Deal_with_public_issues
+	prerequisite = {
+		focus = AUH_Deal_with_public_issues
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = AUH_galician_national_movement2
+			}
+			remove_ideas = AUH_galician_national_movement2
+		}
+	}
+}
+focus = {
+	id = AUH_Purge_dissidents_from_the_Czech_Parliament
+	icon = GFX_focus_Parliment_Confusion
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Deal_with_public_issues
+	prerequisite = {
+		focus = AUH_Deal_with_public_issues
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = AUH_czech_parliament
+			}
+			remove_ideas = AUH_czech_parliament
+		}
+		if = {
+			limit = {
+				has_idea = AUH_czech_parliament_3
+			}
+			remove_ideas = AUH_czech_parliament_3
+		}
+	}
+}
+focus = {
+	id = AUH_Purge_Hungarian_dissidents
+	icon = GFX_focus_kill_hungary
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Organize_operation_Serbian_terrorists
+	prerequisite = {
+		focus = AUH_Purge_dissidents_from_the_Czech_Parliament
+		focus = AUH_Organize_operation_Serbian_terrorists
+		focus = AUH_Deport_Polish_right-wing_extremists
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = AUH_hungarian_opposition
+			}
+			remove_ideas = AUH_hungarian_opposition
+		}
+		if = {
+			limit = {
+				has_idea = AUH_hungarian_opposition_4
+			}
+			remove_ideas = AUH_hungarian_opposition_4
+		}
+	}
+}
+focus = {
+	id = AUH_Purge_Croatian_dissidents
+	icon = GFX_focus_CRO_AUH_coat_of_arms
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Organize_operation_Serbian_terrorists
+	prerequisite = {
+		focus = AUH_Purge_dissidents_from_the_Czech_Parliament
+		focus = AUH_Organize_operation_Serbian_terrorists
+		focus = AUH_Deport_Polish_right-wing_extremists
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = AUH_croatian_opposition
+			}
+			remove_ideas = AUH_croatian_opposition
+		}
+		if = {
+			limit = {
+				has_idea = AUH_croatian_opposition2
+			}
+			remove_ideas = AUH_croatian_opposition2
+		}
+	}
+}
+focus = {
+	id = AUH_expand_ethnic_reform_movement
+	icon = GFX_TUR_ease_ethnic_tensions
+	cost = 5
+	x = 0
+	y = 2
+	completion_reward = { }
+	relative_position_id = AUH_Organize_operation_Serbian_terrorists
+	prerequisite = {
+		focus = AUH_Organize_operation_Serbian_terrorists
+	}
+	completion_reward = {
+		add_ideas = AUH_renewed_ethnic_order_law
+	}
+}
+focus = {
+	id = AUH_Tie_all_of_Bosnia_to_yourself
+	icon = GFX_focus_AUH_pacify_bosnian_terrorism
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Purge_Hungarian_dissidents
+	prerequisite = {
+		focus = AUH_Purge_Hungarian_dissidents
+	}
+	completion_reward = {
+		add_state_core = 104
+		add_state_core = 103
+		add_state_core = 163
+	}
+}
+focus = {
+	id = AUH_End_Romanian_discrimination
+	icon = GFX_focus_GER_romanian_pact
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Purge_Croatian_dissidents
+	prerequisite = {
+		focus = AUH_Purge_Croatian_dissidents
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = AUH_romanian_nationalism
+			}
+			remove_ideas = AUH_romanian_nationalism
+		}
+		if = {
+			limit = {
+				has_idea = AUH_romanian_nationalism2
+			}
+			remove_ideas = AUH_romanian_nationalism2
+		}
+	}
+}
+focus = {
+	id = AUH_unite_the_empire
+	icon = GFX_focus_AUH_country
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_expand_ethnic_reform_movement
+	prerequisite = {
+		focus = AUH_expand_ethnic_reform_movement
+	}
+	prerequisite = {
+		focus = AUH_Tie_all_of_Bosnia_to_yourself
+	}
+	prerequisite = {
+		focus = AUH_End_Romanian_discrimination
+	}
+	completion_reward = {
+		custom_effect_tooltip = "Every state that claimed by our country will be core."
+		every_state = {
+			limit = {
+				is_claimed_by = AUH
+			}
+			add_core_of = AUH
+		}
+	}
+}
+focus = {
+	id = AUH_wahle_deinen_kaiser
+	icon = GFX_focus_AUH_monarchy
+	cost = 1
+	x = 15
+	y = 0
+	completion_reward = { }
+	completion_reward = { }
+	mutually_exclusive = {
+		focus = AUH_Adopts_the_Federal_State_structure
+	}
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = AUH_strengthen_monarchy
+	icon = GFX_focus_AUH_strengthen_monarchy
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Revise_dual_monarchy
+	prerequisite = {
+		focus = AUH_Revise_dual_monarchy
+	}
+	completion_reward = {
+		add_political_power = 200
+		add_stability = 0.07
+	}
+}
+focus = {
+	id = AUH_new_warplanes
+	icon = GFX_focus_plane_factory
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_imperial_air_force
+	prerequisite = {
+		focus = AUH_imperial_air_force
+	}
+	completion_reward = {
+		# 2x aircraft research
+		add_tech_bonus = {
+			name = AUH_new_warplanes
+			category = air_equipment
+			uses = 2
+			bonus = 1.0
+		}
+	}
+}
+focus = {
+	id = AUH_Build_modern_artillery_units
+	icon = GFX_focus_german_equipment
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Fix_broken_army_discipline_and_hierarchy
+	prerequisite = {
+		focus = AUH_Fix_broken_army_discipline_and_hierarchy
+	}
+	completion_reward = {
+		# 2x artillery, artillery attack 5, 
+		add_tech_bonus = {
+			name = AUH_Build_modern_artillery_units
+			category = artillery
+			uses = 2
+			bonus = 1.0
+			ahead_reduction = 1.0
+		}
+		add_ideas = AUH_modern_artilleries
+	}
+}
+focus = {
+	id = AUH_Adopts_the_Federal_State_structure
+	icon = GFX_focus_ARG_defense_and_democracy
+	cost = 1
+	x = 33
+	y = 0
+	completion_reward = { }
+	mutually_exclusive = {
+		focus = AUH_wahle_deinen_kaiser
+	}
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = AUH_Lay_the_foundations_of_a_democracy-first_federation
+	icon = GFX_goal_support_democracy
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Adopts_the_Federal_State_structure
+	prerequisite = {
+		focus = AUH_Adopts_the_Federal_State_structure
+	}
+	mutually_exclusive = {
+		focus = AUH_karl
+	}
+	completion_reward = {
+		add_political_power = 200
+	}
+}
+focus = {
+	id = AUH_karl
+	icon = GFX_
+	cost = 5
+	x = 7
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Adopts_the_Federal_State_structure
+	allow_branch = {
+		always = no
+	}
+	prerequisite = {
+		focus = AUH_Adopts_the_Federal_State_structure
+	}
+	mutually_exclusive = {
+		focus = AUH_Lay_the_foundations_of_a_democracy-first_federation
+	}
+}
+focus = {
+	id = AUH_Modernize_the_army
+	icon = GFX_focus_generic_women_in_military
+	cost = 5
+	x = 2.5
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Lay_the_foundations_of_a_democracy-first_federation
+	prerequisite = {
+		focus = AUH_Lay_the_foundations_of_a_democracy-first_federation
+	}
+	# 2x land doctrine %50
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.50
+			uses = 2
+			category = land_doctrine
+			name = AUH_Modernize_the_army
+		}
+	}
+}
+focus = {
+	id = AUH_Distribute_new_uniforms
+	icon = GFX_focus_generic_military_mission
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Modernize_the_army
+	prerequisite = {
+		focus = AUH_Modernize_the_army
+	}
+	# 1x inf wep research %4 recovery org exp gain army gain hepsi
+	completion_reward = {
+		add_tech_bonus = {
+			name = AUH_Distribute_new_uniforms
+			category = infantry_weapons
+			bonus = 1.0
+			ahead_reduction = 1.0
+			uses = 2
+		}
+		add_ideas = AUH_new_uniforms
+	}
+}
+focus = {
+	id = AUH_Change_the_military_recruitment_law
+	icon = GFX_focus_hol_the_foundations_of_defense
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Distribute_new_uniforms
+	prerequisite = {
+		focus = AUH_Distribute_new_uniforms
+	}
+	# recruitable population ve factor 5%
+	completion_reward = {
+		add_ideas = AUH_new_military_recruitment_law
+	}
+}
+focus = {
+	id = AUH_Strengthen_Viennas_heavy_industry
+	icon = GFX_focus_generic_modernize_industry
+	cost = 5
+	x = -2.5
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Lay_the_foundations_of_a_democracy-first_federation
+	prerequisite = {
+		focus = AUH_Lay_the_foundations_of_a_democracy-first_federation
+	}
+	#  vienna 7 siv 8 mil
+	completion_reward = {
+		4 = {
+			add_local_3x_civilian = yes
+			add_local_3x_civilian = yes
+			add_local_1x_civilian = yes
+			add_local_3x_military = yes
+			add_local_3x_military = yes
+			add_local_2x_military = yes
+		}
+	}
+}
+focus = {
+	id = AUH_Build_the_Graz_steel_mills
+	icon = GFX_focus_generic_steel
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Strengthen_Viennas_heavy_industry
+	prerequisite = {
+		focus = AUH_Strengthen_Viennas_heavy_industry
+	}
+	# graza vienna 39 çeluk  4
+	completion_reward = {
+		4 = {
+			add_resource = {
+				type = steel
+				amount = 39
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_Establish_Salzburg_civilan_industry
+	icon = GFX_goal_generic_construct_civ_factory
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Build_the_Graz_steel_mills
+	prerequisite = {
+		focus = AUH_Build_the_Graz_steel_mills
+	}
+	# 6 sivil
+	completion_reward = {
+		add_3x_civilian = yes
+		add_3x_civilian = yes
+	}
+}
+focus = {
+	id = AUH_rally_federal_government_supporters
+	icon = GFX_focus_BRA_reach_out_to_military_dem
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Create_propaganda_teams
+	prerequisite = {
+		focus = AUH_Create_propaganda_teams
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.10
+		}
+	}
+}
+focus = {
+	id = AUH_Create_propaganda_teams
+	icon = GFX_goal_generic_propaganda
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Organize_congresses_for_the_Federation
+	prerequisite = {
+		focus = AUH_Organize_congresses_for_the_Federation
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.10
+		}
+		add_ideas = democratic_influence
+	}
+}
+focus = {
+	id = AUH_Organize_congresses_for_the_Federation
+	icon = GFX_focus_SWI_dissolve_the_federal_council
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Lay_the_foundations_of_a_democracy-first_federation
+	prerequisite = {
+		focus = AUH_Lay_the_foundations_of_a_democracy-first_federation
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.10
+		}
+	}
+}
+focus = {
+	id = AUH_finance_orion_electronics
+	icon = GFX_focus_generic_hydroelectric_energy
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Build_the_Graz_steel_mills
+	prerequisite = {
+		focus = AUH_Build_the_Graz_steel_mills
+	}
+	# şirket buff
+	completion_reward = {
+		custom_effect_tooltip = available_industrial_concern
+		show_ideas_tooltip = orion_electronics_2
+	}
+}
+focus = {
+	id = AUH_Follow_new_artillery_technology_developments
+	icon = GFX_goal_generic_army_artillery2 
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Distribute_new_uniforms
+	prerequisite = {
+		focus = AUH_Distribute_new_uniforms
+	}
+	# 2x artillery %100 %7 artillery attack defans
+	completion_reward = {
+		add_tech_bonus = {
+			name = AUH_Follow_new_artillery_technology_developments
+			category = artillery
+			uses = 2
+			bonus = 1.0
+			ahead_reduction = 1.0
+		}
+		add_ideas = AUH_new_artillery_developments
+	}
+}
+focus = {
+	id = AUH_Federalists_in_government
+	icon = GFX_focus_AUH_parliament
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_rally_federal_government_supporters
+	prerequisite = {
+		focus = AUH_rally_federal_government_supporters
+		focus = AUH_Establish_Salzburg_civilan_industry
+		focus = AUH_Change_the_military_recruitment_law
+	}
+	completion_reward = {
+		set_politics = {
+			ruling_party = democratic
+		}
+	}
+}
+focus = {
+	id = AUH_adopt_constitutional_monarchy
+	icon = GFX_focus_AUH_adopt_constitutional_monarchy
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Federalists_in_government
+	prerequisite = {
+		focus = AUH_Federalists_in_government
+	}
+	mutually_exclusive = {
+		focus = AUH_Abolish_the_monarchy_completely
+	}
+	completion_reward = {
+		add_ideas = AUH_karl_i
+	}
+}
+focus = {
+	id = AUH_Abolish_the_monarchy_completely
+	icon = GFX_focus_AUH_demoratic_action
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Federalists_in_government
+	prerequisite = {
+		focus = AUH_Federalists_in_government
+	}
+	mutually_exclusive = {
+		focus = AUH_adopt_constitutional_monarchy
+	}
+}
+focus = {
+	id = AUH_Accelerate_the_industrialization_of_Bohemia_and_Galicia
+	icon = GFX_focus_CHL_enlarge_the_textile_industries 
+	cost = 5
+	x = -1
+	y = 2
+	completion_reward = { }
+	relative_position_id = AUH_Establish_Salzburg_civilan_industry
+	available = {
+		has_completed_focus = AUH_found_the_bohemia_region
+		has_completed_focus = AUH_found_the_galicia-lodomeria_region
+	}
+	prerequisite = {
+		focus = AUH_Establish_Salzburg_civilan_industry
+	}
+	# cze gal 5 sivil
+	completion_reward = {
+		HUN = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		GAL = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_Have_the_Galicia_and_Bohemia_armies_drill
+	icon = GFX_goal_generic_position_armies
+	cost = 5
+	x = 1
+	y = 2
+	completion_reward = { }
+	relative_position_id = AUH_Change_the_military_recruitment_law
+	prerequisite = {
+		focus = AUH_Change_the_military_recruitment_law
+	}
+	available = {
+		has_completed_focus = AUH_found_the_galicia-lodomeria_region
+		has_completed_focus = AUH_found_the_bohemia_region
+	}
+	# cze gal 200 army xp land doctrine reduction
+	completion_reward = {
+		CZE = {
+			army_experience = 200
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				name = AUH_Have_the_Galicia_and_Bohemia_armies_drill
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		GAL = {
+			army_experience = 200
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				name = AUH_Have_the_Galicia_and_Bohemia_armies_drill
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+}
+focus = {
+	id = AUH_Establish_military_and_civilian_industries_in_Illyria_and_Slovakia
+	icon = GFX_goal_generic_construct_civilian
+	cost = 5
+	x = -1
+	y = 2
+	completion_reward = { }
+	relative_position_id = AUH_Accelerate_the_industrialization_of_Bohemia_and_Galicia
+	prerequisite = {
+		focus = AUH_Accelerate_the_industrialization_of_Bohemia_and_Galicia
+	}
+	available = {
+		has_completed_focus = AUH_found_the_slovakia_region
+		has_completed_focus = AUH_found_the_illyria_region
+	}
+	# cro slo 5 sivil ve 5 mil
+	completion_reward = {
+		CRO = {
+			add_3x_civilian = yes
+			add_2x_civilian = yes
+			add_3x_military = yes
+			add_2x_military = yes
+		}
+		SLO = {
+			add_3x_civilian = yes
+			add_2x_civilian = yes
+			add_3x_military = yes
+			add_2x_military = yes
+		}
+	}
+}
+focus = {
+	id = AUH_Support_companies_in_Transylvania_and_Hungary
+	icon = GFX_focus_ITA_devaluate_the_lire
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Accelerate_the_industrialization_of_Bohemia_and_Galicia
+	prerequisite = {
+		focus = AUH_Accelerate_the_industrialization_of_Bohemia_and_Galicia
+	}
+	available = {
+		has_completed_focus = AUH_found_the_transylvania_region
+		has_completed_focus = AUH_found_the_hungarian_region
+	}
+	# tra hun output 10 cons kısacak auha ayrı yararlanma gibi
+	completion_reward = {
+		TRA = {
+			add_ideas = AUH_investments_from_overlord
+		}
+		HUN = {
+			add_ideas = AUH_investments_from_overlord
+		}
+		add_ideas = AUH_investments_income
+	}
+}
+focus = {
+	id = AUH_Show_new_tactics_to_the_Transylvanian_and_Hungarian_armies
+	icon = GFX_focus_generic_provoke_border_clashes
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Have_the_Galicia_and_Bohemia_armies_drill
+	prerequisite = {
+		focus = AUH_Have_the_Galicia_and_Bohemia_armies_drill
+	}
+	available = {
+		has_completed_focus = AUH_found_the_transylvania_region
+		has_completed_focus = AUH_found_the_hungarian_region
+	}
+	# tran hun div speed attrition reorg
+	completion_reward = {
+		TRA = {
+			add_ideas = AUH_new_army_tactics
+		}
+		HUN = {
+			add_ideas = AUH_new_army_tactics
+		}
+	}
+}
+focus = {
+	id = AUH_Increase_rifle_production_in_Illyria_and_Slovakia
+	icon = GFX_focus_generic_reorient_production
+	cost = 5
+	x = 1
+	y = 2
+	completion_reward = { }
+	relative_position_id = AUH_Have_the_Galicia_and_Bohemia_armies_drill
+	prerequisite = {
+		focus = AUH_Have_the_Galicia_and_Bohemia_armies_drill
+	}
+	available = {
+		has_completed_focus = AUH_found_the_illyria_region
+		has_completed_focus = AUH_found_the_slovakia_region
+	}
+	# slo croo tüfenk prod -10 ve bütün puppetlera 7k tüfenk
+	completion_reward = {
+		every_other_country = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 7000
+				producer = ROOT
+			}
+		}
+		SLO = {
+			add_ideas = AUH_increased_rifle_productions
+		}
+		CRO = {
+			add_ideas = AUH_increased_rifle_productions
+		}
+	}
+}
+focus = {
+	id = AUH_Balaton_Congress
+	icon = GFX_focus_AUH_collapse
+	cost = 5
+	x = 0
+	y = 2
+	completion_reward = { }
+	relative_position_id = AUH_Federalists_in_government
+	prerequisite = {
+		focus = AUH_Abolish_the_monarchy_completely
+		focus = AUH_adopt_constitutional_monarchy
+	}
+	completion_reward = {
+		set_cosmetic_tag = AUH_EMP
+	}
+}
+focus = {
+	id = AUH_found_the_galicia-lodomeria_region
+	icon = GFX_focus_AUH_found_the_galicia-lodomeria_region
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Balaton_Congress
+	prerequisite = {
+		focus = AUH_Balaton_Congress
+	}
+	completion_reward = {
+		release_autonomy = {
+			target = GAL
+			autonomy_state = autonomy_tgwr_crownland
+			freedom_level = 0.8
+			release_non_owned_controlled = yes
+		}
+		remove_ideas = AUH_galician_national_movement
+	}
+}
+focus = {
+	id = AUH_found_the_transylvania_region
+	icon = GFX_focus_AUH_found_the_transylvania_region
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Balaton_Congress
+	prerequisite = {
+		focus = AUH_Balaton_Congress
+	}
+	completion_reward = {
+		remove_ideas = AUH_romanian_nationalism
+		release_autonomy = {
+			target = TRA
+			autonomy_state = autonomy_tgwr_crownland
+			freedom_level = 0.5
+			release_non_owned_controlled = yes
+		}
+	}
+}
+focus = {
+	id = AUH_found_the_bohemia_region
+	icon = GFX_focus_AUH_found_the_bohemia_region
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Balaton_Congress
+	prerequisite = {
+		focus = AUH_Balaton_Congress
+	}
+	completion_reward = {
+		release_autonomy = {
+			target = CZE
+			autonomy_state = autonomy_tgwr_crownland
+			freedom_level = 0.6
+			release_non_owned_controlled = yes
+		}
+		remove_ideas = AUH_czech_parliament
+	}
+}
+focus = {
+	id = AUH_Create_a_new_fund_for_the_University_of_Salzburg
+	icon = GFX_goal_generic_forceful_treaty
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Establish_Salzburg_civilan_industry
+	prerequisite = {
+		focus = AUH_Establish_Salzburg_civilan_industry
+	}
+	# 7 research speed
+	completion_reward = {
+		add_ideas = AUH_funds_for_the_university_of_salzburg
+	}
+}
+focus = {
+	id = AUH_federal_government_reforms
+	icon = GFX_focus_TUR_reform_the_balkan_pact
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Change_the_military_recruitment_law
+	prerequisite = {
+		focus = AUH_Change_the_military_recruitment_law
+	}
+	completion_reward = {
+		add_political_power = 150
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}
+focus = {
+	id = AUH_found_the_hungarian_region
+	icon = GFX_focus_AUH_found_the_hungarian_region
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_found_the_transylvania_region
+	prerequisite = {
+		focus = AUH_found_the_transylvania_region
+	}
+	completion_reward = {
+		remove_ideas = AUH_hungarian_opposition
+		release = HUN
+		set_autonomy = {
+			target = HUN
+			autonomy_state = autonomy_wtt_imperial_subject
+		}
+	}
+}
+focus = {
+	id = AUH_found_the_illyria_region
+	icon = GFX_focus_AUH_found_the_illyria_region
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Establish_military_and_civilian_industries_in_Illyria_and_Slovakia
+	prerequisite = {
+		focus = AUH_Establish_military_and_civilian_industries_in_Illyria_and_Slovakia
+		focus = AUH_found_the_bohemia_region
+	}
+	completion_reward = {
+		release_autonomy = {
+			target = CRO
+			autonomy_state = autonomy_tgwr_crownland
+			freedom_level = 0.8
+			release_non_owned_controlled = yes
+		}
+		CRO = { set_cosmetic_tag = CRO_AUH }
+		every_state = {
+			limit = {
+				owns_or_subject_of = yes
+				OR = {
+					is_core_of = BOS
+					is_core_of = MNT #it is needed when they do this after the victory
+				}
+				owner = {
+					NOT = { tag = SER }
+				}
+			}
+			add_core_of = CRO
+			transfer_state_to = CRO
+		}
+
+		every_state = {
+			limit = {
+				owns_or_subject_of = yes
+				is_core_of = SLV
+			}
+			add_core_of = CRO
+			transfer_state_to = CRO
+		}
+		remove_ideas = AUH_croatian_opposition
+	}
+}
+focus = {
+	id = AUH_found_the_slovakia_region
+	icon = GFX_focus_AUH_found_the_slovakia_region
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Increase_rifle_production_in_Illyria_and_Slovakia
+	prerequisite = {
+		focus = AUH_found_the_galicia-lodomeria_region
+		focus = AUH_Increase_rifle_production_in_Illyria_and_Slovakia
+	}
+	completion_reward = {
+		release_autonomy = {
+			target = SLO
+			autonomy_state = autonomy_tgwr_crownland
+			freedom_level = 0.5
+			release_non_owned_controlled = yes
+		}
+		if = {
+			limit = {
+				664 = { is_owned_and_controlled_by = HUN }
+			}
+			664 = { transfer_state_to = SLO }
+		}
+	}
+}
+focus = {
+	id = AUH_national_development_plan
+	icon = GFX_focus_SOV_merge_plants
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_found_the_illyria_region
+	prerequisite = {
+		focus = AUH_found_the_illyria_region
+	}
+	prerequisite = {
+		focus = AUH_found_the_hungarian_region
+	}
+	# bütün puppetlere 15 cons speed
+	completion_reward = {
+		every_other_country = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			add_ideas = AUH_national_development_plan
+		}
+	}
+}
+focus = {
+	id = AUH_Expanding_the_powers_of_regional_governments
+	icon = GFX_goal_generic_construct_mil_factory
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_found_the_slovakia_region
+	prerequisite = {
+		focus = AUH_found_the_slovakia_region
+	}
+	prerequisite = {
+		focus = AUH_found_the_hungarian_region
+	}
+	# puppetlere ve bize 5k tüfenk ve 2k topçu 1k howitzer 3k support
+	completion_reward = {
+		every_other_country = {
+			limit = {
+				is_subject_of = root
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = root
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 3000
+				producer = root
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 2000
+				producer = root
+			}
+			add_equipment_to_stockpile = {
+				type = howitzer_equipment
+				amount = 1000
+				producer = root
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 5000
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 3000
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 2000
+		}
+		add_equipment_to_stockpile = {
+			type = howitzer_equipment
+			amount = 1000
+		}
+	}
+}
+focus = {
+	id = AUH_Stabilize_the_Federation
+	icon = GFX_focus_SWI_establish_pro_helvetia
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_found_the_hungarian_region
+	prerequisite = {
+		focus = AUH_found_the_hungarian_region
+	}
+	completion_reward = {
+		remove_ideas = AUH_multi_ethnic_army
+		remove_ideas = AUH_serbian_terrorism
+	}
+}
+focus = {
+	id = AUH_Enact_the_federal_constitution
+	icon = GFX_focus_POL_complete_april_constitution
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Stabilize_the_Federation
+	prerequisite = {
+		focus = AUH_Stabilize_the_Federation
+	}
+	completion_reward = {
+		every_other_country = {
+			limit = {
+				is_subject_of = root
+			}
+			add_ideas = AUH_federal_constitution
+		}
+		add_ideas = AUH_federal_constitution
+	}
+}
+focus = {
+	id = AUH_Establish_the_ordinary_war_committee_of_the_Danube_federation
+	icon = GFX_focus_generic_improve_the_administration
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = { }
+	relative_position_id = AUH_Stabilize_the_Federation
+	prerequisite = {
+		focus = AUH_Stabilize_the_Federation
+	}
+	completion_reward = {
+		every_other_country = {
+			limit = {
+				is_subject_of = root
+			}
+			add_ideas = AUH_danubian_federation_war_commite
+		}
+	}
+}
+	focus = {
+		id = AUH_officially_establish_the_danube_federation
+		icon = GFX_focus_AUH_federalism
+		cost = 5
+		x = 0
+		y = 2
+		completion_reward = { }
+		relative_position_id = AUH_Stabilize_the_Federation
+		prerequisite = {
+			focus = AUH_Enact_the_federal_constitution
+		}
+		prerequisite = {
+			focus = AUH_Establish_the_ordinary_war_committee_of_the_Danube_federation
+		}
+		completion_reward = {
+			custom_effect_tooltip = "All of our puppets will be promoted to Danubian Crownland"
+			every_other_country = {
+				limit = {
+					is_subject_of = root
+				}
+				ROOT = {
+					set_autonomy = {
+						target = PREV
+						autonomy_state = autonomy_tgwr_danubian_crownland
+					}
+				}
+			}
+		}
+	}
+}

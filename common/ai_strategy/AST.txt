@@ -1,0 +1,32 @@
+ANZAC_damned_turks = {
+	allowed = {
+		OR = {
+			original_tag = AST
+			original_tag = NZL
+		}
+	}
+	enable = {
+		has_war_with = TUR
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = invade
+		id = "TUR"
+		value = 1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+
+		state = 860
+
+		value = 100
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		tag = TUR
+		state_trigger = {
+			state = 860
+		}
+		value = 1000
+	}
+}

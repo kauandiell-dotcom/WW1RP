@@ -1,0 +1,5 @@
+﻿l_english:
+ generic_factions:0 "Faction"
+
+ create_faction:0 "Change Faction Rule"
+ join_faction_FROM:0 "Join [From.GetAdjective] Faction"

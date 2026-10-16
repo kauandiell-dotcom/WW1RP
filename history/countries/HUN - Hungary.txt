@@ -1,0 +1,85 @@
+﻿capital = 43
+set_research_slots = 3
+
+recruit_character = HUN_istvan_tisza
+recruit_character = HUN_joseph_august
+recruit_character = HUN_karoly_huszar
+recruit_character = HUN_miklos_horthy
+recruit_character = HUN_mihaly_karolyi
+recruit_character = HUN_gyula_gombos
+recruit_character = HUN_tibor_szamuely
+
+recruit_character = HUN_bela_kun
+
+recruit_character = HUN_franz_joseph_i
+recruit_character = HUN_franz_ferdinand_i
+recruit_character = HUN_karl_i
+recruit_character = HUN_otto_von_habsburg
+recruit_character = HUN_zita_von_bourbonparma
+
+recruit_character = HUN_tersztyanszky_von_nadas
+recruit_character = HUN_kolossvary_de_kolosvar
+recruit_character = HUN_tamasy_von_fogaras
+recruit_character = HUN_vilmos_roder
+recruit_character = HUN_hugo_sonyi
+recruit_character = HUN_dezso_laszlo
+recruit_character = HUN_lajos_remenyi_schneller
+recruit_character = HUN_sandor_magyarossy
+recruit_character = HUN_jeno_ratz
+recruit_character = HUN_henrik_werth
+recruit_character = HUN_ferenc_szombathelyi
+recruit_character = HUN_gusztav_gratz
+recruit_character = HUN_shvoy_kalman
+	
+	set_technology = {
+		#infantry
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		#bicycle_infantry = 1
+		
+		#support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		
+		#armor
+		early_armored_car = 1
+		
+		#artillery
+		gw_artillery = 1
+		howitzer1 = 1
+		
+		#doctrine
+		ww1_landdoctrine = 1
+		
+		#navy
+		transport = 1
+
+		#air
+		airship = 1
+		scout_plane = 1
+		
+		#engineering
+		electrical_engineering = 1
+		radio = 1
+		mechanical_engineering = 1
+		aircraft_engine = 1
+		generator_battery = 1
+		basic_train = 1
+        
+	}
+
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1908.10.31"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 40
+		neutrality = 34
+		fascism = 2
+		communism = 24
+	}
+
+set_stability=0.6

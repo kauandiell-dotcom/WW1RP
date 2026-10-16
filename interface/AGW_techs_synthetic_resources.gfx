@@ -1,0 +1,56 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_synthetic_resources_medium"
+		texturefile = "gfx/interface/technologies/tech_synthetic_resources.dds"
+	}   
+
+	spriteType = {
+		name = "GFX_synthetic_resources_2_medium"
+		texturefile = "gfx/interface/technologies/tech_synthetic_resources.dds"
+	} 
+	
+	spriteType = {
+		name = "GFX_synthetic_resources_3_medium"
+		texturefile = "gfx/interface/technologies/tech_synthetic_resources.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_synthetic_resources_4_medium"
+		texturefile = "gfx/interface/technologies/tech_synthetic_resources.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_synthetic_resources_5_medium"
+		texturefile = "gfx/interface/technologies/tech_synthetic_resources.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_synthetic_resources_6_medium"
+		texturefile = "gfx/interface/technologies/tech_synthetic_resources.dds"
+	}  
+	
+	spriteType = {
+		name = "GFX_synthetic_resources_7_medium"
+		texturefile = "gfx/interface/technologies/tech_synthetic_resources.dds"
+	}  
+	
+	spriteType = {
+		name = "GFX_synthetic_resources_8_medium"
+		texturefile = "gfx/interface/technologies/tech_synthetic_resources.dds"
+	}  
+	
+	spriteType = {
+		name = "GFX_synthetic_resources_9_medium"
+		texturefile = "gfx/interface/technologies/tech_synthetic_resources.dds"
+	}  
+	
+	spriteType = {
+		name = "GFX_synthetic_resources_10_medium"
+		texturefile = "gfx/interface/technologies/tech_synthetic_resources.dds"
+	} 
+	
+	spriteType = {
+		name = "GFX_synthetic_resources_11_medium"
+		texturefile = "gfx/interface/technologies/tech_synthetic_resources.dds"
+	}  
+}

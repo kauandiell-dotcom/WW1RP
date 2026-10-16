@@ -1,0 +1,76 @@
+ideas = {
+	country = {
+		AGW_rank_hegemony_power = {
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+		}
+		AGW_rank_global_power = {
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+		}
+		AGW_rank_super_power = {
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+		}
+		AGW_rank_regional_power = {
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+		}
+		AGW_rank_middle_power = {
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		}
+		AGW_rank_minor_power = {
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		}
+	}
+}

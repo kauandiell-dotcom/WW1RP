@@ -1,0 +1,149 @@
+agw_greatwar_options = {
+	name = "Great War Status"
+	group = "Agora Great War Custom Rules"
+	option = {
+		name = "enabled"
+		text = "Enabled"
+		desc = ""
+	}
+	default = {
+		name = "disabled"
+		text = "Disabled"
+		desc = ""
+	}
+}
+
+agw_conference_options = {
+	name = "Conference Type"
+	group = "Agora Great War Custom Rules"
+	default = {
+		name = "ai_and_players"
+		text = "Allow for Both (AI and Players)"	
+		desc = "This setting allows peace conferences for ai and players."
+	}
+	option = {
+		name = "only_players"
+		text = "Allow for Only Players"
+		desc = "This setting allows peace conferences for only players."
+	}
+}
+
+agw_unit_limit_options = {
+	name = "Unit Limit"
+	group = "Agora Great War Custom Rules"
+	default = {
+		name = "standard"
+		text = "AI and Players"
+		desc = ""
+	}
+	option = {
+		name = "ai_only"
+		text = "AI Only"
+		desc = ""
+	}
+	option = {
+		name = "none"
+		text = "Turn Off"
+		desc = ""
+	}
+}
+
+agw_default_factory_rights_options = {
+	name = "Default Starting Factory Rights"
+	group = "Agora Great War Custom Rules"
+	option = {
+		name = "option_5"
+		text = "5"
+		desc = ""
+	}
+	default = {
+		name = "option_10"
+		text = "10"
+		desc = ""
+	}
+	option = {
+		name = "option_15"
+		text = "15"
+		desc = ""
+	}
+	option = {
+		name = "option_20"
+		text = "20"
+		desc = ""
+	}
+}
+
+agw_yearly_factory_rights_options = {
+	name = "Yearly Factory Rights Increase"
+	group = "Agora Great War Custom Rules"
+	default = {
+		name = "option_5"
+		text = "5 Per Year"
+		desc = ""
+	}
+	option = {
+		name = "option_10"
+		text = "10 Per Year"
+		desc = ""
+	}
+	option = {
+		name = "option_15"
+		text = "15 Per Year"
+		desc = ""
+	}
+	option = {
+		name = "option_20"
+		text = "20 Per Year"
+		desc = ""
+	}
+}
+
+#agw_central_america_options = {
+#	name = "Central America Status"
+#	group = "Agora Great War Custom Rules"
+#	default = {
+#		name = "allowed"
+#		text = "Allowed"
+#		desc = ""
+#	}
+#	option = {
+#		name = "deleted"
+#		text = "Deleted"
+#		desc = ""
+#	}
+#}
+
+#agw_south_america_options = {
+#	name = "South America Status"
+#	group = "Agora Great War Custom Rules"
+#	default = {
+#		name = "allowed"
+#		text = "Allowed"
+#		desc = ""
+#	}
+#	option = {
+#		name = "deleted"
+#		text = "Deleted"
+#		desc = ""
+#	}
+#	option = {
+#		name = "deletedbutbrazil"
+#		text = "Deleted But Brazil"
+#		desc = ""
+#	}
+#}
+
+#agw_china_options = {
+#	name = "China Unification Status"
+#	group = "Agora Great War Custom Rules"
+#	default = {
+#		name = "unificated"
+#		text = "Unificated"
+#		desc = ""
+#	}
+#	option = {
+#		name = "seperated"
+#		text = "Seperated to Warlords"
+#		desc = ""
+#	}
+#}

@@ -1,0 +1,80 @@
+﻿l_russian:
+ natideas:0 "Национальные идеи"
+ #TRAITS
+	natidea_economic_1:0 "+5% Выход с фабрик"
+	natidea_economic_2:0 "+5% Скорость строительства"
+	natidea_economic_3:0 "+5% Увелечение ресурсов"
+	natidea_economic_4:0 "+5% Ограничение эффективности"
+	natidea_economic_5:0 "+10% Скорость строительства"
+	
+	natidea_innovation_1:0 "-2.5% Скорость исследований"
+	natidea_innovation_2:0 "+12.5% Скорость починки"
+	natidea_innovation_3:0 "+10% Слоты государственного строительства"
+	natidea_innovation_4:0 "+5% Выход с фабрик"
+	natidea_innovation_5:0 "-2.5% Скорость исследований"
+
+	
+	natidea_diplomatic_1:0 "+0.25 Прирост политической власти"
+	natidea_diplomatic_2:0 "+0.25 Фактор влияния мнения на торговые сделки"
+	natidea_diplomatic_3:0 "+25% Скорость расшифровки"
+	natidea_diplomatic_4:0 "-10% Ресурсов на рынок"
+	natidea_diplomatic_5:0 "+0.25 Прирост политической власти"
+
+	
+	natidea_quality_1:0 "+2.5% Организация дивизии"
+	natidea_quality_2:0 "+2.5% Защита дивизии"
+	natidea_quality_3:0 "+5% Прирост опыта армии"
+	natidea_quality_4:0 "+5% Защита дивизии на национальной территории"
+	natidea_quality_5:0 "+2.5% Организация дивизии"
+
+	
+	natidea_quantity_1:0 "-2.5% Время тренировки дивизии"
+	natidea_quantity_2:0 "-2.5% Расход припасов"
+	natidea_quantity_3:0 "+5% Выход с фабрик"
+	natidea_quantity_4:0 "+1.5% Рекрутиромое население"
+	natidea_quantity_5:0 "-2.5% Время тренировки дивизии"
+ 
+ #ACTUAL IDEAS THEMSELVES
+ nateconomic:0 "Экономические идеи"
+	nateconomic_0:0 "Пусто"
+	nateconomic_1:0 "Экономика I"
+	nateconomic_2:0 "Экономика II"
+	nateconomic_3:0 "Экономика III"
+	nateconomic_4:0 "Экономика IV"
+	nateconomic_5:0 "Экономика V"
+
+ natinnovation:0 "Иновационные идеи"
+	natinnovation_0:0 "Пусто"
+	natinnovation_1:0 "Инновации I"
+	natinnovation_2:0 "Инновации II"
+	natinnovation_3:0 "ИнновацииIII"
+	natinnovation_4:0 "Инновации IV"
+	natinnovation_5:0 "Инновации V"
+	
+ natdiplomatic:0 "Дипломатические идеи"
+	natdiplomatic_0:0 "Пусто"
+	natdiplomatic_1:0 "Дипломатия I"
+	natdiplomatic_2:0 "Дипломатия II"
+	natdiplomatic_3:0 "Дипломатия III"
+	natdiplomatic_4:0 "Дипломатия IV"
+	natdiplomatic_5:0 "Дипломатия V"
+
+	
+ natquality:0 "Идеи качества"
+	natquality_0:0 "Пусто"
+	natquality_1:0 "Качество I"
+	natquality_2:0 "Качество II"
+	natquality_3:0 "Качество III"
+	natquality_4:0 "Качество IV"
+	natquality_5:0 "Качество V"
+
+	
+ natquantity:0 "Идеи количества"
+	natquantity_0:0 "Пусто"
+	natquantity_1:0 "Количество I"
+	natquantity_2:0 "Количество II"
+	natquantity_3:0 "Количество III"
+	natquantity_4:0 "Количество IV"
+	natquantity_5:0 "Количество V"
+
+

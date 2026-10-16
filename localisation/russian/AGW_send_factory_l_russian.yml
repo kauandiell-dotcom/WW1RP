@@ -1,0 +1,28 @@
+﻿l_russian:
+ PAY_CIV_FACTORY_TITLE:0 "Отправить гражданскую фабрику"
+ PAY_CIV_FACTORY_ACTION_DESC:0 "Отправить одну гражданскую фабрику данной стране"
+
+ pay_civ_factory_send_text:0 "Вы точно хотите отправить одну гражданскую фабрику данной стране?"
+ pay_civ_get_message:0 "[THIS.GetName] отправил одну гражданскую фабрику для нас"
+ pay_civ_get_title:0 "Получил гражданскую фабрику"
+
+
+ PAY_MIL_FACTORY_TITLE:0 "Отправить военную фабрику"
+ PAY_MIL_FACTORY_ACTION_DESC:0 "Отправить одну военную фабрику данной стране"
+
+ pay_mil_factory_send_text:0 "Вы точно хотите отправить одну военную фабрику данной стране?"
+ pay_mil_get_message:0 "[THIS.GetName] отправил одну военную фабрику для нас"
+ pay_mil_get_title:0 "Получил военную фабрику""
+
+
+ PAY_DOCKYARD_TITLE:0 "Отправить верфь"
+ PAY_DOCKYARD_ACTION_DESC:0 "Отправить одну верфь фабрику данной стране"
+
+ pay_dockyard_send_text:0 "Вы точно хотите отправить одну верфь данной стране?"
+ pay_dockyard_get_message:0 "[THIS.GetName] отправил одну верфь для нас"
+ pay_dockyard_get_title:0 "Получил верфь фабрику""
+
+ a:0 "a"
+ a:0 "a"
+ a:0 "a"
+ a:0 "a"

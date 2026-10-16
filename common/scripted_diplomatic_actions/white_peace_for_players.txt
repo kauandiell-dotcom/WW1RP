@@ -1,0 +1,109 @@
+scripted_diplomatic_actions = {
+	white_peace = {
+		# ROOT sender, THIS receiver
+		visible = {  
+			THIS = { has_war_with = ROOT }
+			if = {
+				limit = {
+					is_debug = no
+				}
+				THIS = { is_ai = no }
+			}
+		}
+		
+		selectable = { 
+			if = {
+				limit = {
+					is_debug = no
+				}
+				THIS = { 
+					is_ai = no
+				}
+			}
+		}
+
+		requires_acceptance = yes
+		cost = 50
+		command_power = 0
+
+		show_acceptance_on_action_button = yes
+
+		icon = 4 
+		
+		send_description = "[ROOT.GetName] wants to make peace with [THIS.GetName]."
+
+		on_sent_effect = {
+			THIS = {
+				set_country_flag = {
+					flag = peace
+					days = 5
+					value = 1
+				}
+			}
+		}
+		
+		reject_effect = {
+			set_country_flag = {
+				flag = peace
+				days = 5
+				value = 1
+			}
+		}
+
+		can_be_accepted = {
+			always = yes
+		}
+		can_be_sent = {
+			always = yes
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					ROOT = {  
+						num_subjects > 0
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { original_tag = ROOT }
+						is_subject_of = ROOT
+						has_war_with = PREV
+					}
+					white_peace = PREV
+				}
+			}
+			ROOT = {
+				white_peace = THIS
+			}
+			if = {
+				limit = {
+					THIS = {  
+						num_subjects > 0
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { original_tag = PREV }
+						is_subject_of = PREV
+						has_war_with = ROOT
+					}
+					white_peace = ROOT
+				}
+			}
+			THIS = {
+				white_peace = ROOT
+			}
+		}
+		
+		ai_acceptance = {
+			condition = {
+				base = 10
+			}
+		}
+		ai_desire = 
+		{
+			base = 1
+		}
+	}
+}

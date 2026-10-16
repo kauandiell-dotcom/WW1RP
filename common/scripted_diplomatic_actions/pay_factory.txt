@@ -1,0 +1,253 @@
+scripted_diplomatic_actions = {
+	# ROOT sender, THIS receiver
+	pay_civ_factory = {
+		visible = {  
+			THIS = {
+				NOT= {
+					has_war_with = ROOT
+				}
+			}
+		}
+		selectable = { 
+			ROOT = {
+				any_owned_state = { 
+					is_controlled_by = PREV
+					industrial_complex > 0
+				}
+			}
+			if = {
+				limit = {
+					THIS = {
+						is_puppet = yes
+						is_ai = yes
+					}
+					THIS = {
+						OVERLORD = {
+							is_ai = no
+						}
+					}
+				}
+				always = no
+			}
+			THIS = {
+				custom_trigger_tooltip = {
+					tooltip = "Can take one more factory"
+					check_variable = { THIS.taken_factories < THIS.factory_rights }
+				}
+			}
+		}
+
+		requires_acceptance = no
+		cost = 0 
+		command_power = 0
+		show_acceptance_on_action_button = no
+		icon = 4 
+
+		on_sent_effect = {}
+		reject_effect = {}
+
+		complete_effect = {
+			ROOT = {
+				random_owned_controlled_state = {
+					limit = {
+						industrial_complex > 0
+					} 
+					remove_building = {
+						type = industrial_complex level = 1
+					}
+				}
+			}
+			add_offsite_building = { 
+				type = industrial_complex 
+				level = 1 
+			}
+			add_to_variable = { taken_factories = 1 }
+			ROOT = { add_to_variable = { ROOT.factory_rights = 1 } }
+		}
+
+		send_description = pay_civ_factory_send_text
+		receive_description = pay_civ_get_message
+		accept_title = pay_civ_get_title
+		accept_description = pay_civ_get_message
+		reject_title = pay_civ_get_title
+
+		reject_description = pay_civ_get_message
+		ai_acceptance = {
+			condition = {
+				base = 0
+			}
+		}
+		ai_desire = {
+			base = -1
+		}
+	}
+	pay_mil_factory = {
+		visible = {  
+			THIS = {
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+		selectable = { 
+			ROOT = {
+				any_owned_state = {
+					is_controlled_by = PREV 
+					arms_factory > 0
+				}
+			}
+			if = {
+				limit = {
+					THIS = {
+						is_puppet = yes
+						is_ai = yes
+					}
+					THIS = {
+						OVERLORD = {
+							is_ai = no
+						}
+					}
+				}
+				always = no
+			}
+			THIS = {
+				custom_trigger_tooltip = {
+					tooltip = "Can take one more factory"
+					check_variable = { THIS.taken_factories < THIS.factory_rights }
+				}
+			}
+		}
+
+		requires_acceptance = no
+		cost = 0 
+		command_power = 0
+		show_acceptance_on_action_button = no
+		icon = 4 
+
+		on_sent_effect = {}
+		reject_effect = {}
+
+		complete_effect = {
+			ROOT = {
+				random_owned_controlled_state = {
+					limit = {
+						arms_factory > 0
+					} 
+					remove_building = {
+						type = arms_factory level = 1
+					}
+				}
+			}
+			add_offsite_building = { 
+				type = arms_factory 
+				level = 1 
+			}
+			add_to_variable = { taken_factories = 1 }
+			ROOT = { add_to_variable = { ROOT.factory_rights = 1 } }
+		}
+
+		send_description = pay_mil_factory_send_text
+		receive_description = pay_mil_get_message
+		accept_title = pay_mil_get_title
+		accept_description = pay_mil_get_message
+		reject_title = pay_mil_get_title
+
+		reject_description = pay_mil_get_message
+		ai_acceptance = {
+			condition = {
+				base = 0
+			}
+		}
+		ai_desire = {
+			base = -1
+		}
+	}
+	pay_dockyard = {
+		visible = {  
+			THIS = {
+				NOT= {
+					has_war_with = ROOT
+				}
+			}
+		}
+		selectable = { 
+			ROOT = {
+				any_owned_state = {
+					is_controlled_by = PREV 
+					dockyard > 0
+				}
+			}
+			if = {
+				limit = {
+					THIS = {
+						is_puppet = yes
+						is_ai = yes
+					}
+					THIS = {
+						OVERLORD = {
+							is_ai = no
+						}
+					}
+				}
+				always = no
+			}
+			THIS = {
+				custom_trigger_tooltip = {
+					tooltip = "Can take one more factory"
+					check_variable = { THIS.taken_factories < THIS.factory_rights }
+				}
+				custom_trigger_tooltip = {
+					tooltip = "Has at least one coastal state"
+					any_owned_state = {
+						is_coastal = yes
+						is_controlled_by = THIS
+					}
+				}
+			}
+		}
+
+		requires_acceptance = no
+		cost = 0 
+		command_power = 0
+		show_acceptance_on_action_button = no
+		icon = 4 
+
+		on_sent_effect = {}
+		reject_effect = {}
+
+		complete_effect = {
+			ROOT = {
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+					} 
+					remove_building = {
+						type = dockyard level = 1
+					}
+				}
+			}
+			add_offsite_building = { 
+				type = dockyard 
+				level = 1 
+			}
+			add_to_variable = { taken_factories = 1 }
+			ROOT = { add_to_variable = { ROOT.factory_rights = 1 } }
+		}
+
+		send_description = pay_dockyard_send_text
+		receive_description = pay_dockyard_get_message
+		accept_title = pay_dockyard_get_title
+		accept_description = pay_dockyard_get_message
+		reject_title = pay_dockyard_get_title
+
+		reject_description = pay_dockyard_get_message
+		ai_acceptance = {
+			condition = {
+				base = 0
+			}
+		}
+		ai_desire = {
+			base = -1
+		}
+	}
+}

@@ -1,0 +1,661 @@
+﻿l_russian:
+ ARG_heavy_cruiser_1890: "Класс Гарибальди" #NT!
+ ARG_battleship_1910: "Класс Ривадавия" #NT!
+ ARG_destroyer_1890: "Класс Корриентес" #NT!
+ ARG_destroyer_1906: "Класс «Катамарка»" #NT!
+ ARG_destroyer_1910: "Ла Плата Класс" #NT!
+ ARG_destroyer_1914: "Класс Сан-Луис" #NT!
+ ARG_battleship_1890: "Класс Ла-Плата" #NT!
+ ARG_light_cruiser_1890: "Класс Патагония" #NT!
+ ARG_light_cruiser_1900: "Класс Буэнос-Айреса" #NT!
+ AUH_heavy_cruiser_1890: "Класс Кайзерина и Кенигина Марии Терезии" #NT!
+ AUH_heavy_cruiser_1900: "Класс «Кайзер Карл VI»" #NT!
+ AUH_light_cruiser_1906: "Класс «Адмирал Спаун»" #NT!
+ AUH_light_cruiser_1910: "Новара Класс" #NT!
+ AUH_coastal_submarine_1906: "Класс U1" #NT!
+ AUH_coastal_submarine_1910: "Класс U5" #NT!
+ AUH_coastal_submarine_1914: "Класс U14" #NT!
+ AUH_coastal_submarine_1918: "Класс U20" #NT!
+ AUH_battleship_1910: "Класс Тегеттхофф" #NT!
+ AUH_battleship_1914: "Класс «Эрзац-монарх»" #NT!
+ AUH_destroyer_1890: "Метеор Класс" #NT!
+ AUH_destroyer_1906: "Класс гусар" #NT!
+ AUH_destroyer_1910: "Класс Татра" #NT!
+ AUH_destroyer_1914: "Класс Варасдинер" #NT!
+ AUH_destroyer_1918: "Класс Ersatz Tátra" #NT!
+ AUH_cruiser_submarine_1914: "Класс U27" #NT!
+ AUH_cruiser_submarine_1918: "Класс U43" #NT!
+ AUH_battleship_1890: "Кронпринцесса Эржерзогин Стефани Класс" #NT!
+ AUH_battleship_1900: "Эрцгерцог Карл Класс" #NT!
+ AUH_light_cruiser_1890: "Зара Класс" #NT!
+ AUH_light_cruiser_1900: "Зента Класс" #NT!
+ BRA_light_cruiser_1906: "Класс Баия" #NT!
+ BRA_coastal_submarine_1910: "Класс F1" #NT!
+ BRA_battleship_1906: "Класс Минас-Жерайс" #NT!
+ BRA_destroyer_1890: "Класс Тирадентис" #NT!
+ BRA_destroyer_1900: "Класс Тамойо" #NT!
+ BRA_destroyer_1906: "Пара Класс" #NT!
+ BRA_battleship_1890: "Класс Риачуэло" #NT!
+ BRA_battleship_1900: "Класс «Маршал Деодоро»" #NT!
+ BRA_light_cruiser_1890: "Класс Траяно" #NT!
+ BRA_light_cruiser_1900: "Класс Бенджамина Константа" #NT!
+ CHI_light_cruiser_1910: "Класс Чао Хо" #NT!
+ CHI_destroyer_1906: "Класс Ху Пэн" #NT!
+ CHI_destroyer_1910: "Класс Чан Фэн" #NT!
+ CHI_light_cruiser_1890: "Класс Хай Цин" #NT!
+ CHI_light_cruiser_1900: "Класс Кай Чи" #NT!
+ CHL_heavy_cruiser_1890: "Класс Эсмеральда" #NT!
+ CHL_coastal_submarine_1914: "Класс H" #NT!
+ CHL_battleship_1918: "Класс Альмиранте Латорре" #NT!
+ CHL_destroyer_1890: "Класс Альмиранте Линч" #NT!
+ CHL_destroyer_1900: "Класс «Капитан Меринос Джарпа»" #NT!
+ CHL_destroyer_1910: "Альмирант Линч II класса" #NT!
+ CHL_destroyer_1914: "Класс Альмиранте Уильямса" #NT!
+ CHL_battleship_1890: "Класс Уаскар" #NT!
+ CHL_light_cruiser_1890: "Класс Президенте Эрраурис" #NT!
+ CHL_light_cruiser_1900: "Класс Чакабуко" #NT!
+ COL_light_cruiser_1900: "Класс Эль Башира" #NT!
+ DEN_coastal_submarine_1906: "Класс Дюккерен" #NT!
+ DEN_coastal_submarine_1910: "Класс Хавманден" #NT!
+ DEN_coastal_submarine_1914: "Класс Эгир" #NT!
+ DEN_coastal_submarine_1918: "Класс Рота" #NT!
+ DEN_battleship_1890: "Класс Линдормен" #NT!
+ DEN_light_cruiser_1890: "Класс Фьен" #NT!
+ ENG_heavy_cruiser_1890: "Блейк Класс" #NT!
+ ENG_heavy_cruiser_1900: "Класс Дрейка" #NT!
+ ENG_battle_cruiser_1906: "Класс «Непобедимый»" #NT!
+ ENG_battle_cruiser_1910: "Неутомимый класс" #NT!
+ ENG_battle_cruiser_1914: "Класс «Королева Мэри»" #NT!
+ ENG_battle_cruiser_1918: "Класс Худ" #NT!
+ ENG_light_cruiser_1906: "Класс приключений" #NT!
+ ENG_light_cruiser_1910: "Уэймут Класс" #NT!
+ ENG_light_cruiser_1914: "Класс Каллиопа" #NT!
+ ENG_light_cruiser_1918: "Класс Церера" #NT!
+ ENG_coastal_submarine_1900: "Класс Холланд" #NT!
+ ENG_coastal_submarine_1906: "Класс С" #NT!
+ ENG_coastal_submarine_1910: "S-класс" #NT!
+ ENG_coastal_submarine_1914: "Класс H" #NT!
+ ENG_coastal_submarine_1918: "Класс R" #NT!
+ ENG_carrier_1918: "Класс «Игл»" #NT!
+ ENG_battleship_1906: "Класс «Дредноут»" #NT!
+ ENG_battleship_1910: "Класс Нептун" #NT!
+ ENG_battleship_1914: "Класс «Железный герцог»" #NT!
+ ENG_battleship_1918: "Класс мести" #NT!
+ ENG_destroyer_1890: "Класс А" #NT!
+ ENG_destroyer_1900: "Класс реки" #NT!
+ ENG_destroyer_1906: "Класс Свифт" #NT!
+ ENG_destroyer_1910: "Класс Акаста" #NT!
+ ENG_destroyer_1914: "Класс R" #NT!
+ ENG_destroyer_1918: "Класс V/W" #NT!
+ ENG_cruiser_submarine_1914: "Класс «Наутилус»" #NT!
+ ENG_cruiser_submarine_1918: "Класс «меч-рыба»" #NT!
+ ENG_battleship_1890: "Класс Колосс" #NT!
+ ENG_battleship_1900: "Класс Дункан" #NT!
+ ENG_light_cruiser_1890: "Класс Бархэм" #NT!
+ ENG_light_cruiser_1900: "Высокомерный класс" #NT!
+ ENG_carrier_1914: "Класс Кампания" #NT!
+ ENG_submarine_1906: "Класс D" #NT!
+ ENG_submarine_1910: "Класс Е" #NT!
+ ENG_submarine_1914: "Класс F" #NT!
+ ENG_submarine_1918: "Класс L" #NT!
+ EST_destroyer_1914: "Класс Новик" #NT!
+ FRA_heavy_cruiser_1890: "Класс Дюпюи де Ломе" #NT!
+ FRA_heavy_cruiser_1900: "Класс Дюплекс" #NT!
+ FRA_light_cruiser_1918: "Сорт" #NT!
+ FRA_coastal_submarine_1900: "Класс Сирена" #NT!
+ FRA_coastal_submarine_1906: "Y-класс" #NT!
+ FRA_battleship_1910: "Класс Курбе" #NT!
+ FRA_battleship_1914: "Класс Бретань" #NT!
+ FRA_destroyer_1890: "Класс Дюрандаля" #NT!
+ FRA_destroyer_1900: "Класс аркебузы" #NT!
+ FRA_destroyer_1906: "Класс Спахи" #NT!
+ FRA_destroyer_1910: "Класс Биссон" #NT!
+ FRA_destroyer_1914: "Класс Аэтос" #NT!
+ FRA_destroyer_1918: "Класс Дукла" #NT!
+ FRA_battleship_1890: "Класс Курбе" #NT!
+ FRA_battleship_1900: "Генрих IV класс" #NT!
+ FRA_light_cruiser_1890: "Класс «Кондор»" #NT!
+ FRA_light_cruiser_1900: "Класс Касабьянка" #NT!
+ FRA_carrier_1914: "Класс Фудре" #NT!
+ FRA_submarine_1906: "Класс Архимеда" #NT!
+ FRA_submarine_1910: "Класс Брюмера" #NT!
+ FRA_submarine_1914: "Класс Дюпюи Де Ломе" #NT!
+ FRA_submarine_1918: "Класс О'Бирна" #NT!
+ GER_heavy_cruiser_1890: "Класс «Императорша Августа»" #NT!
+ GER_heavy_cruiser_1900: "Класс «Принц Адальберт»" #NT!
+ GER_battle_cruiser_1906: "Класс Фон дер Танн" #NT!
+ GER_battle_cruiser_1910: "Класс Мольтке" #NT!
+ GER_battle_cruiser_1914: "Класс «Зейдлиц»" #NT!
+ GER_battle_cruiser_1918: "Класс Макензен" #NT!
+ GER_light_cruiser_1906: "Класс Дрезден" #NT!
+ GER_light_cruiser_1910: "Класс Магдебург" #NT!
+ GER_light_cruiser_1914: "Класс Висбаден" #NT!
+ GER_light_cruiser_1918: "Кёльн Класс" #NT!
+ GER_coastal_submarine_1906: "Класс U2" #NT!
+ GER_coastal_submarine_1910: "Класс U13" #NT!
+ GER_coastal_submarine_1914: "Класс УБ1" #NT!
+ GER_coastal_submarine_1918: "Класс UC1" #NT!
+ GER_battleship_1906: "Класс Нассау" #NT!
+ GER_battleship_1910: "Класс Кайзера" #NT!
+ GER_battleship_1914: "Бавария Класс" #NT!
+ GER_battleship_1918: "L 20e а-класс" #NT!
+ GER_destroyer_1890: "Класс D9" #NT!
+ GER_destroyer_1900: "Класс G108" #NT!
+ GER_destroyer_1906: "Класс G137" #NT!
+ GER_destroyer_1910: "Класс V1" #NT!
+ GER_destroyer_1914: "Класс S49" #NT!
+ GER_destroyer_1918: "Класс S131" #NT!
+ GER_battleship_1890: "Класс Кайзера" #NT!
+ GER_battleship_1900: "Класс Брауншвейг" #NT!
+ GER_light_cruiser_1890: "Класс Ирен" #NT!
+ GER_submarine_1906: "Класс U17" #NT!
+ GER_submarine_1910: "Класс U19" #NT!
+ GER_submarine_1914: "Класс U51" #NT!
+ GER_submarine_1918: "Класс U139" #NT!
+ GRE_heavy_cruiser_1890: "Класс «Баселеос Георгиос»" #NT!
+ GRE_light_cruiser_1914: "Сорт" #NT!
+ GRE_coastal_submarine_1910: "Класс Дельфин" #NT!
+ GRE_destroyer_1900: "Ники Класс" #NT!
+ GRE_destroyer_1906: "Класс Тиелла" #NT!
+ GRE_destroyer_1910: "Класс Аэтос" #NT!
+ GRE_battleship_1900: "Класс Миссисипи" #NT!
+ GRE_light_cruiser_1890: "Класс Эллада" #NT!
+ HOL_light_cruiser_1918: "Класс Суматра" #NT!
+ HOL_coastal_submarine_1906: "Класс О1" #NT!
+ HOL_coastal_submarine_1910: "Класс О2" #NT!
+ HOL_coastal_submarine_1914: "Класс О6" #NT!
+ HOL_destroyer_1906: "Класс лада" #NT!
+ HOL_battleship_1890: "Класс Рейнира Клаезена" #NT!
+ HOL_battleship_1900: "Класс «Королева Регентов»" #NT!
+ HOL_light_cruiser_1890: "Класс Суматра" #NT!
+ HOL_submarine_1906: "Сорт" #NT!
+ HOL_submarine_1914: "Класс К2" #NT!
+ HOL_submarine_1918: "Класс К5" #NT!
+ ITA_heavy_cruiser_1890: "Марко Поло Класс" #NT!
+ ITA_light_cruiser_1906: "Класс Ливия" #NT!
+ ITA_light_cruiser_1910: "Класс Кварто" #NT!
+ ITA_light_cruiser_1914: "Класс Кампания" #NT!
+ ITA_coastal_submarine_1900: "Класс Дельфино" #NT!
+ ITA_coastal_submarine_1906: "Фока Класс" #NT!
+ ITA_coastal_submarine_1910: "Класс Медуза" #NT!
+ ITA_coastal_submarine_1914: "Класс F" #NT!
+ ITA_coastal_submarine_1918: "Класс N" #NT!
+ ITA_battleship_1910: "Класс Данте Алигьери" #NT!
+ ITA_battleship_1914: "Класс Дориа" #NT!
+ ITA_destroyer_1890: "Класс фульмин" #NT!
+ ITA_destroyer_1900: "Класс Нембо" #NT!
+ ITA_destroyer_1906: "Класс Индомито" #NT!
+ ITA_destroyer_1910: "Класс Audace" #NT!
+ ITA_destroyer_1914: "Класс Ла Маса" #NT!
+ ITA_destroyer_1918: "Класс Паластро" #NT!
+ ITA_cruiser_submarine_1914: "Класс Микка" #NT!
+ ITA_battleship_1890: "Класс Дуилио" #NT!
+ ITA_battleship_1900: "Класс Регины Маргериты" #NT!
+ ITA_light_cruiser_1890: "Класс Триполи" #NT!
+ ITA_light_cruiser_1900: "Класс Агордат" #NT!
+ ITA_submarine_1914: "Класс Пачинотти" #NT!
+ ITA_submarine_1918: "Класс Прована" #NT!
+ JAP_heavy_cruiser_1890: "Класс Тиёда" #NT!
+ JAP_heavy_cruiser_1900: "Класс Касуга" #NT!
+ JAP_battle_cruiser_1910: "Класс Ибуки" #NT!
+ JAP_battle_cruiser_1914: "Конго Класс" #NT!
+ JAP_light_cruiser_1906: "Класс Йодо" #NT!
+ JAP_light_cruiser_1910: "Chikuma Class" #NT!
+ JAP_light_cruiser_1914: "Класс Тенрю" #NT!
+ JAP_light_cruiser_1918: "Кума Класс" #NT!
+ JAP_coastal_submarine_1900: "Класс Холланд" #NT!
+ JAP_coastal_submarine_1906: "Викерс C Класс" #NT!
+ JAP_carrier_1918: "Класс Хосё" #NT!
+ JAP_battleship_1910: "Класс Сетцу" #NT!
+ JAP_battleship_1914: "Класс Фусо" #NT!
+ JAP_battleship_1918: "Класс Нагато" #NT!
+ JAP_destroyer_1890: "Ikazuchi Class" #NT!
+ JAP_destroyer_1900: "Класс Пуилики" #NT!
+ JAP_destroyer_1906: "Класс Умикадзе" #NT!
+ JAP_destroyer_1910: "Класс Сакуры" #NT!
+ JAP_destroyer_1914: "Момо Класс" #NT!
+ JAP_destroyer_1918: "Класс Минекадзе" #NT!
+ JAP_cruiser_submarine_1918: "КТ класс" #NT!
+ JAP_battleship_1890: "Класс Фусо" #NT!
+ JAP_battleship_1900: "Iwami Class" #NT!
+ JAP_light_cruiser_1890: "Класс Мацусима" #NT!
+ JAP_light_cruiser_1900: "Класс «Цусима»" #NT!
+ JAP_carrier_1914: "Класс Вакамия" #NT!
+ JAP_submarine_1910: "ВК Класс" #NT!
+ JAP_submarine_1914: "Класс S1" #NT!
+ JAP_submarine_1918: "Класс S2" #NT!
+ MEX_light_cruiser_1890: "Класс Сарагоса" #NT!
+ NOR_coastal_submarine_1906: "Класс Коббен" #NT!
+ NOR_coastal_submarine_1910: "Класс А2" #NT!
+ NOR_destroyer_1890: "Класс Валькирия" #NT!
+ NOR_destroyer_1906: "Класс Драуг" #NT!
+ NOR_battleship_1890: "Класс Хаарфагре" #NT!
+ NOR_battleship_1900: "Класс «Норвегия»" #NT!
+ NOR_light_cruiser_1890: "Класс Викинг" #NT!
+ POR_coastal_submarine_1900: "Класс Плонжер" #NT!
+ POR_coastal_submarine_1910: "Класс Эспадарте" #NT!
+ POR_coastal_submarine_1914: "Класс Фока" #NT!
+ POR_destroyer_1900: "Класс Техо" #NT!
+ POR_destroyer_1910: "Класс Гуадина" #NT!
+ POR_battleship_1890: "Класс Васко да Гама" #NT!
+ POR_light_cruiser_1890: "Адамастор Класс" #NT!
+ POR_light_cruiser_1900: "Класс Раинья Дона Амелия" #NT!
+ PRU_light_cruiser_1906: "Класс Альмиранте Грау" #NT!
+ PRU_coastal_submarine_1910: "Ферре Класс" #NT!
+ PRU_destroyer_1910: "Класс егерей" #NT!
+ PRU_light_cruiser_1890: "Класс Лима" #NT!
+ ROM_destroyer_1918: "Класс Вифор" #NT!
+ ROM_light_cruiser_1890: "Элизабета Класс" #NT!
+ RUS_heavy_cruiser_1890: "Класс Князь Пожарский" #NT!
+ RUS_heavy_cruiser_1900: "Класс Россия" #NT!
+ RUS_light_cruiser_1910: "Муравьев Амурский Класс" #NT!
+ RUS_coastal_submarine_1900: "Класс Дельфин" #NT!
+ RUS_coastal_submarine_1906: "Карп Класс" #NT!
+ RUS_coastal_submarine_1910: "Класс Акула" #NT!
+ RUS_coastal_submarine_1914: "Класс F1" #NT!
+ RUS_battleship_1910: "Класс Гангут" #NT!
+ RUS_battleship_1914: "Императрица Мария Класс" #NT!
+ RUS_destroyer_1890: "Класс Пруитки" #NT!
+ RUS_destroyer_1900: "Внимательный класс" #NT!
+ RUS_destroyer_1906: "Класс «Лейтенант Шестаков»" #NT!
+ RUS_destroyer_1910: "Беспокойный класс" #NT!
+ RUS_destroyer_1914: "Изяслав Класс" #NT!
+ RUS_battleship_1890: "Класс «Адмирал Лазарев»" #NT!
+ RUS_battleship_1900: "Класс «Бородино»" #NT!
+ RUS_light_cruiser_1890: "Ярославский класс" #NT!
+ RUS_light_cruiser_1900: "Алмаз Класс" #NT!
+ RUS_carrier_1914: "Класс Орлица" #NT!
+ RUS_submarine_1906: "Класс Краб" #NT!
+ RUS_submarine_1910: "Морж Класс" #NT!
+ RUS_submarine_1914: "Класс баров" #NT!
+ SIA_destroyer_1906: "Суа Таймон Чон Класс" #NT!
+ SIA_destroyer_1918: "Р-класс" #NT!
+ SIA_light_cruiser_1890: "Класс Маха Чакри" #NT!
+ SPA_heavy_cruiser_1890: "Эмпарадор Карлос V Класс" #NT!
+ SPA_light_cruiser_1918: "Сорт" #NT!
+ SPA_coastal_submarine_1900: "Перал Класс" #NT!
+ SPA_coastal_submarine_1914: "Класс Айзека Пераля" #NT!
+ SPA_coastal_submarine_1918: "Класс Б" #NT!
+ SPA_battleship_1910: "Класс España" #NT!
+ SPA_destroyer_1890: "Класс Аудаз" #NT!
+ SPA_destroyer_1910: "Класс Бустаманте" #NT!
+ SPA_destroyer_1918: "Альседо Класс" #NT!
+ SPA_battleship_1890: "Класс Пелайо" #NT!
+ SPA_light_cruiser_1890: "Класс Веласко" #NT!
+ SPA_light_cruiser_1900: "Класс Эстрамадура" #NT!
+ SWE_coastal_submarine_1900: "Класс Хаджен" #NT!
+ SWE_coastal_submarine_1906: "Класс Хвален" #NT!
+ SWE_coastal_submarine_1910: "Класс Свардфискен" #NT!
+ SWE_coastal_submarine_1914: "Класс Лаксен" #NT!
+ SWE_coastal_submarine_1918: "Класс Абборрен" #NT!
+ SWE_destroyer_1900: "Режим Класса" #NT!
+ SWE_destroyer_1906: "Класс Рагнара" #NT!
+ SWE_destroyer_1914: "Класс Врангель" #NT!
+ SWE_battleship_1890: "Класс Свеа" #NT!
+ SWE_battleship_1900: "Класс Аран" #NT!
+ SWE_light_cruiser_1890: "Класс Орнен" #NT!
+ SWE_submarine_1914: "Класс Хаджен" #NT!
+ SWE_submarine_1918: "Баверн Класс" #NT!
+ TUR_heavy_cruiser_1890: "Класс Османие" #NT!
+ TUR_heavy_cruiser_1900: "Класс Месудие" #NT!
+ TUR_destroyer_1890: "Класс Берк I Эфсан" #NT!
+ TUR_destroyer_1906: "Класс Дюрандаль" #NT!
+ TUR_battleship_1890: "Класс «Бранденбург»" #NT!
+ TUR_light_cruiser_1890: "Мехмет Селим Класс" #NT!
+ TUR_light_cruiser_1900: "Класс Абдул Хамида" #NT!
+ URU_light_cruiser_1900: "Класс Догали" #NT!
+ USA_heavy_cruiser_1890: "Нью-Йорк Класс" #NT!
+ USA_heavy_cruiser_1900: "Класс Пенсильвания" #NT!
+ USA_light_cruiser_1906: "Класс Честера" #NT!
+ USA_light_cruiser_1918: "Омаха Класс" #NT!
+ USA_coastal_submarine_1900: "Класс Холланд" #NT!
+ USA_coastal_submarine_1906: "Класс С" #NT!
+ USA_coastal_submarine_1910: "Класс D" #NT!
+ USA_carrier_1918: "Класс Лэнгли" #NT!
+ USA_battleship_1906: "Класс Делавэр" #NT!
+ USA_battleship_1910: "Класс Вайоминга" #NT!
+ USA_battleship_1914: "Класс Невада" #NT!
+ USA_battleship_1918: "Класс Теннесси" #NT!
+ USA_destroyer_1890: "Класс Бейнбридж" #NT!
+ USA_destroyer_1900: "Класс Тракстун" #NT!
+ USA_destroyer_1906: "Класс Полдинга" #NT!
+ USA_destroyer_1910: "Класс Кассина" #NT!
+ USA_destroyer_1914: "Класс Такера" #NT!
+ USA_destroyer_1918: "Класс Колдуэлл" #NT!
+ USA_battleship_1890: "Техасский класс" #NT!
+ USA_battleship_1900: "Класс Коннектикута" #NT!
+ USA_light_cruiser_1890: "Класс Атланта" #NT!
+ USA_light_cruiser_1900: "Денвер Класс" #NT!
+ USA_submarine_1906: "Класс Е" #NT!
+ USA_submarine_1910: "Класс F" #NT!
+ USA_submarine_1914: "Класс L" #NT!
+ USA_submarine_1918: "О Класс" #NT!
+ ARG_heavy_cruiser_1890_desc: "Класс Гарибальди" #NT!
+ ARG_battleship_1910_desc: "Класс Ривадавия" #NT!
+ ARG_destroyer_1890_desc: "Класс Корриентес" #NT!
+ ARG_destroyer_1906_desc: "Класс «Катамарка»" #NT!
+ ARG_destroyer_1910_desc: "Класс Ла-Плата" #NT!
+ ARG_destroyer_1914_desc: "Сан-Луис Класс" #NT!
+ ARG_battleship_1890_desc: "Класс Ла-Плата" #NT!
+ ARG_light_cruiser_1890_desc: "Класс Патагония" #NT!
+ ARG_light_cruiser_1900_desc: "Буэнос-Айрес Класс" #NT!
+ AUH_heavy_cruiser_1890_desc: "Класс Кайзерина и Кенигина Марии Терезии" #NT!
+ AUH_heavy_cruiser_1900_desc: "Класс «Кайзер Карл VI»" #NT!
+ AUH_light_cruiser_1906_desc: "Класс «Адмирал Спаун»" #NT!
+ AUH_light_cruiser_1910_desc: "Класс Новара" #NT!
+ AUH_coastal_submarine_1906_desc: "Класс U1" #NT!
+ AUH_coastal_submarine_1910_desc: "Класс U5" #NT!
+ AUH_coastal_submarine_1914_desc: "Класс U14" #NT!
+ AUH_coastal_submarine_1918_desc: "Класс U20" #NT!
+ AUH_battleship_1910_desc: "Класс Тегеттхофф" #NT!
+ AUH_destroyer_1890_desc: "Метеор Класс" #NT!
+ AUH_destroyer_1906_desc: "Класс гусар" #NT!
+ AUH_destroyer_1910_desc: "Класс Татра" #NT!
+ AUH_destroyer_1914_desc: "Класс Варасдинер" #NT!
+ AUH_destroyer_1918_desc: "Класс Ersatz Tátra" #NT!
+ AUH_cruiser_submarine_1914_desc: "Класс U27" #NT!
+ AUH_cruiser_submarine_1918_desc: "Класс U43" #NT!
+ AUH_battleship_1890_desc: "Кронпринцесса Эржерзогин Стефани Класс" #NT!
+ AUH_battleship_1900_desc: "Эрцгерцог Карл Класс" #NT!
+ AUH_light_cruiser_1890_desc: "Зара Класс" #NT!
+ AUH_light_cruiser_1900_desc: "Зента Класс" #NT!
+ BRA_light_cruiser_1906_desc: "Класс Баия" #NT!
+ BRA_coastal_submarine_1910_desc: "Класс F1" #NT!
+ BRA_battleship_1906_desc: "Класс Минас-Жерайс" #NT!
+ BRA_destroyer_1890_desc: "Класс Тирадентис" #NT!
+ BRA_destroyer_1900_desc: "Класс Тамойо" #NT!
+ BRA_destroyer_1906_desc: "Пара Класс" #NT!
+ BRA_battleship_1890_desc: "Класс Риачуэло" #NT!
+ BRA_battleship_1900_desc: "Класс маршала Деодоро" #NT!
+ BRA_light_cruiser_1890_desc: "Класс Траяно" #NT!
+ BRA_light_cruiser_1900_desc: "Класс Бенджамина Константа" #NT!
+ CHI_light_cruiser_1910_desc: "Класс Чао Хо" #NT!
+ CHI_destroyer_1906_desc: "Класс Ху Пэн" #NT!
+ CHI_destroyer_1910_desc: "Класс Чан Фэн" #NT!
+ CHI_light_cruiser_1890_desc: "Класс Хай Цин" #NT!
+ CHI_light_cruiser_1900_desc: "Класс Кай Чи" #NT!
+ CHL_heavy_cruiser_1890_desc: "Класс Эсмеральда" #NT!
+ CHL_coastal_submarine_1914_desc: "Класс H" #NT!
+ CHL_battleship_1918_desc: "Альмиранте Латорре Класс" #NT!
+ CHL_destroyer_1890_desc: "Класс Альмиранте Линч" #NT!
+ CHL_destroyer_1900_desc: "Класс «Капитан Меринос Джарпа»" #NT!
+ CHL_destroyer_1910_desc: "Альмирант Линч II класса" #NT!
+ CHL_destroyer_1914_desc: "Класс Альмиранте Уильямса" #NT!
+ CHL_battleship_1890_desc: "Класс Уаскар" #NT!
+ CHL_light_cruiser_1890_desc: "Класс Президенте Эрраурис" #NT!
+ CHL_light_cruiser_1900_desc: "Класс Чакабуко" #NT!
+ COL_light_cruiser_1900_desc: "Класс Эль Башира" #NT!
+ DEN_coastal_submarine_1906_desc: "Класс Дюккерен" #NT!
+ DEN_coastal_submarine_1910_desc: "Класс Хавманден" #NT!
+ DEN_coastal_submarine_1914_desc: "Класс Эгир" #NT!
+ DEN_coastal_submarine_1918_desc: "Класс Рота" #NT!
+ DEN_battleship_1890_desc: "Класс Линдормен" #NT!
+ DEN_light_cruiser_1890_desc: "Класс Фьен" #NT!
+ ENG_heavy_cruiser_1890_desc: "Блейк Класс" #NT!
+ ENG_heavy_cruiser_1900_desc: "Класс Дрейк" #NT!
+ ENG_battle_cruiser_1906_desc: "Класс «Непобедимый»" #NT!
+ ENG_battle_cruiser_1910_desc: "Неутомимый класс" #NT!
+ ENG_battle_cruiser_1914_desc: "Класс «Королева Мэри»" #NT!
+ ENG_battle_cruiser_1918_desc: "Класс капота" #NT!
+ ENG_light_cruiser_1906_desc: "Класс приключений" #NT!
+ ENG_light_cruiser_1910_desc: "Класс Веймут" #NT!
+ ENG_light_cruiser_1914_desc: "Класс Каллиопа" #NT!
+ ENG_light_cruiser_1918_desc: "Класс Церера" #NT!
+ ENG_coastal_submarine_1900_desc: "Класс Холланд" #NT!
+ ENG_coastal_submarine_1906_desc: "Класс С" #NT!
+ ENG_coastal_submarine_1910_desc: "S-класс" #NT!
+ ENG_coastal_submarine_1914_desc: "Класс H" #NT!
+ ENG_coastal_submarine_1918_desc: "Класс R" #NT!
+ ENG_carrier_1918_desc: "Класс «Игл»" #NT!
+ ENG_battleship_1906_desc: "Класс «Дредноут»" #NT!
+ ENG_battleship_1910_desc: "Класс Нептун" #NT!
+ ENG_battleship_1914_desc: "Класс Железного Герцога" #NT!
+ ENG_battleship_1918_desc: "Класс мести" #NT!
+ ENG_destroyer_1890_desc: "Класс А" #NT!
+ ENG_destroyer_1900_desc: "Класс реки" #NT!
+ ENG_destroyer_1906_desc: "Класс Свифт" #NT!
+ ENG_destroyer_1910_desc: "Класс Акаста" #NT!
+ ENG_destroyer_1914_desc: "Класс R" #NT!
+ ENG_destroyer_1918_desc: "Эти эсминцы включали классы Admirality и Thornycroft V и W. Они были построены в рамках Программы чрезвычайной военной помощи. Они были окончательной эволюцией британского дизайна эсминцев во время Первой мировой войны, воплощая в себе усовершенствования своих предшественников, а также новые технологические достижения. Большое количество этих кораблей было построено на поздних этапах Первой мировой войны и впоследствии стало основой флотилий эсминцев Королевского флота. Начиная с 1930-х годов они были переведены в резервные флоты, в конечном итоге использовались для сопровождения конвоев. Это были достаточно вооруженные, быстрые суда с хорошей дальностью плавания." #NT!
+ ENG_cruiser_submarine_1914_desc: "Класс «Наутилус»" #NT!
+ ENG_cruiser_submarine_1918_desc: "Класс «меч-рыба»" #NT!
+ ENG_battleship_1890_desc: "Класс Колосс" #NT!
+ ENG_battleship_1900_desc: "Класс Дункан" #NT!
+ ENG_light_cruiser_1890_desc: "Класс Бархэм" #NT!
+ ENG_light_cruiser_1900_desc: "Высокомерный класс" #NT!
+ ENG_carrier_1914_desc: "Класс Кампания" #NT!
+ ENG_submarine_1906_desc: "Класс D" #NT!
+ ENG_submarine_1910_desc: "Класс Е" #NT!
+ ENG_submarine_1914_desc: "F-класс" #NT!
+ ENG_submarine_1918_desc: "Класс L" #NT!
+ EST_destroyer_1914_desc: "Класс Новик" #NT!
+ FRA_heavy_cruiser_1890_desc: "Класс Дюпюи де Ломе" #NT!
+ FRA_heavy_cruiser_1900_desc: "Класс Дюплекс" #NT!
+ FRA_light_cruiser_1918_desc: "Сорт" #NT!
+ FRA_coastal_submarine_1900_desc: "Класс Сирена" #NT!
+ FRA_coastal_submarine_1906_desc: "Y-класс" #NT!
+ FRA_battleship_1910_desc: "Класс Курбе" #NT!
+ FRA_battleship_1914_desc: "Класс Бретанж" #NT!
+ FRA_destroyer_1890_desc: "Класс Дюрандаль" #NT!
+ FRA_destroyer_1900_desc: "Класс аркебузы" #NT!
+ FRA_destroyer_1906_desc: "Класс Спахи" #NT!
+ FRA_destroyer_1910_desc: "Класс Биссон" #NT!
+ FRA_destroyer_1914_desc: "Класс Аэтос" #NT!
+ FRA_destroyer_1918_desc: "Класс Дукла" #NT!
+ FRA_battleship_1890_desc: "Класс Курбе" #NT!
+ FRA_battleship_1900_desc: "Генрих IV класс" #NT!
+ FRA_light_cruiser_1890_desc: "Класс «Кондор»" #NT!
+ FRA_light_cruiser_1900_desc: "Класс Касабьянка" #NT!
+ FRA_carrier_1914_desc: "Класс Фудре" #NT!
+ FRA_submarine_1906_desc: "Класс Архимеда" #NT!
+ FRA_submarine_1910_desc: "Класс Брюмера" #NT!
+ FRA_submarine_1914_desc: "Класс Дюпюи Де Ломе" #NT!
+ FRA_submarine_1918_desc: "Класс О'Бирна" #NT!
+ GER_heavy_cruiser_1890_desc: "Класс «Императорша Августа»" #NT!
+ GER_heavy_cruiser_1900_desc: "Класс «Принц Адальберт»" #NT!
+ GER_battle_cruiser_1906_desc: "Класс Фон дер Танн" #NT!
+ GER_battle_cruiser_1910_desc: "Класс Мольтке" #NT!
+ GER_battle_cruiser_1914_desc: "Класс Зейдлица" #NT!
+ GER_battle_cruiser_1918_desc: "Класс Макензен" #NT!
+ GER_light_cruiser_1906_desc: "Класс Дрезден" #NT!
+ GER_light_cruiser_1910_desc: "Класс Магдебург" #NT!
+ GER_light_cruiser_1914_desc: "Класс Висбаден" #NT!
+ GER_light_cruiser_1918_desc: "Кёльн Класс" #NT!
+ GER_coastal_submarine_1906_desc: "Класс U2" #NT!
+ GER_coastal_submarine_1910_desc: "Класс U13" #NT!
+ GER_coastal_submarine_1914_desc: "Класс УБ1" #NT!
+ GER_coastal_submarine_1918_desc: "Класс UC1" #NT!
+ GER_battleship_1906_desc: "Класс Нассау" #NT!
+ GER_battleship_1910_desc: "Класс Кайзера" #NT!
+ GER_battleship_1914_desc: "Бавария Класс" #NT!
+ GER_destroyer_1890_desc: "Класс D9" #NT!
+ GER_destroyer_1900_desc: "Класс G108" #NT!
+ GER_destroyer_1906_desc: "Класс G137" #NT!
+ GER_destroyer_1910_desc: "Класс V1" #NT!
+ GER_destroyer_1914_desc: "Класс S49" #NT!
+ GER_destroyer_1918_desc: "Класс S131" #NT!
+ GER_battleship_1890_desc: "Класс Кайзера" #NT!
+ GER_battleship_1900_desc: "Класс Брауншвейг" #NT!
+ GER_light_cruiser_1890_desc: "Класс Ирен" #NT!
+ GER_submarine_1906_desc: "Класс U17" #NT!
+ GER_submarine_1910_desc: "Класс U19" #NT!
+ GER_submarine_1914_desc: "Класс U51" #NT!
+ GER_submarine_1918_desc: "Класс U139" #NT!
+ GRE_heavy_cruiser_1890_desc: "Класс Базелеос Георгиос" #NT!
+ GRE_light_cruiser_1914_desc: "Сорт" #NT!
+ GRE_coastal_submarine_1910_desc: "Класс Дельфин" #NT!
+ GRE_destroyer_1900_desc: "Ники Класс" #NT!
+ GRE_destroyer_1906_desc: "Класс Тиелла" #NT!
+ GRE_destroyer_1910_desc: "Класс Аэтос" #NT!
+ GRE_battleship_1900_desc: "Класс Миссисипи" #NT!
+ GRE_light_cruiser_1890_desc: "Класс Эллада" #NT!
+ HOL_light_cruiser_1918_desc: "Класс Суматра" #NT!
+ HOL_coastal_submarine_1906_desc: "Класс О1" #NT!
+ HOL_coastal_submarine_1910_desc: "Класс О2" #NT!
+ HOL_coastal_submarine_1914_desc: "Класс О6" #NT!
+ HOL_destroyer_1906_desc: "Класс лада" #NT!
+ HOL_battleship_1890_desc: "Класс Рейнира Клаэссена" #NT!
+ HOL_battleship_1900_desc: "Класс «Королева Регентов»" #NT!
+ HOL_light_cruiser_1890_desc: "Класс Суматра" #NT!
+ HOL_submarine_1906_desc: "Сорт" #NT!
+ HOL_submarine_1914_desc: "Класс К2" #NT!
+ HOL_submarine_1918_desc: "Класс К5" #NT!
+ ITA_heavy_cruiser_1890_desc: "Класс Марко Поло" #NT!
+ ITA_light_cruiser_1906_desc: "Класс Ливия" #NT!
+ ITA_light_cruiser_1910_desc: "Класс Кварто" #NT!
+ ITA_light_cruiser_1914_desc: "Класс Кампания" #NT!
+ ITA_coastal_submarine_1900_desc: "Класс Дельфино" #NT!
+ ITA_coastal_submarine_1906_desc: "Фока Класс" #NT!
+ ITA_coastal_submarine_1910_desc: "Класс Медуза" #NT!
+ ITA_coastal_submarine_1914_desc: "Класс F" #NT!
+ ITA_coastal_submarine_1918_desc: "Класс N" #NT!
+ ITA_battleship_1910_desc: "Класс Данте Алигьери" #NT!
+ ITA_battleship_1914_desc: "Класс Дориа" #NT!
+ ITA_destroyer_1890_desc: "Класс фульмин" #NT!
+ ITA_destroyer_1900_desc: "Класс Нембо" #NT!
+ ITA_destroyer_1906_desc: "Класс Индомито" #NT!
+ ITA_destroyer_1910_desc: "Класс Audace" #NT!
+ ITA_destroyer_1914_desc: "Класс Ла Маса" #NT!
+ ITA_destroyer_1918_desc: "Паластро Класс" #NT!
+ ITA_cruiser_submarine_1914_desc: "Класс Микка" #NT!
+ ITA_battleship_1890_desc: "Класс Дуилио" #NT!
+ ITA_battleship_1900_desc: "Класс Регины Маргериты" #NT!
+ ITA_light_cruiser_1890_desc: "Класс Триполи" #NT!
+ ITA_light_cruiser_1900_desc: "Класс Агордат" #NT!
+ ITA_submarine_1914_desc: "Класс Пачинотти" #NT!
+ ITA_submarine_1918_desc: "Класс Прована" #NT!
+ JAP_heavy_cruiser_1890_desc: "Класс Тиёда" #NT!
+ JAP_heavy_cruiser_1900_desc: "Класс Касуга" #NT!
+ JAP_battle_cruiser_1910_desc: "Класс Ибуки" #NT!
+ JAP_battle_cruiser_1914_desc: "Конго Класс" #NT!
+ JAP_light_cruiser_1906_desc: "Класс Йодо" #NT!
+ JAP_light_cruiser_1910_desc: "Chikuma Class" #NT!
+ JAP_light_cruiser_1914_desc: "Класс Тенрю" #NT!
+ JAP_light_cruiser_1918_desc: "Класс Кума" #NT!
+ JAP_coastal_submarine_1900_desc: "Класс Холланд" #NT!
+ JAP_coastal_submarine_1906_desc: "Викерс C Класс" #NT!
+ JAP_carrier_1918_desc: "Класс Хошо" #NT!
+ JAP_battleship_1910_desc: "Класс Сетцу" #NT!
+ JAP_battleship_1914_desc: "Класс Фусо" #NT!
+ JAP_battleship_1918_desc: "Класс Нагато" #NT!
+ JAP_destroyer_1890_desc: "Ikazuchi Class" #NT!
+ JAP_destroyer_1900_desc: "Класс Пуилики" #NT!
+ JAP_destroyer_1906_desc: "Класс Умикадзе" #NT!
+ JAP_destroyer_1910_desc: "Класс Сакуры" #NT!
+ JAP_destroyer_1914_desc: "Момо Класс" #NT!
+ JAP_destroyer_1918_desc: "Класс Минекадзе" #NT!
+ JAP_cruiser_submarine_1918_desc: "КТ класс" #NT!
+ JAP_battleship_1890_desc: "Класс Фусо" #NT!
+ JAP_battleship_1900_desc: "Iwami Class" #NT!
+ JAP_light_cruiser_1890_desc: "Класс Мацусима" #NT!
+ JAP_light_cruiser_1900_desc: "Класс «Цусима»" #NT!
+ JAP_carrier_1914_desc: "Класс Вакамия" #NT!
+ JAP_submarine_1910_desc: "ВК Класс" #NT!
+ JAP_submarine_1914_desc: "Класс S1" #NT!
+ JAP_submarine_1918_desc: "Класс S2" #NT!
+ MEX_light_cruiser_1890_desc: "Класс Сарагоса" #NT!
+ NOR_coastal_submarine_1906_desc: "Класс Коббен" #NT!
+ NOR_coastal_submarine_1910_desc: "Класс А2" #NT!
+ NOR_destroyer_1890_desc: "Класс Валькирия" #NT!
+ NOR_destroyer_1906_desc: "Класс Драуг" #NT!
+ NOR_battleship_1890_desc: "Класс Хаарфагре" #NT!
+ NOR_battleship_1900_desc: "Класс «Норвегия»" #NT!
+ NOR_light_cruiser_1890_desc: "Класс Викинг" #NT!
+ POR_coastal_submarine_1900_desc: "Класс Плонжер" #NT!
+ POR_coastal_submarine_1910_desc: "Эспадарте Класс" #NT!
+ POR_coastal_submarine_1914_desc: "Фока Класс" #NT!
+ POR_destroyer_1900_desc: "Класс Техо" #NT!
+ POR_destroyer_1910_desc: "Класс Гуадина" #NT!
+ POR_battleship_1890_desc: "Класс Васко да Гама" #NT!
+ POR_light_cruiser_1890_desc: "Класс Адамастор" #NT!
+ POR_light_cruiser_1900_desc: "Класс Раинья Дона Амелия" #NT!
+ PRU_light_cruiser_1906_desc: "Класс Альмиранте Грау" #NT!
+ PRU_coastal_submarine_1910_desc: "Ферре Класс" #NT!
+ PRU_destroyer_1910_desc: "Класс егерей" #NT!
+ PRU_light_cruiser_1890_desc: "Класс Лима" #NT!
+ ROM_destroyer_1918_desc: "Класс Вифор" #NT!
+ ROM_light_cruiser_1890_desc: "Класс Элизабета" #NT!
+ RUS_heavy_cruiser_1890_desc: "Класс князя Пожарского" #NT!
+ RUS_heavy_cruiser_1900_desc: "Класс Россия" #NT!
+ RUS_light_cruiser_1910_desc: "Муравьев Амурский Класс" #NT!
+ RUS_coastal_submarine_1900_desc: "Класс Дельфин" #NT!
+ RUS_coastal_submarine_1906_desc: "Класс Карп" #NT!
+ RUS_coastal_submarine_1910_desc: "Класс Акула" #NT!
+ RUS_coastal_submarine_1914_desc: "Класс F1" #NT!
+ RUS_battleship_1910_desc: "Класс Гангут" #NT!
+ RUS_battleship_1914_desc: "Императрица Мария Класс" #NT!
+ RUS_destroyer_1890_desc: "Класс Пруитки" #NT!
+ RUS_destroyer_1900_desc: "Внимательный класс" #NT!
+ RUS_destroyer_1906_desc: "Класс «Лейтенант Шестаков»" #NT!
+ RUS_destroyer_1910_desc: "Беспокойный класс" #NT!
+ RUS_destroyer_1914_desc: "Изяслав Класс" #NT!
+ RUS_battleship_1890_desc: "Класс Адмирала Лазарева" #NT!
+ RUS_battleship_1900_desc: "Класс «Бородино»" #NT!
+ RUS_light_cruiser_1890_desc: "Ярославский класс" #NT!
+ RUS_light_cruiser_1900_desc: "Алмаз Класс" #NT!
+ RUS_carrier_1914_desc: "Класс Орлица" #NT!
+ RUS_submarine_1906_desc: "Класс Краб" #NT!
+ RUS_submarine_1910_desc: "Морж Класс" #NT!
+ RUS_submarine_1914_desc: "Класс баров" #NT!
+ SIA_destroyer_1906_desc: "Класс Суа Теймон Чон" #NT!
+ SIA_destroyer_1918_desc: "Класс R" #NT!
+ SIA_light_cruiser_1890_desc: "Класс Маха Чакри" #NT!
+ SPA_heavy_cruiser_1890_desc: "Эмпарадор Карлос V Класс" #NT!
+ SPA_light_cruiser_1918_desc: "Сорт" #NT!
+ SPA_coastal_submarine_1900_desc: "Перал Класс" #NT!
+ SPA_coastal_submarine_1914_desc: "Класс Айзека Пераля" #NT!
+ SPA_coastal_submarine_1918_desc: "Класс Б" #NT!
+ SPA_battleship_1910_desc: "Класс España" #NT!
+ SPA_destroyer_1890_desc: "Класс Аудаз" #NT!
+ SPA_destroyer_1910_desc: "Класс Бустаманте" #NT!
+ SPA_destroyer_1918_desc: "Альседо Класс" #NT!
+ SPA_battleship_1890_desc: "Пелайо Класс" #NT!
+ SPA_light_cruiser_1890_desc: "Веласко Класс" #NT!
+ SPA_light_cruiser_1900_desc: "Класс Эстрамадура" #NT!
+ SWE_coastal_submarine_1900_desc: "Класс Хаджен" #NT!
+ SWE_coastal_submarine_1906_desc: "Класс Хвален" #NT!
+ SWE_coastal_submarine_1910_desc: "Класс Svärdfisken" #NT!
+ SWE_coastal_submarine_1914_desc: "Класс Лаксен" #NT!
+ SWE_coastal_submarine_1918_desc: "Класс Абборрен" #NT!
+ SWE_destroyer_1900_desc: "Режим Класса" #NT!
+ SWE_destroyer_1906_desc: "Класс Рагнар" #NT!
+ SWE_destroyer_1914_desc: "Класс Врангель" #NT!
+ SWE_battleship_1890_desc: "Класс Свеа" #NT!
+ SWE_battleship_1900_desc: "Класс Аран" #NT!
+ SWE_light_cruiser_1890_desc: "Класс Örnen" #NT!
+ SWE_submarine_1914_desc: "Класс Хаджен" #NT!
+ SWE_submarine_1918_desc: "Класс Баверн" #NT!
+ TUR_heavy_cruiser_1890_desc: "Класс Османие" #NT!
+ TUR_heavy_cruiser_1900_desc: "Класс Месудие" #NT!
+ TUR_destroyer_1890_desc: "Класс Берк I Эфсан" #NT!
+ TUR_destroyer_1906_desc: "Класс Дюрандаль" #NT!
+ TUR_battleship_1890_desc: "Класс «Бранденбург»" #NT!
+ TUR_light_cruiser_1890_desc: "Мехмет Селим Класс" #NT!
+ TUR_light_cruiser_1900_desc: "Класс Абдул Хамида" #NT!
+ URU_light_cruiser_1900_desc: "Класс Догали" #NT!
+ USA_heavy_cruiser_1890_desc: "Нью-Йорк Класс" #NT!
+ USA_heavy_cruiser_1900_desc: "Пенсильвания Класс" #NT!
+ USA_light_cruiser_1906_desc: "Класс Честера" #NT!
+ USA_light_cruiser_1918_desc: "Омаха Класс" #NT!
+ USA_coastal_submarine_1900_desc: "Класс Холланд" #NT!
+ USA_coastal_submarine_1906_desc: "Класс С" #NT!
+ USA_coastal_submarine_1910_desc: "Класс D" #NT!
+ USA_carrier_1918_desc: "Класс Лэнгли" #NT!
+ USA_battleship_1906_desc: "Класс Делавэр" #NT!
+ USA_battleship_1910_desc: "Класс Вайоминга" #NT!
+ USA_battleship_1914_desc: "Класс Невада" #NT!
+ USA_battleship_1918_desc: "Класс Теннесси" #NT!
+ USA_destroyer_1890_desc: "Класс Бейнбридж" #NT!
+ USA_destroyer_1900_desc: "Класс Тракстун" #NT!
+ USA_destroyer_1906_desc: "Класс Полдинга" #NT!
+ USA_destroyer_1910_desc: "Класс Кассина" #NT!
+ USA_destroyer_1914_desc: "Класс Такера" #NT!
+ USA_destroyer_1918_desc: "Класс Колдуэлл" #NT!
+ USA_battleship_1890_desc: "Техасский класс" #NT!
+ USA_battleship_1900_desc: "Класс Коннектикута" #NT!
+ USA_light_cruiser_1890_desc: "Класс Атланта" #NT!
+ USA_light_cruiser_1900_desc: "Денвер Класс" #NT!
+ USA_submarine_1906_desc: "Класс Е" #NT!
+ USA_submarine_1910_desc: "Класс F" #NT!
+ USA_submarine_1914_desc: "Класс L" #NT!
+ USA_submarine_1918_desc: "О Класс" #NT!

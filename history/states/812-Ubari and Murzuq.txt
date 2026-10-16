@@ -1,0 +1,20 @@
+state={
+	id=812
+	name="STATE_812"
+	history={
+	owner = TUR
+		add_core_of = LBA
+		
+		1912.10.18 = {
+			owner = LBA
+			controller = LBA
+		}
+	}	
+	provinces={
+		12022 
+	}
+	manpower=10345
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable = yes
+}

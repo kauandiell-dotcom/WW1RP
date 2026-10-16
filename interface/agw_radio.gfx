@@ -1,0 +1,8 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_agw_radio_album_art"
+		texturefile = "gfx/interface/topbar/musicplayer/greatwarroleplayradio.dds"
+		noOfFrames = 2
+	}	
+}

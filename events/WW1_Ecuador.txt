@@ -1,0 +1,504 @@
+﻿add_namespace = ww1_ecuador
+# Choosing a successor
+country_event = {
+	id = ww1_ecuador.1
+	title = ww1_ecuador.1.t
+	desc = ww1_ecuador.1.d
+	picture = GFX_report_event_election_vote
+	fire_only_once = yes
+	trigger = {
+		original_tag = ECU
+		has_country_leader = {
+			character = ECU_eloy_alfaro
+		}
+		date > 1911.01.01
+	}
+	#Emilio Estrada
+	option = {
+		name = ww1_ecuador.1.a
+		set_country_flag = Emilio_Estrada_chosen
+		ai_chance = {
+			factor = 70
+		}
+	}
+	#Flavio Alfaro
+	option = {
+		name = ww1_ecuador.1.b
+		set_country_flag = Flavio_Alfaro_chosen
+		ai_chance = {
+			factor = 30
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+}
+
+#1911 Election
+#########################################
+country_event = {
+	id = ww1_ecuador.2
+	title = ww1_ecuador.2.t
+	desc = {
+		text = ww1_ecuador.2.d
+		trigger = {
+			has_country_flag = Emilio_Estrada_chosen
+		}
+	}
+	desc = {
+		text = ww1_ecuador.2.d_2
+		trigger = {
+			has_country_flag = Flavio_Alfaro_chosen
+		}
+	}
+	picture = GFX_report_event_election_vote
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 25
+	}
+	trigger = {
+		original_tag = ECU
+		OR = {
+			has_country_flag = Flavio_Alfaro_chosen
+			has_country_flag = Emilio_Estrada_chosen
+		}
+		has_country_leader = {
+			character = ECU_eloy_alfaro
+		}
+		date > 1911.6.5
+	}
+	option = {
+		name = ww1_ecuador.2.a
+		set_country_flag = Eloy_Alfaro_resigns
+		if = {
+			limit = {
+				has_country_flag = Flavio_Alfaro_chosen
+			}
+			promote_character = ECU_flavio_alfaro
+		}
+		if = {
+			limit = {
+				has_country_flag = Emilio_Estrada_chosen
+			}
+			promote_character = ECU_emilio_estrada
+			add_political_power = -50
+		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+	# I am the Senate
+	option = {
+		name = ww1_ecuador.2.b
+		trigger = {
+			has_country_flag = Emilio_Estrada_chosen
+		}
+		add_stability = -0.1
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.15
+		}
+		set_country_flag = Eloy_Alfaro_keept_the_power
+		ai_chance = {
+			factor = 70
+		}
+		hidden_effect = {
+			country_event = {
+				id = ww1_ecuador.3
+				days = 30
+				random = 5
+			}
+		}
+	}
+}
+
+# Anti-Alfarist Coup
+###################
+country_event = {
+	id = ww1_ecuador.3
+	title = ww1_ecuador.3.t
+	desc = ww1_ecuador.3.d
+	picture = GFX_report_event_ger_civil_war
+	is_triggered_only = yes
+	option = {
+		name = ww1_ecuador.3.a
+		ECU_eloy_alfaro = {
+			remove_unit_leader_role = yes
+		}
+		promote_character = ECU_emilio_estrada
+		ai_chance = {
+			factor = 65
+		}
+	}
+	#It's treason then
+	option = {
+		name = ww1_ecuador.3.b
+		promote_character = ECU_leonidas_plaza
+		hidden_effect = {
+			set_cosmetic_tag = ECU_civil_war
+		}
+		start_civil_war = {
+			ideology = neutrality
+			size = 0
+			keep_political_leader = no
+			keep_political_party_members = yes
+			states = {
+				649
+			}
+			keep_unit_leaders = {
+				27002
+				27003
+				27004
+			}		
+			hidden_effect = {
+				set_province_controller = 11020
+				set_province_controller = 5120
+				set_province_controller = 8252
+				set_cosmetic_tag = ECU_civil_war_neutrality
+				set_country_flag = ECU_civil_war
+				transfer_units_fraction = {
+					target = ECU
+					size = 0.5
+					stockpile_ratio = 0.5
+					army_ratio = 1
+					keep_unit_leaders_trigger = {
+						OR = {
+							has_trait = politically_connected
+						}
+					}
+				}
+				305 = {
+					create_unit = {
+						division = "name = \"Brigada de Infantería\" division_template = \"Brigada de Infantería\" start_experience_factor = 0.1"
+						owner = PREV
+						prioritize_location = 8252
+					}
+					create_unit = {
+						division = "name = \"Brigada de Infantería\" division_template = \"Brigada de Infantería\" start_experience_factor = 0.1"
+						owner = PREV
+						prioritize_location = 11020
+					}
+				}
+				delete_unit = {
+					state = 649
+					disband = no
+				}
+			}
+		}
+		ai_chance = {
+			factor = 40
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+}
+
+# Emilio Estrada dies
+######################
+country_event = {
+	id = ww1_ecuador.4
+	title = ww1_ecuador.4.t
+	desc = {
+		text = ww1_ecuador.4.d
+		trigger = {
+			has_country_flag = Eloy_Alfaro_keept_the_power
+		}
+	}
+	desc = {
+		text = ww1_ecuador.4.d_2
+		trigger = {
+			NOT = {
+				has_country_flag = Eloy_Alfaro_keept_the_power
+			}
+		}
+	}
+	desc = ww1_ecuador.4.d
+	picture = GFX_report_event_hol_cabinet_gerbrandy
+	fire_only_once = yes
+	trigger = {
+		original_tag = ECU
+		has_country_leader = {
+			character = ECU_emilio_estrada
+		}
+		date > 1911.12.1
+	}
+	mean_time_to_happen = { days = 15 }
+	option = {
+		name = ww1_ecuador.4.a
+		kill_ideology_leader = democratic
+		if = {
+			limit = {
+				has_country_flag = Eloy_Alfaro_keept_the_power
+			}
+			promote_character = ECU_freile_zaldumbide
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = yes
+				last_election = "1908.9.1"
+			}
+			retire_character = ECU_flavio_alfaro
+			retire_character = ECU_pedro_jacinto_montero
+			hidden_effect = {
+				ECU_carlos_concha = {
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader={
+							ideology=social_liberalism
+							traits={ first_among_equals }
+						}
+					}
+				}	
+			}
+			else = {
+				promote_character = ECU_flavio_alfaro
+			}
+		}
+	}
+}
+
+# 1912 (1915) Election
+######################
+country_event = {
+	id = ww1_ecuador.5
+	title = ww1_ecuador.2.t
+	desc = {
+		text = ww1_ecuador.5.d
+		trigger = {
+			has_government = neutrality
+		}
+	}
+	desc = {
+		text = ww1_ecuador.5.d_2
+		trigger = {
+			has_country_leader = {
+				character = ECU_flavio_alfaro
+			}
+		}
+	}
+	picture = GFX_report_event_election_vote
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			has_government = neutrality
+			has_country_leader = {
+				character = ECU_flavio_alfaro
+			}
+		}
+		date > 1912.8.10
+		date < 1916.7.1
+	}
+	option = {
+		name = ww1_ecuador.5.a
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = yes
+			}
+		}
+		promote_character = ECU_leonidas_plaza
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.15
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = {
+		name = ww1_ecuador.5.b
+		trigger = {
+			has_country_leader = {
+				character = ECU_flavio_alfaro
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+}
+
+# 1916 (1919) Election
+######################
+country_event = {
+	id = ww1_ecuador.6
+	title = ww1_ecuador.2.t
+	desc = ww1_ecuador.6.d
+	picture = GFX_report_event_election_vote
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			has_government = neutrality
+			has_government = democratic
+		}
+		date > 1916.8.10
+		date < 1920.7.1
+	}
+	option = {
+		name = ww1_ecuador.6.a
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			ECU_alfredo_baquerizo = {
+				promote_character = social_liberalism
+			}
+			else = {
+				ECU_alfredo_baquerizo = {
+					promote_character = authoritarian_democracy
+				}
+			}
+		}
+	}
+}
+
+# Eloy Alfaro Killed!
+#######################
+country_event = {
+	id = ww1_ecuador.7
+	title = ww1_ecuador.7.t
+	desc = ww1_ecuador.7.d
+	picture = GFX_report_event_ger_civil_war
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			division_template = {
+				name = "Brigada de la Milicia"
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+					militia = { x = 0 y = 3 }
+				}
+			}
+		}
+	}
+	trigger = {
+		original_tag = ECU
+		has_country_leader = {
+			character = ECU_leonidas_plaza
+		}
+		has_country_leader = {
+			character = ECU_carlos_concha
+			ruling_only = no
+		}
+		has_country_flag = Eloy_Alfaro_keept_the_power
+		has_civil_war = no
+		date > 1913.9.20
+	}
+	option = {
+		name = ww1_ecuador.7.a
+		retire_character = ECU_eloy_alfaro
+		start_civil_war = {
+			size = 0.3
+			ideology = democratic
+			keep_political_leader = yes
+			keep_political_party_members = yes
+			PREV = {
+				ECU_carlos_concha = {
+					set_nationality = PREV.PREV
+				}
+			}
+			promote_character = ECU_carlos_concha
+			hidden_effect = {
+				set_cosmetic_tag = ECU_civil_war_democratic
+				set_country_flag = ECU_civil_war
+				set_war_support = 0.7
+				set_province_controller = 8047
+				delete_unit = {
+					state = 649
+					disband = yes
+				}
+				305 = {
+					create_unit = {
+						division = "name = \"Milicia Alfarista\" division_template = \"Brigada de la Milicia\" start_experience_factor = 0.4"
+						owner = PREV
+						prioritize_location = 8047
+					}
+					create_unit = {
+						division = "name = \"Milicia Alfarista\" division_template = \"Brigada de la Milicia\" start_experience_factor = 0.4"
+						owner = PREV
+						prioritize_location = 8047
+					}
+				}
+				ECU_carlos_concha = {
+					add_corps_commander_role = {
+						traits = {
+							militias_officer
+							trickster
+							guerilla_fighter
+						}
+						skill = 2
+						attack_skill = 2
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 2
+						visible = {
+							is_country_leader = yes
+						}
+					}
+				}
+			}
+			keep_unit_leaders = {
+				27005
+			}
+			keep_unit_leaders_trigger = {
+				OR = {
+					has_trait = politically_connected
+				}
+			}
+			states = {
+				649
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					num_divisions < 2
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Milicia\" division_template = \"Brigada de la Milicia\" start_experience_factor = 0.4"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Milicia\" division_template = \"Brigada de la Milicia\" start_experience_factor = 0.4"
+						owner = PREV
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ww1_ecuador.8
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		tag = ECU
+		has_civil_war = yes
+		has_full_control_of_state = 305
+		NOT = {
+			has_full_control_of_state = 649
+		}
+	}
+	immediate = {
+		set_state_controller = 649
+	}
+}

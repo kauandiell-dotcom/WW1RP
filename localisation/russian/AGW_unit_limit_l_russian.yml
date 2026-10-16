@@ -1,0 +1,35 @@
+﻿l_russian:
+ ### Demobilisation ###
+ mobilisation_penalty_modifier:0 "Выше предела дивизий"
+
+ unit_limit_count:0 "[unit_limit_count_loc]/[?max_divisions|H0]"
+
+ unit_limit_count_red:0 "[?num_actual_divisions|R0]"
+ unit_limit_count_yellow:0 "[?num_actual_divisions|H0]"
+ unit_limit_count_green:0 "[?num_actual_divisions|G0]"
+
+ unit_limit_factory_bonus:0 "Бонус от фабрик к лимиту дивизий"
+ unit_limit_bonus:0 "Лимит дивизий"
+
+ unit_limit_label:0 "§HМаксимальное количество поддерживаемых дивизий§!"
+ unit_limit_desc:0 "Каждая страна имеет возможность поддерживать только определенное количество отдельных воинских подразделений, прежде чем их экономика и инфраструктура начнут бороться за их поддержание.\n\nМаксимальное количество поддерживаемых подразделений основано на общей численности населения страны и принадлежащих ей государствах, а затем умножается на общий уровень индустриализации страны.\n\n§L - База из общей численности населения: [?base_population|G0][unit_limit_noncore_population][unit_limit_crownland_population_bonus]\n - База из принадлежащих государств: [?base_states|G0][unit_limit_crownland_state_bonus]\n - Общая база: [?base_units|G0]\n\n - Модификатор индустриализации: [?industry_factor|H%][unit_limit_modifier_was_capped][unit_limit_extra_modifier_line_break][unit_limit_faction_leader][unit_limit_has_war][unit_limit_economy_law][unit_limit_was_capped][unit_limit_lower_ limit_used][unit_limit_upper_limit_used][ unit_limit_bonus_used]\n\n ОКОНЧАТЕЛЬНАЯ ИТОГО: [?max_divisions|H0]\n\nОбратите внимание, что изменения в вышеуказанном могут занять до одной внутриигровой недели, прежде чем они будут отражены в расчете.§![above_unit_limit_desc]"
+
+ unit_limit_desc_fake_intel:0 "(§HПоддельные подразделения Intel§! не засчитываются в лимит деления)"
+
+ unit_limit_desc_above_limit:0 "\n\n--------------\n\n§RВ настоящее время мы превысили свои возможности, и единственный способ облегчить нагрузку на нашу страну — это убрать некоторые из наших подразделений.§!\n\nОрганизация подразделения: [?mobilisation_penalty_var|+=%1]\nФабрики потребительских товаров: [ ?mobilisation_penalty_var_positive|=%H1]\nЗаводская производительность: [?mobilisation_penalty_var|+=%]\nВремя обучения: [?mobilisation_penalty_var_positive|-=%]\nКоэффициент подкрепления: [?mobilisation_penalty_var|+=%1]"
+
+ unit_limit_noncore_population_desc:0 "\n      (§H10%§! из ненациональных территорий: [?non_core_base|H1])"
+ unit_limit_crownland_population_bonus_desc:0 "\n      ([?crownland_base_units|H0] from the §HCrownlands§!)"
+ unit_limit_crownland_state_bonus_desc:0 "\n      ([?crownland_states|H0] from the §HCrownlands§!)"
+ unit_limit_modifier_was_capped_desc:0 "\n      (Capped to a minimum of [?0.5|H%])"
+ unit_limit_faction_leader_desc:0 "\n   - Faction Leader: §G+15%§!"
+ unit_limit_has_war_desc:0 "\n   - Has War: §G+25%§!"
+ unit_limit_was_capped_desc:0 "\n\n   - Uncapped Total: [?net_max_divisions|H0]"
+ unit_limit_num_states_used_desc:0 "\n\n   Because the total provided was lower than the number of owned states ([?num_owned_states|H0]), that was used instead."
+ unit_limit_default_used_desc:0 "\n\n   Because the total provided was less than the default (§H5§!), that was used instead."
+ unit_limit_bonus_used_desc:0 "\n\n   - Дополнительные модификаторы: [?additional_unit_limit|=+0] to cap"
+
+ unit_limit_low_economic_mobilisation:0 "\n   - §H$low_economic_mobilisation$§!: [?modifier@unit_limit_factory_bonus|+=%0]"
+ unit_limit_partial_economic_mobilisation:0 "\n   - §H$partial_economic_mobilisation$§!: [?modifier@unit_limit_factory_bonus|+=%0]"
+ unit_limit_war_economy:0 "\n   - §H$war_economy$§!: [?modifier@unit_limit_factory_bonus|+=%0]"
+ unit_limit_tot_economic_mobilisation:0 "\n   - §H$tot_economic_mobilisation$§!: [?modifier@unit_limit_factory_bonus|+=%0]"

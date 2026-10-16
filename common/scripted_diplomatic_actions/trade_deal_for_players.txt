@@ -1,0 +1,115 @@
+scripted_diplomatic_actions = {
+	trade_deal = {
+
+		visible = {  
+			THIS = { NOT = { has_war_with = ROOT } }
+			NOT = {
+				is_in_array = {
+					array = ROOT.trade_deal
+					value = FROM.id
+				}			
+			}
+			if = {
+				limit = {
+					is_debug = no
+				}
+				THIS = { is_ai = no }
+			}
+		}
+		
+		selectable = { 
+			NOT = {
+				is_in_array = {
+					array = ROOT.embargoed_countries
+					value = FROM.id
+				}			
+			}
+			if = {
+				limit = {
+					is_debug = no
+				}
+				THIS = { is_ai = no }
+			}
+			THIS = { NOT = { has_idea = closed_economy } }
+		}
+
+		requires_acceptance = yes
+		cost = 100
+		command_power = 0
+
+		show_acceptance_on_action_button = yes
+
+		icon = 4 
+
+		on_sent_effect = {
+		}
+
+		can_be_accepted = {
+			always = yes
+		}
+		can_be_sent = {
+			always = yes
+		}
+
+		complete_effect = {
+			td_diplomacy = yes
+
+		}
+		ai_acceptance = {
+				condition = {
+					base =10
+				}
+			}
+
+			ai_desire = {
+				base = 1
+
+			}
+	}
+	
+	trade_deal_reject= {
+		visible = {  
+			THIS = {NOT= {has_war_with = ROOT}}
+			THIS = { NOT = { has_opinion_modifier = embargo_trade } }
+			is_in_array = {
+				array = ROOT.trade_deal
+				value = FROM.id
+			}	
+		}
+		
+		selectable = { 
+			
+		}
+
+		requires_acceptance = no
+		cost = 0 
+		command_power = 0
+
+		show_acceptance_on_action_button = no
+
+		icon = 4 
+
+		on_sent_effect = {
+		}
+
+		can_be_accepted = {
+			always = yes
+		}
+		can_be_sent = {
+			always = yes
+		}
+
+		complete_effect = {
+			td_diplomacy_remove = yes
+		}
+		ai_acceptance = {
+			condition = {
+				base = 10
+			}
+		}
+
+		ai_desire = {
+			base = 1
+		}
+	}
+}

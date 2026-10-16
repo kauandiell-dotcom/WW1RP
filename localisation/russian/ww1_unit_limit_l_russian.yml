@@ -1,0 +1,55 @@
+﻿l_russian:
+  
+ ### Demobilisation ### 
+ mobilisation_penalty_modifier: "Выше лимита батальона" #NT!
+  
+ unit_limit_count: "[unit_limit_count_loc]/[?max_divisions|H0]" #NT!
+  
+ unit_limit_count_red: "[?num_actual_divisions|R0]" #NT!
+ unit_limit_count_yellow: "[?num_actual_divisions|H0]" #NT!
+ unit_limit_count_green: "[?num_actual_divisions|G0]" #NT!
+  
+ unit_limit_factory_bonus: "Заводской бонус к лимиту батальона" #NT!
+ unit_limit_bonus: "Лимит батальона" #NT!
+  
+ unit_limit_label: "§HМаксимальное количество поддерживаемых батальонов§!" #NT!
+ unit_limit_desc: "Каждая страна имеет возможность содержать только определенное количество отдельных военных батальонов, прежде чем ее экономика и инфраструктура начнут бороться за их содержание.\n\nМаксимальное количество поддерживаемых подразделений основано на общей численности населения страны и принадлежащих ей штатов, а затем умножается на общий уровень индустриализации страны.\n\n§L - База из общей численности населения: [?base_population|G0][unit_limit_noncore_population][unit_limit_puppet_base][unit_limit_crownland_population_bonus]\n - База из принадлежащих ей штатов: [?base_states|G0][unit_limit_crownland_state_bonus]\n - Общая база: [?base_units|G0]\n\n - Модификатор индустриализации: [?industry_factor|H%][unit_limit_modifier_was_capped][?base_population|G0]0[?base_population|G0]1[?base_population|G0]2[?base_population|G0]3[?base_population|G0]4[?base_population|G0]5[?base_population|G0]6[?base_population|G0]7[?base_population|G0]8[?base_population|G0]9[unit_limit_noncore_population]0[unit_limit_noncore_population]1[unit_limit_noncore_population]2[unit_limit_noncore_population]3[unit_limit_noncore_population]4[unit_limit_noncore_population]5[unit_limit_noncore_population]6\n\n ОКОНЧАТЕЛЬНЫЙ ИТОГ: [unit_limit_noncore_population]7\n\nОбратите внимание, что изменения вышеперечисленного могут занять до одной игровой недели, прежде чем они будут отражены в расчетах.[unit_limit_noncore_population]8[unit_limit_noncore_population]9" #NT!
+  
+ unit_limit_desc_fake_intel: "(§HПоддельные разведывательные дивизии§! не учитываются в лимите батальона)" #NT!
+  
+ unit_limit_desc_above_limit: "\n\n--------------\n\n§RВ настоящее время мы превысили свои возможности, и единственный способ облегчить давление на нашу страну — это вывести некоторые из наших дивизий.§!\n\nОрганизация дивизии: [?mobilisation_penalty_var|+=%1]\nКоэффициент потребления поставок: [?mobilisation_penalty_var_positive|-=%]\nПроизводство завода: [?mobilisation_penalty_var|+=%]\nВремя обучения: [?mobilisation_penalty_var_positive|-=%]\nМоральный дух армии: [?mobilisation_penalty_var|+=%1]\nУсиление командной власти: [?mobilisation_penalty_var|+=%1]\nСкорость мобилизации: [?mobilisation_penalty_var|+=%1]" #NT!
+  
+ unit_limit_noncore_population_desc: "\n (§H10%§! из неосновных штатов: [?non_core_base|H1])" #NT!
+ unit_limit_puppet_base_desc: "\n (§H20%§! из марионеточных состояний низкого уровня: [?puppet_base|H1])" #NT!
+  
+ unit_limit_crownland_population_bonus_desc: "\n ([?crownland_base_units|H0] из §HCrownlands§!)" #NT!
+ unit_limit_crownland_state_bonus_desc: "\n ([?crownland_states|H0] из §HCrownlands§!)" #NT!
+ unit_limit_modifier_was_capped_desc: "\n (Ограничено минимумом [?0.5|H%])" #NT!
+ unit_limit_faction_leader_desc: "\n - Лидер фракции: §G+15%§!" #NT!
+ unit_limit_is_major_desc: "\n - Главный: §G+30%§!" #NT!
+ unit_limit_is_low_level_puppet_desc: "\n - Марионетка низкого уровня: §R-20%§!" #NT!
+ unit_limit_great_war_desc: "\n - Эпоха Великой войны: §G+30%§!" #NT!
+ unit_limit_has_war_desc: "\n - Имеет войну: §G+25%§!" #NT!
+ unit_limit_was_capped_desc: "\n\n - Неограниченный итог: [?net_max_divisions|H0]" #NT!
+ unit_limit_num_states_used_desc: "\n\n Поскольку предоставленная общая сумма была меньше количества принадлежащих штатов ([?num_owned_states|H0]), она была использована вместо нее." #NT!
+ unit_limit_default_used_desc: "\n\n Поскольку предоставленная общая сумма была меньше значения по умолчанию (§H5§!), оно было использовано вместо этого." #NT!
+ unit_limit_bonus_used_desc: "\n\n - Дополнительные модификаторы: [?additional_unit_limit|=+0] до максимума" #NT!
+  
+ unit_limit_interwar_recovery: "\n - §H$interwar_recovery$§!: [?modifier@unit_limit_factory_bonus|+=%0]" #NT!
+ unit_limit_undisturbed_isolation: "\n - §H$undisturbed_isolation$§!: [?modifier@unit_limit_factory_bonus|+=%0]" #NT!
+ unit_limit_low_economic_mobilisation: "\n - §H$low_economic_mobilisation$§!: [?modifier@unit_limit_factory_bonus|+=%0]" #NT!
+ unit_limit_partial_economic_mobilisation: "\n - §H$partial_economic_mobilisation$§!: [?modifier@unit_limit_factory_bonus|+=%0]" #NT!
+ unit_limit_war_economy: "\n - §H$war_economy$§!: [?modifier@unit_limit_factory_bonus|+=%0]" #NT!
+ unit_limit_tot_economic_mobilisation: "\n - §H$tot_economic_mobilisation$§!: [?modifier@unit_limit_factory_bonus|+=%0]" #NT!
+ unit_limit_250_unit_bonus_desc: "\n - Идеи: §H+250§!" #NT!
+ unit_limit_100_unit_bonus_desc: "\n - Идеи: §H+100§!" #NT!
+ unit_limit_demobilization_desc: "\n - Демобилизация: общее количество изменено на §R200§!" #NT!
+ unit_limit_50_unit_bonus_desc: "\n - Идеи: §H+50§!" #NT!
+ unit_limit_balkan_unit_bonus_desc: "\n - Балканская нация: §G+20%§!" #NT!
+ unit_limit_chinese_unit_bonus_desc: "\n – Китай: §G+20%§!" #NT!
+ unit_limit_red_guard_desc: "\n - Красный Страж: §R-50%§!" #NT!
+  
+ disband_ten_percent_units: "Расформировать §Y10%§! всех действующих дивизий, сохранив их снаряжение." #NT!
+ disband_twenty_percent_units: "Расформировать §Y20%§! всех действующих дивизий, сохранив их снаряжение." #NT!
+ disband_twenty_percent_units_delete_equipment: "Расформировать §Y20%§! всех действующих дивизий." #NT!
+ disband_fifty_percent_units: "Расформировать §Y50%§! всех действующих дивизий, сохранив их снаряжение." #NT!

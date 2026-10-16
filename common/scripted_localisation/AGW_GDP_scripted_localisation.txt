@@ -1,0 +1,21 @@
+
+
+defined_text = {
+	name = GetMapModeIndustrialisationLevel
+	text = {
+		trigger = { has_idea = consumerist_nation }
+		localization_key = consumerist_nation
+	}
+	text = {
+		trigger = { has_idea = industrialised_nation }
+		localization_key = industrialised_nation
+	}
+	text = {
+		trigger = { has_idea = semi_industrialised_nation }
+		localization_key = semi_industrialised_nation
+	}
+	text = {
+		trigger = { has_idea = agrarian_nation }
+		localization_key = agrarian_nation
+	}
+}

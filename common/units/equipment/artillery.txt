@@ -1,0 +1,161 @@
+equipments = {
+
+	artillery_equipment = {
+		year = 1910
+
+		is_archetype = yes
+		picture = archetype_artillery_equipment		
+		type = {
+			artillery
+			infantry #adding infantry type
+			#motorized #Removing motorized type
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+
+		#Misc Abilities
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 10
+		breakthrough = 6
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 25
+		hard_attack = 2
+		ap_attack = 5
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 4
+		
+		build_cost_ic = 2 #3.5
+		resources = {
+			tungsten = 1
+			steel = 2
+		}
+	}
+
+	artillery_equipment_1 = {
+		year = 1910
+
+		archetype = artillery_equipment
+		priority = 50
+		visual_level = 0
+	}
+	
+	artillery_equipment_2 = {
+		year = 1916
+
+		archetype = artillery_equipment
+		parent = artillery_equipment_1
+		priority = 50
+		visual_level = 1
+
+		defense = 15
+		breakthrough = 7
+		soft_attack = 30
+		
+		build_cost_ic = 3
+		resources = {
+			tungsten = 1
+			steel = 2
+		}
+	}
+	
+	artillery_equipment_3 = {
+		year = 1918
+
+		archetype = artillery_equipment
+		parent = artillery_equipment_2
+		priority = 50
+		visual_level = 2
+		
+		defense = 18
+		breakthrough = 8
+		soft_attack = 34
+		
+		build_cost_ic = 4
+		resources = {
+			tungsten = 1
+			steel = 3
+		}
+	}
+	
+	#Heavy artillery
+	howitzer_equipment = {
+		is_archetype = yes
+		year = 1910
+		picture = archetype_artillery_equipment	
+		type = {
+			artillery
+			infantry #adding infantry type
+			#motorized #Removing motorized type
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		#Misc Abilities
+		reliability = 0.7
+
+		#Defensive Abilities
+		defense = 5
+		breakthrough = 2
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 50
+		hard_attack = 2
+		ap_attack = 2
+		air_attack = 0
+		
+		build_cost_ic = 8
+		resources = {
+			tungsten = 1
+			steel = 3
+		}
+	}	
+	howitzer_equipment_1 = {
+		archetype = howitzer_equipment
+		year = 1910
+		priority = 60
+		visual_level = 0
+	}
+	howitzer_equipment_2 = {
+		archetype = howitzer_equipment
+		parent = howitzer_equipment_1
+		priority = 60
+		visual_level = 1
+		year = 1916
+		defense = 7
+		breakthrough = 4
+		soft_attack = 60
+		
+		build_cost_ic = 12
+		resources = {
+			tungsten = 2
+			steel = 3
+		}
+	}
+	howitzer_equipment_3 = {
+		archetype = howitzer_equipment
+		parent = howitzer_equipment_2
+		priority = 60
+		visual_level = 1
+		year = 1918
+		defense = 9
+		breakthrough = 6
+		soft_attack = 68
+		
+		build_cost_ic = 18
+		resources = {
+			tungsten = 2
+			steel = 4
+		}
+	}
+}

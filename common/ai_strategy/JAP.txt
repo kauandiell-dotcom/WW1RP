@@ -1,0 +1,490 @@
+JAP_dont_go_to_europe = {
+	allowed = { original_tag = JAP }
+	enable = {		
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = -9999
+	}
+	ai_strategy = {
+		type = front_unit_request
+		area = north_america
+		value = -9999
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		state_trigger = {
+			is_on_continent = north_america
+		}
+		value = -9999
+	}
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = -9999
+	}
+	ai_strategy = {
+		type = front_unit_request
+		area = south_america
+		value = -9999
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		state_trigger = {
+			is_on_continent = south_america
+		}
+		value = -9999
+	}
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 9999
+	}
+	ai_strategy = {
+		type = front_unit_request
+		area = asia
+		value = 9999
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		state_trigger = {
+			is_on_continent = asia
+		}
+		value = 100
+	}
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 9999
+	}
+	ai_strategy = {
+		type = front_unit_request
+		area = pacific
+		value = 9999
+	}
+	ai_strategy = {
+		type = front_unit_request
+		area = oceania
+		value = 9999
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		state_trigger = {
+			is_on_continent = australia
+		}
+		value = 100
+	}
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = -9999
+	}
+	ai_strategy = {
+		type = front_unit_request
+		area = europe
+		value = -9999
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		state_trigger = {
+			is_on_continent = europe
+		}
+		value = -9999
+	}
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = -9999
+	}
+	ai_strategy = {
+		type = front_unit_request
+		area = middle_east
+		value = -9999
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		state_trigger = {
+			is_on_continent = middle_east
+		}
+		value = -9999
+	}
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = -9999
+	}
+	ai_strategy = {
+		type = front_unit_request
+		area = africa
+		value = -9999
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		state_trigger = {
+			is_on_continent = africa
+		}
+		value = -9999
+	}
+}
+
+JAP_dont_send_volunteers = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		date < 1918.1.1
+	}
+	
+	abort = {
+		OR = {
+			date > 1918.1.1
+			any_enemy_country = {
+				is_china_or_warlord_no_tt = yes
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "FRA"
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "GER"
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "RUS"
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "FRA"
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "BEL"
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ENG"
+		value = -1000
+	}
+
+}
+
+JAP_dont_send_our_boys_to_thiss_mess = {
+	allowed = { tag = JAP }
+	enable = {
+		OR = {
+			has_war_with = GER
+			has_war_with = FRA
+		}
+	}
+	
+	abort = {
+		date > 1919.1.1
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "FRA"
+		value = 10000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "ENG"
+		value = 10000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "RUS"
+		value = 10000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "EGY"
+		value = 10000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "GER"
+		value = 10000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "AUH"
+		value = 10000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "TUR"
+		value = 10000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "OMA"
+		value = 10000
+	}
+}
+JAP_invade_german_qingdao = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_war_with = GER
+		NOT = { owns_state = 745 }
+	}
+	abort_when_not_enabled = yes
+	abort = {
+		controls_state = 745
+		controls_state = 684
+		controls_state = 633
+		controls_state = 647
+	}
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 1000
+	}
+	ai_strategy = {
+		type = invade
+		id = GER
+		value = 1000
+	}
+	ai_strategy = {
+		type = front_control
+		tag = GER
+		strategic_region = 143
+		priority = 1000
+		ordertype = invasion
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = GER
+		strategic_region = 78
+		priority = 1000
+		ordertype = invasion
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = GER
+		strategic_region = 84
+		priority = 1000
+		ordertype = invasion
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = GER
+		strategic_region = 94
+		priority = 1000
+		ordertype = invasion
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		state_trigger = {
+			state = 745	
+		}
+		value = 2000
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		state_trigger = {
+			OR = {
+				state = 684
+				state = 633
+				state = 647
+			}	
+		}
+		value = 500
+	}
+	ai_strategy = {
+		type = strike_force_home_base
+		id = 76
+		value = 500
+	}
+	ai_strategy = {
+		type = strike_force_home_base
+		id = 77
+		value = 500
+	}
+	ai_strategy = {
+		type = strike_force_home_base
+		id = 78
+		value = 500
+	}
+	ai_strategy = {
+		type = strike_force_home_base
+		id = 79
+		value = 500
+	}
+	ai_strategy = {
+		type = strike_force_home_base
+		id = 90
+		value = 500
+	}
+	ai_strategy = {
+		type = strike_force_home_base
+		id = 94
+		value = 500
+	}
+	ai_strategy = {
+		type = strike_force_home_base
+		id = 97
+		value = 500
+	}
+}
+JAP_invade_qingdao_ost = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_war_with = OST
+		NOT = { owns_state = 745 }
+	}
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 1000
+	}
+	ai_strategy = {
+		type = invade
+		id = OST
+		value = 1000
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = OST
+		strategic_region = 143
+		priority = 1000
+		ordertype = invasion
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = OST
+		strategic_region = 78
+		priority = 1000
+		ordertype = invasion
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = OST
+		strategic_region = 84
+		priority = 1000
+		ordertype = invasion
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = OST
+		strategic_region = 94
+		priority = 1000
+		ordertype = invasion
+		execute_order = yes
+	}
+	abort = {
+		controls_state = 745
+		controls_state = 684
+		controls_state = 633
+		controls_state = 647
+	}
+}
+JAP_build_armies = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		original_tag = JAP
+	}
+	abort = {
+		has_government = democratic
+	}
+	ai_strategy = {
+		type = force_build_armies
+		value = 999
+	}
+}
+JAP_befriend_ENG = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_guaranteed = ENG
+		is_guaranteed_by = ENG
+	}
+	abort_when_not_enabled = yes
+	abort = {
+		OR = {
+			has_global_flag = great_war_ends
+			has_war_with = ENG
+			any_other_country = {
+				has_war_with = ROOT
+				is_in_faction_with = ENG
+			}
+		}
+	}
+	ai_strategy = {
+		type = befriend
+		id = "ENG"
+		value = 200
+	}
+}
+JAP_go_kiautschou_operation = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		tag = JAP
+		has_capitulated = no
+		is_subject = no
+		has_war_with = GER
+		has_global_flag = kiautschou_mission_fired
+	}
+	abort = {
+		OR = {
+			has_war = no
+			has_capitulated = yes
+			is_subject = yes
+			NOT = { has_war_with = GER }
+			GER = {
+				NOT = { controls_state = 745 }
+			}
+			controls_state = 745
+		}
+	}
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+			state = 745
+		}
+		priority = 1
+		ratio = 0.2
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+			state = 745
+		}
+		priority = 1
+		ratio = 0.2
+		ordertype = invasion
+		execute_order = yes
+	}
+}

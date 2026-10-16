@@ -1,0 +1,21 @@
+state={
+	id=565
+	name="STATE_565" 
+	manpower = 275000
+	state_category=rural
+	provinces={ 1450 1455 3668 3711 4463 7554 7624 9645 }
+	resources={
+		steel=6
+	}
+	history={
+		owner=RUS
+		add_core_of=MOU
+		victory_points = {
+			3668 1
+		}	
+		buildings={
+			infrastructure = 1
+		}
+	}
+	local_supplies=5.0 
+}

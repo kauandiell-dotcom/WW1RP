@@ -1,0 +1,803 @@
+on_actions = {
+	on_startup = {
+		effect = {
+            if = {
+				limit = {
+					has_game_rule = {
+						rule = ita_fragmentation_status
+						option = ITA_FRAGMENTED
+					}
+				}
+				2 = { add_core_of = PAP }
+				835 = { add_core_of = PAP }
+				161 = { add_core_of = PAP }
+				833 = { add_core_of = EMI }
+				159 = { add_core_of = VNC }
+				160 = { add_core_of = VNC }
+				ITA = {
+					release = SIC
+					release = TUS
+					release = VNC
+					release = PAP
+					release = EMI
+					release = ERI
+					release = SOM
+					release = LBA
+					ITA_emanuele_filiberto = {
+						set_nationality = SRD					
+					}
+					ITA_luigi_amedeo= {
+						set_nationality = SRD					
+					}
+					ITA_vittorio_emanuele_di_savoy_aosta = {
+						set_nationality = SRD
+					}
+					ITA_enrico_arlotta = {
+						set_nationality = SIC
+					}
+					ITA_antonino_paterne_castello = {
+						set_nationality = SIC
+					}
+					ITA_maurizio_ferrante_gonzaga = {
+						set_nationality = VNC
+					}
+					delete_unit_template_and_units = {
+				        division_template = "Ascari"
+				        disband = no
+				    }
+					delete_unit_template_and_units = {
+				        division_template = "Ascari Somalo"
+				        disband = no
+				    }
+					delete_unit_template_and_units = {
+				        division_template = "Reggimento Bersaglieri"
+				        disband = no
+				    }
+					set_division_template_lock = {
+						division_template = "Reggimento Alpini"
+						is_locked = no
+					}
+					set_division_template_lock = {
+						division_template = "Reggimento Alpini Rinforzato"
+						is_locked = no
+					}
+					release = SRD 
+					158 = { add_core_of = SRD }
+					834 = { add_core_of = SRD }
+					735 = { add_core_of = SRD }
+					transfer_units_fraction= {
+						target =  SRD
+						size = 1
+				    }
+				}
+				SRD = {
+				    set_politics = {
+				   		ruling_party = neutrality
+				   		elections_allowed = no
+				    }
+					add_popularity = {
+    					ideology = neutrality
+    					popularity = 0.15
+					}
+					set_cosmetic_tag = SRD_PIE
+					annex_country = {
+						target = ITA
+						transfer_troops = yes
+					}
+					set_capital = { state = 158 }					
+					transfer_units_fraction= {
+						target = SIC
+						size = 0.35
+						keep_unit_leaders_trigger = {
+							has_trait = trait_royal
+						}	
+				    }
+					transfer_units_fraction= {
+						target = TUS
+						size = 0.13
+						keep_unit_leaders_trigger = {
+							has_trait = trait_royal
+						}
+				    }
+					transfer_units_fraction= {
+						target = EMI
+						size = 0.05
+						keep_unit_leaders_trigger = {
+							has_trait = trait_royal
+						}
+				    }
+					transfer_units_fraction= {
+						target = VNC
+						size = 0.2
+						keep_unit_leaders_trigger = {
+							has_trait = trait_royal
+						}
+				    }
+					transfer_units_fraction= {
+						target = PAP
+						size = 0.28
+						keep_unit_leaders_trigger = {
+							has_trait = trait_royal
+						}
+				    }
+					change_tag_from = ITA
+					every_state = {
+						teleport_armies = {
+							to_state_array = owned_controlled_states
+						}
+					}
+				}
+				SIC = {
+					add_timed_idea = {
+						idea = ITA_messina_earthquake_aftershock
+						days = 600
+					}
+				}	
+				AUH = {
+				    puppet = VNC 
+					give_guarantee = PAP
+					give_guarantee = TUS
+					AUH_joseph_ferdinand_von_osterreich = {
+						set_character_name = TUS_joseph_ferdinand_von_osterreich
+						promote_leader = yes
+						set_nationality = TUS						
+					}
+					AUH_peter_ferdinand_von_osterreich = {
+						set_character_name = TUS_peter_ferdinand_von_osterreich
+						set_nationality = TUS
+					}
+				}
+				VNC = {
+				    set_cosmetic_tag = VNC_AUH
+					VNC_eugen_von_osterreich_teschen = {
+						add_country_leader_role = {
+							promote_leader = yes
+							country_leader = {
+								ideology = oligarchism
+								traits = { foreign_leader }
+							}
+						}
+					}
+					set_party_name = {
+						ideology = neutrality 
+						long_name = VNC_neutrality_AUH_party_long 
+						name = VNC_neutrality_AUH_party 
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+						    is_core_of = ITA
+						    is_claimed_by = ITA
+						}
+					}
+               	 	remove_core_of = ITA
+					remove_claim_by = ITA
+            	}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ita_fragmentation_status
+						option = ITA_KR
+					}
+				}
+				2 = { add_core_of = PAP }
+				ITA = {
+					release = SIC
+					release = PAP
+					release = SRD
+					release = SOM
+					release = LBA
+					ITA_emanuele_filiberto = {
+						set_nationality = SRD					
+					}
+					ITA_luigi_amedeo= {
+						set_nationality = SRD					
+					}
+					ITA_vittorio_emanuele_di_savoy_aosta = {
+						set_nationality = SRD
+					}
+					ITA_antonio_salandra= {
+						set_nationality = SIC					
+					}
+					set_capital = { state = 159 }
+					delete_unit_template_and_units = {
+				        division_template = "Ascari"
+				        disband = no
+				    }
+					delete_unit_template_and_units = {
+				        division_template = "Ascari Somalo"
+				        disband = no
+				    }
+					delete_unit_template_and_units = {
+				        division_template = "Reggimento Bersaglieri"
+				        disband = no
+				    }
+					set_division_template_lock = {
+						division_template = "Reggimento Alpini"
+						is_locked = no
+					}
+					set_division_template_lock = {
+						division_template = "Reggimento Alpini Rinforzato"
+						is_locked = no
+					}
+				    set_country_flag = ITA_republican_italy_flag
+				    set_cosmetic_tag = ROI
+					set_popularities = {
+				        democratic = 56
+				        neutrality = 25
+				        fascism = 9
+				        communism = 10
+			    	}
+					create_country_leader = {
+						name = "Giovanni Giolitti"
+						picture = "gfx/leaders/ITA/ITA_giovanni_giolitti.png"
+						expire="1935.1.1" 
+						ideology = social_liberalism
+						traits = { two_faced  }
+	   			    }
+					set_party_name = {
+						ideology = democratic
+						long_name = ITA_democratic_left_party
+						name = ITA_democratic_left_party
+					}
+			        set_party_name = {
+				        ideology = neutrality
+				        long_name = ITA_neutrality_monarchist_party_long
+				        name = ITA_neutrality_monarchist_party
+			        }
+					retire_character = ITA_vittorio_emanuele_iii
+					retire_character = ITA_umberto_ii
+					remove_ideas = {
+    					idea_italy_triple_alliance
+						victor_emmanuel_ww1
+						ITA_questione_meridionale
+						ITA_messina_earthquake_aftershock
+						ITA_roman_question
+						ITA_lackluster_industrialisation
+						ITA_poorly_organized_armed_forces
+						ITA_emigrazione_italiana
+					}
+					load_focus_tree = generic_focus
+			    }
+				SRD = {
+				    set_politics = {
+				   		ruling_party = neutrality
+				   		elections_allowed = no
+				    }
+					add_popularity = {
+    					ideology = neutrality
+    					popularity = 0.15
+					}
+				}
+				SIC = {
+					promote_character = ITA_antonio_salandra
+					give_guarantee = PAP
+					give_military_access = PAP
+					remove_ideas = ITA_questione_meridionale
+					add_timed_idea = {
+						idea = ITA_messina_earthquake_aftershock
+						days = 600
+					}
+				}	
+				PAP = {
+					give_guarantee = SIC
+					give_military_access = SIC
+				}	
+				create_dynamic_country = {
+					original_tag = ITA
+					set_capital = { state = 159 }
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 17
+						neutrality = 0
+						fascism = 4
+						communism = 79
+					}
+					set_country_flag = ITA_socialist_italy_flag
+					set_cosmetic_tag = ITA_socialism
+					set_party_name = {
+						ideology = democratic
+						long_name = ITA_democratic_reformist_party_long
+						name = ITA_democratic_reformist_party
+					}		
+					create_corps_commander = {
+						name = "Randolfo Pacciardi"
+						portrait_path = "gfx/leaders/ITA/ITA_randolfo_pacciardi.png"
+						traits = {
+							politically_connected
+							trickster
+							guerilla_fighter
+						}
+						skill = 3
+						attack_skill = 2
+						defense_skill = 3
+						planning_skill = 2
+						logistics_skill = 3
+					}
+					create_corps_commander = {
+						name = "Edmondo Rossoni"
+						portrait_path = "gfx/leaders/ITA/ITA_edmondo_rossoni.png"
+						traits = {
+							career_officer
+							organizer
+						}
+						skill = 2
+						attack_skill = 2
+						defense_skill = 1
+						planning_skill = 1
+						logistics_skill = 3
+					}
+					create_corps_commander = {
+						name = "Arnaldo Azzi" 
+						portrait_path = "gfx/leaders/ITA/ITA_arnaldo_azzi.png" 
+						traits = {}
+						skill = 1
+						attack_skill = 1
+						defense_skill = 1
+						planning_skill = 1
+						logistics_skill = 1
+					}
+                	reserve_dynamic_country = yes
+                	load_focus_tree = generic_focus					
+				}
+				every_state = {
+					limit = {
+						OR = {
+							state = 158
+							state = 161
+							state = 162
+							state = 833
+							state = 39
+							state = 834
+							state = 735
+							state = 835
+						}
+						is_owned_by = ROI
+						is_controlled_by = ROI
+					}
+					SRI = {
+						transfer_state = PREV
+						add_state_core = PREV
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_claimed_by = ITA
+							is_core_of = SRD
+							is_core_of = SIC
+							is_core_of = PAP
+						}
+					}
+					ITA = {
+						add_state_claim = PREV
+					}
+					SRI = {
+						add_state_claim = PREV
+					}
+				}
+				ETH = {
+				    transfer_state = 550	
+				}
+				ROI = {
+				    transfer_units_fraction= {
+						target = SRI
+						size = 0.35
+						keep_unit_leaders_trigger = {
+					        always = yes
+					    }
+				    }
+					ITA_gabriele_d_annunzio = {
+						promote_character = yes
+					}
+					ITA_enrico_corradini = {
+						set_nationality = SRI
+					}
+					ITA_nicola_bombacci = {
+						set_nationality = SRI
+					}
+					ITA_benito_mussolini = {
+						set_nationality = SRI
+					}
+					ITA_anna_kuliscioff = {
+						set_nationality = SRI
+					}
+					ITA_costantino_lazzari= {
+						set_nationality = SRI
+					}
+					ITA_ivanoe_bonomi= {
+						set_nationality = SRI
+					}
+					ITA_alceste_de_ambris= {
+						set_nationality = SRI
+					}
+					transfer_units_fraction= {
+						target = SIC
+						size = 0.36
+				    }
+					transfer_units_fraction= {
+						target = SRD
+						size = 0.2
+				    }
+					transfer_units_fraction= {
+						target = PAP
+						size = 0.07
+				    }
+				    every_state = {
+						teleport_armies = {
+							to_state_array = owned_controlled_states
+						}
+					}					
+				}
+				SRI = {
+					ITA_ivanoe_bonomi = {
+						add_country_leader_role = {
+							country_leader={
+								ideology=social_liberalism
+							}
+							promote_leader = yes
+						}
+					}
+					ITA_enrico_corradini = {
+						promote_character = yes
+					}
+					ITA_anna_kuliscioff = {
+						promote_character = yes
+					}
+					ITA_benito_mussolini = {
+						promote_character = yes
+					}
+					ITA_nicola_bombacci = {
+						promote_character = yes
+					}
+					ITA_costantino_lazzari = {
+						promote_character = yes
+					}
+					ITA_filippo_corridoni = {
+						promote_character = yes
+					}
+				}	
+				FRA = { add_to_faction = SRD }
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = auh_fragmentation_status
+						option = AUH_FRAGMENTED
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = AUH
+						is_core_of = CRO
+						NOT = {
+							state = 513 
+						}
+					}
+					CRO = { transfer_state = PREV }
+				}
+				every_state = {
+					limit = {
+						is_owned_by = AUH
+						is_core_of = SLV
+					}
+					SLV = { transfer_state = PREV }
+				}
+				every_state = {
+					limit = {
+						is_owned_by = AUH
+						OR = {
+							state = 244
+							state = 513
+						}
+					}
+					every_country = {
+						limit = {
+							owns_state = 160
+						}
+						transfer_state = PREV
+						add_state_core = PREV
+
+					}
+
+				}
+				every_state = {
+					limit = {
+						is_owned_by = AUH
+						is_core_of = ROM
+						NOT = { 
+							state = 778 
+							state = 83 
+						}
+					}
+					ROM = { transfer_state = PREV }
+				}
+				every_state = {
+					limit = {
+						is_owned_by = AUH
+						is_core_of = UKR
+					}
+					WUK = {
+						add_state_core = PREV
+						transfer_state = PREV
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = AUH
+						is_core_of = CZE
+						NOT = { 
+							state = 72 
+							state = 69
+							state = 74
+						}
+					}
+					CZE = { transfer_state = PREV }
+				}
+				every_state = {
+					limit = {
+						is_owned_by = AUH
+						is_core_of = SLO
+						NOT = { state = 664 }
+					}
+					SLO = { transfer_state = PREV }
+				}
+				every_state = {
+					limit = {
+						is_owned_by = AUH
+						is_core_of = POL
+					}
+					POL = { transfer_state = PREV }
+				}
+				every_state = {
+					limit = {
+						is_owned_by = AUH
+						OR = {
+							is_core_of = SER
+							is_core_of = BOS
+						}
+						NOT = {
+							state = 45
+						}
+					}
+					SER = { 
+						transfer_state = PREV 
+						add_state_core = PREV
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = AUH
+						is_core_of = HUN
+						NOT = { state = 147 }
+					}
+					HUN = { transfer_state = PREV }
+				}
+				AUH = {
+					transfer_units_fraction= {
+						target = POL
+						size = 0.18
+						navy_ratio = 0
+						keep_unit_leaders_trigger = {
+							always = yes
+						}
+					}
+					transfer_units_fraction= {
+						target = SLO
+						size = 0.1
+						navy_ratio = 0
+						keep_unit_leaders_trigger = {
+							always = yes
+						}
+					}
+					transfer_units_fraction= {
+						target = SLV
+						size = 0.1
+						navy_ratio = 0
+						keep_unit_leaders_trigger = {
+							always = yes
+						}
+					}
+					transfer_units_fraction= {
+						target = WUK
+						size = 0.13
+						navy_ratio = 0
+						keep_unit_leaders_trigger = {
+							always = yes
+						}
+					}
+					transfer_units_fraction= {
+						target = HUN
+						size = 0.2
+						navy_ratio = 1
+						keep_unit_leaders_trigger = {
+							always = yes
+						}
+					}
+					transfer_units_fraction= {
+						target = CRO
+						size = 0.05
+						navy_ratio = 0
+						keep_unit_leaders_trigger = {
+							always = yes
+						}
+					}
+					AUH_svetozar_von_bojna = {
+						set_character_name = SER_svetozar_borojevic
+						set_nationality = CRO
+					}
+					AUH_stjepan_sarkotic = {
+						set_character_name = CRO_stjepan_sarkotic
+						set_nationality = CRO
+					}
+					AUH_anton_liposcak = {
+						set_nationality = CRO
+					}
+					AUH_maximilian_njegovan = {
+						set_nationality = CRO
+					}
+					AUH_marijan_varesanin = {
+						set_character_name = BOS_marijan_varesanin
+						set_nationality = CRO
+					}
+					every_unit_leader = {
+						limit = {
+							OR = {
+								has_id = 6145
+								has_id = 6153
+								has_id = 6148
+							}
+						}
+						set_nationality = HUN
+					}
+					every_unit_leader = {
+						limit = {
+							NOT = {
+								has_id = 6396
+								has_id = 6144
+								has_trait = trait_royal	
+							}
+						}
+						set_nationality = AUS
+					}
+					AUH_alois_schonburg_hartenstein = {
+						set_nationality = AUS
+					}
+				}
+				HUN = {
+					load_oob = "HUN_1918"
+				}
+				CRO = {
+					load_oob = "CRO_1918"
+					every_state = {
+						teleport_armies = {
+							to_state_array = owned_controlled_states
+						}
+					}	
+				}
+				CZE = {
+					load_oob = "CZE_1918"
+					every_state = {
+						teleport_armies = {
+							to_state_array = owned_controlled_states
+						}
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = AUH
+					}
+					add_core_of = AUS
+				}
+				AUS = {
+					annex_country = {
+						target = AUH
+						transfer_troops = yes
+					}
+					every_state = {
+						teleport_armies = {
+							to_state_array = owned_controlled_states
+						}
+					}
+					change_tag_from = AUH
+				}
+				every_state = {
+					limit = {
+						is_core_of = AUH
+					}
+					remove_core_of = AUH
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = auh_fragmentation_status
+						option = AUH_CISLEITHANIA
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = AUH
+						OR = {
+							is_core_of = HUN
+							is_claimed_by = HUN
+						}
+					}
+					HUN = {
+						add_state_core = PREV
+						transfer_state = PREV
+					}
+				}
+				AUH = {
+					remove_ideas = AUH_hungarian_opposition
+					if = {
+						limit = {
+							has_subject_autonomy_feature = yes
+						}
+						set_autonomy = {
+							target = HUN
+							autonomous_state = autonomy_tgwr_crownland
+						}
+						else = {
+							puppet = HUN
+						}
+						add_ai_strategy = {
+							type = protect
+							id = "HUN"
+							value = 50
+						}
+					}
+					set_cosmetic_tag = AUH_EMP
+					AUH_svetozar_von_bojna = {
+						set_nationality = HUN
+					}
+					AUH_stjepan_sarkotic = {
+						set_nationality = HUN
+					}
+					every_unit_leader = {
+						limit = {
+							OR = {
+								has_id = 6145
+								has_id = 6153
+								has_id = 6148
+							}
+						}
+						set_nationality = HUN
+					}
+					transfer_units_fraction= {
+						target = HUN
+						size = 0.3
+						keep_unit_leaders_trigger = {
+							always = yes
+						}
+					}
+				}
+				HUN = {
+					set_party_name = {
+						ideology = neutrality
+						long_name = AUH_neutrality_party
+						name = AUH_neutrality_party
+					}
+					add_ideas = AUH_ww1_House_Habsburg_Lorraine
+					promote_character = HUN_franz_joseph_i
+					load_oob = "HUN_1918"
+					every_owned_state = {
+						limit = {
+							NOT = {
+								state = 147
+							}
+						}
+						AUH = {
+							remove_state_core = PREV
+						}
+					}
+				}
+			}			
+		}
+	}
+}	

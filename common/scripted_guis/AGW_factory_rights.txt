@@ -1,0 +1,15 @@
+scripted_gui = {
+	AGW_factory_rights = {
+		
+		# Yaptığımız GUI nin adı
+		window_name = "AGW_factory_rights_container"
+
+		# Context: Loc da falan ROOT olarak kimi hedef alacağı, ROOT selected country yi temsil edecek
+		context_type = selected_country_context
+
+		# Hangi GUI penceresinin altında bizim GUI mizin gözükeceği
+        parent_window_token = selected_country_view_diplomacy
+		
+		visible = { always = yes }
+	}
+}

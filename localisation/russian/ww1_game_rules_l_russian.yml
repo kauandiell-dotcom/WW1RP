@@ -1,0 +1,396 @@
+﻿l_russian:
+ #Strengthen 
+ custom_diff_strong_rus: "Укрепляй Россию" #NT!
+ custom_diff_strong_auh: "Укрепить Австро-Венгрию" #NT!
+ custom_diff_strong_tur: "Укрепление Османской империи" #NT!
+ custom_diff_strong_ser: "Укрепляем Сербию" #NT!
+ custom_diff_strong_bul: "Укрепляем Болгарию" #NT!
+ custom_diff_strong_bel: "Укрепить Бельгию" #NT!
+ custom_diff_strong_hol: "Укрепляем Голландию" #NT!
+ custom_diff_strong_swe: "Укрепляем Швецию" #NT!
+ custom_diff_strong_can: "Укрепить Канаду" #NT!
+ custom_diff_strong_ast: "Укрепляем Австралию" #NT!
+ custom_diff_strong_qin: "Усиление Цин" #NT!
+ custom_diff_strong_kor: "Укрепляем Корею" #NT!
+ custom_diff_strong_bra: "Укрепляем Бразилию" #NT!
+ custom_diff_strong_lib: "Укрепляем Либерию" #NT!
+ custom_diff_strong_gre: "Укрепляем Грецию" #NT!
+  
+ #GAME SETUP 
+  #Superevent 
+ RULE_SUPEREVENT: "Супер События" #NT!
+ RULE_OPTION_DEFAULT_SUPEREVENT_DESC: "Суперсобытия включены." #NT!
+ RULE_OPTION_SUPEREVENT_DISABLED: "Отключенные супер события" #NT!
+ RULE_OPTION_SUPEREVENT_DISABLED_DESC: "Суперсобытия отключены." #NT!
+  
+  #Fragmentation 
+ RULE_OPTION_ITA_KR: "Наследие Вельткрига" #NT!
+ RULE_OPTION_ITA_KR_DESC: "Границы Италии изменятся и приобретут привычный вид." #NT!
+ AUH_FRAGMENTATION_STATUS: "@AUH Австро-Венгерская раздробленность" #NT!
+ RULE_OPTION_AUH_FRAGMENTED: "Этнические границы" #NT!
+ RULE_OPTION_AUH_FRAGMENTED_DESC: "Границы Австро-Венгрии будут перекроены по этническому признаку." #NT!
+ RULE_OPTION_AUH_CISLEITHANIA: "Двойная монархия" #NT!
+ RULE_OPTION_AUH_CISLEITHANIA_DESC: "Австро-Венгрия разделится на Австрию и Венгрию." #NT!
+  
+ #first balkan war outcome 
+ FIRST_BALKAN_WAR_OUTCOME: "Итоги Первой Балканской войны £ww1_game_rule_flag_BUL  £ww1_game_rule_flag_SER  £ww1_game_rule_flag_GRE  £ww1_game_rule_flag_TUR" #NT!
+ RULE_OPTION_TUR_TURKISH_VICTORY: "Победа Османской империи £ww1_game_rule_flag_TUR" #NT!
+ RULE_OPTION_TUR_TURKISH_VICTORY_DESC: "Османская империя победит в Балканской войне, превратив своих противников в подданных." #NT!
+  
+ TUR_FIRST_BALKAN_WAR_AVOIDED_TITLE: "Первой балканской войны удалось избежать" #NT!
+ TUR_FIRST_BALKAN_WAR_AVOIDED_DESC: "£ww1_game_rule_flag_TUR Османская империя примет условия Балканской лиги и предоставит автономию нетурецким территориям." #NT!
+  
+ #second balkan war outcome 
+ SECOND_BALKAN_WAR_OUTCOME: "Итоги Второй Балканской войны £ww1_game_rule_flag_BUL  £ww1_game_rule_flag_SER  £ww1_game_rule_flag_ROM  £ww1_game_rule_flag_GRE  £ww1_game_rule_flag_TUR " #NT!
+ RULE_OPTION_BUL_BULGARIAN_VICTORY: "Болгарская победа £ww1_game_rule_flag_BUL" #NT!
+ RULE_OPTION_BUL_BULGARIAN_VICTORY_DESC: "Болгария победит во Второй Балканской войне." #NT!
+ RULE_OPTION_STATEMATE: "Соотечественник" #NT!
+ RULE_OPTION_STATEMATE_DESC: "Болгария с честью заключит мир, потеряв часть территории." #NT!
+  
+ RULE_AI_CANT_JUSTIFY: "Правило игры: §RЦели войны не могут быть сгенерированы ИИ.§!" #NT!
+ RULE_ARMISTICE_CANT_JUSTIFY: "Правило игры: §RВоенные цели не могут быть созданы во время перемирия.§!" #NT!
+ RULE_CIVIL_WAR_CANT_JUSTIFY: "Правило игры: §RЦели войны не могут быть созданы в разгар гражданской войны.§!" #NT!
+  
+  #Ultimatum 
+ ULTIMATUM_ON_AGADIR: "Ультиматум Агадиру" #NT!
+ RULE_OPTION_DEFAULT_ULTIMATUM_ON_AGADIR_DESC: "ИИ будет имитировать исторические события в их условиях." #NT!
+ RULE_OPTION_WAR_ON_AGADIR: "Война с Агадиром" #NT!
+ RULE_OPTION_WAR_ON_AGADIR_DESC: "Великая война разразится в Агадире." #NT!
+ ULTIMATUM_ON_ALBANIA: "Ультиматум Албании" #NT!
+ RULE_OPTION_DEFAULT_ULTIMATUM_ON_ALBANIA_DESC: "ИИ будет имитировать исторические события в их условиях." #NT!
+ RULE_OPTION_WAR_ON_ALBANIA: "Война с Албанией" #NT!
+ RULE_OPTION_WAR_ON_ALBANIA_DESC: "Великая война разразится в Албании." #NT!
+  
+  #Fate of Franz Fedinand 
+ FATE_OF_FRANZ_FERDINAND: "Судьба Франца Фердинанда" #NT!
+ RULE_OPTION_DEFAULT_FRANZ_FERDINAND_DESC: "Судьба Франца Фердинанда будет решена внутриигровыми решениями." #NT!
+ RULE_OPTION_FRANZ_FERDINAND_SURVIVES: "Франц Фердинанд выжил" #NT!
+ RULE_OPTION_FRANZ_FERDINAND_SURVIVES_DESC: "Франц Фердинанд выживет, независимо от выбора в игре." #NT!
+ RULE_OPTION_FRANZ_FERDINAND_DIES: "Франц Фердинанд умирает" #NT!
+ RULE_OPTION_FRANZ_FERDINAND_DIES_DESC: "Франц Фердинанд умрет независимо от выбора в игре, если Сербия не существует или не является марионеткой." #NT!
+  
+  #Fate of Pyotr Stolypin 
+ FATE_OF_STOLYPIN: "Судьба Петра Столыпина" #NT!
+ RULE_OPTION_DEFAULT_STOLYPIN_DESC: "Судьба Столыпина будет случайной, если не фокусироваться на истории." #NT!
+ RULE_OPTION_STOLYPIN_SURVIVES: "Столыпин выжил" #NT!
+ RULE_OPTION_STOLYPIN_SURVIVES_DESC: "Столыпин переживет покушение." #NT!
+ RULE_OPTION_STOLYPIN_DIES: "Умер Столыпин" #NT!
+ RULE_OPTION_STOLYPIN_DIES_DESC: "Столыпин будет убит." #NT!
+  
+  #Fate of Theodore Roosevelt 
+ FATE_OF_ROOSEVELT: "Судьба Теодора Рузвельта" #NT!
+ RULE_OPTION_DEFAULT_ROOSEVELT_DESC: "Судьба Рузвельта будет случайной, если не сосредоточиться на истории." #NT!
+ RULE_OPTION_ROOSEVELT_SURVIVES: "Рузвельт выживает" #NT!
+ RULE_OPTION_ROOSEVELT_SURVIVES_DESC: "Рузвельт переживет покушение." #NT!
+ RULE_OPTION_ROOSEVELT_DIES: "Рузвельт умирает" #NT!
+ RULE_OPTION_ROOSEVELT_DIES_DESC: "Рузвельт будет убит." #NT!
+  
+  #Fate of Tsar 
+ FATE_OF_TSAR: "Судьба царя" #NT!
+ RULE_OPTION_DEFAULT_TSAR_FATE_DESC: "Большевики казнят царя и его семью." #NT!
+ RULE_OPTION_TSAR_IN_BRITAIN: "Царь сбегает" #NT!
+ RULE_OPTION_TSAR_IN_BRITAIN_DESC: "Царь бежит в Британию." #NT!
+ RULE_OPTION_TSAR_RETURNED: "Царь восстановлен" #NT!
+ RULE_OPTION_TSAR_RETURNED_DESC: "Царь будет спасен и восстановлен у власти благодаря белой гвардии." #NT!
+  
+  #AUH Flag 
+ RULE_AUH_FLAG: "@AUH Австро-Венгерский флаг" #NT!
+ RULE_OPTION_DEFAULT_AUH_FLAG: "@AUH Габсбург Баннер" #NT!
+ RULE_OPTION_DEFAULT_AUH_FLAG_DESC: "Будет использовано §Y"черно-золотое знамя Габсбургов"§!." #NT!
+ RULE_OPTION_AUH_CE_FLAG: "£ww1_game_rule_flag_AUH_CE  Гражданский прапорщик" #NT!
+ RULE_OPTION_AUH_CE_FLAG_DESC: "Будет использоваться флаг §Y"Гражданский флаг"§!." #NT!
+  
+  #Russian Flag 
+ RULE_RUSSIAN_FLAG: "£ww1_game_rule_flag_RUS  Российский флаг" #NT!
+ RULE_OPTION_DEFAULT_RUSSIAN_FLAG: "£ww1_game_rule_flag_RUS  Исторический флаг" #NT!
+ RULE_OPTION_DEFAULT_RUSSIAN_FLAG_DESC: "Будет использоваться трехцветный флаг §Y"historical"§!." #NT!
+ RULE_OPTION_AHISTORICAL_RUSSIAN_FLAG: "£ww1_game_rule_flag_RUS_ahistorical  Неисторический флаг" #NT!
+ RULE_OPTION_AHISTORICAL_RUSSIAN_FLAG_DESC: "Будет использован флаг §Y"Единение царя с народом"§!." #NT!
+ RULE_OPTION_IMPERIAL_RUSSIAN_FLAG: "£GFX_ww1_game_rule_flag_RUS_absulutusm  Имперский флаг" #NT!
+ RULE_OPTION_IMPERIAL_RUSSIAN_FLAG_DESC: "§Y"imperial"§! будет использоваться флаг." #NT!
+  
+  #AUH_civil_war_intervention 
+ AUH_CIVIL_WAR_INTERVENTIONS: "@AUH Гражданская война в Австро-Венгрии" #NT!
+ RULE_OPTION_DEFAULT_AUH_CIVIL_WAR_INTERVENTIONS_DESC: "Соседние страны выберут, какой стороне помочь, исходя из своих интересов." #NT!
+ RULE_OPTION_FAVOR_HUNGARY: "@HUN Отдайте предпочтение Венгрии" #NT!
+ RULE_OPTION_FAVOR_HUNGARY_DESC: "Соседние страны примут решения в пользу Венгрии" #NT!
+ RULE_OPTION_FAVOR_AUSTRIA: "@AUS Фавор Австрия" #NT!
+ RULE_OPTION_FAVOR_AUSTRIA_DESC: "Соседние страны примут решения в пользу Австрии" #NT!
+ RULE_OPTION_NO_INTERVENTION: "Никаких вмешательств" #NT!
+ RULE_OPTION_NO_INTERVENTION_DESC: "Соседние страны сохранят нейтралитет" #NT!
+  
+  #Kaiserreich Flag 
+ RULE_KAISERREICH_FLAG: "£ww1_game_rule_flag_GER_kaiserreich  Флаг Кайзеррейха" #NT!
+ RULE_OPTION_DEFAULT_KAISERREICH_FLAG: "£ww1_game_rule_flag_GER_kaiserreich  Флаг имперской войны" #NT!
+ RULE_OPTION_DEFAULT_KAISERREICH_FLAG_DESC: "Будет использовано §Y"Reichskriegsflagge"§!" #NT!
+ RULE_OPTION_HISTORICAL_KAISERREICH_FLAG: "£ww1_game_rule_flag_GER  Государственный флаг" #NT!
+ RULE_OPTION_HISTORICAL_KAISERREICH_FLAG_DESC: "Будет использоваться §Y"Государственный флаг"§!." #NT!
+  
+  #Scripted Peace Treaty 
+ RULE_SCRIPTED_PEACE_TREATY: "Сценарий мирного договора" #NT!
+ RULE_OPTION_DEFAULT_ALLOWED_SCRIPTED_PEACE_TREATY: "Разрешить подписание мирного договора" #NT!
+ RULE_OPTION_DEFAULT_ALLOWED_SCRIPTED_PEACE_TREATY_DESC: "Заранее подготовленные мирные договоры для Великой войны §Yбудут инициированы§! ИИ." #NT!
+ RULE_OPTION_DEFAULT_DISALLOWED_SCRIPTED_PEACE_TREATY: "Запретить сценарий мирного договора" #NT!
+ RULE_OPTION_DEFAULT_DISALLOWED_SCRIPTED_PEACE_TREATY_DESC: "Заранее подготовленные мирные договоры для Великой войны §YНЕ будут запущены§! ИИ. §R<ОГРАНИЧЕННЫЙ, НЕ РЕКОМЕНДУЕТСЯ ИСПОЛЬЗОВАТЬ>§!" #NT!
+  
+  #Sykes-Picot Agreement 
+ RULE_SYKES_PICOT_OPTION: "Соглашение Сайкса-Пико" #NT!
+ RULE_OPTION_DEFAULT_SYKES_PICOT: "Исторический" #NT!
+ RULE_OPTION_DEFAULT_SYKES_PICOT_DESC: "Колониальные империи поделят для них османские территории." #NT!
+ RULE_OPTION_DEFAULT_LAWRENCE: "Предложение Лоуренса" #NT!
+ RULE_OPTION_DEFAULT_LAWRENCE_DESC: "Как предположил Томас Эдвард Лоуренс, британский археолог, армейский офицер, дипломат, прославившийся своей ролью в Арабском восстании и Синайско-Палестинской кампании против Османской империи во время Первой мировой войны, Сирия будет освобождена, но другие арабские территории не будут объединены и независимы." #NT!
+ RULE_OPTION_DEFAULT_MCMAHON_HUSSEIN: "Переписка Макмэхона и Хусейна" #NT!
+ RULE_OPTION_DEFAULT_MCMAHON_HUSSEIN_DESC: "После переписки позвольте арабским территориям быть едиными и независимыми." #NT!
+  
+ # albania is a ottoman puppet ? Or which king ? 
+  
+ fate_of_albania: "@ALB Судьба Албании" #NT!
+ FATE_OF_ALBANIA_VILHEM: "@GER Кинг Вильхем" #NT!
+ FATE_OF_ALBANIA_VILHEM_DESC: "Триестский конгресс назначит германского короля во главе Албании." #NT!
+ FATE_OF_ALBANIA_FUAD: "@EGY Король Мухаммед Али" #NT!
+ FATE_OF_ALBANIA_FUAD_DESC: "Триестский конгресс назначит египетского короля главой Албании." #NT!
+ FATE_OF_ALBANIA_VITTORIO: "@ITA Король Витторио Эммануэле" #NT!
+ FATE_OF_ALBANIA_VITTORIO_DESC: "Триестский конгресс назначит итальянского короля главой Албании." #NT!
+ FATE_OF_ALBANIA_OTTOMAN_EMIRATE: "@TUR Османский Эмират" #NT!
+ FATE_OF_ALBANIA_OTTOMAN_EMIRATE_DESC: "Албания получит значительную автономию от Османской империи после восстания 1911 года." #NT!
+  
+ #Will France lose in 1914 in early german rush ? 
+  
+ battle_of_france_outcome: "@FRA Исход битвы за Францию" #NT!
+ HISTORICAL: "Исторический" #NT!
+ HISTORICAL_DESC: "Историческое поведение ИИ." #NT!
+ FRENCH_EARLY_DEFEAT: "Поражение французов" #NT!
+ FRENCH_EARLY_DEFEAT_DESC: "Французская и немецкая разведка будут действовать по-разному, способствуя победе Германии на западном фронте." #NT!
+  
+ #AI BEHAVIOR 
+ RULE_OPTION_PROTO_FASCIST: "Протофашистский" #NT!
+ RULE_OPTION_JUNTA: "Военная хунта" #NT!
+ RULE_OPTION_SOCIALIST: "Социалистический" #NT!
+ RULE_OPTION_SYNDICALIST: "Синдикалист" #NT!
+ RULE_OPTION_CP: "Центральные державы" #NT!
+ RULE_OPTION_ENTENTE: "Антанта" #NT!
+ RULE_OPTION_AUTOCRATIC: "Автократический" #NT!
+ RULE_OPTION_ISLAMIST: "исламистский" #NT!
+ RULE_OPTION_DEMOCRATIC_SOCDEM: "Демократическая - Социал-демократическая" #NT!
+  
+  
+ SER_AI_BEHAVIOR: "@SER Сербия" #NT!
+  
+  #Austria-Hungary 
+ AUH_AI_BEHAVIOR: "@AUH Австро-Венгрия" #NT!
+ RULE_OPTION_HISTORICAL_AUH_AI_DESC: "Австро-венгерский ИИ попытается максимально точно проследить историческую цепочку событий." #NT!
+ RULE_OPTION_FEDERALISM_AUH: "Государственные объединения" #NT!
+ RULE_OPTION_FEDERALISM_AUH_AI_DESC: "Австро-венгерский ИИ попытается автономизироваться, следуя по соответствующему пути в национальном дереве фокусов." #NT!
+ RULE_OPTION_HUNGARIAN_REVOLUTION_AUH: "@HUN Независимая Венгрия" #NT!
+ RULE_OPTION_HUNGARIAN_REVOLUTION_AUH_AI_DESC: "Венгрия начнет войну за независимость, следуя соответствующему пути в национальном древе фокусов." #NT!
+ HUNGARIAN_REVOLUTION: "Венгерская революция" #NT!
+ RULE_OPTION_AUH_TRIALISM: "£ww1_game_rule_flag_AUH_trialist Франц Фердинанд - Успешный судебный процесс" #NT!
+ RULE_OPTION_AUH_TRIALISM_AI_DESC: "Франц Иосиф отречется от престола в пользу Франца Фердинанда, который намерен начать триалистскую реформу империи, выбрав соответствующий путь в национальном древе фокусов." #NT!
+ AUH_TRIALISM: "Успешное судебное разбирательство" #NT!
+ RULE_OPTION_AUH_TRIALISM_FAIL: "£ww1_game_rule_flag_AUH_trialist Франц Фердинанд - Проваленный триализм" #NT!
+ RULE_OPTION_AUH_TRIALISM_FAIL_AI_DESC: "Франц Иосиф отречется от престола в пользу Франца Фердинанда, который намеревается начать судебную реформу империи, пройдя соответствующий путь в национальном дереве фокусов." #NT!
+ AUH_TRIALISM_FAIL: "Неудачный триализм" #NT!
+ RULE_OPTION_AUH_CONRAD: "£ww1_game_rule_flag_AUH_conrad Переворот Конрада" #NT!
+ RULE_OPTION_AUH_CONRAD_AI_DESC: "Маршал Конрад совершит государственный переворот во время венгерского революционного кризиса, а затем возглавит протофашистскую политику, выбрав соответствующий путь в национальном древе фокусов." #NT!
+ RULE_OPTION_AUH_FEDERALISM: "@AUH Карл I - Федерализм Кайзеррейха" #NT!
+ RULE_OPTION_AUH_FEDERALISM_AI_DESC: "Карл придет к власти после кризиса армии. Придя к власти, он начнет демократическую реформу империи, следуя по соответствующему пути в национальном фокусном дереве." #NT!
+ RULE_OPTION_AUH_KARL_JOIN_ENTENTE: "@AUH Карл I - За Антанту" #NT!
+ RULE_OPTION_AUH_KARL_JOIN_ENTENTE_AI_DESC: "Карл придет к власти после кризиса армии. Придя к власти, он либерализует страну и возобновит внешнюю политику в пользу Антанты, следуя по соответствующему пути в национальном фокусном дереве." #NT!
+ CONRAD: "Конрад" #NT!
+ RULE_OPTION_AUH_KARL_CORRUPTED: "@AUH Франц Фердинанд — Мастер лобби" #NT!
+ RULE_OPTION_AUH_KARL_CORRUPTED_AI_DESC: "Франц Фердинанд придет к власти после кризиса армии. Придя к власти, он поддержит промышленные лобби, следуя по соответствующему пути в национальном дереве фокусов." #NT!
+  #Belgium 
+ BEL_AI_BEHAVIOR: "@BEL Бельгия" #NT!
+ RULE_OPTION_DEMOCRATIC_HISTORICAL_BEL_AI_DESC: "Бельгийский ИИ попытается максимально точно проследить историческую цепочку событий." #NT!
+ RULE_OPTION_DEMOCRATIC_LIBERAL_BEL_AI_DESC: "Бельгийский ИИ попытается стать либеральным и интегрировать Конго, пройдя соответствующий путь в национальном дереве фокусов." #NT!
+ RULE_OPTION_NEUTRALITY_MONARCHIST_BEL_AI_DESC: "Бельгийский ИИ попытается установить абсолютистский режим, следуя по соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_DEMOCRATIC_SOCDEM_BEL_AI_DESC: "Бельгийский ИИ попытается стать социал-демократическим и свободным Конго, следуя по соответствующему пути в национальном дереве фокусов." #NT!
+ RULE_OPTION_SOCIALIST_BEL_AI_DESC: "Бельгийский ИИ попытается стать социалистом и отменить монархию, пройдя соответствующий путь в национальном дереве фокусов." #NT!
+  #greece 
+ RULE_OPTION_DEMOCRATIC_HISTORICAL_GRE_AI_DESC: "Греческий ИИ попытается максимально точно проследить историческую цепочку событий." #NT!
+ RULE_OPTION_DEMOCRATIC_LIBERAL_GRE_AI_DESC: "ИИ Греции попытается стать либеральным и поддержать Антанту, выбрав соответствующий путь в национальном древе фокусов." #NT!
+ RULE_OPTION_NEUTRALITY_MONARCHIST_GRE_AI_DESC: "Греческий ИИ попытается установить абсолютистский режим и устранить венизелистов, следуя соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_CENTRAL_POWERS_GRE_AI_DESC: "Греческий ИИ попытается установить абсолютистский режим и присоединиться к Центральным державам, выбрав соответствующий путь в национальном древе фокусов." #NT!
+ RULE_OPTION_SOCIALIST_GRE_AI_DESC: "Греческий ИИ попытается стать социалистом и отменить монархию, выбрав соответствующий путь в национальном древе фокусов." #NT!
+ RULE_OPTION_CENTRAL_POWERS: "Присоединяйтесь к Центральным державам" #NT!
+ GRE_OPERATION_RODI_AI_BEHAVIOR: "@GRE @ITA Операция Роди" #NT!
+ RULE_OPTION_RODI_OR_WAR: "Роди или война" #NT!
+ RULE_OPTION_RODI_OR_WAR_AI_DESC: "Греческий ИИ попытается взять под контроль острова Додекасе, напав на Италию." #NT!
+  
+ RULE_OPTION_METAXAS: "Возвышение Метаксаса" #NT!
+ RULE_OPTION_METAXAS_GRE_AI_DESC: "Греческий ИИ попытается умиротворить Метаксаса, выбрав соответствующий путь в национальном дереве фокусов." #NT!
+  
+  #Brazil 
+ BRA_AI_BEHAVIOR: "@BRA Бразилия"
+ RULE_OPTION_DEMOCRATIC_HISTORICAL_BRA_AI_DESC: "Бразильский ИИ попытается максимально точно проследить историческую цепочку событий." #NT!
+ RULE_FASCIST_BRA_AI_DESC: "Бразильский ИИ попытается установить военную диктатуру флорианизма." #NT!
+ RULE_OPTION_NEUTRALITY_MONARCHIST_BRA_AI_DESC: "Бразильский ИИ попытается восстановить Бразильскую империю, следуя по соответствующему пути в национальном древе фокусов." #NT!
+ RULE_DEMOCRATIC_ALTERNATE_BRA_AI_DESC: "Бразильский ИИ попытается реформировать республику, следуя соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_MAXIMALIST: "Максималист" #NT!
+ RULE_MAXIMALIST_BRA_AI_DESC: "Бразильский ИИ попытается проследить цепочку событий, необходимых для прихода максималистов к власти." #NT!
+ RULE_SYNDICALIST_BRA_AI_DESC: "Бразильский ИИ попытается проследить цепочку событий, необходимых для прихода синдикалистов к власти." #NT!
+  
+  #Britain 
+ RULE_OPTION_WW1_DEMOCRATIC_ENG_AI_DESC: "Британский ИИ попытается сохранить либеральный подход и заняться делами континента, следуя по соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_WW1_DEMOCRATIC_ALTERNATE_ENG_AI_DESC: "Британский ИИ обеспечит победу Консервативной и юнионистской партии на всеобщих выборах 1910 года и начнет действия против Германии, следуя соответствующему пути в национальном дереве фокусов." #NT!
+ RULE_OPTION_FABIAN_ASCENDANCY: "Фабианское господство" #NT!
+ RULE_OPTION_FABIAN_ASCENDANCY_ENG_AI_DESC: "Британский ИИ попытается объединить социализм и создать Республику Британия, следуя соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_PAX_BRITANNICA: "Pax Britannica - Случайный" #NT!
+ RULE_OPTION_PAX_BRITANNICA_AI_DESC: "Британский ИИ попытается продолжить Pax Britannica, следуя по соответствующему пути в национальном древе фокусов, но его дальнейшая политическая ситуация будет случайной." #NT!
+ RULE_OPTION_ROYAL_PREROGATIVE: "Королевская прерогатива" #NT!
+ RULE_OPTION_ROYAL_PREROGATIVE_ENG_AI_DESC: "Британский ИИ попытается продолжить Pax Britannica и реализовать королевскую прерогативу, следуя по соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_LORD_PROTECTOR: "Лорд-протектор" #NT!
+ RULE_OPTION_LORD_PROTECTOR_ENG_AI_DESC: "Британский ИИ попытается привести Герберта Китченера к власти в качестве лорда-протектора, выбрав соответствующий путь в национальном древе фокусов." #NT!
+ RULE_OPTION_ALL_THE_KINGS_MEN: "Вся королевская рать - Случайный" #NT!
+ RULE_OPTION_ALL_THE_KINGS_MEN_AI_DESC: "Британский ИИ будет случайным образом выбирать нового монарха после неудавшейся республиканской революции, следуя соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_ALL_THE_KINGS_MEN_EDWARD: "Вся королевская рать: Законный король" #NT!
+ RULE_OPTION_ALL_THE_KINGS_MEN_EDWARD_ENG_AI_DESC: "Британский ИИ попытается привести к власти Эдуарда VIII после неудавшейся республиканской революции, следуя соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_ALL_THE_KINGS_MEN_VICTORIA: "Вся королевская рать: Возвращение Виктории" #NT!
+ RULE_OPTION_ALL_THE_KINGS_MEN_VICTORIA_ENG_AI_DESC: "Британский ИИ попытается привести к власти принцессу Викторию после неудавшейся республиканской революции, следуя соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_ALL_THE_KINGS_MEN_AUWI: "Вся королевская рать: немецкий герцог" #NT!
+ RULE_OPTION_ALL_THE_KINGS_MEN_AUWI_ENG_AI_DESC: "Британский ИИ попытается привести к власти герцога Саксен-Кобург-Готского после неудавшейся республиканской революции, выбрав соответствующий путь в национальном древе фокусов." #NT!
+  
+  #Bulgaria 
+ RULE_OPTION_HISTORICAL_BUL_WW1_AI_DESC: "Болгарский ИИ попытается максимально точно проследить историческую цепочку событий." #NT!
+ RULE_OPTION_BORIS_III: "Правление Бориса III" #NT!
+ RULE_OPTION_BORIS_III_AI_DESC: "Болгарский ИИ попытается привести Бориса III к власти как можно раньше и сохранить нейтралитет во время Первой мировой войны, выбрав соответствующий путь в национальном древе фокусов." #NT!
+ RULE_OPTION_LIBERALIST_BUL: "Либералист" #NT!
+ RULE_OPTION_LIBERALIST_BUL_AI_DESC: "Болгарский ИИ попытается привести к власти либералов и присоединиться к Центральным державам во время Первой мировой войны, следуя по соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_AGRARIANIST_BUL: "Аграрник" #NT!
+ RULE_OPTION_AGRARIANIST_BUL_AI_DESC: "Болгарский ИИ попытается как можно раньше привести к власти аграриев и присоединиться к Антанте во время Первой мировой войны, выбрав соответствующий путь в национальном древе фокусов." #NT!
+ RULE_OPTION_SOCILAIST_BUL_AI_DESC: "Болгарский ИИ попытается привести к власти узких социалистов, следуя по соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_FASCIST_BUL_WW1_AI_DESC: "Болгарский ИИ попытается как можно раньше привести к власти реакционеров и присоединиться к Центральным державам во время Первой мировой войны, следуя по соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_RADOMIR_REPUBLIC: "Радомирская Республика" #NT!
+ RULE_OPTION_RADOMIR_REPUBLIC_BUL_AI_DESC: "Болгарский ИИ попытается проследить цепочку событий, необходимых для создания Радомирской республики." #NT!
+  
+ ###serbia 
+  
+ RULE_OPTION_YUGOSLAVIA: "Форма £ww1_game_rule_flag_YUG Югославия" #NT!
+ RULE_OPTION_YUGOSLAVIA_AI_DESC: "Сербия поддержит создание югославского государства, следуя соответствующему пути в национальном древе фокусов." #NT!
+  
+  #Germany 
+ RULE_OPTION_HISTORICAL_GER_AI_DESC: "Немецкий ИИ попытается максимально точно проследить историческую цепочку событий." #NT!
+ RULE_OPTION_CONTAIN_THE_KAISER: "Сдержать Кайзера" #NT!
+ RULE_OPTION_CONTAIN_THE_KAISER_GER_AI_DESC: "Немецкий ИИ попытается сдержать кайзера и направиться в Азию, следуя соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_BACKSTAB: "Удар в спину" #NT!
+ RULE_OPTION_BACKSTAB_GER_AI_DESC: "Немецкий ИИ попытается разорвать союз с Австро-Венгрией и направиться в Азию, выбрав соответствующий путь в национальном древе фокусов." #NT!
+ GER_POSTWAR_PATH: "@GER Послевоенная Германия" #NT!
+ RULE_OPTION_HITLER: "Фашистский переворот" #NT!
+ RULE_OPTION_HITLER_AI_DESC: "Немецкий ИИ, проиграв Великую войну, попытается установить фашистское правительство во главе с Гитлером, выбрав соответствующий путь в национальном древе фокусов." #NT!
+ RULE_OPTION_SPARTAKIST: "Успешная спартаковская революция" #NT!
+ RULE_OPTION_SPARTAKIST_AI_DESC: "Немецкий ИИ, проиграв Великую войну, попытается создать коммунистическую республику, следуя соответствующему пути в национальном древе фокусов." #NT!
+  
+  # France 
+ RULE_OPTION_SOCIALIST_FRA_AI_DESC: "Французский ИИ попытается объединить левые партии под руководством Жана Жореса для создания социалистического государства, следуя по соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_DEMOCRATIC_ALTERNATE_FRA_AI_DESC: "Французский ИИ попытается сосредоточиться на интервенционизме, следуя по соответствующему пути в национальном дереве фокусов." #NT!
+ RULE_OPTION_FASCIST_FRA: "Национал-синдикалист" #NT!
+ RULE_OPTION_FASCIST_FRA_AI_DESC: "Французский ИИ попытается принять протофашистскую национал-синдикалистскую систему, следуя по соответствующему пути в национальном древе фокусов." #NT!
+  
+  #Italy 
+ RULE_OPTION_HISTORICAL_ITA_AI_DESC: "Итальянский ИИ попытается максимально точно проследить историческую цепочку событий." #NT!
+ RULE_OPTION_CP_ITA_AI_DESC: "Итальянский ИИ попытается присоединиться к Центральным державам, следуя по соответствующему пути в национальном древе фокусов." #NT!
+ ITA_POSTWAR_PATH: "@ITA Послевоенная Италия" #NT!
+ RULE_OPTION_MUSSOLINI: "Муссолини у руля" #NT!
+ RULE_OPTION_MUSSOLINI_AI_DESC: "Итальянский ИИ попытается поставить Муссолини у власти после своей сокрушительной победы в великой войне, следуя по соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_COMMUNIST_ITALY: "Коммунистическая революция" #NT!
+ RULE_OPTION_COMMUNIST_ITALY_AI_DESC: "Итальянский ИИ попытается провести успешную коммунистическую революцию после своей сокрушительной победы в великой войне, следуя по соответствующему пути в национальном древе фокусов." #NT!
+  
+  #Netherlands 
+ RULE_OPTION_HISTORICAL_HOL_AI_DESC: "Голландский ИИ попытается максимально точно проследить историческую цепочку событий." #NT!
+ RULE_OPTION_BATAVIAN_REPUBLIC: "Батавская Республика" #NT!
+ RULE_OPTION_BATAVIAN_REPUBLIC_HOL_AI_DESC: "Голландский ИИ попытается создать Батавскую Республику, следуя соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_SYNDICALIST_HOL_AI_DESC: "Голландский ИИ попытается привести синдикалистов к власти, следуя соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_NEUTRALITY_MONARCHIST_HOL_AI_DESC: "Голландский ИИ попытается расширить полномочия монарха и объединить Бенилюкс, следуя соответствующему пути в национальном древе фокусов." #NT!
+  
+  #Ottoman 
+ OTO_AI_BEHAVIOR: "@TUR Османы" #NT!
+ RULE_OPTION_HISTORICAL_TRIUMVIRATE: "Правительство трех пашей (историческое)" #NT!
+ RULE_OPTION_HISTORICAL_TRIUMVIRATE_DESC: "Османский ИИ сформирует экстремистское реваншистское правительство, которое поддержит Германию в ее предстоящих войнах, сосредоточившись на «очищении» империи." #NT!
+ RULE_OPTION_TUR_EMPOWER_THE_SULTAN: "Дайте власть султану" #NT!
+ RULE_OPTION_TUR_EMPOWER_THE_SULTAN_DESC: "Османский ИИ попытается вернуть Султану его законное место, объединившись с реакционными группировками, оставшимися после инцидента 31 марта." #NT!
+ RULE_OPTION_TUR_HURRIYET_VE_ITILAF: "Победа Хюрриет ве Итилаф" #NT!
+ RULE_OPTION_TUR_HURRIYET_VE_ITILAF_DESC: "Османская ИИ попытается бороться с радикальным влиянием и заговорами иттихатистов, а также попытается либерализовать империю, предоставив больше прав определенным меньшинствам внутри империи." #NT!
+ RULE_OPTION_TUR_PROTECT_DEMOCRACY: "Защитить демократию" #NT!
+ RULE_OPTION_TUR_PROTECT_DEMOCRACY_DESC: "ИИ Османской империи сосредоточится на сохранении османской демократии от радикальных фракций İttihat ve Terakki Fırkası, а также на сохранении своего контроля над политикой империи." #NT!
+ RULE_OPTION_TUR_VATAN_VE_HURRIYET_CEMIYETI: "Ватан и Хюрриет Джемиети" #NT!
+ RULE_OPTION_TUR_VATAN_VE_HURRIYET_CEMIYETI_DESC: "Османский ИИ сосредоточится на сохранении единства империи, объединившись с Мустафой Кемалем и его фракцией «Ватан ве Хюрриет» против радикальных иттихатистов, одновременно поступаясь демократией империи в целях модернизации и вестернизации." #NT!
+ RULE_OPTION_TUR_ENVERS_FEVER_DREAM: "Лихорадочный сон Энвера" #NT!
+ RULE_OPTION_TUR_ENVERS_FEVER_DREAM_DESC: "Османская ИИ сосредоточится на предоставлении Энверу-паше полномочий единоличного правителя империи после того, как он пойдет по пути правительства трех пашей, и попытается объединить все тюркские народы и создать единое государство Туран." #NT!
+ RULE_OPTION_TUR_FORM_A_LEFTIST_PARLIAMENT: "Сформировать левый парламент" #NT!
+ RULE_OPTION_TUR_FORM_A_LEFTIST_PARLIAMENT_DESC: "Османская ИИ сосредоточится на предоставлении Энверу-паше полномочий единоличного правителя империи после того, как он пойдет по пути правительства трех пашей, и попытается объединить все тюркские народы и создать единое государство Туран." #NT!
+  
+  #Russia 
+ RUS_AI_BEHAVIOR: "@RUS Россия" #NT!
+ RULE_OPTION_HISTORICAL_RUS_AI_DESC: "Российский ИИ попытается максимально точно проследить историческую цепочку событий." #NT!
+ RULE_OPTION_KAISER_RUS: "Сближение с кайзером" #NT!
+ RULE_OPTION_KAISER_RUS_AI_DESC: "Российский ИИ попытается выйти из Антанты и сосредоточиться на восточных претензиях, следуя по соответствующему пути в национальном дереве фокусов." #NT!
+ RULE_OPTION_TSAR_RUS: "Абсолютист" #NT!
+ RULE_OPTION_TSAR_RUS_AI_DESC: "Российский ИИ попытается противостоять Думе и восстановить абсолютную власть царя, следуя по соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_CONSTITUTIONALIST_RUS: "Конституционалист - Умеренный" #NT!
+ RULE_OPTION_CONSTITUTIONALIST_RUS_AI_DESC: "Российский ИИ попытается конституционализировать Россию, следуя по соответствующему пути в национальном дереве фокусов." #NT!
+ RULE_OPTION_CONSTITUTIONALIST_RADICAL_RUS: "Конституционалист - Радикальный" #NT!
+ RULE_OPTION_CONSTITUTIONALIST_RADICAL_RUS_AI_DESC: "Российский ИИ попытается провести революционеров в Думу и создать конституционную Россию, следуя по соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_DEMOCRATIC_RUS: "Демократическая Республика" #NT!
+ RULE_OPTION_DEMOCRATIC_RUS_AI_DESC: "Российский ИИ попытается поместить революционеров в Думу и основать Российскую Республику, следуя соответствующему пути в национальном древе фокусов." #NT!
+  #Russian Revolution 
+ RUSSIAN_REVOLUTION_PATH: "@RUS Русская революция" #NT!
+ RULE_OPTION_TSAR_MIKHAIL_CROWNED: "Михаил II коронован" #NT!
+ RULE_OPTION_TSAR_MIKHAIL_CROWNED_DESC: "В случае русской революции Николай II отречется от престола в пользу своего брата Михаила." #NT!
+ RULE_OPTION_KORNILOV_IN_POWER: "Дело Корнилова увенчалось успехом" #NT!
+ RULE_OPTION_KORNILOV_IN_POWER_DESC: "Под угрозой большевиков Корнилову удастся свергнуть Временное правительство и спасти республику." #NT!
+ RULE_OPTION_KERENSKY_DICTATORSHIP: "Диктатор Керенский" #NT!
+ RULE_OPTION_KERENSKY_DICTATORSHIP_DESC: "Под угрозой большевиков и корниловцев Дума предоставит Керенскому диктаторские полномочия." #NT!
+  #Soviet Russia 
+ RULE_OPTION_HARDLINE_SOVIET: "Жесткий коммунизм" #NT!
+ RULE_OPTION_HARDLINE_SOVIET_AI_DESC: "Советский ИИ попытается реализовать жесткую коммунистическую политику, следуя соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_REVISIONIST_SOVIET: "Ревизионистский социализм" #NT!
+ RULE_OPTION_REVISIONIST_SOVIET_AI_DESC: "Советский ИИ попытается реализовать ревизионистскую политику и экономическую альтернативу планированию, следуя по соответствующему пути в национальном дереве фокусов." #NT!
+ RULE_OPTION_MENSHEVIK_SOVIET: "Учредительное собрание - меньшевики" #NT!
+ RULE_OPTION_MENSHEVIK_SOVIET_AI_DESC: "Советский ИИ признает Учредительное собрание и вернет меньшевиков к власти, а затем проведет настоящие демократические выборы и воссоединит Россию, следуя по соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_THIRD_FORCE_SOVIET: "Учредительное собрание - Зелёные" #NT!
+ RULE_OPTION_THIRD_FORCE_SOVIET_AI_DESC: "Советский ИИ признает Учредительное собрание и приведет к власти Зелёное движение, а затем создаст Съезд народных депутатов и воссоединит Россию, следуя по соответствующему пути в национальном древе фокусов." #NT!
+  #Canada 
+ CAN_ai_behavior: "@CAN Канада" #NT!
+ RULE_OPTION_DEMOCRATIC_HISTORICAL_CANADA_DESC: "Канадский ИИ попытается максимально точно проследить историческую цепочку событий." #NT!
+ RULE_OPTION_BRITISH_COMPROMISE: "Британский Компромисс" #NT!
+ RULE_OPTION_BRITISH_COMPROMISE_DESC: "Канадский ИИ попытается стать свободным, оставаясь при этом дружественным Соединенному Королевству, следуя по соответствующему пути в национальном дереве фокусов." #NT!
+ RULE_OPTION_REPUBLICAN: "республиканец" #NT!
+ RULE_OPTION_REPUBLICAN_DESC: "Канадский ИИ попытается обрести свободу, проводя политику дружбы с Соединенными Штатами, следуя по соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_MONARCHIST_CAN_DESC: "Канадский ИИ попытается обрести свободу, одновременно формируя собственную монархию, следуя по соответствующему пути в национальном древе фокусов." #NT!
+  
+  #Sweden 
+ RULE_OPTION_HISTORICAL_SWE_DESC: "Шведский ИИ попытается максимально точно проследить историческую цепочку событий." #NT!
+ RULE_OPTION_CP_SWE_AI_DESC: "Шведский ИИ попытается присоединиться к Центральным державам, следуя по соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_ENTENTE_SWE_DESC: "Шведский ИИ попытается присоединиться к Антанте, следуя по соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_MONARCHIST_SWE: "Королевская диктатура" #NT!
+ RULE_OPTION_MONARCHIST_SWE_AI_DESC: "Шведский ИИ попытается установить королевскую диктатуру, следуя по соответствующему пути в национальном древе фокусов." #NT!
+ RULE_OPTION_FASCIST_SWE: "Личная диктатура" #NT!
+ RULE_OPTION_FASCIST_SWE_AI_DESC: "Шведский ИИ попытается установить лютеранскую личную диктатуру, следуя по соответствующему пути в национальном дереве фокусов." #NT!
+ RULE_OPTION_SYNDICALIST_SWE_AI_DESC: "Шведский ИИ попытается стать синдикалистом, следуя по соответствующему пути в национальном дереве фокусов." #NT!
+  
+  #China 
+ CHI_WW1_AI_BEHAVIOR: "@CHI Китайская Республика" #NT!
+ RULE_OPTION_DEMOCRATIC_CHI_AI_DESC: "Китайский ИИ попытается привести Тунмэнхуэя к власти и противостоять Пекинской клике, следуя соответствующему пути в национальном древе фокусов." #NT!
+  
+  ### Faction Rules ### 
+ RULE_KICK_FROM_FACTION_ALLOWED_TOOLTIP: "Правило игры: §YЛидер фракции может исключить любую страну из фракции после Великой войны.§!" #NT!
+ RULE_ASSUME_LEADERSHIP_ALLOWED_TOOLTIP: "Правило игры: §YСтраны могут взять на себя руководство фракцией, если они соответствуют критериям после Великой войны.§!" #NT!
+  
+  ### Unit Limit Rules ### 
+ RULE_GROUP_BATTALION_LIMIT_RULES: "Установка лимита батальона" #NT!
+  
+ RULE_BATTALION_LIMIT_OPTIONS: "Ограничения по батальонам" #NT!
+ RULE_OPTION_STANDARD: "Применимо ко всем" #NT!
+ RULE_UNIT_LIMIT_OPTIONS_STANDARD_DESC: "Были применены ограничения на количество батальонов, которые может построить ИИ, на основе количества их заводов и уровня экономического закона. Как только ИИ достигает этого предела, он просто прекращает строить новые батальоны. Этот предел также применяется к игроку, хотя для него это мягкий предел, и он получает штраф в зависимости от того, насколько сильно он превзошел лимит.\n\n§RОбратите внимание, что эта система введена для уменьшения неизбежного замедления, которое происходит по мере развития игры, поскольку именно количество действующих батальонов является основной причиной задержки системы.§!" #NT!
+ RULE_UNIT_LIMIT_OPTIONS_AI_ONLY: "Применимо только к ИИ" #NT!
+ RULE_UNIT_LIMIT_OPTIONS_AI_ONLY_DESC: "Были применены ограничения на количество батальонов, которые ИИ может построить, в зависимости от количества заводов и уровня экономического закона. Как только ИИ достигнет этого предела, они просто перестанут строить новые батальоны. При таких настройках нет ограничений на количество батальонов, которые игрок может построить, кроме их способности поставлять рабочую силу и оборудование.\n\n§RОбратите внимание, что это даст игроку значительное преимущество перед странами ИИ, которые в противном случае были бы полезны. сопоставимые сильные стороны.§!" #NT!
+ RULE_OPTION_TURN_OFF: "Выключать" #NT!
+ RULE_UNIT_LIMIT_OPTIONS_TURN_OFF_DESC: "Это полностью отключает систему ограничения батальонов.\n\n§RРекомендуется делать это только в том случае, если вас не смущает, что скорость игры по мере ее развития значительно снижается, или у вас ОЧЕНЬ мощный компьютер для запуска игры.§!" #NT!
+  
+ RULE_DEMOB_BATTALION_OPTIONS: "Демобилизация батальонов мирного времени" #NT!
+ RULE_OPTION_DEMOB_EXISTS: "По умолчанию" #NT!
+ RULE_OPTION_DEMOB_EXISTS_DESC: "В мирное время игроку будет предложено снизить экономику и/или законы о воинской повинности до уровней, разрешенных в мирное время и в соответствии с его военной поддержкой в ​​течение четырех месяцев. ИИ сделает то же самое, хотя он сделает это быстрее и будет стремиться снизить свои законы до более низких уровней, чем требуется игроку. Если ограничения по юнитам применяются к ИИ, это также будет побуждать его сократить количество активных юнитов по соображениям производительности." #NT!
+ RULE_OPTION_DEMOB_AI_ONLY: "Применяется только к ИИ" #NT!
+ RULE_OPTION_DEMOB_AI_ONLY_DESC: "В мирное время ИИ сократит свою экономику и/или законы о воинской повинности. Если ограничения юнитов применяются к ИИ, это также побудит его сократить количество активных юнитов по соображениям производительности. Однако игроку никогда не будет предложено сократить свои законы." #NT!
+ RULE_OPTION_DEMOB_OFF: "Выключать" #NT!
+ RULE_OPTION_DEMOB_OFF_DESC: "Ни игроку, ни ИИ никогда не будет предложено сократить экономику и/или законы о воинской повинности в мирное время.\n\n§RМы рекомендуем вам делать это только в том случае, если вас не смущает, что скорость игры по мере ее развития значительно снижается, или у вас ОЧЕНЬ мощный компьютер для запуска игры.§!" #NT!

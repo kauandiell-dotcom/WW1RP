@@ -1,0 +1,33 @@
+guiTypes = {
+	containerWindowType = { 
+		name = "AGW_factory_rights_container"
+		position = { x=258 y=100}
+		size = { width = 228 height = 28 }
+		clipping = no
+
+		iconType = {
+			name ="AGW_factory_rightsbg"
+			spriteType = "GFX_generic_text_bg_154"
+			position = { x = 115 y = 15 }
+		}
+		
+		instantTextboxType = {
+			name = "AGW_factory_rights_window_title"
+			position = { x = 123 y = 21 }
+			font = "hoi_16mbs"
+			text = "Factory Rights:"
+			maxWidth = 100
+			maxHeight = 20
+		}
+		
+		instantTextboxType = {
+			name = "AGW_factory_rights"
+			position = { x = 217 y = 19 }    
+			font = "hoi_18mbs" 
+			text = "[?taken_factories|H0]/[?factory_rights|G0]" 
+			maxWidth = 100      
+			maxHeight = 20
+			alwaystransparent = yes
+		}
+	}
+}

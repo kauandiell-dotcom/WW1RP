@@ -1,0 +1,1832 @@
+on_actions = {
+	on_daily_RUS = {
+		effect = {
+			RUS_update_ui_effect = yes
+		}
+	}
+
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_variable = last_insult_sent_this_amount_of_days_ago
+					check_variable = { last_insult_sent_this_amount_of_days_ago > 0 }
+				}
+				clear_variable = last_insult_sent_this_amount_of_days_ago
+			}
+			if = {
+				limit = { NOT = { has_variable = factory_rights } }
+				if = {
+					limit = {
+						has_game_rule = { rule = agw_default_factory_rights_options option = option_5 }
+					}
+					set_variable = { factory_rights = 5 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = agw_default_factory_rights_options option = option_10 }
+					}
+					set_variable = { factory_rights = 10 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = agw_default_factory_rights_options option = option_15 }
+					}
+					set_variable = { factory_rights = 15 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = agw_default_factory_rights_options option = option_20 }
+					}
+					set_variable = { factory_rights = 20 }
+				}
+			}
+			if = {
+				limit = { NOT = { has_variable = taken_factories } }
+				set_variable = { taken_factories = 0 }
+			}
+		}
+	}
+
+	on_weekly = {
+		effect = {
+			# unit limit calculations
+			country_event = agw.unit_limits.1
+			country_event = agw.unit_limits.2
+			# average resistance calculation
+			country_event = agw.control_effects.1
+
+			if = {
+				limit = {
+					original_tag = RUS
+					RUS = { has_completed_focus = RUS_resist_the_duma }
+				}
+				add_to_variable = {
+					RUS_paranoia = RUS_paranoia_modifier_increase
+				}
+				
+				if = {
+					limit = {
+						check_variable = {
+							var = RUS_paranoia
+							value = 90
+							compare = greater_than_or_equals
+						}
+						NOT = { has_completed_focus = RUS_orthodoxy_autocracy_nationality }
+					}
+					country_event = ww1_russia.39
+				}
+			}
+
+			if = {
+				limit = {
+					# well so a random minor player left the game lets fix this ruins
+					has_idea = AGW_ai_optimisation_check
+					NOT = { has_idea = AGW_ai_optimisation } 
+
+					is_ai = yes
+					has_war = no
+				}
+				add_ideas = AGW_ai_optimisation
+				disband_fifty_percent_units = yes
+				disband_fifty_percent_units = yes
+			}
+
+			if = {
+				limit = {
+					has_navy_size = {
+						size > 209
+						archetype = ship_hull_submarine
+					}
+				}
+				add_ideas = AGW_no_more_submarines
+			}
+			if = {
+				limit = {
+					has_navy_size = {
+						size > 59
+						archetype = ship_hull_heavy
+					}
+				}
+				add_ideas = AGW_no_more_batleships
+			}
+			if = {
+				limit = {
+					has_navy_size = {
+						size > 109
+						archetype = ship_hull_cruiser
+					}
+				}
+				add_ideas = AGW_no_more_cruisers
+			}
+			if = {
+				limit = {
+					has_navy_size = {
+						size > 409
+						archetype = ship_hull_light
+					}
+				}
+				add_ideas = AGW_no_more_destroyers
+			}
+			if = {
+				limit = {
+					has_navy_size = {
+						size > 809
+					}
+				}
+				add_ideas = AGW_no_more_ships
+			}
+		}
+	}
+
+	on_monthly = {
+		effect = {
+			add_to_variable = { monthly_check = 1 }
+			if = {
+				limit = { 
+					check_variable = { monthly_check > 11 }
+				}
+				if = {
+					limit = {
+						has_game_rule = { rule = agw_yearly_factory_rights_options option = option_5 }
+					}
+					add_to_variable = { factory_rights = 5 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = agw_yearly_factory_rights_options option = option_10 }
+					}
+					add_to_variable = { factory_rights = 10 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = agw_yearly_factory_rights_options option = option_15 }
+					}
+					add_to_variable = { factory_rights = 15 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = agw_yearly_factory_rights_options option = option_20 }
+					}
+					add_to_variable = { factory_rights = 20 }
+				}
+				add_to_variable = { dr_faction_limit_var = 2 }
+				set_variable = { monthly_check = 0 }
+			}
+			if = {
+				limit = { NOT = { has_dynamic_modifier = { modifier = country_gdp } } }
+				#add_dynamic_modifier = { modifier = country_gdp }
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				calculate_GDP = yes
+			}
+			
+			force_update_map_mode = { mapmode = GDP_map_mode }
+			force_update_map_mode = { mapmode = GDP_per_capita_map_mode }
+
+			if = {
+				limit = {
+					original_tag = TUR
+					date > 1912.6.1
+					NOT = { has_global_flag = TUR_debt_system_dissolved }
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = opda_lira
+							value = 15
+							compare = greater_than_or_equals
+						}
+					}
+					add_timed_idea = {
+						idea = TUR_unpaid_debts
+						days = 365
+					}
+				}
+				clear_variable = opda_lira
+				clear_variable = opda_consumer_goods
+				clear_variable = opda_resources_to_market
+				remove_dynamic_modifier = {
+					modifier = TUR_OPDA
+				}
+				set_global_flag = TUR_debt_system_dissolved
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			set_variable = { dr_faction_limit_var = 16 }
+		
+			858 = { add_dynamic_modifier = { modifier = TUR_cemal_pasha_influence } }
+			454 = { add_dynamic_modifier = { modifier = TUR_cemal_pasha_influence } }
+			856 = { add_dynamic_modifier = { modifier = TUR_cemal_pasha_influence } }
+			455 = { add_dynamic_modifier = { modifier = TUR_cemal_pasha_influence } }
+			554 = { add_dynamic_modifier = { modifier = TUR_cemal_pasha_influence } }
+			553 = { add_dynamic_modifier = { modifier = TUR_cemal_pasha_influence } }
+			852 = { add_dynamic_modifier = { modifier = TUR_cemal_pasha_influence } }
+			677 = { add_dynamic_modifier = { modifier = TUR_cemal_pasha_influence } }
+			680 = { add_dynamic_modifier = { modifier = TUR_cemal_pasha_influence } }
+			884 = { add_dynamic_modifier = { modifier = TUR_cemal_pasha_influence } }
+			676 = { add_dynamic_modifier = { modifier = TUR_cemal_pasha_influence } }
+			879 = { add_dynamic_modifier = { modifier = TUR_cemal_pasha_influence } }
+			853 = { add_dynamic_modifier = { modifier = TUR_cemal_pasha_influence } }
+			883 = { add_dynamic_modifier = { modifier = TUR_cemal_pasha_influence } }
+		
+			if = {
+				limit = {
+					NOT = { has_global_flag = AGW_infrastructures_doubled }
+				}
+				every_state = {
+					set_temp_variable = { temp_infrastructure = infrastructure_level }
+					multiply_temp_variable = { temp_infrastructure = 2 }
+					set_building_level = {
+						type = infrastructure
+						level = temp_infrastructure
+						instant_build = yes
+					}
+				}
+				set_global_flag = AGW_infrastructures_doubled
+			}
+			set_global_flag = scornful_insults_mod_enabled
+
+			every_country = {
+				#Unit Limits Setup
+				country_event = agw.unit_limits.1
+				
+				while_loop_effect = {
+					limit = { 
+						amount_research_slots < 3
+					}
+					add_research_slot = 1
+				}
+				
+				add_research_slot = 1
+
+				# GDP
+				if = {
+					limit = { 
+						NOT = { 
+							is_ai = no 
+							is_in_array = { global.GDP_list_array = THIS } 
+						} 
+					}
+					add_to_array = { global.GDP_list_array = THIS }
+				}
+				#add_dynamic_modifier = { modifier = country_gdp }
+				if = {
+					limit = {
+						is_ai = no
+					}
+					calculate_GDP = yes
+				}
+
+				# Factory Rights
+				set_variable = { taken_factories = 0 }
+
+				if = {
+					limit = {
+						has_game_rule = { rule = agw_default_factory_rights_options option = option_5 }
+					}
+					set_variable = { factory_rights = 5 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = agw_default_factory_rights_options option = option_10 }
+					}
+					set_variable = { factory_rights = 10 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = agw_default_factory_rights_options option = option_15 }
+					}
+					set_variable = { factory_rights = 15 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = agw_default_factory_rights_options option = option_20 }
+					}
+					set_variable = { factory_rights = 20 }
+				}
+			}
+
+			every_country = {
+				limit = { NOT = { original_tag = CAN original_tag = SAF original_tag = RAJ original_tag = AST original_tag = NZL original_tag = ENG original_tag = USA original_tag = FRA original_tag = GER original_tag = AUH original_tag = ITA original_tag = RUS original_tag = TUR original_tag = QIN original_tag = JAP original_tag = CHA original_tag = MNT original_tag = SER original_tag = ROM original_tag = BUL original_tag = GRE original_tag = CRE original_tag = QAT original_tag = JBS original_tag = KOR original_tag = BEL } }
+				add_ideas = AGW_ai_optimisation
+			}
+
+			# Focus Tree Backgrounds
+
+			AUH = {
+				set_variable = { show_background = 1 }
+			}
+			BRA = {
+				set_variable = { show_background = 2 }
+			}
+			BUL = {
+				set_variable = { show_background = 3 }
+			}
+			CAN = {
+				set_variable = { show_background = 4 }
+			}
+			CHI = {
+				set_variable = { show_background = 5 }
+			}
+			# Commonwealth generic:
+			RAJ = {
+				set_variable = { show_background = 6 }
+			}
+			SAF = {
+				set_variable = { show_background = 6 }
+			}
+			AST = {
+				set_variable = { show_background = 6 }
+			}
+			NZL = {
+				set_variable = { show_background = 6 }
+			}
+			##########################
+			EGY = {
+				set_variable = { show_background = 7 }
+			}
+			ENG = {
+				set_variable = { show_background = 8 }
+			}
+			FRA = {
+				set_variable = { show_background = 9 }
+			}
+			# GENERIC
+			every_country = {
+				limit = { NOT = { original_tag = AUH original_tag = BRA original_tag = BUL original_tag = CAN original_tag = CHI original_tag = RAJ original_tag = SAF original_tag = AST original_tag = NZL original_tag = EGY original_tag = ENG original_tag = FRA original_tag = GER original_tag = GRE original_tag = ITA original_tag = JAP original_tag = MEX original_tag = QIN original_tag = ROM original_tag = RUS original_tag = SPR original_tag = TUR original_tag = USA } }
+				set_variable = { show_background = 10 }
+			}
+			GER = {
+				set_variable = { show_background = 11 }
+			}
+			GRE = {
+				set_variable = { show_background = 12 }
+			}
+			ITA = {
+				set_variable = { show_background = 13 }
+			}
+			JAP = {
+				set_variable = { show_background = 14 }
+			}
+			MEX = {
+				set_variable = { show_background = 15 }
+			}
+			QIN = {
+				set_variable = { show_background = 16 }
+			}
+			ROM = {
+				set_variable = { show_background = 17 }
+			}
+			RUS = {
+				set_variable = { show_background = 18 }
+			}
+			SPR = {
+				set_variable = { show_background = 19 }
+			}
+			TUR = {
+				set_variable = { show_background = 20 }
+			}
+			USA = {
+				set_variable = { show_background = 21 }
+			}
+			
+			
+			# Increasing Factories for some Countries
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 5
+
+				EGY = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 2
+
+				EGY = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 10
+
+				JAP = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 6
+
+				JAP = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 6
+
+				JAP = {
+					random_owned_controlled_state = {
+						limit = {
+							is_coastal = yes
+							is_core_of = PREV
+							free_building_slots = {
+								building = dockyard
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = dockyard
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 16
+
+				QIN = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 6
+
+				QIN = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 3
+
+				CAN = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 4
+
+				BRA = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 2
+
+				BRA = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 6
+
+				PER = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 3
+
+				PER = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 5
+
+				POR = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 9
+
+				SPR = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 3
+
+				SPR = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 5
+
+				SWE = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 3
+
+				SWE = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 1
+
+				MNT = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 2
+
+				MNT = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 3
+
+				BUL = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 1
+
+				BUL = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 1
+
+				BUL = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							is_coastal = yes
+							free_building_slots = {
+								building = dockyard
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = dockyard
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 3
+
+				GRE = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 1
+
+				GRE = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 6
+
+				SER = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 2
+
+				SER = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 14
+
+				TUR = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 3
+
+				TUR = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 7
+
+				ITA = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 3
+
+				ITA = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 10
+
+				AUH = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 6
+
+				AUH = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 17
+
+				RUS = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 6
+
+				RUS = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 7
+
+				FRA = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 2
+
+				FRA = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 6
+
+				KOR = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 3
+
+				KOR = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 1
+
+				KOR = {
+					random_owned_controlled_state = {
+						limit = {
+							is_coastal = yes
+							is_core_of = PREV
+							free_building_slots = {
+								building = dockyard
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = dockyard
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 8
+
+				MEX = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 4
+
+				MEX = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 2
+
+				MEX = {
+					random_owned_controlled_state = {
+						limit = {
+							is_coastal = yes
+							is_core_of = PREV
+							free_building_slots = {
+								building = dockyard
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = dockyard
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 2
+
+				HON = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 2
+
+				HON = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 2
+
+				LIB = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 2
+
+				LIB = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 3
+
+				ARG = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 2
+
+				ARG = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 4
+
+				ARG = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 2
+
+				AFG = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 2
+
+				JBS = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 1
+
+				JBS = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			# Decreasing Factories for some Countries
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 1
+
+				GER = {
+					random_owned_controlled_state = {
+						limit = {
+							industrial_complex > 0
+						}
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 2
+
+				GER = {
+					random_owned_controlled_state = {
+						limit = {
+							arms_factory > 0
+						}
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 5
+
+				GER = {
+					random_owned_controlled_state = {
+						limit = {
+							dockyard > 0
+						}
+						remove_building = {
+							type = dockyard
+							level = 1
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 9
+
+				ENG = {
+					random_owned_controlled_state = {
+						limit = {
+							industrial_complex > 0
+						}
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 2
+
+				ENG = {
+					random_owned_controlled_state = {
+						limit = {
+							arms_factory > 0
+						}
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+				}
+			}
+
+			for_loop_effect = {
+				start = 0
+				add = 1
+				end = 2
+
+				ENG = {
+					random_owned_controlled_state = {
+						limit = {
+							dockyard > 0
+						}
+						remove_building = {
+							type = dockyard
+							level = 1
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_peace = {
+		effect = {
+			#Reduce units check for the AI
+			if = {
+				limit = {
+					is_ai = yes
+					NOT = { has_country_flag = has_reduce_units_check }
+				}
+				set_country_flag = has_reduce_units_check
+				country_event = { id = agw.unit_limits.2 days = 7 random = 72 }
+			}
+		}
+	}
+
+	# From is the overlod, ROOT is the released country
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = {
+					#FROM = {
+					#	is_ai = yes
+					#}
+					ROOT = {
+						is_ai = yes
+					}
+					FROM = {
+						has_war = no
+					}
+				}
+				ROOT = {
+					add_ideas = AGW_ai_optimisation
+				}
+			}
+			if = {
+				limit = { NOT = { has_variable = factory_rights } }
+				if = {
+					limit = {
+						has_game_rule = { rule = agw_default_factory_rights_options option = option_5 }
+					}
+					set_variable = { factory_rights = 5 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = agw_default_factory_rights_options option = option_10 }
+					}
+					set_variable = { factory_rights = 10 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = agw_default_factory_rights_options option = option_15 }
+					}
+					set_variable = { factory_rights = 15 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = agw_default_factory_rights_options option = option_20 }
+					}
+					set_variable = { factory_rights = 20 }
+				}
+			}
+			if = {
+				limit = { NOT = { has_variable = taken_factories } }
+				set_variable = { taken_factories = 0 }
+			}
+		}
+	}
+}

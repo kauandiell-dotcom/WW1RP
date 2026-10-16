@@ -1,0 +1,66 @@
+
+music_station = "base_music"
+
+music = {
+	song = "battleofwuhan"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0.05
+			is_china_or_warlord = no
+		}	
+		modifier = {
+			factor = 3
+			is_china_or_warlord = yes
+		}
+	}
+
+}
+
+music = {
+	song = "empireofthesun"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0.05
+			NOT = {
+				OR = {
+					original_tag = JAP
+					original_tag = MAN
+					original_tag = MEN
+					original_tag = RYU
+					original_tag = AIN
+				}
+			}
+		}	
+
+		modifier = {
+			factor = 3
+			OR = {
+				original_tag = JAP
+				original_tag = MAN
+				original_tag = MEN
+				original_tag = RYU
+				original_tag = AIN
+			}
+		}
+	}
+}
+
+music = {
+	song = "warofresistance"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0.05
+			is_china_or_warlord = no
+		}	
+		modifier = {
+			factor = 3
+			is_china_or_warlord = yes
+		}
+	}
+
+}

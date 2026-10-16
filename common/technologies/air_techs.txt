@@ -1,0 +1,1403 @@
+technologies = {
+	@1909 = 2
+	@1913 = 4
+	@1914 = 6
+	@1915 = 8
+	@1916 = 10
+	@1917 = 12
+	@1918 = 14
+
+	#Great War
+	airship = {
+		enable_equipments = {
+			airship_equipment_1
+		}
+		path = {
+			leads_to_tech = airship2
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1909
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 20 y = 2 }
+		}		
+		categories = {
+			airship
+			heavy_air
+			air_equipment
+			mio_cat_all_heavy_aircraft_and_modules
+		}	
+		sub_technologies = {
+			faketech
+			airship_bomber
+		}	
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 6
+				is_major = yes
+				has_war = yes
+			}
+			modifier = {
+				factor = 0
+				arms_factory < 8 #you must be... hmmmm richer !
+			}
+			modifier = {
+				has_tech = fighter1	#I know a guy...
+				factor = 0
+			}
+		}
+	}
+	airship_bomber = {
+		enable_equipments = {
+			airship_bomber_equipment_1
+		}
+		research_cost = 1
+		start_year = 1909
+	
+		categories = {
+			airship
+			heavy_air
+			air_equipment
+			mio_cat_all_heavy_aircraft_and_modules
+		}		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				tag = GER
+				add = 200
+			}
+		}
+	}
+	airship2 = {
+		enable_equipments = {
+			airship_equipment_2
+		}
+		path = {
+			leads_to_tech = airship3
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1915
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 20 y = @1915 }
+		}		
+		categories = {
+			airship
+			heavy_air
+			air_equipment
+			mio_cat_all_heavy_aircraft_and_modules
+		}	
+		sub_technologies = {
+			faketech
+			airship_bomber2
+		}	
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 6
+				is_major = yes
+				has_war = yes
+			}
+			modifier = {
+				factor = 0
+				date < 1914.1.1	#old trick for old metas
+			}
+			modifier = {
+				factor = 0
+				arms_factory < 8 #you must be... hmmmm richer !
+			}
+			modifier = {
+				tag = GER
+				date > 1914.5.5
+				factor = 200
+			}
+		}
+	}
+	airship_bomber2 = {
+		enable_equipments = {
+			airship_bomber_equipment_2
+		}
+		research_cost = 1
+		start_year = 1915
+	
+		categories = {
+			airship
+			heavy_air
+			air_equipment
+			mio_cat_all_heavy_aircraft_and_modules
+		}		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				tag = GER
+				add = 200
+			}
+		}
+	}
+	airship3 = {
+		enable_equipments = {
+			airship_equipment_3
+		}
+		research_cost = 2
+		start_year = 1917
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 20 y = @1917 }
+		}	
+		sub_technologies = {
+			faketech
+			airship_bomber3
+		}	
+		categories = {
+			airship
+			heavy_air
+			air_equipment
+			mio_cat_all_heavy_aircraft_and_modules
+		}		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 6
+				is_major = yes
+				has_war = yes
+			}
+			modifier = {
+				factor = 0
+				date < 1915.1.1	#old trick for old metas
+			}
+			modifier = {
+				factor = 0
+				arms_factory < 8 #you must be... hmmmm richer !
+			}
+		}
+	}
+	airship_bomber3 = {
+		enable_equipments = {
+			airship_bomber_equipment_3
+		}
+		research_cost = 1
+		start_year = 1917
+		
+		categories = {
+			airship
+			heavy_air
+			air_equipment
+			mio_cat_all_heavy_aircraft_and_modules
+		}		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				tag = GER
+				add = 200
+			}
+		}
+	}
+	scout_plane = {
+		enable_equipments = {
+			scout_plane_equipment_1
+		}
+		dependencies = {
+			aircraft_engine = 1
+		}
+		path = {
+			leads_to_tech = scout_plane2
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1909
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 10 y = @1909 }
+		}		
+		categories = {
+			light_air
+			air_equipment
+			cat_scout_plane
+			mio_cat_all_light_aircraft_and_modules
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = yes
+				factor = 10
+			}
+			modifier = {
+				has_war = yes
+				factor = 1.5
+			}
+			modifier = {
+				factor = 15
+				original_tag = GER
+			}
+			modifier = {
+				date > 1911.1.1
+				factor = 15
+			}
+			modifier = {
+				date > 1912.1.1
+				factor = 30
+			}
+		}
+	}
+	
+	scout_plane2 = {
+		enable_equipments = {
+			scout_plane_equipment_2
+		}
+		dependencies = {
+			aircraft_engine = 1
+		}
+		path = {
+			leads_to_tech = synchronizer
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = aerial_bombs
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1913
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 10 y = @1913 }
+		}		
+		categories = {
+			light_air
+			air_equipment
+			cat_scout_plane
+			mio_cat_all_light_aircraft_and_modules
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 1.5
+			}
+			modifier = {
+				is_major = yes
+				factor = 10
+			}
+			modifier = {
+				date > 1914.1.1
+				factor = 15
+			}
+			modifier = {
+				date > 1915.1.1
+				factor = 30
+			}
+			modifier = {
+				is_major = yes
+				date > 1913.1.1
+				factor = 20
+			}
+			modifier = {
+				has_war = yes
+				is_major = yes
+				factor = 25
+			}
+		}
+	}
+	synchronizer = {
+		path = {
+			leads_to_tech = fighter1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = aa_lmg
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = engines_1
+			research_cost_coeff = 1
+		}
+		on_research_complete = {		
+			custom_effect_tooltip = allow_fighter_and_seaplane_techs
+		}
+		research_cost = 0.75
+		start_year = 1913
+		folder = {
+			name = air_techs_folder
+			position = { x = 8 y = @1913 }
+		}
+
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_guns
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 1.5
+			}
+			modifier = {
+				factor = 4
+				original_tag = GER
+			}
+			modifier = {
+				is_major = yes
+				factor = 10
+			}
+			modifier = {
+				date > 1914.1.1
+				factor = 15
+			}
+			modifier = {
+				date > 1915.1.1
+				factor = 30
+			}
+			modifier = {
+				has_war = yes
+				is_major = yes
+				factor = 25
+			}
+		}
+	}
+	
+	aerial_bombs = {
+		path = {
+			leads_to_tech = tactical_bomber1
+			research_cost_coeff = 1
+		}
+		on_research_complete = {		
+			custom_effect_tooltip = allow_bomber_techs
+		}
+		path = {
+			leads_to_tech = strategic_bomber1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = air_torpedoe_1
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			bomb_locks
+			small_bomb_bay
+			medium_bomb_bay
+			large_bomb_bay
+			torpedo_mounting
+		}
+
+		research_cost = 0.75
+		start_year = 1913
+		folder = {
+			name = air_techs_folder
+			position = { x = 12 y = @1913 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+			mio_cat_all_medium_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 1.5
+			}
+			modifier = {
+				factor = 4
+				original_tag = GER
+			}
+			modifier = {
+				is_major = yes
+				factor = 10
+			}
+			modifier = {
+				date > 1914.1.1
+				factor = 15
+			}
+			modifier = {
+				date > 1915.1.1
+				factor = 30
+			}
+			modifier = {
+				has_war = yes
+				is_major = yes
+				factor = 25
+			}
+			modifier = {
+				tag = GER
+				has_war = yes
+				factor = 50
+			}
+			modifier = {
+				tag = ITA
+				has_war = yes
+				factor = 50
+			}
+		}
+	}
+
+	aa_lmg = {
+
+		enable_equipment_modules = {
+			light_mg_2x
+			light_mg_4x
+			lmg_defense_turret
+			lmg_defense_turret_2x
+		}
+		
+		research_cost = 1
+		start_year = 1913
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = @1913 }
+		}
+
+		path = {
+			leads_to_tech = aa_hmg
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = aa_cannon_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = survivability_studies
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_guns
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+
+	aa_hmg = {
+
+		enable_equipment_modules = {
+			heavy_mg_2x
+			heavy_mg_4x
+			hmg_defense_turret
+			hmg_defense_turret_2x
+		}
+		
+		research_cost = 1
+		start_year = 1914
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = @1914 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_guns
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = basic_small_airframe
+					has_tech = basic_medium_airframe
+					has_tech = basic_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				OR = {
+					tag = USA
+					tag = GER
+				}
+				factor = 3
+			}
+		}
+	}
+
+	aa_cannon_1 = {
+
+		enable_equipment_modules = {
+			aircraft_cannon_1_1x
+			aircraft_cannon_1_2x
+		}
+		
+		research_cost = 1
+		start_year = 1914
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 4 y = @1914 }
+		}
+		path = {
+			leads_to_tech = aa_cannon_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = aa_cannon_3
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_guns
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = basic_small_airframe
+					has_tech = basic_medium_airframe
+					has_tech = basic_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = SOV
+					tag = ENG
+				}
+				factor = 3
+			}
+		}
+	}
+
+	aa_cannon_2 = {
+
+		enable_equipment_modules = {
+			large_aircraft_cannon_1x
+			large_aircraft_cannon_2x
+			cannon_defense_turret
+			cannon_defense_turret_2x
+		}
+		
+		research_cost = 1.5
+		start_year = 1916
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = @1916 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_guns
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = improved_small_airframe
+					has_tech = improved_medium_airframe
+					has_tech = improved_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = SOV
+					tag = ENG
+				}
+				factor = 3
+			}
+		}
+	}
+
+	aa_cannon_3 = {
+
+		enable_equipment_modules = {
+			aircraft_cannon_2_1x
+			aircraft_cannon_2_2x
+			cannon_defense_turret
+			cannon_defense_turret_2x
+		}
+		
+		research_cost = 2
+		start_year = 1918
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 4 y = @1918 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_guns
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = improved_small_airframe
+					has_tech = improved_medium_airframe
+					has_tech = improved_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = SOV
+					tag = ENG
+				}
+				factor = 3
+			}
+		}
+	}
+
+	engines_1 = {
+
+		enable_equipment_modules = {
+			engine_1_1x
+			engine_1_2x
+			engine_1_3x
+			engine_1_4x
+			engine_1_6x	
+		}
+		
+		research_cost = 1
+		start_year = 1913
+
+		folder = {
+			name = air_techs_folder
+			position = { x = -2 y = @1913 }
+		}
+
+		path = {
+			leads_to_tech = engines_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = range_improvements
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = aircraft_construction
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+			modifier = {
+				date > "1937.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1938.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1939.1.1"
+				factor = 3
+			}
+		}
+	}
+
+	engines_2 = {
+
+		enable_equipment_modules = {
+			engine_2_1x
+			engine_2_2x
+			engine_2_3x
+			engine_2_4x
+			engine_2_6x	
+		}
+		
+		research_cost = 1
+		start_year = 1914
+
+		folder = {
+			name = air_techs_folder
+			position = { x = -2 y = @1914 }
+		}
+
+		path = {
+			leads_to_tech = engines_3
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+			modifier = {
+				date > "1937.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1938.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1939.1.1"
+				factor = 3
+			}
+		}
+	}
+
+	engines_3 = {
+
+		enable_equipment_modules = {
+			engine_3_1x
+			engine_3_2x
+			engine_3_3x
+			engine_3_4x
+			engine_3_6x	
+		}
+		
+		research_cost = 1.5
+		start_year = 1916
+
+		folder = {
+			name = air_techs_folder
+			position = { x = -2 y = @1916 }
+		}
+		
+		path = {
+			leads_to_tech = engines_4
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				is_major = yes
+				factor = 5
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+			modifier = {
+				date > "1941.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1942.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1943.1.1"
+				factor = 3
+			}
+		}
+	}
+	
+	engines_4 = {
+
+		enable_equipment_modules = {
+			engine_4_1x
+			engine_4_2x
+			engine_4_3x
+			engine_4_4x
+			engine_4_6x	
+		}
+		
+		research_cost = 1.5
+		start_year = 1918
+
+		folder = {
+			name = air_techs_folder
+			position = { x = -2 y = @1918 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+		}
+	}
+
+	range_improvements = {
+
+		enable_equipment_modules = {
+			fuel_tanks_small
+			fuel_tanks_medium
+			fuel_tanks_large
+			drop_tanks
+		}
+		
+		research_cost = 1
+		start_year = 1914
+
+		folder = {
+			name = air_techs_folder
+			position = { x = -4 y = @1914 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+			modifier = {
+				date > "1937.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1938.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1939.1.1"
+				factor = 3
+			}
+			modifier = {
+				OR = {
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+		}
+	}
+
+	aircraft_construction = {
+
+		enable_equipment_modules = {
+			dive_brakes_small
+			non_strategic_materials_small
+			floats
+			non_strategic_materials_medium
+			flying_boat_medium
+			non_strategic_materials_large
+			flying_boat_large
+		}
+		
+		research_cost = 1
+		start_year = 1913
+
+		folder = {
+			name = air_techs_folder
+			position = { x = -4 y = @1913 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	fighter1 = {
+		enable_equipments = {
+			small_plane_airframe_1
+			cv_small_plane_airframe_1
+		}
+		path = {
+			leads_to_tech = fighter2
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1914
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 8 y = @1914 }
+		}	
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}	
+		ai_will_do = {
+			factor = 4			
+			modifier = {
+				factor = 20
+				is_major = yes
+			}		
+			modifier = {
+				factor = 20
+				date > "1916.1.1"
+			}
+			modifier = {
+				date < 1913.1.1
+				factor = 0
+			}
+		}
+	}	
+	fighter2 = {
+		enable_equipments = {
+			small_plane_airframe_2
+			cv_small_plane_airframe_2
+		}
+		path = {
+			leads_to_tech = fighter3
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1916
+		folder = {
+			name = air_techs_folder
+			position = { x = 8 y = @1916 }
+		}
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 4
+				date > 1915.1.1
+				is_major = yes
+			}
+		}
+	}	
+	fighter3 = {
+		enable_equipments = {
+			small_plane_airframe_3
+			cv_small_plane_airframe_3
+		}	
+		research_cost = 2
+		start_year = 1918
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 8 y = @1918 }
+		}
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}	
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 4
+				date > 1917.1.1
+				is_major = yes
+			}
+		}
+	}
+	
+	tactical_bomber1 = {
+		enable_equipments = {
+			medium_plane_airframe_1
+		}		
+		path = {
+			leads_to_tech = tactical_bomber2
+			research_cost_coeff = 1
+		}		
+		research_cost = 2
+		start_year = 1914
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 12 y = @1914 }
+		}		
+		categories = {
+			medium_air
+			tactical_bomber
+			air_equipment
+			mio_cat_all_medium_aircraft_and_modules
+		}	
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = yes
+				factor = 5
+			}
+			modifier = {
+				is_major = yes
+				has_war = yes
+				factor = 15
+			}
+			modifier = {
+				has_deployed_air_force_size = {
+					size < 50
+					type = fighter
+				}
+				factor = 0
+			}
+			modifier = {
+				tag = AUH
+				factor = 0
+			}
+		}
+	}
+	tactical_bomber2 = {
+		enable_equipments = {
+			medium_plane_airframe_2
+		}	
+		path = {
+			leads_to_tech = tactical_bomber3
+			research_cost_coeff = 1
+		}		
+		research_cost = 2
+		start_year = 1916
+		folder = {
+			name = air_techs_folder
+			position = { x = 12 y = @1916 }
+		}
+		categories = {
+			medium_air
+			tactical_bomber
+			air_equipment
+			mio_cat_all_medium_aircraft_and_modules
+		}		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_deployed_air_force_size = {
+					size > 500
+					type = tactical_bomber
+				}
+				factor = 2
+			}
+		}
+	}
+	tactical_bomber3 = {
+		enable_equipments = {
+			medium_plane_airframe_3
+		}
+		research_cost = 2
+		start_year = 1918
+		folder = {
+			name = air_techs_folder
+			position = { x = 12 y = @1918 }
+		}	
+		categories = {
+			medium_air
+			tactical_bomber
+			air_equipment
+			mio_cat_all_medium_aircraft_and_modules
+		}	
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_deployed_air_force_size = {
+					size > 500
+					type = tactical_bomber
+				}
+				factor = 2
+			}
+		}
+	}
+	
+	strategic_bomber1 = {
+		enable_equipments = {
+	 		large_plane_airframe_1
+		}
+		dependencies = {
+			aerial_bombs = 1
+		}
+		path = {
+			leads_to_tech = strategic_bomber2
+			research_cost_coeff = 1
+		}
+	 	research_cost = 2
+		start_year = 1914
+		folder = {
+			name = air_techs_folder
+			position = { x = 16 y = @1914 }
+		}		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
+		}		
+		ai_will_do = {
+			factor = 1		
+			modifier = {
+				factor = 5
+				tag = ENG
+			}		
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+			modifier = {
+				tag = AUH
+				factor = 200
+			}
+			modifier = {
+				tag = ITA
+				factor = 200
+			}
+			modifier = {
+				tag = RUS
+				factor = 200
+			}
+		}
+	}
+		
+	strategic_bomber2 = {
+		enable_equipments = {
+			large_plane_airframe_2
+		}
+		path = {
+			leads_to_tech = strategic_bomber3
+			research_cost_coeff = 1
+		}		
+	 	research_cost = 2
+		start_year = 1916
+		folder = {
+			name = air_techs_folder
+			position = { x = 16 y = @1916 }
+		}		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
+		}		
+		ai_will_do = {
+			factor = 1			
+			modifier = {
+				factor = 5
+				tag = ENG
+			}		
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+			modifier = {
+				tag = ITA
+				factor = 200
+			}
+			modifier = {
+				tag = RUS
+				factor = 200
+			}
+			modifier = {
+				factor = 0
+				date < 1915.1.1
+			}
+		}
+	}
+	
+	strategic_bomber3 = {
+		enable_equipments = {
+			large_plane_airframe_3
+		}
+		research_cost = 2
+		start_year = 1918
+		folder = {
+			name = air_techs_folder
+			position = { x = 16 y = @1918 }
+		}		
+		categories = {
+	 		heavy_air
+	 		air_equipment
+			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
+		}		
+		ai_will_do = {
+			factor = 1			
+			modifier = {
+				factor = 5
+				tag = ENG
+			}		
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+			modifier = {
+				tag = ITA
+				factor = 200
+			}
+			modifier = {
+				tag = RUS
+				factor = 200
+			}
+			modifier = {
+				factor = 0
+				date < 1917.1.1
+			}
+		}
+	}
+
+	faketech = {	
+		research_cost = 1
+		ai_will_do = { factor = 0 }
+	}
+}

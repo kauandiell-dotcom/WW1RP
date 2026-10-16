@@ -1,0 +1,348 @@
+defined_text = {
+	name = GetFederalReserveName
+	text = {
+		trigger = {
+			original_tag = USA
+			has_country_leader = { character = USA_woodrow_wilson ruling_only = yes }
+		}
+		localization_key = USA_federal_reserve_new_freedom
+	}
+	text = {
+		trigger = {
+			original_tag = USA
+			NOT = { has_country_leader = { character = USA_woodrow_wilson ruling_only = yes } }
+		}
+		localization_key = USA_federal_reserve_standard
+	}
+}
+defined_text = {
+	name = GetGoldReserveName
+	text = {
+		trigger = {
+			original_tag = USA
+			has_country_leader = { character = USA_woodrow_wilson ruling_only = yes }
+		}
+		localization_key = USA_gold_reserve_new_freedom
+	}
+	text = {
+		trigger = {
+			original_tag = USA
+			NOT = { has_country_leader = { character = USA_woodrow_wilson ruling_only = yes } }
+		}
+		localization_key = USA_gold_reserve_standard
+	}
+}
+defined_text = {
+	name = GetProvisionalGovernmentName
+	text = {
+		trigger = {
+			original_tag = RUS
+			has_global_flag = russian_revolution
+		}
+		localization_key = RUS_provisional_government
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			NOT = { has_global_flag = russian_revolution }
+		}
+		localization_key = RUS_octobrist_government
+	}
+}
+defined_text = {
+	name = GetIdeaArmisticeName
+	text = {
+		trigger = {
+			has_global_flag = frankfurt_armistice
+		}
+		localization_key = idea_frankfurt_armistice
+	}
+	text = {
+		trigger = {
+			has_global_flag = compiegne_armistice
+		}
+		localization_key = idea_compiegne_armistice
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			has_global_flag = russ_kapitulation
+			NOT = {
+				has_global_flag = frankfurt_armistice
+				has_global_flag = compiegne_armistice
+			}
+		}
+		localization_key = idea_rus_ger_armistice
+	}
+}
+defined_text = { # Country
+	name = GetFrenchCoronationCity
+	text = {
+		trigger = {
+			has_completed_focus = NFA_the_legitimate_heir
+			NFA = { owns_state = 18 }
+		}
+		localization_key = LaR_France_Reims
+	}
+	text = {
+		trigger = {
+			has_completed_focus = NFA_son_altesse_impriale
+			NFA = { owns_state = 16 }
+		}
+		localization_key = LaR_France_Paris
+	}
+	text = {
+		trigger = {
+			NFA = { NOT = { owns_state = 16 owns_state = 18}}
+		}
+		localization_key = VICTORY_POINTS_1145
+	}
+}
+
+defined_text = { # Country
+	name = GetFrenchRoyalTitle
+	text = {
+		trigger = {
+			has_completed_focus = NFA_the_legitimate_heir
+		}
+		localization_key = LaR_France_King
+	}
+	#text = {
+	#	trigger = {	
+	#		has_completed_focus = FRA_orleanist_restoration
+	#	}
+	#	localization_key = LaR_France_King_of_The_French
+	#}
+	text = {
+		trigger = {	
+			has_completed_focus = NFA_son_altesse_impriale
+		}
+		localization_key = LaR_France_Emperor
+	}
+}
+
+defined_text = {
+	name = GetLandInvestigationName
+	text = {
+		trigger = {
+			original_tag = KOR
+			is_subject_of = JAP
+		}
+		localization_key = KOR_LAND_INVESTIGATION_NAME_JAP
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			NOT = { is_subject_of = JAP }
+		}
+		localization_key = KOR_LAND_INVESTIGATION_NAME_KOR
+	}
+}
+
+defined_text = {
+	name = GetOrdinanceForCompanyEstablishmentName
+	text = {
+		trigger = {
+			original_tag = KOR
+			is_subject_of = JAP
+		}
+		localization_key = KOR_ORDINANCE_FOR_COMPANY_ESTABLISHMENT_NAME_JAP
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			NOT = { is_subject_of = JAP }
+		}
+		localization_key = KOR_ORDINANCE_FOR_COMPANY_ESTABLISHMENT_NAME_KOR
+	}
+}
+
+defined_text = {
+	name = GetIncreaseGrainProductionName
+	text = {
+		trigger = {
+			original_tag = KOR
+			is_subject_of = JAP
+		}
+		localization_key = KOR_INCREASE_GRAIN_PRODUCTION_JAP
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			NOT = { is_subject_of = JAP }
+		}
+		localization_key = KOR_INCREASE_GRAIN_PRODUCTION_KOR
+	}
+}
+
+### Raise Stability decision ###
+defined_text = {
+	name = generic_raise_stability_text
+	text = {
+		trigger = { has_government = communism }
+		localization_key = generic_raise_stability_socialist
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_leader_ideology = socialism
+				has_country_leader_ideology = social_liberalism
+				has_country_leader_ideology = agrarianism
+				has_country_leader_ideology = libertarianism
+			}
+		}
+		localization_key = generic_raise_stability_liberal
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_government = fascism
+				AND = {
+					has_government = neutrality
+					NOT = { has_country_leader_ideology = authoritarian_democracy }
+				}
+			}
+		}
+		localization_key = generic_raise_stability_authoritarian
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					has_government = democratic
+					NOT = {
+						has_country_leader_ideology = socialism
+						has_country_leader_ideology = social_liberalism
+						has_country_leader_ideology = agrarianism
+						has_country_leader_ideology = libertarianism
+					}
+				}
+				has_country_leader_ideology = authoritarian_democracy
+			}
+		}
+		localization_key = generic_raise_stability_conservative
+	}
+}
+
+defined_text = { # Country
+	name = GetImportOrDomesticFilmIndustry
+	text = {
+		trigger = { is_major = yes }
+		localization_key = DOMESTIC_FILM_INDUSTRY
+	}
+	text = {
+		localization_key = IMPORTED_FILM_INDUSTRY
+	}
+}
+
+defined_text = { # Country
+	name = GetImportOrDomesticFilmIndustryDesc
+	text = {
+		trigger = { is_major = yes }
+		localization_key = DOMESTIC_FILM_INDUSTRY_DESC
+	}
+	text = {
+		localization_key = IMPORTED_FILM_INDUSTRY_DESC
+	}
+}
+
+### Raise Support decision ###
+defined_text = {
+	name = generic_raise_support_text
+	text = {
+		trigger = {
+			OR = {
+				has_country_leader_ideology = vanguardism
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+		localization_key = solidify_control
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_leader_ideology = vanguardism
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+		localization_key = rally_public_support
+	}
+}
+
+defined_text = {
+	name = generic_raise_support_desc_text
+	text = {
+		trigger = {
+			OR = {
+				has_country_leader_ideology = vanguardism
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+		localization_key = solidify_control_desc
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_leader_ideology = vanguardism
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+		localization_key = rally_public_support_desc
+	}
+}
+
+defined_text = {
+	name = Get_naval_experience_name
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_naval_experience
+	}
+	text = {
+		localization_key = naval_experience_name
+	}
+}
+
+defined_text = {
+	name = Get_naval_experience_desc_name
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_naval_experience_desc
+	}
+	text = {
+		localization_key = naval_experience_desc_name
+	}
+}
+
+defined_text = {
+	name = Get_naval_expansion_name
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_naval_expansion
+	}
+	text = {
+		localization_key = naval_expansion_name
+	}
+}
+
+defined_text = {
+	name = Get_naval_expansion_desc_name
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_naval_expansion_desc
+	}
+	text = {
+		localization_key = naval_expansion_desc_name
+	}
+}

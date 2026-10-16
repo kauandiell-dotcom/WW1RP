@@ -1,0 +1,752 @@
+add_namespace = ww1_vietnam
+
+# French Indochina reclamation
+country_event = {
+	id = ww1_vietnam.2
+	title = ww1_vietnam.2.t
+	desc = ww1_vietnam.2.d
+	picture = GFX_report_event_france_victory_syria
+	fire_only_once = yes
+	trigger = {
+		original_tag = IND
+		has_cosmetic_tag = IND_FRA
+		has_war = no
+		is_subject = no
+		has_global_flag = french_civil_war
+		OR = {
+			has_government = fascism
+			has_government = neutrality
+		}
+		any_other_country = {
+			original_tag = FRA
+			NOT = {
+				has_government = communism
+				has_country_flag = FRA_socialist_france_flag
+			}
+			has_war = no
+			is_subject = no
+		}
+	}
+	mean_time_to_happen = { days = 0 }
+	option = {
+		name = ww1_vietnam.2.a
+		get_current_government_type = yes
+		random_other_country = {
+			limit = {
+				original_tag = FRA
+				NOT = {
+					has_government = communism
+					has_country_flag = FRA_socialist_france_flag
+				}
+				has_war = no
+				is_subject = no
+			}
+			set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_colony
+			}
+		}
+		restore_previous_government_type = yes
+	}
+}
+
+# Burmese militia
+country_event = {
+	id = ww1_vietnam.3
+	title = ww1_vietnam.3.t
+	desc = ww1_vietnam.3.d
+	picture = GFX_report_event_fascist_militia
+	fire_only_once = yes
+	trigger = {
+		tag = BRM
+		is_subject = no
+	}
+	mean_time_to_happen = { days = 0 }
+	immediate = {
+		hidden_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1200
+				producer = RAJ
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 250
+				producer = RAJ
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 120
+				producer = RAJ
+			}
+			division_template = {
+				name = "Pyishuhcait"
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+					militia = { x = 0 y = 3 }
+					militia = { x = 0 y = 4 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+					militia = { x = 1 y = 2 }
+					militia = { x = 1 y = 3 }
+					militia = { x = 1 y = 4 }
+					militia = { x = 2 y = 0 }
+					militia = { x = 2 y = 1 }
+					militia = { x = 2 y = 2 }
+					artillery_brigade = { x = 2 y = 3 }
+				}
+			}
+		}
+	}
+	option = {
+		name = ww1_vietnam.3.a
+		capital_scope = {
+			create_unit = {
+				division = "name = \"Raankonetine Tauthpwal 1\" division_template = \"Pyishuhcait\" start_experience_factor = 0.9"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Raankonetine Tauthpwal 2\" division_template = \"Pyishuhcait\" start_experience_factor = 0.9"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Pyishuhcait 1\" division_template = \"Pyishuhcait\" start_experience_factor = 0.0"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Pyishuhcait 2\" division_template = \"Pyishuhcait\" start_experience_factor = 0.0"
+				owner = ROOT
+			}
+			if = {
+				limit = {
+					ROOT = {
+						any_enemy_country = {
+							has_army_manpower = {
+								size > 120000
+							}
+						}
+					}
+				}
+				create_unit = {
+					division = "name = \"Pyishuhcait 3\" division_template = \"Pyishuhcait\" start_experience_factor = 0.0"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Pyishuhcait 4\" division_template = \"Pyishuhcait\" start_experience_factor = 0.0"
+					owner = ROOT
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						any_enemy_country = {
+							has_army_manpower = {
+								size > 120000
+							}
+						}
+					}
+				}
+				create_unit = {
+					division = "name = \"Pyishuhcait 5\" division_template = \"Pyishuhcait\" start_experience_factor = 0.0"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Pyishuhcait 6\" division_template = \"Pyishuhcait\" start_experience_factor = 0.0"
+					owner = ROOT
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						any_enemy_country = {
+							has_army_manpower = {
+								size > 120000
+							}
+						}
+					}
+				}
+				create_unit = {
+					division = "name = \"Pyishuhcait 7\" division_template = \"Pyishuhcait\" start_experience_factor = 0.0"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Pyishuhcait 8\" division_template = \"Pyishuhcait\" start_experience_factor = 0.0"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Pyishuhcait 9\" division_template = \"Pyishuhcait\" start_experience_factor = 0.0"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Pyishuhcait 10\" division_template = \"Pyishuhcait\" start_experience_factor = 0.0"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Pyishuhcait 11\" division_template = \"Pyishuhcait\" start_experience_factor = 0.0"
+					owner = ROOT
+				}
+			}
+		}
+	}
+}
+
+#peace for our enemies
+#country_event = {
+#	id = ww1_vietnam.4
+#	title = ww1_vietnam.4.t
+#	desc = ww1_vietnam.4.d
+#	fire_only_once = yes
+#	trigger = {
+#		tag = VIN
+#		has_war_with = SIA
+#		# has_global_flag = frankfurt_treaty
+#		SIA = {
+#			has_full_control_of_state = 822
+#			has_full_control_of_state = 819
+#		}
+#	}
+#	mean_time_to_happen = { days = 1 }
+#	option = {
+#		name = ww1_vietnam.4.a
+#		ai_chance = {
+#			factor = 100
+#		}
+#		SIA = {
+#			transfer_state = 822
+#			transfer_state = 819
+#			white_peace = CAM
+#			white_peace = LAO
+#			white_peace = VIN
+#			white_peace = FRA
+#		}
+#	}
+#}
+#iswtg datuman ur indenting is gonna be the death of me
+#indochina weakened
+country_event = {
+	id = ww1_vietnam.5
+	title = ww1_vietnam.5.t
+	desc = ww1_vietnam.5.d
+	picture = GFX_report_event_france_victory_syria
+	fire_only_once = yes
+	trigger = {
+		original_tag = FRA
+		has_country_flag = great_war_loser
+		OR = {
+			has_civil_war = yes
+			has_global_flag = french_civil_war
+			AND = {
+				IND = {
+					OR = {
+						has_country_flag = great_war_loser
+						is_subject_of = ROOT
+					}
+					has_war_with = VIN
+				}
+			}
+		}
+		OR = {
+			any_owned_state = {
+				OR = {
+					is_core_of = VIN
+					is_core_of = LAO
+					is_core_of = CAM
+				}
+			}
+			has_subject = IND
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	immediate = {
+		hidden_effect = {
+			every_state = {
+				limit = {
+					owns_or_subject_of = yes
+					OR = {
+						state = 819
+						state = 822
+					}
+				}
+				random_country = {
+					limit = {
+						owns_state = 289
+					}
+					transfer_state = PREV
+				}
+			}
+			if = {
+				limit = {
+					has_subject = IND
+				}
+				end_puppet = IND
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = VIN
+						is_core_of = CAM
+						is_core_of = LAO
+					}
+				}
+				add_claim_by = ROOT
+			}
+			diplomatic_relation = {
+				country = SIA
+				relation = guarantee
+				active = no
+			}
+			diplomatic_relation = {
+				country = SIA
+				relation = military_access
+				active = no
+			}
+		}
+	}
+	option = {
+		name = ww1_vietnam.5.a
+		trigger = {
+			GER = {
+				exists = yes
+				is_subject = no
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		GER = {
+			country_event = {
+				id = ww1_vietnam.6
+				hours = 3
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = {
+		name = ww1_vietnam.5.b
+		release = CAM
+		release = LAO
+		release = VIN
+		hidden_effect = {
+			IND = {
+				release = CAM
+				release = LAO
+				every_owned_state = {
+					limit = {
+						is_core_of = VIN
+						NOT = { state = 820 }
+					}
+					transfer_state_to = VIN
+				}
+				# transfer_units_fraction = {
+				# 	target = CAM
+				# 	size = 0.2
+				# 	navy_ratio = 0
+				# 	keep_unit_leaders_trigger = {
+				# 		always = yes
+				# 	}
+				# }
+				# transfer_units_fraction = {
+				# 	target = LAO
+				# 	size = 0.3
+				# 	navy_ratio = 0
+				# 	keep_unit_leaders_trigger = {
+				# 		always = yes
+				# 	}
+				# }
+				# transfer_units_fraction = {
+				# 	target = VIN
+				# 	size = 0.5
+				# 	keep_unit_leaders_trigger = {
+				# 		always = yes
+				# 	}
+				# }
+				VIN = {
+					division_template = {
+						name = "Quang Phuc Quân"
+						division_names_group = VIN_INF_01
+						regiments = {
+							militia = { x = 0 y = 0 }
+							militia = { x = 0 y = 1 }
+							militia = { x = 0 y = 2 }
+							militia = { x = 1 y = 0 }
+							militia = { x = 0 y = 0 }
+							militia = { x = 0 y = 1 }
+							militia = { x = 1 y = 0 }
+						}
+					}
+					every_core_state = {
+						create_unit = {
+							division = "name = \"Su đoàn\" division_template = \"Quang Phuc Quân\" start_experience_factor = 0.2 start_equipment_factor = 1"
+							owner = PREV
+							count = 3
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+				}
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					neutrality = 60
+					fascism = 13
+					democratic = 12
+					communism = 15
+				}
+				set_cosmetic_tag = IND_FRA
+				set_country_flag = great_war_loser
+				if = {
+					limit = {
+						has_army_size = {
+							size < 2
+						}
+					}
+					division_template = {
+						name = "Division du Tonkin"
+						division_names_group = FRA_COL_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 0 y = 4 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 1 y = 3 }
+							infantry = { x = 1 y = 4 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							infantry = { x = 2 y = 3 }
+							infantry = { x = 3 y = 0 }
+							infantry = { x = 3 y = 1 }
+							infantry = { x = 3 y = 2 }
+							infantry = { x = 3 y = 3 }
+							artillery_brigade = { x = 2 y = 4 }
+							artillery_brigade = { x = 3 y = 4 }
+						}
+						division_cap = 1
+						priority = 0
+					}
+					division_template = {
+						name = "Division Coloniale"
+						division_names_group = FRA_COL_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 1 y = 0 }
+						}
+					}
+					random_owned_state = {
+						create_unit = {
+							division = "name = \"Division du Tonkin\" division_template = \"Division du Tonkin\" start_experience_factor = 0.2 start_equipment_factor = 1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"2e division coloniale\" division_template = \"Division Coloniale\" start_experience_factor = 0.2 start_equipment_factor = 1"
+							owner = PREV
+						}
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = LAO
+							is_core_of = VIN
+							is_core_of = CAM
+						}
+					}
+					remove_core_of = PREV
+					add_claim_by = PREV
+				}
+				VIN_albert_pierre_sarraut = {
+					if = {
+						limit = {
+							has_ideology = oligarchism
+						}
+						promote_character = oligarchism
+					}
+					else = {
+						add_country_leader_role = {
+							promote_leader = yes
+							country_leader = {
+								ideology = oligarchism
+								traits = { foreign_leader }
+							}
+						}
+					}
+				}
+				every_other_country = {
+					limit = {
+						OR = {
+							original_tag = LAO
+							original_tag = CAM
+						}
+						is_subject = no
+						NOT = {
+							is_in_faction_with = PREV
+							has_war_with = PREV
+						}
+					}
+					PREV = {
+						declare_war_on = {
+							target = PREV
+							type = annex_everything
+						}
+					}
+				}
+			}
+			every_other_country = {
+				limit = {
+					OR = {
+						original_tag = CAM
+						original_tag = LAO
+						original_tag = VIN
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 1200
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 250
+					producer = FRA
+				}
+				if = {
+					limit = {
+						is_subject_of = ROOT
+					}
+					ROOT = { end_puppet = PREV }
+				}
+				if = {
+					limit = {
+						is_in_faction_with = ROOT
+					}
+					leave_faction = yes
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0.5
+				GER = {
+					exists = yes
+					is_subject = no
+					NOT = { has_war_with = ROOT }
+				}
+			}
+		}
+	}
+}
+
+# The French Indochina requested German protection
+country_event = {
+	id = ww1_vietnam.6
+	title = ww1_vietnam.6.t
+	desc = ww1_vietnam.6.d
+	is_triggered_only = yes
+	option = {
+		name = ww1_vietnam.6.a
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				ROOT = { has_subject = OST }
+			}
+			every_state = {
+				limit = {
+					is_owned_or_subject_FROM_trigger = yes
+					OR = {
+						is_core_of = VIN
+						is_core_of = LAO
+						is_core_of = CAM
+						state = 728
+					}
+				}
+				add_core_of = OST
+				transfer_state_to = OST
+			}
+			OST = {
+				if = {
+					limit = { has_cosmetic_tag = OST_LGC }
+					drop_cosmetic_tag = yes
+					set_party_name = {
+						ideology = neutrality
+						long_name = OST_neutrality_party
+						name = OST_neutrality_party
+					}
+					set_party_name = {
+						ideology = fascism
+						long_name = OST_fascism_party
+						name = OST_fascism_party
+					}
+				}
+				hidden_effect = {
+					add_political_power = -250 #discontent colonials
+					add_ideas = GER_idea_colonial_exploitation_interwar
+					add_ideas = GER_dysfunctional_government
+					add_ideas = OST_colonial_question
+					add_ideas = OST_Protecting_GER_interest
+					news_event = { id = interwar_news.22 hours = 3 }
+					if = {
+						limit = {
+							NOT = { owns_state = 336 }
+						}
+						set_capital = { state = 820 }
+					}
+				}
+				if = {
+					limit = {
+						IND = { is_ai = no }
+					}
+					change_tag_from = IND
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				country_exists = IND
+			}
+			IND = {
+				ROOT = {
+					set_autonomy = {
+						target = PREV
+						autonomy_state = autonomy_colony
+					}
+				}
+				set_popularities = {
+					democratic = 15
+					fascism = 0
+					communism = 0
+					neutrality = 85
+				}
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_cosmetic_tag = IND_GER
+				set_party_name = {
+					ideology = neutrality
+					long_name = OST_neutrality_party
+					name = OST_neutrality_party
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = OST_fascism_party
+					name = OST_fascism_party
+				}
+				every_possible_country = {
+					limit = {
+						has_character = OST_wilhelm_filchner
+					}
+					OST_wilhelm_filchner = { set_nationality = IND }
+				}
+				OST_wilhelm_filchner = {
+					if = {
+						limit = {
+							has_ideology = oligarchism
+						}
+						promote_character = oligarchism
+					}
+					else = {
+						add_country_leader_role = {
+							promote_leader = yes
+							country_leader = {
+								ideology = oligarchism
+								traits = { german_agent }
+							}
+						}
+					}
+				}
+			}
+		}
+		else = {
+			every_state = {
+				limit = {
+					is_owned_or_subject_FROM_trigger = yes
+					OR = {
+						is_core_of = VIN
+						is_core_of = LAO
+						is_core_of = CAM
+						state = 728
+					}
+				}
+				transfer_state_to = ROOT
+			}
+		}
+	}
+	option = {
+		name = ww1_vietnam.6.b
+		add_war_support = -0.10
+		FROM = {
+			release = CAM
+			release = LAO
+			release = VIN
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					country_exists = IND
+				}
+				IND = {
+					every_state = {
+						limit = {
+							is_core_of = PREV
+							is_claimed_by = PREV
+						}
+						remove_core_of = PREV
+						remove_claim_by = PREV
+					}
+					release = CAM
+					release = LAO
+					release = VIN
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = { has_government = communism }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ww1_vietnam.7
+	trigger = {
+		OR = {
+			tag = VIN
+			original_tag = FRA			
+		}
+		date > 1916.5.1
+		VIN = {		
+			has_country_leader = {
+				character = VIN_nguyen_phuc_vinh_san
+				ruling_only = no
+			}
+		}		
+	}
+	mean_time_to_happen = {
+		days = 18
+	}
+	hidden = yes
+	fire_only_once = yes
+	immediate = {
+		VIN = {
+			promote_character = VIN_nguyen_phuc_buu_dao
+		}	
+	}
+}

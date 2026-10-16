@@ -1,0 +1,149 @@
+scripted_gui = {
+	coring_button_powers1 = { 
+	
+		context_type = selected_state_context
+		
+		window_name = "coring_button_powers1_container"
+		
+		visible = {
+			AND = {
+				is_owned_and_controlled_by = ROOT
+				NOT = { is_core_of = FROM }
+			}
+		}
+		
+		effects = {
+			create_core1_click = {
+				CORE_button_cost_variables = yes
+			}
+		}
+		triggers = {
+			create_core1_click_enabled = {
+				if = {
+					limit = {
+						AND = {
+							is_fully_controlled_by = ROOT
+							NOT = { is_core_of = FROM }
+							NOT = { state_population > 50000 }
+						}
+					}
+					check_variable = { ROOT.political_power > 49.99 }
+				}
+				if = {
+					limit = {
+						AND = {
+							is_fully_controlled_by = ROOT
+							NOT = { is_core_of = FROM }
+							state_population > 50000
+							NOT = { state_population > 100000 }
+						}
+					}
+					check_variable = { ROOT.political_power > 74.99 }
+				}
+				if = {
+					limit = {
+						AND = {
+							is_fully_controlled_by = ROOT
+							NOT = { is_core_of = FROM }
+							state_population > 100000
+							NOT = { state_population > 250000 }
+						}
+					}
+					check_variable = { ROOT.political_power > 99.99 }
+				}
+				if = {
+					limit = {
+						AND = {
+							is_fully_controlled_by = ROOT
+							NOT = { is_core_of = FROM }
+							state_population > 250000
+							NOT = { state_population > 500000 }
+						}
+					}
+					check_variable = { ROOT.political_power > 124.99 }
+				}
+				if = {
+					limit = {
+						AND = {
+							is_fully_controlled_by = ROOT
+							NOT = { is_core_of = FROM }
+							state_population > 500000
+							NOT = { state_population > 1000000 }
+						}
+					}
+					check_variable = { ROOT.political_power > 149.99 }
+				}
+				if = {
+					limit = {
+						AND = {
+							is_fully_controlled_by = ROOT
+							NOT = { is_core_of = FROM }
+							state_population > 1000000
+							NOT = { state_population > 5000000 }
+						}
+					}
+					check_variable = { ROOT.political_power > 199.99 }
+				}
+				if = {
+					limit = {
+						AND = {
+							is_fully_controlled_by = ROOT
+							NOT = { is_core_of = FROM }
+							state_population > 5000000
+							NOT = { state_population > 10000000 }
+						}
+					}
+					check_variable = { ROOT.political_power > 299.99 }
+				}
+				if = {
+					limit = {
+						AND = {
+							is_fully_controlled_by = ROOT
+							NOT = { is_core_of = FROM }
+							state_population > 10000000
+							NOT = { state_population > 15000000 }
+						}
+					}
+					check_variable = { ROOT.political_power > 399.99 }
+				}
+				if = {
+					limit = {
+						AND = {
+							is_fully_controlled_by = ROOT
+							NOT = { is_core_of = FROM }
+							state_population > 15000000	
+						}
+					}
+					check_variable = { ROOT.political_power > 499.99 }
+				}
+				if = {
+					# Turkey must core kurdish states via decisions.
+					limit = {
+						ROOT = { original_tag = TUR }
+						OR = {
+							THIS = { state = 350 }
+							THIS = { state = 352 }
+							THIS = { state = 353 }
+							THIS = { state = 800 }
+						}
+					}
+					always = no
+				}
+			}
+		}
+		        
+		ai_check = {
+			check_variable = { ROOT.political_power > 49.99 }
+			check_variable = { ai_random > 0.65 }
+		}
+		
+		ai_weights = {
+			create_core1_click = {
+				ai_will_do = {
+					factor = 40
+				}
+			}
+		}
+	}
+}
+

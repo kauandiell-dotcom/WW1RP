@@ -1,0 +1,328 @@
+﻿add_namespace = ww1_belorussia
+# BELORUSSIAN INDEPENDENCE
+######################
+country_event = {
+	title = ww1_belorussia.1.t
+	desc = ww1_belorussia.1.d
+	id = ww1_belorussia.1
+	picture = GFX_report_event_spr_civil_war_faction_defeated
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 30 }
+	trigger = {
+		tag = SOV
+		has_government = communism
+		is_faction_leader = yes
+		BLR = { has_government = communism is_subject = no }
+	}
+	option = {
+		name = ww1_belorussia.1.a
+		add_to_faction = BLR
+		ai_chance = { factor = 75 }
+	}
+	option = {
+		name = ww1_belorussia.1.b
+		annex_country = { target = BLR }
+		add_political_power = -100
+		ai_chance = { 
+			factor = 25
+			modifier = { 
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+}
+# FIGHT AGAINST BOLSHEVISM
+######################
+country_event = {
+	title = ww1_belorussia.2.t
+	desc = ww1_belorussia.2.d
+	id = ww1_belorussia.2
+	picture = GFX_report_event_generic_strike
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 14 }
+	trigger = {
+		tag = BLR
+		has_government = neutrality
+		is_subject = no
+		OR = {
+			has_stability < 0.25
+			has_idea_with_trait = democratic_reformer
+		}
+	}
+	option = {
+		name = ww1_belorussia.2.a
+		add_popularity = { ideology = communism popularity = -0.35 }
+		ai_chance = { 
+			factor = 50
+			modifier = { 
+				is_historical_focus_on = yes
+				factor = 0
+			}			
+		}
+	}
+	option = {
+		name = ww1_belorussia.2.b
+		add_stability = -0.10
+		ai_chance = { factor = 25 }
+	}
+}
+# FATE OF BELARUS
+######################
+country_event = {
+	title = ww1_belorussia.3.t
+	desc = ww1_belorussia.3.d
+	id = ww1_belorussia.3
+	picture = GFX_report_event_generic_strike
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 10 }
+	trigger = {
+		tag = BLR
+		has_government = neutrality
+		is_subject = no
+		communism < 0.25
+	}
+	option = {
+		name = ww1_belorussia.3.a
+		add_stability = 0.2
+		add_war_support = 0.2
+		ai_chance = { factor = 20 }
+	}
+	option = {
+		name = ww1_belorussia.2.b
+		add_stability = -0.10
+		trigger = { 
+			GER = { 
+				has_government = neutrality 
+				has_country_flag = great_war_winner 
+			} 
+		}
+		GER = { country_event = ww1_belorussia.4 }
+		ai_chance = { factor = 30 }
+	}
+	option = {
+		name = ww1_belorussia.2.c
+		add_stability = -0.10
+		trigger = { 
+			RUS = { 
+				exists = yes 
+				OR = {
+					has_country_flag = great_war_winner
+					SOV = { exists = no }
+					has_war_with = SOV
+				}
+			} 
+		}
+		RUS = { country_event = ww1_belorussia.5 }
+		ai_chance = { factor = 25 }
+	}
+}
+# GERMAN ANSWER
+######################
+country_event = {
+	title = ww1_belorussia.4.t
+	desc = ww1_belorussia.4.d
+	id = ww1_belorussia.4
+	picture = GFX_report_event_spr_civil_war_faction_defeated
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_belorussia.4.a
+		puppet = BLR
+		hidden_effect = {
+			BLR = {
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1908.11.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 23
+					fascism = 10
+					communism = 5
+					neutrality = 62
+				}
+				set_cosmetic_tag = BLR_WHR
+				if = {
+					limit = { has_government = neutrality }
+					if = {
+						limit = { date < 1929.4.20 }
+						BLR_genrikh = {
+							add_country_leader_role = {
+								promote_leader = yes
+								country_leader = {
+									ideology = semi_constitutional_monarchy
+									traits = { german_agent foreign_leader }							
+								}
+							}
+						}
+						GER = {
+							GER_albert_wilhelm_heinrich = {
+								set_character_name = BLR_genrikh
+								set_nationality = BLR
+							}
+						}
+					}	
+					else = {
+						BLR_uladzimir = {
+							add_country_leader_role = {
+								promote_leader = yes
+								country_leader = {
+									ideology = semi_constitutional_monarchy							
+								}
+							}
+						}
+						GER = {
+							retire_character = GER_albert_wilhelm_heinrich
+						}
+					}
+					set_party_name = {
+						ideology = neutrality 
+						long_name = GER_neutrality_party 
+						name = GER_neutrality_party
+					}
+				}
+			}
+		}
+		ai_chance = { factor = 25 }
+	}
+	option = {
+		name = ww1_belorussia.4.b
+		give_guarantee = BLR
+		BLR = { add_stability = 0.1 }
+		ai_chance = { factor = 5 }
+	}
+}
+# GERMAN ANSWER
+######################
+country_event = {
+	title = ww1_belorussia.5.t
+	desc = ww1_belorussia.5.d
+	id = ww1_belorussia.5
+	picture = GFX_report_event_spr_civil_war_faction_defeated
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_belorussia.5.a
+		puppet = BLR
+		hidden_effect = {
+			BLR = {
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1908.11.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 23
+					fascism = 10
+					communism = 5
+					neutrality = 62
+				}
+			}
+		}
+		if = {
+			limit = { has_government = neutrality }
+			promote_character = BLR_vladimir_sokolinskiy
+		}
+		ai_chance = { factor = 25 }
+	}
+	option = {
+		name = ww1_belorussia.5.b
+		give_guarantee = BLR
+		BLR = { add_stability = 0.1 }
+		ai_chance = { factor = 5 }
+	}
+}
+# DEATH OF HEINRICH
+######################
+country_event = {
+	id = ww1_belorussia.6
+	title = ww1_belorussia.6.t
+	desc = ww1_belorussia.6.d
+	fire_only_once = yes
+	trigger = {
+		original_tag = BLR
+		has_country_leader = {
+			character = BLR_genrikh
+			ruling_only = yes
+		}
+		date > 1929.4.1
+	}
+	mean_time_to_happen = { days = 20 }
+	immediate = {
+		hidden_effect = {
+			every_possible_country = {
+				limit = {
+					has_character = GER_albert_wilhelm_heinrich
+				}
+				retire_character = GER_albert_wilhelm_heinrich
+			}
+			retire_character = BLR_genrikh
+			BLR_uladzimir = {
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = semi_constitutional_monarchy
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = ww1_belorussia.6.a
+		ai_chance = { factor = 100 }
+		effect_tooltip = {
+			retire_character = BLR_genrikh
+		}
+	}
+}
+
+# German pressure to keep the buffer state
+country_event = {
+	id = ww1_belorussia.7
+	title = ww1_belorussia.7.t
+	desc = ww1_belorussia.7.d
+	picture = GFX_report_event_generic_peaceful_annexation
+	trigger = {
+		tag = BLR
+		has_war = no
+		is_subject = no
+		is_neighbor_of = SOV
+		communism > 0.45
+		NOT = { has_government = communism }
+		GER = {
+			OR = {
+				is_neighbor_of = PREV
+				any_other_country = {
+					is_subject_of = PREV
+					is_neighbor_of = PREV.PREV
+				}
+			}
+			is_subject = no
+			has_capitulated = no
+			NOT = {
+				has_country_flag = great_war_loser
+				has_government = communism
+			}
+		}
+	}
+	fire_only_once = yes
+	option = {
+		name = ww1_belorussia.7.a
+		add_popularity = {
+			ideology = communism
+			popularity = -0.10
+		}
+	}
+}
+

@@ -1,0 +1,100 @@
+foreign_politics = {
+	MOL_join_romania = {
+		
+		icon = GFX_decision_hol_exchange_intelligence_data		
+        allowed = {
+			original_tag = MOL
+		}
+		target_trigger = {
+			FROM = {
+				tag = ROM
+			}
+		}
+		visible = {
+			OR = {
+				is_subject = no
+				is_subject_of = FROM
+				AND = {
+					is_subject = yes
+					OVERLORD = { has_subject = FROM }
+				}
+			}
+			FROM = {
+				NOT = {
+					has_cosmetic_tag = WLC
+				}
+			}
+			NOT = {
+				has_country_flag = moldovian_indepedence_timer
+			}
+		}
+		available = {
+			has_war = no
+			FROM = {
+				has_war = no
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				OR = {
+					AND = {
+						is_subject = yes
+						OR = {
+							NOT = { is_subject_of = FROM }
+							OVERLORD = { NOT = { has_subject = FROM } }
+						}
+					}
+					has_war = yes
+					FROM = {
+						OR = {
+							exists = no
+							is_subject = yes 
+							has_war = yes
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				owns_state = 79
+			}
+		}
+		fire_only_once = yes 
+
+		days_remove = 150
+
+		remove_effect = {
+			FROM = {
+				if = {
+					limit = {
+						is_subject = yes
+						OVERLORD = { has_subject = ROOT }
+					}
+					OVERLORD = { country_event = { id = ww1_romania.19 days = 7 } }
+				}
+				else_if = {
+					limit = {
+						if = {
+					limit = {
+						has_game_rule = {
+							rule = agw_greatwar_options
+							option = enabled
+						}
+					}
+					has_country_flag = great_war_loser
+				}
+						NOT = { has_global_flag = treaty_of_bucharest_1918 }
+						country_exists = GER
+					}
+					GER = { country_event = { id = ww1_romania.19 days = 7 } }
+				}
+				else = {
+					country_event = { id = ww1_romania.7 days = 7 }
+				}
+			}
+		}
+	}
+}

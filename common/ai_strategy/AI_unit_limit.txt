@@ -1,0 +1,20 @@
+division_limiter = {
+	enable = {
+		OR = {
+			has_game_rule = { rule = agw_unit_limit_options option = standard }
+			has_game_rule = { rule = agw_unit_limit_options option = ai_only }
+		}
+		has_reached_maximum_divisions = yes
+		NOT = { surrender_progress > 0.05 }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = build_army id = armor value = -5000 }
+	ai_strategy = { type = build_army id = garrison value = -5000 }
+	ai_strategy = { type = build_army id = suppression value = -5000 }
+	ai_strategy = { type = build_army id = infantry value = -5000 }
+	ai_strategy = { type = build_army id = mountaineers value = -5000 }
+	ai_strategy = { type = build_army id = marines value = -5000 }
+	ai_strategy = { type = build_army id = paratroopers value = -5000 }
+}

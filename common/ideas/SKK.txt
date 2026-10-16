@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		SKK_invincible_chess_master = {
+			allowed = {
+				original_tag = SKK
+			}
+			picture = chi_wargaming_division
+
+			modifier = {
+				autonomy_gain = 3.10
+			}
+		}
+	}
+}

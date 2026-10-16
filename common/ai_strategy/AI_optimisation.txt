@@ -1,0 +1,20 @@
+DONOT_train_units = {
+	allowed = { always = yes }
+	enable = { has_idea = AGW_ai_optimisation }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = build_army id = armor value = -5000 }
+	ai_strategy = { type = build_army id = garrison value = -5000 }
+	ai_strategy = { type = build_army id = suppression value = -5000 }
+	ai_strategy = { type = build_army id = infantry value = -5000 }
+	ai_strategy = { type = build_army id = mountaineers value = -5000 }
+	ai_strategy = { type = build_army id = marines value = -5000 }
+	ai_strategy = { type = build_army id = paratroopers value = -5000 }
+
+	ai_strategy = { type = equipment_production_factor id = carrier value = -100 }
+	ai_strategy = { type = equipment_production_factor id = capital_ship value = -100 }
+	ai_strategy = { type = equipment_production_factor id = screen_ship value = -100 }
+
+	ai_strategy = { type = equipment_production_factor id = submarine value = -100 }
+	ai_strategy = { type = equipment_production_factor id = convoy value = 100 }
+}

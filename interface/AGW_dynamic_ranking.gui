@@ -1,0 +1,275 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ruleset_window"
+		position = { x = -73 y = 60}
+		size = { width = 60 height = 60 }
+		orientation = UPPER_RIGHT
+		origo = UPPER_RIGHT
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		#scale = 0.7
+		
+		buttonType = {
+			name = "open_ruleset"
+			spriteType = "GFX_ruleset_button"
+			position = { x = 0 y = 0 }
+			web_link = "https://docs.google.com/document/d/1ozWeA6m5yTYr57VXNi8mKQuaSa54T229MolSplsvCus"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			shortcut = "2"
+		}
+	}
+	containerWindowType = {
+		name = "AGW_dynamic_ranking_turn"
+		position = { x = -85 y = 35}
+		size = { width = 60 height = 60 }
+		orientation = UPPER_RIGHT
+		origo = UPPER_RIGHT
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		
+		buttonType = {
+			name = "AGW_dynamic_ranking_turn_button"
+			spriteType = "GFX_ranking_button_bg"
+			position = { x = 0 y = 0 }
+			clicksound = click_ok
+			shortcut = "1"
+		}
+	}
+	containerWindowType = {
+		name = "AGW_dynamic_ranking"
+		position = { x = 0 y = 0}	
+		size = { width = 1276 height = 716 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_ranking_bg"
+		}
+		
+		instantTextboxType = {
+			name = "AGW_dynamic_ranking_title"
+			position = { x = 0 y = 55 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "World Power Ranks"
+			maxWidth = 1500
+			maxHeight = 50
+			format = centre	
+		}
+		
+		buttonType = {
+			name ="close_button"
+			quadTextureSprite ="GFX_closebutton"
+			position = { x=1370 y=60 }
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+		}
+		
+		instantTextboxType = {
+			name = "ranks_hegemony_power_title"
+			position = { x = 70 y = 115 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "ranks_hegemony_power_title_tt"
+			maxWidth = 200
+			maxHeight = 80
+			#fixedsize = yes
+			format = centre
+			pdx_tooltip = "global_power_allowed_war_date"
+		}
+		gridboxtype = {
+			name = "ranks_hegemony_power"
+			position = { x = 130 y = 180 }
+			size = { width = 0 height = 0 }
+			slotsize = { width = 46 height = 32 }
+			max_slots_horizontal = 3
+			add_horizontal = yes
+		}
+		
+		instantTextboxType = {
+			name = "ranks_global_power_title"
+			position = { x = 260 y = 115 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "ranks_global_power_title_tt"
+			maxWidth = 200
+			maxHeight = 80
+			#fixedsize = yes
+			format = centre
+			pdx_tooltip = "global_power_allowed_war_date"
+		}
+		gridboxtype = {
+			name = "ranks_global_power"
+			position = { x = 317 y = 180 }
+			size = { width = 0 height = 0 }
+			slotsize = { width = 46 height = 32 }
+			max_slots_horizontal = 3
+			add_horizontal = yes
+		}
+		
+		instantTextboxType = {
+			name = "ranks_super_power_title"
+			position = { x = 460 y = 115 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "ranks_super_power_title_tt"
+			maxWidth = 200
+			maxHeight = 80
+			#fixedsize = yes
+			format = centre
+			pdx_tooltip = "super_power_allowed_war_date"
+		}
+		gridboxtype = {
+			name = "ranks_super_power"
+			position = { x = 517 y = 180 }
+			size = { width = 0 height = 0 }
+			slotsize = { width = 46 height = 32 }
+			max_slots_horizontal = 3
+			add_horizontal = yes
+		}
+		
+		instantTextboxType = {
+			name = "ranks_regional_power_title"
+			position = { x = 660 y = 115 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "ranks_regional_power_title_tt"
+			maxWidth = 200
+			maxHeight = 80
+			#fixedsize = yes
+			format = centre
+			pdx_tooltip = "regional_power_allowed_war_date"
+		}
+		gridboxtype = {
+			name = "ranks_regional_power"
+			position = { x = 715 y = 180 }
+			size = { width = 0 height = 0 }
+			slotsize = { width = 46 height = 32 }
+			max_slots_horizontal = 3
+			add_horizontal = yes
+		}
+		
+		instantTextboxType = {
+			name = "ranks_middle_power_title"
+			position = { x = 860 y = 115 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "ranks_middle_power_title_tt"
+			maxWidth = 200
+			maxHeight = 80
+			#fixedsize = yes
+			format = centre
+			pdx_tooltip = "middle_power_allowed_war_date"
+		}
+		gridboxtype = {
+			name = "ranks_middle_power"
+			position = { x = 916 y = 180 }
+			size = { width = 0 height = 0 }
+			slotsize = { width = 46 height = 32 }
+			max_slots_horizontal = 3
+			add_horizontal = yes
+		}
+		
+		instantTextboxType = {
+			name = "ranks_minor_power_title"
+			position = { x = 1060 y = 115 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "ranks_minor_power_title_tt"
+			maxWidth = 200
+			maxHeight = 80
+			#fixedsize = yes
+			format = centre
+			pdx_tooltip = "minor_power_allowed_war_date"
+		}
+		gridboxtype = {
+			name = "ranks_minor_power"
+			position = { x = 1117 y = 180 }
+			size = { width = 0 height = 0 }
+			slotsize = { width = 46 height = 32 }
+			max_slots_horizontal = 3
+			add_horizontal = yes
+		}
+		
+		instantTextboxType = {
+			name = "ranks_factions_title"
+			position = { x = 1250 y = 110 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "ranks_faction_list"
+			maxWidth = 140
+			maxHeight = 80
+			#fixedsize = yes
+			format = centre
+			pdx_tooltip = "global_power_allowed_war_date"
+		}
+		gridboxtype = {
+			name = "ranks_factions"
+			position = { x = 1285 y = 180 }
+			size = { width = 0 height = 0 }
+			slotsize = { width = 46 height = 32 }
+			max_slots_horizontal = 1
+			add_horizontal = yes
+		}
+	}
+	containerWindowType = {
+		name = "charters_list_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 0 height = 0 }
+		
+		buttonType = {
+			name = "member_country_flag"
+			quadTextureSprite = "GFX_flag_small2"
+			position = { x = 0 y = 3 }
+			pdx_tooltip = "country_name"
+		}
+		iconType = {
+			name = "unsc_member_flag_border"
+			quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
+			position = { x = -4 y = 0 }
+			alwaystransparent = yes
+		}
+	}
+	containerWindowType = {
+		name = "charters_list_entry_factions"
+		position = { x = 0 y = 0 }
+		size = { width = 0 height = 0 }
+		
+		buttonType = {
+			name = "member_country_flag"
+			quadTextureSprite = "GFX_flag_small2"
+			position = { x = 0 y = 3 }
+			pdx_tooltip = "country_name"
+		}
+		iconType = {
+			name = "unsc_member_flag_border"
+			quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
+			position = { x = -4 y = 0 }
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "faction_score"
+			position = { x = 50 y = 8 }
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			text = "faction_score"
+			maxWidth = 140
+			maxHeight = 20
+			fixedsize = yes
+		}
+	}
+}

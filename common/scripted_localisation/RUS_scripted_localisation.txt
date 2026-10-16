@@ -1,0 +1,58 @@
+defined_text = {
+	name = RUS_title_event_vote_republic_or_tsardom
+
+	text = {
+		localization_key = RUS_unknown_vote_on
+	}
+}
+
+defined_text = {
+	name = GetParanoiaValueColor
+	text = {
+		trigger = {
+			check_variable = { RUS_paranoia = 70 compare = greater_than_or_equals }
+		}
+		localization_key = RUS_color_red
+	}
+	text = {
+		trigger = {
+			check_variable = { RUS_paranoia = 30 compare = greater_than_or_equals }
+		}
+		localization_key = RUS_color_yellow
+	}
+	text = {
+		localization_key = RUS_color_green
+	}
+}
+
+defined_text = {
+	name = GetParanoiaModifierValueColor
+	text = {
+		trigger = {
+			check_variable = { RUS_paranoia_modifier_increase = 0 compare = greater_than }
+		}
+		localization_key = RUS_color_red
+	}
+	text = {
+		trigger = {
+			check_variable = { RUS_paranoia_modifier_increase = 0 compare = less_than }
+		}
+		localization_key = RUS_color_green
+	}
+	text = {
+		localization_key = RUS_color_yellow
+	}
+}
+
+defined_text = {
+	name = GetParanoiaWeeklyModifier
+	text = {
+		trigger = {
+			check_variable = { RUS_paranoia_modifier_increase = 0 compare = equals }
+		}
+		localization_key = RUS_paranoia_tooltip_null
+	}
+	text = {
+		localization_key = RUS_paranoia_weekly_modifier_tt
+	}
+}

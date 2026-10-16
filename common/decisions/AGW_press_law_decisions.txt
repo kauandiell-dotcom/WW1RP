@@ -1,0 +1,468 @@
+press_law_decisions = {
+	adopt_free_press = {
+		visible = {
+			NOT = { has_idea = free_press }
+			NOT = { has_country_flag = adopting_press_law }
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				NOT = {
+					has_government = fascism
+					has_government = communism
+				}
+				has_war = no
+				factor = 30
+			}
+		}
+		cost = 50
+		days_remove = 60
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = adopting_press_law
+			}
+		}
+		remove_effect = {
+			add_ideas = free_press
+			hidden_effect = {
+				clr_country_flag = adopting_press_law
+			}
+		}
+	}
+	####################################################
+	institute_press_censorship_communism_state = {
+		icon = generic_construction
+
+		visible = {
+			has_government = communism
+			has_idea = censored_press
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 140
+
+		days_remove = 90
+		days_re_enable = 180
+
+		modifier = {
+			democratic_drift = -0.01
+			communism_drift = 0.03
+			fascism_drift = -0.01
+			neutrality_drift = -0.01
+		}
+	}
+	institute_press_censorship_fascism_state = {
+		icon = generic_construction
+
+		visible = {
+			has_government = fascism
+			has_idea = censored_press
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 140
+
+		days_remove = 90
+		days_re_enable = 180
+
+		modifier = {
+			democratic_drift = -0.01
+			communism_drift = -0.01
+			fascism_drift = 0.03
+			neutrality_drift = -0.01
+		}
+	}
+	institute_press_censorship_democratic_state = {
+		icon = generic_construction
+
+		visible = {
+			has_government = democratic
+			has_idea = censored_press
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 140
+
+		days_remove = 90
+		days_re_enable = 180
+
+		modifier = {
+			democratic_drift = 0.03
+			communism_drift = -0.01
+			fascism_drift = -0.01
+			neutrality_drift = -0.01
+		}
+	}
+	institute_press_censorship_neutrality_state = {
+		icon = generic_construction
+
+		visible = {
+			has_government = neutrality
+			has_idea = censored_press
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 140
+
+		days_remove = 90
+		days_re_enable = 180
+
+		modifier = {
+			democratic_drift = -0.01
+			communism_drift = -0.01
+			fascism_drift = -0.01
+			neutrality_drift = 0.03
+		}
+	}
+	adopt_censored_press = {
+		visible = {
+			NOT = { has_idea = censored_press }
+			NOT = { has_country_flag = adopting_press_law }
+			OR = {
+				NOT = { has_government = democratic }
+				AND = {
+					has_government = democratic
+					has_war = yes
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				has_offensive_war = yes
+				add = 30
+			}
+		}
+		cost = 50
+		days_remove = 60
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = adopting_press_law
+			}
+		}
+		remove_effect = {
+			add_ideas = censored_press
+			hidden_effect = {
+				clr_country_flag = adopting_press_law
+			}
+		}
+	}
+	####################################################
+	message_resistance_cells = {
+		icon = generic_construction
+
+		visible = {
+			has_idea = resistance_press
+			has_capitulated = yes
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 140
+
+		days_remove = 45
+		days_re_enable = 180
+
+		remove_effect = {
+			random_owned_state = {
+				limit = { 
+					NOT = { is_fully_controlled_by = ROOT } 
+					OR = {
+						industrial_complex > 0
+						arms_factory > 0
+					}
+				}
+				damage_building = {
+					type = industrial_complex
+					damage = 0.5
+				}
+				damage_building = {
+					type = industrial_complex
+					damage = 0.5
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 0.5
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 0.5
+				}
+			}
+		}
+	}
+	adopt_resistance_press = {
+		visible = {
+			NOT = { has_idea = resistance_press }
+			NOT = { has_country_flag = adopting_press_law }
+			OR = {
+				NOT = { has_government = democratic }
+				AND = {
+					has_government = democratic
+					has_war = yes
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				has_more_than_average_resistance = yes
+				add = 75
+			}
+		}
+		cost = 50
+		days_remove = 60
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = adopting_press_law
+			}
+		}
+		remove_effect = {
+			add_ideas = resistance_press
+			hidden_effect = {
+				clr_country_flag = adopting_press_law
+			}
+		}
+	}
+	####################################################
+	man_the_assembly_line = {
+		icon = generic_construction
+
+		visible = {
+			has_idea = productivity_press
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 75
+
+		days_remove = 90
+		days_re_enable = 180
+
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.20
+		}
+	}
+	adopt_productivity_press = {
+		visible = {
+			NOT = { has_idea = productivity_press }
+			NOT = { has_country_flag = adopting_press_law }
+			OR = {
+				NOT = { has_government = democratic }
+				AND = {
+					has_government = democratic
+					has_war = yes
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				date < 1937.8.1
+				has_war = no
+				add = 50
+			}
+		}
+		cost = 50
+		days_remove = 60
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = adopting_press_law
+			}
+		}
+		remove_effect = {
+			add_ideas = productivity_press
+			hidden_effect = {
+				clr_country_flag = adopting_press_law
+			}
+		}
+	}
+	####################################################
+	training_initiative = {
+		icon = generic_construction
+
+		visible = {
+			has_idea = mobilization_press
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 140
+
+		days_remove = 180
+		days_re_enable = 180
+
+		modifier = {
+			weekly_manpower = 1000
+			training_time_army_factor = -0.10
+		}
+	}
+	adopt_mobilization_press = {
+		visible = {
+			NOT = { has_idea = mobilization_press }
+			NOT = { has_country_flag = adopting_press_law }
+			OR = {
+				NOT = { has_government = democratic }
+				AND = {
+					has_government = democratic
+					has_war = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 50
+		days_remove = 60
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = adopting_press_law
+			}
+		}
+		remove_effect = {
+			add_ideas = mobilization_press
+			hidden_effect = {
+				clr_country_flag = adopting_press_law
+			}
+		}
+	}
+	####################################################
+	logistics_initiative = {
+		icon = generic_construction
+
+		visible = {
+			has_idea = aggressive_press
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 140
+
+		days_remove = 180
+		days_re_enable = 180
+
+		modifier = {
+			political_power_factor = -0.10
+			supply_consumption_factor = -0.10
+		}
+	}
+	adopt_aggressive_press = {
+		visible = {
+			NOT = { has_idea = aggressive_press }
+			NOT = { has_country_flag = adopting_press_law }
+			OR = {
+				NOT = { has_government = democratic }
+				AND = {
+					has_government = democratic
+					has_war = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				NOT = { has_government = democratic }
+				date > 1938.1.1
+				any_claim = yes
+				factor = 30
+			}
+		}
+		cost = 50
+		days_remove = 60
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = adopting_press_law
+			}
+		}
+		remove_effect = {
+			add_ideas = aggressive_press
+			hidden_effect = {
+				clr_country_flag = adopting_press_law
+			}
+		}
+	}
+	####################################################
+	propaganda_campaign = {
+		icon = generic_construction
+
+		visible = {
+			has_idea = nationalism_press
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 140
+
+		days_remove = 90
+		days_re_enable = 180
+
+		complete_effect = {
+			add_war_support = 0.10
+		}
+		remove_effect = {
+			add_war_support = -0.10
+		}
+	}
+	adopt_nationalism_press = {
+		visible = {
+			NOT = { has_idea = nationalism_press }
+			NOT = { has_country_flag = adopting_press_law }
+			OR = {
+				NOT = { has_government = democratic }
+				AND = {
+					has_government = democratic
+					has_war = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 50
+		days_remove = 60
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = adopting_press_law
+			}
+		}
+		remove_effect = {
+			add_ideas = nationalism_press
+			hidden_effect = {
+				clr_country_flag = adopting_press_law
+			}
+		}
+	}
+	adopt_security_press = {
+		visible = {
+			NOT = { has_country_flag = adopting_press_law }
+			NOT = { has_idea = security_press }
+			OR = {
+				NOT = { has_government = democratic }
+				AND = {
+					has_government = democratic
+					has_war = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 50
+		days_remove = 60
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = adopting_press_law
+			}
+		}
+		remove_effect = {
+			add_ideas = security_press
+			hidden_effect = {
+				clr_country_flag = adopting_press_law
+			}
+		}
+	}
+}

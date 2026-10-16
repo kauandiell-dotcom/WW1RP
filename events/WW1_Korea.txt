@@ -1,0 +1,3284 @@
+add_namespace = ww1_korea
+
+# DECLARATION OF INDEPENDENCE IF JAPAN IS LOST IN THE GREAT WAR
+##################################################################
+country_event = {
+	id = ww1_korea.1
+	title = ww1_korea.1.t
+	desc = ww1_korea.1.d
+	picture = GFX_report_event_gathering_protest
+	fire_only_once = yes
+	trigger = {
+		original_tag = JAP
+		has_country_flag = great_war_loser
+		OR = {
+			KOR = {
+				is_subject_of = JAP
+			}
+			AND = {
+				NOT = { country_exists = KOR }
+				owns_state = 800
+			}
+		}
+		OR = {
+			ENG = {
+				has_country_flag = approved_korean_independence
+			}
+			FRA = {
+				has_country_flag = approved_korean_independence
+			}
+			RUS = {
+				owns_state = 408
+				has_country_flag = great_war_winner
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 40
+	}
+	immediate = {
+		hidden_effect = {
+			KOR = {
+				if = {
+					limit = {
+						is_subject_of = JAP
+					}
+					JAP = { end_puppet = KOR }
+				}
+				else = {
+					JAP = { release = KOR }
+				}
+				set_country_flag = korean_independence
+				set_popularities = {
+					democratic = 41
+					fascism = 10
+					communism = 30
+					neutrality = 19
+				}
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+				}
+			}
+			if = {
+				limit = {
+					RUS = {
+						has_war = no
+						owns_state = 408
+						has_country_flag = great_war_winner
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				RUS = {
+					if = {
+						limit = {
+							OR = {
+								has_dlc = "Together for Victory"
+								has_dlc = "Waking the Tiger"
+							}
+						}
+						set_autonomy = {
+							target = KOR
+							autonomous_state = autonomy_tgwr_informal_protectorate
+						}
+						KOR = {
+							set_country_flag = protectorate
+						}
+					}
+					else = {
+						puppet = KOR
+						KOR = {
+							add_ideas = protectorate
+						}
+					}
+					if = {
+						limit = {
+							JAP = {
+								owns_state = 537
+							}
+						}
+						add_state_core = 537
+						transfer_state = 537
+					}
+					if = {
+						limit = {
+							JAP = {
+								owns_state = 555
+							}
+						}
+						add_state_core = 555
+						transfer_state = 555
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.1.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# EVENT FOR RELEASE KOREA DECISION
+#####################################
+country_event = {
+	title = ww1_korea.2.t
+	desc = ww1_korea.2.d
+	id = ww1_korea.2
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = {
+		# as independent
+		name = ww1_korea.2.a
+		release = KOR
+		KOR = {
+			set_country_flag = korean_independence
+			give_military_access = ROOT
+			give_guarantee = ROOT
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = KOR_provisional_government_long
+				name = KOR_provisional_government
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				is_china_or_warlord = yes
+				NOT = {
+					has_government = communism
+					has_government = fascism
+					original_tag = QIN
+					has_cosmetic_tag = QIN_government
+				}
+			}
+		}
+	}
+	option = {
+		# as puppet
+		name = ww1_korea.2.b
+		release_puppet = KOR
+		KOR = {
+			set_country_flag = korean_independence
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				is_china_or_warlord = yes
+				NOT = {
+					has_government = communism
+					has_government = fascism
+					original_tag = QIN
+					has_cosmetic_tag = QIN_government
+				}
+			}
+		}
+	}
+}
+
+# POLITICAL MANEUVERING FOR INDEPENDENCE
+###########################################
+country_event = {
+	id = ww1_korea.3
+	title = ww1_korea.3.t
+	desc = ww1_korea.3.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.3.a
+		PREV = {
+			if = {
+				limit = {
+					country_exists = PREV
+				}
+				give_guarantee = KOR
+				give_military_access = KOR
+				diplomatic_relation = {
+					country = KOR
+					relation = non_aggression_pact
+				}
+				KOR = {
+					give_military_access = PREV
+					country_event = ww1_korea.31
+				}
+				add_political_power = 200
+				set_country_flag = supported_korean_independence
+			}
+		}
+		ai_chance = {
+			factor = 15
+		}
+	}
+	option = {
+		name = ww1_korea.3.b
+		ai_chance = {
+			factor = 85
+		}
+		PREV = {
+			if = {
+				limit = {
+					country_exists = PREV
+				}
+				KOR = {
+					country_event = ww1_korea.32
+				}
+			}
+		}
+	}
+}
+
+# KOREAN AUTONOMY UNDER JAPANESE RULE (KOR_autonomous_right_movement)
+#######################################################################
+news_event = {
+	id = ww1_korea.4
+	title = ww1_korea.4.t
+	desc = ww1_korea.4.d
+	picture = EVENT_hoi4tgw_korea_annexation
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.4.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# KOREA WANTS TO BE ANNEXED BY JAPAN (KOR_japan_and_chosen_are_one_body)
+#######################################################################
+news_event = {
+	id = ww1_korea.5
+	title = ww1_korea.5.t
+	desc = ww1_korea.5.d
+	picture = EVENT_hoi4tgw_korea_annexation
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.5.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# EAGLE PROJECT - KOREA CONTROLS WHOLE KOREAN PENINSULAR
+###########################################################
+country_event = {
+	id = ww1_korea.6
+	title = ww1_korea.6.t
+	desc = ww1_korea.6.d
+	picture = GFX_report_event_generic_battle
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.6.a
+		ai_chance = {
+			factor = 80
+		}
+		JAP = {
+			country_event = ww1_korea.34
+		}
+	}
+	option = {
+		name = ww1_korea.6.b
+		ai_chance = {
+			factor = 20
+		}
+		JAP = {
+			country_event = ww1_korea.35
+		}
+	}
+}
+
+# EAGLE PROJECT - WHITE PEACE
+################################
+country_event = {
+	id = ww1_korea.7
+	title = ww1_korea.7.t
+	desc = ww1_korea.7.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.7.a
+		ai_chance = {
+			factor = 100
+		}
+		KOR = {
+			add_political_power = 100
+			add_war_support = -0.2
+			delete_unit_template_and_units = {
+				division_template = "Uibyeong"
+			}
+		}
+	}
+}
+
+# EAGLE PROJECT - ONGOING WAR
+################################
+country_event = {
+	id = ww1_korea.8
+	title = ww1_korea.8.t
+	desc = ww1_korea.8.d
+	picture = GFX_report_event_generic_battle
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.8.a
+		ai_chance = {
+			factor = 100
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_controlled_by = KOR
+				NOT = { is_owned_by = KOR }
+			}
+			KOR = { transfer_state = PREV }
+		}
+		add_war_support = 0.2
+	}
+}
+
+# AINU
+#########
+country_event = {
+	id = ww1_korea.9
+	title = ww1_korea.9.t
+	desc = ww1_korea.9.d
+	picture = GFX_report_event_generic_conference
+	fire_only_once = yes
+	trigger = {
+		tag = KOR
+		OR = {
+			owns_state = 536
+			owns_state = 537
+			owns_state = 555
+		}
+		NOT = {
+			country_exists = AIN
+		}
+	}
+	option = {
+		name = ww1_korea.9.a
+		AIN = {
+			add_state_core = 536
+			add_state_core = 537
+			add_state_core = 555
+		}
+		every_owned_state = {
+			limit = {
+				is_core_of = AIN
+			}
+			AIN = {
+				transfer_state = PREV
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			set_autonomy = {
+				target = AIN
+				autonomous_state = autonomy_dominion
+			}
+			else = {
+				puppet = AIN
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.9.b
+	}
+}
+
+# FIX SUBJECT KOREA
+#####################
+country_event = {
+	id = ww1_korea.14
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		has_subject = KOR
+		has_completed_focus = JAP_ww1_Japan_Korea_Treaty
+		KOR = {
+			has_country_flag = korea_is_annexed
+		}
+		NOT = {
+			has_completed_focus = JAP_ww1_free_Korea
+			KOR = {
+				has_country_flag = korean_independence
+			}
+		}
+	}
+	mean_time_to_happen = { days = 0 }
+	immediate = {
+		hidden_effect = {
+			KOR = {
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				set_cosmetic_tag = KOR_JAP_governor_general
+				set_party_name = {
+					ideology = fascism
+					long_name = KOR_governorship_party_long
+					name = KOR_governorship_party
+				}
+				create_country_leader={
+					name = "KOR_JAP_resident_general_name"
+					picture = "gfx/leaders/KOR/KOR_JAP_resident_general.png"
+					ideology = stratocracy
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.7
+				}
+			}
+		}
+	}
+}
+
+# TAIWAN
+###########
+country_event = {
+	id = ww1_korea.15
+	title = ww1_korea.15.t
+	desc = ww1_korea.15.d
+	picture = GFX_report_event_generic_conference
+	fire_only_once = yes
+	trigger = {
+		tag = KOR
+		owns_state = 524
+		NOT = {
+			country_exists = TWN
+		}
+	}
+	mean_time_to_happen = { days = 0 }
+	option = {
+		name = ww1_korea.15.a
+		TWN = {
+			add_state_core = 524
+		}
+		every_owned_state = {
+			limit = {
+				is_core_of = TWN
+			}
+			TWN = {
+				transfer_state = PREV
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			set_autonomy = {
+				target = TWN
+				autonomous_state = autonomy_dominion
+			}
+			else = {
+				puppet = TWN
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.15.b
+	}
+}
+
+# PROVISIONAL GOVERNMENT OF THE REPUBLIC OF KOREA
+####################################################
+news_event = {
+	id = ww1_korea.16
+	title = ww1_korea.16.t
+	desc = ww1_korea.16.d
+	picture = ww1_korea_16
+	trigger = {
+		OR = {
+			tag = JAP
+			is_china_or_warlord = yes
+			is_subject_of = JAP
+		}
+		has_global_flag = march_1st_movement
+		KOR = {
+			OR = {
+				exists = no
+				is_subject_of = JAP
+			}
+		}
+		#Shanghai
+		613 = {
+			NOT = {
+				is_owned_by = JAP
+				is_owned_by = KOR
+			}
+		}
+		any_country = {
+			owns_state = 613
+			NOT = {
+				is_subject_of = JAP
+			}
+		}
+		NOT = {
+			has_global_flag = korean_prov_gov_established
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	immediate = {
+		hidden_effect = {
+			set_global_flag = korean_prov_gov_established
+			if = {
+				limit = {
+					KOR = {
+						exists = yes
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				KOR = {
+					set_party_name = {
+						ideology = democratic
+						long_name = KOR_provisional_government_long
+						name = KOR_provisional_government
+					}
+					promote_character = KOR_syngman_rhee
+				}
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.16.a
+		trigger = {
+			original_tag = KOR
+		}
+	}
+	option = {
+		name = ww1_korea.16.b
+		trigger = {
+			OR = {
+				original_tag = JAP
+				AND = {
+					is_subject_of = JAP
+					NOT = {
+						original_tag = KOR
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.16.c
+		trigger = {
+			NOT = {
+				original_tag = KOR
+				original_tag = JAP
+				is_subject_of = JAP
+			}
+		}
+	}
+}
+
+# PRESIDENTAL ELECTION
+###############################
+country_event = {
+	id = ww1_korea.17
+	title = ww1_korea.17.t
+	desc = ww1_korea.17.desc
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.17.a
+		ai_chance = {
+			base = 100
+		}
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = democratic
+					long_name = KOR_national_association_long
+					name = KOR_national_association
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		promote_character = KOR_syngman_rhee
+		hidden_effect = {
+			set_popularities = {
+				democratic = 56
+				communism = 25
+				fascism = 9
+				neutrality = 10
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.17.b
+		ai_chance = {
+			base = 50
+		}
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = democratic
+					long_name = KOR_revolutionary_party_long
+					name = KOR_revolutionary_party
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		promote_character = KOR_yi_sangsul
+		hidden_effect = {
+			set_popularities = {
+				democratic = 56
+				communism = 27
+				fascism = 12
+				neutrality = 15
+			}
+			drop_cosmetic_tag = yes
+		}
+	}
+	option = {
+		name = ww1_korea.17.c
+		ai_chance = {
+			base = 70
+		}
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = democratic
+					long_name = KOR_peoples_party_long
+					name = KOR_peoples_party
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		promote_character = KOR_lyuh_woonhyung
+		hidden_effect = {
+			set_popularities = {
+				democratic = 60
+				communism = 31
+				fascism = 2
+				neutrality = 7
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.17.d
+		ai_chance = {
+			base = 50
+		}
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = democratic
+					long_name = KOR_independence_party_long
+					name = KOR_independence_party
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		add_country_leader_role = {
+			character = KOR_ahn_chang_ho
+			country_leader = {
+				ideology = social_liberalism
+				traits = { liberal_democratic_paragon }
+			}
+		}
+		promote_character = KOR_ahn_chang_ho
+		hidden_effect = {
+			set_popularities = {
+				democratic = 64
+				communism = 13
+				fascism = 4
+				neutrality = 19
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.17.e
+		ai_chance = {
+			base = 70
+		}
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = democratic
+					long_name = KOR_independence_party_long
+					name = KOR_independence_party
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		KOR_kim_gu = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = social_liberalism
+					traits = { figurehead_president anti_communist }
+				}
+			}
+		}
+		hidden_effect = {
+			set_popularities = {
+				democratic = 65
+				communism = 5
+				fascism = 20
+				neutrality = 10
+			}
+		}
+		trigger = {
+			date > 1920.1.1
+		}
+	}
+}
+
+# KOREAN INDEPENDENCE FIGHTERS ON MANCHURIA
+##############################################
+news_event = {
+	id = ww1_korea.18
+	title = ww1_korea.18.t
+	desc = ww1_korea.18.d
+	picture = ww1_korea_18
+	trigger = {
+		date > 1920.10.1
+		KOR = {
+			OR = {
+				exists = no
+				is_subject_of = JAP
+			}
+		}
+		MAN = {
+			OR = {
+				exists = no
+				NOT = {
+					is_subject_of = JAP
+				}
+			}
+		}
+		FNG = {
+			NOT = {
+				is_subject_of = JAP
+			}
+		}
+		328 = {
+			NOT = {
+				is_owned_by = KOR
+				is_owned_by = JAP
+			}
+		}
+		OR = {
+			original_tag = JAP
+			original_tag = KOR
+			owns_state = 328
+		}
+		NOT = {
+			has_global_flag = korean_fighters_in_manchuria
+		}
+	}
+	mean_time_to_happen = {
+		days = 20
+	}
+	immediate = {
+		hidden_effect = {
+			set_global_flag = korean_fighters_in_manchuria
+		}
+	}
+	option = {
+		name = ww1_korea.18.a
+		trigger = {
+			original_tag = KOR
+		}
+	}
+	option = {
+		name = ww1_korea.18.b
+		trigger = {
+			OR = {
+				original_tag = JAP
+				AND = {
+					is_subject_of = JAP
+					NOT = {
+						original_tag = KOR
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.18.c
+		trigger = {
+			NOT = {
+				original_tag = KOR
+				original_tag = JAP
+				is_subject_of = JAP
+			}
+		}
+	}
+}
+
+# Chance to have peace treaty with Japan for RUS, SOV, CHI, and QIN, if Korea has signed peace with Japan.
+country_event = {
+	id = ww1_korea.19
+	title = ww1_korea.19.t
+	desc = ww1_korea.19.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.19.a
+		ai_chance = {
+			factor = 80
+		}
+		hidden_effect = {
+			every_country = {
+				if = {
+					limit = {
+						tag = RUS
+						country_exists = RUS
+					}
+					RUS = {
+						add_state_core = 537
+						add_state_core = 555
+					}
+				}
+				if = {
+					limit = {
+						tag = SOV
+						country_exists = SOV
+					}
+					SOV = {
+						add_state_core = 537
+						add_state_core = 555
+					}
+				}
+			}
+		}
+		JAP = {
+			every_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					is_owned_by = PREV
+				}
+				set_state_flag = korea_core_state_conference
+				ROOT = {
+					transfer_state = PREV
+				}
+				remove_core_of = JAP
+			}
+		}
+		every_country = {
+			limit = {
+				is_subject_of = JAP
+			}
+			every_owned_state = {
+				limit = {
+					is_claimed_by = ROOT
+					is_owned_by = PREV
+					NOT = {
+						has_state_flag = korea_core_state_conference
+					}
+				}
+				ROOT = {
+					transfer_state = PREV
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				is_subject_of = JAP
+			}
+			JAP = {
+				end_puppet = PREV
+			}
+		}
+		white_peace = JAP
+		add_political_power = 50
+		add_war_support = 0.1
+	}
+	option = {
+		name = ww1_korea.19.b
+		ai_chance = {
+			factor = 20
+		}
+		add_political_power = -50
+		add_war_support = 0.15
+	}
+}
+
+# Korean Indepdence War (Start Eagle Project)
+country_event = {
+	id = ww1_korea.20
+	hidden = yes
+	title = ww1_korea.20.t
+	desc = ww1_korea.20.d
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.20.a
+		ai_chance = {
+			factor = 100
+		}
+		KOR = {
+			add_named_threat = {
+				threat = 5
+				name = ww1_korea.20.t
+			}
+		}
+		JAP = {
+			end_puppet = KOR
+		}
+		start_civil_war = {
+			ideology = fascism
+			size = 0
+			states = {
+				525
+				796
+				801
+				802
+			}
+			keep_unit_leaders_trigger = {
+				NOT = {
+					has_trait = JAP_samurai_lineage
+				}
+			}
+			keep_political_party_members = yes
+		}
+		random_other_country = {
+			limit = {
+				original_tag = KOR
+				has_government = fascism
+			}
+			set_country_flag = civil_war_japanese_korea
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = KOR_provisional_government_long
+			name = KOR_provisional_government
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = KOR_fascism_party_long
+			name = KOR_fascism_party
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = KOR_fascism_party_long
+			name = KOR_fascism_party
+		}
+		KOR_hong_beomdo = {
+			promote_character = stratocracy
+			promote_character = authoritarian_democracy
+		}	
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.7
+		}
+		set_war_support = 0.8
+		set_stability = 0.9
+		division_template = {
+			name = "Dongnipgun"
+			regiments = {
+				infantry = {
+					x = 0
+					y = 0
+				}
+				infantry = {
+					x = 1
+					y = 0
+				}
+				infantry = {
+					x = 0
+					y = 1
+				}
+				infantry = {
+					x = 1
+					y = 1
+				}
+			}
+		}
+		division_template = {
+			name = "Uibyeong"
+			regiments = {
+				militia = {
+					x = 0
+					y = 0
+				}
+				militia = {
+					x = 0
+					y = 1
+				}
+			}
+		}
+		set_division_template_lock = {
+			division_template = "Dongnipgun"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "Uibyeong"
+			is_locked = yes
+		}
+		799 = {
+			create_unit = {
+				division = "name = \"1. Dongnipgun\" division_template = \"Dongnipgun\" start_experience_factor = 1.0"
+				owner = KOR
+			}
+			create_unit = {
+				division = "name = \"2. Dongnipgun\" division_template = \"Dongnipgun\" start_experience_factor = 1.0"
+				owner = KOR
+			}
+			create_unit = {
+				division = "name = \"3. Dongnipgun\" division_template = \"Dongnipgun\" start_experience_factor = 1.0"
+				owner = KOR
+			}
+		}
+		527 = {
+			create_unit = {
+				division = "name = \"4. Dongnipgun\" division_template = \"Dongnipgun\" start_experience_factor = 1.0"
+				owner = KOR
+			}
+			create_unit = {
+				division = "name = \"5. Dongnipgun\" division_template = \"Dongnipgun\" start_experience_factor = 1.0"
+				owner = KOR
+			}
+			create_unit = {
+				division = "name = \"6. Dongnipgun\" division_template = \"Dongnipgun\" start_experience_factor = 1.0"
+				owner = KOR
+			}
+		}
+		800 = {
+			create_unit = {
+				division = "name = \"1. Militia\" division_template = \"Uibyeong\" start_experience_factor = 0"
+				owner = KOR
+			}
+			create_unit = {
+				division = "name = \"2. Militia\" division_template = \"Uibyeong\" start_experience_factor = 0"
+				owner = KOR
+			}
+			create_unit = {
+				division = "name = \"3. Militia\" division_template = \"Uibyeong\" start_experience_factor = 0"
+				owner = KOR
+			}
+		}
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = KOR_independence_army
+		set_country_flag = korean_independence
+		JAP = {
+			country_event = ww1_korea.21
+		}
+	}
+}
+
+# CREATE JAPANESE PUPPET FOR EAGLE PROJECT
+#############################################
+country_event = {
+	id = ww1_korea.21
+	hidden = yes
+	is_triggered_only = yes
+	picture = GFX_report_event_japan_army_mountainside
+	immediate = {
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = KOR
+					has_country_flag = civil_war_japanese_korea
+				}
+				create_country_leader={
+					name = "KOR_JAP_governor_general_name"
+					picture = "gfx/leaders/KOR/KOR_JAP_governor_general.png"
+					ideology = stratocracy
+				}
+				JAP = {
+					puppet = PREV
+					if = {
+						limit = {
+							has_dlc = "Together for Victory"
+						}
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_colony
+						}
+					}
+				}
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 1
+				}
+				set_cosmetic_tag = KOR_JAP_governor_general
+				set_party_name = {
+					ideology = fascism
+					long_name = KOR_governorship_party
+					name = KOR_governorship_party
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = KOR_governorship_party
+					name = KOR_governorship_party
+				}
+				set_party_name = {
+					ideology = democratic
+					long_name = KOR_governorship_party
+					name = KOR_governorship_party
+				}
+				525 = {
+					remove_core_of = PREV
+				}
+				527 = {
+					remove_core_of = PREV
+				}
+				796 = {
+					remove_core_of = PREV
+				}
+				797 = {
+					remove_core_of = PREV
+				}
+				799 = {
+					remove_core_of = PREV
+				}
+				800 = {
+					remove_core_of = PREV
+				}
+				801 = {
+					remove_core_of = PREV
+				}
+				802 = {
+					remove_core_of = PREV
+				}
+				set_war_support = 0.8
+				set_stability = 0.9
+				division_template = {
+					name = "Infantry Division"
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+					}
+				}
+				802 = {
+					create_unit = {
+						division = "name = \"19. Shidan\" division_template = \"Infantry Division\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"20. Shidan\" division_template = \"Infantry Division\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+				}
+				declare_war_on = {
+					target = KOR
+					type = civil_war
+				}
+				if = {
+					limit = {
+						has_idea = KOR_idea_army_tradition
+					}
+					remove_ideas = KOR_idea_army_tradition
+				}
+			}
+			JAP = {
+				set_country_flag = korean_independence_war_fired
+			}
+			news_event = ww1_korea.22
+		}
+	}
+}
+
+# EAGLE PROJECT NEWS
+#######################
+news_event = {
+	id = ww1_korea.22
+	title = ww1_korea.20.t
+	desc = ww1_korea.20.d
+	major = yes
+	is_triggered_only = yes
+	picture = ww1_korea_22
+	option = {
+		name = ww1_korea.20.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = ww1_korea.20.b
+		trigger = {
+			TAG = JAP
+		}
+	}
+	option = {
+		name = ww1_korea.20.c
+		trigger = {
+			NOT = {
+				TAG = KOR
+				TAG = JAP
+			}
+		}
+	}
+}
+
+# QUESTION OF SOCIALIST STATE
+################################
+country_event = {
+	id = ww1_korea.23
+	title = ww1_korea.23.t
+	desc = ww1_korea.23.d
+	picture = GFX_report_event_generic_communist_congress
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = communism
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 60
+						elections_allowed = no #socialist elections wip
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			set_popularities = {
+				democratic = 17
+				communism = 70
+				fascism = 6
+				neutrality = 7
+			}
+			promote_character = KOR_yi_donghwi
+			set_cosmetic_tag = KOR_social
+		}
+	}
+	option = {
+		name = ww1_korea.23.a
+	}
+}
+
+# KOREAN WAR
+###############
+country_event = {
+	id = ww1_korea.25
+	title = ww1_korea.25.t
+	desc = ww1_korea.25.d
+	fire_only_once = yes
+	trigger = {
+		original_tag = KOR
+		is_historical_focus_on = no
+		is_subject = no
+		has_government = democratic
+		has_stability < 0.10
+		democratic < 0.30
+		has_civil_war = no
+	}
+	picture = GFX_report_event_generic_battle
+	immediate = {
+		hidden_effect = {
+			start_civil_war = {
+				ideology = communism
+				size = 0.5
+				states = {
+					527
+					797
+					799
+				}
+			}
+			random_other_country = {
+				limit = {
+					original_tag = KOR
+					has_government = communism
+				}
+				set_party_name = {
+					ideology = communism
+					long_name = KOR_communism_party_long
+					name = KOR_communism_party
+				}
+				ROOT = {
+					KOR_yi_donghwi = {
+						set_nationality = PREV
+					}
+				}
+				KOR_yi_donghwi = {
+					add_country_leader_role = {
+						country_leader = {
+							ideology = marxism
+						}
+					}
+					promote_character = marxism
+				}
+				set_cosmetic_tag = KOR_social
+				set_war_support = 0.8
+				set_stability = 0.9
+			}
+			news_event = ww1_korea.27
+		}
+	}
+	option = {
+		name = ww1_korea.25.a
+	}
+}
+
+# KOREAN WAR
+###############
+country_event = {
+	id = ww1_korea.26
+	title = ww1_korea.26.t
+	desc = ww1_korea.26.d
+	fire_only_once = yes
+	trigger = {
+		original_tag = KOR
+		is_historical_focus_on = no
+		is_subject = no
+		has_government = communism
+		has_stability < 0.10
+		communism < 0.30
+		has_civil_war = no
+	}
+	picture = GFX_report_event_generic_battle
+	immediate = {
+		hidden_effect = {
+			set_country_flag = communist_korea
+			start_civil_war = {
+				ideology = democratic
+				size = 0.5
+				states = {
+					525
+					796
+					800
+					801
+					802
+				}
+			}
+			random_other_country = {
+				limit = {
+					original_tag = KOR
+					has_government = democratic
+				}
+				set_party_name = {
+					ideology = democratic
+					long_name = KOR_national_association_long
+					name = KOR_national_association
+				}
+				ROOT = {
+					KOR_syngman_rhee = {
+						set_nationality = PREV
+					}
+				}
+				KOR_syngman_rhee = {
+					add_country_leader_role = {
+						country_leader = {
+							ideology = conservatism
+							traits = { anti_communist }
+						}
+					}
+					promote_character = conservatism
+				}
+				drop_cosmetic_tag = yes
+				set_war_support = 0.8
+				set_stability = 0.9
+			}
+			news_event = ww1_korea.28
+		}
+	}
+	option = {
+		name = ww1_korea.26.a
+	}
+}
+
+# KOREAN WAR NEWS
+###################
+news_event = {
+	id = ww1_korea.27
+	title = ww1_korea.27.t
+	desc = {
+		text = ww1_korea.28.d
+		trigger = { KOR = { has_country_flag = communist_korea } }
+	}
+	desc = {
+		text = ww1_korea.27.d
+		trigger = { NOT = { KOR = { has_country_flag = communist_korea } } }
+	}
+	major = yes
+	is_triggered_only = yes
+	picture = ww1_korea_27
+	option = {
+		name = ww1_korea.27.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# POLITICAL MANEUVERING - GOOD ANSWER
+########################################
+country_event = {
+	id = ww1_korea.31
+	title = ww1_korea.31.t
+	desc = ww1_korea.31.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.31.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# POLITICAL MANEUVERING - GOOD ANSWER
+########################################
+country_event = {
+	id = ww1_korea.32
+	title = ww1_korea.32.t
+	desc = ww1_korea.32.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.32.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# JAPAN MOBILIZES!
+#####################
+country_event = {
+	id = ww1_korea.33
+	title = ww1_korea.33.t
+	desc = ww1_korea.33.d
+	picture = GFX_report_event_japan_army_mountainside
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.33.a
+		trigger = {
+			tag = KOR
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = ww1_korea.33.b
+		trigger = {
+			tag = JAP
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# EAGLE PROJECT - THE PENINSULAR IS UNDER KOREAN CONTROLS
+############################################################
+country_event = {
+	id = ww1_korea.34
+	title = ww1_korea.34.t
+	desc = ww1_korea.34.d
+	picture = GFX_report_event_generic_battle
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ww1_korea.35
+				days = 10
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.34.a
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0
+				has_war_support > 0.80
+			}
+			modifier = {
+				factor = 0
+				enemies_strength_ratio < 0.20
+			}
+		}
+		add_political_power = -100
+		add_war_support = -0.2
+		white_peace = KOR
+		hidden_effect = {
+			set_country_flag = korean_independence_war_peace
+			random_other_country = {
+				limit = {
+					original_tag = KOR
+					is_subject_of = PREV
+				}
+				PREV = { end_puppet = PREV }
+			}
+			KOR = {
+				country_event = ww1_korea.7
+			}
+			every_other_country = {
+				limit = {
+					#has_country_flag = supported_korean_independence
+					has_war_with = PREV
+					NOT = { has_war_with = KOR }
+				}
+				country_event = ww1_korea.19
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.34.b
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				has_war_support > 0.50
+			}
+			modifier = {
+				add = -100
+				enemies_strength_ratio > 0.5
+			}
+			modifier = {
+				add = -50
+				has_war_with_major = yes
+			}
+			modifier = {
+				factor = 0
+				surrender_progress > 0.15
+			}
+		}
+		KOR = {
+			country_event = ww1_korea.8
+		}
+	}
+}
+
+# MILITARY COUP IN JAPAN
+###########################
+country_event = {
+	id = ww1_korea.35
+	title = ww1_korea.35.t
+	desc = {
+		text = ww1_korea.35.d
+		trigger = {
+			KOR = {
+				has_completed_focus = KOR_start_eagle_project
+			}
+		}
+	}
+	desc = {
+		text = ww1_korea.35.d_early
+		trigger = {
+			KOR = {
+				NOT = {
+					has_completed_focus = KOR_start_eagle_project
+				}
+			}
+		}
+	}
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.35.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 10
+				fascism > 0.1
+				fascism < 0.2
+			}
+			modifier = {
+				add = 20
+				fascism > 0.2
+				fascism < 0.3
+			}
+			modifier = {
+				add = 30
+				fascism > 0.3
+				fascism < 0.4
+			}
+			modifier = {
+				add = 40
+				fascism > 0.4
+				fascism < 0.5
+			}
+			modifier = {
+				add = 50
+				fascism > 0.5
+				fascism < 0.6
+			}
+			modifier = {
+				add = 60
+				fascism > 0.6
+				fascism < 0.7
+			}
+			modifier = {
+				add = 70
+				fascism > 0.7
+				fascism < 0.8
+			}
+			modifier = {
+				add = 80
+				fascism > 0.8
+				fascism < 0.9
+			}
+			modifier = {
+				add = 90
+				fascism > 0.9
+			}
+		}
+		JAP = {
+			unlock_national_focus = JAP_ww1_support_republic
+			complete_national_focus = JAP_ww1_fascist_coup
+		}
+	}
+	option = {
+		name = ww1_korea.35.b
+		ai_chance = {
+			factor = 50
+		}
+		JAP = {
+			hidden_effect = {
+				promote_character = JAP_tokugawa_iesato
+				check_fascism_civil_war_popularity = yes
+			}
+			start_civil_war = {
+				ideology = fascism
+				size = civil_war_size_var
+				states = {
+					524
+					526
+					528
+					529
+					530
+					531
+					744
+				}
+				keep_political_party_members = yes
+				keep_unit_leaders_trigger = {
+					NOT = {
+						has_trait = JAP_samurai_lineage
+						has_trait = old_guard_navy
+						has_trait = old_guard
+					}
+				}
+				hidden_effect = {
+					set_capital = { state = 531 }
+					set_cosmetic_tag = JAP_fascism_color
+					every_state = {
+						limit = { is_owned_by = KOR }
+						add_claim_by = PREV
+					}
+				}
+			}
+		}	
+	}
+}
+
+# KOREAN REVOLT - REACTION
+#############################
+country_event = {
+	id = ww1_korea.36
+	title = ww1_korea.36.t
+	desc = ww1_korea.36.d
+	picture = GFX_report_event_gathering_protest
+	trigger = {
+		tag = JAP
+		JAP = {
+			has_country_flag = korean_independence_war_fired
+			NOT = {
+				has_country_flag = korean_independence_war_peace
+			}
+		}
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = ww1_korea.36.a
+		ai_chance = {
+			factor = 70
+		}
+		declare_war_on = {
+			target = KOR
+			type = annex_everything
+		}
+	}
+	option = {
+		name = ww1_korea.36.b
+		ai_chance = {
+			factor = 30
+		}
+		JAP = {
+			add_political_power = -100
+			add_war_support = -0.2
+			white_peace = KOR
+		}
+		KOR = {
+			country_event = ww1_korea.7
+		}
+	}
+}
+
+# JAPANESE TIMEOVER
+######################
+country_event = {
+	id = ww1_korea.38
+	title = ww1_korea.38.t
+	desc = ww1_korea.38.d
+	picture = GFX_report_event_generic_battle
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ww1_korea.35
+				days = 10
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.38.a
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				NOT = {
+					has_war_support > 0.5
+					enemies_strength_ratio < 0.5
+				}
+			}
+		}
+		white_peace = KOR
+		KOR = {
+			country_event = ww1_korea.7
+		}
+	}
+	option = {
+		name = ww1_korea.38.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					has_war_support > 0.5
+					enemies_strength_ratio < 0.5
+				}
+			}
+		}
+		KOR = {
+			country_event = ww1_korea.8
+		}
+	}
+}
+
+# GIVE SOUTHERN MANCHU CORES
+###############################
+country_event = {
+	id = ww1_korea.45
+	title = ww1_korea.45.t
+	desc = ww1_korea.45.d
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.45.a
+		ai_chance = {
+			factor = 50
+		}
+		every_state = {
+			limit = {
+				OR = {
+					state = 328
+					state = 716
+					state = 717
+				}
+			}
+			add_core_of = PREV
+			transfer_state_to = PREV
+		}
+	}
+	option = {
+		name = ww1_korea.45.b
+		ai_chance = {
+			factor = 0
+		}
+		trigger = {
+			NOT = {
+				328 = { is_core_of = PREV }
+				716 = { is_core_of = PREV }
+				717 = { is_core_of = PREV }
+			}
+		}
+	}
+}
+
+# ULTIMATUM TO CHINA
+#######################
+country_event = {
+	id = ww1_korea.46
+	title = ww1_korea.46.t
+	desc = ww1_korea.46.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.46.a
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = -10
+				has_war_support > 0.5
+			}
+		}
+		every_owned_state = {
+			limit = {
+				OR = {
+					state = 611
+					state = 612
+				}
+			}
+			transfer_state_to = FROM
+		}
+		FROM = {
+			country_event = ww1_korea.47
+		}
+		if = {
+			limit = {
+				FROM = { has_subject = MAN }
+			}
+			every_owned_state = {
+				limit = {
+					state = 610
+				}
+				transfer_state_to = MAN
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = { has_subject = FNG }
+			}
+			every_owned_state = {
+				limit = {
+					state = 610
+				}
+				transfer_state_to = FNG
+			}
+		}
+		else = {
+			every_owned_state = {
+				limit = {
+					state = 610
+				}
+				transfer_state_to = FROM
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.46.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				strength_ratio = {
+					tag = FROM
+					ratio < 1
+				}
+			}
+		}
+		add_war_support = 0.3
+		FROM = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = PREV
+			}
+		}
+	}
+}
+
+# CHINA GIVES UP
+###################
+country_event = {
+	id = ww1_korea.47
+	title = ww1_korea.47.t
+	desc = ww1_korea.47.d
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.47.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = 100
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+	}
+}
+
+# QUESTION OF VLADIVOSTOK
+############################
+country_event = {
+	id = ww1_korea.48
+	title = ww1_korea.48.t
+	desc = ww1_korea.48.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.48.a
+		ai_chance = {
+			factor = 40
+		}
+		add_state_core = 408
+		transfer_state = 408
+	}
+	option = {
+		name = ww1_korea.48.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# 105-MAN INCIDENT?
+######################
+country_event = {
+	id = ww1_korea.49
+	title = ww1_korea.49.t
+	desc = ww1_korea.49.d
+	picture = GFX_report_event_gathering_protest
+	fire_only_once = yes
+	trigger = {
+		original_tag = JAP
+		OR = {
+			has_subject = KOR
+			AND = {
+				NOT = { country_exists = KOR }
+				owns_state = 800
+			}
+		}
+		date > 1911.1.1
+		NOT = {
+			has_global_flag = KOR_105_man_incident
+		}	
+	}
+	mean_time_to_happen = { days = 10 }
+	immediate = {
+		set_global_flag = KOR_105_man_incident
+	}	
+	
+	option = {
+		name = ww1_korea.49.a
+		ai_chance = {
+			factor = 100
+		}
+		news_event = ww1_korea.50
+		if = {
+			limit = {
+				country_exists = KOR
+			}
+			KOR = {
+				add_stability = -0.05
+				add_political_power = -75
+				news_event = ww1_korea.50
+			}
+		}
+		else = {
+			525 = {
+				add_compliance = -5
+				add_resistance = 5
+			}
+			527 = {
+				add_compliance = -5
+				add_resistance = 5
+			}
+			796 = {
+				add_compliance = -5
+				add_resistance = 5
+			}
+			797 = {
+				add_compliance = -5
+				add_resistance = 5
+			}
+			799 = {
+				add_compliance = -5
+				add_resistance = 5
+			}
+			800 = {
+				add_compliance = -5
+				add_resistance = 5
+			}
+			801 = {
+				add_compliance = -5
+				add_resistance = 5
+			}
+			802 = {
+				add_compliance = -5
+				add_resistance = 5
+			}
+		}
+		add_stability = 0.02
+		add_political_power = -100
+	}
+	option = {
+		name = ww1_korea.49.b
+		ai_chance = {
+			factor = 0
+		}
+		trigger = {
+			tag = JAP
+		}
+		if = {
+			limit = {
+				country_exists = KOR
+			}
+			KOR = {
+				add_stability = -0.05
+			}
+		}
+		else = {
+			797 = {
+				add_resistance = 10
+			}
+			799 = {
+				add_resistance = 10
+			}
+		}
+		add_stability = -0.02
+		add_political_power = -200
+	}
+}
+
+# 105-MAN INCIDENT
+#####################
+news_event = {
+	id = ww1_korea.50
+	title = ww1_korea.50.t
+	desc = ww1_korea.50.d
+	picture = ww1_korea_50
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.50.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = JAP
+		}
+	}
+	option = {
+		name = ww1_korea.50.b
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = KOR
+		}
+	}
+	option = {
+		name = ww1_korea.50.c
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			NOT = {
+				tag = JAP
+				tag = KOR
+			}
+		}
+	}
+}
+
+# KOREAN MONARCHISTS PLOTTING?
+#################################
+country_event = {
+	id = ww1_korea.51
+	title = ww1_korea.51.t
+	desc = ww1_korea.51.d
+	picture = GFX_report_event_gathering_protest
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		OR = {
+			has_subject = KOR
+			AND = {
+				NOT = { country_exists = KOR }
+				owns_state = 800
+			}
+		}
+		date > 1914.5.23
+		NOT = {
+			has_global_flag = KOT_korean_independence_plot_1914
+		}	
+	}
+	immediate = {
+		set_global_flag = KOT_korean_independence_plot_1914
+	}	
+	option = {
+		name = ww1_korea.51.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = JAP
+		}
+		news_event = ww1_korea.52
+		add_stability = 0.02
+		add_political_power = -100
+		if = {
+			limit = {
+				country_exists = KOR
+			}
+			KOR = {
+				news_event = ww1_korea.52
+				add_stability = -0.05
+				add_political_power = -75
+			}
+		}
+		else = {
+			525 = {
+				add_compliance = -5
+				add_resistance = 5
+			}
+			527 = {
+				add_compliance = -5
+				add_resistance = 5
+			}
+			796 = {
+				add_compliance = -5
+				add_resistance = 5
+			}
+			797 = {
+				add_compliance = -5
+				add_resistance = 5
+			}
+			799 = {
+				add_compliance = -5
+				add_resistance = 5
+			}
+			800 = {
+				add_compliance = -5
+				add_resistance = 5
+			}
+			801 = {
+				add_compliance = -5
+				add_resistance = 5
+			}
+			802 = {
+				add_compliance = -5
+				add_resistance = 5
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.51.b
+		ai_chance = {
+			factor = 0
+		}
+		trigger = {
+			tag = JAP
+		}
+		add_stability = -0.02
+		add_political_power = -150
+		if = {
+			limit = {
+				country_exists = KOR
+			}
+			KOR = {
+				add_stability = -0.07
+			}
+		}
+		else = {
+			525 = {
+				add_resistance = 10
+			}
+		}
+	}
+}
+
+# KOREAN MONARCHISTS PLOT CAUGHT
+###################################
+news_event = {
+	id = ww1_korea.52
+	title = ww1_korea.52.t
+	desc = ww1_korea.52.d
+	picture = ww1_korea_52
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.52.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = JAP
+			NOT = {
+				tag = KOR
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.52.b
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = KOR
+		}
+	}
+}
+
+# FAMINE
+###########
+country_event = {
+	id = ww1_korea.53
+	title = ww1_korea.53.t
+	desc = ww1_korea.53.d
+	picture = GFX_report_event_indian_famine
+	immediate = {
+		hidden_effect = {
+			remove_ideas = KOR_risk_of_famine
+			add_timed_idea = {
+				idea = KOR_famine
+				days = 1095
+			}
+			JAP = {
+				news_event = {
+					id = ww1_korea.54
+				}
+			}
+		}
+	}
+	trigger = {
+		original_tag = KOR
+		JAP = {
+			has_subject = PREV
+			any_other_country = {
+				is_major = yes
+				has_war_with = PREV
+			}
+		}
+		has_idea = KOR_risk_of_famine
+		NOT = {
+			has_idea = KOR_famine
+		}
+	}
+	fire_only_once = yes
+	option = {
+		name = ww1_korea.53.a
+		effect_tooltip = {
+			remove_ideas = KOR_risk_of_famine
+			add_timed_idea = {
+				idea = KOR_famine
+				days = 1095
+			}
+		}
+	}
+}
+
+# FAMINE
+###########
+country_event = {
+	id = ww1_korea.54
+	title = ww1_korea.54.t
+	desc = ww1_korea.54.d
+	picture = GFX_report_event_indian_famine
+	trigger = {
+		original_tag = JAP
+		owns_state = 800
+		any_other_country = {
+			is_major = yes
+			has_war_with = PREV
+		}
+		has_idea = KOR_risk_of_famine
+		NOT = {
+			has_idea = KOR_famine
+			country_exists = KOR
+		}
+	}
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			KOR = {
+				remove_ideas = KOR_risk_of_famine
+				add_timed_idea = {
+					idea = KOR_famine
+					days = 1095
+				}
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.54.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# SHIP PURCHASE
+##################
+country_event = {
+	id = ww1_korea.55
+	title = ww1_korea.55.t
+	desc = ww1_korea.55.d
+	picture = GFX_report_event_usa_destroyers
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.55.a
+		trigger = {
+			country_exists = JAP
+			is_subject = no
+			NOT = {
+				JAP = {
+					has_country_flag = denied_korean_ship_perchase
+				}
+				has_war_with = KOR
+			}
+		}
+		if = {
+			limit = {
+				country_exists = JAP
+			}
+			JAP = {
+				country_event = ww1_korea.56
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = ww1_korea.55.b
+		trigger = {
+			country_exists = ENG
+			is_subject = no
+			NOT = {
+				ENG = {
+					has_country_flag = denied_korean_ship_perchase
+				}
+				has_war_with = KOR
+			}
+		}
+		if = {
+			limit = {
+				country_exists = ENG
+			}
+			ENG = {
+				country_event = ww1_korea.56
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = {
+		name = ww1_korea.55.c
+		trigger = {
+			country_exists = GER
+			is_subject = no
+			NOT = {
+				GER = {
+					has_country_flag = denied_korean_ship_perchase
+				}
+				has_war_with = KOR
+			}
+		}
+		if = {
+			limit = {
+				country_exists = GER
+			}
+			GER = {
+				country_event = ww1_korea.56
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# KOREANS WANTS TO ORDER A WARSHIP
+######################################
+country_event = {
+	id = ww1_korea.56
+	title = ww1_korea.56.t
+	desc = ww1_korea.56.d
+	picture = GFX_report_event_usa_destroyers
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.56.a
+		add_timed_idea = {
+			idea = KOR_idea_ship_purchase
+			days = 84
+		}
+		FROM = {
+			country_event = ww1_korea.57
+		}
+		ai_chance = {
+			base = 60
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+			}
+			modifier = {
+				factor = 0
+				has_war_with = FROM
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.56.b
+		hidden_effect = {
+			set_country_flag = denied_korean_ship_perchase
+		}
+		FROM = {
+			country_event = ww1_korea.58
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				is_in_faction_with = FROM
+			}
+			modifier = {
+				add = 40
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+		}
+	}
+}
+
+# WARSHIP IS READY
+#####################
+country_event = {
+	id = ww1_korea.57
+	title = ww1_korea.57.t
+	desc = ww1_korea.57.d
+	picture = GFX_report_event_usa_destroyers
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.57.a
+		add_timed_idea = {
+			idea = KOR_idea_ship_purchased
+			days = 84
+		}
+		if = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			if = {
+				limit = {
+					FROM = { original_tag = ENG }
+				}
+				load_oob = KOR_british_battleship_mtg
+			}
+			else_if = {
+				limit = {
+					FROM = { original_tag = GER }
+				}
+				load_oob = KOR_german_battlecruiser_mtg
+			}
+			else = {
+				load_oob = KOR_japanese_cruiser_mtg
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					FROM = { original_tag = ENG }
+				}
+				load_oob = KOR_british_battleship_legacy
+			}
+			else_if = {
+				limit = {
+					FROM = { original_tag = GER }
+				}
+				load_oob = KOR_german_battlecruiser_legacy
+			}
+			else = {
+				load_oob = KOR_japanese_cruiser_legacy
+			}
+		}
+	}
+}
+
+# NO WARSHIP FOR YOU
+#######################
+country_event = {
+	id = ww1_korea.58
+	title = ww1_korea.58.t
+	desc = ww1_korea.58.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.58.a
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						GER = {
+							has_country_flag = denied_korean_ship_perchase
+						}
+						ENG = {
+							has_country_flag = denied_korean_ship_perchase
+						}
+						JAP = {
+							has_country_flag = denied_korean_ship_perchase
+						}
+					}
+				}
+				country_event = {
+					id = ww1_korea.55
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+# EMPEROR GWANGMU IS DEAD
+############################
+country_event = {
+	title = ww1_korea.59.t
+	desc = {
+		text = ww1_korea.59.d
+		trigger = {
+			OR = {
+				KOR = { is_subject_of = JAP }
+				AND = {
+					NOT = { country_exists = KOR }
+					JAP = { owns_state = 800 }
+				}
+			}
+		}
+	}
+	desc = {
+		text = ww1_korea.59.d_independent
+		trigger = {
+			country_exists = KOR
+			NOT = {
+				KOR = { is_subject_of = JAP }
+				JAP = { owns_state = 800 }
+			}
+		}
+	}
+	id = ww1_korea.59
+	picture = GFX_report_event_generic_funeral
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+		if = {
+			limit = {
+				country_exists = KOR
+			}
+			tag = KOR
+			else = {
+				owns_state = 800
+			}
+		}
+		KOR = {
+			has_character = KOR_yi_hui
+			NOT = { has_country_flag = emperor_gwangmu_is_dead }
+		}
+		date > 1919.1.21
+	}
+	immediate = {
+		hidden_effect = {
+			KOR = {
+				if = {
+					limit = { NOT = { has_country_flag = emperor_gwangmu_is_dead } }
+					retire_character = KOR_yi_hui
+					promote_character = KOR_yi_cheok
+					if = {
+						limit = {
+							has_completed_focus = KOR_god_help_our_emperor
+						}
+						KOR_yi_cheok = {
+							remove_country_leader_trait = inexperienced_monarch
+						}
+					}
+					set_country_flag = emperor_gwangmu_is_dead
+				}
+			}
+			if = {
+				limit = {
+					KOR = { is_subject_of = JAP }
+				}
+				JAP = { country_event = ww1_korea.59 }
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.59.a
+		trigger = {
+			tag = KOR
+		}
+		if = {
+			limit = {
+				has_idea = KOR_idea_gwangmu
+			}
+			swap_ideas = {
+				remove_idea = KOR_idea_gwangmu
+				add_idea = KOR_idea_yunghui
+			}
+		}
+		effect_tooltip = {
+			promote_character = KOR_yi_cheok
+			if = {
+				limit = {
+					has_completed_focus = KOR_god_help_our_emperor
+				}
+				KOR_yi_cheok = {
+					remove_country_leader_trait = inexperienced_monarch
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					is_subject_of = JAP
+				}
+				country_event = ww1_japan.8
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.59.b
+		trigger = {
+			NOT = { tag = KOR }
+		}
+	}
+}
+
+# EMPEROR YUNGHUI IS DEAD
+############################
+country_event = {
+	title = ww1_korea.60.t
+	desc = {
+		text = ww1_korea.60.d
+		trigger = {
+			OR = {
+				KOR = { is_subject_of = JAP }
+				AND = {
+					NOT = { country_exists = KOR }
+					JAP = { owns_state = 800 }
+				}
+			}
+			NOT = {
+				KOR = { has_cosmetic_tag = KOR_joseon }
+			}
+		}
+	}
+	desc = {
+		text = ww1_korea.60.d_independent
+		trigger = {
+			country_exists = KOR
+			NOT = {
+				KOR = { is_subject_of = JAP }
+				KOR = { has_cosmetic_tag = KOR_joseon }
+				JAP = { owns_state = 800 }
+			}
+		}
+	}
+	desc = {
+		text = ww1_korea.60.d_joseon
+		trigger = {
+			KOR = {
+				has_cosmetic_tag = KOR_joseon
+			}	
+		}
+	}
+	id = ww1_korea.60
+	picture = GFX_report_event_generic_funeral
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+		if = {
+			limit = {
+				country_exists = KOR
+			}
+			tag = KOR
+			else = {
+				owns_state = 800
+			}
+		}
+		KOR = {
+			has_country_leader = {
+				character = KOR_yi_cheok
+				ruling_only = no
+			}
+			NOT = { has_country_flag = emperor_yunghui_is_dead }
+		}
+		date > 1926.4.25
+	}
+	immediate = {
+		hidden_effect = {
+			KOR = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = emperor_yunghui_is_dead }
+					}
+					retire_character = KOR_yi_cheok
+					if = {
+						limit = {
+							OR = {
+								is_subject_of = JAP
+								has_cosmetic_tag = KOR_joseon
+							}
+						}
+						promote_character = KOR_yi_un
+						else = {
+							promote_character = KOR_yi_kang
+						}
+					}
+					set_country_flag = emperor_yunghui_is_dead
+				}
+			}
+			if = {
+				limit = {
+					KOR = { is_subject_of = JAP }
+				}
+				JAP = { country_event = ww1_korea.60 }
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.60.a
+		trigger = {
+			tag = KOR
+			NOT = {
+				has_cosmetic_tag = KOR_joseon
+			}	
+		}
+		if = {
+			limit = {
+				OR = {
+					has_idea = KOR_idea_yunghui
+					has_idea = KOR_idea_yunghui_puppet
+				}	
+			}
+			if = {
+				limit = {
+					is_subject_of = JAP
+				}
+				add_ideas = KOR_idea_uimin
+				else = {
+					add_ideas = KOR_idea_uihwa
+				}
+			}
+		}
+		effect_tooltip = {
+			if = {
+				limit = {
+					is_subject_of = JAP
+				}
+				promote_character = KOR_yi_un
+				else = {
+					promote_character = KOR_yi_kang
+				}
+			}
+		}
+		hidden_effect = {
+			remove_ideas = {
+				KOR_idea_yunghui
+				KOR_idea_yunghui_puppet
+			}
+		}	
+	}
+	option = {
+		name = ww1_korea.60.b
+		trigger = {
+			NOT = { tag = KOR }
+		}
+	}
+	option = {
+		name = ww1_korea.60.c
+		trigger = {
+			tag = KOR
+			has_cosmetic_tag = KOR_joseon
+		}
+		effect_tooltip = {
+			promote_character = KOR_yi_un
+		}
+	}
+}
+
+# DONGHAK JIPGANGSO
+######################
+country_event = {
+	id = ww1_korea.61
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		tag = KOR
+		has_cosmetic_tag = KOR_joseon
+		has_government = communism
+	}
+	immediate = {
+		KOR_jipgangso = {
+			add_country_leader_role = {
+				country_leader = {
+					ideology = agrarian_socialism
+					traits = { our_right_to_survive }
+				}
+			}
+			promote_character = agrarian_socialism
+		}
+	}
+}
+
+# KOREAN LIBERATION ASSOCIATION
+##################################
+country_event = {
+	id = ww1_korea.62
+	title = ww1_korea.62.t
+	desc = ww1_korea.62.d
+	picture = GFX_report_event_generic_parliament
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		KOR = {
+			NOT = {
+				has_country_flag = korean_independence
+			}
+		}
+		OR = {
+			KOR = {
+				is_subject_of = JAP
+			}
+			NOT = {
+				country_exists = KOR
+			}
+		}
+		date > 1918.1.1
+	}
+	option = {
+		name = ww1_korea.62.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = JAP
+		}
+		if = {
+			limit = {
+				country_exists = KOR
+			}
+			KOR = {
+				add_stability = -0.05
+				add_political_power = -75
+			}
+		}
+		JAP = {
+			add_stability = 0.02
+			add_political_power = 50
+		}
+		802 = {
+			
+			add_compliance = -10
+			add_resistance = 10
+		}
+		JAP = {
+			news_event = ww1_korea.63
+		}
+		if = {
+			limit = {
+				country_exists = KOR
+			}
+			KOR = {
+				news_event = ww1_korea.63
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.62.b
+		ai_chance = {
+			factor = 0
+		}
+		trigger = {
+			tag = JAP
+		}
+		if = {
+			limit = {
+				country_exists = KOR
+			}
+			KOR = {
+				add_political_power = 50
+			}
+		}
+		802 = {
+			add_resistance = 20
+		}
+		JAP = {
+			add_stability = -0.02
+			add_political_power = -75
+		}
+	}
+}
+
+# KOREAN LIBERATION ASSOCIATION
+##################################
+news_event = {
+	id = ww1_korea.63
+	title = ww1_korea.63.t
+	desc = ww1_korea.63.d
+	picture = ww1_korea_63
+	is_triggered_only = yes
+	option = {
+		name = ww1_korea.63.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = JAP
+			NOT = {
+				tag = KOR
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.63.b
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = KOR
+		}
+	}
+}
+
+# LETTER TO BRITAIN
+######################
+country_event = {
+	id = ww1_korea.64
+	title = ww1_korea.64.t
+	desc = ww1_korea.64.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	trigger = {
+		tag = ENG
+		KOR = {
+			NOT = {
+				has_country_flag = korean_independence
+			}
+		}
+		OR = {
+			KOR = {
+				is_subject_of = JAP
+			}
+			NOT = {
+				country_exists = KOR
+			}
+		}
+		ENG = {
+			has_country_flag = great_war_winner
+		}
+	}
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = ww1_korea.64.a
+		trigger = {
+			tag = ENG
+			JAP = {
+				NOT = {
+					has_country_flag = great_war_loser
+				}
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.64.b
+		trigger = {
+			tag = ENG
+			JAP = {
+				has_country_flag = great_war_loser
+			}
+		}
+		ENG = {
+			give_guarantee = KOR
+			set_country_flag = approved_korean_independence
+		}
+		KOR = {
+			add_opinion_modifier = {
+				target = ENG
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
+			}
+		}
+	}
+}
+
+# LETTER TO FRANCE
+#####################
+country_event = {
+	id = ww1_korea.65
+	title = ww1_korea.65.t
+	desc = ww1_korea.65.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		KOR = {
+			NOT = {
+				has_country_flag = korean_independence
+			}
+		}
+		OR = {
+			KOR = {
+				is_subject_of = JAP
+			}
+			NOT = {
+				country_exists = KOR
+			}
+		}
+		FRA = {
+			has_country_flag = great_war_winner
+		}
+	}
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = ww1_korea.65.a
+		trigger = {
+			tag = FRA
+			JAP = {
+				NOT = {
+					has_country_flag = great_war_loser
+				}
+			}
+		}
+	}
+	option = {
+		name = ww1_korea.65.b
+		trigger = {
+			tag = FRA
+			JAP = {
+				has_country_flag = great_war_loser
+			}
+		}
+		FRA = {
+			give_guarantee = KOR
+			set_country_flag = approved_korean_independence
+		}
+		KOR = {
+			add_opinion_modifier = {
+				target = FRA
+				modifier = HOI4TGW_Opinion_improved_diplomatic_relations
+			}
+		}
+	}
+}
+
+# JUNE 10TH MOVEMENT
+#######################
+country_event = {
+	title = ww1_korea.66.t
+	desc = {
+		text = ww1_korea.66.d
+		trigger = {
+			tag = JAP
+		}
+	}
+	desc = {
+		text = ww1_korea.66.d_korea
+		trigger = {
+			tag = KOR
+		}
+	}
+	id = ww1_korea.66
+	picture = GFX_report_event_gathering_protest
+	trigger = {
+		tag = JAP
+		OR = {
+			owns_state = 800
+			has_subject = KOR
+		}
+		date > 1926.6.10
+		date < 1926.9.10
+		NOT = { has_global_flag = march_1st_movement }
+		KOR = { has_country_flag = emperor_yunghui_is_dead }
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		hidden_effect = {
+			set_global_flag = june_10th_movement
+		}
+	}
+	option = {
+		trigger = {
+			tag = JAP
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					JAP = {
+						owns_state = 802
+					}
+				}
+				802 = {
+					
+					add_compliance = -30
+					add_resistance = 50
+				}
+			}
+			else = {
+				KOR = { country_event = ww1_korea.66 }
+			}
+		}
+		add_political_power = -150
+		name = ww1_korea.66.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = ww1_korea.66.b
+		trigger = {
+			tag = KOR
+		}
+		if = {
+			limit = {
+				KOR = {
+					is_subject_of = JAP
+				}
+			}
+			add_stability = -0.07
+			add_political_power = -150
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# Be sure Japan is invaded
+country_event = {
+	id = ww1_korea.67
+	hidden = yes
+	trigger = {
+		tag = KOR
+		has_global_flag = kis_war
+		NOT = {
+			has_global_flag = great_war_ends
+		}
+		OR = {
+			has_war_together_with = GER
+			has_war_together_with = FRA
+		}
+		JAP = {
+			has_war_with = PREV
+			has_capitulated = yes #is this meant to be no? will leave as is for now.
+			OR = {
+				has_war_together_with = GER
+				has_war_together_with = FRA
+			}
+		}
+		any_controlled_state = {
+			is_core_of = JAP
+		}
+		has_capitulated = no
+	}
+	fire_only_once = yes
+	immediate = {
+		set_country_flag = korean_expedition_on_japs
+	}
+}
+
+# Korean Japan
+country_event = {
+	id = ww1_korea.68
+	hidden = yes
+	trigger = {
+		tag = KOR
+		OR = {
+			# has_global_flag = frankfurt_treaty
+			# has_global_flag = versallies_treaty
+		}
+		has_country_flag = great_war_winner
+		has_country_flag = korean_expedition_on_japs
+		JAP = {
+			has_country_flag = great_war_loser
+		}
+	}
+	fire_only_once = yes
+	immediate = {
+		KOR = {
+			if = {
+				limit = {
+					has_subject_autonomy_feature = yes
+				}
+				set_autonomy = {
+					target = JAP
+					autonomy_state = autonomy_dominion
+				}
+				else = {
+					puppet = JAP
+				}
+			}
+		}
+	}
+}

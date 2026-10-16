@@ -1,0 +1,185 @@
+HOL_unite_benelux = {
+	HOL_ask_for_dunkirk = {
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			original_tag = HOL
+		}
+		target_trigger = {
+			FROM = {
+				owns_state = 865
+			}
+		}
+		available = {
+			is_subject = no
+			6 = {
+				owns_or_subject_of = yes
+			}
+			NOT = {
+				has_active_mission = compiegne_armistice_mission
+				has_active_mission = frankfurt_armistice_mission
+				has_active_mission = versallies_conference
+				has_active_mission = frankfurt_conference
+			}
+		}
+
+		visible = {
+			NOT = {
+				owns_state = 865
+				has_war_with = FROM
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = agw_greatwar_options
+							option = enabled
+						}
+					}
+					has_country_flag = great_war_loser
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = ww1_holland.7
+					hours = 3
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+foreign_politics = {
+	HOL_spread_socialism = {
+		icon = eng_propaganda_campaigns
+		allowed = {
+			original_tag = HOL
+		}
+		target_trigger = {
+			FROM = {
+				OR = {
+					tag = BEL
+					tag = FRA
+					tag = GER
+					tag = LUX
+				}
+			}
+		}
+		available = {
+			is_subject = no
+			has_capitulated = no
+			NOT = {
+				has_active_mission = compiegne_armistice_mission
+				has_active_mission = frankfurt_armistice_mission
+				has_active_mission = versallies_conference
+				has_active_mission = frankfurt_conference
+			}
+		}
+		visible = {
+			has_completed_focus = HOL_voice_of_the_socialism
+			has_government = communism
+			NOT = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = agw_greatwar_options
+							option = enabled
+						}
+					}
+					has_country_flag = great_war_loser
+				}
+			}
+			FROM = {
+				is_neighbor_of = ROOT
+				NOT = { has_government = communism }
+				has_civil_war = no
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			FROM = {
+				add_timed_idea = {
+					idea = HOL_underground_agitation
+					days = 365
+				}
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	
+	HOL_ask_for_colonies = {
+		icon = GFX_decision_eng_trade_unions_demand
+		allowed = {
+			original_tag = HOL
+		}
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = ENG
+					original_tag = FRA
+					original_tag = POR
+					original_tag = JAP
+				}
+				any_owned_state = {
+					OR = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+			}
+		}
+		available = {
+			is_subject = no
+			has_capitulated = no
+			NOT = {
+				has_war_with = FROM
+				has_active_mission = compiegne_armistice_mission
+				has_active_mission = frankfurt_armistice_mission
+				has_active_mission = versallies_conference
+				has_active_mission = frankfurt_conference
+			}
+		}
+		visible = {
+			has_completed_focus = HOL_imperial_spirit
+			FROM = {
+				any_owned_state = {
+					OR = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+			}
+			NOT = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = agw_greatwar_options
+							option = enabled
+						}
+					}
+					has_country_flag = great_war_loser
+				}
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = ww1_holland.9
+					hours = 3
+				}
+			}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}

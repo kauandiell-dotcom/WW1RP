@@ -1,0 +1,8 @@
+﻿l_russian:
+ REVOKE_OFFER_MILACC_KVZhD_TT: "§RНевозможно отозвать [FROM.GetAdjective] доступ к Китайско-Восточной железной дороге.§!"
+ REVOKE_OFFER_MILACC_MANTESU_TT: "§RНевозможно отменить [FROM.GetAdjective] доступ с Южно-Маньчжурской железной дороги.§!"
+ REVOKE_OFFER_MILACC_CDE_TT: "§RНевозможно отменить [FROM.GetAdjective] доступ с железной дороги Эфиопия-Джибути.§!"
+ REVOKE_OFFER_MILACC_DKAEB_TT: ""§RНевозможно отозвать [FROM.GetAdjective] доступ к железной дороге Deutsche Kaiserliche Abessinien Eisenbahn (DKAEB).§!"
+ REVOKE_OFFER_MILACC_SCHANTUNG_BAHN_TT: "§RНевозможно отменить [FROM.GetAdjective] доступ с железной дороги Циндао-Цзинань.§!"
+ REVOKE_OFFER_MILACC_ARMENIAN_RAILWAY_TT: "§RНевозможно отменить [FROM.GetAdjective] доступ с железной дороги Карс-Баку.§!"
+  

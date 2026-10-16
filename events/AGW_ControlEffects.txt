@@ -1,0 +1,17 @@
+add_namespace = agw.control_effects
+
+# unit limit calculations
+country_event = { #donotlog
+	id = agw.control_effects.1
+
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes
+	}
+
+	option = {
+		calculate_average_resistances = yes
+	}
+}
