@@ -1,3 +1,4 @@
 EGY_peoples_support_category = {
+	allowed = { original_tag = EGY }
 	icon = generic_political_actions
 }

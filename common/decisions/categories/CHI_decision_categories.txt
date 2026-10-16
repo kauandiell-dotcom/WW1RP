@@ -2,6 +2,7 @@ CHI_xinhai_revolution = {
 	icon = GFX_decision_category_generic_democracy
 	priority = 100
 	allowed = {
+		OR = { original_tag = CHI original_tag = QIN }
 	}
 	visible = {
 	}
@@ -10,6 +11,7 @@ CHI_warlord_era = {
 	icon = GFX_decision_category_military_operation
 	priority = 100
 	allowed = {
+		OR = { original_tag = CHI original_tag = QIN }
 	}
 	visible = {
 	}
@@ -19,6 +21,7 @@ CHI_chinese_warlords = {
 	picture = GFX_decision_cat_picture_chi_infiltration
 	priority = 100
 	allowed = {
+		OR = { original_tag = CHI original_tag = QIN }
 	}
 	visible = {
 	}
@@ -40,6 +43,7 @@ CHI_national_revolution = {
 	picture = GFX_decision_cat_picture_chi_infiltration
 	priority = 150
 	allowed = {
+		OR = { original_tag = CHI original_tag = QIN }
 	}
 	visible = {
 	}

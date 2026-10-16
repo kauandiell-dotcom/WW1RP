@@ -134,6 +134,7 @@ ENG_pacification_of_darfur = {
 ENG_interwar_entente_category = {
 	icon = GFX_decision_category_eng_imperial_conference
 	allowed = {
+		original_tag = ENG
 	}
 	visible = {
 		if = {
@@ -169,6 +170,7 @@ ENG_british_civil_war_category = {
 	icon = GFX_decision_category_SOV_permanent_revolution
 	priority = 100
 	allowed = {
+		original_tag = ENG
 	}
 	visible = {
 	}

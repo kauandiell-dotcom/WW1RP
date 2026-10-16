@@ -2,6 +2,7 @@ AUH_franzferdinand = {
 	icon = spr_political_assassination
 
 	allowed = {
+		original_tag = AUH
 	}
 
 	visible = {
@@ -12,6 +13,7 @@ AUH_franzferdinand = {
 AUH_franzjoseph = {
 	icon = spr_political_assassination
 	allowed = {
+		original_tag = AUH
 	}
 
 	visible = {
@@ -173,6 +175,7 @@ AUH_civil_war = {
 	icon = spr_the_seeds_of_revolution
 	priority = 300
 	allowed = {
+		original_tag = AUH
 		is_puppet = no
 	}
 	visible = {
@@ -272,6 +275,7 @@ AUH_collaboration_governement = {
 }
 
 AUH_investment_in_BUL = {
+	allowed = { original_tag = AUH }
 	icon = generic_economy
 	priority = 50
 	visible = {
@@ -280,6 +284,7 @@ AUH_investment_in_BUL = {
 }
 
 AUH_fruits_of_open_door = {
+	allowed = { original_tag = AUH }
 	icon = generic_industry
 	picture = GFX_decision_franz_ferdinand
 	priority = 50
@@ -292,6 +297,7 @@ AUH_fruits_of_open_door = {
 }
 
 AUH_evidenzbureau_projects = {
+	allowed = { original_tag = AUH }
 	icon = spr_political_assassination
 	picture = GFX_decision_AUH_evidenzbureau
 	priority = 50
