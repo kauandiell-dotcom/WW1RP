@@ -2241,7 +2241,6 @@ country_event = {
 					state = 241
 					state = 243
 					state = 207
-					state = 913
 				}
 			}
 			transfer_state_to = LIT

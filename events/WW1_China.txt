@@ -61,8 +61,6 @@ country_event = {
 							is_core_of = TAN
 							is_core_of = TIB
 							state = 330
-							state = 982
-							state = 983
 						}
 					}
 					add_core_of = CHI
@@ -1148,7 +1146,6 @@ country_event = {
 		hidden_effect = {
 			MON = {
 				transfer_state = 330
-				transfer_state = 982
 				load_oob = "MON_army"
 			}
 		}
@@ -1250,7 +1247,6 @@ country_event = {
 		TIB = {
 			transfer_state = 322
 			transfer_state = 434
-			transfer_state = 985
 			load_oob = "TIB_army"
 		}
 		if = {
@@ -1282,7 +1278,6 @@ country_event = {
 		TIB = {
 			transfer_state = 322
 			transfer_state = 434
-			transfer_state = 985
 			load_oob = "TIB_army"
 			change_tag_from = ROOT
 		}
@@ -1527,8 +1522,6 @@ country_event = {
 						state = 329
 						state = 330
 						state = 434
-						state = 982
-						state = 985
 					}
 				}
 				transfer_state_to = PREV
@@ -3485,27 +3478,6 @@ country_event = {
 					}
 				}
 			}
-			982 = {
-				add_claim_by = SIK
-				if = {
-					limit = {
-						owner = { is_china_or_warlord = yes }
-					}
-					330 = {
-						owner = {
-							if = {
-								limit = {
-									is_china_or_warlord = no
-								}
-								transfer_state = 982
-							}
-							else = {
-								SIK = { transfer_state = 982 }
-							}
-						}
-					}
-				}
-			}
 			hidden_effect = {
 				every_possible_country = {
 					limit = {
@@ -3905,7 +3877,6 @@ country_event = {
 								OR = {
 									state = 330
 									state = 612
-									state = 983
 								}
 							}
 							add_core_of = PREV
@@ -4438,7 +4409,6 @@ country_event = {
 					limit = {
 						OR = {
 							state = 622
-							state = 942
 							state = 890
 						}
 					}
@@ -4447,7 +4417,6 @@ country_event = {
 				every_owned_state = {
 					limit = {
 						OR = {
-							state = 942
 						}
 					}
 					transfer_state_to = YLN
@@ -5016,7 +4985,6 @@ country_event = {
 			MON = {
 				transfer_state = 330
 				transfer_state = 329
-				transfer_state = 982
 				set_politics = {
 					ruling_party = fascism
 					elections_allowed = no
@@ -5118,7 +5086,6 @@ country_event = {
 				}
 				transfer_state = 329
 				transfer_state = 330
-				transfer_state = 982
 			}
 		}
 	}
@@ -7225,7 +7192,6 @@ country_event = {
 								state = 610
 								state = 611
 								state = 612
-								state = 983
 							}
 						}
 						transfer_state_to = FNG
@@ -7256,8 +7222,6 @@ country_event = {
 							state = 596
 							state = 613
 							state = 622
-							state = 982
-							state = 983
 						}
 					}
 					transfer_state_to = ZHC
@@ -8426,8 +8390,6 @@ country_event = {
 								state = 622
 								state = 890
 								state = 891
-								state = 982
-								state = 983
 							}
 						}
 						transfer_state_to = GMJ
@@ -8718,7 +8680,6 @@ country_event = {
 							state = 608
 							state = 611
 							state = 612
-							state = 983
 						}
 					}
 					add_core_of = PREV
@@ -9363,7 +9324,6 @@ country_event = {
 					state = 610
 					state = 611
 					state = 612
-					state = 983
 				}
 			}
 			FNG = {
@@ -10018,7 +9978,6 @@ country_event = {
 							state = 611
 							state = 612
 							state = 614
-							state = 983
 						}
 					}
 					add_core_of = PREV
@@ -10097,7 +10056,6 @@ country_event = {
 								state = 611
 								state = 612
 								state = 614
-								state = 983
 							}
 						}
 						add_core_of = PREV
@@ -10341,7 +10299,6 @@ country_event = {
 						OR = {
 							state = 611
 							state = 612
-							state = 983
 						}
 					}
 					# Inner Mongolia
@@ -16788,7 +16745,6 @@ country_event = {
 		name = ww1_china.168.a
 		FROM = {
 			transfer_state = 322
-			transfer_state = 985
 			add_manpower = -100000
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
@@ -17772,18 +17728,12 @@ country_event = {
 					region = 155
 					state = 610
 					state = 612
-					state = 983
 					# Outer Manchuria
 					state = 408
 					state = 409
 					state = 560
 					state = 561
 					state = 569
-					state = 963
-					state = 964
-					state = 965
-					state = 966
-					state = 967
 					# Sakhalin
 					state = 537
 					state = 655
@@ -17830,18 +17780,12 @@ country_event = {
 					region = 155
 					state = 610
 					state = 612
-					state = 983
 					# Outer Manchuria
 					state = 408
 					state = 409
 					state = 560
 					state = 561
 					state = 569
-					state = 963
-					state = 964
-					state = 965
-					state = 966
-					state = 967
 					# Sakhalin
 					state = 537
 					state = 655
@@ -18258,7 +18202,6 @@ country_event = {
 								NOT = {
 									state = 329
 									state = 330
-									state = 982
 								}
 							}
 							transfer_state_to = FNG

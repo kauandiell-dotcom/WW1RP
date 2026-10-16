@@ -3388,10 +3388,6 @@ set_up_sykes_picot_anizah_border = {
 		}
 		transfer_state = 675
 		675 = { remove_core_of = JBS add_core_of = IRQ }
-		transfer_state = 916
-		916 = { remove_core_of = JBS add_core_of = IRQ }
-		transfer_state = 917
-		917 = { remove_core_of = JBS add_core_of = IRQ }
 	}
 }
 

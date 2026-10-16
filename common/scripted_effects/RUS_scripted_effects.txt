@@ -893,7 +893,6 @@ create_KUB = {
 				OR = {
 					state = 234
 					state = 579
-					state = 941
 				}
 			}
 		}
@@ -902,8 +901,6 @@ create_KUB = {
 				OR = {
 					state = 234
 					state = 579
-					state = 941
-					state = 940
 					state = 233
 				}			
 			}	
@@ -914,7 +911,6 @@ create_KUB = {
 				OR = {
 					state = 234
 					state = 579
-					state = 941
 				}
 			}
 			remove_core_of = SOV
@@ -1068,11 +1064,6 @@ create_UCH = {
 			UCH = {
 				exists = no
 			}
-			owns_state = 943
-		}
-		943 = {
-			add_core_of = UCH
-			transfer_state_to = UCH
 		}
 		UCH = {			
 			add_ideas = {
@@ -1083,17 +1074,6 @@ create_UCH = {
 			inherit_technology = RUS
 			delete_obsolete_russian_templates = yes
 			load_oob = "RUS_civil_war"
-		}
-		943 = {
-			create_unit = {
-				division = "division_template = \"Belogvardeyskaya Kavaleriya\"	start_experience_factor = 0.6	start_equipment_factor = 1"
-				owner = UCH
-				allow_spawning_on_enemy_provs = yes
-				count = 5
-				country_score = {
-					base = 100
-				}
-			}
 		}
 		SOV = {
 			send_equipment_fraction = {
@@ -1183,10 +1163,7 @@ create_USS = {
 		every_state = {
 			limit = {
 				OR = {
-					state = 963
-					state = 964
 					state = 409
-					state = 967
 				}
 			}
 			add_core_of = USS

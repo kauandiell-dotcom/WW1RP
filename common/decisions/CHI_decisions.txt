@@ -1851,7 +1851,6 @@ CHI_warlord_era = {
 						state = 610
 						state = 611
 						state = 612
-						state = 983
 					}
 				}
 				transfer_state_to = FNG
@@ -1976,7 +1975,6 @@ CHI_warlord_era = {
 						region = 155
 						state = 610
 						state = 612
-						state = 983
 					}
 				}
 				transfer_state_to = KMT
@@ -7748,18 +7746,12 @@ foreign_influence = {
 								region = 155
 								state = 610
 								state = 612
-								state = 983
 								# Outer Manchuria
 								state = 408
 								state = 409
 								state = 560
 								state = 561
 								state = 569
-								state = 963
-								state = 964
-								state = 965
-								state = 966
-								state = 967
 								# Sakhalin
 								state = 537
 								state = 655
@@ -7781,18 +7773,12 @@ foreign_influence = {
 						region = 155
 						state = 610
 						state = 612
-						state = 983
 						# Outer Manchuria
 						state = 408
 						state = 409
 						state = 560
 						state = 561
 						state = 569
-						state = 963
-						state = 964
-						state = 965
-						state = 966
-						state = 967
 						# Sakhalin
 						state = 537
 						state = 655
@@ -7818,18 +7804,12 @@ foreign_influence = {
 								region = 155
 								state = 610
 								state = 612
-								state = 983
 								# Outer Manchuria
 								state = 408
 								state = 409
 								state = 560
 								state = 561
 								state = 569
-								state = 963
-								state = 964
-								state = 965
-								state = 966
-								state = 967
 								# Sakhalin
 								state = 537
 								state = 655
@@ -7849,18 +7829,12 @@ foreign_influence = {
 								region = 155
 								state = 610
 								state = 612
-								state = 983
 								# Outer Manchuria
 								state = 408
 								state = 409
 								state = 560
 								state = 561
 								state = 569
-								state = 963
-								state = 964
-								state = 965
-								state = 966
-								state = 967
 								# Sakhalin
 								state = 537
 								state = 655

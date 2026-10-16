@@ -307,8 +307,6 @@ country_event = {
 					is_owned_by = RUS
 					OR = {
 						state = 408
-						state = 963
-						state = 965
 					}
 				}
 				transfer_state_to = CER

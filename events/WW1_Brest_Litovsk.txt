@@ -1243,11 +1243,6 @@ country_event = {
 							state = 204
 							state = 206
 							state = 209
-							state = 913
-							state = 925
-							state = 944
-							state = 945
-							state = 947
 						}
 					}
 					add_claim_by = FROM

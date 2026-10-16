@@ -1391,9 +1391,7 @@ SOV_decision_soviet_republics = {
 						state = 235
 						state = 579
 						state = 233
-						state = 940
 						state = 234
-						state = 941
 					}
 				}
 				transfer_state_to = KUB
@@ -1447,9 +1445,7 @@ SOV_decision_soviet_republics = {
 					limit = {
 						NOT = {
 							state = 234
-							state = 941
 							state = 579
-							state = 940
 						}
 					}
 					remove_core_of = PREV

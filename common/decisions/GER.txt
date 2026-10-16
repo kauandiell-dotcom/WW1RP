@@ -6479,7 +6479,6 @@ GER_german_east_asia_cat = {
 					OR = {
 						state = 647
 						state = 523
-						state = 932
 						is_core_of = VIN
 						is_core_of = CAM
 						is_core_of = LAO
