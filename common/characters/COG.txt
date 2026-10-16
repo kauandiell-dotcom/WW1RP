@@ -1,0 +1,15 @@
+characters = {
+	COG_spinning_gorilla = {
+		name = "Spinning Gorilla"
+		portraits = {
+			civilian = {
+				large = "GFX_golira"
+			}
+		}
+		country_leader = {
+			ideology = anarcho_primitivism
+			expire = "1935.1.1"
+			traits = { german_agent }
+		}
+	}
+}

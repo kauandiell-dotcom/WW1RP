@@ -1,16 +1,11 @@
-﻿capital = 326
+capital = 326
 
 set_research_slots = 3
 set_convoys = 75
 set_stability = 0.25
 set_war_support = 0.30
 
-	create_country_leader = {
-		name = "Governor of Hong Kong"
-		picture = "gfx/leaders/ENG/HKG_Governor_of_Hong_Kong.png"
-		
-		ideology = despotism
-	}
+	recruit_character = HKG_governor_of_hong_kong
 
 	set_politics = {
 		ruling_party = neutrality

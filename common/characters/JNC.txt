@@ -1,0 +1,16 @@
+characters = {
+	JNC_qi_xieyuan = {
+		name = "CHI_qi_xieyuan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/CHI_qi_xieyuan.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+		}
+		country_leader = {
+			ideology = stratocracy
+		}
+	}
+}

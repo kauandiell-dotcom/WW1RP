@@ -1,0 +1,14 @@
+characters = {
+	CAT_lluis_companys = {
+		name = "Lluís Companys"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SPR/Kompanjis.png"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			traits = { catalanist_lerrouxist }
+		}
+	}
+}

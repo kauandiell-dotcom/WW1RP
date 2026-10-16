@@ -1,0 +1,13 @@
+characters = {
+	HKG_governor_of_hong_kong = {
+		name = "Governor of Hong Kong"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ENG/HKG_Governor_of_Hong_Kong.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+		}
+	}
+}

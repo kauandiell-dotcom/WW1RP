@@ -1,4 +1,4 @@
-﻿capital = 165
+capital = 165
 set_technology = {
 	#infantry
 	infantry_weapons = 1
@@ -30,13 +30,4 @@ set_popularities = {
 	communism = 30
 	neutrality = 10
 }
-create_country_leader = {
-	name = "Lluís Companys"
-	ideology = socialism
-	picture = "gfx/leaders/SPR/Kompanjis.png"
-	
-	traits = {
-		
-		catalanist_lerrouxist
-	}
-}
+recruit_character = CAT_lluis_companys

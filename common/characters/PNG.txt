@@ -1,0 +1,14 @@
+characters = {
+	PNG_albert_hahl = {
+		name = "Dr. Albert Hahl"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PNG/PNG_albert_hahl.png"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = { german_agent }
+		}
+	}
+}

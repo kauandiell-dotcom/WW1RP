@@ -1,4 +1,4 @@
-﻿capital = 598
+capital = 598
 
 set_research_slots = 2
 set_politics = {
@@ -34,14 +34,4 @@ set_technology = {
 	mechanical_engineering = 1
 }
 
-create_country_leader = {
-	name = "CHI_qi_xieyuan"
-	picture = "gfx/leaders/CHI/CHI_qi_xieyuan.png"
-	ideology = despotism
-}
-
-create_country_leader = {
-	name = "CHI_qi_xieyuan"
-	picture = "gfx/leaders/CHI/CHI_qi_xieyuan.png"
-	ideology = stratocracy
-}
+recruit_character = JNC_qi_xieyuan
