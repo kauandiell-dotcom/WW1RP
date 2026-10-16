@@ -868,7 +868,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				army_morale = 5
+				army_morale_factor = 0.05
 				army_core_attack_factor = 0.05
 				army_core_defence_factor = 0.05
 			}
@@ -1755,8 +1755,8 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				offence = 0.15
-				defence = 0.15
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
 				attrition = -0.2
 
 
@@ -1920,8 +1920,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				offence = -0.2
-				defence = -0.15
+				army_attack_factor = -0.2
+				army_defence_factor = -0.15
 			}
 		}
 		GRE_lack_of_topography = {

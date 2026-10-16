@@ -341,7 +341,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				MONTHLY_POPULATION = 0.15
+				monthly_population = 0.15
 				stability_factor = 0.1
 			}
 		}
@@ -397,7 +397,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				mobilization_speed = 0.1
-				recruitable_population = 0.01
+				conscription = 0.01
 			}
 		}
 		AST_idea_overseas_vol = {

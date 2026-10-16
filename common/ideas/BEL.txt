@@ -162,8 +162,8 @@ ideas = {
 				original_tag = BEL
 			}
 			modifier = {
-				offence = -0.15
-				defence = -0.5
+				army_attack_factor = -0.15
+				army_defence_factor = -0.5
 				army_org_factor = -0.5
 				experience_gain_army_factor = -0.5
 				max_dig_in_factor = -0.5
@@ -566,8 +566,8 @@ ideas = {
 				has_capitulated = no
 			}
 			modifier = {
-				offence = -0.15
-				defence = -0.5
+				army_attack_factor = -0.15
+				army_defence_factor = -0.5
 				army_core_defence_factor = 0.25
 				army_core_attack_factor = 0.1
 				army_org_factor = -0.4

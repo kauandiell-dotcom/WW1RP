@@ -10,7 +10,7 @@ ideas = {
 
 			modifier = {
 				decryption_power = -2
-				crypto_strength = -2
+				encryption = -2
 				own_operative_detection_chance_factor = 0.50
 				enemy_operative_detection_chance_factor = -0.50
 				own_operative_capture_chance_factor = 0.50
@@ -1783,7 +1783,7 @@ ideas = {
 
 			modifier = {
 				decryption_power = -2
-				crypto_strength = -2
+				encryption = -2
 				own_operative_detection_chance_factor = 0.50
 				enemy_operative_detection_chance_factor = -0.50
 				own_operative_capture_chance_factor = 0.50
