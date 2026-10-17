@@ -246,3 +246,84 @@ country_event = {
 		add_political_power = 25
 	}
 }
+
+# --- TASK 2 ADDITIONAL MISSING EVENTS ---
+
+add_namespace = ww1_baltics
+add_namespace = options
+
+# Russian Ultimatum to the Baltic States
+country_event = {
+	id = ww1_baltics.13
+	title = ww1_baltics.13.t
+	desc = ww1_baltics.13.desc
+	picture = GFX_report_event_generic_military_mission
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_baltics.13.a
+		ai_chance = { factor = 70 }
+		RUS = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ROOT
+			}
+		}
+	}
+	option = {
+		name = ww1_baltics.13.b
+		ai_chance = { factor = 30 }
+		RUS = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ROOT
+			}
+		}
+	}
+}
+
+# Russian Notification to Great Britain of Three Emperors Realignment
+country_event = {
+	id = ww1_russia.100
+	title = ww1_russia.100.t
+	desc = ww1_russia.100.desc
+	picture = GFX_report_event_generic_diplomacy
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.100.a
+		add_political_power = 20
+	}
+}
+
+# Formable Nations Options 1
+country_event = {
+	id = options.1
+	title = options.1.t
+	desc = options.1.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = options.1.a
+		set_country_flag = formable_nations_options_configured
+	}
+}
+
+# Formable Nations Options 2
+country_event = {
+	id = options.2
+	title = options.2.t
+	desc = options.2.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = options.2.a
+		set_country_flag = form_restrictions_options_configured
+	}
+}

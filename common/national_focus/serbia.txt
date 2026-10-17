@@ -4498,7 +4498,7 @@ focus_tree = {
 			}
 			MNT = {
 				country_event = {
-					id = ww1_serbia.54
+					id = ww1_serbia.53
 					days = 5
 				}
 			}
