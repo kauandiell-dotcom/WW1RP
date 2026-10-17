@@ -130,5 +130,20 @@ class TestDeepDebugIntegrity(unittest.TestCase):
         for ev in required_events:
             self.assertIn(ev, c, f"Event {ev} missing from patch file")
 
+    def test_chile_focus_tree_restored(self):
+        """Verifies Chile focus tree is active, has >= 40 focuses, and ww1_chile.12 is defined."""
+        chile_path = os.path.join(ROOT_DIR, "common", "national_focus", "chile.txt")
+        self.assertTrue(os.path.exists(chile_path), "chile.txt missing")
+        with open(chile_path, "r", encoding="utf-8") as f:
+            c = f.read()
+        chl_focuses = re.findall(r'id\s*=\s*(CHL_[A-Za-z0-9_]+)', c)
+        self.assertGreaterEqual(len(chl_focuses), 40, "Chile focus tree has fewer than 40 focuses")
+
+        # Verify ww1_chile.12 in events/WW1_Chile.txt
+        chile_events = os.path.join(ROOT_DIR, "events", "WW1_Chile.txt")
+        with open(chile_events, "r", encoding="utf-8") as f:
+            ec = f.read()
+        self.assertIn("id = ww1_chile.12", ec, "ww1_chile.12 event missing in WW1_Chile.txt")
+
 if __name__ == "__main__":
     unittest.main()

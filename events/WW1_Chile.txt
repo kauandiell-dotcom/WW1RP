@@ -457,6 +457,21 @@ country_event = {
 	}
 }
 
+
+# Opposition Movement Against Barros Luco
+country_event = {
+	id = ww1_chile.12
+	title = ww1_chile.12.t
+	desc = ww1_chile.12.d
+	picture = GFX_report_event_generic_speech
+	is_triggered_only = yes
+	option = {
+		name = ww1_chile.12.a
+		add_political_power = 50
+		add_stability = -0.05
+	}
+}
+
 # Peruvians Demand Tacna
 country_event = {
 	id = ww1_chile.13
