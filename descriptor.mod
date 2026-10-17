@@ -1,9 +1,8 @@
 version="1.19"
 tags={
-	"Balance"
+	"Alternative History"
 }
-name="Baianagem WW1 RP"
-supported_version="1.19.*"
+name="Baianagem WW1RP"
 replace_path="common/national_focus"
 replace_path="common/ideas"
 replace_path="common/decisions"
@@ -19,4 +18,4 @@ replace_path="history/countries"
 replace_path="map/strategicregions"
 replace_path="map/supplyareas"
 supported_version="1.19.3.0"
-remote_file_id="3821081010"
+remote_file_id="3821192991"
