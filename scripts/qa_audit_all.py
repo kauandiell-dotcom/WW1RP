@@ -167,6 +167,50 @@ def run_tier_6_decisions():
     print(f'  [PASS] {total_categories} decision files verified.')
     return True
 
+def run_tier_7_crash_guards():
+    print('[TIER 7] Auditing startup crash guards...')
+    violations = []
+
+    # Clausewitz accepts UTF-8 BOM in localisation, but treats it as part of the
+    # first token in interface files (for example, "\ufeffguiTypes"), preventing
+    # the GUI types from being registered and potentially causing a startup CTD.
+    interface_dir = os.path.join(MOD_ROOT, 'interface')
+    for root, _, files in os.walk(interface_dir):
+        for f in files:
+            if not f.endswith(('.gui', '.gfx')):
+                continue
+            fp = os.path.join(root, f)
+            with open(fp, 'rb') as fh:
+                if fh.read(3) == b'\xef\xbb\xbf':
+                    violations.append((os.path.relpath(fp, MOD_ROOT), 'UTF-8 BOM in interface asset'))
+
+    # Removed from the current Clausewitz effect API. All historical usages in
+    # this mod duplicated a valid set_variable statement and generated hundreds
+    # of parser errors during database loading.
+    for scan_dir in ('common', 'events', 'history'):
+        base = os.path.join(MOD_ROOT, scan_dir)
+        for root, _, files in os.walk(base):
+            for f in files:
+                if not f.endswith('.txt'):
+                    continue
+                fp = os.path.join(root, f)
+                with open(fp, 'r', encoding='utf-8', errors='ignore') as fh:
+                    for line_number, line in enumerate(fh, 1):
+                        if re.search(r'\bset_global_variable\s*=', line):
+                            violations.append((os.path.relpath(fp, MOD_ROOT), f'legacy set_global_variable at line {line_number}'))
+
+    frontend = os.path.join(interface_dir, 'frontendmainview.gui')
+    if not os.path.exists(frontend) or 'mainmenu_panel_bottom' not in open(frontend, 'r', encoding='utf-8', errors='ignore').read():
+        violations.append(('interface/frontendmainview.gui', 'missing mainmenu_panel_bottom GUI type'))
+
+    if violations:
+        print(f'  [FAIL] {len(violations)} startup crash guard violation(s).')
+        for path, issue in violations[:5]:
+            print(f'    - {path}: {issue}')
+        return False
+    print('  [PASS] Interface parser and legacy-effect crash guards verified.')
+    return True
+
 def main():
     print('====================================================')
     print('   BAIANAGEM WW1 ROLEPLAY - MASTER QA AUDIT 1.19.3   ')
@@ -177,10 +221,11 @@ def main():
     t4 = run_tier_4_map_bounds()
     t5 = run_tier_5_characters()
     t6 = run_tier_6_decisions()
+    t7 = run_tier_7_crash_guards()
     
     print('====================================================')
     results = [('Brackets', t1), ('Localisation', t2), ('Semantic Oracle', t3), 
-               ('Map Bounds', t4), ('Characters', t5), ('Decisions', t6)]
+               ('Map Bounds', t4), ('Characters', t5), ('Decisions', t6), ('Crash Guards', t7)]
     all_passed = all(r[1] for r in results)
     for name, res in results:
         status = 'PASS' if res else 'PENDING / REFACTOR'

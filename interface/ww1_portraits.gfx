@@ -10,8 +10,6 @@ spriteTypes = {
 		play_on_show = yes
 	}
 
-	CHI_uve_zedong
-
 	SpriteType = {
 		name = "GFX_ENG_thomas_edward_lawrence"
 		texturefile = "gfx/leaders/ENG/ENG_thomas_edward_lawrence.png"

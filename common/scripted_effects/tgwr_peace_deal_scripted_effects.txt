@@ -3,15 +3,11 @@ armistice_effect = {
 	every_country = {
 		limit = {
 			#shit, your divisions got locked
-			if = {
-					limit = {
-						has_game_rule = {
-							rule = agw_greatwar_options
-							option = enabled
-						}
-					}
-					has_country_flag = great_war_loser
-				}
+			has_game_rule = {
+				rule = agw_greatwar_options
+				option = enabled
+			}
+			has_country_flag = great_war_loser
 		}
 		country_lock_all_division_template = yes
 		add_ideas = idea_army_restrictions
@@ -1198,7 +1194,7 @@ armistice_effect = {
 				}
 			}													
 		}
-		##### Russia Puppet Poland no Piłsudski #####
+		##### Russia Puppet Poland no PiÅ‚sudski #####
 		if = {
 			limit = {
 				POL = {
@@ -5561,74 +5557,14 @@ conference_effect = {
 			}
 		}
 	}
-	#germany will push long aside pretty easy so lets just wide him
-	# if = {
-	# 	limit = {
-	# 		IND = {
-	# 			if = {
-					limit = {
-						has_game_rule = {
-							rule = agw_greatwar_options
-							option = enabled
-						}
-					}
-					has_country_flag = great_war_loser
-				}
-	# 		}
-	# 		GER = {
-	# 			if = {
-					limit = {
-						has_game_rule = {
-							rule = agw_greatwar_options
-							option = enabled
-						}
-					}
-					has_country_flag = great_war_winner
-# 				}
-	# 		}
-	# 		VIN = {
-	# 			is_ai = yes
-	# 			exists = yes
-	# 		}
-	# 	}
-	# 	IND = {
-	# 		get_current_government_type = yes
-	# 	}
-	# 	GER = {
-	# 		set_autonomy = {
-	# 			target = IND
-	# 			autonomous_state = autonomy_colony
-	# 		}
-	# 	}
-	# 	IND = {
-	# 		restore_previous_government_type = yes
-	# 		set_cosmetic_tag = IND_GER
-	# 		annex_country = {
-	# 			target = VIN
-	# 			transfer_troops = no
-	# 		}
-	# 		remove_ideas = VIN_union_of_protectorates
-	# 		remove_ideas = VIN_union_of_protectorates_worst
-	# 		remove_ideas = VIN_union_of_protectorates2
-	# 		remove_ideas = VIN_colonial_army
-	# 		remove_ideas = VIN_colonial_army2
-	# 		remove_ideas = VIN_colonial_army_bis
-	# 		retire_character = VIN_albert_pierre_sarraut
-	# 		retire_character = VIN_albert_jean_george_marie_louis_picquie
-	# 	}
-	# }
 	
 	every_country = {
 		limit = {
-			if = {
-					limit = {
-						has_game_rule = {
-							rule = agw_greatwar_options
-							option = enabled
-						}
-					}
-					has_country_flag = great_war_loser
-				}
+			has_game_rule = {
+				rule = agw_greatwar_options
+				option = enabled
+			}
+			has_country_flag = great_war_loser
 		}
 		#free puppets from loser
 		if = {
@@ -5655,4 +5591,4 @@ conference_effect = {
 		}
 	}
 	
-# }
+}
