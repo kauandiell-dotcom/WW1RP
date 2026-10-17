@@ -238,7 +238,7 @@ AUH_ignore_very_early_supplies_near_trentino = {
 	abort = {
 		OR = {
 			has_war = yes
-			has_completed_focus = AUH_improve_trento_supply_administration
+			has_completed_focus = AUH_improve_the_supply_routes
 		}	
 	}
 

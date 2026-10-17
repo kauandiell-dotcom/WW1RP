@@ -327,3 +327,49 @@ country_event = {
 		set_country_flag = form_restrictions_options_configured
 	}
 }
+
+# --- COMPREHENSIVE OVERHAUL PATCH (DLC & NARRATIVE MISSING EVENTS) ---
+
+add_namespace = mtg_exile_leader_added
+add_namespace = lar_news
+
+# MtG Exile Leader Added
+unit_leader_event = {
+	id = mtg_exile_leader_added.1
+	title = "Exiled Officer Arrives"
+	desc = "An officer from an allied exiled government has arrived to offer their tactical expertise."
+	picture = GFX_report_event_generic_officer
+	is_triggered_only = yes
+
+	option = {
+		name = "Welcome them to the staff"
+	}
+}
+
+# LaR Spanish/Mexican Resolution News
+news_event = {
+	id = lar_news.16
+	title = "Fall of the Government"
+	desc = "Major political factions have collapsed amid intense conflict, shifting the regional balance of power."
+	picture = GFX_news_event_spanish_civil_war
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "A dramatic development"
+	}
+}
+
+# Qing Plague Resolution
+country_event = {
+	id = ww1_qing.357
+	title = "The Epidemic Subsides"
+	desc = "Through determined local quarantine and administrative efforts, the regional epidemic has finally been brought under control."
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+
+	option = {
+		name = "Relief throughout the empire"
+		add_stability = 0.02
+	}
+}

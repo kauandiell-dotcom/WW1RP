@@ -1409,7 +1409,6 @@ focus_tree = {
 		relative_position_id = SPR_Dar_derechos_extra_a_los_catalanes
 		prerequisite = {
 			focus = SPR_Cambiar_al_sistema_de_partido_unico
-            focus = SPR_18
             focus = SPR_Quitar_la_artilleria_del_ejercito
 		}
         completion_reward = {
