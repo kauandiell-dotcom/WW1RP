@@ -2500,9 +2500,9 @@ foreign_politics = {
 		available = {
 			any_country = {
 				has_country_flag = FRA_socialist_france_flag
-				any_country = {
+				has_war = yes
+				any_enemy_country = {
 					has_country_flag = FRA_nationalist_france_flag
-					has_war_with = PREV
 				}
 			}
 			has_war = no
@@ -2529,9 +2529,9 @@ foreign_politics = {
 		visible = {
 			any_country = {
 				has_country_flag = FRA_socialist_france_flag
-				any_country = {
+				has_war = yes
+				any_enemy_country = {
 					has_country_flag = FRA_nationalist_france_flag
-					has_war_with = PREV
 				}
 			}
 			if = {

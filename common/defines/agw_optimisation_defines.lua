@@ -2,7 +2,7 @@
 
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 100 -- Days of client lag for decrease of gamespeed
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 60 -- Days of client lag for pause of gamespeed.
-NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 6 
+NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 1 
 NDefines.NGame.GAME_SPEED_SECONDS = { 0.35, 0.15, 0.1, 0.035, 0.0 } 
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30 -- Events are checked every X day per country or state (1 is ideal, but CPU heavy)
 
@@ -59,3 +59,9 @@ NDefines_Graphics.NGraphics.RESISTANCE_COLOR_BAD = {0.65, 0, 0, 1}
 NDefines_Graphics.NGraphics.STRATEGIC_NAVY_COLOR_MISSION = {0.65, 0.65, 0.0, 1}
 NDefines_Graphics.NGraphics.STRATEGIC_NAVY_COLOR_NEUTRAL = {130.0/255, 130.0/255, 130.0/255, 1}
 NDefines_Graphics.NGraphics.ROOT_FRONT_OFFSET = 2
+-- Engine AI Evaluation Interval Optimizations --
+NDefines.NAI.AI_UPDATE_ROLES_INTERVAL = 48                    -- Hours between AI updating division roles (vanilla is 2-4, 48 saves massive CPU on large armies)
+NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_DOCTRINE = 14            -- Days between AI evaluating doctrines (vanilla: 7)
+NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_TEMPLATE = 14            -- Days between AI evaluating division templates (vanilla: 7)
+NDefines.NAI.HOURS_BETWEEN_ENCIRCLEMENT_DISCOVERY = 4         -- Hours between AI encirclement checks (vanilla: 1, cuts combat tick stutters)
+NDefines.NAI.UPGRADE_DIVISION_RELUCTANCE = 50                 -- AI avoids excessive template restructuring

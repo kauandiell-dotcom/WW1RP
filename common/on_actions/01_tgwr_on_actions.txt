@@ -566,17 +566,18 @@ on_actions = {
 					}
 				}
 			}
-			### To Prevent TRA/MOL/ROM from beinf released in the Carpathians ###
+			### To Prevent TRA/MOL/ROM from being released in the Carpathians ###
 			if = {
 				limit = {
-					any_country = {
-						owns_state = 867
-						NOT = {
-							any_owned_state = {
-								NOT = {
-									state = 867
-									state = 868
-									state = 866
+					867 = {
+						owner = {
+							NOT = {
+								any_owned_state = {
+									NOT = {
+										state = 867
+										state = 868
+										state = 866
+									}
 								}
 							}
 						}
@@ -594,14 +595,15 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					any_country = {
-						owns_state = 868
-						NOT = {
-							any_owned_state = {
-								NOT = {
-									state = 867
-									state = 868
-									state = 866
+					868 = {
+						owner = {
+							NOT = {
+								any_owned_state = {
+									NOT = {
+										state = 867
+										state = 868
+										state = 866
+									}
 								}
 							}
 						}
@@ -619,14 +621,15 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					any_country = {
-						owns_state = 866
-						NOT = {
-							any_owned_state = {
-								NOT = {
-									state = 867
-									state = 868
-									state = 866
+					866 = {
+						owner = {
+							NOT = {
+								any_owned_state = {
+									NOT = {
+										state = 867
+										state = 868
+										state = 866
+									}
 								}
 							}
 						}

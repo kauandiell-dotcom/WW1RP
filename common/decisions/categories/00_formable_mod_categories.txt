@@ -1,3 +1,6 @@
 formable_nations_mod_category = {
 	icon = generic_formable_nations
+	allowed = {
+		is_ai = no
+	}
 }

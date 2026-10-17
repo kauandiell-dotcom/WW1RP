@@ -1022,9 +1022,8 @@ ottoman_minority_variable_check_konstantiniyye = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_konstantiniyye = 1 }
-		}
+		set_variable = { ottoman_minority_variable_konstantiniyye = 1 }
+		set_global_variable = { ottoman_minority_variable_konstantiniyye = 1 }
 	}
 	if = {
 		limit = {
@@ -1033,9 +1032,8 @@ ottoman_minority_variable_check_konstantiniyye = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_konstantiniyye = 2 }
-		}
+		set_variable = { ottoman_minority_variable_konstantiniyye = 2 }
+		set_global_variable = { ottoman_minority_variable_konstantiniyye = 2 }
 	}
 }
 ottoman_minority_variable_check_tekirdag = {
@@ -1058,9 +1056,8 @@ ottoman_minority_variable_check_tekirdag = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_tekirdag = 1 }
-		}
+		set_variable = { ottoman_minority_variable_tekirdag = 1 }
+		set_global_variable = { ottoman_minority_variable_tekirdag = 1 }
 	}
 	if = {
 		limit = {
@@ -1069,9 +1066,8 @@ ottoman_minority_variable_check_tekirdag = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_tekirdag = 2 }
-		}
+		set_variable = { ottoman_minority_variable_tekirdag = 2 }
+		set_global_variable = { ottoman_minority_variable_tekirdag = 2 }
 	}
 }
 ottoman_minority_variable_check_gelibolu = {
@@ -1094,9 +1090,8 @@ ottoman_minority_variable_check_gelibolu = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_gelibolu = 1 }
-		}
+		set_variable = { ottoman_minority_variable_gelibolu = 1 }
+		set_global_variable = { ottoman_minority_variable_gelibolu = 1 }
 	}
 	if = {
 		limit = {
@@ -1105,9 +1100,8 @@ ottoman_minority_variable_check_gelibolu = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_gelibolu = 2 }
-		}
+		set_variable = { ottoman_minority_variable_gelibolu = 2 }
+		set_global_variable = { ottoman_minority_variable_gelibolu = 2 }
 	}
 }
 ottoman_minority_variable_check_edirne = {
@@ -1130,9 +1124,8 @@ ottoman_minority_variable_check_edirne = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_edirne = 1 }
-		}
+		set_variable = { ottoman_minority_variable_edirne = 1 }
+		set_global_variable = { ottoman_minority_variable_edirne = 1 }
 	}
 	if = {
 		limit = {
@@ -1141,9 +1134,8 @@ ottoman_minority_variable_check_edirne = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_edirne = 2 }
-		}
+		set_variable = { ottoman_minority_variable_edirne = 2 }
+		set_global_variable = { ottoman_minority_variable_edirne = 2 }
 	}
 }
 ottoman_minority_variable_check_orestiada = {
@@ -1166,9 +1158,8 @@ ottoman_minority_variable_check_orestiada = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_orestiada = 1 }
-		}
+		set_variable = { ottoman_minority_variable_orestiada = 1 }
+		set_global_variable = { ottoman_minority_variable_orestiada = 1 }
 	}
 	if = {
 		limit = {
@@ -1177,9 +1168,8 @@ ottoman_minority_variable_check_orestiada = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_orestiada = 2 }
-		}
+		set_variable = { ottoman_minority_variable_orestiada = 2 }
+		set_global_variable = { ottoman_minority_variable_orestiada = 2 }
 	}
 }
 ottoman_minority_variable_check_tirnovacik = {
@@ -1202,9 +1192,8 @@ ottoman_minority_variable_check_tirnovacik = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_tirnovacik = 1 }
-		}
+		set_variable = { ottoman_minority_variable_tirnovacik = 1 }
+		set_global_variable = { ottoman_minority_variable_tirnovacik = 1 }
 	}
 	if = {
 		limit = {
@@ -1213,9 +1202,8 @@ ottoman_minority_variable_check_tirnovacik = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_tirnovacik = 2 }
-		}
+		set_variable = { ottoman_minority_variable_tirnovacik = 2 }
+		set_global_variable = { ottoman_minority_variable_tirnovacik = 2 }
 	}
 }
 ottoman_minority_variable_check_western_thrace = {
@@ -1238,9 +1226,8 @@ ottoman_minority_variable_check_western_thrace = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_western_thrace = 1 }
-		}
+		set_variable = { ottoman_minority_variable_western_thrace = 1 }
+		set_global_variable = { ottoman_minority_variable_western_thrace = 1 }
 	}
 	if = {
 		limit = {
@@ -1249,9 +1236,8 @@ ottoman_minority_variable_check_western_thrace = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_western_thrace = 2 }
-		}
+		set_variable = { ottoman_minority_variable_western_thrace = 2 }
+		set_global_variable = { ottoman_minority_variable_western_thrace = 2 }
 	}
 }
 ottoman_minority_variable_check_rumelia = {
@@ -1274,9 +1260,8 @@ ottoman_minority_variable_check_rumelia = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_rumelia = 1 }
-		}
+		set_variable = { ottoman_minority_variable_rumelia = 1 }
+		set_global_variable = { ottoman_minority_variable_rumelia = 1 }
 	}
 	if = {
 		limit = {
@@ -1285,9 +1270,8 @@ ottoman_minority_variable_check_rumelia = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_rumelia = 2 }
-		}
+		set_variable = { ottoman_minority_variable_rumelia = 2 }
+		set_global_variable = { ottoman_minority_variable_rumelia = 2 }
 	}
 }
 ottoman_minority_variable_check_eastern_macedonia = {
@@ -1310,9 +1294,8 @@ ottoman_minority_variable_check_eastern_macedonia = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_eastern_macedonia = 1 }
-		}
+		set_variable = { ottoman_minority_variable_eastern_macedonia = 1 }
+		set_global_variable = { ottoman_minority_variable_eastern_macedonia = 1 }
 	}
 	if = {
 		limit = {
@@ -1321,9 +1304,8 @@ ottoman_minority_variable_check_eastern_macedonia = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_eastern_macedonia = 2 }
-		}
+		set_variable = { ottoman_minority_variable_eastern_macedonia = 2 }
+		set_global_variable = { ottoman_minority_variable_eastern_macedonia = 2 }
 	}
 }
 ottoman_minority_variable_check_selanik = {
@@ -1346,9 +1328,8 @@ ottoman_minority_variable_check_selanik = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_selanik = 1 }
-		}
+		set_variable = { ottoman_minority_variable_selanik = 1 }
+		set_global_variable = { ottoman_minority_variable_selanik = 1 }
 	}
 	if = {
 		limit = {
@@ -1357,9 +1338,8 @@ ottoman_minority_variable_check_selanik = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_selanik = 2 }
-		}
+		set_variable = { ottoman_minority_variable_selanik = 2 }
+		set_global_variable = { ottoman_minority_variable_selanik = 2 }
 	}
 }
 ottoman_minority_variable_check_eastern_rumelia = {
@@ -1382,9 +1362,8 @@ ottoman_minority_variable_check_eastern_rumelia = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_eastern_rumelia = 1 }
-		}
+		set_variable = { ottoman_minority_variable_eastern_rumelia = 1 }
+		set_global_variable = { ottoman_minority_variable_eastern_rumelia = 1 }
 	}
 	if = {
 		limit = {
@@ -1393,9 +1372,8 @@ ottoman_minority_variable_check_eastern_rumelia = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_eastern_rumelia = 2 }
-		}
+		set_variable = { ottoman_minority_variable_eastern_rumelia = 2 }
+		set_global_variable = { ottoman_minority_variable_eastern_rumelia = 2 }
 	}
 }
 ottoman_minority_variable_check_rhodopes = {
@@ -1418,9 +1396,8 @@ ottoman_minority_variable_check_rhodopes = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_rhodopes = 1 }
-		}
+		set_variable = { ottoman_minority_variable_rhodopes = 1 }
+		set_global_variable = { ottoman_minority_variable_rhodopes = 1 }
 	}
 	if = {
 		limit = {
@@ -1429,9 +1406,8 @@ ottoman_minority_variable_check_rhodopes = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_rhodopes = 2 }
-		}
+		set_variable = { ottoman_minority_variable_rhodopes = 2 }
+		set_global_variable = { ottoman_minority_variable_rhodopes = 2 }
 	}
 }
 ottoman_minority_variable_check_strumica = {
@@ -1454,9 +1430,8 @@ ottoman_minority_variable_check_strumica = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_strumica = 1 }
-		}
+		set_variable = { ottoman_minority_variable_strumica = 1 }
+		set_global_variable = { ottoman_minority_variable_strumica = 1 }
 	}
 	if = {
 		limit = {
@@ -1465,9 +1440,8 @@ ottoman_minority_variable_check_strumica = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_strumica = 2 }
-		}
+		set_variable = { ottoman_minority_variable_strumica = 2 }
+		set_global_variable = { ottoman_minority_variable_strumica = 2 }
 	}
 }
 ottoman_minority_variable_check_malesevo = {
@@ -1490,9 +1464,8 @@ ottoman_minority_variable_check_malesevo = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_malesevo = 1 }
-		}
+		set_variable = { ottoman_minority_variable_malesevo = 1 }
+		set_global_variable = { ottoman_minority_variable_malesevo = 1 }
 	}
 	if = {
 		limit = {
@@ -1501,9 +1474,8 @@ ottoman_minority_variable_check_malesevo = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_malesevo = 2 }
-		}
+		set_variable = { ottoman_minority_variable_malesevo = 2 }
+		set_global_variable = { ottoman_minority_variable_malesevo = 2 }
 	}
 }
 ottoman_minority_variable_check_central_macedonia = {
@@ -1526,9 +1498,8 @@ ottoman_minority_variable_check_central_macedonia = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_central_macedonia = 1 }
-		}
+		set_variable = { ottoman_minority_variable_central_macedonia = 1 }
+		set_global_variable = { ottoman_minority_variable_central_macedonia = 1 }
 	}
 	if = {
 		limit = {
@@ -1537,9 +1508,8 @@ ottoman_minority_variable_check_central_macedonia = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_central_macedonia = 2 }
-		}
+		set_variable = { ottoman_minority_variable_central_macedonia = 2 }
+		set_global_variable = { ottoman_minority_variable_central_macedonia = 2 }
 	}
 }
 ottoman_minority_variable_check_olympe = {
@@ -1562,9 +1532,8 @@ ottoman_minority_variable_check_olympe = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_olympe = 1 }
-		}
+		set_variable = { ottoman_minority_variable_olympe = 1 }
+		set_global_variable = { ottoman_minority_variable_olympe = 1 }
 	}
 	if = {
 		limit = {
@@ -1573,9 +1542,8 @@ ottoman_minority_variable_check_olympe = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_olympe = 2 }
-		}
+		set_variable = { ottoman_minority_variable_olympe = 2 }
+		set_global_variable = { ottoman_minority_variable_olympe = 2 }
 	}
 }
 ottoman_minority_variable_check_yanya = {
@@ -1598,9 +1566,8 @@ ottoman_minority_variable_check_yanya = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_yanya = 1 }
-		}
+		set_variable = { ottoman_minority_variable_yanya = 1 }
+		set_global_variable = { ottoman_minority_variable_yanya = 1 }
 	}
 	if = {
 		limit = {
@@ -1609,9 +1576,8 @@ ottoman_minority_variable_check_yanya = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_yanya = 2 }
-		}
+		set_variable = { ottoman_minority_variable_yanya = 2 }
+		set_global_variable = { ottoman_minority_variable_yanya = 2 }
 	}
 	if = {
 		limit = {
@@ -1620,9 +1586,8 @@ ottoman_minority_variable_check_yanya = {
 			    has_dynamic_modifier = { modifier = TUR_albanian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_yanya = 3 }
-		}
+		set_variable = { ottoman_minority_variable_yanya = 3 }
+		set_global_variable = { ottoman_minority_variable_yanya = 3 }
 	}
 	if = {
 		limit = {
@@ -1631,9 +1596,8 @@ ottoman_minority_variable_check_yanya = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_yanya = 4 }
-		}
+		set_variable = { ottoman_minority_variable_yanya = 4 }
+		set_global_variable = { ottoman_minority_variable_yanya = 4 }
 	}
 }
 ottoman_minority_variable_check_thessaly = {
@@ -1656,9 +1620,8 @@ ottoman_minority_variable_check_thessaly = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_thessaly = 1 }
-		}
+		set_variable = { ottoman_minority_variable_thessaly = 1 }
+		set_global_variable = { ottoman_minority_variable_thessaly = 1 }
 	}
 	if = {
 		limit = {
@@ -1667,9 +1630,8 @@ ottoman_minority_variable_check_thessaly = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_thessaly = 2 }
-		}
+		set_variable = { ottoman_minority_variable_thessaly = 2 }
+		set_global_variable = { ottoman_minority_variable_thessaly = 2 }
 	}
 }
 ottoman_minority_variable_check_corfu = {
@@ -1692,9 +1654,8 @@ ottoman_minority_variable_check_corfu = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_corfu = 1 }
-		}
+		set_variable = { ottoman_minority_variable_corfu = 1 }
+		set_global_variable = { ottoman_minority_variable_corfu = 1 }
 	}
 	if = {
 		limit = {
@@ -1703,9 +1664,8 @@ ottoman_minority_variable_check_corfu = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_corfu = 2 }
-		}
+		set_variable = { ottoman_minority_variable_corfu = 2 }
+		set_global_variable = { ottoman_minority_variable_corfu = 2 }
 	}
 	if = {
 		limit = {
@@ -1714,9 +1674,8 @@ ottoman_minority_variable_check_corfu = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_corfu = 3 }
-		}
+		set_variable = { ottoman_minority_variable_corfu = 3 }
+		set_global_variable = { ottoman_minority_variable_corfu = 3 }
 	}
 }
 ottoman_minority_variable_check_central_greece = {
@@ -1739,9 +1698,8 @@ ottoman_minority_variable_check_central_greece = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_central_greece = 1 }
-		}
+		set_variable = { ottoman_minority_variable_central_greece = 1 }
+		set_global_variable = { ottoman_minority_variable_central_greece = 1 }
 	}
 	if = {
 		limit = {
@@ -1750,9 +1708,8 @@ ottoman_minority_variable_check_central_greece = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_central_greece = 2 }
-		}
+		set_variable = { ottoman_minority_variable_central_greece = 2 }
+		set_global_variable = { ottoman_minority_variable_central_greece = 2 }
 	}
 	if = {
 		limit = {
@@ -1761,9 +1718,8 @@ ottoman_minority_variable_check_central_greece = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_central_greece = 3 }
-		}
+		set_variable = { ottoman_minority_variable_central_greece = 3 }
+		set_global_variable = { ottoman_minority_variable_central_greece = 3 }
 	}
 }
 ottoman_minority_variable_check_athens = {
@@ -1786,9 +1742,8 @@ ottoman_minority_variable_check_athens = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_athens = 1 }
-		}
+		set_variable = { ottoman_minority_variable_athens = 1 }
+		set_global_variable = { ottoman_minority_variable_athens = 1 }
 	}
 	if = {
 		limit = {
@@ -1797,9 +1752,8 @@ ottoman_minority_variable_check_athens = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_athens = 2 }
-		}
+		set_variable = { ottoman_minority_variable_athens = 2 }
+		set_global_variable = { ottoman_minority_variable_athens = 2 }
 	}
 	if = {
 		limit = {
@@ -1808,9 +1762,8 @@ ottoman_minority_variable_check_athens = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_athens = 3 }
-		}
+		set_variable = { ottoman_minority_variable_athens = 3 }
+		set_global_variable = { ottoman_minority_variable_athens = 3 }
 	}
 }
 ottoman_minority_variable_check_cyclades = {
@@ -1833,9 +1786,8 @@ ottoman_minority_variable_check_cyclades = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_cyclades = 1 }
-		}
+		set_variable = { ottoman_minority_variable_cyclades = 1 }
+		set_global_variable = { ottoman_minority_variable_cyclades = 1 }
 	}
 	if = {
 		limit = {
@@ -1844,9 +1796,8 @@ ottoman_minority_variable_check_cyclades = {
 				has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_cyclades = 2 }
-		}
+		set_variable = { ottoman_minority_variable_cyclades = 2 }
+		set_global_variable = { ottoman_minority_variable_cyclades = 2 }
 	}
 	if = {
 		limit = {
@@ -1855,9 +1806,8 @@ ottoman_minority_variable_check_cyclades = {
 				has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_cyclades = 3 }
-		}
+		set_variable = { ottoman_minority_variable_cyclades = 3 }
+		set_global_variable = { ottoman_minority_variable_cyclades = 3 }
 	}
 }
 ottoman_minority_variable_check_peloponnese = {
@@ -1880,9 +1830,8 @@ ottoman_minority_variable_check_peloponnese = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_peloponnese = 1 }
-		}
+		set_variable = { ottoman_minority_variable_peloponnese = 1 }
+		set_global_variable = { ottoman_minority_variable_peloponnese = 1 }
 	}
 	if = {
 		limit = {
@@ -1891,9 +1840,8 @@ ottoman_minority_variable_check_peloponnese = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_peloponnese = 2 }
-		}
+		set_variable = { ottoman_minority_variable_peloponnese = 2 }
+		set_global_variable = { ottoman_minority_variable_peloponnese = 2 }
 	}
 	if = {
 		limit = {
@@ -1902,9 +1850,8 @@ ottoman_minority_variable_check_peloponnese = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_peloponnese = 3 }
-		}
+		set_variable = { ottoman_minority_variable_peloponnese = 3 }
+		set_global_variable = { ottoman_minority_variable_peloponnese = 3 }
 	}
 }
 ottoman_minority_variable_check_crete = {
@@ -1927,9 +1874,8 @@ ottoman_minority_variable_check_crete = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_crete = 1 }
-		}
+		set_variable = { ottoman_minority_variable_crete = 1 }
+		set_global_variable = { ottoman_minority_variable_crete = 1 }
 	}
 	if = {
 		limit = {
@@ -1938,9 +1884,8 @@ ottoman_minority_variable_check_crete = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_crete = 2 }
-		}
+		set_variable = { ottoman_minority_variable_crete = 2 }
+		set_global_variable = { ottoman_minority_variable_crete = 2 }
 	}
 	if = {
 		limit = {
@@ -1949,9 +1894,8 @@ ottoman_minority_variable_check_crete = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_crete = 3 }
-		}
+		set_variable = { ottoman_minority_variable_crete = 3 }
+		set_global_variable = { ottoman_minority_variable_crete = 3 }
 	}
 }
 ottoman_minority_variable_check_aegean_islands = {
@@ -1974,9 +1918,8 @@ ottoman_minority_variable_check_aegean_islands = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_aegean_islands = 1 }
-		}
+		set_variable = { ottoman_minority_variable_aegean_islands = 1 }
+		set_global_variable = { ottoman_minority_variable_aegean_islands = 1 }
 	}
 	if = {
 		limit = {
@@ -1985,9 +1928,8 @@ ottoman_minority_variable_check_aegean_islands = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_aegean_islands = 2 }
-		}
+		set_variable = { ottoman_minority_variable_aegean_islands = 2 }
+		set_global_variable = { ottoman_minority_variable_aegean_islands = 2 }
 	}
 	if = {
 		limit = {
@@ -1996,9 +1938,8 @@ ottoman_minority_variable_check_aegean_islands = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_aegean_islands = 3 }
-		}
+		set_variable = { ottoman_minority_variable_aegean_islands = 3 }
+		set_global_variable = { ottoman_minority_variable_aegean_islands = 3 }
 	}
 }
 ottoman_minority_variable_check_dodecanese = {
@@ -2021,9 +1962,8 @@ ottoman_minority_variable_check_dodecanese = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_dodecanese = 1 }
-		}
+		set_variable = { ottoman_minority_variable_dodecanese = 1 }
+		set_global_variable = { ottoman_minority_variable_dodecanese = 1 }
 	}
 	if = {
 		limit = {
@@ -2032,9 +1972,8 @@ ottoman_minority_variable_check_dodecanese = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_dodecanese = 2 }
-		}
+		set_variable = { ottoman_minority_variable_dodecanese = 2 }
+		set_global_variable = { ottoman_minority_variable_dodecanese = 2 }
 	}
 	if = {
 		limit = {
@@ -2043,9 +1982,8 @@ ottoman_minority_variable_check_dodecanese = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_dodecanese = 3 }
-		}
+		set_variable = { ottoman_minority_variable_dodecanese = 3 }
+		set_global_variable = { ottoman_minority_variable_dodecanese = 3 }
 	}
 }
 ottoman_minority_variable_check_rhodes = {
@@ -2068,9 +2006,8 @@ ottoman_minority_variable_check_rhodes = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_rhodes = 1 }
-		}
+		set_variable = { ottoman_minority_variable_rhodes = 1 }
+		set_global_variable = { ottoman_minority_variable_rhodes = 1 }
 	}
 	if = {
 		limit = {
@@ -2079,9 +2016,8 @@ ottoman_minority_variable_check_rhodes = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_rhodes = 2 }
-		}
+		set_variable = { ottoman_minority_variable_rhodes = 2 }
+		set_global_variable = { ottoman_minority_variable_rhodes = 2 }
 	}
 	if = {
 		limit = {
@@ -2090,9 +2026,8 @@ ottoman_minority_variable_check_rhodes = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_rhodes = 3 }
-		}
+		set_variable = { ottoman_minority_variable_rhodes = 3 }
+		set_global_variable = { ottoman_minority_variable_rhodes = 3 }
 	}
 }
 ottoman_minority_variable_check_ohrid = {
@@ -2115,9 +2050,8 @@ ottoman_minority_variable_check_ohrid = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_ohrid = 1 }
-		}
+		set_variable = { ottoman_minority_variable_ohrid = 1 }
+		set_global_variable = { ottoman_minority_variable_ohrid = 1 }
 	}
 	if = {
 		limit = {
@@ -2126,9 +2060,8 @@ ottoman_minority_variable_check_ohrid = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_ohrid = 2 }
-		}
+		set_variable = { ottoman_minority_variable_ohrid = 2 }
+		set_global_variable = { ottoman_minority_variable_ohrid = 2 }
 	}
 }
 ottoman_minority_variable_check_skopje = {
@@ -2151,9 +2084,8 @@ ottoman_minority_variable_check_skopje = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_skopje = 1 }
-		}
+		set_variable = { ottoman_minority_variable_skopje = 1 }
+		set_global_variable = { ottoman_minority_variable_skopje = 1 }
 	}
 	if = {
 		limit = {
@@ -2162,9 +2094,8 @@ ottoman_minority_variable_check_skopje = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_skopje = 2 }
-		}
+		set_variable = { ottoman_minority_variable_skopje = 2 }
+		set_global_variable = { ottoman_minority_variable_skopje = 2 }
 	}
 }
 ottoman_minority_variable_check_northern_epirus = {
@@ -2187,9 +2118,8 @@ ottoman_minority_variable_check_northern_epirus = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_northern_epirus = 1 }
-		}
+		set_variable = { ottoman_minority_variable_northern_epirus = 1 }
+		set_global_variable = { ottoman_minority_variable_northern_epirus = 1 }
 	}
 	if = {
 		limit = {
@@ -2198,9 +2128,8 @@ ottoman_minority_variable_check_northern_epirus = {
 			    has_dynamic_modifier = { modifier = TUR_albanian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_northern_epirus = 2 }
-		}
+		set_variable = { ottoman_minority_variable_northern_epirus = 2 }
+		set_global_variable = { ottoman_minority_variable_northern_epirus = 2 }
 	}
 	if = {
 		limit = {
@@ -2209,9 +2138,8 @@ ottoman_minority_variable_check_northern_epirus = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_northern_epirus = 3 }
-		}
+		set_variable = { ottoman_minority_variable_northern_epirus = 3 }
+		set_global_variable = { ottoman_minority_variable_northern_epirus = 3 }
 	}
 }
 ottoman_minority_variable_check_vlore = {
@@ -2234,9 +2162,8 @@ ottoman_minority_variable_check_vlore = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_vlore = 1 }
-		}
+		set_variable = { ottoman_minority_variable_vlore = 1 }
+		set_global_variable = { ottoman_minority_variable_vlore = 1 }
 	}
 	if = {
 		limit = {
@@ -2245,9 +2172,8 @@ ottoman_minority_variable_check_vlore = {
 			    has_dynamic_modifier = { modifier = TUR_albanian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_vlore = 2 }
-		}
+		set_variable = { ottoman_minority_variable_vlore = 2 }
+		set_global_variable = { ottoman_minority_variable_vlore = 2 }
 	}
 	if = {
 		limit = {
@@ -2256,9 +2182,8 @@ ottoman_minority_variable_check_vlore = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_vlore = 3 }
-		}
+		set_variable = { ottoman_minority_variable_vlore = 3 }
+		set_global_variable = { ottoman_minority_variable_vlore = 3 }
 	}
 }
 ottoman_minority_variable_check_central_albania = {
@@ -2281,9 +2206,8 @@ ottoman_minority_variable_check_central_albania = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_central_albania = 1 }
-		}
+		set_variable = { ottoman_minority_variable_central_albania = 1 }
+		set_global_variable = { ottoman_minority_variable_central_albania = 1 }
 	}
 	if = {
 		limit = {
@@ -2292,9 +2216,8 @@ ottoman_minority_variable_check_central_albania = {
 			    has_dynamic_modifier = { modifier = TUR_albanian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_central_albania = 2 }
-		}
+		set_variable = { ottoman_minority_variable_central_albania = 2 }
+		set_global_variable = { ottoman_minority_variable_central_albania = 2 }
 	}
 	if = {
 		limit = {
@@ -2303,9 +2226,8 @@ ottoman_minority_variable_check_central_albania = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_central_albania = 3 }
-		}
+		set_variable = { ottoman_minority_variable_central_albania = 3 }
+		set_global_variable = { ottoman_minority_variable_central_albania = 3 }
 	}
 }
 ottoman_minority_variable_check_shkoder = {
@@ -2328,9 +2250,8 @@ ottoman_minority_variable_check_shkoder = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_shkoder = 1 }
-		}
+		set_variable = { ottoman_minority_variable_shkoder = 1 }
+		set_global_variable = { ottoman_minority_variable_shkoder = 1 }
 	}
 	if = {
 		limit = {
@@ -2339,9 +2260,8 @@ ottoman_minority_variable_check_shkoder = {
 			    has_dynamic_modifier = { modifier = TUR_albanian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_shkoder = 2 }
-		}
+		set_variable = { ottoman_minority_variable_shkoder = 2 }
+		set_global_variable = { ottoman_minority_variable_shkoder = 2 }
 	}
 	if = {
 		limit = {
@@ -2350,9 +2270,8 @@ ottoman_minority_variable_check_shkoder = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_shkoder = 3 }
-		}
+		set_variable = { ottoman_minority_variable_shkoder = 3 }
+		set_global_variable = { ottoman_minority_variable_shkoder = 3 }
 	}
 }
 ottoman_minority_variable_check_peja = {
@@ -2375,9 +2294,8 @@ ottoman_minority_variable_check_peja = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_peja = 1 }
-		}
+		set_variable = { ottoman_minority_variable_peja = 1 }
+		set_global_variable = { ottoman_minority_variable_peja = 1 }
 	}
 	if = {
 		limit = {
@@ -2386,9 +2304,8 @@ ottoman_minority_variable_check_peja = {
 			    has_dynamic_modifier = { modifier = TUR_albanian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_peja = 2 }
-		}
+		set_variable = { ottoman_minority_variable_peja = 2 }
+		set_global_variable = { ottoman_minority_variable_peja = 2 }
 	}
 	if = {
 		limit = {
@@ -2397,9 +2314,8 @@ ottoman_minority_variable_check_peja = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_peja = 3 }
-		}
+		set_variable = { ottoman_minority_variable_peja = 3 }
+		set_global_variable = { ottoman_minority_variable_peja = 3 }
 	}
 }
 ottoman_minority_variable_check_kosovo = {
@@ -2422,9 +2338,8 @@ ottoman_minority_variable_check_kosovo = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kosovo = 1 }
-		}
+		set_variable = { ottoman_minority_variable_kosovo = 1 }
+		set_global_variable = { ottoman_minority_variable_kosovo = 1 }
 	}
 	if = {
 		limit = {
@@ -2433,9 +2348,8 @@ ottoman_minority_variable_check_kosovo = {
 			    has_dynamic_modifier = { modifier = TUR_albanian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kosovo = 2 }
-		}
+		set_variable = { ottoman_minority_variable_kosovo = 2 }
+		set_global_variable = { ottoman_minority_variable_kosovo = 2 }
 	}
 	if = {
 		limit = {
@@ -2444,9 +2358,8 @@ ottoman_minority_variable_check_kosovo = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kosovo = 3 }
-		}
+		set_variable = { ottoman_minority_variable_kosovo = 3 }
+		set_global_variable = { ottoman_minority_variable_kosovo = 3 }
 	}
 }
 ottoman_minority_variable_check_montenegro = {
@@ -2469,9 +2382,8 @@ ottoman_minority_variable_check_montenegro = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_montenegro = 1 }
-		}
+		set_variable = { ottoman_minority_variable_montenegro = 1 }
+		set_global_variable = { ottoman_minority_variable_montenegro = 1 }
 	}
 	if = {
 		limit = {
@@ -2480,9 +2392,8 @@ ottoman_minority_variable_check_montenegro = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_montenegro = 2 }
-		}
+		set_variable = { ottoman_minority_variable_montenegro = 2 }
+		set_global_variable = { ottoman_minority_variable_montenegro = 2 }
 	}
 	if = {
 		limit = {
@@ -2491,9 +2402,8 @@ ottoman_minority_variable_check_montenegro = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_montenegro = 3 }
-		}
+		set_variable = { ottoman_minority_variable_montenegro = 3 }
+		set_global_variable = { ottoman_minority_variable_montenegro = 3 }
 	}
 }
 ottoman_minority_variable_check_east_montenegro = {
@@ -2516,9 +2426,8 @@ ottoman_minority_variable_check_east_montenegro = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_east_montenegro = 1 }
-		}
+		set_variable = { ottoman_minority_variable_east_montenegro = 1 }
+		set_global_variable = { ottoman_minority_variable_east_montenegro = 1 }
 	}
 	if = {
 		limit = {
@@ -2527,9 +2436,8 @@ ottoman_minority_variable_check_east_montenegro = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_east_montenegro = 2 }
-		}
+		set_variable = { ottoman_minority_variable_east_montenegro = 2 }
+		set_global_variable = { ottoman_minority_variable_east_montenegro = 2 }
 	}
 }
 ottoman_minority_variable_check_south_serbia = {
@@ -2552,9 +2460,8 @@ ottoman_minority_variable_check_south_serbia = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_south_serbia = 1 }
-		}
+		set_variable = { ottoman_minority_variable_south_serbia = 1 }
+		set_global_variable = { ottoman_minority_variable_south_serbia = 1 }
 	}
 	if = {
 		limit = {
@@ -2563,9 +2470,8 @@ ottoman_minority_variable_check_south_serbia = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_south_serbia = 2 }
-		}
+		set_variable = { ottoman_minority_variable_south_serbia = 2 }
+		set_global_variable = { ottoman_minority_variable_south_serbia = 2 }
 	}
 }
 ottoman_minority_variable_check_bosnia = {
@@ -2588,9 +2494,8 @@ ottoman_minority_variable_check_bosnia = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_bosnia = 1 }
-		}
+		set_variable = { ottoman_minority_variable_bosnia = 1 }
+		set_global_variable = { ottoman_minority_variable_bosnia = 1 }
 	}
 	if = {
 		limit = {
@@ -2599,9 +2504,8 @@ ottoman_minority_variable_check_bosnia = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_bosnia = 2 }
-		}
+		set_variable = { ottoman_minority_variable_bosnia = 2 }
+		set_global_variable = { ottoman_minority_variable_bosnia = 2 }
 	}
 }
 ottoman_minority_variable_check_serbia = {
@@ -2624,9 +2528,8 @@ ottoman_minority_variable_check_serbia = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_serbia = 1 }
-		}
+		set_variable = { ottoman_minority_variable_serbia = 1 }
+		set_global_variable = { ottoman_minority_variable_serbia = 1 }
 	}
 	if = {
 		limit = {
@@ -2635,9 +2538,8 @@ ottoman_minority_variable_check_serbia = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_serbia = 2 }
-		}
+		set_variable = { ottoman_minority_variable_serbia = 2 }
+		set_global_variable = { ottoman_minority_variable_serbia = 2 }
 	}
 	if = {
 		limit = {
@@ -2646,9 +2548,8 @@ ottoman_minority_variable_check_serbia = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_serbia = 3 }
-		}
+		set_variable = { ottoman_minority_variable_serbia = 3 }
+		set_global_variable = { ottoman_minority_variable_serbia = 3 }
 	}
 }
 ottoman_minority_variable_check_nis = {
@@ -2671,9 +2572,8 @@ ottoman_minority_variable_check_nis = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_nis = 1 }
-		}
+		set_variable = { ottoman_minority_variable_nis = 1 }
+		set_global_variable = { ottoman_minority_variable_nis = 1 }
 	}
 	if = {
 		limit = {
@@ -2682,9 +2582,8 @@ ottoman_minority_variable_check_nis = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_nis = 2 }
-		}
+		set_variable = { ottoman_minority_variable_nis = 2 }
+		set_global_variable = { ottoman_minority_variable_nis = 2 }
 	}
 }
 ottoman_minority_variable_check_morava = {
@@ -2707,9 +2606,8 @@ ottoman_minority_variable_check_morava = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_morava = 1 }
-		}
+		set_variable = { ottoman_minority_variable_morava = 1 }
+		set_global_variable = { ottoman_minority_variable_morava = 1 }
 	}
 	if = {
 		limit = {
@@ -2718,9 +2616,8 @@ ottoman_minority_variable_check_morava = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_morava = 2 }
-		}
+		set_variable = { ottoman_minority_variable_morava = 2 }
+		set_global_variable = { ottoman_minority_variable_morava = 2 }
 	}
 	if = {
 		limit = {
@@ -2729,9 +2626,8 @@ ottoman_minority_variable_check_morava = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_morava = 3 }
-		}
+		set_variable = { ottoman_minority_variable_morava = 3 }
+		set_global_variable = { ottoman_minority_variable_morava = 3 }
 	}
 }
 ottoman_minority_variable_check_pirot = {
@@ -2754,9 +2650,8 @@ ottoman_minority_variable_check_pirot = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_pirot = 1 }
-		}
+		set_variable = { ottoman_minority_variable_pirot = 1 }
+		set_global_variable = { ottoman_minority_variable_pirot = 1 }
 	}
 	if = {
 		limit = {
@@ -2765,9 +2660,8 @@ ottoman_minority_variable_check_pirot = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_pirot = 2 }
-		}
+		set_variable = { ottoman_minority_variable_pirot = 2 }
+		set_global_variable = { ottoman_minority_variable_pirot = 2 }
 	}
 }
 ottoman_minority_variable_check_bosilegrad = {
@@ -2790,9 +2684,8 @@ ottoman_minority_variable_check_bosilegrad = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_bosilegrad = 1 }
-		}
+		set_variable = { ottoman_minority_variable_bosilegrad = 1 }
+		set_global_variable = { ottoman_minority_variable_bosilegrad = 1 }
 	}
 	if = {
 		limit = {
@@ -2801,9 +2694,8 @@ ottoman_minority_variable_check_bosilegrad = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_bosilegrad = 2 }
-		}
+		set_variable = { ottoman_minority_variable_bosilegrad = 2 }
+		set_global_variable = { ottoman_minority_variable_bosilegrad = 2 }
 	}
 }
 ottoman_minority_variable_check_sofia = {
@@ -2826,9 +2718,8 @@ ottoman_minority_variable_check_sofia = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_sofia = 1 }
-		}
+		set_variable = { ottoman_minority_variable_sofia = 1 }
+		set_global_variable = { ottoman_minority_variable_sofia = 1 }
 	}
 	if = {
 		limit = {
@@ -2837,9 +2728,8 @@ ottoman_minority_variable_check_sofia = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_sofia = 2 }
-		}
+		set_variable = { ottoman_minority_variable_sofia = 2 }
+		set_global_variable = { ottoman_minority_variable_sofia = 2 }
 	}
 }
 ottoman_minority_variable_check_varna = {
@@ -2862,9 +2752,8 @@ ottoman_minority_variable_check_varna = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_varna = 1 }
-		}
+		set_variable = { ottoman_minority_variable_varna = 1 }
+		set_global_variable = { ottoman_minority_variable_varna = 1 }
 	}
 	if = {
 		limit = {
@@ -2873,9 +2762,8 @@ ottoman_minority_variable_check_varna = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_varna = 2 }
-		}
+		set_variable = { ottoman_minority_variable_varna = 2 }
+		set_global_variable = { ottoman_minority_variable_varna = 2 }
 	}
 }
 ottoman_minority_variable_check_southern_dobrudja = {
@@ -2898,9 +2786,8 @@ ottoman_minority_variable_check_southern_dobrudja = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_southern_dobrudja = 1 }
-		}
+		set_variable = { ottoman_minority_variable_southern_dobrudja = 1 }
+		set_global_variable = { ottoman_minority_variable_southern_dobrudja = 1 }
 	}
 	if = {
 		limit = {
@@ -2909,9 +2796,8 @@ ottoman_minority_variable_check_southern_dobrudja = {
 			    has_dynamic_modifier = { modifier = TUR_southslav_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_southern_dobrudja = 2 }
-		}
+		set_variable = { ottoman_minority_variable_southern_dobrudja = 2 }
+		set_global_variable = { ottoman_minority_variable_southern_dobrudja = 2 }
 	}
 }
 ottoman_minority_variable_check_mangalia = {
@@ -2934,9 +2820,8 @@ ottoman_minority_variable_check_mangalia = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_mangalia = 1 }
-		}
+		set_variable = { ottoman_minority_variable_mangalia = 1 }
+		set_global_variable = { ottoman_minority_variable_mangalia = 1 }
 	}
 	if = {
 		limit = {
@@ -2945,9 +2830,8 @@ ottoman_minority_variable_check_mangalia = {
 			    has_dynamic_modifier = { modifier = TUR_romanian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_mangalia = 2 }
-		}
+		set_variable = { ottoman_minority_variable_mangalia = 2 }
+		set_global_variable = { ottoman_minority_variable_mangalia = 2 }
 	}
 }
 ottoman_minority_variable_check_northern_dobrudja = {
@@ -2970,9 +2854,8 @@ ottoman_minority_variable_check_northern_dobrudja = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_northern_dobrudja = 1 }
-		}
+		set_variable = { ottoman_minority_variable_northern_dobrudja = 1 }
+		set_global_variable = { ottoman_minority_variable_northern_dobrudja = 1 }
 	}
 	if = {
 		limit = {
@@ -2981,9 +2864,8 @@ ottoman_minority_variable_check_northern_dobrudja = {
 			    has_dynamic_modifier = { modifier = TUR_romanian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_northern_dobrudja = 2 }
-		}
+		set_variable = { ottoman_minority_variable_northern_dobrudja = 2 }
+		set_global_variable = { ottoman_minority_variable_northern_dobrudja = 2 }
 	}
 }
 ottoman_minority_variable_check_oltenia = {
@@ -3006,9 +2888,8 @@ ottoman_minority_variable_check_oltenia = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_oltenia = 1 }
-		}
+		set_variable = { ottoman_minority_variable_oltenia = 1 }
+		set_global_variable = { ottoman_minority_variable_oltenia = 1 }
 	}
 	if = {
 		limit = {
@@ -3017,9 +2898,8 @@ ottoman_minority_variable_check_oltenia = {
 			    has_dynamic_modifier = { modifier = TUR_romanian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_oltenia = 2 }
-		}
+		set_variable = { ottoman_minority_variable_oltenia = 2 }
+		set_global_variable = { ottoman_minority_variable_oltenia = 2 }
 	}
 	if = {
 		limit = {
@@ -3028,9 +2908,8 @@ ottoman_minority_variable_check_oltenia = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_oltenia = 3 }
-		}
+		set_variable = { ottoman_minority_variable_oltenia = 3 }
+		set_global_variable = { ottoman_minority_variable_oltenia = 3 }
 	}
 }
 ottoman_minority_variable_check_muntenia = {
@@ -3053,9 +2932,8 @@ ottoman_minority_variable_check_muntenia = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_muntenia = 1 }
-		}
+		set_variable = { ottoman_minority_variable_muntenia = 1 }
+		set_global_variable = { ottoman_minority_variable_muntenia = 1 }
 	}
 	if = {
 		limit = {
@@ -3064,9 +2942,8 @@ ottoman_minority_variable_check_muntenia = {
 			    has_dynamic_modifier = { modifier = TUR_romanian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_muntenia = 2 }
-		}
+		set_variable = { ottoman_minority_variable_muntenia = 2 }
+		set_global_variable = { ottoman_minority_variable_muntenia = 2 }
 	}
 	if = {
 		limit = {
@@ -3075,9 +2952,8 @@ ottoman_minority_variable_check_muntenia = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_muntenia = 3 }
-		}
+		set_variable = { ottoman_minority_variable_muntenia = 3 }
+		set_global_variable = { ottoman_minority_variable_muntenia = 3 }
 	}
 }
 ottoman_minority_variable_check_moldova = {
@@ -3100,9 +2976,8 @@ ottoman_minority_variable_check_moldova = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_moldova = 1 }
-		}
+		set_variable = { ottoman_minority_variable_moldova = 1 }
+		set_global_variable = { ottoman_minority_variable_moldova = 1 }
 	}
 	if = {
 		limit = {
@@ -3111,9 +2986,8 @@ ottoman_minority_variable_check_moldova = {
 			    has_dynamic_modifier = { modifier = TUR_romanian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_moldova = 2 }
-		}
+		set_variable = { ottoman_minority_variable_moldova = 2 }
+		set_global_variable = { ottoman_minority_variable_moldova = 2 }
 	}
 	if = {
 		limit = {
@@ -3122,9 +2996,8 @@ ottoman_minority_variable_check_moldova = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_moldova = 3 }
-		}
+		set_variable = { ottoman_minority_variable_moldova = 3 }
+		set_global_variable = { ottoman_minority_variable_moldova = 3 }
 	}
 }
 ottoman_minority_variable_check_south_bukovina = {
@@ -3147,9 +3020,8 @@ ottoman_minority_variable_check_south_bukovina = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_south_bukovina = 1 }
-		}
+		set_variable = { ottoman_minority_variable_south_bukovina = 1 }
+		set_global_variable = { ottoman_minority_variable_south_bukovina = 1 }
 	}
 	if = {
 		limit = {
@@ -3158,9 +3030,8 @@ ottoman_minority_variable_check_south_bukovina = {
 			    has_dynamic_modifier = { modifier = TUR_romanian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_south_bukovina = 2 }
-		}
+		set_variable = { ottoman_minority_variable_south_bukovina = 2 }
+		set_global_variable = { ottoman_minority_variable_south_bukovina = 2 }
 	}
 	if = {
 		limit = {
@@ -3169,9 +3040,8 @@ ottoman_minority_variable_check_south_bukovina = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_south_bukovina = 3 }
-		}
+		set_variable = { ottoman_minority_variable_south_bukovina = 3 }
+		set_global_variable = { ottoman_minority_variable_south_bukovina = 3 }
 	}
 }
 ottoman_minority_variable_check_eastern_carpathians = {
@@ -3194,9 +3064,8 @@ ottoman_minority_variable_check_eastern_carpathians = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_eastern_carpathians = 1 }
-		}
+		set_variable = { ottoman_minority_variable_eastern_carpathians = 1 }
+		set_global_variable = { ottoman_minority_variable_eastern_carpathians = 1 }
 	}
 	if = {
 		limit = {
@@ -3205,9 +3074,8 @@ ottoman_minority_variable_check_eastern_carpathians = {
 			    has_dynamic_modifier = { modifier = TUR_romanian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_eastern_carpathians = 2 }
-		}
+		set_variable = { ottoman_minority_variable_eastern_carpathians = 2 }
+		set_global_variable = { ottoman_minority_variable_eastern_carpathians = 2 }
 	}
 	if = {
 		limit = {
@@ -3216,9 +3084,8 @@ ottoman_minority_variable_check_eastern_carpathians = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_eastern_carpathians = 3 }
-		}
+		set_variable = { ottoman_minority_variable_eastern_carpathians = 3 }
+		set_global_variable = { ottoman_minority_variable_eastern_carpathians = 3 }
 	}
 }
 ottoman_minority_variable_check_southern_carpathians = {
@@ -3241,9 +3108,8 @@ ottoman_minority_variable_check_southern_carpathians = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_southern_carpathians = 1 }
-		}
+		set_variable = { ottoman_minority_variable_southern_carpathians = 1 }
+		set_global_variable = { ottoman_minority_variable_southern_carpathians = 1 }
 	}
 	if = {
 		limit = {
@@ -3252,9 +3118,8 @@ ottoman_minority_variable_check_southern_carpathians = {
 			    has_dynamic_modifier = { modifier = TUR_romanian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_southern_carpathians = 2 }
-		}
+		set_variable = { ottoman_minority_variable_southern_carpathians = 2 }
+		set_global_variable = { ottoman_minority_variable_southern_carpathians = 2 }
 	}
 	if = {
 		limit = {
@@ -3263,9 +3128,8 @@ ottoman_minority_variable_check_southern_carpathians = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_southern_carpathians = 3 }
-		}
+		set_variable = { ottoman_minority_variable_southern_carpathians = 3 }
+		set_global_variable = { ottoman_minority_variable_southern_carpathians = 3 }
 	}
 }
 ottoman_minority_variable_check_bandirma = {
@@ -3288,9 +3152,8 @@ ottoman_minority_variable_check_bandirma = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_bandirma = 1 }
-		}
+		set_variable = { ottoman_minority_variable_bandirma = 1 }
+		set_global_variable = { ottoman_minority_variable_bandirma = 1 }
 	}
 	if = {
 		limit = {
@@ -3299,9 +3162,8 @@ ottoman_minority_variable_check_bandirma = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_bandirma = 2 }
-		}
+		set_variable = { ottoman_minority_variable_bandirma = 2 }
+		set_global_variable = { ottoman_minority_variable_bandirma = 2 }
 	}
 }
 ottoman_minority_variable_check_canakkale = {
@@ -3324,9 +3186,8 @@ ottoman_minority_variable_check_canakkale = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_canakkale = 1 }
-		}
+		set_variable = { ottoman_minority_variable_canakkale = 1 }
+		set_global_variable = { ottoman_minority_variable_canakkale = 1 }
 	}
 	if = {
 		limit = {
@@ -3335,9 +3196,8 @@ ottoman_minority_variable_check_canakkale = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_canakkale = 2 }
-		}
+		set_variable = { ottoman_minority_variable_canakkale = 2 }
+		set_global_variable = { ottoman_minority_variable_canakkale = 2 }
 	}
 	if = {
 		limit = {
@@ -3346,9 +3206,8 @@ ottoman_minority_variable_check_canakkale = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_canakkale = 3 }
-		}
+		set_variable = { ottoman_minority_variable_canakkale = 3 }
+		set_global_variable = { ottoman_minority_variable_canakkale = 3 }
 	}
 }
 ottoman_minority_variable_check_izmir = {
@@ -3371,9 +3230,8 @@ ottoman_minority_variable_check_izmir = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_izmir = 1 }
-		}
+		set_variable = { ottoman_minority_variable_izmir = 1 }
+		set_global_variable = { ottoman_minority_variable_izmir = 1 }
 	}
 	if = {
 		limit = {
@@ -3382,9 +3240,8 @@ ottoman_minority_variable_check_izmir = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_izmir = 2 }
-		}
+		set_variable = { ottoman_minority_variable_izmir = 2 }
+		set_global_variable = { ottoman_minority_variable_izmir = 2 }
 	}
 }
 ottoman_minority_variable_check_aydin = {
@@ -3407,9 +3264,8 @@ ottoman_minority_variable_check_aydin = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_aydin = 1 }
-		}
+		set_variable = { ottoman_minority_variable_aydin = 1 }
+		set_global_variable = { ottoman_minority_variable_aydin = 1 }
 	}
 	if = {
 		limit = {
@@ -3418,9 +3274,8 @@ ottoman_minority_variable_check_aydin = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_aydin = 2 }
-		}
+		set_variable = { ottoman_minority_variable_aydin = 2 }
+		set_global_variable = { ottoman_minority_variable_aydin = 2 }
 	}
 }
 ottoman_minority_variable_check_mentese = {
@@ -3443,9 +3298,8 @@ ottoman_minority_variable_check_mentese = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_mentese = 1 }
-		}
+		set_variable = { ottoman_minority_variable_mentese = 1 }
+		set_global_variable = { ottoman_minority_variable_mentese = 1 }
 	}
 	if = {
 		limit = {
@@ -3454,9 +3308,8 @@ ottoman_minority_variable_check_mentese = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_mentese = 2 }
-		}
+		set_variable = { ottoman_minority_variable_mentese = 2 }
+		set_global_variable = { ottoman_minority_variable_mentese = 2 }
 	}
 }
 ottoman_minority_variable_check_denizli = {
@@ -3479,9 +3332,8 @@ ottoman_minority_variable_check_denizli = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_denizli = 1 }
-		}
+		set_variable = { ottoman_minority_variable_denizli = 1 }
+		set_global_variable = { ottoman_minority_variable_denizli = 1 }
 	}
 	if = {
 		limit = {
@@ -3490,9 +3342,8 @@ ottoman_minority_variable_check_denizli = {
 			    has_dynamic_modifier = { modifier = TUR_turkish_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_denizli = 2 }
-		}
+		set_variable = { ottoman_minority_variable_denizli = 2 }
+		set_global_variable = { ottoman_minority_variable_denizli = 2 }
 	}
 }
 ottoman_minority_variable_check_antalya = {
@@ -3515,9 +3366,8 @@ ottoman_minority_variable_check_antalya = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_antalya = 1 }
-		}
+		set_variable = { ottoman_minority_variable_antalya = 1 }
+		set_global_variable = { ottoman_minority_variable_antalya = 1 }
 	}
 	if = {
 		limit = {
@@ -3526,9 +3376,8 @@ ottoman_minority_variable_check_antalya = {
 			    has_dynamic_modifier = { modifier = TUR_turkish_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_antalya = 2 }
-		}
+		set_variable = { ottoman_minority_variable_antalya = 2 }
+		set_global_variable = { ottoman_minority_variable_antalya = 2 }
 	}
 }
 ottoman_minority_variable_check_bursa = {
@@ -3551,9 +3400,8 @@ ottoman_minority_variable_check_bursa = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_bursa = 1 }
-		}
+		set_variable = { ottoman_minority_variable_bursa = 1 }
+		set_global_variable = { ottoman_minority_variable_bursa = 1 }
 	}
 	if = {
 		limit = {
@@ -3562,9 +3410,8 @@ ottoman_minority_variable_check_bursa = {
 			    has_dynamic_modifier = { modifier = TUR_turkish_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_bursa = 2 }
-		}
+		set_variable = { ottoman_minority_variable_bursa = 2 }
+		set_global_variable = { ottoman_minority_variable_bursa = 2 }
 	}
 }
 ottoman_minority_variable_check_kastamonu = {
@@ -3587,9 +3434,8 @@ ottoman_minority_variable_check_kastamonu = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kastamonu = 1 }
-		}
+		set_variable = { ottoman_minority_variable_kastamonu = 1 }
+		set_global_variable = { ottoman_minority_variable_kastamonu = 1 }
 	}
 	if = {
 		limit = {
@@ -3598,9 +3444,8 @@ ottoman_minority_variable_check_kastamonu = {
 			    has_dynamic_modifier = { modifier = TUR_turkish_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kastamonu = 2 }
-		}
+		set_variable = { ottoman_minority_variable_kastamonu = 2 }
+		set_global_variable = { ottoman_minority_variable_kastamonu = 2 }
 	}
 }
 ottoman_minority_variable_check_ankara = {
@@ -3623,9 +3468,8 @@ ottoman_minority_variable_check_ankara = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_ankara = 1 }
-		}
+		set_variable = { ottoman_minority_variable_ankara = 1 }
+		set_global_variable = { ottoman_minority_variable_ankara = 1 }
 	}
 	if = {
 		limit = {
@@ -3634,9 +3478,8 @@ ottoman_minority_variable_check_ankara = {
 			    has_dynamic_modifier = { modifier = TUR_turkish_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_ankara = 2 }
-		}
+		set_variable = { ottoman_minority_variable_ankara = 2 }
+		set_global_variable = { ottoman_minority_variable_ankara = 2 }
 	}
 }
 ottoman_minority_variable_check_afyon = {
@@ -3659,9 +3502,8 @@ ottoman_minority_variable_check_afyon = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_afyon = 1 }
-		}
+		set_variable = { ottoman_minority_variable_afyon = 1 }
+		set_global_variable = { ottoman_minority_variable_afyon = 1 }
 	}
 	if = {
 		limit = {
@@ -3670,9 +3512,8 @@ ottoman_minority_variable_check_afyon = {
 			    has_dynamic_modifier = { modifier = TUR_turkish_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_afyon = 2 }
-		}
+		set_variable = { ottoman_minority_variable_afyon = 2 }
+		set_global_variable = { ottoman_minority_variable_afyon = 2 }
 	}
 }
 ottoman_minority_variable_check_konya = {
@@ -3695,9 +3536,8 @@ ottoman_minority_variable_check_konya = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_konya = 1 }
-		}
+		set_variable = { ottoman_minority_variable_konya = 1 }
+		set_global_variable = { ottoman_minority_variable_konya = 1 }
 	}
 	if = {
 		limit = {
@@ -3706,9 +3546,8 @@ ottoman_minority_variable_check_konya = {
 			    has_dynamic_modifier = { modifier = TUR_turkish_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_konya = 2 }
-		}
+		set_variable = { ottoman_minority_variable_konya = 2 }
+		set_global_variable = { ottoman_minority_variable_konya = 2 }
 	}
 }
 ottoman_minority_variable_check_adana = {
@@ -3731,9 +3570,8 @@ ottoman_minority_variable_check_adana = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_adana = 1 }
-		}
+		set_variable = { ottoman_minority_variable_adana = 1 }
+		set_global_variable = { ottoman_minority_variable_adana = 1 }
 	}
 	if = {
 		limit = {
@@ -3742,9 +3580,8 @@ ottoman_minority_variable_check_adana = {
 			    has_dynamic_modifier = { modifier = TUR_turkish_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_adana = 2 }
-		}
+		set_variable = { ottoman_minority_variable_adana = 2 }
+		set_global_variable = { ottoman_minority_variable_adana = 2 }
 	}
 }
 ottoman_minority_variable_check_cyprus = {
@@ -3767,9 +3604,8 @@ ottoman_minority_variable_check_cyprus = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_cyprus = 1 }
-		}
+		set_variable = { ottoman_minority_variable_cyprus = 1 }
+		set_global_variable = { ottoman_minority_variable_cyprus = 1 }
 	}
 	if = {
 		limit = {
@@ -3778,9 +3614,8 @@ ottoman_minority_variable_check_cyprus = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_cyprus = 2 }
-		}
+		set_variable = { ottoman_minority_variable_cyprus = 2 }
+		set_global_variable = { ottoman_minority_variable_cyprus = 2 }
 	}
 	if = {
 		limit = {
@@ -3789,9 +3624,8 @@ ottoman_minority_variable_check_cyprus = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_cyprus = 3 }
-		}
+		set_variable = { ottoman_minority_variable_cyprus = 3 }
+		set_global_variable = { ottoman_minority_variable_cyprus = 3 }
 	}
 }
 ottoman_minority_variable_check_kayseri = {
@@ -3814,9 +3648,8 @@ ottoman_minority_variable_check_kayseri = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kayseri = 1 }
-		}
+		set_variable = { ottoman_minority_variable_kayseri = 1 }
+		set_global_variable = { ottoman_minority_variable_kayseri = 1 }
 	}
 	if = {
 		limit = {
@@ -3825,9 +3658,8 @@ ottoman_minority_variable_check_kayseri = {
 			    has_dynamic_modifier = { modifier = TUR_armenian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kayseri = 2 }
-		}
+		set_variable = { ottoman_minority_variable_kayseri = 2 }
+		set_global_variable = { ottoman_minority_variable_kayseri = 2 }
 	}
 	if = {
 		limit = {
@@ -3836,9 +3668,8 @@ ottoman_minority_variable_check_kayseri = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kayseri = 3 }
-		}
+		set_variable = { ottoman_minority_variable_kayseri = 3 }
+		set_global_variable = { ottoman_minority_variable_kayseri = 3 }
 	}
 }
 ottoman_minority_variable_check_sivas = {
@@ -3861,9 +3692,8 @@ ottoman_minority_variable_check_sivas = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_sivas = 1 }
-		}
+		set_variable = { ottoman_minority_variable_sivas = 1 }
+		set_global_variable = { ottoman_minority_variable_sivas = 1 }
 	}
 	if = {
 		limit = {
@@ -3872,9 +3702,8 @@ ottoman_minority_variable_check_sivas = {
 			    has_dynamic_modifier = { modifier = TUR_armenian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_sivas = 2 }
-		}
+		set_variable = { ottoman_minority_variable_sivas = 2 }
+		set_global_variable = { ottoman_minority_variable_sivas = 2 }
 	}
 	if = {
 		limit = {
@@ -3883,9 +3712,8 @@ ottoman_minority_variable_check_sivas = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_sivas = 3 }
-		}
+		set_variable = { ottoman_minority_variable_sivas = 3 }
+		set_global_variable = { ottoman_minority_variable_sivas = 3 }
 	}
 }
 ottoman_minority_variable_check_samsun = {
@@ -3908,9 +3736,8 @@ ottoman_minority_variable_check_samsun = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_samsun = 1 }
-		}
+		set_variable = { ottoman_minority_variable_samsun = 1 }
+		set_global_variable = { ottoman_minority_variable_samsun = 1 }
 	}
 	if = {
 		limit = {
@@ -3919,9 +3746,8 @@ ottoman_minority_variable_check_samsun = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_samsun = 2 }
-		}
+		set_variable = { ottoman_minority_variable_samsun = 2 }
+		set_global_variable = { ottoman_minority_variable_samsun = 2 }
 	}
 }
 ottoman_minority_variable_check_trebizond = {
@@ -3944,9 +3770,8 @@ ottoman_minority_variable_check_trebizond = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_trebizond = 1 }
-		}
+		set_variable = { ottoman_minority_variable_trebizond = 1 }
+		set_global_variable = { ottoman_minority_variable_trebizond = 1 }
 	}
 	if = {
 		limit = {
@@ -3955,9 +3780,8 @@ ottoman_minority_variable_check_trebizond = {
 			    has_dynamic_modifier = { modifier = TUR_greek_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_trebizond = 2 }
-		}
+		set_variable = { ottoman_minority_variable_trebizond = 2 }
+		set_global_variable = { ottoman_minority_variable_trebizond = 2 }
 	}
 }
 ottoman_minority_variable_check_erzurum = {
@@ -3980,9 +3804,8 @@ ottoman_minority_variable_check_erzurum = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_erzurum = 1 }
-		}
+		set_variable = { ottoman_minority_variable_erzurum = 1 }
+		set_global_variable = { ottoman_minority_variable_erzurum = 1 }
 	}
 	if = {
 		limit = {
@@ -3991,9 +3814,8 @@ ottoman_minority_variable_check_erzurum = {
 			    has_dynamic_modifier = { modifier = TUR_armenian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_erzurum = 2 }
-		}
+		set_variable = { ottoman_minority_variable_erzurum = 2 }
+		set_global_variable = { ottoman_minority_variable_erzurum = 2 }
 	}
 	if = {
 		limit = {
@@ -4002,9 +3824,8 @@ ottoman_minority_variable_check_erzurum = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_erzurum = 3 }
-		}
+		set_variable = { ottoman_minority_variable_erzurum = 3 }
+		set_global_variable = { ottoman_minority_variable_erzurum = 3 }
 	}
 }
 ottoman_minority_variable_check_diyarbakir = {
@@ -4027,9 +3848,8 @@ ottoman_minority_variable_check_diyarbakir = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_diyarbakir = 1 }
-		}
+		set_variable = { ottoman_minority_variable_diyarbakir = 1 }
+		set_global_variable = { ottoman_minority_variable_diyarbakir = 1 }
 	}
 	if = {
 		limit = {
@@ -4038,9 +3858,8 @@ ottoman_minority_variable_check_diyarbakir = {
 			    has_dynamic_modifier = { modifier = TUR_kurd_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_diyarbakir = 2 }
-		}
+		set_variable = { ottoman_minority_variable_diyarbakir = 2 }
+		set_global_variable = { ottoman_minority_variable_diyarbakir = 2 }
 	}
 	if = {
 		limit = {
@@ -4049,9 +3868,8 @@ ottoman_minority_variable_check_diyarbakir = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_diyarbakir = 3 }
-		}
+		set_variable = { ottoman_minority_variable_diyarbakir = 3 }
+		set_global_variable = { ottoman_minority_variable_diyarbakir = 3 }
 	}
 }
 ottoman_minority_variable_check_osmaniye = {
@@ -4074,9 +3892,8 @@ ottoman_minority_variable_check_osmaniye = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_osmaniye = 1 }
-		}
+		set_variable = { ottoman_minority_variable_osmaniye = 1 }
+		set_global_variable = { ottoman_minority_variable_osmaniye = 1 }
 	}
 	if = {
 		limit = {
@@ -4085,9 +3902,8 @@ ottoman_minority_variable_check_osmaniye = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_osmaniye = 2 }
-		}
+		set_variable = { ottoman_minority_variable_osmaniye = 2 }
+		set_global_variable = { ottoman_minority_variable_osmaniye = 2 }
 	}
 }
 ottoman_minority_variable_check_antakya = {
@@ -4110,9 +3926,8 @@ ottoman_minority_variable_check_antakya = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_antakya = 1 }
-		}
+		set_variable = { ottoman_minority_variable_antakya = 1 }
+		set_global_variable = { ottoman_minority_variable_antakya = 1 }
 	}
 	if = {
 		limit = {
@@ -4121,9 +3936,8 @@ ottoman_minority_variable_check_antakya = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_antakya = 2 }
-		}
+		set_variable = { ottoman_minority_variable_antakya = 2 }
+		set_global_variable = { ottoman_minority_variable_antakya = 2 }
 	}
 }
 ottoman_minority_variable_check_urfa = {
@@ -4146,9 +3960,8 @@ ottoman_minority_variable_check_urfa = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_urfa = 1 }
-		}
+		set_variable = { ottoman_minority_variable_urfa = 1 }
+		set_global_variable = { ottoman_minority_variable_urfa = 1 }
 	}
 	if = {
 		limit = {
@@ -4157,9 +3970,8 @@ ottoman_minority_variable_check_urfa = {
 			    has_dynamic_modifier = { modifier = TUR_kurd_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_urfa = 2 }
-		}
+		set_variable = { ottoman_minority_variable_urfa = 2 }
+		set_global_variable = { ottoman_minority_variable_urfa = 2 }
 	}
 }
 ottoman_minority_variable_check_van = {
@@ -4182,9 +3994,8 @@ ottoman_minority_variable_check_van = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_van = 1 }
-		}
+		set_variable = { ottoman_minority_variable_van = 1 }
+		set_global_variable = { ottoman_minority_variable_van = 1 }
 	}
 	if = {
 		limit = {
@@ -4193,9 +4004,8 @@ ottoman_minority_variable_check_van = {
 			    has_dynamic_modifier = { modifier = TUR_armenian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_van = 2 }
-		}
+		set_variable = { ottoman_minority_variable_van = 2 }
+		set_global_variable = { ottoman_minority_variable_van = 2 }
 	}
 	if = {
 		limit = {
@@ -4204,9 +4014,8 @@ ottoman_minority_variable_check_van = {
 			    has_dynamic_modifier = { modifier = TUR_kurd_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_van = 3 }
-		}
+		set_variable = { ottoman_minority_variable_van = 3 }
+		set_global_variable = { ottoman_minority_variable_van = 3 }
 	}
 	if = {
 		limit = {
@@ -4215,9 +4024,8 @@ ottoman_minority_variable_check_van = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_van = 4 }
-		}
+		set_variable = { ottoman_minority_variable_van = 4 }
+		set_global_variable = { ottoman_minority_variable_van = 4 }
 	}
 }
 ottoman_minority_variable_check_hakkari = {
@@ -4240,9 +4048,8 @@ ottoman_minority_variable_check_hakkari = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_hakkari = 1 }
-		}
+		set_variable = { ottoman_minority_variable_hakkari = 1 }
+		set_global_variable = { ottoman_minority_variable_hakkari = 1 }
 	}
 	if = {
 		limit = {
@@ -4251,9 +4058,8 @@ ottoman_minority_variable_check_hakkari = {
 			    has_dynamic_modifier = { modifier = TUR_assyrian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_hakkari = 2 }
-		}
+		set_variable = { ottoman_minority_variable_hakkari = 2 }
+		set_global_variable = { ottoman_minority_variable_hakkari = 2 }
 	}
 	if = {
 		limit = {
@@ -4262,9 +4068,8 @@ ottoman_minority_variable_check_hakkari = {
 			    has_dynamic_modifier = { modifier = TUR_kurd_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_hakkari = 3 }
-		}
+		set_variable = { ottoman_minority_variable_hakkari = 3 }
+		set_global_variable = { ottoman_minority_variable_hakkari = 3 }
 	}
 	if = {
 		limit = {
@@ -4273,9 +4078,8 @@ ottoman_minority_variable_check_hakkari = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_hakkari = 4 }
-		}
+		set_variable = { ottoman_minority_variable_hakkari = 4 }
+		set_global_variable = { ottoman_minority_variable_hakkari = 4 }
 	}
 }
 ottoman_minority_variable_check_kars = {
@@ -4298,9 +4102,8 @@ ottoman_minority_variable_check_kars = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kars = 1 }
-		}
+		set_variable = { ottoman_minority_variable_kars = 1 }
+		set_global_variable = { ottoman_minority_variable_kars = 1 }
 	}
 	if = {
 		limit = {
@@ -4309,9 +4112,8 @@ ottoman_minority_variable_check_kars = {
 			    has_dynamic_modifier = { modifier = TUR_armenian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kars = 2 }
-		}
+		set_variable = { ottoman_minority_variable_kars = 2 }
+		set_global_variable = { ottoman_minority_variable_kars = 2 }
 	}
 	if = {
 		limit = {
@@ -4320,9 +4122,8 @@ ottoman_minority_variable_check_kars = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kars = 3 }
-		}
+		set_variable = { ottoman_minority_variable_kars = 3 }
+		set_global_variable = { ottoman_minority_variable_kars = 3 }
 	}
 }
 ottoman_minority_variable_check_artvin = {
@@ -4345,9 +4146,8 @@ ottoman_minority_variable_check_artvin = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_artvin = 1 }
-		}
+		set_variable = { ottoman_minority_variable_artvin = 1 }
+		set_global_variable = { ottoman_minority_variable_artvin = 1 }
 	}
 	if = {
 		limit = {
@@ -4356,9 +4156,8 @@ ottoman_minority_variable_check_artvin = {
 			    has_dynamic_modifier = { modifier = TUR_armenian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_artvin = 2 }
-		}
+		set_variable = { ottoman_minority_variable_artvin = 2 }
+		set_global_variable = { ottoman_minority_variable_artvin = 2 }
 	}
 	if = {
 		limit = {
@@ -4367,9 +4166,8 @@ ottoman_minority_variable_check_artvin = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_artvin = 3 }
-		}
+		set_variable = { ottoman_minority_variable_artvin = 3 }
+		set_global_variable = { ottoman_minority_variable_artvin = 3 }
 	}
 }
 ottoman_minority_variable_check_batumi = {
@@ -4392,9 +4190,8 @@ ottoman_minority_variable_check_batumi = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_batumi = 1 }
-		}
+		set_variable = { ottoman_minority_variable_batumi = 1 }
+		set_global_variable = { ottoman_minority_variable_batumi = 1 }
 	}
 	if = {
 		limit = {
@@ -4403,9 +4200,8 @@ ottoman_minority_variable_check_batumi = {
 			    has_dynamic_modifier = { modifier = TUR_georgian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_batumi = 2 }
-		}
+		set_variable = { ottoman_minority_variable_batumi = 2 }
+		set_global_variable = { ottoman_minority_variable_batumi = 2 }
 	}
 }
 ottoman_minority_variable_check_adjaria = {
@@ -4428,9 +4224,8 @@ ottoman_minority_variable_check_adjaria = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_adjaria = 1 }
-		}
+		set_variable = { ottoman_minority_variable_adjaria = 1 }
+		set_global_variable = { ottoman_minority_variable_adjaria = 1 }
 	}
 	if = {
 		limit = {
@@ -4439,9 +4234,8 @@ ottoman_minority_variable_check_adjaria = {
 			    has_dynamic_modifier = { modifier = TUR_georgian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_adjaria = 2 }
-		}
+		set_variable = { ottoman_minority_variable_adjaria = 2 }
+		set_global_variable = { ottoman_minority_variable_adjaria = 2 }
 	}
 }
 ottoman_minority_variable_check_aleksandrapol = {
@@ -4464,9 +4258,8 @@ ottoman_minority_variable_check_aleksandrapol = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_aleksandrapol = 1 }
-		}
+		set_variable = { ottoman_minority_variable_aleksandrapol = 1 }
+		set_global_variable = { ottoman_minority_variable_aleksandrapol = 1 }
 	}
 	if = {
 		limit = {
@@ -4475,9 +4268,8 @@ ottoman_minority_variable_check_aleksandrapol = {
 			    has_dynamic_modifier = { modifier = TUR_armenian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_aleksandrapol = 2 }
-		}
+		set_variable = { ottoman_minority_variable_aleksandrapol = 2 }
+		set_global_variable = { ottoman_minority_variable_aleksandrapol = 2 }
 	}
 	if = {
 		limit = {
@@ -4486,9 +4278,8 @@ ottoman_minority_variable_check_aleksandrapol = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_aleksandrapol = 3 }
-		}
+		set_variable = { ottoman_minority_variable_aleksandrapol = 3 }
+		set_global_variable = { ottoman_minority_variable_aleksandrapol = 3 }
 	}
 }
 ottoman_minority_variable_check_erivan = {
@@ -4511,9 +4302,8 @@ ottoman_minority_variable_check_erivan = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_erivan = 1 }
-		}
+		set_variable = { ottoman_minority_variable_erivan = 1 }
+		set_global_variable = { ottoman_minority_variable_erivan = 1 }
 	}
 	if = {
 		limit = {
@@ -4522,9 +4312,8 @@ ottoman_minority_variable_check_erivan = {
 			    has_dynamic_modifier = { modifier = TUR_armenian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_erivan = 2 }
-		}
+		set_variable = { ottoman_minority_variable_erivan = 2 }
+		set_global_variable = { ottoman_minority_variable_erivan = 2 }
 	}
 	if = {
 		limit = {
@@ -4533,9 +4322,8 @@ ottoman_minority_variable_check_erivan = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_erivan = 3 }
-		}
+		set_variable = { ottoman_minority_variable_erivan = 3 }
+		set_global_variable = { ottoman_minority_variable_erivan = 3 }
 	}
 }
 ottoman_minority_variable_check_elisabethpol = {
@@ -4559,9 +4347,8 @@ ottoman_minority_variable_check_elisabethpol = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_elisabethpol = 1 }
-		}
+		set_variable = { ottoman_minority_variable_elisabethpol = 1 }
+		set_global_variable = { ottoman_minority_variable_elisabethpol = 1 }
 	}
 	if = {
 		limit = {
@@ -4570,9 +4357,8 @@ ottoman_minority_variable_check_elisabethpol = {
 			    has_dynamic_modifier = { modifier = TUR_armenian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_elisabethpol = 2 }
-		}
+		set_variable = { ottoman_minority_variable_elisabethpol = 2 }
+		set_global_variable = { ottoman_minority_variable_elisabethpol = 2 }
 	}
 	if = {
 		limit = {
@@ -4581,9 +4367,8 @@ ottoman_minority_variable_check_elisabethpol = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_elisabethpol = 3 }
-		}
+		set_variable = { ottoman_minority_variable_elisabethpol = 3 }
+		set_global_variable = { ottoman_minority_variable_elisabethpol = 3 }
 	}
 	if = {
 		limit = {
@@ -4592,9 +4377,8 @@ ottoman_minority_variable_check_elisabethpol = {
 			    has_dynamic_modifier = { modifier = TUR_azerbaijani_cooperation }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_elisabethpol = 4 }
-		}
+		set_variable = { ottoman_minority_variable_elisabethpol = 4 }
+		set_global_variable = { ottoman_minority_variable_elisabethpol = 4 }
 	}
 }
 ottoman_minority_variable_check_georgia = {
@@ -4617,9 +4401,8 @@ ottoman_minority_variable_check_georgia = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_georgia = 1 }
-		}
+		set_variable = { ottoman_minority_variable_georgia = 1 }
+		set_global_variable = { ottoman_minority_variable_georgia = 1 }
 	}
 	if = {
 		limit = {
@@ -4628,9 +4411,8 @@ ottoman_minority_variable_check_georgia = {
 			    has_dynamic_modifier = { modifier = TUR_georgian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_georgia = 2 }
-		}
+		set_variable = { ottoman_minority_variable_georgia = 2 }
+		set_global_variable = { ottoman_minority_variable_georgia = 2 }
 	}
 }
 ottoman_minority_variable_check_sochi = {
@@ -4653,9 +4435,8 @@ ottoman_minority_variable_check_sochi = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_sochi = 1 }
-		}
+		set_variable = { ottoman_minority_variable_sochi = 1 }
+		set_global_variable = { ottoman_minority_variable_sochi = 1 }
 	}
 	if = {
 		limit = {
@@ -4664,9 +4445,8 @@ ottoman_minority_variable_check_sochi = {
 			    has_dynamic_modifier = { modifier = TUR_georgian_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_sochi = 2 }
-		}
+		set_variable = { ottoman_minority_variable_sochi = 2 }
+		set_global_variable = { ottoman_minority_variable_sochi = 2 }
 	}
 }
 ottoman_minority_variable_check_aleppo = {
@@ -4689,9 +4469,8 @@ ottoman_minority_variable_check_aleppo = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_aleppo = 1 }
-		}
+		set_variable = { ottoman_minority_variable_aleppo = 1 }
+		set_global_variable = { ottoman_minority_variable_aleppo = 1 }
 	}
 	if = {
 		limit = {
@@ -4700,9 +4479,8 @@ ottoman_minority_variable_check_aleppo = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_aleppo = 2 }
-		}
+		set_variable = { ottoman_minority_variable_aleppo = 2 }
+		set_global_variable = { ottoman_minority_variable_aleppo = 2 }
 	}
 }
 ottoman_minority_variable_check_ayn_al_arab = {
@@ -4725,9 +4503,8 @@ ottoman_minority_variable_check_ayn_al_arab = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_ayn_al_arab = 1 }
-		}
+		set_variable = { ottoman_minority_variable_ayn_al_arab = 1 }
+		set_global_variable = { ottoman_minority_variable_ayn_al_arab = 1 }
 	}
 	if = {
 		limit = {
@@ -4736,9 +4513,8 @@ ottoman_minority_variable_check_ayn_al_arab = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_ayn_al_arab = 2 }
-		}
+		set_variable = { ottoman_minority_variable_ayn_al_arab = 2 }
+		set_global_variable = { ottoman_minority_variable_ayn_al_arab = 2 }
 	}
 }
 ottoman_minority_variable_check_mosul = {
@@ -4761,9 +4537,8 @@ ottoman_minority_variable_check_mosul = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_mosul = 1 }
-		}
+		set_variable = { ottoman_minority_variable_mosul = 1 }
+		set_global_variable = { ottoman_minority_variable_mosul = 1 }
 	}
 	if = {
 		limit = {
@@ -4772,9 +4547,8 @@ ottoman_minority_variable_check_mosul = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_mosul = 2 }
-		}
+		set_variable = { ottoman_minority_variable_mosul = 2 }
+		set_global_variable = { ottoman_minority_variable_mosul = 2 }
 	}
 }
 ottoman_minority_variable_check_erbil = {
@@ -4797,9 +4571,8 @@ ottoman_minority_variable_check_erbil = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_erbil = 1 }
-		}
+		set_variable = { ottoman_minority_variable_erbil = 1 }
+		set_global_variable = { ottoman_minority_variable_erbil = 1 }
 	}
 	if = {
 		limit = {
@@ -4808,9 +4581,8 @@ ottoman_minority_variable_check_erbil = {
 			    has_dynamic_modifier = { modifier = TUR_kurd_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_erbil = 2 }
-		}
+		set_variable = { ottoman_minority_variable_erbil = 2 }
+		set_global_variable = { ottoman_minority_variable_erbil = 2 }
 	}
 }
 ottoman_minority_variable_check_tikrit = {
@@ -4833,9 +4605,8 @@ ottoman_minority_variable_check_tikrit = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_tikrit = 1 }
-		}
+		set_variable = { ottoman_minority_variable_tikrit = 1 }
+		set_global_variable = { ottoman_minority_variable_tikrit = 1 }
 	}
 	if = {
 		limit = {
@@ -4844,9 +4615,8 @@ ottoman_minority_variable_check_tikrit = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_tikrit = 2 }
-		}
+		set_variable = { ottoman_minority_variable_tikrit = 2 }
+		set_global_variable = { ottoman_minority_variable_tikrit = 2 }
 	}
 }
 ottoman_minority_variable_check_mamuret_ul_aziz = {
@@ -4869,9 +4639,8 @@ ottoman_minority_variable_check_mamuret_ul_aziz = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_mamuret_ul_aziz = 1 }
-		}
+		set_variable = { ottoman_minority_variable_mamuret_ul_aziz = 1 }
+		set_global_variable = { ottoman_minority_variable_mamuret_ul_aziz = 1 }
 	}
 	if = {
 		limit = {
@@ -4880,9 +4649,8 @@ ottoman_minority_variable_check_mamuret_ul_aziz = {
 			    has_dynamic_modifier = { modifier = TUR_kurd_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_mamuret_ul_aziz = 2 }
-		}
+		set_variable = { ottoman_minority_variable_mamuret_ul_aziz = 2 }
+		set_global_variable = { ottoman_minority_variable_mamuret_ul_aziz = 2 }
 	}
 	if = {
 		limit = {
@@ -4891,9 +4659,8 @@ ottoman_minority_variable_check_mamuret_ul_aziz = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_mamuret_ul_aziz = 3 }
-		}
+		set_variable = { ottoman_minority_variable_mamuret_ul_aziz = 3 }
+		set_global_variable = { ottoman_minority_variable_mamuret_ul_aziz = 3 }
 	}
 }
 ottoman_minority_variable_check_oman = {
@@ -4916,9 +4683,8 @@ ottoman_minority_variable_check_oman = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_oman = 1 }
-		}
+		set_variable = { ottoman_minority_variable_oman = 1 }
+		set_global_variable = { ottoman_minority_variable_oman = 1 }
 	}
 	if = {
 		limit = {
@@ -4927,9 +4693,8 @@ ottoman_minority_variable_check_oman = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_oman = 2 }
-		}
+		set_variable = { ottoman_minority_variable_oman = 2 }
+		set_global_variable = { ottoman_minority_variable_oman = 2 }
 	}
 }
 ottoman_minority_variable_check_kirkuk = {
@@ -4952,9 +4717,8 @@ ottoman_minority_variable_check_kirkuk = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kirkuk = 1 }
-		}
+		set_variable = { ottoman_minority_variable_kirkuk = 1 }
+		set_global_variable = { ottoman_minority_variable_kirkuk = 1 }
 	}
 	if = {
 		limit = {
@@ -4963,9 +4727,8 @@ ottoman_minority_variable_check_kirkuk = {
 			    has_dynamic_modifier = { modifier = TUR_kurd_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kirkuk = 2 }
-		}
+		set_variable = { ottoman_minority_variable_kirkuk = 2 }
+		set_global_variable = { ottoman_minority_variable_kirkuk = 2 }
 	}
 }
 ottoman_minority_variable_check_al_hasakah = {
@@ -4988,9 +4751,8 @@ ottoman_minority_variable_check_al_hasakah = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_al_hasakah = 1 }
-		}
+		set_variable = { ottoman_minority_variable_al_hasakah = 1 }
+		set_global_variable = { ottoman_minority_variable_al_hasakah = 1 }
 	}
 	if = {
 		limit = {
@@ -4999,9 +4761,8 @@ ottoman_minority_variable_check_al_hasakah = {
 			    has_dynamic_modifier = { modifier = TUR_kurd_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_al_hasakah = 2 }
-		}
+		set_variable = { ottoman_minority_variable_al_hasakah = 2 }
+		set_global_variable = { ottoman_minority_variable_al_hasakah = 2 }
 	}
 }
 ottoman_minority_variable_check_mahabad = {
@@ -5024,9 +4785,8 @@ ottoman_minority_variable_check_mahabad = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_mahabad = 1 }
-		}
+		set_variable = { ottoman_minority_variable_mahabad = 1 }
+		set_global_variable = { ottoman_minority_variable_mahabad = 1 }
 	}
 	if = {
 		limit = {
@@ -5035,9 +4795,8 @@ ottoman_minority_variable_check_mahabad = {
 			    has_dynamic_modifier = { modifier = TUR_kurd_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_mahabad = 2 }
-		}
+		set_variable = { ottoman_minority_variable_mahabad = 2 }
+		set_global_variable = { ottoman_minority_variable_mahabad = 2 }
 	}
 }
 ottoman_minority_variable_check_kurdistan = {
@@ -5060,9 +4819,8 @@ ottoman_minority_variable_check_kurdistan = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kurdistan = 1 }
-		}
+		set_variable = { ottoman_minority_variable_kurdistan = 1 }
+		set_global_variable = { ottoman_minority_variable_kurdistan = 1 }
 	}
 	if = {
 		limit = {
@@ -5071,9 +4829,8 @@ ottoman_minority_variable_check_kurdistan = {
 			    has_dynamic_modifier = { modifier = TUR_kurd_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kurdistan = 2 }
-		}
+		set_variable = { ottoman_minority_variable_kurdistan = 2 }
+		set_global_variable = { ottoman_minority_variable_kurdistan = 2 }
 	}
 }
 ottoman_minority_variable_check_khuzestan = {
@@ -5096,9 +4853,8 @@ ottoman_minority_variable_check_khuzestan = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_khuzestan = 1 }
-		}
+		set_variable = { ottoman_minority_variable_khuzestan = 1 }
+		set_global_variable = { ottoman_minority_variable_khuzestan = 1 }
 	}
 	if = {
 		limit = {
@@ -5107,9 +4863,8 @@ ottoman_minority_variable_check_khuzestan = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_khuzestan = 2 }
-		}
+		set_variable = { ottoman_minority_variable_khuzestan = 2 }
+		set_global_variable = { ottoman_minority_variable_khuzestan = 2 }
 	}
 }
 ottoman_minority_variable_check_baghdad = {
@@ -5132,9 +4887,8 @@ ottoman_minority_variable_check_baghdad = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_baghdad = 1 }
-		}
+		set_variable = { ottoman_minority_variable_baghdad = 1 }
+		set_global_variable = { ottoman_minority_variable_baghdad = 1 }
 	}
 	if = {
 		limit = {
@@ -5143,9 +4897,8 @@ ottoman_minority_variable_check_baghdad = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_baghdad = 2 }
-		}
+		set_variable = { ottoman_minority_variable_baghdad = 2 }
+		set_global_variable = { ottoman_minority_variable_baghdad = 2 }
 	}
 }
 ottoman_minority_variable_check_basra = {
@@ -5168,9 +4921,8 @@ ottoman_minority_variable_check_basra = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_basra = 1 }
-		}
+		set_variable = { ottoman_minority_variable_basra = 1 }
+		set_global_variable = { ottoman_minority_variable_basra = 1 }
 	}
 	if = {
 		limit = {
@@ -5179,9 +4931,8 @@ ottoman_minority_variable_check_basra = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_basra = 2 }
-		}
+		set_variable = { ottoman_minority_variable_basra = 2 }
+		set_global_variable = { ottoman_minority_variable_basra = 2 }
 	}
 }
 ottoman_minority_variable_check_kuwait = {
@@ -5204,9 +4955,8 @@ ottoman_minority_variable_check_kuwait = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kuwait = 1 }
-		}
+		set_variable = { ottoman_minority_variable_kuwait = 1 }
+		set_global_variable = { ottoman_minority_variable_kuwait = 1 }
 	}
 	if = {
 		limit = {
@@ -5215,9 +4965,8 @@ ottoman_minority_variable_check_kuwait = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kuwait = 2 }
-		}
+		set_variable = { ottoman_minority_variable_kuwait = 2 }
+		set_global_variable = { ottoman_minority_variable_kuwait = 2 }
 	}
 	if = {
 		limit = {
@@ -5226,9 +4975,8 @@ ottoman_minority_variable_check_kuwait = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kuwait = 3 }
-		}
+		set_variable = { ottoman_minority_variable_kuwait = 3 }
+		set_global_variable = { ottoman_minority_variable_kuwait = 3 }
 	}
 }
 ottoman_minority_variable_check_jahra = {
@@ -5251,9 +4999,8 @@ ottoman_minority_variable_check_jahra = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_jahra = 1 }
-		}
+		set_variable = { ottoman_minority_variable_jahra = 1 }
+		set_global_variable = { ottoman_minority_variable_jahra = 1 }
 	}
 	if = {
 		limit = {
@@ -5262,9 +5009,8 @@ ottoman_minority_variable_check_jahra = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_jahra = 2 }
-		}
+		set_variable = { ottoman_minority_variable_jahra = 2 }
+		set_global_variable = { ottoman_minority_variable_jahra = 2 }
 	}
 }
 ottoman_minority_variable_check_wafra = {
@@ -5287,9 +5033,8 @@ ottoman_minority_variable_check_wafra = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_wafra = 1 }
-		}
+		set_variable = { ottoman_minority_variable_wafra = 1 }
+		set_global_variable = { ottoman_minority_variable_wafra = 1 }
 	}
 	if = {
 		limit = {
@@ -5298,9 +5043,8 @@ ottoman_minority_variable_check_wafra = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_wafra = 2 }
-		}
+		set_variable = { ottoman_minority_variable_wafra = 2 }
+		set_global_variable = { ottoman_minority_variable_wafra = 2 }
 	}
 }
 ottoman_minority_variable_check_hafar_al_batin = {
@@ -5323,9 +5067,8 @@ ottoman_minority_variable_check_hafar_al_batin = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_hafar_al_batin = 1 }
-		}
+		set_variable = { ottoman_minority_variable_hafar_al_batin = 1 }
+		set_global_variable = { ottoman_minority_variable_hafar_al_batin = 1 }
 	}
 	if = {
 		limit = {
@@ -5334,9 +5077,8 @@ ottoman_minority_variable_check_hafar_al_batin = {
 				has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_hafar_al_batin = 2 }
-		}
+		set_variable = { ottoman_minority_variable_hafar_al_batin = 2 }
+		set_global_variable = { ottoman_minority_variable_hafar_al_batin = 2 }
 	}
 }
 ottoman_minority_variable_check_al_hajara = {
@@ -5359,9 +5101,8 @@ ottoman_minority_variable_check_al_hajara = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_al_hajara = 1 }
-		}
+		set_variable = { ottoman_minority_variable_al_hajara = 1 }
+		set_global_variable = { ottoman_minority_variable_al_hajara = 1 }
 	}
 	if = {
 		limit = {
@@ -5370,9 +5111,8 @@ ottoman_minority_variable_check_al_hajara = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_al_hajara = 2 }
-		}
+		set_variable = { ottoman_minority_variable_al_hajara = 2 }
+		set_global_variable = { ottoman_minority_variable_al_hajara = 2 }
 	}
 }
 ottoman_minority_variable_check_al_hasa = {
@@ -5395,9 +5135,8 @@ ottoman_minority_variable_check_al_hasa = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_al_hasa = 1 }
-		}
+		set_variable = { ottoman_minority_variable_al_hasa = 1 }
+		set_global_variable = { ottoman_minority_variable_al_hasa = 1 }
 	}
 	if = {
 		limit = {
@@ -5406,9 +5145,8 @@ ottoman_minority_variable_check_al_hasa = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_al_hasa = 2 }
-		}
+		set_variable = { ottoman_minority_variable_al_hasa = 2 }
+		set_global_variable = { ottoman_minority_variable_al_hasa = 2 }
 	}
 }
 ottoman_minority_variable_check_qatar = {
@@ -5431,9 +5169,8 @@ ottoman_minority_variable_check_qatar = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_qatar = 1 }
-		}
+		set_variable = { ottoman_minority_variable_qatar = 1 }
+		set_global_variable = { ottoman_minority_variable_qatar = 1 }
 	}
 	if = {
 		limit = {
@@ -5442,9 +5179,8 @@ ottoman_minority_variable_check_qatar = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_qatar = 2 }
-		}
+		set_variable = { ottoman_minority_variable_qatar = 2 }
+		set_global_variable = { ottoman_minority_variable_qatar = 2 }
 	}
 	if = {
 		limit = {
@@ -5453,9 +5189,8 @@ ottoman_minority_variable_check_qatar = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_qatar = 3 }
-		}
+		set_variable = { ottoman_minority_variable_qatar = 3 }
+		set_global_variable = { ottoman_minority_variable_qatar = 3 }
 	}
 }
 ottoman_minority_variable_check_bahrain = {
@@ -5478,9 +5213,8 @@ ottoman_minority_variable_check_bahrain = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_bahrain = 1 }
-		}
+		set_variable = { ottoman_minority_variable_bahrain = 1 }
+		set_global_variable = { ottoman_minority_variable_bahrain = 1 }
 	}
 	if = {
 		limit = {
@@ -5489,9 +5223,8 @@ ottoman_minority_variable_check_bahrain = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_bahrain = 2 }
-		}
+		set_variable = { ottoman_minority_variable_bahrain = 2 }
+		set_global_variable = { ottoman_minority_variable_bahrain = 2 }
 	}
 	if = {
 		limit = {
@@ -5500,9 +5233,8 @@ ottoman_minority_variable_check_bahrain = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_bahrain = 3 }
-		}
+		set_variable = { ottoman_minority_variable_bahrain = 3 }
+		set_global_variable = { ottoman_minority_variable_bahrain = 3 }
 	}
 }
 ottoman_minority_variable_check_abu_dhabi = {
@@ -5525,9 +5257,8 @@ ottoman_minority_variable_check_abu_dhabi = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_abu_dhabi = 1 }
-		}
+		set_variable = { ottoman_minority_variable_abu_dhabi = 1 }
+		set_global_variable = { ottoman_minority_variable_abu_dhabi = 1 }
 	}
 	if = {
 		limit = {
@@ -5536,9 +5267,8 @@ ottoman_minority_variable_check_abu_dhabi = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_abu_dhabi = 2 }
-		}
+		set_variable = { ottoman_minority_variable_abu_dhabi = 2 }
+		set_global_variable = { ottoman_minority_variable_abu_dhabi = 2 }
 	}
 	if = {
 		limit = {
@@ -5547,9 +5277,8 @@ ottoman_minority_variable_check_abu_dhabi = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_abu_dhabi = 3 }
-		}
+		set_variable = { ottoman_minority_variable_abu_dhabi = 3 }
+		set_global_variable = { ottoman_minority_variable_abu_dhabi = 3 }
 	}
 }
 ottoman_minority_variable_check_muscat = {
@@ -5572,9 +5301,8 @@ ottoman_minority_variable_check_muscat = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_muscat = 1 }
-		}
+		set_variable = { ottoman_minority_variable_muscat = 1 }
+		set_global_variable = { ottoman_minority_variable_muscat = 1 }
 	}
 	if = {
 		limit = {
@@ -5583,9 +5311,8 @@ ottoman_minority_variable_check_muscat = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_muscat = 2 }
-		}
+		set_variable = { ottoman_minority_variable_muscat = 2 }
+		set_global_variable = { ottoman_minority_variable_muscat = 2 }
 	}
 }
 ottoman_minority_variable_check_hail = {
@@ -5608,9 +5335,8 @@ ottoman_minority_variable_check_hail = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_hail = 1 }
-		}
+		set_variable = { ottoman_minority_variable_hail = 1 }
+		set_global_variable = { ottoman_minority_variable_hail = 1 }
 	}
 	if = {
 		limit = {
@@ -5619,9 +5345,8 @@ ottoman_minority_variable_check_hail = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_hail = 2 }
-		}
+		set_variable = { ottoman_minority_variable_hail = 2 }
+		set_global_variable = { ottoman_minority_variable_hail = 2 }
 	}
 }
 ottoman_minority_variable_check_latakia = {
@@ -5644,9 +5369,8 @@ ottoman_minority_variable_check_latakia = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_latakia = 1 }
-		}
+		set_variable = { ottoman_minority_variable_latakia = 1 }
+		set_global_variable = { ottoman_minority_variable_latakia = 1 }
 	}
 	if = {
 		limit = {
@@ -5655,9 +5379,8 @@ ottoman_minority_variable_check_latakia = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_latakia = 2 }
-		}
+		set_variable = { ottoman_minority_variable_latakia = 2 }
+		set_global_variable = { ottoman_minority_variable_latakia = 2 }
 	}
 }
 ottoman_minority_variable_check_damascus = {
@@ -5680,9 +5403,8 @@ ottoman_minority_variable_check_damascus = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_damascus = 1 }
-		}
+		set_variable = { ottoman_minority_variable_damascus = 1 }
+		set_global_variable = { ottoman_minority_variable_damascus = 1 }
 	}
 	if = {
 		limit = {
@@ -5691,9 +5413,8 @@ ottoman_minority_variable_check_damascus = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_damascus = 2 }
-		}
+		set_variable = { ottoman_minority_variable_damascus = 2 }
+		set_global_variable = { ottoman_minority_variable_damascus = 2 }
 	}
 	if = {
 		limit = {
@@ -5702,9 +5423,8 @@ ottoman_minority_variable_check_damascus = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_damascus = 3 }
-		}
+		set_variable = { ottoman_minority_variable_damascus = 3 }
+		set_global_variable = { ottoman_minority_variable_damascus = 3 }
 	}
 }
 ottoman_minority_variable_check_badiyah_ash_sha = {
@@ -5727,9 +5447,8 @@ ottoman_minority_variable_check_badiyah_ash_sha = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_badiyah_ash_sha = 1 }
-		}
+		set_variable = { ottoman_minority_variable_badiyah_ash_sha = 1 }
+		set_global_variable = { ottoman_minority_variable_badiyah_ash_sha = 1 }
 	}
 	if = {
 		limit = {
@@ -5738,9 +5457,8 @@ ottoman_minority_variable_check_badiyah_ash_sha = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_badiyah_ash_sha = 2 }
-		}
+		set_variable = { ottoman_minority_variable_badiyah_ash_sha = 2 }
+		set_global_variable = { ottoman_minority_variable_badiyah_ash_sha = 2 }
 	}
 }
 ottoman_minority_variable_check_mount_lebanon = {
@@ -5763,9 +5481,8 @@ ottoman_minority_variable_check_mount_lebanon = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_mount_lebanon = 1 }
-		}
+		set_variable = { ottoman_minority_variable_mount_lebanon = 1 }
+		set_global_variable = { ottoman_minority_variable_mount_lebanon = 1 }
 	}
 	if = {
 		limit = {
@@ -5774,9 +5491,8 @@ ottoman_minority_variable_check_mount_lebanon = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_mount_lebanon = 2 }
-		}
+		set_variable = { ottoman_minority_variable_mount_lebanon = 2 }
+		set_global_variable = { ottoman_minority_variable_mount_lebanon = 2 }
 	}
 	if = {
 		limit = {
@@ -5785,9 +5501,8 @@ ottoman_minority_variable_check_mount_lebanon = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_mount_lebanon = 3 }
-		}
+		set_variable = { ottoman_minority_variable_mount_lebanon = 3 }
+		set_global_variable = { ottoman_minority_variable_mount_lebanon = 3 }
 	}
 }
 ottoman_minority_variable_check_palestine = {
@@ -5810,9 +5525,8 @@ ottoman_minority_variable_check_palestine = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_palestine = 1 }
-		}
+		set_variable = { ottoman_minority_variable_palestine = 1 }
+		set_global_variable = { ottoman_minority_variable_palestine = 1 }
 	}
 	if = {
 		limit = {
@@ -5821,9 +5535,8 @@ ottoman_minority_variable_check_palestine = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_palestine = 2 }
-		}
+		set_variable = { ottoman_minority_variable_palestine = 2 }
+		set_global_variable = { ottoman_minority_variable_palestine = 2 }
 	}
 }
 ottoman_minority_variable_check_haifa = {
@@ -5846,9 +5559,8 @@ ottoman_minority_variable_check_haifa = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_haifa = 1 }
-		}
+		set_variable = { ottoman_minority_variable_haifa = 1 }
+		set_global_variable = { ottoman_minority_variable_haifa = 1 }
 	}
 	if = {
 		limit = {
@@ -5857,9 +5569,8 @@ ottoman_minority_variable_check_haifa = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_haifa = 2 }
-		}
+		set_variable = { ottoman_minority_variable_haifa = 2 }
+		set_global_variable = { ottoman_minority_variable_haifa = 2 }
 	}
 }
 ottoman_minority_variable_check_beersheba = {
@@ -5882,9 +5593,8 @@ ottoman_minority_variable_check_beersheba = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_beersheba = 1 }
-		}
+		set_variable = { ottoman_minority_variable_beersheba = 1 }
+		set_global_variable = { ottoman_minority_variable_beersheba = 1 }
 	}
 	if = {
 		limit = {
@@ -5893,9 +5603,8 @@ ottoman_minority_variable_check_beersheba = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_beersheba = 2 }
-		}
+		set_variable = { ottoman_minority_variable_beersheba = 2 }
+		set_global_variable = { ottoman_minority_variable_beersheba = 2 }
 	}
 }
 ottoman_minority_variable_check_moab = {
@@ -5918,9 +5627,8 @@ ottoman_minority_variable_check_moab = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_moab = 1 }
-		}
+		set_variable = { ottoman_minority_variable_moab = 1 }
+		set_global_variable = { ottoman_minority_variable_moab = 1 }
 	}
 	if = {
 		limit = {
@@ -5929,9 +5637,8 @@ ottoman_minority_variable_check_moab = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_moab = 2 }
-		}
+		set_variable = { ottoman_minority_variable_moab = 2 }
+		set_global_variable = { ottoman_minority_variable_moab = 2 }
 	}
 }
 ottoman_minority_variable_check_ruwaished = {
@@ -5954,9 +5661,8 @@ ottoman_minority_variable_check_ruwaished = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_ruwaished = 1 }
-		}
+		set_variable = { ottoman_minority_variable_ruwaished = 1 }
+		set_global_variable = { ottoman_minority_variable_ruwaished = 1 }
 	}
 	if = {
 		limit = {
@@ -5965,9 +5671,8 @@ ottoman_minority_variable_check_ruwaished = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_ruwaished = 2 }
-		}
+		set_variable = { ottoman_minority_variable_ruwaished = 2 }
+		set_global_variable = { ottoman_minority_variable_ruwaished = 2 }
 	}
 }
 ottoman_minority_variable_check_sinai = {
@@ -5990,9 +5695,8 @@ ottoman_minority_variable_check_sinai = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_sinai = 1 }
-		}
+		set_variable = { ottoman_minority_variable_sinai = 1 }
+		set_global_variable = { ottoman_minority_variable_sinai = 1 }
 	}
 	if = {
 		limit = {
@@ -6001,9 +5705,8 @@ ottoman_minority_variable_check_sinai = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_sinai = 2 }
-		}
+		set_variable = { ottoman_minority_variable_sinai = 2 }
+		set_global_variable = { ottoman_minority_variable_sinai = 2 }
 	}
 }
 ottoman_minority_variable_check_hejaz = {
@@ -6026,9 +5729,8 @@ ottoman_minority_variable_check_hejaz = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_hejaz = 1 }
-		}
+		set_variable = { ottoman_minority_variable_hejaz = 1 }
+		set_global_variable = { ottoman_minority_variable_hejaz = 1 }
 	}
 	if = {
 		limit = {
@@ -6037,9 +5739,8 @@ ottoman_minority_variable_check_hejaz = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_hejaz = 2 }
-		}
+		set_variable = { ottoman_minority_variable_hejaz = 2 }
+		set_global_variable = { ottoman_minority_variable_hejaz = 2 }
 	}
 	if = {
 		limit = {
@@ -6048,9 +5749,8 @@ ottoman_minority_variable_check_hejaz = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_hejaz = 3 }
-		}
+		set_variable = { ottoman_minority_variable_hejaz = 3 }
+		set_global_variable = { ottoman_minority_variable_hejaz = 3 }
 	}
 }
 ottoman_minority_variable_check_medina = {
@@ -6073,9 +5773,8 @@ ottoman_minority_variable_check_medina = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_medina = 1 }
-		}
+		set_variable = { ottoman_minority_variable_medina = 1 }
+		set_global_variable = { ottoman_minority_variable_medina = 1 }
 	}
 	if = {
 		limit = {
@@ -6084,9 +5783,8 @@ ottoman_minority_variable_check_medina = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_medina = 2 }
-		}
+		set_variable = { ottoman_minority_variable_medina = 2 }
+		set_global_variable = { ottoman_minority_variable_medina = 2 }
 	}
 	if = {
 		limit = {
@@ -6095,9 +5793,8 @@ ottoman_minority_variable_check_medina = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_medina = 3 }
-		}
+		set_variable = { ottoman_minority_variable_medina = 3 }
+		set_global_variable = { ottoman_minority_variable_medina = 3 }
 	}
 }
 ottoman_minority_variable_check_nejd = {
@@ -6120,9 +5817,8 @@ ottoman_minority_variable_check_nejd = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_nejd = 1 }
-		}
+		set_variable = { ottoman_minority_variable_nejd = 1 }
+		set_global_variable = { ottoman_minority_variable_nejd = 1 }
 	}
 	if = {
 		limit = {
@@ -6131,9 +5827,8 @@ ottoman_minority_variable_check_nejd = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_nejd = 2 }
-		}
+		set_variable = { ottoman_minority_variable_nejd = 2 }
+		set_global_variable = { ottoman_minority_variable_nejd = 2 }
 	}
 }
 ottoman_minority_variable_check_rub_al_khali = {
@@ -6156,9 +5851,8 @@ ottoman_minority_variable_check_rub_al_khali = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_rub_al_khali = 1 }
-		}
+		set_variable = { ottoman_minority_variable_rub_al_khali = 1 }
+		set_global_variable = { ottoman_minority_variable_rub_al_khali = 1 }
 	}
 	if = {
 		limit = {
@@ -6167,9 +5861,8 @@ ottoman_minority_variable_check_rub_al_khali = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_rub_al_khali = 2 }
-		}
+		set_variable = { ottoman_minority_variable_rub_al_khali = 2 }
+		set_global_variable = { ottoman_minority_variable_rub_al_khali = 2 }
 	}
 }
 ottoman_minority_variable_check_asir = {
@@ -6192,9 +5885,8 @@ ottoman_minority_variable_check_asir = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_asir = 1 }
-		}
+		set_variable = { ottoman_minority_variable_asir = 1 }
+		set_global_variable = { ottoman_minority_variable_asir = 1 }
 	}
 	if = {
 		limit = {
@@ -6203,9 +5895,8 @@ ottoman_minority_variable_check_asir = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_asir = 2 }
-		}
+		set_variable = { ottoman_minority_variable_asir = 2 }
+		set_global_variable = { ottoman_minority_variable_asir = 2 }
 	}
 }
 ottoman_minority_variable_check_upper_asir = {
@@ -6228,9 +5919,8 @@ ottoman_minority_variable_check_upper_asir = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_upper_asir = 1 }
-		}
+		set_variable = { ottoman_minority_variable_upper_asir = 1 }
+		set_global_variable = { ottoman_minority_variable_upper_asir = 1 }
 	}
 	if = {
 		limit = {
@@ -6239,9 +5929,8 @@ ottoman_minority_variable_check_upper_asir = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_upper_asir = 2 }
-		}
+		set_variable = { ottoman_minority_variable_upper_asir = 2 }
+		set_global_variable = { ottoman_minority_variable_upper_asir = 2 }
 	}
 }
 ottoman_minority_variable_check_yemen = {
@@ -6264,9 +5953,8 @@ ottoman_minority_variable_check_yemen = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_yemen = 1 }
-		}
+		set_variable = { ottoman_minority_variable_yemen = 1 }
+		set_global_variable = { ottoman_minority_variable_yemen = 1 }
 	}
 	if = {
 		limit = {
@@ -6275,9 +5963,8 @@ ottoman_minority_variable_check_yemen = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_yemen = 2 }
-		}
+		set_variable = { ottoman_minority_variable_yemen = 2 }
+		set_global_variable = { ottoman_minority_variable_yemen = 2 }
 	}
 	if = {
 		limit = {
@@ -6286,9 +5973,8 @@ ottoman_minority_variable_check_yemen = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_yemen = 3 }
-		}
+		set_variable = { ottoman_minority_variable_yemen = 3 }
+		set_global_variable = { ottoman_minority_variable_yemen = 3 }
 	}
 }
 ottoman_minority_variable_check_houdaida = {
@@ -6311,9 +5997,8 @@ ottoman_minority_variable_check_houdaida = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_houdaida = 1 }
-		}
+		set_variable = { ottoman_minority_variable_houdaida = 1 }
+		set_global_variable = { ottoman_minority_variable_houdaida = 1 }
 	}
 	if = {
 		limit = {
@@ -6322,9 +6007,8 @@ ottoman_minority_variable_check_houdaida = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_houdaida = 2 }
-		}
+		set_variable = { ottoman_minority_variable_houdaida = 2 }
+		set_global_variable = { ottoman_minority_variable_houdaida = 2 }
 	}
 }
 ottoman_minority_variable_check_aden = {
@@ -6347,9 +6031,8 @@ ottoman_minority_variable_check_aden = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_aden = 1 }
-		}
+		set_variable = { ottoman_minority_variable_aden = 1 }
+		set_global_variable = { ottoman_minority_variable_aden = 1 }
 	}
 	if = {
 		limit = {
@@ -6358,9 +6041,8 @@ ottoman_minority_variable_check_aden = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_aden = 2 }
-		}
+		set_variable = { ottoman_minority_variable_aden = 2 }
+		set_global_variable = { ottoman_minority_variable_aden = 2 }
 	}
 }
 ottoman_minority_variable_check_suez_canal = {
@@ -6383,9 +6065,8 @@ ottoman_minority_variable_check_suez_canal = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_suez_canal = 1 }
-		}
+		set_variable = { ottoman_minority_variable_suez_canal = 1 }
+		set_global_variable = { ottoman_minority_variable_suez_canal = 1 }
 	}
 	if = {
 		limit = {
@@ -6394,9 +6075,8 @@ ottoman_minority_variable_check_suez_canal = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_suez_canal = 2 }
-		}
+		set_variable = { ottoman_minority_variable_suez_canal = 2 }
+		set_global_variable = { ottoman_minority_variable_suez_canal = 2 }
 	}
 }
 ottoman_minority_variable_check_cairo = {
@@ -6419,9 +6099,8 @@ ottoman_minority_variable_check_cairo = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_cairo = 1 }
-		}
+		set_variable = { ottoman_minority_variable_cairo = 1 }
+		set_global_variable = { ottoman_minority_variable_cairo = 1 }
 	}
 	if = {
 		limit = {
@@ -6430,9 +6109,8 @@ ottoman_minority_variable_check_cairo = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_cairo = 2 }
-		}
+		set_variable = { ottoman_minority_variable_cairo = 2 }
+		set_global_variable = { ottoman_minority_variable_cairo = 2 }
 	}
 	if = {
 		limit = {
@@ -6441,9 +6119,8 @@ ottoman_minority_variable_check_cairo = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_cairo = 3 }
-		}
+		set_variable = { ottoman_minority_variable_cairo = 3 }
+		set_global_variable = { ottoman_minority_variable_cairo = 3 }
 	}
 }
 ottoman_minority_variable_check_marsa_matruh = {
@@ -6466,9 +6143,8 @@ ottoman_minority_variable_check_marsa_matruh = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_marsa_matruh = 1 }
-		}
+		set_variable = { ottoman_minority_variable_marsa_matruh = 1 }
+		set_global_variable = { ottoman_minority_variable_marsa_matruh = 1 }
 	}
 	if = {
 		limit = {
@@ -6477,9 +6153,8 @@ ottoman_minority_variable_check_marsa_matruh = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_marsa_matruh = 2 }
-		}
+		set_variable = { ottoman_minority_variable_marsa_matruh = 2 }
+		set_global_variable = { ottoman_minority_variable_marsa_matruh = 2 }
 	}
 	if = {
 		limit = {
@@ -6488,9 +6163,8 @@ ottoman_minority_variable_check_marsa_matruh = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_marsa_matruh = 3 }
-		}
+		set_variable = { ottoman_minority_variable_marsa_matruh = 3 }
+		set_global_variable = { ottoman_minority_variable_marsa_matruh = 3 }
 	}
 }
 ottoman_minority_variable_check_eastern_desert = {
@@ -6513,9 +6187,8 @@ ottoman_minority_variable_check_eastern_desert = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_eastern_desert = 1 }
-		}
+		set_variable = { ottoman_minority_variable_eastern_desert = 1 }
+		set_global_variable = { ottoman_minority_variable_eastern_desert = 1 }
 	}
 	if = {
 		limit = {
@@ -6524,9 +6197,8 @@ ottoman_minority_variable_check_eastern_desert = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_eastern_desert = 2 }
-		}
+		set_variable = { ottoman_minority_variable_eastern_desert = 2 }
+		set_global_variable = { ottoman_minority_variable_eastern_desert = 2 }
 	}
 	if = {
 		limit = {
@@ -6535,9 +6207,8 @@ ottoman_minority_variable_check_eastern_desert = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_eastern_desert = 3 }
-		}
+		set_variable = { ottoman_minority_variable_eastern_desert = 3 }
+		set_global_variable = { ottoman_minority_variable_eastern_desert = 3 }
 	}
 }
 ottoman_minority_variable_check_aswan = {
@@ -6560,9 +6231,8 @@ ottoman_minority_variable_check_aswan = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_aswan = 1 }
-		}
+		set_variable = { ottoman_minority_variable_aswan = 1 }
+		set_global_variable = { ottoman_minority_variable_aswan = 1 }
 	}
 	if = {
 		limit = {
@@ -6571,9 +6241,8 @@ ottoman_minority_variable_check_aswan = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_aswan = 2 }
-		}
+		set_variable = { ottoman_minority_variable_aswan = 2 }
+		set_global_variable = { ottoman_minority_variable_aswan = 2 }
 	}
 	if = {
 		limit = {
@@ -6582,9 +6251,8 @@ ottoman_minority_variable_check_aswan = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_aswan = 3 }
-		}
+		set_variable = { ottoman_minority_variable_aswan = 3 }
+		set_global_variable = { ottoman_minority_variable_aswan = 3 }
 	}
 }
 ottoman_minority_variable_check_khartoum = {
@@ -6607,9 +6275,8 @@ ottoman_minority_variable_check_khartoum = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_khartoum = 1 }
-		}
+		set_variable = { ottoman_minority_variable_khartoum = 1 }
+		set_global_variable = { ottoman_minority_variable_khartoum = 1 }
 	}
 	if = {
 		limit = {
@@ -6618,9 +6285,8 @@ ottoman_minority_variable_check_khartoum = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_khartoum = 2 }
-		}
+		set_variable = { ottoman_minority_variable_khartoum = 2 }
+		set_global_variable = { ottoman_minority_variable_khartoum = 2 }
 	}
 	if = {
 		limit = {
@@ -6629,9 +6295,8 @@ ottoman_minority_variable_check_khartoum = {
 			    has_dynamic_modifier = { modifier = TUR_autonomous_region scope = TUR }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_khartoum = 3 }
-		}
+		set_variable = { ottoman_minority_variable_khartoum = 3 }
+		set_global_variable = { ottoman_minority_variable_khartoum = 3 }
 	}
 }
 ottoman_minority_variable_check_sudanese_desert = {
@@ -6654,9 +6319,8 @@ ottoman_minority_variable_check_sudanese_desert = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_sudanese_desert = 1 }
-		}
+		set_variable = { ottoman_minority_variable_sudanese_desert = 1 }
+		set_global_variable = { ottoman_minority_variable_sudanese_desert = 1 }
 	}
 	if = {
 		limit = {
@@ -6665,9 +6329,8 @@ ottoman_minority_variable_check_sudanese_desert = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_sudanese_desert = 2 }
-		}
+		set_variable = { ottoman_minority_variable_sudanese_desert = 2 }
+		set_global_variable = { ottoman_minority_variable_sudanese_desert = 2 }
 	}
 }
 ottoman_minority_variable_check_northern_chad = {
@@ -6690,9 +6353,8 @@ ottoman_minority_variable_check_northern_chad = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_northern_chad = 1 }
-		}
+		set_variable = { ottoman_minority_variable_northern_chad = 1 }
+		set_global_variable = { ottoman_minority_variable_northern_chad = 1 }
 	}
 	if = {
 		limit = {
@@ -6701,9 +6363,8 @@ ottoman_minority_variable_check_northern_chad = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_northern_chad = 2 }
-		}
+		set_variable = { ottoman_minority_variable_northern_chad = 2 }
+		set_global_variable = { ottoman_minority_variable_northern_chad = 2 }
 	}
 }
 ottoman_minority_variable_check_tibesti = {
@@ -6726,9 +6387,8 @@ ottoman_minority_variable_check_tibesti = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_tibesti = 1 }
-		}
+		set_variable = { ottoman_minority_variable_tibesti = 1 }
+		set_global_variable = { ottoman_minority_variable_tibesti = 1 }
 	}
 	if = {
 		limit = {
@@ -6737,9 +6397,8 @@ ottoman_minority_variable_check_tibesti = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_tibesti = 2 }
-		}
+		set_variable = { ottoman_minority_variable_tibesti = 2 }
+		set_global_variable = { ottoman_minority_variable_tibesti = 2 }
 	}
 }
 ottoman_minority_variable_check_ubari_murzuq = {
@@ -6762,9 +6421,8 @@ ottoman_minority_variable_check_ubari_murzuq = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_ubari_murzuq = 1 }
-		}
+		set_variable = { ottoman_minority_variable_ubari_murzuq = 1 }
+		set_global_variable = { ottoman_minority_variable_ubari_murzuq = 1 }
 	}
 	if = {
 		limit = {
@@ -6773,9 +6431,8 @@ ottoman_minority_variable_check_ubari_murzuq = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_ubari_murzuq = 2 }
-		}
+		set_variable = { ottoman_minority_variable_ubari_murzuq = 2 }
+		set_global_variable = { ottoman_minority_variable_ubari_murzuq = 2 }
 	}
 }
 ottoman_minority_variable_check_fezzan = {
@@ -6798,9 +6455,8 @@ ottoman_minority_variable_check_fezzan = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_fezzan = 1 }
-		}
+		set_variable = { ottoman_minority_variable_fezzan = 1 }
+		set_global_variable = { ottoman_minority_variable_fezzan = 1 }
 	}
 	if = {
 		limit = {
@@ -6809,9 +6465,8 @@ ottoman_minority_variable_check_fezzan = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_fezzan = 2 }
-		}
+		set_variable = { ottoman_minority_variable_fezzan = 2 }
+		set_global_variable = { ottoman_minority_variable_fezzan = 2 }
 	}
 }
 ottoman_minority_variable_check_western_desert = {
@@ -6834,9 +6489,8 @@ ottoman_minority_variable_check_western_desert = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_western_desert = 1 }
-		}
+		set_variable = { ottoman_minority_variable_western_desert = 1 }
+		set_global_variable = { ottoman_minority_variable_western_desert = 1 }
 	}
 	if = {
 		limit = {
@@ -6845,9 +6499,8 @@ ottoman_minority_variable_check_western_desert = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_western_desert = 2 }
-		}
+		set_variable = { ottoman_minority_variable_western_desert = 2 }
+		set_global_variable = { ottoman_minority_variable_western_desert = 2 }
 	}
 }
 ottoman_minority_variable_check_dscharabub = {
@@ -6870,9 +6523,8 @@ ottoman_minority_variable_check_dscharabub = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_dscharabub = 1 }
-		}
+		set_variable = { ottoman_minority_variable_dscharabub = 1 }
+		set_global_variable = { ottoman_minority_variable_dscharabub = 1 }
 	}
 	if = {
 		limit = {
@@ -6881,9 +6533,8 @@ ottoman_minority_variable_check_dscharabub = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_dscharabub = 2 }
-		}
+		set_variable = { ottoman_minority_variable_dscharabub = 2 }
+		set_global_variable = { ottoman_minority_variable_dscharabub = 2 }
 	}
 }
 ottoman_minority_variable_check_kufra = {
@@ -6906,9 +6557,8 @@ ottoman_minority_variable_check_kufra = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kufra = 1 }
-		}
+		set_variable = { ottoman_minority_variable_kufra = 1 }
+		set_global_variable = { ottoman_minority_variable_kufra = 1 }
 	}
 	if = {
 		limit = {
@@ -6917,9 +6567,8 @@ ottoman_minority_variable_check_kufra = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_kufra = 2 }
-		}
+		set_variable = { ottoman_minority_variable_kufra = 2 }
+		set_global_variable = { ottoman_minority_variable_kufra = 2 }
 	}
 }
 ottoman_minority_variable_check_south_dscharabub = {
@@ -6942,9 +6591,8 @@ ottoman_minority_variable_check_south_dscharabub = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_south_dscharabub = 1 }
-		}
+		set_variable = { ottoman_minority_variable_south_dscharabub = 1 }
+		set_global_variable = { ottoman_minority_variable_south_dscharabub = 1 }
 	}
 	if = {
 		limit = {
@@ -6953,9 +6601,8 @@ ottoman_minority_variable_check_south_dscharabub = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_south_dscharabub = 2 }
-		}
+		set_variable = { ottoman_minority_variable_south_dscharabub = 2 }
+		set_global_variable = { ottoman_minority_variable_south_dscharabub = 2 }
 	}
 }
 ottoman_minority_variable_check_cyrenaica = {
@@ -6978,9 +6625,8 @@ ottoman_minority_variable_check_cyrenaica = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_cyrenaica = 1 }
-		}
+		set_variable = { ottoman_minority_variable_cyrenaica = 1 }
+		set_global_variable = { ottoman_minority_variable_cyrenaica = 1 }
 	}
 	if = {
 		limit = {
@@ -6989,9 +6635,8 @@ ottoman_minority_variable_check_cyrenaica = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_cyrenaica = 2 }
-		}
+		set_variable = { ottoman_minority_variable_cyrenaica = 2 }
+		set_global_variable = { ottoman_minority_variable_cyrenaica = 2 }
 	}
 }
 ottoman_minority_variable_check_trablusgarp = {
@@ -7014,9 +6659,8 @@ ottoman_minority_variable_check_trablusgarp = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_trablusgarp = 1 }
-		}
+		set_variable = { ottoman_minority_variable_trablusgarp = 1 }
+		set_global_variable = { ottoman_minority_variable_trablusgarp = 1 }
 	}
 	if = {
 		limit = {
@@ -7025,9 +6669,8 @@ ottoman_minority_variable_check_trablusgarp = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_trablusgarp = 2 }
-		}
+		set_variable = { ottoman_minority_variable_trablusgarp = 2 }
+		set_global_variable = { ottoman_minority_variable_trablusgarp = 2 }
 	}
 }
 ottoman_minority_variable_check_bengazi = {
@@ -7050,9 +6693,8 @@ ottoman_minority_variable_check_bengazi = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_bengazi = 1 }
-		}
+		set_variable = { ottoman_minority_variable_bengazi = 1 }
+		set_global_variable = { ottoman_minority_variable_bengazi = 1 }
 	}
 	if = {
 		limit = {
@@ -7061,9 +6703,8 @@ ottoman_minority_variable_check_bengazi = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_bengazi = 2 }
-		}
+		set_variable = { ottoman_minority_variable_bengazi = 2 }
+		set_global_variable = { ottoman_minority_variable_bengazi = 2 }
 	}
 }
 ottoman_minority_variable_check_trablus = {
@@ -7086,9 +6727,8 @@ ottoman_minority_variable_check_trablus = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_trablus = 1 }
-		}
+		set_variable = { ottoman_minority_variable_trablus = 1 }
+		set_global_variable = { ottoman_minority_variable_trablus = 1 }
 	}
 	if = {
 		limit = {
@@ -7097,9 +6737,8 @@ ottoman_minority_variable_check_trablus = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_trablus = 2 }
-		}
+		set_variable = { ottoman_minority_variable_trablus = 2 }
+		set_global_variable = { ottoman_minority_variable_trablus = 2 }
 	}
 }
 ottoman_minority_variable_check_gabes = {
@@ -7122,9 +6761,8 @@ ottoman_minority_variable_check_gabes = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_gabes = 1 }
-		}
+		set_variable = { ottoman_minority_variable_gabes = 1 }
+		set_global_variable = { ottoman_minority_variable_gabes = 1 }
 	}
 	if = {
 		limit = {
@@ -7133,9 +6771,8 @@ ottoman_minority_variable_check_gabes = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_gabes = 2 }
-		}
+		set_variable = { ottoman_minority_variable_gabes = 2 }
+		set_global_variable = { ottoman_minority_variable_gabes = 2 }
 	}
 }
 ottoman_minority_variable_check_tunisia = {
@@ -7158,9 +6795,8 @@ ottoman_minority_variable_check_tunisia = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_tunisia = 1 }
-		}
+		set_variable = { ottoman_minority_variable_tunisia = 1 }
+		set_global_variable = { ottoman_minority_variable_tunisia = 1 }
 	}
 	if = {
 		limit = {
@@ -7169,9 +6805,8 @@ ottoman_minority_variable_check_tunisia = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_tunisia = 2 }
-		}
+		set_variable = { ottoman_minority_variable_tunisia = 2 }
+		set_global_variable = { ottoman_minority_variable_tunisia = 2 }
 	}
 }
 ottoman_minority_variable_check_constantine = {
@@ -7194,9 +6829,8 @@ ottoman_minority_variable_check_constantine = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_constantine = 1 }
-		}
+		set_variable = { ottoman_minority_variable_constantine = 1 }
+		set_global_variable = { ottoman_minority_variable_constantine = 1 }
 	}
 	if = {
 		limit = {
@@ -7205,9 +6839,8 @@ ottoman_minority_variable_check_constantine = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_constantine = 2 }
-		}
+		set_variable = { ottoman_minority_variable_constantine = 2 }
+		set_global_variable = { ottoman_minority_variable_constantine = 2 }
 	}
 }
 ottoman_minority_variable_check_algiers = {
@@ -7230,9 +6863,8 @@ ottoman_minority_variable_check_algiers = {
 				}
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_algiers = 1 }
-		}
+		set_variable = { ottoman_minority_variable_algiers = 1 }
+		set_global_variable = { ottoman_minority_variable_algiers = 1 }
 	}
 	if = {
 		limit = {
@@ -7241,9 +6873,8 @@ ottoman_minority_variable_check_algiers = {
 			    has_dynamic_modifier = { modifier = TUR_arab_minority }
 			}
 		}
-		every_country = {
-			set_variable = { ottoman_minority_variable_algiers = 2 }
-		}
+		set_variable = { ottoman_minority_variable_algiers = 2 }
+		set_global_variable = { ottoman_minority_variable_algiers = 2 }
 	}
 }
 TUR_lower_party_factionalism = {

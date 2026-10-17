@@ -1139,40 +1139,32 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_OHL_authority
-		icon = GFX_focus_OHL
-		cost = 5
-		prerequisite = {
-			focus = GER_prussian_militarism
-		}
-		x = 0
-		y = 1
-		relative_position_id = GER_prussian_militarism
-		available_if_capitulated = yes
-		available = {
-		}
-		bypass = {
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = GER_idea_OHL
-				add_idea = GER_idea_OHL1
-			}
-			army_experience = 15
-			air_experience = 15
-			navy_experience = 15
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = {
-			FOCUS_FILTER_HISTORICAL
-		}
+	    id = GER_OHL_authority
+	    icon = GFX_focus_OHL
+	    x = 0
+	    y = 2
+	    cost = 5
+	    available_if_capitulated = yes
+	    search_filters = { FOCUS_FILTER_HISTORICAL }
+	    prerequisite = { focus = GER_prussian_militarism }
+	    ai_will_do = {
+         factor = 1
+	    }
+	    completion_reward = {
+         swap_ideas = {
+             remove_idea = GER_idea_OHL
+             add_idea = GER_idea_OHL1
+         }
+         army_experience = 15
+         air_experience = 15
+         navy_experience = 15
+         add_popularity = {
+             ideology = fascism
+             popularity = 0.05
+         }
+	    }
 	}
+
 	# focus = {
 	# 	id = GER_focus_on_artillery
 	# 	icon = GFX_goal_generic_army_artillery2

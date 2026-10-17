@@ -4,6 +4,91 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					FROM.FROM = {
+						OR = {
+						state = 11
+						state = 13
+						state = 17
+						state = 28
+						state = 39
+						state = 72
+						state = 77
+						state = 78
+						state = 80
+						state = 89
+						state = 91
+						state = 93
+						state = 96
+						state = 103
+						state = 111
+						state = 145
+						state = 147
+						state = 163
+						state = 187
+						state = 188
+						state = 189
+						state = 191
+						state = 193
+						state = 197
+						state = 200
+						state = 202
+						state = 221
+						state = 226
+						state = 227
+						state = 228
+						state = 268
+						state = 269
+						state = 320
+						state = 328
+						state = 330
+						state = 339
+						state = 341
+						state = 342
+						state = 345
+						state = 347
+						state = 404
+						state = 408
+						state = 513
+						state = 537
+						state = 562
+						state = 608
+						state = 648
+						state = 655
+						state = 716
+						state = 717
+						state = 722
+						state = 731
+						state = 735
+						state = 736
+						state = 745
+						state = 751
+						state = 756
+						state = 757
+						state = 758
+						state = 766
+						state = 784
+						state = 803
+						state = 805
+						state = 808
+						state = 825
+						state = 826
+						state = 834
+						state = 848
+						state = 849
+						state = 850
+						state = 860
+						state = 861
+						state = 863
+						state = 864
+						state = 865
+						state = 869
+						state = 870
+						state = 871
+						}
+					}
+				}
+			if = {
+				limit = {
 					FROM.FROM = { state = 28 }
 				}
 				if = {
@@ -2615,5 +2700,6 @@ on_actions = {
 				}
 			}
 		}
+			}
 	}
 }
