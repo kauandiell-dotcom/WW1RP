@@ -30,7 +30,7 @@
  extra_state_slot_2_desc: ""
  construction_idea_focus: "Строительный бум"
  construction_idea_focus_desc: ""
- lend_lease_focus: ""Торговля оружием"
+ lend_lease_focus:0 "Торговля оружием"
  lend_lease_focus_desc: ""
  liberty_manpower: "Свобода"
  liberty_manpower_desc: ""

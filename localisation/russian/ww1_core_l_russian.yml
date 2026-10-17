@@ -14,7 +14,7 @@
  returned_all_expeditionary_forces_of_puppets: "Вернул все экспедиционные силы, отправленные марионетками."
  puppet_but_keep_government_tt: "([to_be_overlord.GetFlag]§H[to_be_overlord.GetName]§!) §H[marked_country.GetName]§! становится марионеткой §H[to_be_overlord.GetName]§!, но сохраняет текущие настройки правительства и популярности."
  cannot_call_allies_or_join_wars: "\n$TRIGGER_NO$ Невозможно позвонить союзникам или присоединиться к ним."
- cannot_call_allies_or_join_wars_warning: ""$TRIGGER_NO$ §RНевозможно призвать или присоединиться к союзникам§!"
+ cannot_call_allies_or_join_wars_warning:0 "$TRIGGER_NO$ §RНевозможно призвать или присоединиться к союзникам§!"
  cannot_call_allies_or_join_wars_warning_FROM: "§H[FROM.GetName]: $TRIGGER_NO$ §RНевозможно призвать или присоединиться к союзникам§!"
  cannot_receive_volunteers: "\n$TRIGGER_NO$ §RНевозможно принять волонтеров§!"
  cannot_receive_volunteers_warning: "$TRIGGER_NO$ §RCannot receive volunteers§!"  <"$TRIGGER_NO$ §RНевозможно принять волонтеров§!"

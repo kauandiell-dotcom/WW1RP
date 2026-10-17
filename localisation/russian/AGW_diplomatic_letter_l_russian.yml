@@ -54,7 +54,7 @@
  string_receive_insult_stability_effect: "\nПрирост базовой стабильности: §R-0.50%§!. "
  string_insult_wt_effect: "\nМировая напряженность увеличивается на §R0.5§!. "
  
- string_quotation_mark: "\""
+ string_quotation_mark: "'"
  
  string_create_new_insult_save: "Создать новое сохранение"
  string_replace_insult_save: "Слот сохранения [?i]"

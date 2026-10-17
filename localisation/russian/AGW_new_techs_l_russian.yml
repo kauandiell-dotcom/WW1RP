@@ -291,11 +291,11 @@
  tank_heavy_cannon_6:0 "Тяжелая пушка VI"
  tank_heavy_cannon_6_desc:0 "A weapon that can fire a large shell. With exceptional armor penetration and decent performance against soft targets, its biggest drawbacks are the sheer size and cost, which make it too unwieldly to be mounted in most vehicles not specifically designed to carry it."
 
- tank_anti_air_cannon_4:0 ПВО IV"
+ tank_anti_air_cannon_4:0 "ПВО IV"
  tank_anti_air_cannon_4_desc:0 "A fast-firing automatic gun designed to engage aircraft. It has limited potential as a fire-support weapon against ground targets."
- tank_anti_air_cannon_5:0 ПВО V"
+ tank_anti_air_cannon_5:0 "ПВО V"
  tank_anti_air_cannon_5_desc:0 "A fast-firing automatic gun designed to engage aircraft. It has limited potential as a fire-support weapon against ground targets."
- tank_anti_air_cannon_6:0 ПВО VI"
+ tank_anti_air_cannon_6:0 "ПВО VI"
  tank_anti_air_cannon_6_desc:0 "A fast-firing automatic gun designed to engage aircraft. It has limited potential as a fire-support weapon against ground targets."
 
  tank_heavy_howitzer_2:0 "Тяжелая гаубица II"

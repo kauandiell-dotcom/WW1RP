@@ -54,13 +54,13 @@
  string_receive_insult_stability_effect: "\nGain Base Stability: §R-0.50%§!. "
  string_insult_wt_effect: "\nWorld Tension is increased by §R0.5§!. "
  
- string_quotation_mark: "\""
+ string_quotation_mark: "'"
  
  string_create_new_insult_save: "Create New Save"
  string_replace_insult_save: "Save Slot [?i]"
  string_create_new_insult_save_tt: "§GClick§! to create a §Ynew save§!, in which your currently typed Letter will be saved."
  string_replace_insult_save_tt: "§GClick§! to §YOVERWRITE§! this save with your currently typed Letter. \n§GRight-click§! to §YLOAD§! this save. \n§GCtrl + Right-click§! to §RDELETE§! this save."
- string_replace_insult_save_tt_delayed: "Text of this saved Letter: "§Y[This.GetInsultTypedSavedText]§!""
+ string_replace_insult_save_tt_delayed: "Text of this saved Letter: '§Y[This.GetInsultTypedSavedText]§!'"
   
  # Threats:
  INSULT_THREAT: "Sent a diplomatic Letter"
