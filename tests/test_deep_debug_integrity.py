@@ -103,6 +103,19 @@ class TestDeepDebugIntegrity(unittest.TestCase):
         for idea in required_ideas:
             self.assertIn(f"{idea} = {{", c, f"Idea {idea} missing from patch file")
 
+        extra_ideas = [
+            "RUS_russian_civil_war",
+            "GRE_idea_national_catastrophe",
+            "QIN_idea_payments_of_indemnities_italian",
+            "TUR_said_halim",
+            "GER_hjalmar_schacht",
+            "FRA_joseph_gallieni",
+            "ITA_luigi_cadorna",
+        ]
+        for idea in extra_ideas:
+            self.assertIn(f"{idea} = {{", c, f"Idea {idea} missing from patch file")
+
+
     def test_missing_events_patch_presence(self):
         """Verifies newly patched events are defined in events/WW1_Missing_Events_Patch.txt."""
         patch_file = os.path.join(ROOT_DIR, "events", "WW1_Missing_Events_Patch.txt")
