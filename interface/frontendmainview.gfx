@@ -165,4 +165,50 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_DLC_trial_of_allegiance.dds"
 	}
 
+
+	spriteType = {
+		name = "GFX_frontend_medal_dlc043"
+		texturefile = "gfx/interface/goals/focus_generic_nuclear_development.dds"
+	}
+	spriteType = {
+		name = "GFX_frontend_medal_dlc046"
+		texturefile = "gfx/interface/goals/focus_PER_glory_of_cyrus.dds"
+	}
+	spriteType = {
+		name = "GFX_frontend_medal_dlc049"
+		texturefile = "gfx/interface/goals/focus_JAP_promote_pan_asianism.dds"
+	}
+	spriteType = {
+		name = "GFX_frontend_medal_dlc051"
+		texturefile = "gfx/interface/goals/focus_CZE_flag_and_fortification.dds"
+	}
+	spriteType = {
+		name = "GFX_frontend_medal_dlc052"
+		texturefile = "gfx/interface/goals/focus_AST_diggers.dds"
+	}
+	spriteType = {
+		name = "GFX_frontend_banner_dlc043"
+		texturefile = "gfx/interface/dlc_banners/dlc018.dds"
+	}
+	spriteType = {
+		name = "GFX_frontend_banner_dlc046"
+		texturefile = "gfx/interface/dlc_banners/dlc018.dds"
+	}
+	spriteType = {
+		name = "GFX_frontend_banner_dlc049"
+		texturefile = "gfx/interface/dlc_banners/dlc018.dds"
+	}
+	spriteType = {
+		name = "GFX_frontend_banner_dlc051"
+		texturefile = "gfx/interface/dlc_banners/dlc018.dds"
+	}
+	spriteType = {
+		name = "GFX_frontend_banner_dlc052"
+		texturefile = "gfx/interface/dlc_banners/dlc018.dds"
+	}
+	spriteType = {
+		name = "GFX_subscription_widget_chinese"
+		textureFile = "gfx/interface/sub/main/subscription_widget.dds"
+		noOfFrames = 10
+	}
 }
