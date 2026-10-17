@@ -1,4 +1,4 @@
-guiTypes = {
+﻿guiTypes = {
 
 	containerWindowType = {
 		name ="frontend_background"
@@ -265,14 +265,14 @@ guiTypes = {
 			name ="pdx_int_logo"
 			spriteType = "GFX_pdx_int_logo"
 			position = { x= 0 y = 27 }
-			web_link = "https://discord.gg/6ZnpNfPTwv"
+			web_link = "https://discord.gg/hoi4"
 		}		
 		ButtonType =
 		{
 			name ="frontend_dev_logo"
 			spriteType = "GFX_frontend_dev_logo"
 			position = { x= 145 y = 15 }
-			web_link = "https://discord.gg/agora"
+			web_link = "https://discord.gg/hoi4"
 		}
 	}		
 
