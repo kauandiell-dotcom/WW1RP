@@ -1,4 +1,4 @@
-guiTypes = {
+﻿guiTypes = {
 
 	containerWindowType = 
 	{
@@ -1407,6 +1407,41 @@ guiTypes = {
 				clicksound = click_default
 			}
 
+			buttonType = {
+				name = "priority_button_4"
+				position = { x = 625 y = 109 }
+				quadTextureSprite = "GFX_div_priority_strip"
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "priority_button_5"
+				position = { x = 661 y = 109 }
+				quadTextureSprite = "GFX_div_priority_strip"
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "priority_button_6"
+				position = { x = 697 y = 109 }
+				quadTextureSprite = "GFX_div_priority_strip"
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "priority_button_7"
+				position = { x = 733 y = 109 }
+				quadTextureSprite = "GFX_div_priority_strip"
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "priority_button_8"
+				position = { x = 769 y = 109 }
+				quadTextureSprite = "GFX_div_priority_strip"
+				clicksound = click_default
+			}
+
 			iconType = {
 				name = "niche_icon_bg"
 				spriteType = "GFX_role_icon_bg"
@@ -1564,6 +1599,41 @@ guiTypes = {
 			buttonType = {
 				name = "priority_button_3"
 				position = { x = 571 y = 103 }
+				quadTextureSprite = "GFX_div_priority_strip"
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "priority_button_4"
+				position = { x = 607 y = 103 }
+				quadTextureSprite = "GFX_div_priority_strip"
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "priority_button_5"
+				position = { x = 643 y = 103 }
+				quadTextureSprite = "GFX_div_priority_strip"
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "priority_button_6"
+				position = { x = 679 y = 103 }
+				quadTextureSprite = "GFX_div_priority_strip"
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "priority_button_7"
+				position = { x = 715 y = 103 }
+				quadTextureSprite = "GFX_div_priority_strip"
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "priority_button_8"
+				position = { x = 751 y = 103 }
 				quadTextureSprite = "GFX_div_priority_strip"
 				clicksound = click_default
 			}

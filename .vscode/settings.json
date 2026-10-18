@@ -1,4 +1,53 @@
 {
     "hoi4ModUtilities.installPath": "E:/SteamLibrary/steamapps/common/Hearts of Iron IV",
-    "hoi4ModUtilities.previewLocalisation": "Brazilian Portuguese"
+    "hoi4ModUtilities.previewLocalisation": "Brazilian Portuguese",
+    "hoi4ModUtilities.loadDlcContents": false,
+    "hoi4ModUtilities.indexing": [
+        "sharedfocus",
+        "event",
+        "gui",
+        "localisation"
+    ],
+    "antigravity.searchMaxWorkspaceFileCount": 1000,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/.superpowers/**": true,
+        "**/.remote-code-express/**": true,
+        "**/gfx/**": true,
+        "**/portraits/**": true,
+        "**/sound/**": true,
+        "**/music/**": true,
+        "**/map/**": true,
+        "**/*.dds": true,
+        "**/*.tga": true,
+        "**/*.png": true,
+        "**/*.jpg": true,
+        "**/*.bmp": true,
+        "**/*.mesh": true,
+        "**/*.asset": true,
+        "**/*.ogg": true,
+        "**/*.wav": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/.git": true,
+        "**/.superpowers": true,
+        "**/.remote-code-express": true,
+        "**/gfx": true,
+        "**/portraits": true,
+        "**/sound": true,
+        "**/music": true,
+        "**/map": true,
+        "**/*.dds": true,
+        "**/*.tga": true,
+        "**/*.png": true,
+        "**/*.jpg": true,
+        "**/*.bmp": true,
+        "**/*.mesh": true,
+        "**/*.asset": true,
+        "**/*.ogg": true,
+        "**/*.wav": true
+    }
 }
