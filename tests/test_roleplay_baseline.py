@@ -80,6 +80,21 @@ class TestRoleplayBaseline(unittest.TestCase):
                                     if "--" in clean:
                                         lua_comments.append(f"{os.path.relpath(fp, MOD_ROOT)}:{idx}")
         self.assertEqual(len(lua_comments), 0, f"Forbidden Lua comments found: {lua_comments[:5]}")
+        self.assertEqual(len(missing_bom), 0, f"Missing UTF-8 BOM in localisation files: {missing_bom[:5]}")
+
+    def test_no_bom_in_gui_and_gfx(self):
+        """Ensures .gui and .gfx files NEVER have UTF-8 BOM, which causes Unexpected token ?guiTypes crashes."""
+        illegal_bom = []
+        interface_dir = os.path.join(MOD_ROOT, "interface")
+        if os.path.exists(interface_dir):
+            for root, _, files in os.walk(interface_dir):
+                for f in files:
+                    if f.endswith((".gui", ".gfx")):
+                        fp = os.path.join(root, f)
+                        with open(fp, "rb") as bf:
+                            if bf.read(3) == b"\xef\xbb\xbf":
+                                illegal_bom.append(os.path.relpath(fp, MOD_ROOT))
+        self.assertEqual(len(illegal_bom), 0, f"Illegal UTF-8 BOM found in GUI/GFX files: {illegal_bom}")
 
 if __name__ == "__main__":
     unittest.main()
